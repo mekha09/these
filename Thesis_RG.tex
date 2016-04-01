@@ -1,0 +1,98 @@
+
+                                                                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compile settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Make preprint? For languish check.
+\def\makepreprint{n}
+
+% Include the papers?
+\def\includepapers{n}
+
+% Final papersize B5 (nicer 'book'-format)? If no, it will be A4.
+\def\finalsizeB5{n}
+
+% Make digital version(i.e. with coloured links)? If not, the links will be black so it looks nice when printed.
+\def\digitalversion{y}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Document class
+\if \makepreprint y
+    \documentclass[a4paper,showtrims,11pt,draft]{memoir}
+\else 
+		\if \finalsizeB5 y
+				\documentclass[a4paper,showtrims,11pt]{memoir}'
+		\else
+				\documentclass[a4paper,11pt]{memoir} 
+		\fi
+\fi
+
+
+ %Format settings
+\input{Misc/Format.tex}
+
+% Macros and definitions
+\input{Misc/Macros.tex}
+
+% Hyphenation rules
+\input{Misc/Hyphen.tex}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{2}%A Camper. Controle le rang d'affichage de la table des matières
+
+
+\pdfoptionpdfminorversion=6
+\begin{document}
+
+%% Preliminary matter
+%\frontmatter
+\input{Misc/Prel_Matter.tex}
+%
+
+% Main matter
+\mainmatter
+\setSingleSpace{1.20} \SingleSpace %very slightly increases the line spacing (by 5%). 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHAPTERS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Introduction
+%\input{Text/Intro.tex}
+\input{Text/OutilsTheoriques.tex}
+%\input{Text/OutilsPolar.tex}
+%\input{Text/PhaseVSellipticity}
+%\input{Text/RésultatsPolarv2.tex}
+%\input{Text/FanoHeliumv2.tex}
+%\input{Text/Conclusionsandoutlook.tex}
+
+
+%Appendices
+%\input{Text/Appendices.tex}
+%% End matter
+\backmatter
+
+
+\setSingleSpace{1.0} \SingleSpace
+	\phantomsection
+	\addcontentsline{toc}{chapter}{\bibname}
+
+%%\settypeblocksize{*}{\mytextwidth+4cm}{*}   
+	\SingleSpacing \footnotesize
+	%\bibliographystyle{numeric-comp}
+		\bibliographystyle{Bib/mybibstyle}
+	\bibliography{Bib/RG_Bibliography}
+%\bibliography{Q:/SPAM/AttoPhysique/Bibliotheque/Reflib}
+  \cleardoublepage
+	
+	
+	
+	%% Papers
+%\input{Misc/Papers.tex}
+	
+\end{document}

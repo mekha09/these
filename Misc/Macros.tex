@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Math
+\def\rme{\mathrm{e}}
+\def\rmd{\mathrm{d}}
+\def\rmi{\mathrm{i}}
+\def\rmx{\mathrm{x}}
+\def\rmy{\mathrm{y}}
+\def\rmz{\mathrm{z}}
+\def\rmg{\mathrm{g}}
+\def\rmu{\mathrm{u}}
+\def\bfr{\textbf{\em r}}
+\def\bfk{\textbf{\em k}}
+\def\Ip{I_\mathrm{p}}
+
+\def\mathbi#1{\textbf{\em #1}}
+\def\bfgreek#1{\mbox{\boldmath{$#1$}}}
+ 
+\def\abs#1{\left|#1\right|^2}
+
+%\def\EXUV{\mbox{${ E}_{\mbox{{\tiny {XUV}}}}$}}
+\def\EXUV{\mathbi{E}_{\text{\tiny{XUV}}}}
+\def\epsXUV{\bfgreek{\epsilon}_{\text{\tiny{XUV}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Colors
+\definecolor{Gray}{named}{Gray}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commenting etc.
+\ifthenelse{\equal{\makepreprint}{y}}
+{
+    \def\comment#1{}
+}{
+%    \def\comment#1{}
+    \def\comment#1{\par\noindent\colorbox{yellow}{\parbox{\textwidth}{\emph{#1}}}}
+%  \def\comment#1{\colorbox{yellow}{\emph{#1}}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Questions to people etc.
+\ifthenelse{\equal{\makepreprint}{y}} {
+    \def\question#1{}
+}{
+%    \def\question#1{}
+    \def\question#1{\par\noindent\colorbox{Lavender}{\parbox{\textwidth}{\emph{#1}}}}
+%    \def\question#1{\par\noindent\colorbox{CornflowerBlue}{\parbox{\textwidth}{\emph{#1}}}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cite commands
+%\def\mycite#1{(\citet{#1})}  %the way you want to cite your references
+\def\mycite#1{\citet{#1}}  %the way you want to cite your references
+\def\pre#1{\textbf{\ref{pap:#1}}} %make the paper-numbers bold-face when you cite them
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Roman numerals in text
+\newcounter{romancounter}
+\newcommand{\rroman}[1]{
+  \setcounter{romancounter}{#1}
+  \roman{romancounter}
+}
+\newcommand{\RRoman}[1]{
+  \setcounter{romancounter}{#1}
+  \Roman{romancounter}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title
+\def\thesistitle{Le Titre}
+%\def\thesistitle{Tomographie d'orbitales moléculaires résolue en temps à l'échelle attoseconde}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set pdf document properties
+\hypersetup{
+pdfauthor   = {Romain Géneaux <romain.geneaux@cea.fr>},%
+pdftitle    = {\thesistitle},%
+pdfsubject  = {PhD Thesis},%
+pdfkeywords = {Keywords},%
+}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography name
+%\renewcommand{\bibname}{Bibliographie}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Texts in connection with the List of Papers
+\def\loptitle{Liste de Publications}
+%\def\preloptext{Cette thèse est construite à partir des articles suivants, auxquels il sera fait référence dans le texte par leur nombre romain.\\}
+\def\postloptext{\par\noindent}
+
+%\def\postloptext{\clearpage \par\noindent Autres publications de l'auteur en lien avec ce sujet :
+%\paperlistitem{}
+%{Spectrally resolved multi-channel contributions to the harmonic emission in N$_2$}
+%{Z. Diveki, A. Camper, S. Haessler, T. Auguste, T. Ruchon, B. Carr\'e, P. Sali\`eres, R. Guichard, J. Caillat, A. Maquet and R. Ta\"ieb }
+%{New Journal of Physics}{14}{03062 (2012), DOI:10.1088/1367-2630/14/2/023062}
+%\paperlistitem{}
+%{Molecular orbital tomography from multi-channel harmonic emission in N$_2$}
+%{Z. Diveki, R. Guichard, J. Caillat, A. Camper, S. Haessler, T. Auguste, T. Ruchon, B. Carr\'e, A. Maquet, R. Ta\"ieb and P. Sali\`eres}
+%{Chemical Physics}{414}{0121--129 (2013), DOI: 10.1016/j.chemphys.2012.03.021}
+%\paperlistitem{}
+%{Notes on attosecond pulse profile measurements with the RABBIT technique}
+%{T.~Ruchon and A.~Camper}
+%{Proceedings of UVX 2012}{\!}{01014 (2013), DOI: 10.1051/uvx/201301014}
+%\paperlistitem{}
+%{High Harmonic Spectroscopy Using a Binary Diffractive Optical Element}
+%{A.~Camper, T.~Ruchon, D.~Gauthier, O.~Gobert, P.~Sali\`eres, B.~Carr\'e and T.~Auguste}
+%{Physical Review A}{\!}{submitted (2013)}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Texts in connection with the Comments on the papers
+%\def\loctitle{The Author's Contribution to the Papers}
+%\def\loctitle{Contribution de l'auteur aux articles}
+%\def\preloctext{}
+%\def\postloctext{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Own lists with left centered items
+\newcommand{\myitem}[4]{
+\noindent
+\begin{tabular}{p{#3}p{\textwidth-#3-25pt}}
+#1 & #2
+\end{tabular}
+\\[#4]
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Synthese-Box for french resumes
+\definecolor{gris}{gray}{0.66}
+\newcommand{\synthbox}{
+	\ifthenelse{\isodd{\thepage}}
+	{\sidebar{ \hfill 
+	 \colorbox{gris}{\textcolor{white}{ \normalfont\huge \rotatebox{90}{\parbox[b]{3cm}{
+                \vspace*{3pt}
+                \hspace*{3pt} Synth\`ese \hspace*{3pt}
+                \vspace*{6pt}
+            }}}}
+           %\hspace*{-0.11\foremargin}
+  }}
+	{\sidebar{ %\hspace*{-0.11\foremargin}
+	 \colorbox{gris}{\textcolor{white}{ \normalfont\huge \rotatebox{90}{\parbox[b]{3cm}{
+                \vspace*{6pt}
+                \hspace*{3pt} Synth\`ese \hspace*{3pt}
+                \vspace*{3pt}
+            }}}}
+   }}
+}

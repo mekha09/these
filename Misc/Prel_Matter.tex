@@ -1,0 +1,105 @@
+% Title page
+\thispagestyle{empty}
+\begin{adjustwidth}{}{-\marginwidth}
+    \centering
+    \huge{\textsc{Th\`ese de Doctorat de l'Universit\'e Paris-Saclay}}\\
+    \large{Effectu\'ee au Laboratoire Interactions, Dynamique et Lasers, IRAMIS, DSM\\
+    Commissariat \`a l'Energie Atomique, Saclay.}\\
+    \vspace*{5mm}
+    Sp\'ecialit\'e: Lasers et Mati\`ere\\
+%    \vspace*{5mm}
+%    \hrule
+%    \vspace*{5mm}
+		\vspace*{10mm}
+    \HUGE \scshape
+    \thesistitle\\
+%    \vskip\onelineskip \hrule\vspace*{1.5pt}\hrule
+    \vspace*{1.0cm}
+    \normalfont
+    \large{Pr\'esent\'ee par}\\ 
+    \vspace*{3mm}
+    \Huge{\textsc{Romain Géneaux}}\\
+    \vspace*{3mm}
+    \large
+    pour obtenir le grade de\\
+    \textsc{Docteur en Sciences de l'Universit\'e Paris-Saclay}.\\
+    \vspace*{\fill} 
+    %Soutenance le 14 décembre 2015\\%03 d\'ecembre 2013\\
+    devant le jury compos\'e de : \\
+    \vspace*{5mm}
+    \begin{tabularx}{12cm}{r X l}
+				M. & \textsc{Le Jury} \dotfill & Rapporteur\\%, non pr\'esent\\
+    \end{tabularx}\\
+    \vspace*{15mm}
+    %\includegraphics[width=0.2\linewidth]{Figures/logoCEA} \hspace*{1cm}
+    \vspace*{-6mm}
+    %\hspace{-10mm}\includegraphics[width=0.7\linewidth]{Figures/LogoUPS}\\
+    \normalfont
+\end{adjustwidth}
+\clearpage
+
+% Printing and publishing information
+\thispagestyle{empty}
+\begin{narrow}{-0.7\marginwidth}{4cm}
+    \vspace*{\fill}
+    \footnotesize
+    \noindent \textsc{\thesistitle}\\
+    \vspace*{0.1cm}\\
+    %\noindent \copyright~2015 Vincent Gruson\\
+    %\noindent All rights reserved\\
+    %\noindent Printed in Paris, 2015\\
+    %\vspace*{0.1cm}\\
+    %\noindent Commissariat à l'Energie Atomique\\
+    %\noindent Direction Science de la Mati\`ere\\
+    %\noindent Institut Rayonnement Mati\`ere Saclay\\
+    %\noindent Laboratoire Interactions, Dynamique et Lasers\\
+    %\noindent B\^atiment 522\\
+    %\noindent F--91191 Gif-sur-Yvette\\
+    %\noindent France\\
+    %\vspace*{-0.2cm}\\
+    %\noindent \url{http://iramis.cea.fr/LIDyL/index.php}\\
+    %\vspace*{0.1cm}\\
+    %\noindent This thesis was typeset with the \LaTeX -system and the memoir class, using a model developed by the smart people of the Atomfysik division at Lund University.
+    %\noindent \textsc{ISSN  }\\
+    %\noindent \textsc{ISBN }\\
+\end{narrow}
+\cleardoublepage
+
+%% Dedication
+%\thispagestyle{empty}
+%\vspace*{5cm}
+%\begin{narrow}{0cm}{-\marginwidth}
+%    %\centering
+%    \raggedleft
+%    %\scshape  
+%    \noindent
+%    
+%  
+%    \textit{Meinen Eltern.} \\
+%\end{narrow}
+%\vspace*{\fill}
+
+%% Abstracts
+%\input{Text/Abstract.tex}
+%\input{Text/Resume_V2.tex}
+\cleardoublepage
+
+% List of papers
+\pdfbookmark[0]{\loptitle}{\loptitle}
+%\listofpapers*
+\raggedbottom\noindent\postloptext
+
+% List of abbreviations
+%\input{Misc/Abbreviations.tex}
+
+% Table of Contents
+\cleardoublepage
+\pdfbookmark[0]{\contentsname}{\contentsname}
+\makeatletter \renewcommand{\@dotsep}{10000} \makeatother
+\pagestyle{mycontentstyle}
+%\footnotesize
+\small
+\tableofcontents*
+\normalsize
+%\clearpage
+\pagestyle{mypagestyle}

@@ -1,0 +1,658 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Package loading that allows compilation to pdf either with dvips+ps2pdf or pdflatex.
+% For pdf figures must be in format pdf (or jpg). This can be done with epstopdf (%f in (*.eps) do epstopdf %f)
+% For pdf via dvi and ps figures must be in format eps.
+
+%\newif\ifpdf\ifx\pdfoutput\undefined\pdffalse\else\pdfoutput=1\pdftrue\fi% Latex mode i.e. \pdfoutput is only defined compiling with pdflatex
+%Above row is commented since this declaration is already done in the memoir class
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+  %\usepackage{epstopdf} % This does not work on windows.
+  \usepackage[pdftex,dvipsnames,usenames]{color} % This package allows for use of colors
+  \DeclareGraphicsExtensions{.pdf,.png}
+  \pdfadjustspacing=1  % Use LaTeX like spacing and not pdflatex layout algorithm
+  %\usepackage[pdftex]{thumbpdf}
+  \usepackage[protrusion={true, compatibility},expansion={true, compatibility}]{microtype} % Margin kerning i.e. prettier margins
+\else
+  \usepackage{graphicx}
+  \usepackage[dvips,dvipsnames,usenames]{color} % This package allows for use of colors
+  %\usepackage[ps2pdf]{thumbpdf}
+  \DeclareGraphicsExtensions{.eps}
+\fi
+
+%--------------------------------------------------------------------------------%
+%\usepackage[pagebackref]{hyperref}%A Camper for bak paging the reference
+%\usepackage{utopia}					% Utopia font as default roman
+\usepackage{mathpazo}				% Zapf Palatino font as default roman. Math in Palatino where possible
+\usepackage{amsmath,amssymb,MnSymbol} %
+%\usepackage{nomencl}         % The nomenclature package can be used to generate and format a
+                             % nomenclature using MakeIndex. I use to make a List of Symbols
+\usepackage{braket}          % braket: Macros for Dirac bra-ket <|> notation and sets {|}'
+\usepackage{array}           % Extends the implementation of array- and tabular-enviroments
+\usepackage[numbers,square,comma,sort&compress]{natbib}
+\usepackage{systeme}
+%\usepackage[authoryear,sort,colon,square]{natbib}
+\usepackage{ifthen}
+\usepackage{calc}
+\usepackage{url}
+ \usepackage{eurosym,skull}
+\usepackage{amsmath,amssymb,graphicx,stmaryrd}% Installé par Antoine pour \sslash 
+\usepackage{MnSymbol}
+\usepackage{picins}
+%\usepackage{color}
+%\usepackage{setspace}
+%\usepackage{textcomp}        % Defines for example dregrees celcius symbol
+%\usepackage{siunitx}         % The SIunitx package provides macros to type numbers and
+                             		% units in a consistent way according to SI requirements.
+%\usepackage{ulem}            % Allows line through text, \sout{},  under line, \uline{}
+                             % wavy under line, \uwave{}, double under line, \uuline{}
+                             % text market with slashes, \xout{}
+%\normalem                    % Stops ulem of taking over the \emph{} command
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}%A Camper problème d'accents dans l'hyphénation
+\usepackage[french]{babel}
+\usepackage{icomma} 
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\DeclareUnicodeCharacter{00A0}{ }
+\DeclareUnicodeCharacter{00A0}{ }
+%
+\ifpdf
+  \usepackage[pagebackref]{hyperref}
+  %\usepackage[pdftex]{hyperref}
+\else
+  \usepackage[ps2pdf]{hyperref}
+  %\usepackage[hypertex]{hyperref}  %% Gives hyperreferenses in the dvi file.
+  % \hypersetup{pdffitwindow=false}
+\fi
+%\usepackage{hypernat} %% Makes the hyperref and natbib packages work together i.e. [1-3] works
+%\usepackage{memoir/hypernat} %% Makes the hyperref and natbib packages work together i.e. [1-3] works
+\usepackage{memhfixc} %% The memhfixc package provides hyperref related temporary
+                      %% fixes and extensions for version v1.3a of the memoir class.
+
+\usepackage{titlesec}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% Appearance
+\hypersetup{
+%bookmarks = true,
+bookmarksnumbered = true,
+breaklinks = true
+}
+
+\ifthenelse{\equal{\digitalversion}{y}}
+{
+  \hypersetup{
+  colorlinks = true,
+  linkcolor = blue,
+  citecolor = red
+  }
+}
+{
+  \hypersetup{
+  colorlinks = true,
+  linkcolor = black,
+  citecolor = black,
+  filecolor = black,
+%  pagecolor = black,
+  urlcolor = black
+  }
+}
+
+\newlength{\mytextwidth}
+\newlength{\mymarginwidth}
+\setcounter{secnumdepth}{4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Will the thesis be in A4 or B5 format?
+\ifthenelse{\equal{\finalsizeB5}{y}}
+{
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Page layout
+	\setlength{\mytextwidth}{10.1cm}
+	\setlength{\mymarginwidth}{4.5cm}
+	\trimLmarks
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Scale to B5
+	\ifthenelse{\equal{finalsizeB5}{y}}{
+	    \ifthenelse{\equal{\makepreprint}{n}}
+	        {\setstocksize{250mm}{176mm}
+	        \trimNone
+	    }{}
+	}{}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Preprint?
+	\ifthenelse{\equal{\makepreprint}{y}}
+	{
+	    \setlrmarginsandblock{2cm}{2.3cm}{*}        % Spine and edge margin
+	    \setmarginnotes{0.1cm}{0.1cm}{0.1cm}        % Margin notes: Horizontal distance from text, Width, Vertical separation
+	    \OnehalfSpacing
+	}
+	{
+	    \settrimmedsize{250mm}{176mm}{*}          % B5 paper (250 x 176 mm)
+	    \settypeblocksize{*}{\mytextwidth}{*}       % Text width
+	    \setlrmargins{2cm}{*}{*}                    % Spine margin
+	    \setmarginnotes{0.5cm}{\mymarginwidth}{0.5cm}        % Margin notes: Horizontal distance from text, Width, Vertical separation
+	}
+	\setulmarginsandblock{2.5cm}{2.5cm}{*}      % Top and bottom margins (excluding heading and footer)
+	\setheadfoot{1.5cm}{1cm}                    % Header and footer locations
+	
+	% Center trimmed region on stock
+	\setlength{\trimtop}{\stockheight}
+	\addtolength{\trimtop}{-\paperheight}
+	\setlength{\trimedge}{\stockwidth}
+	\addtolength{\trimedge}{-\paperwidth}
+	\settrims{0.5\trimtop}{0.5\trimedge}
+}
+{
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Preprint?
+	\ifthenelse{\equal{\makepreprint}{y}}
+	{
+	    \setlrmarginsandblock{2cm}{2.3cm}{*}        % Spine and edge margin
+	    \setmarginnotes{0.1cm}{0.1cm}{0.1cm}        % Margin notes: Horizontal distance from text, Width, Vertical separation
+	    \OnehalfSpacing
+	}
+	{
+			%\semiisopage
+			\setlength{\textwidth}{400pt}
+			\setlength{\textheight}{684pt}
+			\setulmargins{*}{*}{1}
+			\setlrmargins{*}{*}{1}
+			\setmarginnotes{0.1\foremargin}{0.8\foremargin}{0.1\foremargin}
+			%\newlength{\temp}
+			%\setlength{\temp}{\paperwidth-\textwidth-\spinemargin-\marginparsep-\marginparwidth}
+			%\addtolength{\marginparsep}{\temp/9}
+			%\addtolength{\marginparwidth}{3\temp/9}
+			%\addtolength{\textheight}{84pt}
+			\setlength{\mytextwidth}{\textwidth}
+			\setlength{\mymarginwidth}{\marginparwidth}
+	}
+}	
+%%% Fix the layout
+\checkandfixthelayout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define useful lengths
+\setlength{\headwidth}{\textwidth}
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+
+\newlength{\marginwidth}
+\setlength{\marginwidth}{\marginparwidth}
+\addtolength{\marginwidth}{\marginparsep}
+
+\setlength{\epigraphwidth}{0.66\textwidth}
+\setlength{\epigraphrule}{0pt}
+\epigraphtextposition{flushright}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Page Style
+\makepagestyle{mypagestyle}
+\makerunningwidth{mypagestyle}{\headwidth}
+\makeheadposition{mypagestyle}{flushright}{flushleft}{flushright}{flushleft}
+\makeoddhead{mypagestyle}{}{}{\slshape\small \leftmark}
+\makeevenhead{mypagestyle}{\slshape\small \rightmark}{}{}
+\makeheadrule{mypagestyle}{\headwidth}{\normalrulethickness}
+\makeoddfoot{mypagestyle}{}{}{\slshape\small \thepage}
+\makeevenfoot{mypagestyle}{\slshape\small \thepage}{}{}
+
+% Footer for Part and chapter pages
+\makerunningwidth{plain}{\headwidth}
+\makeheadposition{plain}{flushright}{flushleft}{flushright}{flushleft}
+\makeoddfoot{plain}{}{}{\slshape\small \thepage}
+
+% Pagestyle for toc. Headings but no page number
+\copypagestyle{mycontentstyle}{mypagestyle}
+\makeoddfoot{mycontentstyle}{}{}{}
+\makeevenfoot{mycontentstyle}{}{}{}
+
+% What goes in the left and right header
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\,\ #1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection\,\ #1}{}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Part style (i.e. for the page preceeding the papers)
+\newcounter{bands}
+\newlength{\bandwidth}
+\setlength{\bandwidth}{10cm}
+\newlength{\bandheight}
+\setlength{\bandheight}{33pt}
+\newlength{\bandoverlap}
+\setlength{\bandoverlap}{5mm}
+\newlength{\bandrightmargin}
+\setlength{\bandrightmargin}{5mm}
+\newlength{\fullmarginwidth}
+\setlength{\fullmarginwidth}{\paperwidth-\textwidth-\spinemargin}
+
+
+\renewcommand{\beforepartskip}{}
+\renewcommand{\printparttitle}[1]{
+\pdfbookmark[-1]{Papers}{Papers}
+\begin{adjustwidth}{}{-\fullmarginwidth-\bandoverlap}
+    \begin{flushright}
+    \colorbox{black}{\textcolor{white}{\normalfont\HUGE\scshape \parbox[t]{\bandwidth+\bandrightmargin+\bandoverlap}{
+        \vspace*{5pt}
+        \begin{flushright}
+        #1 \hspace*{\bandoverlap}\hspace*{\bandrightmargin}
+        \end{flushright}
+        \vspace*{1pt} % was 5
+        \addtocounter{bands}{-1}
+        \vspace{\value{bands}\bandheight}
+        \addtocounter{bands}{1}
+    }}}
+    \end{flushright}
+\end{adjustwidth}
+\thispagestyle{empty}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter styles
+\makeatletter
+\makechapterstyle{mychapterstyle}{%
+    \renewcommand{\printchaptername}{
+        \fixchaptersidebar
+        \hrule\vskip\onelineskip
+        \begin{adjustwidth}{}{-\marginwidth}
+            \raggedleft \normalfont\LARGE\scshape \@chapapp
+    }
+    \renewcommand{\printchapternum}{
+            \normalfont\Huge \thechapter
+        \end{adjustwidth}
+    }
+    \renewcommand{\printchaptertitle}[1]{%
+        \begin{adjustwidth}{}{-\marginwidth}
+        \raggedright \normalfont\HUGE\scshape ##1\par\nobreak
+        \end{adjustwidth}
+        \vskip\onelineskip \hrule\vspace*{1.5pt}\hrule
+    }
+}
+\makeatother
+
+\makechapterstyle{papers}{%
+    \setlength{\beforechapskip}{-14pt}
+    \addtolength{\beforechapskip}{-\bandheight}
+    \setlength{\afterchapskip}{5pt}
+    \renewcommand{\printchaptertitle}[1]{%
+        \begin{adjustwidth}{}{-\fullmarginwidth-\bandoverlap}
+            \vspace*{\value{paper}\bandheight}
+            \begin{flushright}
+            \colorbox{black}{\textcolor{white}{ \normalfont\HUGE\scshape \parbox[t]{\bandwidth+\bandrightmargin+\bandoverlap}{
+                \vspace*{3pt} % was 5
+                \begin{flushright}
+                ##1 \hspace*{\bandoverlap}\hspace*{\bandrightmargin}
+                \end{flushright} % was 5
+                \vspace*{3pt}
+            }}}
+            \end{flushright}
+        \end{adjustwidth}
+        \thispagestyle{empty}
+    }
+    \newcounter{paper}
+    \newcounter{paperpage}
+
+    % Increase indentation in ToC
+    \addtocontents{toc}{\protect\addtolength{\cftchapternumwidth}{10pt}}
+}
+
+
+% Macros for adding unnumbered chapters
+\newcommand{\chapternonum}[1]{
+\cleardoublepage
+\pdfbookmark[0]{#1}{#1}
+\chapter*{#1}
+\markboth{#1}{#1}
+}                           % Abstract, etc.
+
+\newcommand{\chapternonumtoc}[1]{
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{#1}
+\chapter*{#1}
+\markboth{#1}{#1}
+}                           % Acknowledgements
+
+\newcommand{\chapternonumtitle}[2]{
+\chapter*{#1}
+\markboth{\textbf{#1}}{#2}
+}                           % Papers
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Paper Handling
+
+\newcommand{\paperjournalref}[3]{
+\ifthenelse{\equal{#2}{}}
+{#3\ifthenelse{\equal{#1}{}}{}{ \textit{#1}}.}
+{\textit{#1} \textbf{#2}, #3.}
+}
+
+
+% Macro for inserting a paper page
+\newcommand{\paperpage}[3]{\begin{adjustwidth*}{}{-\marginwidth}
+  \centering\noindent\includegraphics[trim=#2, clip=true,
+  width=1\textwidth+\marginwidth, height=0.99\textheight,
+  keepaspectratio=true]{#1/p_#3}\clearpage\end{adjustwidth*}}
+
+% Macro for adding a paper
+\makeatletter
+\newcommand{\paper}[9]{\addtocounter{paper}{1}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\protect\numberline{\Roman{paper}}#4}
+\begingroup
+\def\@currentlabel{\Roman{paper}}
+\label{pap:#1}
+\endgroup
+\chapternonumtitle{Article~\Roman{paper}}{#4}
+\paperinfo{#4}{#5}{#6}{#7}{#8}
+\addtocontents{lop}{\paperlistentry{#4}{#5}{#6}{#7}{#8}}
+\addtocontents{loc}{\papercommententry{#4}{#9}}
+\cleardoublepage
+\setcounter{paperpage}{0}
+%{\setcounter{paperpage}{#3}} % Uncomment to remove paper pages completely
+\whiledo{\value{paperpage}<#3}{
+\addtocounter{paperpage}{1}
+\ifthenelse{\equal{\includepapers}{y}}
+{\paperpage{Papers/#1}{#2}{\thepaperpage}}
+{\ \clearpage}
+}}
+\makeatother
+
+% Macro for printing paper info on paper page
+\newcommand{\paperinfo}[5]{
+\begin{adjustwidth}{}{-\fullmarginwidth+\bandrightmargin}
+    \begin{flushright}
+    \parbox[t]{\bandwidth}{
+        \begin{flushleft}
+        \large\textbf{#1}\\
+        \vspace{3pt}
+        \small#2.\\
+        \vspace{2pt}
+        \paperjournalref{#3}{#4}{#5}
+        \end{flushleft}
+    }
+    \end{flushright}
+\end{adjustwidth}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of papers
+\newlistof{listofpapers}{lop}{\loptitle}
+\renewcommand{\afterloptitle}{\afterchaptertitle \preloptext\par}
+
+% Entry style
+\newcommand{\paperlistentry}[5]{%
+\protect\addtocounter{bands}{1}
+\protect\paperlistitem{\Roman{paper}}{#1}{#2}{#3}{#4}{#5}
+}
+
+\newcommand{\paperlistitem}[6]{%
+\protect\noindent\parbox{\textwidth}{
+\protect\begin{itemize}
+\protect\item[#1]{
+\protect\begin{flushleft}
+\textbf{#2}\\
+#3.\\
+\protect\noindent\paperjournalref{#4}{#5}{#6}
+\protect\end{flushleft}
+}
+~~\\
+\protect\end{itemize}
+}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Comments on the papers
+\newlistof{commentsonpapers}{loc}{\loctitle}
+\renewcommand{\afterloctitle}{\afterchaptertitle \preloctext \par}
+
+% Entry style
+\newcommand{\papercommententry}[2]{
+\protect\parbox{\textwidth}{
+\protect\begin{itemize}
+\protect\item[\Roman{paper}]{
+\protect\begin{flushleft}
+\textbf{#1}\\
+\protect\end{flushleft}
+#2}
+\protect\end{itemize}
+}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Enumerations in the text
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography style
+%\newcommand{\bibfont}{\footnotesize}
+%\setlength{\bibsep}{5pt}
+%\setbiblabel{#1.\hfill}
+\renewcommand{\prebibhook}{\markboth{\bibname}{\bibname}}
+\nobibintoc
+
+%A Camper Pages des citations référencées en français dans la biblio
+\newcommand{\mapolicebackref}[1]{
+    \hspace*{\fill} \mbox{\textit {\small #1}}
+}	
+\renewcommand*{\backref}[1]{}
+%\renewcommand*{\backrefalt}[4]{
+%\ifcase #1 \mapolicebackref{pas de citations}
+    %\or \mapolicebackref{Cité page #2}
+    %\else \mapolicebackref{#1 citations pages #2}
+%\fi
+%}
+%redéfinir les séparateurs en français :
+\renewcommand*{\backreftwosep}{ et~}
+\renewcommand*{\backreflastsep}{, et~}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define environment for dedication
+\newenvironment{narrow}[2]{%
+    \begin{list}{}{%
+        \setlength{\topsep}{0pt}%
+        \setlength{\leftmargin}{#1}%
+        \setlength{\rightmargin}{#2}%
+        \setlength{\listparindent}{\parindent}%
+        \setlength{\itemindent}{\parindent}%
+        \setlength{\parsep}{\parskip}}%
+        \item[]}{
+    \end{list}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Figures and captions
+
+% Add rules to figures
+%\newcommand{\topfigrule}{\vspace*{5pt}{\hrule height0.6pt}\vspace{-5.8pt}}
+%\newcommand{\bottomfigrule}{\vspace*{-5.8pt}{\hrule height0.6pt}\vspace{5pt}}
+
+% Select colour or black and white figure, if existing, otherwise the other one.
+%\newcommand{\selectgraphics}[1]{
+%\ifthenelse{\equal{\colorgraphics}{y}}{\IfFileExists{Figures/#1.pdf}{Figures/#1}{Figures_b_w/#1}}{\IfFileExists{Figures_b_w/#1.pdf}{Figures_b_w/#1}{Figures/#1}}}
+
+
+
+% Figure covering the hole page width
+\newcommand{\figureinpage}[2]{
+%\begin{adjustwidth*}{}{-\marginwidth}
+  \begin{figure}[tb]
+    %\begin{center}
+
+  %\begin{adjustwidth*}{}{-\marginwidth}
+   \begin{adjustwidth*}{}{-4cm}
+ \noindent
+        \ifthenelse{\equal{\makepreprint}{y}}{
+            \includegraphics[width=1\mytextwidth]{Figures/#1}
+        }{
+            \includegraphics[clip=true,width=1\textwidth+4cm, height=0.99\textheight, keepaspectratio=true]{Figures/#1}
+        }
+      %\end{center}
+    \colfigcaptionpage{#2} \label{fig:#1}
+    \end{adjustwidth*}
+  \end{figure}
+
+}
+
+\newcommand{\colfigcaptionpage}[1]{
+    \changecaptionwidth
+    \captionwidth{1\textwidth+4cm}
+    \captionnamefont{\small\sffamily\bfseries}
+    \captiondelim{. }
+    \captionstyle{\linespread{0.8}}
+    \captiontitlefont{\small\rmfamily\slshape}
+    \setlength{\belowcaptionskip}{0.5\onelineskip}
+    \setlength{\abovecaptionskip}{0.5\onelineskip}
+    \caption{#1}
+}
+
+
+
+
+
+% Figure in the text
+\newcommand{\figureintext}[3]{
+  \begin{figure}[#3]
+    \begin{center}
+        \ifthenelse{\equal{\makepreprint}{y}}{
+            \includegraphics[width=1\mytextwidth]{Figures/#1}
+        }{
+            \includegraphics[width=1\textwidth]{Figures/#1}
+          }
+      \end{center}
+    \colfigcaption{#2} \label{fig:#1}
+  \end{figure}
+}
+
+\newcommand{\colfigcaption}[1]{
+    \changecaptionwidth
+    \captionwidth{1\textwidth}
+    \captionnamefont{\small\sffamily\bfseries}
+    \captiondelim{. }
+    \captionstyle{\linespread{0.8}}
+    \captiontitlefont{\small\rmfamily\slshape}
+    \setlength{\belowcaptionskip}{0.5\onelineskip}
+    \setlength{\abovecaptionskip}{0.5\onelineskip}
+    \caption{#1}
+}
+
+%% Figure in the margin
+\newcommand{\figureinmarg}[2]{
+    \ifthenelse{\equal{\makepreprint}{y}}{
+        \begin{figure}
+          \begin{center}
+            \includegraphics[width=1\mymarginwidth]{Figures/#1}
+          \end{center}
+          \colfigcaption{#2}
+          \label{fig:#1}
+        \end{figure}
+    }{
+        \sidebar{
+          %\parbox{\marginparwidth}{  %%maybe a minipage produecs less artefacts than a parbox...but maybe they're the same 
+          \begin{minipage}{\marginparwidth}
+            %\begin{center}
+              \includegraphics[width=1\marginparwidth]{Figures/#1}
+            %\end{center}
+            \margfigcaption{#2}
+            \label{fig:#1}
+          \end{minipage}
+          %}
+        }
+      }
+}
+
+\newcommand{\marginalfigcaption}[1]{
+    \changecaptionwidth
+    \captionwidth{1\marginparwidth}
+    \captionnamefont{\footnotesize\sffamily}%\bfseries} %A Camper
+    \captiondelim{. }
+    \captionstyle{\linespread{0.9}\raggedright}
+    \captiontitlefont{\footnotesize\rmfamily\slshape}
+    \setlength{\belowcaptionskip}{6pt}
+    \setlength{\abovecaptionskip}{3pt}
+    \caption{#1}
+}
+
+\newfixedcaption[\marginalfigcaption]{\margfigcaption}{figure}
+
+% Sidebar size
+\setlength{\sidebarhsep}{\marginparsep}
+\setlength{\sidebarvsep}{0pt}
+\setlength{\sidebarwidth}{\marginparwidth}
+\setsidebarheight{56\onelineskip}
+%\setsidebarheight{\textheight}
+
+% Fill out sidebar at new chapters
+\newcommand{\fixchaptersidebar}{
+\sidebar{\vspace{220pt}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Prevent overfull lines by inserting extra spaces
+\sloppy
+
+% Default mode, no extra spaces and possibly overfull boxes...
+%\fussy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section numbering and ToC
+\maxsecnumdepth{subsection}
+\renewcommand{\contentsname}{Sommaire}
+\renewcommand{\aftertoctitle}{\thispagestyle{empty}\markboth{\contentsname}{\contentsname}\afterchaptertitle}
+\maxtocdepth{subsection}
+
+\setlength{\cftbeforechapterskip}{8pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Select styles
+\pagestyle{mypagestyle}
+\chapterstyle{mychapterstyle}
+%\chapterstyle{veelo}
+\strictpagechecktrue
+
+
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{6pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{3}
