@@ -1,49 +1,106 @@
 \chapter{Le moment angulaire de la lumière}
 \label{CH:OAM}
 
-\section{Le moment angulaire - Définitions}
-\subsection{Le moment angulaire en mécanique classique}
+\section{Le moment angulaire en mécanique classique}
+\subsection{Le concept de moment angulaire}
 \subsubsection{Centre de masse d'un objet}
 
-En mécanique classique, l'évolution d'un objet est décrit par les lois de Newton. Pour un objet ''ponctuel'', on a ainsi $\sum_i{\vec{F_i}}=m\vec{a}$, où $\vec{F_i}$ sont les forces appliquées à cet objet, $m$ sa masse et $\vec{a}$ son accélération. Si on s'intéresse maintenant à un objet plus complexe, tel qu'un atome, un fluide ou une galaxie, il faut prendre en compte l'effet de la structure interne de l'objet : un objet réel peut se déformer de multiples façons sous l'effet des forces reliant les éléments qui le constituent.
+En mécanique classique, l'évolution d'un objet est décrit par les lois de Newton. Pour un objet ''ponctuel'', on a ainsi $\sum_i{\bm{F_i}}=m\bm{a}$, où $\bm{F_i}$ sont les forces appliquées à cet objet, $m$ sa masse et $\bm{a}$ son accélération. Si on s'intéresse maintenant à un objet plus complexe, tel qu'un atome, un fluide ou une galaxie, il faut prendre en compte l'effet de la structure interne de l'objet : un objet réel peut se déformer de multiples façons sous l'effet des forces reliant les éléments qui le constituent.
 
-Considérons donc un objet non ponctuel. Si on lance un tel objet en l'air, son comportement sera plus compliqué qu'une particule ponctuelle : notre objet peut tourner, vaciller, se déformer, etc. On peut quand même considérer notre objet comme constitué de nombreuses particules, reliées entre elles par de diverses forces. On sait alors que la force appliquée sur l'objet \textit{i} est sa masse fois son accélération : $\vec{F_i} = d^2(m_i\vec{r_i})/dt^2$. \\La trajectoire de notre objet ressemble toutefois à une parabole, même si ce n'est pas le cas pour chacune des particules qui le constituent. Ce quelque chose qui décrit une parabole est le \textit{centre de masse} de l'objet. Si on note $M$ la masse totale du système, il est définit par le vecteur $\vec{R}$ :
-\begin{equation}
-\vec{R} = \sum_i{m_i\vec{r_i}/M}.
-\end{equation}
+Considérons donc un objet non ponctuel. Si on lance un tel objet en l'air, son comportement sera plus compliqué qu'une particule ponctuelle : notre objet peut tourner, vaciller, se déformer, etc. On peut quand même considérer notre objet comme constitué de nombreuses particules, reliées entre elles par de diverses forces. On sait alors que la force appliquée sur l'objet \textit{i} est sa masse fois son accélération : $\bm{F_i} = d^2(m_i\bm{r_i})/dt^2$. \\La trajectoire de notre objet ressemble toutefois à une parabole, même si ce n'est pas le cas pour chacune des particules qui le constituent. Ce quelque chose qui décrit une parabole est le \textit{centre de masse} de l'objet. Si on note $M$ la masse totale du système, il est définit par le vecteur $\bm{R}$ :
+\begin{equation*}
+\bm{R} = \sum_i{m_i\bm{r_i}/M}.
+\end{equation*}
 La trajectoire de ce point inventé artificiellement est facile à décrire en utilisant le \textit{théorème du centre de masse}, qui nous dit que la somme des forces appliquées à toutes les particules constituant l'objet est égale à :
-\begin{equation}
-\vec{F} = \sum_i{\vec{F_i}} = \frac{d^2(\sum_i{m_i\vec{r_i}})}{dt^2} = \frac{d^2(M\vec{R})}{dt^2} = \frac{Md^2(\vec{R})}{dt^2}.
-\end{equation}
-Remarquons ici que $\vec{F}$, la somme des forces appliquées à toutes les particules, est égale aux forces \textit{extérieures} au système. En effet, quelque soit la nature des forces internes à notre objet, ces forces s'exercent entre deux particules et la troisième loi de Newton nous dit qu'entre ces particules l'action égale toujours la réaction. Ainsi dans le terme $\sum_i{\vec{F_i}}$, les forces internes s'annulent deux à deux pour l'objet considéré.\\ Cette propriété du centre de masse est particulièrement importante et est d'ailleurs la raison pour laquelle nous l'avons introduit : nous voyons que les mécaniques \textit{internes} et \textit{externes} de l'objet peuvent être traitées séparément. Ainsi, nous allons pouvoir nous concentrer sur les mouvements internes de notre objet, et en particulier sa rotation.
+\begin{equation*}
+\bm{F} = \sum_i{\bm{F_i}} = \frac{d^2(\sum_i{m_i\bm{r_i}})}{dt^2} = \frac{d^2(M\bm{R})}{dt^2} = \frac{Md^2(\bm{R})}{dt^2}.
+\end{equation*}
+Remarquons ici que $\bm{F}$, la somme des forces appliquées à toutes les particules, est égale aux forces \textit{extérieures} au système. En effet, quelque soit la nature des forces internes à notre objet, ces forces s'exercent entre deux particules et la troisième loi de Newton nous dit qu'entre ces particules l'action égale toujours la réaction. Ainsi dans le terme $\sum_i{\bm{F_i}}$, les forces internes s'annulent deux à deux pour l'objet considéré.\\ Cette propriété du centre de masse est particulièrement importante et est d'ailleurs la raison pour laquelle nous l'avons introduit : nous voyons que les mécaniques \textit{internes} et \textit{externes} de l'objet peuvent être traitées séparément. Ainsi, nous allons pouvoir nous concentrer sur les mouvements internes de notre objet, et en particulier sa rotation.
 
 \subsubsection{Rotation d'un corps rigide}
-Comme nous l'avons noté plus haut, le comportement d'un objet réel est plus complexe qu'une simple rotation. Pour simplifier cette discussion nous allons considérer un objet rigide, c'est-à-dire constitué d'un certain nombres de particules reliées par des forces assez fortes pour que l'objet ne se déforme pas au cours du mouvement. Nous considérons également le problème à deux dimensions seulement, et généraliserons ensuite le résultat.\\
+Comme nous l'avons noté plus haut, le comportement d'un objet réel est plus complexe qu'une simple rotation. Pour simplifier cette discussion nous allons considérer un objet rigide, c'est-à-dire constitué d'un certain nombres de particules reliées par des forces assez fortes pour que l'objet ne se déforme pas au cours du mouvement. Nous considérons également le problème à deux dimensions seulement, et généraliserons ensuite le résultat.
+
 Si nous ignorons le mouvement du centre de masse, la seule chose que peut faire notre objet est tourner autour d'un axe. Cet axe est défini comme l'endroit de l'objet restant au repos. La rotation autour de cet axe est alors simplement définie par l'évolution de l'angle d'un quelconque point de l'objet au cours du temps. On peut décrire la rotation à deux dimensions de la même façon qu'une translation à une dimension : l'angle $\theta$ est l'analogue de la distance de laquelle s'est déplacé l'objet, et la vitesse angulaire $\omega=d\theta/dt$ est l'analogue de la vitesse à laquelle se déplace l'objet. Notons maintenant $(x,y)$ les coordonnées cartésiennes de notre espace à deux dimensions. Si l'angle de l'objet a changé d'une petite quantité $\Delta\theta$ après un temps $\Delta t$, alors les changements selon $x$ et $y$ sont simplement :
-
-\begin{equation}
+\begin{equation*}
 \Delta x = -y\Delta \theta \mbox{ et } \Delta y = x\Delta \theta
-\end{equation}
-
+\end{equation*}
 On peut maintenant chercher à définir ce qui ''crée'' cette rotation. De la même manière qu'un mouvement linéaire est créé par une force, une rotation est créée par quelque chose appelé le \textit{couple}. Une force peut être définie par son \textit{travail} lors d'un déplacement $\Delta x$ de son point d'application. Par analogie, le couple peut être défini par son travail lors d'une rotation $\Delta \theta$. Lors d'une rotation d'angle très faible, le travail fournit est 
-\begin{equation}
+\begin{equation*}
 \Delta W = F_x \Delta x + F_y \Delta y.
-\end{equation}
+\end{equation*}
 En substituant directement $\Delta x$ et $\Delta y$, on obtient
-\begin{equation}
+\begin{equation*}
 \Delta W = (xF_y-yF_x)\Delta \theta,
-\end{equation}
+\end{equation*}
 Ce qui nous fournit l'expression du couple en fonction de la force appliquée :
-\begin{equation}
+\begin{equation*}
 \tau = (xF_y-yF_x).
-\end{equation}
+\end{equation*}
 
 \subsubsection{Moment angulaire}
-Cette analogie nous amène à définir une dernière quantité. Pour une translation linéaire, on sait que la force externe au système est égale à $d(m\vec{r})/dt$, c'est à dire au taux de variation d'une quantité $\vec{p}$ appelée moment total de l'objet. De même, le couple extérieur au système est égale au taux de variation de $L$, appelé \textit{moment angulaire} de l'objet. On peut effectivement écrire :
+Cette analogie nous amène à définir une dernière quantité. Pour une translation linéaire, on sait que la force externe au système est égale à $d(m\bm{r})/dt$, c'est à dire au taux de variation d'une quantité $\bm{p}$ appelée moment total de l'objet. De même, le couple appliqué au système est égal au taux de variation de $L$, appelé \textit{moment angulaire} de l'objet. On peut effectivement écrire :
 \begin{equation}
 \tau = xF_y-yF_x = xm(d^2y/dt^2)-ym(d^2x/dt^2) = \frac{d}{dt}\biggl[xm\biggl(\frac{dy}{dt}\biggr) - ym\biggl(\frac{dx}{dt}\biggr)\biggr].
+\label{Eq.DefTauL}
 \end{equation}
 $\tau$ est donc bien égal à la variation temporelle d'une quantité dont on obtient l'expression :
-\begin{equation}
+\begin{equation*}
 L = xm\biggl(\frac{dy}{dt}\biggr) - ym\biggl(\frac{dx}{dt}\biggr) = xp_y - yp_x.
+\end{equation*}
+Nous avons jusqu'à présent considéré un problème à deux dimensions par simplicité. Si l'on considère maintenant un espace à trois dimensions $(x,y,z)$, les résultats obtenus sont valables pour une rotation dans le plan $xy$, c'est à dire autour de l'axe $z$. On définit donc $L_z$, le moment angulaire selon l'axe $z$. Nous pouvons le faire pour n'importe quel axe, et obtenir pour les trois axes de notre repère
+\begin{equation}
+\begin{alignedat}{6}
+&L_x~&&=y&&p_z&&-z&&p_y&&,\\
+&L_y~&&=z&&p_x&&-x&&p_z&&,\\
+&L_z~&&=x&&p_y&&-y&&p_x&&.
+\end{alignedat}
+\label{Eq.Ldef}
 \end{equation}
+Le moment angulaire à trois dimensions est donc un vecteur, dont les composantes sont données par Eq. \ref{Eq.Ldef}. Il est pratique de réécrire cette expression sous forme vectorielle :
+\begin{equation*}
+\bm{L}=\bm{r}\times\bm{p}
+\end{equation*}
+Pour terminer, regardons à nouveau l'expression \ref{Eq.DefTauL} : la variation de $\bm{L}$ est égale au couple total appliqué au système. Comme expliqué plus haut, $\bm{F_{tot}} = \bm{F_{ext}}$. En utilisant de la même manière la troisième loi de Newton, on obtient que 
+\begin{equation*}
+\bm{\tau_{tot}} = \bm{\tau_{ext}} = \frac{d\bm{L}}{dt}. 
+\end{equation*}
+Ce résultat est très important puisqu'il nous donne \textit{la loi de conservation du moment angulaire} : si aucun couple extérieur n'est appliqué à un système de particules, alors son moment angulaire reste constant.
+
+
+\subsection{Le cas de la lumière}
+\subsubsection{L'énergie du champ électromagnétique}
+La partie précédente s'intéressait au moment angulaire porté par la matière. Cette matière est également capable d'émettre des radiations lumineuses, et en se faisant peut perdre de l'énergie. Pour respecter la conservation de l'énergie, il est donc nécessaire que la lumière, et plus généralement les ondes électromagnétiques, portent de l'énergie.
+
+Considérons une distribution de charges et de courants contenus dans un volume $V$. En un court temps $dt$, une charge bougera de $\bm{v}dt$ et en utilisant l'expression de la force de Lorentz, le travail effectué sur la charge sera
+\begin{equation*}
+dU = \bm{F}\cdot\bm{dl} = q(\bm{E}+\bm{v}\times\bm{B})\cdot\bm{v}dt = q\bm{E}\cdot \bm{v} dt,
+\end{equation*}
+où l'on retrouve que la force magnétique ne fournit pas de travail. Notons ensuite $q = \rho dV$ la densité de charge dans le volume et $\rho \bm{v} = \bm{J}$ la densité de courant. En intégrant sur le volume V, on obtient
+\begin{equation*}
+\frac{dU}{dt} = \int_V \bm{E} \cdot \bm{J} dV.
+\end{equation*}
+$dU/dt$ est le taux auquel le travail est fournit, c'est-à-dire la puissance délivrée au système. $\bm{E} \cdot \bm{J}$ est donc la puissance délivrée par une unité de volume, que l'on peut exprimer en utilisant l'équation de Maxwell-Ampère :
+\begin{align*}
+\bm{E} \cdot \bm{J} &= \frac{1}{\mu_0}\bm{E} \cdot (\bm{\nabla} \times \bm{B})-\epsilon_0\bm{E}\cdot\frac{\partial\bm{E}}{\partial t}\\
+&= \frac{1}{\mu_0}\bigl[\bm{B} \cdot (\bm{\nabla} \times \bm{E})-\bm{\nabla} \cdot (\bm{E} \times \bm{B})\bigr]-\epsilon_0\bm{E}\cdot\frac{\partial\bm{E}}{\partial t}\\
+&= \frac{1}{\mu_0}\bigl[-\bm{B} \cdot \frac{\partial\bm{B}}{\partial t}-\bm{\nabla} \cdot (\bm{E} \times \bm{B})\bigr]-\epsilon_0\bm{E}\cdot\frac{\partial\bm{E}}{\partial t}
+\end{align*}
+On note que $\bm{B} \cdot \frac{\partial\bm{B}}{\partial t} = \frac{1}{2}\frac{\partial\bm{B^2}}{\partial t}$ et $\bm{E} \cdot \frac{\partial\bm{E}}{\partial t} = \frac{1}{2}\frac{\partial\bm{E^2}}{\partial t}$ et on obtient
+\begin{equation*}
+\bm{E} \cdot \bm{J} = -\frac{1}{2}\frac{\partial}{\partial t}\biggl(\epsilon_0\bm{E^2}+\frac{1}{\mu_0}\bm{B^2}\biggl)-\frac{1}{\mu_0}\bm{\nabla} \cdot (\bm{E} \times \bm{B})
+\end{equation*}
+On intègre ensuite cette équation sur le volume $V$ et on utilise le théorème d'Ostrogradski sur le dernier terme pour obtenir
+\begin{equation*}
+\frac{dU}{dt} = -\frac{\partial}{\partial t}\int_V\frac{1}{2}\biggl(\epsilon_0\bm{E^2}+\frac{1}{\mu_0}\bm{B^2}\biggl)dV-\frac{1}{\mu_0} \oint_S(\bm{E} \times \bm{B})\cdot\bm{dS}
+\end{equation*}
+Regardons les termes obtenus dans cette expression :
+\begin{itemize}
+\item Le terme de gauche est la puissance délivrée au volume, soit le taux auquel les particules \textit{gagnent} de l'énergie,
+\item Le premier terme de droite est le taux de \textit{pertes} d'énergie électromagnétique dans le champ à \textit{l'intérieur} du volume,
+\item Le deuxième terme de droite est le taux de transport de l'énergie \textit{en dehors} du volume, i.e. à travers la surface $S$,
+\end{itemize}
+On peut donc l'exprimer par:\\\'Energie \textit{perdue} par le champ = énergie \textit{gagnée} par les particules + flux d'énergie en dehors du volume. On peut directement identifier le vecteur :
+\begin{equation*}
+\bm{S} = \frac{1}{\mu_0}\bm{E}\times\bm{B}
+\end{equation*}
+comme la \textbf{densité de flux d'énergie} (énergie par unité de surface par unité de temps), connu sous le nom de \textbf{vecteur de Poynting}, d'après John H. Poynting qui a dérivé son expression en 1884 \mycite{Poynting1884}. 
