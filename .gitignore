@@ -23,4 +23,5 @@
 *.out
 *.synctex.gz
 *.synctex
+*.brf
 Thesis_RG.pdf
