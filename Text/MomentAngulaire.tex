@@ -1,0 +1,49 @@
+\chapter{Le moment angulaire de la lumière}
+\label{CH:OAM}
+
+\section{Le moment angulaire - Définitions}
+\subsection{Le moment angulaire en mécanique classique}
+\subsubsection{Centre de masse d'un objet}
+
+En mécanique classique, l'évolution d'un objet est décrit par les lois de Newton. Pour un objet ''ponctuel'', on a ainsi $\sum_i{\vec{F_i}}=m\vec{a}$, où $\vec{F_i}$ sont les forces appliquées à cet objet, $m$ sa masse et $\vec{a}$ son accélération. Si on s'intéresse maintenant à un objet plus complexe, tel qu'un atome, un fluide ou une galaxie, il faut prendre en compte l'effet de la structure interne de l'objet : un objet réel peut se déformer de multiples façons sous l'effet des forces reliant les éléments qui le constituent.
+
+Considérons donc un objet non ponctuel. Si on lance un tel objet en l'air, son comportement sera plus compliqué qu'une particule ponctuelle : notre objet peut tourner, vaciller, se déformer, etc. On peut quand même considérer notre objet comme constitué de nombreuses particules, reliées entre elles par de diverses forces. On sait alors que la force appliquée sur l'objet \textit{i} est sa masse fois son accélération : $\vec{F_i} = d^2(m_i\vec{r_i})/dt^2$. \\La trajectoire de notre objet ressemble toutefois à une parabole, même si ce n'est pas le cas pour chacune des particules qui le constituent. Ce quelque chose qui décrit une parabole est le \textit{centre de masse} de l'objet. Si on note $M$ la masse totale du système, il est définit par le vecteur $\vec{R}$ :
+\begin{equation}
+\vec{R} = \sum_i{m_i\vec{r_i}/M}.
+\end{equation}
+La trajectoire de ce point inventé artificiellement est facile à décrire en utilisant le \textit{théorème du centre de masse}, qui nous dit que la somme des forces appliquées à toutes les particules constituant l'objet est égale à :
+\begin{equation}
+\vec{F} = \sum_i{\vec{F_i}} = \frac{d^2(\sum_i{m_i\vec{r_i}})}{dt^2} = \frac{d^2(M\vec{R})}{dt^2} = \frac{Md^2(\vec{R})}{dt^2}.
+\end{equation}
+Remarquons ici que $\vec{F}$, la somme des forces appliquées à toutes les particules, est égale aux forces \textit{extérieures} au système. En effet, quelque soit la nature des forces internes à notre objet, ces forces s'exercent entre deux particules et la troisième loi de Newton nous dit qu'entre ces particules l'action égale toujours la réaction. Ainsi dans le terme $\sum_i{\vec{F_i}}$, les forces internes s'annulent deux à deux pour l'objet considéré.\\ Cette propriété du centre de masse est particulièrement importante et est d'ailleurs la raison pour laquelle nous l'avons introduit : nous voyons que les mécaniques \textit{internes} et \textit{externes} de l'objet peuvent être traitées séparément. Ainsi, nous allons pouvoir nous concentrer sur les mouvements internes de notre objet, et en particulier sa rotation.
+
+\subsubsection{Rotation d'un corps rigide}
+Comme nous l'avons noté plus haut, le comportement d'un objet réel est plus complexe qu'une simple rotation. Pour simplifier cette discussion nous allons considérer un objet rigide, c'est-à-dire constitué d'un certain nombres de particules reliées par des forces assez fortes pour que l'objet ne se déforme pas au cours du mouvement. Nous considérons également le problème à deux dimensions seulement, et généraliserons ensuite le résultat.\\
+Si nous ignorons le mouvement du centre de masse, la seule chose que peut faire notre objet est tourner autour d'un axe. Cet axe est défini comme l'endroit de l'objet restant au repos. La rotation autour de cet axe est alors simplement définie par l'évolution de l'angle d'un quelconque point de l'objet au cours du temps. On peut décrire la rotation à deux dimensions de la même façon qu'une translation à une dimension : l'angle $\theta$ est l'analogue de la distance de laquelle s'est déplacé l'objet, et la vitesse angulaire $\omega=d\theta/dt$ est l'analogue de la vitesse à laquelle se déplace l'objet. Notons maintenant $(x,y)$ les coordonnées cartésiennes de notre espace à deux dimensions. Si l'angle de l'objet a changé d'une petite quantité $\Delta\theta$ après un temps $\Delta t$, alors les changements selon $x$ et $y$ sont simplement :
+
+\begin{equation}
+\Delta x = -y\Delta \theta \mbox{ et } \Delta y = x\Delta \theta
+\end{equation}
+
+On peut maintenant chercher à définir ce qui ''crée'' cette rotation. De la même manière qu'un mouvement linéaire est créé par une force, une rotation est créée par quelque chose appelé le \textit{couple}. Une force peut être définie par son \textit{travail} lors d'un déplacement $\Delta x$ de son point d'application. Par analogie, le couple peut être défini par son travail lors d'une rotation $\Delta \theta$. Lors d'une rotation d'angle très faible, le travail fournit est 
+\begin{equation}
+\Delta W = F_x \Delta x + F_y \Delta y.
+\end{equation}
+En substituant directement $\Delta x$ et $\Delta y$, on obtient
+\begin{equation}
+\Delta W = (xF_y-yF_x)\Delta \theta,
+\end{equation}
+Ce qui nous fournit l'expression du couple en fonction de la force appliquée :
+\begin{equation}
+\tau = (xF_y-yF_x).
+\end{equation}
+
+\subsubsection{Moment angulaire}
+Cette analogie nous amène à définir une dernière quantité. Pour une translation linéaire, on sait que la force externe au système est égale à $d(m\vec{r})/dt$, c'est à dire au taux de variation d'une quantité $\vec{p}$ appelée moment total de l'objet. De même, le couple extérieur au système est égale au taux de variation de $L$, appelé \textit{moment angulaire} de l'objet. On peut effectivement écrire :
+\begin{equation}
+\tau = xF_y-yF_x = xm(d^2y/dt^2)-ym(d^2x/dt^2) = \frac{d}{dt}\biggl[xm\biggl(\frac{dy}{dt}\biggr) - ym\biggl(\frac{dx}{dt}\biggr)\biggr].
+\end{equation}
+$\tau$ est donc bien égal à la variation temporelle d'une quantité dont on obtient l'expression :
+\begin{equation}
+L = xm\biggl(\frac{dy}{dt}\biggr) - ym\biggl(\frac{dx}{dt}\biggr) = xp_y - yp_x.
+\end{equation}
