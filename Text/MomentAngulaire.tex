@@ -38,38 +38,39 @@ Ce qui nous fournit l'expression du couple en fonction de la force appliquée :
 \end{equation*}
 
 \subsubsection{Moment angulaire}
-Cette analogie nous amène à définir une dernière quantité. Pour une translation linéaire, on sait que la force externe au système est égale à $d(m\bm{r})/dt$, c'est à dire au taux de variation d'une quantité $\bm{p}$ appelée moment total de l'objet. De même, le couple appliqué au système est égal au taux de variation de $L$, appelé \textit{moment angulaire} de l'objet. On peut effectivement écrire :
+Cette analogie nous amène à définir une dernière quantité. Pour une translation linéaire, on sait que la force externe au système est égale à $d(m\bm{r})/dt$, c'est à dire au taux de variation d'une quantité $\bm{p}$ appelée moment total de l'objet. De même, le couple appliqué au système est égal au taux de variation de $J$, appelé \textit{moment angulaire} de l'objet. On peut effectivement écrire :
 \begin{equation}
 \tau = xF_y-yF_x = xm(d^2y/dt^2)-ym(d^2x/dt^2) = \frac{d}{dt}\biggl[xm\biggl(\frac{dy}{dt}\biggr) - ym\biggl(\frac{dx}{dt}\biggr)\biggr].
 \label{Eq.DefTauL}
 \end{equation}
 $\tau$ est donc bien égal à la variation temporelle d'une quantité dont on obtient l'expression :
 \begin{equation*}
-L = xm\biggl(\frac{dy}{dt}\biggr) - ym\biggl(\frac{dx}{dt}\biggr) = xp_y - yp_x.
+J = xm\biggl(\frac{dy}{dt}\biggr) - ym\biggl(\frac{dx}{dt}\biggr) = xp_y - yp_x.
 \end{equation*}
-Nous avons jusqu'à présent considéré un problème à deux dimensions par simplicité. Si l'on considère maintenant un espace à trois dimensions $(x,y,z)$, les résultats obtenus sont valables pour une rotation dans le plan $xy$, c'est à dire autour de l'axe $z$. On définit donc $L_z$, le moment angulaire selon l'axe $z$. Nous pouvons le faire pour n'importe quel axe, et obtenir pour les trois axes de notre repère
+Nous avons jusqu'à présent considéré un problème à deux dimensions par simplicité. Si l'on considère maintenant un espace à trois dimensions $(x,y,z)$, les résultats obtenus sont valables pour une rotation dans le plan $xy$, c'est à dire autour de l'axe $z$. On définit donc $J_z$, le moment angulaire selon l'axe $z$. Nous pouvons le faire pour n'importe quel axe, et obtenir pour les trois axes de notre repère
 \begin{equation}
 \begin{alignedat}{6}
-&L_x~&&=y&&p_z&&-z&&p_y&&,\\
-&L_y~&&=z&&p_x&&-x&&p_z&&,\\
-&L_z~&&=x&&p_y&&-y&&p_x&&.
+&J_x~&&=y&&p_z&&-z&&p_y&&,\\
+&J_y~&&=z&&p_x&&-x&&p_z&&,\\
+&J_z~&&=x&&p_y&&-y&&p_x&&.
 \end{alignedat}
-\label{Eq.Ldef}
+\label{Eq.Jdef}
 \end{equation}
-Le moment angulaire à trois dimensions est donc un vecteur, dont les composantes sont données par Eq. \ref{Eq.Ldef}. Il est pratique de réécrire cette expression sous forme vectorielle :
+Le moment angulaire à trois dimensions est donc un vecteur, dont les composantes sont données par Eq. \ref{Eq.Jdef}. Il est pratique de réécrire cette expression sous forme vectorielle :
+\begin{equation}
+\bm{J}=\bm{r}\times\bm{p}
+\label{Eq.DefJ}
+\end{equation}
+Pour terminer, regardons à nouveau l'expression \ref{Eq.DefTauL} : la variation de $\bm{J}$ est égale au couple total appliqué au système. Comme expliqué plus haut, $\bm{F_{tot}} = \bm{F_{ext}}$. En utilisant de la même manière la troisième loi de Newton, on obtient que 
 \begin{equation*}
-\bm{L}=\bm{r}\times\bm{p}
-\end{equation*}
-Pour terminer, regardons à nouveau l'expression \ref{Eq.DefTauL} : la variation de $\bm{L}$ est égale au couple total appliqué au système. Comme expliqué plus haut, $\bm{F_{tot}} = \bm{F_{ext}}$. En utilisant de la même manière la troisième loi de Newton, on obtient que 
-\begin{equation*}
-\bm{\tau_{tot}} = \bm{\tau_{ext}} = \frac{d\bm{L}}{dt}. 
+\bm{\tau_{tot}} = \bm{\tau_{ext}} = \frac{d\bm{J}}{dt}. 
 \end{equation*}
 Ce résultat est très important puisqu'il nous donne \textit{la loi de conservation du moment angulaire} : si aucun couple extérieur n'est appliqué à un système de particules, alors son moment angulaire reste constant.
 
 
 \subsection{Le cas de la lumière}
 \subsubsection{L'énergie du champ électromagnétique}
-La partie précédente s'intéressait au moment angulaire porté par la matière. Cette matière est également capable d'émettre des radiations lumineuses, et en se faisant peut perdre de l'énergie. Pour respecter la conservation de l'énergie, il est donc nécessaire que la lumière, et plus généralement les ondes électromagnétiques, portent de l'énergie.
+La partie précédente s'intéressait au moment angulaire porté par la matière. Cette matière est également capable d'émettre des radiations lumineuses, et en se faisant peut perdre de l'énergie. Pour respecter la conservation de l'énergie, il est donc nécessaire que la lumière, et plus généralement les ondes électromagnétiques, portent de l'énergie. C'est un sujet qui longtemps animé les débats à la fin du XIXème siècle, principalement car il était incompréhensible que cette onde se propage dans le vide. La solution alors donnée était le postulat de l'existence de \textit{l'éther}, une substance à travers laquelle se propagerait la lumière, mais qui n’interagirait pas avec le reste de la matière. De nombreux travaux ont été dédiés à l'étude de ses propriétés mais n'ont menés à aucun résultat, et ce pour une bonne raison, puisque l'éther n'existe pas. Néanmoins, John H. Poynting produisit à cette époque plusieurs travaux de grande importance sur le sujet de l'énergie des ondes électromagnétiques, la pression de radiation, et même le moment angulaire de la lumière. Poynting faisait partie d'un groupe de physiciens mené par Heaviside, Fitzgerald, Lodge et Hertz qui travaillèrent à développer la théorie de Maxwell après sa mort en 1873. Nous reprenons ici la démarche de son article de 1884 \mycite{Poynting1884}, qui amène à une expression de la densité d'énergie et du flux d'énergie d'un champ électromagnétique.
 
 Considérons une distribution de charges et de courants contenus dans un volume $V$. En un court temps $dt$, une charge bougera de $\bm{v}dt$ et en utilisant l'expression de la force de Lorentz, le travail effectué sur la charge sera
 \begin{equation*}
@@ -99,8 +100,105 @@ Regardons les termes obtenus dans cette expression :
 \item Le premier terme de droite est le taux de \textit{pertes} d'énergie électromagnétique dans le champ à \textit{l'intérieur} du volume,
 \item Le deuxième terme de droite est le taux de transport de l'énergie \textit{en dehors} du volume, i.e. à travers la surface $S$,
 \end{itemize}
-On peut donc l'exprimer par:\\\'Energie \textit{perdue} par le champ = énergie \textit{gagnée} par les particules + flux d'énergie en dehors du volume. On peut directement identifier le vecteur :
+On peut donc l'exprimer par:\\\'Energie \textit{perdue} par le champ = énergie \textit{gagnée} par les particules + flux d'énergie en dehors du volume. \\On identifie alors deux quantités :
+\begin{equation}
+U=\frac{1}{2}\biggl(\epsilon_0\bm{E^2}+\frac{1}{\mu_0}\bm{B^2}\biggr) \mbox{   et   } \bm{\Pi} = \frac{1}{\mu_0}\bm{E}\times\bm{B}
+\label{Def.Poynting}
+\end{equation}
+$U$ est la \textbf{densité d'énergie} (énergie par unité de volume) et $\bm{\Pi}$ est la \textbf{densité de flux d'énergie} (énergie par unité de surface par unité de temps), connue sous le nom de \textbf{vecteur de Poynting}.
+
+De manière intéressante, si on considère un champ se propageant selon un vecteur d'onde $\bm{k}$, on voit que $\bm{\Pi}$ est parallèle à $\bm{k}$. On dit souvent que le vecteur de Poynting représente la direction de propagation de l'énergie.
+
+\subsubsection{La quantité de mouvement de la lumière}
+Ayant maintenant trouvé l'expression de l'énergie du champ électromagnétique, on s'intéresse à sa quantité de mouvement. Une réponse rapide est donnée par la relativité. Pour une particule donnée, on peut relier l'énergie, la quantité de mouvement et la masse : $E^2=p^2c^2+m^2c^4$. Si on accepte également que la lumière est constituée de photons, particules de masses nulles, on a alors directement $E = pc$.\\
+Cette explication, bien que tout à fait correcte, n'est pas très satisfaisante puisque elle fait appel à (1) un résultat de relativité et (2) le fait que la lumière soit constituée de particules appelées photons. Pourquoi faudrait-il prendre en compte la nature \textit{particulaire} de la lumière pour expliquer qu'une \textit{onde} porte de la quantité de mouvement ? Il serait plus intéressant de ne prendre en compte que les aspects ondulatoires, de la même façon que quelqu'un aurait pû le faire en 1900 (avant la relativité).
+
+Considérons ici une particule libre de charge $q$, sous l'influence d'une onde électromagnétique. Notons $z$ la direction de propagation de l'onde et $x$ la direction du champ $\bm{E}$. La trajectoire de la particule se fera majoritairement dans la direction $x$, tant que sa vitesse vérifie $v \ll c$. Si on considère l'action du champ pendant plusieurs périodes, on voit que la seule force qui ne s'annule pas d'une période à l'autre est $\bm{F}_B=\bm{v_x}\times\bm{B}$. Pendant un temps $dt$, cette force donne un moment à la particule égal à
 \begin{equation*}
-\bm{S} = \frac{1}{\mu_0}\bm{E}\times\bm{B}
+dp=\left|\bm{F}_Bdt\right|=\left|q\bm{v_x}\times\bm{B}\right|dt=qv_xBdt=\frac{qv_xEdt}{c}.
 \end{equation*}
-comme la \textbf{densité de flux d'énergie} (énergie par unité de surface par unité de temps), connu sous le nom de \textbf{vecteur de Poynting}, d'après John H. Poynting qui a dérivé son expression en 1884 \mycite{Poynting1884}. 
+Quant au travail fournit par le champ sur la particule, il vaut
+\begin{equation*}
+dW=\bm{F}_E\cdot dx=qv_xEdt.
+\end{equation*}
+On obtient donc $dp = \frac{dW}{c}$, c'est-à-dire que la quantité de mouvement obtenue par la particule vaut $1/c$ fois l'énergie fournie par l'onde. Ceci est vraie à chaque fois que l'onde rencontre une particule, c'est donc une propriété intrinsèque de l'onde. Il ne reste qu'à diviser par $c$ pour obtenir l'expression de la densité de quantité de mouvement de l'onde électromagnétique :
+\begin{equation}
+\bm{p} = \frac{\bm{\Pi}}{c^2} \mbox{, où $\bm{\Pi}$ est donné par \ref{Def.Poynting}.}
+\label{Eq.Defp}
+\end{equation}
+
+C'est l'essence de la démarche utilisée par Henri Poincaré en 1900 \mycite{poincare1900}, où il discute de la \textit{''quantité de mouvement de [...] notre fluide fictif''}. Dans ce même article, Poincaré parle de la force exercée par la lumière sur la matière, notion déjà présente chez Maxwell et même chez Kepler appelée \textit{pression électromagnétique}. On l'appelle aujourd'hui plus couramment \textit{pression de radiation}. Poynting la développa considérablement par la suite \mycite{poynting1903}, et nota que malgré sa faible valeur comparée à la force de gravitation, elle pourrait avoir d'importantes conséquences en astronomie. \`{A} raison : par exemple, si la pression de radiation n'avait pas été prise en compte lors du programme Viking, les deux sondes envoyées sur Mars auraient raté l'orbite de la planète d'environ 15000 kilomètres \mycite{Hecht2001}.
+
+Poynting, en plus de ces contributions majeures, a été le premier à envisager l'existence du moment \textit{angulaire} de la lumière. Il fit l'analogue entre une onde électromagnétique polarisée circulairement et une onde élastique de torsion, suggérant que la lumière possède un moment angulaire et peut fournir un couple à la matière \mycite{PoyntingPRSL1909}. Il propose à la fin de son article un dispositif expérimental constitué d'une série de lames quart d'ondes, permettant de démultiplier cet effet jusqu'à le rendre mesurable. Il conclut toutefois avec pessimisme que \textit{''even with such multiplications, my present experience of light forces does not give me much hope that the effect could be detected, if it has the value suggested by the mechanical model''}.
+
+Il aurait donc probablement été heureux d'apprendre qu'en 1936, R. A. Beth observa cet effet avec un schéma légèrement modifié \mycite{BethPR1936}, confirmant ainsi l'existence du moment angulaire de la lumière.
+L'expression de la densité de moment angulaire du champ est directement obtenue en utilisant la définition \ref{Eq.DefJ} et l'expression \ref{Eq.Defp} :
+\begin{equation}
+\bm{J}(\bm{r})=\bm{r}\times\bm{p}=\frac{\bm{r}\times\bm{\Pi}}{c^2} = \epsilon_0\bm{r}\times(\bm{E}\times\bm{B})
+\label{Eq.DefJEM}
+\end{equation}
+
+Nous avons donc terminé ce développement et obtenu l'expression classique du moment angulaire du champ électromagnétique. C'est la quantité qui nous intéressera pendant la majorité de cette thèse, et nous montrerons de nombreuses fois à quel point elle est essentielle tant au point de vue fondamental que dans des applications. Nous verrons par la suite que $\bm{J}$ peut être séparé en deux contributions de natures physiques très différentes, mais pour comprendre la raison de cette séparation il est nécessaire d'utiliser une approche quantique. 
+
+\section{Le moment angulaire en mécanique quantique}
+Dans cette partie nous discuterons de la définition du moment angulaire en mécanique quantique. Comme nous le verrons, cette approche est complémentaire de la précédente pour comprendre certaines des propriétés de la lumière portant du moment angulaire. 
+
+\subsection{Symétries et lois de conservation}
+
+Dans la partie précédente, nous avons utilisé les lois de la mécanique classique pour définir la notion de moment angulaire. Nous avons vu que comme la masse ou l'énergie, $J$ était une quantité conservée. En mécanique classique, une loi de conservation est presque toujours le point de départ d'un raisonnement. Au contraire, il est remarquable qu'en mécanique les lois de conservation sont profondément reliées aux principes de symétrie des systèmes. 
+
+\subsubsection{Définition de la symétrie d'un système}
+Nous commençons donc par étudier la question de la symétrie d'un système. Notons $\ket{\psi_1}$ l'état de départ du système et $\ket{\psi_2}$ l'état après un temps $t$. On peut noter $\hat{U}$ l'opérateur définit par :
+\begin{equation*}
+\ket{\psi_2}=\hat{U}(t,0)\ket{\psi_1},
+\end{equation*}
+c'est à dire l'opération de faire évoluer le système entre 0 et $t$.
+
+Imaginons maintenant que l'on effectue un certain nombre d'opérations sur le système. Notons $\hat{Q}$ l'ensemble de ces opérations et imaginons que cet opérateur laisse \textit{la physique du système inchangée}. On peut par exemple penser à $H_2$, laissé inchangé par l'opérateur de réflexion par rapport à un plan, ou bien à un système à symétrie sphérique, où une rotation d'angle fini ne change pas la physique. Dans un système à deux électrons, on peut aussi penser à l'opération d'interchanger les deux électrons. \\
+Une façon d'écrire cette propriété de ''garder la physique inchangée'' est la suivante : si j'applique $\hat{Q}$ au système, alors $\ket{\psi_1}$ est transformé en $\ket{\psi'_1}=\hat{Q}\ket{\psi_1}$, et $\ket{\psi'_2}=\hat{Q}\ket{\psi_2}$. Mais la physique est inchangée par $\hat{Q}$, si on attend un temps $t$ on obtient :
+\begin{align*}
+\ket{\psi'_2}&=\hat{U}\ket{\psi'_1}, \mbox{ qu'on peut réécrire}\\
+\hat{Q}\ket{\psi_2}&=\hat{U}\hat{Q}\ket{\psi_1}, \mbox{ ou encore}\\
+\hat{Q}\hat{U}\ket{\psi_1}&=\hat{U}\hat{Q}\ket{\psi_1}.
+\end{align*}
+On obtient donc une relation de commutation entre $\hat{U}$ et $\hat{Q}$. De plus, on peut montrer que pour un temps infinitésimal $dt$, on a $\hat{U}(t+dt,t) = 1-i\hat{H}dt/\hbar$, où $\hat{H}$ est l'hamiltonien du système. On conclut donc :
+\begin{equation*}
+[\hat{H},\hat{Q}]=0,
+\end{equation*}
+qui est la \textit{définition} de la symétrie d'un système physique d'hamitonien $\hat{H}$ par rapport à l'opérateur $\hat{Q}$.
+
+\subsubsection{Relation entre symétrie et loi de conservation}
+Supposons maintenant qu'une fois l'opérateur $\hat{Q}$ appliqué à notre état, on obtienne un état qui soit \textit{physiquement le même}. C'est-à-dire que $\hat{Q}\ket{\psi_0}$ est égal à $\ket{\psi_0}$ à un facteur de phase près qu'on note $e^{i\delta}$. Après un temps $t$, on obtient $\ket{\psi_2}$ à qui on peut appliquer $\hat{Q}$ :
+\begin{align*}
+\hat{Q}\ket{\psi_2}&=\hat{Q}\hat{U}(t,0)\ket{\psi_1}=\hat{U}(t,0)\hat{Q}\ket{\psi_1} \mbox{ en utilisant la symétrie du système,}\\
+		&=\hat{U}(t,0)e^{i\delta}\ket{\psi_1}=e^{i\delta}\ket{\psi_2}.
+\end{align*}
+
+On vient de vérifier qui si la propriété de symétrie est vraie initialement, elle est vraie à n'importe quel autre instant, ce qui ressemble fortement à \textit{une loi de conservation}. C'est en fait exactement le cas : si le système est initialement dans un état à caractère symétrique \textbf{et} que l'hamiltonien du système est symétrique par rapport à cette opération, \textbf{alors} l'état du système aura ce même caractère symétrique à tout instant. C'est de cette relation que découlent les lois de conservation en mécanique quantique, particulièrement utiles puisqu'il n'est pas nécessaire de connaître tout le détail de l'évolution du système au cours du temps.
+
+\subsubsection{La parité et l'opérateur inversion}
+Commençons par appliquer notre résultat au cas de l'opérateur inversion $\hat{P}$, définit par l'opérateur qui change $(x,y,z)$ en $(-x,-y,-z)$. Supposons que l'on ait un état symétrique par rapport à $\hat{P}$ : 
+\begin{equation*}
+\hat{P}\ket{\psi_1} = e^{i\delta}\ket{\psi_1}.
+\end{equation*}
+Si on applique deux fois l'opérateur, on obtient bien sûr l'état de départ
+\begin{equation*}
+\ket{\psi_1} = \hat{P}\cdot\hat{P}\ket{\psi_1} = (e^{i\delta})^2\ket{\psi_1}.
+\end{equation*}
+On en déduit que $(e^{i\delta})^2=1$, c'est à dire $e^{i\delta}=\pm1$. On voit donc que seulement deux cas sont possibles :
+\begin{equation*}
+\hat{P}\ket{\psi_1} = \ket{\psi_1} \mbox{ ou } \hat{P}\ket{\psi_1} = -\ket{\psi_1}.
+\end{equation*}
+
+C'est une propriété purement quantique : si $\hat{P}\ket{\psi_1}= \ket{\psi_1}$, on dit que $\ket{\psi_1}$ est de parité \textit{paire}, et si $\hat{P}\ket{\psi_1}= -\ket{\psi_1}$, ce qui n'est pas possible classiquement, on dit que $\ket{\psi_1}$ est de parité \textit{impaire}. $\hat{P}$ est également appelé opérateur parité. Notons que la grande majorité des lois physiques sont symétriques par rapport à $\hat{P}$. En fait, seule l'interaction faible ne respecte pas cette propriété. Pour tout ce qui va nous intéresser par la suite, on considérera donc toujours que l'hamiltonien de notre système est symétrique par rapport à $\hat{P}$. On en conclut que si le système a une parité définie à un instant, alors il gardera la même parité. C'est ce qu'on appelle \textit{la conservation de la parité}, très importante dans les interactions lumière-matière.
+
+\subsubsection{Le moment angulaire et l'opérateur rotation}
+Enfin, nous pouvons appliquer la même démarche cette fois en utilisant l'opérateur rotation $\hat{R}_z(\theta)$ définit comme la rotation du système d'un angle $\theta$ autour de l'axe $z$. Dans un problème à symétrie cylindrique, un tel opérateur laisse le système inchangé, à un terme de phase près :
+\begin{equation*}
+\hat{R}_z(\theta)\ket{\psi_1}=e^{i\delta}\ket{\psi_1}.
+\end{equation*}
+On peut montrer \mycite{cohen} que $\delta$ est nécessairement proportionnel à $\theta$. Ainsi,
+\begin{equation*}
+\hat{R}_z(\theta)\ket{\psi_1}=e^{im\theta}\ket{\psi_1},
+\end{equation*}
+où $m$ est un nombre réel.
