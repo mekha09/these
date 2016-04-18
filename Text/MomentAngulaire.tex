@@ -38,6 +38,7 @@ Ce qui nous fournit l'expression du couple en fonction de la force appliquée :
 \end{equation*}
 
 \subsubsection{Moment angulaire}
+\label{AM_classique}
 Cette analogie nous amène à définir une dernière quantité. Pour une translation linéaire, on sait que la force externe au système est égale à $d(m\bm{r})/dt$, c'est à dire au taux de variation d'une quantité $\bm{p}$ appelée moment total de l'objet. De même, le couple appliqué au système est égal au taux de variation de $J$, appelé \textit{moment angulaire} de l'objet. On peut effectivement écrire :
 \begin{equation}
 \tau = xF_y-yF_x = xm(\rmd^2y/\rmd t^2)-ym(\rmd^2x/\rmd t^2) = \frac{d}{\rmd t}\biggl[xm\biggl(\frac{\rmd y}{\rmd t}\biggr) - ym\biggl(\frac{\rmd x}{\rmd t}\biggr)\biggr].
@@ -68,7 +69,7 @@ Pour terminer, regardons à nouveau l'expression \ref{Eq.DefTauL} : la variation
 Ce résultat est très important puisqu'il nous donne \textit{la loi de conservation du moment angulaire} : si aucun couple extérieur n'est appliqué à un système de particules, alors son moment angulaire reste constant.
 
 
-\subsection{Le cas de la lumière}
+\subsection{Les propriétés mécaniques de la lumière}
 \subsubsection{L'énergie du champ électromagnétique}
 La partie précédente s'intéressait au moment angulaire porté par la matière. Cette matière est également capable d'émettre des radiations lumineuses, et en se faisant peut perdre de l'énergie. Pour respecter la conservation de l'énergie, il est donc nécessaire que la lumière, et plus généralement les ondes électromagnétiques, portent de l'énergie. C'est un sujet qui longtemps animé les débats à la fin du XIXème siècle, principalement car il était incompréhensible que cette onde se propage dans le vide. La solution alors donnée était le postulat de l'existence de \textit{l'éther}, une substance à travers laquelle se propagerait la lumière, mais qui n’interagirait pas avec le reste de la matière. De nombreux travaux ont été dédiés à l'étude de ses propriétés mais n'ont menés à aucun résultat, et ce pour une bonne raison, puisque l'éther n'existe pas. Néanmoins, John H. Poynting produisit à cette époque plusieurs travaux de grande importance sur le sujet de l'énergie des ondes électromagnétiques, la pression de radiation, et même le moment angulaire de la lumière. Poynting faisait partie d'un groupe de physiciens mené par Heaviside, Fitzgerald, Lodge et Hertz qui travaillèrent à développer la théorie de Maxwell après sa mort en 1873. Nous reprenons ici la démarche de son article de 1884 \mycite{Poynting1884}, qui amène à une expression de la densité d'énergie et du flux d'énergie d'un champ électromagnétique.
 
@@ -237,7 +238,7 @@ où $\bm{\hat{R}}$ et $\bm{\hat{P}}$ sont les observables de position et d'impul
 
 Nous sommes partis d'un moment angulaire classique pour obtenir les relations \ref{Eq.CommutJ}. En fait, elles sont bien plus générales que cela : elles définissent un opérateur moment angulaire en mécanique quantique, même s'il n'a pas forcément d'équivalent en mécanique classique.
 
-Quel est alors leur rapport avec la symétrie par rotation étudiée plus haut ? On peut en fait montrer qu'elle sont une conséquence directe de ces symétries. En effet, il est possible d'écrire la rotation $\hat{R}_z(\rmd\theta)$ d'angle infinitésimal $\rmd\theta$ comme\footnote{Dans le chapitre $\text{B}_{\text{VI}}$ de \mycite{cohen}, le signe est inversé : $\hat{R}_z(\rmd\theta) = 1-\frac{i}{\hbar}\rmd \theta \hat{J}_z$. Cela vient de notre définition de $\hat{R}_z(\theta)$ : il est possible d'effectuer une rotation sur les coordonnées du système (on parle de rotation géométrique) ou bien sur l'état du système (on a alors un opérateur rotation agissant sur l'espace d'état). Cohen-Tannoudji démontre leur correspondance et particulièrement que la loi de groupe est conservée lors du passage de l'un à l'autre. La seule différence réside dans le signe de $\theta$, qui est inversé lors du passage de l'un à l'autre.} :
+Quel est alors leur rapport avec la symétrie par rotation étudiée plus haut ? On peut en fait montrer qu'elle sont une conséquence directe de ces symétries. En effet, il est possible d'écrire la rotation $\hat{R}_z(\rmd\theta)$ d'angle infinitésimal $\rmd\theta$ comme\footnote{Dans le chapitre $\text{B}_{\text{VI}}$ de \mycite{cohen}, le signe est inversé : $\hat{R}_z(\rmd\theta) = 1-\frac{i}{\hbar}\rmd \theta \hat{J}_z$. Cela vient de notre définition de $\hat{R}_z(\theta)$ : on peut choisir d'effectuer une rotation sur les coordonnées du système (on parle de rotation géométrique) ou bien sur l'état du système (on a alors un opérateur rotation agissant sur l'espace d'état). Cohen-Tannoudji démontre leur correspondance et particulièrement que la loi de groupe est conservée lors du passage de l'un à l'autre. La seule différence réside dans le signe de $\theta$, qui est inversé lors du passage de l'un à l'autre.} :
 \begin{equation*}
 \hat{R}_z(\rmd\theta) = 1+\frac{i}{\hbar}\rmd \theta \hat{J}_z.
 \end{equation*}
@@ -252,3 +253,56 @@ On obtient donc :
 \hat{J}_z\ket{\psi_1} = m\hbar\ket{\psi_1}
 \end{equation*}
 En d'autres mots, si on applique $\hat{J}_z$ sur un état de moment angulaire selon z défini, alors on obtient la quantité de moment angulaire $m\hbar$. 
+
+\subsection{Moment angulaire de spin et moment angulaire orbital}
+Un moment angulaire peut être défini en mécanique quantique à partir des relations \ref{Eq.CommutJ}, sans nécessairement que ce moment angulaire ait un équivalent en mécanique classique. \`A partir d'ici, nous définirons un moment angulaire \textbf{orbital} comme un moment ayant un équivalent en mécanique classique, et un moment angulaire \textbf{de spin} comme un effet purement quantique. Nous les noterons respectivement $\bm{\hat{L}}$ et $\bm{\hat{S}}$. On peut alors montrer en utilisant les règles d'additions des moments angulaires (Chapitre X de \mycite{cohen}) que le moment angulaire total du système est donné par :
+\begin{equation}
+\bm{\hat{J}}=\bm{\hat{L}}+\bm{\hat{S}}.
+\label{Eq.JegalLplusS}
+\end{equation}
+L'existence de moments angulaires n'ayant pas d'équivalent classique est liée au concept de \textit{spin} d'une particule, d'où le nom de $\bm{\hat{S}}$. Le concept de spin a été un des résultats les plus intéressants et les plus compliqués à obtenir de la physique quantique. En 1913, le modèle de Bohr semblait pouvoir expliquer tous les problèmes physiques d'alors. Cependant, on assista à l'apparition de plusieurs phénomènes inexplicables voire paradoxaux, tels que l'effet Zeeman anomal ou l'expérience de Stern et Gerlach. Il était alors difficile d'imaginer que tous ces phénomènes aient une explication commune et en apparence très simple : il existe une grandeur purement quantique, le spin. Cette idée fut proposée par G. Uhlenbeck et S. Goudsmit en 1925, alors étudiants de P. Ehrenfest. 
+
+Pour décrire l'état d'un système et donc écrire sa fonction d'onde, il faut rajouter aux coordonnées spatiales un quatrième paramètre - le spin du système. Puisqu'il ne dépend pas des coordonnées spatiales, $\bm{\hat{S}}$ est également appelé moment angulaire \textit{intrinsèque}. C'est un opérateur qui n'agit pas sur les coordonnées spatiales, contrairement à $\bm{\hat{L}}$. 
+Nous verrons qu'en traitant le champ électromagnétique comme un système quantique, il est possible d'exhiber un $\bm{\hat{S}}$ et un $\bm{\hat{L}}$, et c'est leur étude qui va nous intéresser tout au long de cette thèse.
+
+\section{Séparation entre moment orbital et moment de spin pour la lumière}
+\subsection{Le cas du champ classique}
+Nous avons vu dans la partie \ref{AM_classique} que le moment angulaire d'un champ classique s'écrivait 
+\begin{equation*}
+\bm{J}=\int{\rmd\bm{r}\epsilon_0\bm{r}\times(\bm{E}\times\bm{B})}.
+\end{equation*} 
+Nous aimerions pouvoir identifier deux contributions à $\bm{J}$, on pourrait alors écrire $\bm{J}=\bm{L}+\bm{S}$. Pour y parvenir, nous séparons $\bm{E}$ et $\bm{B}$ en leur partie longitudinale et transverse. Un champ longitudinal $\bm{U}(\bm{r})$ est défini par 
+\begin{align*}
+\bm{\nabla}\times\bm{U_{\parallel}}(\bm{r})=0,
+\end{align*}
+alors qu'un champ transverse vérifie 
+\begin{align*}
+\bm{\nabla}\times\bm{U_{\bot}}(\bm{r})=0,
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%\subsection{Le moment angulaire du photon}
+%\subsubsection{La quantification du champ électromagnétique}
+%Pour traiter le champ électromagnétique comme un système quantique, il est nécessaire de passer d'une description continue à un  ensemble discret de variables. Par exemple, on peut partir d'un potentiel vecteur $\bm{A}(\bm{r},t)$ respectant la condition de transversalité $\mathrm{div}\bm{A}=0$ et le décomposer comme une somme d'ondes planes de vecteur d'onde $\bm{k}_i$, où $i$ parcourt un espace discret infini. \`A partir de cette décomposition, on peut calculer l'hamiltonien du système qui se présente sous la forme d'une somme d'oscillateurs harmoniques 1D. Il reste ensuite à passer à des variables canoniques pour quantifier le système (voir par exemple le chapitre I de \mycite{Landau1982a}). Dans cette description, l'énergie et la quantité de mouvement du champ sont donnés par :
+%\begin{align*}
+%E~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\omega}, \\
+%P~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\bm{k}}
+%\end{align*}
+%
+%Pour expliquer ces expressions, on introduit le concept de photon, ou quantum de radiation électromagnétique : le champ est vu comme un ensemble de particules ayant chacune une énergie $\hbar\omega$ et une quantité de mouvement $\hbar\bm{k}$. $N_{\bm{k},\alpha}$, appelé \textit{nombre d'occupation}, est alors vu comme le nombre de photons ayant la quantité de mouvement $\bm{k}$ et la polarisation $e^{(\alpha)}$. Nous verra plus tard la définition de la polarisation du photon, et en particulier qu'elle est analogue à son spin. \par
+%On peut également écrire la fonction d'onde du photon, mais il faut effectuer une distinction importante avec le cas d'une particule telle qu'un atome. En effet, le photon se déplace à la vitesse de la lumière, ce qui oblige à utiliser une théorie relativiste de la mécanique quantique. Dans ce cas, la fonction d'onde ne peut pas être vue comme l'amplitude de probabilité de trouver le photon à un endroit donné. En effet, on vient de voir que l'énergie du photon s'écrit $E = \hbar\omega = \hbar\left|\bm{k}\right|\rmc=\left|\bm{p}\right|\rmc$. On peut alors écrire l'incertitude sur la position du photon comme :
+%\begin{equation*}
+%\Delta x \sim \hbar\rmc/E = \hbar/p.
+%\end{equation*}
+%$\Delta x$ est donc de l'ordre de grandeur de la longueur de de Broglie de la particule, soit dans le cas du photon la longueur d'onde de la lumière $\lambda$. On voit donc que la position d'un photon n'a de sens que si le problème est grand comparé à $\lambda$, ce qui revient en fait à passer à la limite classique.
