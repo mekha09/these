@@ -265,23 +265,45 @@ L'existence de moments angulaires n'ayant pas d'équivalent classique est liée 
 Pour décrire l'état d'un système et donc écrire sa fonction d'onde, il faut rajouter aux coordonnées spatiales un quatrième paramètre - le spin du système. Puisqu'il ne dépend pas des coordonnées spatiales, $\bm{\hat{S}}$ est également appelé moment angulaire \textit{intrinsèque}. C'est un opérateur qui n'agit pas sur les coordonnées spatiales, contrairement à $\bm{\hat{L}}$. 
 Nous verrons qu'en traitant le champ électromagnétique comme un système quantique, il est possible d'exhiber un $\bm{\hat{S}}$ et un $\bm{\hat{L}}$, et c'est leur étude qui va nous intéresser tout au long de cette thèse.
 
-\section{Séparation entre moment orbital et moment de spin pour la lumière}
+\section{Séparation entre moment orbital et moment de spin de la lumière}
 \subsection{Le cas du champ classique}
 Nous avons vu dans la partie \ref{AM_classique} que le moment angulaire d'un champ classique s'écrivait 
-\begin{equation*}
+\begin{equation}
 \bm{J}=\int{\rmd\bm{r}\epsilon_0\bm{r}\times(\bm{E}\times\bm{B})}.
-\end{equation*} 
+\label{Eq.JClassEM}
+\end{equation} 
 Nous aimerions pouvoir identifier deux contributions à $\bm{J}$, on pourrait alors écrire $\bm{J}=\bm{L}+\bm{S}$. Pour y parvenir, nous séparons $\bm{E}$ et $\bm{B}$ en leur partie longitudinale et transverse. Un champ longitudinal $\bm{U}(\bm{r})$ est défini par 
 \begin{align*}
 \bm{\nabla}\times\bm{U_{\parallel}}(\bm{r})=0,
 \end{align*}
 alors qu'un champ transverse vérifie 
 \begin{align*}
-\bm{\nabla}\times\bm{U_{\bot}}(\bm{r})=0,
+\bm{\nabla}\cdot\bm{U_{\bot}}(\bm{r})=0.
 \end{align*}
+L'équation de Maxwell-Thomson nous donne directement que le champ magnétique est purement transverse : $\bm{B}=\bm{B_{\bot}}$. On écrit ensuite $\bm{E}=\bm{E_{\parallel}}+\bm{E_{\bot}}$, et en utilisant \ref{Eq.JClassEM} on peut calculer la contribution du champ électrique transverse et du champ longitudinal (voir pp. 45-48 de \mycite{Cohen1997}) :
+\begin{equation*}
+\begin{aligned}[c]
+\bm{J_{\parallel}}&=\int{\rmd\bm{r}\epsilon_0\bm{r}\times(\bm{E_{\parallel}}\times\bm{B})} \\
+&=\int{\rmd\bm{r}\rho(\bm{r}\times\bm{A}_{\bot})}
+\end{aligned}
+\qquad
+\begin{aligned}[c]
+\bm{J_{\bot}}&=\int{\rmd\bm{r}\epsilon_0\bm{r}\times(\bm{E_{\bot}}\times\bm{B})}\\
+&=\epsilon_0\int{\rmd\bm{r}\bigl[\sum_{a=x,y,z} \bm{E^a_{\bot}}(\bm{r}\times\bm{\nabla})\bm{A^a_{\bot}}+\bm{E_{\bot}}\times\bm{A_{\bot}}\bigr]}
+\end{aligned}
+\end{equation*} 
 
-
-
+Où l'on a noté $\bm{A}_{\bot}$ la composante transverse du potentiel vecteur du champ. On voit que $\bm{J_{\parallel}}$ dépend de la densité de charge $\rho$, elle est donc reliée aux particules présentes dans le volume. Par contre, $\bm{J_{\bot}}$ ne dépend que du champ électromagnétique. On remarque que le premier terme dépend explicitement de $\bm{r}$ alors que le second dépend de la nature vectorielle du champ (et donc de sa polarisation). Par analogie avec les opérateurs quantiques, on identifie donc une partie orbitale et une partie de spin :
+\begin{equation*}
+\begin{aligned}[c]
+\bm{L}&=\epsilon_0\int{\rmd\bm{r}\sum_{a=x,y,z} \bm{E^a_{\bot}}(\bm{r}\times\bm{\nabla})\bm{A^a_{\bot}}}
+\end{aligned}
+\qquad
+\begin{aligned}[c]
+\bm{S}&=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}
+\end{aligned}
+\end{equation*} 
+ 
 
 
 
