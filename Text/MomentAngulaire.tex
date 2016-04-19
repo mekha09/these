@@ -262,7 +262,7 @@ Un moment angulaire peut être défini en mécanique quantique à partir des rel
 \end{equation}
 L'existence de moments angulaires n'ayant pas d'équivalent classique est liée au concept de \textit{spin} d'une particule, d'où le nom de $\bm{\hat{S}}$. Le concept de spin a été un des résultats les plus intéressants et les plus compliqués à obtenir de la physique quantique. En 1913, le modèle de Bohr semblait pouvoir expliquer tous les problèmes physiques d'alors. Cependant, on assista à l'apparition de plusieurs phénomènes inexplicables voire paradoxaux, tels que l'effet Zeeman anomal ou l'expérience de Stern et Gerlach. Il était alors difficile d'imaginer que tous ces phénomènes aient une explication commune et en apparence très simple : il existe une grandeur purement quantique, le spin. Cette idée fut proposée par G. Uhlenbeck et S. Goudsmit en 1925, alors étudiants de P. Ehrenfest. 
 
-Pour décrire l'état d'un système et donc écrire sa fonction d'onde, il faut rajouter aux coordonnées spatiales un quatrième paramètre - le spin du système. Puisqu'il ne dépend pas des coordonnées spatiales, $\bm{\hat{S}}$ est également appelé moment angulaire \textit{intrinsèque}. C'est un opérateur qui n'agit pas sur les coordonnées spatiales, contrairement à $\bm{\hat{L}}$. 
+Pour décrire l'état d'un système et donc écrire sa fonction d'onde, il faut rajouter aux coordonnées spatiales un quatrième paramètre - la variable de spin. Puisqu'il ne dépend pas des coordonnées spatiales, $\bm{\hat{S}}$ est également appelé moment angulaire \textit{intrinsèque}. C'est un opérateur qui n'agit pas sur les coordonnées spatiales, contrairement à $\bm{\hat{L}}$. 
 Nous verrons qu'en traitant le champ électromagnétique comme un système quantique, il est possible d'exhiber un $\bm{\hat{S}}$ et un $\bm{\hat{L}}$, et c'est leur étude qui va nous intéresser tout au long de cette thèse.
 
 \section{Séparation entre moment orbital et moment de spin de la lumière}
@@ -293,8 +293,8 @@ L'équation de Maxwell-Thomson nous donne directement que le champ magnétique e
 \end{aligned}
 \end{equation*} 
 
-Où l'on a noté $\bm{A}_{\bot}$ la composante transverse du potentiel vecteur du champ. On voit que $\bm{J_{\parallel}}$ dépend de la densité de charge $\rho$, elle est donc reliée aux particules présentes dans le volume. Par contre, $\bm{J_{\bot}}$ ne dépend que du champ électromagnétique. On remarque que le premier terme dépend explicitement de $\bm{r}$ alors que le second dépend de la nature vectorielle du champ (et donc de sa polarisation). Par analogie avec les opérateurs quantiques, on identifie donc une partie orbitale et une partie de spin :
-\begin{equation*}
+Où l'on a noté $\bm{A}_{\bot}$ la composante transverse du potentiel vecteur du champ. On voit que $\bm{J_{\parallel}}$ dépend de la densité de charge $\rho$, elle est donc reliée aux particules présentes dans le volume. Par contre, $\bm{J_{\bot}}$ ne dépend que du champ électromagnétique. On remarque que le premier terme dépend explicitement de $\bm{r}$ alors que le second dépend de la nature vectorielle du champ (et donc de sa polarisation) mais pas du choix de l'origine des coordonnées du système. Par analogie avec les opérateurs quantiques, on identifie donc une partie orbitale et une partie de spin :
+\begin{equation}
 \begin{aligned}[c]
 \bm{L}&=\epsilon_0\int{\rmd\bm{r}\sum_{a=x,y,z} \bm{E^a_{\bot}}(\bm{r}\times\bm{\nabla})\bm{A^a_{\bot}}}
 \end{aligned}
@@ -302,29 +302,72 @@ Où l'on a noté $\bm{A}_{\bot}$ la composante transverse du potentiel vecteur d
 \begin{aligned}[c]
 \bm{S}&=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}
 \end{aligned}
-\end{equation*} 
+\label{SeparationJS_classique}
+\end{equation} 
  
+Ces résultats sont importants puisqu'ils nous permettront par la suite de chercher une façon de réaliser expérimentalement des situations dans lesquelles le moment angulaire de spin et/ou orbital sont contrôlés. Nous chercherons une façon de les contrôler à l'échelle macroscopique, mais pour donner véritablement du sens à cette séparation entre $\bm{\hat{S}}$ et $\bm{\hat{L}}$, il est nécessaire de remonter à l'échelle microscopique, c'est-à-dire celle du photon. Il est important de savoir si ces quantités sont réellement des quantités physiques pour le photon - en d'autres mots, nous allons vérifier si on peut trouver deux opérateurs quantiques qui commutent (donc mesurables en même temps) et qui correspondent réellement à un moment angulaire.
 
 
 
+\subsection{Le moment angulaire du photon}
+\subsubsection{La quantification du champ électromagnétique}
+Pour étudier ce problème au niveau du photon, il est nécessaire de traiter le champ électromagnétique comme un système quantique. En d'autres termes, on veut passer du problème classique décrit plus haut à un problème quantifié décrit par un ensemble discret de variables. Cette quantification peut être effectuée de plusieurs façons différentes, on pourra par exemple se rapporter à \mycite{Landau1982a} ou \mycite{Cohen1997} pour une description très complète et rigoureuse de ce problème. On peut également citer l'article de \mycite{VanEnk1994} qui traite exactement du problème qui nous intéresse. N'ayant pas la prétention d'écrire un ouvrage d'électrodynamique quantique, nous nous contenterons d'expliquer la démarche.
 
+Pour commencer, on choisit une variable classique, par exemple le potentiel vecteur $\bm{A}(\bm{r},t)$. Il respecte la condition de transversalité $\nabla\cdot\bm{A}=0$. Pour faire apparaître des paramètres discrets, on considère un volume $V$ grand mais d'extension finie. $\bm{A}$ peut alors s'écrire comme une somme de modes transverses $\bm{F}_\lambda$, qui sont solutions de l'équation d'onde
+\begin{equation*}
+\nabla^2\bm{F}_\lambda=-k^2\bm{F}_\lambda,
+\end{equation*}
+et respectent aussi la conditions de transversalité $\nabla\cdot\bm{F}_\lambda=0$.\\
+$\lambda$ est l'index du mode, et est en fait défini comme les valeurs propres des opérateurs qui commutent et qui ont $\bm{F}_\lambda$ comme fonction propre. Par exemple, on peut choisir pour $\bm{F}_\lambda$ les ondes planes progressives. Pour les décrire complètement, on a besoin de quatre paramètres, par exemple $\lambda = \{k_x, k_y, k_z, \alpha\}$, où $\bm{k}$ est le vecteur d'onde et $\alpha=\pm1$ la polarisation de l'onde. De manière générale on écrit :
+\begin{equation}
+\bm{A}=\sum_{\lambda}{a_{\lambda}\bm{F}_\lambda+a^*_{\lambda}\bm{F}_\lambda},
+\label{A_decomp_Flambda}
+\end{equation}
+où $a_{\lambda}$ est une amplitude complexe sans dimension. 
 
+La quantification s'effectue alors de la même façon que pour l'oscillateur harmonique, où $a_{\lambda}$ et $a^*_{\lambda} = a^{\dag}_{\lambda}$ deviennent respectivement les opérateurs de création et d'annihilation. Si on choisit encore une fois $\lambda = \{\bm{k}, \alpha\}$, l'énergie et la quantité de mouvement du champ sont donnés par :
+\begin{align*}
+E~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\omega}, \\
+P~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\bm{k}}
+\end{align*}
+Ces expression permettent d'introduire le concept de photon, ou quantum de radiation électromagnétique : le champ est vu comme un ensemble de particules ayant chacune une énergie $\hbar\omega$ et une quantité de mouvement $\hbar\bm{k}$. $N_{\bm{k},\alpha}$, appelé \textit{nombre d'occupation}, est alors vu comme le nombre de photons ayant la quantité de mouvement $\bm{k}$ et la polarisation $e^{(\alpha)}$. Nous verrons plus tard la définition de la polarisation du photon, et en particulier qu'elle est analogue à son spin. 
 
+\fbox{\begin{minipage}{\textwidth}
+\textbf{Remarque :} On peut également calculer la fonction d'onde du photon, mais il faut effectuer une distinction importante avec le cas d'une particule telle qu'un atome. En effet, le photon se déplace à la vitesse de la lumière, ce qui oblige à utiliser une théorie relativiste de la mécanique quantique. Dans ce cas, la fonction d'onde ne peut pas être vue comme l'amplitude de probabilité de trouver le photon à un endroit donné. En effet, on vient de voir que l'énergie du photon s'écrit $E = \hbar\omega = \hbar\left|\bm{k}\right|\rmc=\left|\bm{p}\right|\rmc$. On peut alors écrire l'incertitude sur la position du photon comme :
+\begin{equation*}
+\Delta x \sim \hbar\rmc/E = \hbar/p.
+\end{equation*}
+$\Delta x$ est donc de l'ordre de grandeur de la longueur de de Broglie de la particule, soit dans le cas du photon la longueur d'onde de la lumière $\lambda$. On voit donc que la position d'un photon n'a de sens que si le problème est grand comparé à $\lambda$, ce qui revient en fait à passer à la limite classique.
+\end{minipage}}
 
+Nous revenons maintenant au cas général où les $\bm{F}_\lambda$ ne sont pas spécifiés. \`A partir de l'expression de $\bm{A}$ (\ref{A_decomp_Flambda}) où l'on remplace $a^*_{\lambda}$ par $a^{\dag}_{\lambda}$, on peut directement calculer les champs transverses électrique $\bm{E}$ et magnétique $\bm{B}$. Ces champs sont devenus des opérateurs qui agissent sur l'espace de Fock des états du champ. Ces états décrivent un nombre quelconque de photons et s'écrivent de cette façon :
+\begin{equation}
+\ket{\{N_{\lambda}\}}=\prod_{\lambda}{\frac{(a^{\dag}_{\lambda})^{N_{\lambda}}}{(N_{\lambda}!)^{1/2}}}\ket{0,0,\ldots},
+\label{fockstates}
+\end{equation}
+où $\ket{0,0,..}$ est l'état vide de photon.
 
-%
-%
-%\subsection{Le moment angulaire du photon}
-%\subsubsection{La quantification du champ électromagnétique}
-%Pour traiter le champ électromagnétique comme un système quantique, il est nécessaire de passer d'une description continue à un  ensemble discret de variables. Par exemple, on peut partir d'un potentiel vecteur $\bm{A}(\bm{r},t)$ respectant la condition de transversalité $\mathrm{div}\bm{A}=0$ et le décomposer comme une somme d'ondes planes de vecteur d'onde $\bm{k}_i$, où $i$ parcourt un espace discret infini. \`A partir de cette décomposition, on peut calculer l'hamiltonien du système qui se présente sous la forme d'une somme d'oscillateurs harmoniques 1D. Il reste ensuite à passer à des variables canoniques pour quantifier le système (voir par exemple le chapitre I de \mycite{Landau1982a}). Dans cette description, l'énergie et la quantité de mouvement du champ sont donnés par :
-%\begin{align*}
-%E~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\omega}, \\
-%P~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\bm{k}}
-%\end{align*}
-%
-%Pour expliquer ces expressions, on introduit le concept de photon, ou quantum de radiation électromagnétique : le champ est vu comme un ensemble de particules ayant chacune une énergie $\hbar\omega$ et une quantité de mouvement $\hbar\bm{k}$. $N_{\bm{k},\alpha}$, appelé \textit{nombre d'occupation}, est alors vu comme le nombre de photons ayant la quantité de mouvement $\bm{k}$ et la polarisation $e^{(\alpha)}$. Nous verra plus tard la définition de la polarisation du photon, et en particulier qu'elle est analogue à son spin. \par
-%On peut également écrire la fonction d'onde du photon, mais il faut effectuer une distinction importante avec le cas d'une particule telle qu'un atome. En effet, le photon se déplace à la vitesse de la lumière, ce qui oblige à utiliser une théorie relativiste de la mécanique quantique. Dans ce cas, la fonction d'onde ne peut pas être vue comme l'amplitude de probabilité de trouver le photon à un endroit donné. En effet, on vient de voir que l'énergie du photon s'écrit $E = \hbar\omega = \hbar\left|\bm{k}\right|\rmc=\left|\bm{p}\right|\rmc$. On peut alors écrire l'incertitude sur la position du photon comme :
-%\begin{equation*}
-%\Delta x \sim \hbar\rmc/E = \hbar/p.
-%\end{equation*}
-%$\Delta x$ est donc de l'ordre de grandeur de la longueur de de Broglie de la particule, soit dans le cas du photon la longueur d'onde de la lumière $\lambda$. On voit donc que la position d'un photon n'a de sens que si le problème est grand comparé à $\lambda$, ce qui revient en fait à passer à la limite classique.
+\subsubsection{Opérateurs de moment angulaires} 
+Ayant défini les états du champs, nous cherchons maintenant quels opérateurs peuvent correspondre au moment angulaire de spin et orbital. On pourrait commencer par étudier les opérateurs de la mécanique quantique pour le moment angulaire orbital et de spin : pour une particule de spin 1 telle que le photon, ils s'écrivent :
+\begin{align}
+\hat{\bm{L}}~=~-i\hbar(\bm{r}\times\bm{\nabla}),\\
+(\hat{\bm{S}}_k)_{ij}~=~-i\hbar\epsilon_{ijk},
+\label{defLS_hat}
+\end{align} 
+où $i,j,k=x,y,z$ et $\epsilon_{ijk}$ est le symbole de Levi-Civita.
+Toutefois, un problème se pose ici : on peut montrer qu'une fois appliqués aux modes transverses $\bm{F}_\lambda$, $\hat{\bm{L}}$ et $\hat{\bm{S}}$ ne conservent pas la transversalité du champ. $\hat{\bm{L}}\ket{\bm{F}_\lambda}$ et $\hat{\bm{S}}\ket{\bm{F}_\lambda}$ ne représentent donc plus des états physiques du champ. \textsl{On peut dire que seul le moment angulaire total du photon a un sens, ce qui est directement relié au fait qu'il se déplace à la vitesse de la lumière : le spin est en effet défini comme un moment \textit{intrinsèque}, c'est donc le moment angulaire de la particule dans le référentiel dans lequel elle au repos. Mais on sait bien qu'un tel référentiel n'existe pas pour le photon, qui se déplace à $\rmc$.}
+
+Toutefois, l'état du champ n'est pas strictement représenté par les fonctions $\ket{\bm{F}_\lambda}$ mais par les états de l'espace de Fock (\ref{fockstates}). $\hat{\bm{L}}$ et $\hat{\bm{S}}$ n'agissent donc pas le bon espace - il nous faut chercher des opérateurs agissant dans l'espace de Fock. De la même manière qu'on a obtenu l'expression de $\bm{E}$ et $\bm{B}$ , on part de l'expression classique (\ref{SeparationJS_classique}). On obtient (\mycite{VanEnk1994}) :
+\begin{equation*}
+\begin{aligned}[c]
+\bm{L}&=\epsilon_0\int{\rmd\bm{r}\sum_{a=x,y,z} \bm{E^a_{\bot}}(\bm{r}\times\bm{\nabla})\bm{A^a_{\bot}}}\\
+&=\frac{1}{2}\sum_{\lambda,\lambda'}{(a^{\dag}_{\lambda}a_{\lambda'}+a_{\lambda'}a^{\dag}_{\lambda})}\bra{\bm{F}_\lambda}\hat{\bm{L}}\ket{\bm{F}_{\lambda'}}
+\end{aligned}
+\qquad
+\begin{aligned}[c]
+\bm{S}&=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}\\
+&=\frac{1}{2}\sum_{\lambda,\lambda'}{(a^{\dag}_{\lambda}a_{\lambda'}+a_{\lambda'}a^{\dag}_{\lambda})}\bra{\bm{F}_\lambda}\hat{\bm{S}}\ket{\bm{F}_{\lambda'}},
+\end{aligned}
+\end{equation*} 
+les opérateurs $\hat{\bm{L}}$ et $\hat{\bm{S}}$ ayant été définis plus haut (\ref{defLS_hat}).
+On retrouve donc exactement les mêmes expressions que les opérateurs de la mécanique quantique pour le moment angulaire orbital et le moment angulaire de spin pour une particule de spin 1, sauf qu'on peut montrer que $\bm{S}$ et $\bm{L}$, contrairement à $\hat{\bm{L}}$ et $\hat{\bm{S}}$ sont des observables

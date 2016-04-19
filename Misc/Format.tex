@@ -59,7 +59,8 @@
 \DeclareUnicodeCharacter{00A0}{ }
 %
 \ifpdf
-  \usepackage[pagebackref]{hyperref}
+  %\usepackage[pagebackref]{hyperref}
+	\usepackage[backref=page]{hyperref}
   %\usepackage[pdftex]{hyperref}
 \else
   \usepackage[ps2pdf]{hyperref}
@@ -446,16 +447,25 @@ breaklinks = true
 \nobibintoc
 
 %A Camper Pages des citations référencées en français dans la biblio
-\newcommand{\mapolicebackref}[1]{
-    \hspace*{\fill} \mbox{\textit {\small #1}}
-}	
-\renewcommand*{\backref}[1]{}
+%\newcommand{\mapolicebackref}[1]{
+    %\hspace*{\fill} \mbox{\newline\textit {\small #1}}
+%}	
+%\renewcommand*{\backref}[1]{}
 %\renewcommand*{\backrefalt}[4]{
 %\ifcase #1 \mapolicebackref{pas de citations}
     %\or \mapolicebackref{Cité page #2}
     %\else \mapolicebackref{#1 citations pages #2}
 %\fi
 %}
+
+%R Géneaux - reformattage des backref
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{[{\tiny%
+    \ifcase #1 Non cité.%
+          \or Cité page~#2.%
+          \else Cité pages #2.%
+    \fi%
+    }]}
 %redéfinir les séparateurs en français :
 \renewcommand*{\backreftwosep}{ et~}
 \renewcommand*{\backreflastsep}{, et~}
