@@ -73,11 +73,16 @@
                       %% fixes and extensions for version v1.3a of the memoir class.
 
 \usepackage{titlesec}
+\usepackage{import} %The import package allows to use latex+pdf from inkscape when files are in a different folder
+\usepackage{transparent} %Handles transparency when importing svg files
 
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%RGéneaux - reduce space after subsubsection
+\titlespacing{\subsubsection}{0pt}{\parskip}{-5pt}
 
 % Appearance
 \hypersetup{
