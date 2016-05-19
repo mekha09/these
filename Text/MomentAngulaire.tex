@@ -1,6 +1,9 @@
 \chapter{Le moment angulaire de la lumière}
 \label{CH:OAM}
 
+Le moment angulaire est est à la rotation ce que la quantité de mouvement est à la translation. C'est une grandeur fondamentale en physique car elle est \textit{conservée}. Cette quantité peut être définie pour un satellite, une galaxie, une molécule, ou même un champ. Dans cette thèse, nous nous intéressons au cas du champ électromagnétique : plus précisément, on utilisera le champ infrarouge produit par un laser, ou bien le rayonnement ultraviolet constitué des harmoniques d'ordres élevées décrit dans la partie précédente.\par
+Dans ce chapitre, nous nous attacherons à définir le moment angulaire - d'abord pour un solide, en utilisant la mécanique newtonienne, puis pour le champ électromagnétique, en utilisant l'optique maxwellienne. Ensuite, nous étudierons le concept de moment angulaire en mécanique quantique et verrons que cette grandeur essentielle a deux composantes de natures différentes : le moment angulaire de spin (MAS) et le moment angulaire orbital (MAO). Le champ électromagnétique sera traité comme un système quantique, ce qui nous permettra de construire des champs pour lesquels le MAS et le MAO seront connus. Nous détaillerons enfin la forme et les propriétés de ces champs, ce qui nous permettront dans le chapitre suivant de les générer expérimentalement.
+
 \section{Le moment angulaire en physique classique}
 \subsection{Le concept de moment angulaire en mécanique}
 \subsubsection{Centre de masse d'un objet}
@@ -24,7 +27,7 @@ Si nous nous plaçons dans le référentiel du centre de masse, la seule chose q
 \begin{equation*}
 \Delta x = -y\Delta \theta \mbox{ et } \Delta y = x\Delta \theta
 \end{equation*}
-On peut maintenant chercher à définir ce qui ''crée'' cette rotation. De la même manière qu'un mouvement linéaire est créé par une force, une rotation est créée par quelque chose appelé le \textit{couple}. Une force peut être définie par son \textit{travail} lors d'un déplacement $\Delta x$ de son point d'application. Par analogie, le couple peut être défini par son travail lors d'une rotation $\Delta \theta$ de son point d'application. Lors d'une rotation d'angle très faible, le travail fournit est 
+On peut maintenant chercher à définir ce qui ``crée'' cette rotation. De la même manière qu'un mouvement linéaire est créé par une force, une rotation est créée par quelque chose appelé le \textit{couple}. Une force peut être définie par son \textit{travail} lors d'un déplacement $\Delta x$ de son point d'application. Par analogie, le couple peut être défini par son travail lors d'une rotation $\Delta \theta$ de son point d'application. Lors d'une rotation d'angle très faible, le travail fournit est 
 \begin{equation*}
 \Delta W = F_x \Delta x + F_y \Delta y.
 \end{equation*}
@@ -110,7 +113,7 @@ U=\frac{1}{2}\biggl(\epsilon_0\bm{E^2}+\frac{1}{\mu_0}\bm{B^2}\biggr) \mbox{   e
 \end{equation}
 $U$ est la \textbf{densité d'énergie} (énergie par unité de volume) et $\bm{\Pi}$ est la \textbf{densité de flux d'énergie} (énergie par unité de surface par unité de temps), connue sous le nom de \textbf{vecteur de Poynting}.
 
-De manière intéressante, si on considère un champ se propageant selon un vecteur d'onde $\bm{k}$, on voit que $\bm{\Pi}$ est parallèle à $\bm{k}$. On dit souvent que le vecteur de Poynting représente la direction de propagation de l'énergie.
+De manière intéressante, si on considère une onde plane se propageant selon un vecteur d'onde $\bm{k}$, on voit que $\bm{\Pi}$ est parallèle à $\bm{k}$. On dit souvent que le vecteur de Poynting représente la direction de propagation de l'énergie.
 
 \subsubsection{La quantité de mouvement de la lumière}
 Ayant maintenant trouvé l'expression de l'énergie du champ électromagnétique, on s'intéresse à sa quantité de mouvement. Une réponse rapide est donnée par la relativité. Pour une particule donnée, on peut relier l'énergie, la quantité de mouvement et la masse : $E^2=p^2c^2+m^2c^4$. Si on accepte également que la lumière est constituée de photons, particules de masses nulles, on a alors directement $E = pc$.\\
@@ -130,10 +133,10 @@ On obtient donc $dp = \frac{dW}{c}$, c'est-à-dire que la quantité de mouvement
 \label{Eq.Defp}
 \end{equation}
 
-C'est l'essence de la démarche utilisée par Henri Poincaré en 1900 \mycite{poincare1900}, où il discute de la \textit{''quantité de mouvement de [...] notre fluide fictif''}. Dans ce même article, Poincaré parle de la force exercée par la lumière sur la matière, notion déjà présente chez Maxwell et même chez Kepler appelée \textit{pression électromagnétique}. On l'appelle aujourd'hui plus couramment \textit{pression de radiation}. Poynting la développa considérablement par la suite \mycite{poynting1903}, et nota que malgré sa faible valeur comparée à la force de gravitation, elle pourrait avoir d'importantes conséquences en astronomie. \`{A} raison : par exemple, si la pression de radiation n'avait pas été prise en compte lors du programme Viking, les deux sondes envoyées sur Mars auraient raté l'orbite de la planète d'environ 15000 kilomètres \mycite{Hecht2001}.
+C'est l'essence de la démarche utilisée par Henri Poincaré en 1900 \mycite{poincare1900}, où il discute de la \textit{``quantité de mouvement de [...] notre fluide fictif''}. Dans ce même article, Poincaré parle de la force exercée par la lumière sur la matière, notion déjà présente chez Maxwell et même chez Kepler appelée \textit{pression électromagnétique}. On l'appelle aujourd'hui plus couramment \textit{pression de radiation}. Poynting la développa considérablement par la suite \mycite{poynting1903}, et nota que malgré sa faible valeur comparée à la force de gravitation, elle pourrait avoir d'importantes conséquences en astronomie. \`{A} raison : par exemple, si la pression de radiation n'avait pas été prise en compte lors du programme Viking, les deux sondes envoyées sur Mars auraient raté l'orbite de la planète d'environ 15000 kilomètres \mycite{Hecht2001}.
 
 \subsubsection{Le moment angulaire de la lumière}
-Poynting, en plus de ces contributions majeures, a été le premier à envisager l'existence du moment \textit{angulaire} de la lumière. Il fit l'analogue entre une onde électromagnétique polarisée circulairement et une onde élastique de torsion, suggérant que la lumière possède un moment angulaire et peut fournir un couple à la matière \mycite{PoyntingPRSL1909}. Il propose à la fin de son article un dispositif expérimental constitué d'une série de lames quart d'ondes, permettant de démultiplier cet effet jusqu'à le rendre mesurable. Il conclut toutefois avec pessimisme que \textit{''even with such multiplications, my present experience of light forces does not give me much hope that the effect could be detected, if it has the value suggested by the mechanical model''}.
+Poynting, en plus de ces contributions majeures, a été le premier à envisager l'existence du moment \textit{angulaire} de la lumière. Il fit l'analogue entre une onde électromagnétique polarisée circulairement et une onde élastique de torsion, suggérant que la lumière possède un moment angulaire et peut fournir un couple à la matière \mycite{PoyntingPRSL1909}. Il propose à la fin de son article un dispositif expérimental constitué d'une série de lames quart d'ondes, permettant de démultiplier cet effet jusqu'à le rendre mesurable. Il conclut toutefois avec pessimisme que \textit{``even with such multiplications, my present experience of light forces does not give me much hope that the effect could be detected, if it has the value suggested by the mechanical model''}.
 
 Il aurait donc probablement été heureux d'apprendre qu'en 1936, R. A. Beth observa cet effet avec un schéma légèrement modifié \mycite{BethPR1936}, confirmant ainsi l'existence du moment angulaire de la lumière.
 L'expression de la densité de moment angulaire du champ est directement obtenue en utilisant la définition \ref{Eq.DefJ} et l'expression \ref{Eq.Defp} :
@@ -159,7 +162,7 @@ Nous commençons donc par étudier la question de la symétrie d'un système. No
 c'est à dire l'opération de faire évoluer le système entre 0 et $t$.
 
 Imaginons maintenant que l'on effectue un certain nombre d'opérations sur le système. Notons $\hat{Q}$ l'ensemble de ces opérations et imaginons que cet opérateur laisse \textit{la physique du système inchangée}. On peut par exemple penser à $H_2$, laissé inchangé par l'opérateur de réflexion par rapport à un plan, ou bien à un système à symétrie sphérique, où une rotation d'angle fini ne change pas la physique. Dans un système à deux électrons, on peut aussi penser à l'opération d'interchanger les deux électrons. \\
-Une façon d'écrire cette propriété de ''garder la physique inchangée'' est la suivante : si j'applique $\hat{Q}$ au système, alors $\ket{\psi_1}$ est transformé en $\ket{\psi'_1}=\hat{Q}\ket{\psi_1}$, et $\ket{\psi'_2}=\hat{Q}\ket{\psi_2}$. Mais comme la physique est inchangée par $\hat{Q}$, si on attend un temps $t$ on obtient le même résultat qu'avant d'appliquer $\hat{Q}$, c'est-à-dire :
+Une façon d'écrire cette propriété de ``garder la physique inchangée'' est la suivante : si j'applique $\hat{Q}$ au système, alors $\ket{\psi_1}$ est transformé en $\ket{\psi'_1}=\hat{Q}\ket{\psi_1}$, et $\ket{\psi'_2}=\hat{Q}\ket{\psi_2}$. Mais comme la physique est inchangée par $\hat{Q}$, si on attend un temps $t$ on obtient le même résultat qu'avant d'appliquer $\hat{Q}$, c'est-à-dire :
 \begin{align*}
 \ket{\psi'_2}&=\hat{U}\ket{\psi'_1}, \mbox{ qu'on peut réécrire}\\
 \hat{Q}\ket{\psi_2}&=\hat{U}\hat{Q}\ket{\psi_1}, \mbox{ ou encore}\\
@@ -469,7 +472,7 @@ On retrouve donc les deux polarisations circulaires $\ket{R}$ et $\ket{L}$, pour
 &L_z\ket{R} = m\hbar-\frac{sk_z\hbar}{k}\ket{R} = 0.
 \end{aligned}
 \end{equation*}
-Nous avons donc démontré qu'un champ électromagnétique polarisé circulairement porte une unité de moment angulaire de spin. C'est un résultat important puisqu'il nous donne un moyen macroscopique de contrôler une propriété microscopique : il est très simple de varier la polarisation d'un faisceau laser en utilisant une lame quart-d'onde, et par la même le moment angulaire des photons qui le composent.
+Nous avons donc démontré qu'un champ électromagnétique polarisé circulairement porte une unité de moment angulaire de spin par photon. C'est un résultat important puisqu'il nous donne un moyen macroscopique de contrôler une propriété microscopique : il est très simple de varier la polarisation d'un faisceau laser en utilisant une lame quart-d'onde, et par la même le moment angulaire des photons qui le composent.
 
 Le cas particulier de l'onde plane polarisée circulairement est intéressant lorsqu'on étudie son interaction avec un atome. En effet, si on note le moment angulaire interne de l'atome selon z $M_{int,z}$ et externe $M_{ext,z}$, on peut montrer que les quantités $S_z+M_{int,z}$ et $L_z+M_{ext,z}$ sont conservées séparément. Dans ce cas particulier, il est donc possible de mesurer expérimentalement $S_z$ et $L_z$, ce qui rend la séparation de $J_z$ en partie orbitale et spin légitime. Nous verrons par la suite que cette séparation est légitime dans le cas plus général de l'approximation paraxiale. 
 
@@ -478,25 +481,26 @@ Cependant, pour une onde plane il est clair que $\bm{J}$ s'annule. Ceci contredi
 Ce problème peut être résolu en restreignant le problème à un volume $V$ où l'on prend en compte rigoureusement les effets de bords, puis en faisant tendre les dimensions du volume vers l'infini : voir \mycite{StewartEJP2005}. Une autre approche intéressante est celle de \mycite{MansuripurOE2005}, qui considère 4 ondes planes se propageant avec un angle $\theta$ par rapport à $z$ dans chacun des quadrants de $(x,y)$. Chacune de ces ondes ayant un vecteur d'onde formant un angle avec $z$, $\bm{J}$ est non nul. Quand on somme le moment angulaire de ces 4 ondes, si $\theta$ est assez petit on obtient une quantité ne dépendant pas de $\theta$. Il reste ensuite à faire tendre $\theta$ vers 0 pour retrouver l'onde plane comme cas limite, avec un moment angulaire non nul.
 
 \subsection{Moment angulaire orbital et modes de Laguerre-Gauss}
-Les fonctions de bases trouvées auparavant sont les faisceaux de Bessel généralisés. Ces modes sont intéressants puisqu'ils sont solution de l'équation d'Helmholtz sans aucune approximation. Nous avons vu que la polarisation de lumière était reliée au moment angulaire de spin, essayons maintenant de trouver la grandeur macroscopique reliée au moment angulaire orbital. 
-
-Les modes $\bm{F}_{\left\{k_t,k_z,m,s\right\}}$ étant fonctions propres des opérateurs $\bm{P}^2$, $P_z$, $L_z$ et $S_z$, n'importe quelle combinaison linéaire de ces modes seront également solution. Il est donc facile de construire un mode ne portant que du moment angulaire orbital : prenons par exemple la somme $F'=\bm{F}_{\left\{k_t,k_z,m,s\right\}}+\bm{F}_{\left\{k_t,k_z,m,-s\right\}}$. On obtient alors directement :
+Nous avons vu que la polarisation de lumière était reliée au moment angulaire de spin, essayons maintenant de trouver la grandeur macroscopique reliée au moment angulaire orbital. 
+Les fonctions de bases trouvées auparavant sont les faisceaux de Bessel généralisés. Ces modes sont intéressants puisqu'ils sont solution de l'équation d'Helmholtz sans aucune approximation. Les modes $\bm{F}_{\left\{k_t,k_z,m,s\right\}}$ étant fonctions propres des opérateurs $\bm{P}^2$, $P_z$, $L_z$ et $S_z$, n'importe quelle combinaison linéaire de ces modes seront également solution. Il est donc facile de construire un mode ne portant que du moment angulaire orbital : prenons par exemple la somme $F'=\bm{F}_{\left\{k_t,k_z,m,s\right\}}+\bm{F}_{\left\{k_t,k_z,m,-s\right\}}$. On obtient alors directement :
 \begin{align*}
 &J_z\ket{F'} = m\hbar\ket{F'},\\
 &S_z\ket{F'} = 0,\\
 &L_z\ket{F'} = m\hbar\ket{F'}.
 \end{align*}
-Toutefois, un problème se présente si on continue à utiliser ces modes de Bessel : leur extension spatiale est infinie, ce qui les rend impossible à utiliser en pratique. Expérimentalement, nous travaillerons dans l'approximation paraxiale, c'est-à-dire que l'angle formé entre le vecteur d'onde du faisceau et l'axe de propagation reste faible. Ceci revient à considérer $k_t \ll k$. Dans des conditions paraxiales, il est possible de construire d'autres modes à partir des modes de Bessel qui sont utilisables en pratique. En particulier, nous étudierons les \textit{modes de Laguerre-Gauss}, qui comme on le verra présentent des propriétés remarquables pour le moment angulaire orbital. 
-Pour construire les modes de Laguerre-Gauss, on effectue une superposition cohérente de modes de Bessel avec la condition d'optique paraxiale $k_t \ll k$. Selon la valeur de $s$ choisie, on obtient des faisceaux polarisés circulairement, ou bien encore une fois en sommant $+s$ et $-s$ un faisceau polarisé linéairement, ne portant que du moment angulaire orbital.
+Toutefois, un problème se présente si on continue à utiliser ces modes de Bessel : leur extension spatiale est infinie, ce qui les rend impossible à utiliser en pratique. Expérimentalement, nous travaillerons dans l'approximation paraxiale, c'est-à-dire que l'angle formé entre le vecteur d'onde du faisceau et l'axe de propagation reste faible. Ceci revient à considérer $k_t \ll k$. Dans des conditions paraxiales, il est possible de construire d'autres modes à partir des modes de Bessel qui sont eux utilisables expérimentalement. En particulier, nous étudierons les \textit{modes de Laguerre-Gauss}. 
+Pour construire ces modes, on effectue une superposition cohérente de modes de Bessel portant le même moment orbital par photon, avec la condition d'optique paraxiale $k_t \ll k$. Selon la valeur de $s$ choisie, on obtient des faisceaux polarisés circulairement, ou bien encore une fois en sommant $+s$ et $-s$ un faisceau polarisé linéairement, ne portant que du moment angulaire orbital.
 
-Les modes de Laguerre-Gauss sont donc solutions de l'équation d'Helmholtz \textit{paraxiale}. Dans ces conditions, les valeurs propres de $S_z$ et $L_z$ deviennent respectivement $\frac{sk_z\hbar}{k}\sim s\hbar$ et $m\hbar-\frac{sk_z\hbar}{k}\sim (m-s)\hbar$. Nous noterons par la suite la valeur propre du moment angulaire orbital $\ell\hbar = (m-s)\hbar$. De même que pour les ondes planes polarisées circulairement présentées plus haut, les valeurs propres sont ici discrètes. Dans l'approximation paraxiale, la séparation $J_z=L_z+S_z$ est légitime et de la même manière, les quantités $S_z+M_{int,z}$ et $L_z+M_{ext,z}$ sont conservées séparément dans une interaction entre un faisceau de Laguerre-Gauss et un atome.
+Les modes de Laguerre-Gauss sont donc solutions de l'équation d'Helmholtz \textit{paraxiale}. Dans ces conditions, les valeurs propres de $S_z$ et $L_z$ deviennent respectivement $\frac{sk_z\hbar}{k}\sim s\hbar$ et $m\hbar-\frac{sk_z\hbar}{k}\sim (m-s)\hbar$. Nous noterons par la suite la valeur propre du moment angulaire orbital $\ell\hbar = (m-s)\hbar$. Le mode ainsi construit porte donc un moment angulaire orbital de $\ell\hbar$ par photon et un moment de spin de $s\hbar$ par photon.
+De même que pour les ondes planes polarisées circulairement présentées plus haut, les valeurs propres sont ici discrètes. Dans l'approximation paraxiale, la séparation $J_z=L_z+S_z$ est légitime et de la même manière, les quantités $S_z+M_{int,z}$ et $L_z+M_{ext,z}$ sont conservées séparément dans une interaction entre un faisceau de Laguerre-Gauss et un atome.
 
-Dans les coordonnées cylindriques $(r,\theta,z)$, le champ électrique d'un mode de Laguerre-Gauss s'écrit : \textcolor[rgb]{1,0,0}{VERIFIER W ou RACINE W}
+\subsubsection{Expression et propriétés transverses des modes de Laguerre-Gauss}
+Notons d'abord que si un champ électromagnétique est purement transverse, $\bm{r}\times(\bm{E}\times\bm{B})\cdot\bm{e_z}$ s'annule et le moment angulaire orbital est nul. Les modes qui nous intéressent doivent donc avoir une composante selon l'axe de propagation $z$. Il est possible d'écrire les trois composantes cartésiennes du champ électrique $\bm{E_{LG}}$ et magnétique $\bm{B_{LG}}$ pour un mode de Laguerre-Gauss (voir \mycite{AroraIEE1994}), ce qui permet de voir que les champs possèdent une petite composante selon $z$. En pratique, il est courant de négliger les composantes faibles : si le champ est polarisé selon l'axe $x$, on écrira $\bm{E_{LG}} \approx E_{LG} \bm{x}$ \mycite{LaxPRA1975}. Dans cette approximation, on peut écrire l'amplitude du champ dans les  coordonnées cylindriques $(r,\theta,z)$ :
 \begin{align}
-{\mathcal{LG}_{\ell,p} }\left( {r,\theta ,z} \right) &= {\;}\frac{C_{\ell,p}}{\sqrt{w(z)}}
+{\mathcal{LG}_{\ell,p} }\left( {r,\theta ,z} \right) &= {\;}\frac{C_{\ell,p}}{w(z)}
 {\left( {\frac{r\sqrt{2}}{{w\left(z\right)}}} \right)^{\left| \ell  \right|}}
 \exp{\left(- \frac{{{r^2}}}{{{{w^2(z)}}}}\right)}
-L_p^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right)\\\nonumber
+L_p^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right)\nonumber\\
 &\times
 \exp{({\rmi}\ell \theta )}
 \exp{\left(-{\rmi}k\frac{r^2}{2R(z)}\right)}
@@ -506,19 +510,104 @@ L_p^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right)\\\nonumber
 \end{align}
 où on a noté les paramètres :
 \begin{itemize}
-\item $\ell$ l'index azimutal du mode, qui est aussi la quantité de moment angulaire orbital porté par le faisceau,
+ \setlength\itemsep{1em}
+\item $\ell$ l'index azimutal du mode. Il s'agit bien de la même quantité que le moment angulaire orbital par photon porté par le faisceau.
 \item $p$ l'index radial du mode,
-\item $w(z)$ la largeur en une position $z$ du mode ${\mathcal{LG}_{0,0}}$, qui n'est autre que le mode Gaussien. Il vaut $w(z)=w_0\sqrt{1+\left(\frac{z}{z_R}\right)^2}$, où $w_0$ est la largeur minimale du faisceau (ou ''waist'') obtenue à l'origine, et $z_R=\frac{\pi w_0}{\lambda}$.
-\item $R(z)=z\left[1+\left(\frac{z_0}{z}\right)^2\right]$ est le rayon de courbure
+\item $w(z)$ la largeur en une position $z$ du mode ${\mathcal{LG}_{0,0}}$, qui n'est autre que le mode Gaussien. Il vaut $w(z)=w_0\sqrt{1+\left(\frac{z}{z_R}\right)^2}$, où $w_0$ est la largeur minimale du faisceau (ou ``waist'') obtenue à l'origine, et $z_R=\frac{\pi w_0}{\lambda}$.
+\item $R(z)=z\left[1+\left(\frac{z_R}{z}\right)^2\right]$ est le rayon de courbure
 \item $\psi _{\ell ,p}$ est la phase de Gouy définie par $\psi _{\ell ,p}=(2p+\left|\ell\right|+1)\arctan{\frac{z}{z_R}}=(2p+\left|\ell\right|+1)\psi _{0,0}$. On remarque qu'elle est modifiée par rapport à un faisceau Gaussien habituel.
-\item $C_{\ell,p}$ est une constante de normalisation qui vaut $C_{\ell,p}=\sqrt{2^{\left|l\right|+1}p!/\left[\pi(p+\left|l\right|)!\right]}$.
+\item $C_{\ell,p}$ est une constante de normalisation qui vaut $C_{\ell,p}=\sqrt{2p!/\left[\pi(1+\delta_{0\ell})(p+\left|l\right|)!\right]}$, où $\delta_{0\ell}$ est le delta de Kronecker.
 \item $L_p^{\left| \ell  \right|}$ est le polynôme de Laguerre généralisé, d'où ces modes tiennent leur nom. 
 \end{itemize}
 
-La Figure \ref{LGModes} illustre le profil d'intensité et de phase de ces modes, tracés pour différentes valeurs de $\ell$ et $p$.
+La Figure \ref{Fig:LGModes} illustre le profil d'intensité et de phase de ces modes, tracés pour différentes valeurs de $\ell$ et $p$.
 \begin{figure}[!ht]
 \centering
 \def\svgwidth{\columnwidth}
 \import{Figures/LG_Modes/}{LG_Modes.pdf_tex}
+\caption{Profils transverses des modes de Laguerre-Gauss tracés pour différentes valeurs de $(\ell,p)$. De haut en bas et de gauche à droite, $(\ell,p) =$ (0,0), (1,0), (-2,0), (3,0), (1,1), (1,2), (3,5), (5,10). Ces profils représentent à la fois l'intensité et la phase du mode : la couleur d'un pixel est donnée par la phase en ce point (de 0 à $2\pi$) tandis que la luminosité d'un pixel est l'intensité. En pratique, on trace la phase en deux dimensions puis on multiplie la valeur RGB de chaque point par l'intensité normalisée.}
 \label{Fig:LGModes}
 \end{figure}
+
+On voit directement à quoi correspondent les index azimutaux et radiaux d'un mode : $\ell$ est le nombre de sauts de phase effectués quand on va de $\theta = 0$ à $2\pi$, tandis que $p+1$ est le nombre d'anneaux concentriques du mode. Physiquement, tout l'intérêt des modes de Laguerre-Gauss est contenu dans le terme $\exp{({\rmi}\ell \theta )}$ : comme on l'a vu, $\ell$ est la quantité de moment angulaire par photon porté par le mode. On remarque au passage que ce terme est également présent dans l'expression des modes de Bessel généralisés \ref{eqModeFcn}. Une autre caractéristique importante des modes de Laguerre-Gauss est le zéro d'intensité en leur centre pour $\ell \neq 0$. C'est également une conséquence du terme $\exp{({\rmi}\ell \theta )}$ : en $r=0$, la phase n'est pas définie, ce qui se traduit nécessairement par un zéro d'intensité. Nous verrons par la suite que cette propriété a été largement exploitée dans de nombreuses applications. 
+
+Les modes de Laguerre-Gauss constituent une base orthonormée : 
+\begin{align}
+&\int_{r=0}^{\infty}\int_{\theta=0}^{2\pi}{\mathcal{LG}_{\ell,p} r\mathrm{d}r\mathrm{d}\theta} = 1, \mbox{ et}\nonumber\\ 
+&\int_{r=0}^{\infty}\int_{\theta=0}^{2\pi}{\mathcal{LG}_{\ell_1,p_1} \mathcal{LG}^{*}_{\ell_2,p_2} r\mathrm{d}r\mathrm{d}\theta} = \delta_{\ell_1\ell_2}\delta_{p_1p_2}.
+\label{Eq:orthoLG}
+\end{align}
+Remarquons ici l'importance de deux paramètres non mentionnés dans ces équations : la largeur $w(z)$ et le rayon de courbure $R(z)$ du mode. En effet, la relation d'orthogonalité \ref{Eq:orthoLG} n'est valable que si les deux modes en question ont les mêmes $w(z)$ et $R(z)$. Une décomposition s'effectue donc pour un choix de ces paramètres, on parle parfois de choix de la base Gaussienne équivalente. Ces deux paramètres peuvent être combinés dans le \textit{rayon de courbure complexe} $q$:
+\begin{equation*}
+q = z + \mathrm{i}z_r = z + \mathrm{i}\frac{\pi w_0^2}{\lambda},
+\end{equation*}
+On travaillera souvent avec des champs au foyer, dont le rayon de courbure est infini. On a donc $q = \mathrm{i}\frac{\pi w_0^2}{\lambda}$ et le seul paramètre ajustable restant est $w_0$, le waist Gaussien.
+
+Pour choisir $w(z)$, il faut pouvoir le relier à une quantité physique. Intéressons nous pour commencer au cas d'un mode $(\ell,0)$, dont le profil transverse ne présente qu'un seul anneau. Une grandeur facilement mesurable est le rayon de cet anneau, défini par la distance à l'origine $r_\mathrm{max}$ pour laquelle l'intensité est maximale. Remarquons que $\forall\ell, \;L_0^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right) = 0$, ce qui permet d'écrire l'intensité :
+\begin{equation*}
+{I_\ell }(r,\theta ,z) = \frac{C_{\ell,0}^2}{{{w}\left( {z} \right)}}{\left( {\frac{r\sqrt{2}}{{w\left( z \right)}}} \right)^{2\left| \ell  \right|}}{e^{\left( { - \frac{{2{r^2}}}{{{w^2}\left( {\lambda ,z} \right)}}} \right)}}
+\end{equation*}
+Le maximum d'intensité le long d'un rayon est obtenue pour $\partial {I_\ell }/\partial r = 0$, i.e. 
+\begin{equation*}
+	\left( {\frac{{2\left| \ell  \right|}}{r} - \frac{{4r}}{{{w^2}\left( z \right)}}} \right){\left( {\frac{r}{{w\left( z \right)}}} \right)^{2\left| \ell  \right|}}{e^{\left( { - \frac{{2{r^2}}}{{{w^2}\left( z \right)}}} \right)}} = 0
+\end{equation*}
+Dont la solution est :
+\begin{equation}
+{r_{{\mathrm{max}}}} = w\left( {z} \right)\sqrt {\frac{{\left| \ell  \right|}}{2}}.
+\label{Eq:rmax_LG}
+\end{equation}
+Ce qui permet de déterminer de manière univoque $w(z)$ si on connaît $\ell$.
+
+Le cas $p\neq 0$ est plus compliqué à cause du terme $L_p^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right)$ qui n'est pas nul. On peut quand même écrire l'équation vérifiée par $r_\mathrm{max}$ :
+\begin{equation*}
+ \left[{\frac{{2\left| \ell  \right|}}{r} - \frac{{4r}}{{{w^2}\left( z \right)}}}\right]L_p^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right)
+	- \frac{8r}{w^2(z)} L_{p-1}^{\left| \ell \right|+1}\left(\frac{2r^2}{w^2(z)}\right)
+	= 0
+\end{equation*}
+où on a utilisé la relation $\frac{d}{dx}\left[L_{p}^{\left| \ell \right|}(x)\right] = -L_{p-1}^{\left| \ell \right|+1}(x)$. Cette équation peut être résolue au cas par cas mais ne semble pas présenter de solution générale.
+
+\subsubsection{Front d'onde et vecteur de Poynting des modes de Laguerre-Gauss}
+Le lien entre modes de Laguerre-Gauss et moment orbital angulaire est dû à \mycite{AllenPRA1992}, même si l'existence des modes de Laguerre-Gauss comme solutions de l'équation d'onde paraxiale était connue avant leur travail. Ils furent les premiers à faire l'analogie entre le terme de phase $\exp{({\rmi}\ell \theta )}$ et la définition du moment angulaire orbital en mécanique quantique à partir d'une rotation (équation \ref{Eq.DefMQuantum}). La présence de moment orbital peut également être comprise classiquement en s'intéressant à la forme bien particulière du vecteur de Poynting d'un mode de Laguerre-Gauss.\par
+Pour visualiser ce lien, commençons par calculer les fronts d'ondes d'un mode de Laguerre-Gauss, qui sont normaux au vecteur de Poynting.
+Un front d'onde est par définition une surface d'équiphase. En reprenant l'expression \ref{eq:lgmodes}, on obtient directement leur définition :
+\begin{equation*}
+\ell\theta-k\frac{r^2}{2R(z)}-kz+\psi _{\ell ,p} = \mathrm{C}^\mathrm{ste}.
+\end{equation*}
+Commençons par considérer un faisceau collimaté : le rayon de courbure est alors infini et la phase de Gouy est constante. L'équation prend alors la forme très simple d'une surface \textit{hélicoïdale}. Ces surfaces sont tracées sur la figure \ref{Fig:LGwf} pour $\ell = 1,2,3$. Le front d'onde d'un mode d'indice $\ell$ est donc constitué de $\ell$ hélices entremêlées.
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/LG_Wavefront/}{LG_Wf.pdf_tex}
+\caption{Fronts d'ondes de modes de Laguerre-Gauss pour $\ell=1,2,3$. Les échelles dans la direction de propagation selon pas les mêmes - elles sont précisées par rapport à la longueur d'onde $\lambda$.}
+\label{Fig:LGwf}
+\end{figure}
+
+Il est alors facile de visualiser le vecteur de Poynting : il est normal à la surface d'onde en tout point, comme on le voit sur la Figure \ref{Fig:LGPoynting}. On voit bien que pour une distance $r$ fixée par rapport au centre, ce vecteur décrit une spirale autour de l'axe de propagation. $\bm{\Pi}$ donne la direction de propagation de l'énergie, il est donc assez intuitif dans cette image qu'un mode de Laguerre-Gauss puisse transmettre un mouvement de rotation à un objet.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{0.7\columnwidth}
+\import{Figures/LG_Poynting/}{LG_Poynting.pdf_tex}
+\caption{Vecteur de Poynting d'un mode de Laguerre-Gauss $\ell=1$. Sa définition est $\bm{\Pi} \propto \bm{E}\times\bm{B}$. Le trait rose pointillé représente l'évolution de sa direction au cours de la propagation pour une distance $r$ choisie.}
+\label{Fig:LGPoynting}
+\end{figure}
+
+On peut calculer explicitement l'expression du vecteur de Poynting. On obtient (\mycite{AllenPRA1992}) :
+\begin{equation*}
+\bm{\Pi} = \rmc\left|\mathcal{LG}_{\ell,p}\right|^2\left(\frac{zr}{z_R^2+z^2}\bm{e_r}+\frac{\ell}{kr}\bm{e_\theta}+\bm{e_z}\right).
+\end{equation*}
+Cette expression, contrairement aux deux figures tracées plus haut, prend en compte le rayon de courbure du faisceau, ce qui explique la composante selon $\bm{e_r}$. La composante selon $\bm{e_\theta}$ est source de moment angulaire, et celle selon $\bm{e_z}$ est simplement le la quantité de mouvement portée par l'onde. Pour un faisceau collimaté, on obtient directement l'angle entre le vecteur de Poynting et l'axe de propagation :
+\begin{equation*}
+\alpha \sim \tan{\alpha} = \frac{\ell}{kr}.
+\end{equation*}
+Pour un rayon donné, le vecteur de Poynting forme donc un angle constant avec l'axe de propagation. Cet angle est communément appelé angle d'inclinaison (\textit{pitch angle} en anglais), et a été mesuré expérimentalement (\mycite{LeachOE2006}).\par
+Dans \mycite{PadgettOC1995}, les auteurs remarquent que garder un rayon constant n'a pas vraiment de sens pour un faisceau divergent. Si on a affaire à un faisceau qui diverge, le chemin ``emprunté'' par l'énergie du champ n'est pas donné par l'expression ci-dessus. Il faut plutôt choisir un rayon $r(z)$ tel que $r(z)/w(z)$ soit constant au court de la propagation.\par
+Pour un mode $p=0$, il est assez naturel de choisir $r_\mathrm{max}(z)$, défini plus haut (\ref{Eq:rmax_LG}). En substituant cette expression, on peut montrer (\mycite{PadgettOC1995}) que la rotation du vecteur de Poynting en $r_\mathrm{max}$ vaut $\arctan{(z/z_R)}$. Cette rotation ne dépend pas de $\ell$ : le vecteur de Poynting en $r_\mathrm{max}$ tourne donc exactement de $\pi$ au passage du foyer. 
+
+Ces représentations du vecteur de Poynting illustrent le lien entre MAO et faisceaux de LG, mais elles peuvent également le démontrer quantitativement. $\bm{\Pi}$ donne en effet directement la densité de moment angulaire $\bm{J} = \bm{r}\times\bm{\Pi}/\rmc^2$ (\ref{Eq.DefJEM}) :
+\begin{equation*}
+\bm{J} = \left|\mathcal{LG}_{\ell,p}\right|^2\left(-\frac{\ell}{\omega}\frac{z}{r}\bm{e_r}+\frac{r}{c}\left(\frac{z^2}{z^2+z_R^2} -1\right)\bm{e_\theta}+\frac{\ell}{\omega}\bm{e_z}\right).
+\end{equation*}
+Les termes selon $\bm{e_r}$ et $\bm{e_\theta}$ sont symétriques par rapport à l'axe, ils s'annulent donc lorsqu'on intègre sur le profil transverse du faisceau. Il ne reste donc que le composant selon $\bm{e_z}$. Le rapport entre le flux de moment angulaire et le flux d'énergie est donc $J_z\rmc/\Pi_z = \ell/\omega$. Ceci est cohérent avec un raisonnement utilisant les photons : le faisceau étant composé de $N$ photons, son énergie est $N\hbar\omega$ et son moment angulaire total est $N\ell\hbar$. On retrouve bien que le rapport des flux est $\ell/\omega$.
+
+Nous avons maintenant terminé cette partie sur le concept de moment angulaire de la lumière. Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans le chapitre III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans le chapitre IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.

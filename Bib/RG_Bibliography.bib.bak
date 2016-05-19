@@ -1616,22 +1616,6 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.11.1365}
 }
 
-@Article{LeachOE2006,
-  Title                    = {Direct measurement of the skew angle of the Poynting vector in a helically phased beam},
-  Author                   = {Jonathan Leach and Stephen Keen and Miles J. Padgett and Christopher Saunter and Gordon D. Love},
-  Journal                  = {Opt. Express},
-  Year                     = {2006},
-  Month                    = {Dec},
-  Number                   = {25},
-  Pages                    = {11919--11924},
-  Volume                   = {14},
-  __markedentry            = {[Romain:6]},
-  DOI                      = {10.1364/OE.14.011919},
-  Keywords                 = {Wave-front sensing; Spatial light modulators; Propagation},
-  Publisher                = {OSA},
-  URL                      = {http://www.opticsexpress.org/abstract.cfm?URI=oe-14-25-11919}
-}
-
 @Article{LeeOL2003,
   Title                    = {Wave-front phase measurements of high-order harmonic beams by use of point-diffraction interferometry},
   Author                   = {D. G. Lee and J. J. Park and J. H. Sung and C. H. Nam},
@@ -1899,6 +1883,7 @@
   Number                   = {14},
   Pages                    = {5315--5324},
   Volume                   = {13},
+  __markedentry            = {[Romain:]},
   Abstract                 = {A circularly polarized plane-wave is known to have no angular momentum when examined through Maxwell's equations. This, however, contradicts the experimentally observed facts, where finite segments of plane waves are known to be capable of imparting angular momentum to birefringent platelets. Using a superposition of four plane-waves propagating at slightly different angles to a common direction, we derive an expression for the angular momentum density of a single plane-wave in the limit when the propagation directions of the four beams come into alignment. We proceed to use this four-beam technique to analyze the conservation of angular momentum when a plane-wave enters a dielectric slab from the free space. The angular momentum of the beam is shown to decrease upon entering the dielectric medium, by virtue of the fact that the incident beam exerts a torque on the slab surface at the point of entry. When the beam leaves the slab, it imparts an equal but opposite torque to the exit facet, thus recovering its initial angular momentum upon re-emerging into the free-space. Along the way, we derive an expression for the outward-directed force of a normally incident, finite-diameter beam on a dielectric surface; the possible relationship between this force and the experimentally observed bulging of a liquid surface under intense illumination is explored.},
   DOI                      = {10.1364/OPEX.13.005315},
   Keywords                 = {Laser trapping; Electromagnetic optics},
@@ -2353,7 +2338,7 @@
   Number                   = {1–3},
   Pages                    = {36 - 40},
   Volume                   = {121},
-  __markedentry            = {[Romain:]},
+  __markedentry            = {[Romain:6]},
   DOI                      = {http://dx.doi.org/10.1016/0030-4018(95)00455-H},
   ISSN                     = {0030-4018},
   URL                      = {http://www.sciencedirect.com/science/article/pii/003040189500455H}
