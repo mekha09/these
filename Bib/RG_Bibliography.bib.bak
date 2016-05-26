@@ -936,6 +936,16 @@
   URL                      = {http://www.opticsexpress.org/abstract.cfm?URI=oe-21-9-11441}
 }
 
+@Book{Goodman,
+  Title                    = {Introduction to Fourier optics},
+  Author                   = {Goodman, Joseph W.},
+  Publisher                = {Roberts},
+  Year                     = {2005},
+  Address                  = {Englewood (Colorado)},
+  ISBN                     = {0-9747077-2-4},
+  URL                      = {http://opac.inria.fr/record=b1125527}
+}
+
 @Article{GordonOL2009,
   Title                    = {Nonlinear conversion of photon spin to photon orbital angular momentum},
   Author                   = {D. F. Gordon and B. Hafizi and A. Ting},
@@ -1193,6 +1203,20 @@
   Numpages                 = {5},
   Publisher                = {American Physical Society},
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.109.224801}
+}
+
+@Article{Henke1993,
+  Title                    = {X-Ray Interactions: Photoabsorption, Scattering, Transmission, and Reflection at E = 50-30,000 eV, Z = 1-92},
+  Author                   = {B.L. Henke and E.M. Gullikson and J.C. Davis},
+  Journal                  = {Atomic Data and Nuclear Data Tables},
+  Year                     = {1993},
+  Number                   = {2},
+  Pages                    = {181 - 342},
+  Volume                   = {54},
+  __markedentry            = {[Romain:6]},
+  DOI                      = {http://dx.doi.org/10.1006/adnd.1993.1013},
+  ISSN                     = {0092-640X},
+  URL                      = {http://www.sciencedirect.com/science/article/pii/S0092640X83710132}
 }
 
 @Article{HentschelN2001,
@@ -1625,7 +1649,6 @@
   Number                   = {25},
   Pages                    = {11919--11924},
   Volume                   = {14},
-  __markedentry            = {[Romain:6]},
   DOI                      = {10.1364/OE.14.011919},
   Keywords                 = {Wave-front sensing; Spatial light modulators; Propagation},
   Publisher                = {OSA},
@@ -1835,16 +1858,16 @@
 
 @Article{MahieuAPB2015,
   Title                    = {Spatial quality improvement of a Ti:Sapphire laser beam by modal filtering},
-  Author                   = {Mahieu, Benoît and Gauthier, David and Perdrix, Michel and Ge, Xunyou and Boutu, Willem and Lepetit, Fabien and Wang, Fan and Carré, Bertrand and Auguste, Thierry and Merdji, Hamed and Garzella, David and Gobert, Olivier},
+  Author                   = {Mahieu, Beno{\^i}t and Gauthier, David and Perdrix, Michel and Ge, Xunyou and Boutu, Willem and Lepetit, Fabien and Wang, Fan and Carr{\'e}, Bertrand and Auguste, Thierry and Merdji, Hamed and Garzella, David and Gobert, Olivier},
   Journal                  = {Applied Physics B},
   Year                     = {2015},
   Number                   = {1},
-  Pages                    = {47-60},
+  Pages                    = {47--60},
   Volume                   = {118},
+  __markedentry            = {[Romain:]},
+  Abstract                 = {We present a study on the improvement of the spatial quality of a laser beam, called modal filtering, suitable to high-energy lasers. The method is theoretically compared with the classical pinhole filtering technique in the case of an astigmatic Gaussian beam, illustrating, in this particular case, its efficiency for filtering low spatial frequencies. Experimental study of the modal filtering of a temporally chirped beam from a Ti:Sapphire chirped-pulse-amplification system is presented. Beam profile, wavefront and pulse duration after compression were measured, showing a dramatic improvement of beam quality and no modifications of the temporal distribution. High-order harmonic generation in a rare gas, a highly nonlinear process which is phase-matching dependent, was used to test the effect of the filter and showed a clear enhancement of the generation.},
   DOI                      = {10.1007/s00340-014-5953-4},
-  ISSN                     = {0946-2171},
-  Language                 = {English},
-  Publisher                = {Springer Berlin Heidelberg},
+  ISSN                     = {1432-0649},
   URL                      = {http://dx.doi.org/10.1007/s00340-014-5953-4}
 }
 
@@ -1861,6 +1884,19 @@
   Adsurl                   = {http://adsabs.harvard.edu/abs/2008NJPh...10b5015M},
   DOI                      = {10.1088/1367-2630/10/2/025015},
   Eid                      = {025015}
+}
+
+@PhdThesis{MairessePhD,
+  Title                    = {{Generation and characterization of attosecond pulses}},
+  Author                   = {Mairesse, Yann},
+  School                   = {{Universit{\'e} Paris Sud - Paris XI}},
+  Year                     = {2005},
+  Month                    = Jul,
+  Type                     = {Theses},
+  Hal_id                   = {tel-00011620},
+  Hal_version              = {v1},
+  Pdf                      = {https://tel.archives-ouvertes.fr/tel-00011620/file/TheseYMairesse.pdf},
+  URL                      = {https://tel.archives-ouvertes.fr/tel-00011620}
 }
 
 @Article{MairesseScience2003,
@@ -2353,7 +2389,6 @@
   Number                   = {1–3},
   Pages                    = {36 - 40},
   Volume                   = {121},
-  __markedentry            = {[Romain:]},
   DOI                      = {http://dx.doi.org/10.1016/0030-4018(95)00455-H},
   ISSN                     = {0030-4018},
   URL                      = {http://www.sciencedirect.com/science/article/pii/003040189500455H}
@@ -2943,6 +2978,14 @@
   Numpages                 = {4},
   Publisher                = {American Physical Society},
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevB.87.121201}
+}
+
+@InBook{Tan,
+  Title                    = {453.701 Linear Systems},
+  Author                   = {S.M. Tan},
+  Chapter                  = {7 - Wave propagation and Fourier optics},
+  Pages                    = {1-17},
+  Publisher                = {The University of Auckland}
 }
 
 @Article{TanakaJPCA2010,

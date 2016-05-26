@@ -1,0 +1,88 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Fig_IrisScan.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{2354.83027344bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.35959644)%
+    \put(0,0){\includegraphics[width=\unitlength]{Fig_IrisScan.pdf}}%
+    \put(0.2832969,0.02615643){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{X ($\mu m$)}}}%
+    \put(0.04457609,0.05097514){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-60}}}%
+    \put(0.12475173,0.05097514){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-40}}}%
+    \put(0.20492735,0.05097514){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-20}}}%
+    \put(0.28546105,0.05097514){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.36530467,0.05097514){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{20}}}%
+    \put(0.4455639,0.05097514){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{40}}}%
+    \put(0.52567982,0.05097514){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{60}}}%
+    \put(0.0074249,0.20070253){\color[rgb]{0.14901961,0.14901961,0.14901961}\rotatebox{90}{\makebox(0,0)[b]{\smash{Diamètre de l'iris \O}}}}%
+    \put(0.03013235,0.06961194){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{5}}}%
+    \put(0.02813761,0.1349245){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{10}}}%
+    \put(0.02812766,0.20023705){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{15}}}%
+    \put(0.02825406,0.26554962){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{20}}}%
+    \put(0.02824411,0.32581187){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{25}}}%
+    \put(0.56244549,0.07003758){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.56244549,0.20066269){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{5}}}%
+    \put(0.56459533,0.31970177){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{10}}}%
+    \put(0.69776809,0.05097508){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.76146105,0.05097508){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{5}}}%
+    \put(0.82434038,0.05097508){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{10}}}%
+    \put(0.88895434,0.05097756){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{30}}}%
+    \put(0.94001104,0.05097756){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{60}}}%
+    \put(0.99064282,0.05097756){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{90}}}%
+    \put(0.68493789,0.07161617){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{5}}}%
+    \put(0.68218095,0.13346495){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{10}}}%
+    \put(0.68210132,0.19883748){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{15}}}%
+    \put(0.68218095,0.26407938){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{20}}}%
+    \put(0.68210132,0.32592563){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{25}}}%
+    \put(0.94216401,0.02675377){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{Waist ($\mu m$)}}}%
+    \put(0.6894402,0.02701006){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Intensité pic
+}}}%
+    \put(0.65462446,0.20238664){\color[rgb]{0.14901961,0.14901961,0.14901961}\rotatebox{90}{\makebox(0,0)[b]{\smash{Diamètre de l'iris \O}}}}%
+    \put(0.68635147,0.00214486){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{($10^{14}$ W/$\mbox{cm}^2$)}}}%
+    \put(0.55841339,0.3516291){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{(x$10^{14}$)}}}%
+  \end{picture}%
+\endgroup%

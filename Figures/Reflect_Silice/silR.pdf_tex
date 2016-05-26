@@ -1,0 +1,90 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'silR.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{416.52993164bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.39292568)%
+    \put(0,0){\includegraphics[width=\unitlength]{silR.pdf}}%
+    \put(0.02132762,0.21456103){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Réflect/Transmiss IR}}}}%
+    \put(0.04946888,0.06810207){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.04535613,0.12644456){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{20}}}%
+    \put(0.04544082,0.1847871){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{40}}}%
+    \put(0.04541093,0.2431297){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{60}}}%
+    \put(0.0453835,0.30147225){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{80}}}%
+    \put(0.04891077,0.35981485){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{100}}}%
+    \put(0.11144069,0.04491677){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{5}}}%
+    \put(0.19122703,0.04491677){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{10}}}%
+    \put(0.27127742,0.04491677){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{15}}}%
+    \put(0.35181371,0.04491677){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{20}}}%
+    \put(0.27167686,0.00677155){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Angle d'incidence (\degres)}}}%
+    \put(0.32726981,0.11076558){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Réflectivité}}}%
+    \put(0.4318641,0.04491677){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{25}}}%
+    \put(0.63666883,0.04459967){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{9}}}%
+    \put(0.67159256,0.04460237){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{13}}}%
+    \put(0.70689598,0.04453192){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{17}}}%
+    \put(0.7418741,0.04453192){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{21}}}%
+    \put(0.7779743,0.04459967){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{25}}}%
+    \put(0.81325604,0.04459967){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{29}}}%
+    \put(0.84848068,0.04460237){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{33}}}%
+    \put(0.88378422,0.04460237){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{37}}}%
+    \put(0.91848299,0.04453192){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{41}}}%
+    \put(0.95458343,0.04461585){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{45}}}%
+    \put(0.98986505,0.04459967){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{49}}}%
+    \put(0.60572973,0.06609493){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{40}}}%
+    \put(0.60556972,0.12468699){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{50}}}%
+    \put(0.6055914,0.18327922){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{60}}}%
+    \put(0.60553725,0.2418714){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{70}}}%
+    \put(0.60557523,0.30046358){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{80}}}%
+    \put(0.60556972,0.35610928){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{90}}}%
+    \put(0.57140526,0.21446461){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Réflect/Transmiss XUV}}}}%
+    \put(0.77662855,0.00302912){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Ordre harmonique}}}%
+    \put(0.91226568,0.14696913){\color[rgb]{0.66666667,0,0.83137255}\makebox(0,0)[b]{\smash{CXRO}}}%
+    \put(0.76690536,0.30483042){\color[rgb]{0,0.26666667,0.66666667}\makebox(0,0)[b]{\smash{Mesuré}}}%
+    \put(0.15576429,0.33795508){\color[rgb]{1,0,0}\makebox(0,0)[b]{\smash{Transmission}}}%
+  \end{picture}%
+\endgroup%
