@@ -266,6 +266,20 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.110.123003}
 }
 
+@Article{BeijersbergenOC1993,
+  Title                    = {Astigmatic laser mode converters and transfer of orbital angular momentum},
+  Author                   = {M.W. Beijersbergen and L. Allen and H.E.L.O. van der Veen and J.P. Woerdman},
+  Journal                  = {Optics Communications},
+  Year                     = {1993},
+  Number                   = {1},
+  Pages                    = {123 - 132},
+  Volume                   = {96},
+  Abstract                 = {We present the design of a mode converter which transforms a Hermite-gaussian mode of arbitrarily high order to a Laguerre-gaussian mode and vice versa. The converter consists of two cylindrical lenses and is based on appropriate use of the Gouy phase. We demonstrate mode conversion experimentally and consider where the concomitant transfer of orbital angular momentum is localized.},
+  DOI                      = {http://dx.doi.org/10.1016/0030-4018(93)90535-D},
+  ISSN                     = {0030-4018},
+  URL                      = {http://www.sciencedirect.com/science/article/pii/003040189390535D}
+}
+
 @Article{BeijersbergenOC1994,
   Title                    = {Helical-wavefront laser beams produced with a spiral phaseplate },
   Author                   = {M.W. Beijersbergen and R.P.C. Coerwinkel and M. Kristensen and J.P. Woerdman},
@@ -1213,7 +1227,6 @@
   Number                   = {2},
   Pages                    = {181 - 342},
   Volume                   = {54},
-  __markedentry            = {[Romain:6]},
   DOI                      = {http://dx.doi.org/10.1006/adnd.1993.1013},
   ISSN                     = {0092-640X},
   URL                      = {http://www.sciencedirect.com/science/article/pii/S0092640X83710132}
@@ -1462,6 +1475,20 @@
   DOI                      = {10.1038/nphoton.2013.170}
 }
 
+@Article{KitaAO1983,
+  Title                    = {Mechanically ruled aberration-corrected concave gratings for a flat-field grazing-incidence spectrograph},
+  Author                   = {Toshiaki Kita and Tatsuo Harada and N. Nakano and H. Kuroda},
+  Journal                  = {Appl. Opt.},
+  Year                     = {1983},
+  Month                    = {Feb},
+  Number                   = {4},
+  Pages                    = {512--513},
+  Volume                   = {22},
+  DOI                      = {10.1364/AO.22.000512},
+  Publisher                = {OSA},
+  URL                      = {http://ao.osa.org/abstract.cfm?URI=ao-22-4-512}
+}
+
 @Article{KizlerPRL2005,
   Title                    = {Spatial Control of Recollision Wave Packets with Attosecond Precision},
   Author                   = {Kitzler, Markus and Lezius, Matthias},
@@ -1638,6 +1665,18 @@
   Numpages                 = {0},
   Publisher                = {American Physical Society},
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.11.1365}
+}
+
+@Article{LeachNJP2004,
+  Title                    = {Observation of the vortex structure of a non-integer vortex beam},
+  Author                   = {Jonathan Leach and Eric Yao and Miles J Padgett},
+  Journal                  = {New Journal of Physics},
+  Year                     = {2004},
+  Number                   = {1},
+  Pages                    = {71},
+  Volume                   = {6},
+  __markedentry            = {[Romain:]},
+  URL                      = {http://stacks.iop.org/1367-2630/6/i=1/a=071}
 }
 
 @Article{LeachOE2006,
@@ -1864,7 +1903,6 @@
   Number                   = {1},
   Pages                    = {47--60},
   Volume                   = {118},
-  __markedentry            = {[Romain:]},
   Abstract                 = {We present a study on the improvement of the spatial quality of a laser beam, called modal filtering, suitable to high-energy lasers. The method is theoretically compared with the classical pinhole filtering technique in the case of an astigmatic Gaussian beam, illustrating, in this particular case, its efficiency for filtering low spatial frequencies. Experimental study of the modal filtering of a temporally chirped beam from a Ti:Sapphire chirped-pulse-amplification system is presented. Beam profile, wavefront and pulse duration after compression were measured, showing a dramatic improvement of beam quality and no modifications of the temporal distribution. High-order harmonic generation in a rare gas, a highly nonlinear process which is phase-matching dependent, was used to test the effect of the filter and showed a clear enhancement of the generation.},
   DOI                      = {10.1007/s00340-014-5953-4},
   ISSN                     = {1432-0649},
@@ -2309,6 +2347,22 @@
   File                     = {Published version:NugentAP2010.pdf:PDF}
 }
 
+@Article{OemrawsinghAO2004,
+  Title                    = {Production and characterization of spiral phase plates for optical wavelengths},
+  Author                   = {S. S. R. Oemrawsingh and J. A. W. van Houwelingen and E. R. Eliel and J. P. Woerdman and E. J. K. Verstegen and J. G. Kloosterboer and G. W. 't Hooft},
+  Journal                  = {Appl. Opt.},
+  Year                     = {2004},
+  Month                    = {Jan},
+  Number                   = {3},
+  Pages                    = {688--694},
+  Volume                   = {43},
+  __markedentry            = {[Romain:6]},
+  DOI                      = {10.1364/AO.43.000688},
+  Keywords                 = {Diffractive optics; Microstructure fabrication; Optical fabrication},
+  Publisher                = {OSA},
+  URL                      = {http://ao.osa.org/abstract.cfm?URI=ao-43-3-688}
+}
+
 @Article{OhresserRSI2014,
   Title                    = {DEIMOS: A beamline dedicated to dichroism measurements in the 350--2500 eV energy range},
   Author                   = {Ohresser, P and Otero, E and Choueikani, F and Chen, K and Stanescu, S and Deschamps, F and Moreno, T and Polack, F and Lagarde, B and Daguerre, J-P and others},
@@ -2365,6 +2419,20 @@
   DOI                      = {10.1021/jz400810j},
   Eprint                   = {http://pubs.acs.org/doi/pdf/10.1021/jz400810j},
   URL                      = {http://pubs.acs.org/doi/abs/10.1021/jz400810j}
+}
+
+@Article{PadgettAllen1999,
+  Title                    = {The angular momentum of light: optical spanners and the rotational frequency shift},
+  Author                   = {Padgett, M. J. and Allen, L.},
+  Journal                  = {Optical and Quantum Electronics},
+  Year                     = {1999},
+  Number                   = {1},
+  Pages                    = {1--12},
+  Volume                   = {31},
+  Abstract                 = {An introduction is given to the concepts of the spin and orbital angular momentum of light beams. Both spin and orbital angular momentum can be transferred from a light beam to particles held within optical tweezers, so forming an optical spanner. Each also give rise to a frequency shift when the light beam is rotated. This arises because quarter or half-wave plates and $\pi$/2 or $\pi$ mode converters play equivalent roles for spin and orbital angular momentum respectively.},
+  DOI                      = {10.1023/A:1006911428303},
+  ISSN                     = {1572-817X},
+  URL                      = {http://dx.doi.org/10.1023/A:1006911428303}
 }
 
 @Article{PadgettNP2011,
