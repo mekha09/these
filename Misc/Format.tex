@@ -20,6 +20,11 @@
   \DeclareGraphicsExtensions{.eps}
 \fi
 
+%R. Géneaux - Fixes the "too many alphabet" errors :
+\newcommand\hmmax{0}
+\newcommand\bmmax{0}
+
+
 %--------------------------------------------------------------------------------%
 %\usepackage[pagebackref]{hyperref}%A Camper for bak paging the reference
 %\usepackage{utopia}					% Utopia font as default roman
@@ -72,9 +77,15 @@
 \usepackage{memhfixc} %% The memhfixc package provides hyperref related temporary
                       %% fixes and extensions for version v1.3a of the memoir class.
 
+%R. Géneaux
+\usepackage{siunitx} %macros for proper typeset SI units
+\sisetup{
+list-final-separator = { et }
+}
 \usepackage{titlesec}
 \usepackage{import} %The import package allows to use latex+pdf from inkscape when files are in a different folder
 \usepackage{transparent} %Handles transparency when importing svg files
+
 
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}

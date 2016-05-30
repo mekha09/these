@@ -266,6 +266,16 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.110.123003}
 }
 
+@Article{bazhenov1990,
+  Title                    = {Laser beams with screw dislocations in their wavefronts},
+  Author                   = {Bazhenov, V Yu},
+  Journal                  = {Jetp Lett},
+  Year                     = {1990},
+  Number                   = {8},
+  Pages                    = {429--431},
+  Volume                   = {52}
+}
+
 @Article{BeijersbergenOC1993,
   Title                    = {Astigmatic laser mode converters and transfer of orbital angular momentum},
   Author                   = {M.W. Beijersbergen and L. Allen and H.E.L.O. van der Veen and J.P. Woerdman},
@@ -292,6 +302,17 @@
   DOI                      = {http://dx.doi.org/10.1016/0030-4018(94)90638-6},
   ISSN                     = {0030-4018},
   URL                      = {http://www.sciencedirect.com/science/article/pii/0030401894906386}
+}
+
+@Article{berkhout2008,
+  Title                    = {Method for probing the orbital angular momentum of optical vortices in electromagnetic waves from astronomical objects},
+  Author                   = {Berkhout, Gregorius CG and Beijersbergen, Marco W},
+  Journal                  = {Physical review letters},
+  Year                     = {2008},
+  Number                   = {10},
+  Pages                    = {100801},
+  Volume                   = {101},
+  Publisher                = {APS}
 }
 
 @Article{BethPR1936,
@@ -950,6 +971,17 @@
   URL                      = {http://www.opticsexpress.org/abstract.cfm?URI=oe-21-9-11441}
 }
 
+@Article{ghai2009,
+  Title                    = {Single-slit diffraction of an optical beam with phase singularity},
+  Author                   = {Ghai, Devinder Pal and Senthilkumaran, P and Sirohi, RS},
+  Journal                  = {Optics and Lasers in Engineering},
+  Year                     = {2009},
+  Number                   = {1},
+  Pages                    = {123--126},
+  Volume                   = {47},
+  Publisher                = {Elsevier}
+}
+
 @Book{Goodman,
   Title                    = {Introduction to Fourier optics},
   Author                   = {Goodman, Joseph W.},
@@ -1321,6 +1353,18 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.107.033903}
 }
 
+@Article{HickmannPRL2010,
+  Title                    = {Unveiling a truncated optical lattice associated with a triangular aperture using light's orbital angular momentum},
+  Author                   = {Hickmann, JM and Fonseca, EJS and Soares, WC and Ch{\'a}vez-Cerda, S},
+  Journal                  = {Physical review letters},
+  Year                     = {2010},
+  Number                   = {5},
+  Pages                    = {053904},
+  Volume                   = {105},
+  __markedentry            = {[Romain:6]},
+  Publisher                = {APS}
+}
+
 @Article{HicksteinNP2015,
   Title                    = {Non-collinear generation of angularly isolated circularly polarized high harmonics},
   Author                   = {Hickstein, Daniel D and Dollar, Franklin J and Grychtol, Patrik and Ellis, Jennifer L and Knut, Ronny and Hern{\'a}ndez-Garc{\'\i}a, Carlos and Zusin, Dmitriy and Gentry, Christian and Shaw, Justin M and Fan, Tingting and others},
@@ -1675,7 +1719,6 @@
   Number                   = {1},
   Pages                    = {71},
   Volume                   = {6},
-  __markedentry            = {[Romain:]},
   URL                      = {http://stacks.iop.org/1367-2630/6/i=1/a=071}
 }
 
@@ -2356,7 +2399,6 @@
   Number                   = {3},
   Pages                    = {688--694},
   Volume                   = {43},
-  __markedentry            = {[Romain:6]},
   DOI                      = {10.1364/AO.43.000688},
   Keywords                 = {Diffractive optics; Microstructure fabrication; Optical fabrication},
   Publisher                = {OSA},
@@ -3030,6 +3072,34 @@
   Volume                   = {26},
   Abstract                 = {The angular momentum of a classical electromagnetic plane wave of arbitrary extent is predicted to be, on theoretical grounds, exactly zero. However, finite sections of circularly polarized plane waves are found experimentally to carry angular momentum, and it is known that the contribution to the angular momentum arises from the edges of the beam. A mathematical model is described that gives a quantitative account of this effect and resolves the paradox.},
   URL                      = {http://stacks.iop.org/0143-0807/26/i=4/a=008}
+}
+
+@Article{SuedaOE2004,
+  Title                    = {Laguerre-Gaussian beam generated with a multilevel spiral phase plate for high intensity laser pulses},
+  Author                   = {K. Sueda and G. Miyaji and N. Miyanaga and M. Nakatsuka},
+  Journal                  = {Opt. Express},
+  Year                     = {2004},
+  Month                    = {Jul},
+  Number                   = {15},
+  Pages                    = {3548--3553},
+  Volume                   = {12},
+  __markedentry            = {[Romain:]},
+  Abstract                 = {We investigated an Laguerre-Gaussian (LG) beam that can carry an orbital angular momentum and has a doughnut-shaped intensity pattern. We developed a multilevel spiral phase plate (SPP) that generates an LG beam by applying the wave surface of a spiral structure directly to a Gaussian beam for application to microscopic laser material processing. We experimentally demonstrate, for the first time, that it is possible to generate an LG beam with the multilevel SPP that allows the use in high intensity laser pulses.},
+  DOI                      = {10.1364/OPEX.12.003548},
+  Keywords                 = {Laser beam shaping; Laser materials processing},
+  Publisher                = {OSA},
+  URL                      = {http://www.opticsexpress.org/abstract.cfm?URI=oe-12-15-3548}
+}
+
+@Article{sztul2006,
+  Title                    = {Double-slit interference with Laguerre-Gaussian beams},
+  Author                   = {Sztul, HI and Alfano, RR},
+  Journal                  = {Optics letters},
+  Year                     = {2006},
+  Number                   = {7},
+  Pages                    = {999--1001},
+  Volume                   = {31},
+  Publisher                = {Optical Society of America}
 }
 
 @Article{TakahashiPRB2013,
