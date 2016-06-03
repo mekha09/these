@@ -1361,7 +1361,6 @@
   Number                   = {5},
   Pages                    = {053904},
   Volume                   = {105},
-  __markedentry            = {[Romain:6]},
   Publisher                = {APS}
 }
 
@@ -1642,17 +1641,6 @@
   Adsurl                   = {http://adsabs.harvard.edu/abs/1992ailf.conf..247K}
 }
 
-@Book{Landau1982a,
-  Title                    = {Quantum Electrodynamics},
-  Author                   = {Berestetskii, V.B. and Lifshitz, E.M. and Pitaevski, L.P.},
-  Publisher                = {Butterworth-Heinemann},
-  Year                     = {1982},
-  Series                   = {vol. 4 of Course of Theoretical Physics},
-  ISBN                     = {9780750633710},
-  Lccn                     = {82202581},
-  URL                      = {https://books.google.fr/books?id=URL5NKX8vbAC}
-}
-
 @Article{LangfordPRL2004,
   Title                    = {Measuring Entangled Qutrits and Their Use for Quantum Bit Commitment},
   Author                   = {Langford, N. K. and Dalton, R. B. and Harvey, M. D. and O'Brien, J. L. and Pryde, G. J. and Gilchrist, A. and Bartlett, S. D. and White, A. G.},
@@ -1735,6 +1723,18 @@
   Keywords                 = {Wave-front sensing; Spatial light modulators; Propagation},
   Publisher                = {OSA},
   URL                      = {http://www.opticsexpress.org/abstract.cfm?URI=oe-14-25-11919}
+}
+
+@Article{LeachScience2010,
+  Title                    = {Quantum correlations in optical angle--orbital angular momentum variables},
+  Author                   = {Leach, Jonathan and Jack, Barry and Romero, Jacqui and Jha, Anand K and Yao, Alison M and Franke-Arnold, Sonja and Ireland, David G and Boyd, Robert W and Barnett, Stephen M and Padgett, Miles J},
+  Journal                  = {Science},
+  Year                     = {2010},
+  Number                   = {5992},
+  Pages                    = {662--665},
+  Volume                   = {329},
+  __markedentry            = {[Romain:]},
+  Publisher                = {American Association for the Advancement of Science}
 }
 
 @Article{LeeOL2003,
@@ -3083,7 +3083,6 @@
   Number                   = {15},
   Pages                    = {3548--3553},
   Volume                   = {12},
-  __markedentry            = {[Romain:]},
   Abstract                 = {We investigated an Laguerre-Gaussian (LG) beam that can carry an orbital angular momentum and has a doughnut-shaped intensity pattern. We developed a multilevel spiral phase plate (SPP) that generates an LG beam by applying the wave surface of a spiral structure directly to a Gaussian beam for application to microscopic laser material processing. We experimentally demonstrate, for the first time, that it is possible to generate an LG beam with the multilevel SPP that allows the use in high intensity laser pulses.},
   DOI                      = {10.1364/OPEX.12.003548},
   Keywords                 = {Laser beam shaping; Laser materials processing},
@@ -3294,6 +3293,17 @@
   DOI                      = {10.1038/nature08904}
 }
 
+@Book{v,
+  Title                    = {Quantum Electrodynamics},
+  Author                   = {Berestetskii, V.B. and Lifshitz, E.M. and Pitaevski, L.P.},
+  Publisher                = {Butterworth-Heinemann},
+  Year                     = {1982},
+  Series                   = {vol. 4 of Course of Theoretical Physics},
+  ISBN                     = {9780750633710},
+  Lccn                     = {82202581},
+  URL                      = {https://books.google.fr/books?id=URL5NKX8vbAC}
+}
+
 @Article{VanDerLaanJP2013,
   Title                    = {Applications of soft x-ray magnetic dichroism},
   Author                   = {G van der Laan},
@@ -3315,6 +3325,18 @@
   Pages                    = {963--977},
   Volume                   = {41},
   Publisher                = {Taylor \& Francis}
+}
+
+@Article{VanEnk1994a,
+  Title                    = {Selection rules and centre-of-mass motion of ultracold atoms},
+  Author                   = {Van Enk, SJ},
+  Journal                  = {Quantum Optics: Journal of the European Optical Society Part B},
+  Year                     = {1994},
+  Number                   = {5},
+  Pages                    = {445},
+  Volume                   = {6},
+  __markedentry            = {[Romain:6]},
+  Publisher                = {IOP Publishing}
 }
 
 @Article{VanVeenendaalPRL2007,

@@ -159,6 +159,18 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.113.066102}
 }
 
+@Article{BabikerBennettAndrewsEtAl2002,
+  Title                    = {Orbital angular momentum exchange in the interaction of twisted light with molecules},
+  Author                   = {Babiker, M and Bennett, CR and Andrews, DL and Romero, LC D{\'a}vila},
+  Journal                  = {Physical review letters},
+  Year                     = {2002},
+  Number                   = {14},
+  Pages                    = {143601},
+  Volume                   = {89},
+  __markedentry            = {[Romain:6]},
+  Publisher                = {APS}
+}
+
 @Article{BahrdtPRL2013,
   Title                    = {First Observation of Photons Carrying Orbital Angular Momentum in Undulator Radiation},
   Author                   = {Bahrdt, J. and Holldack, K. and Kuske, P. and M\"uller, R. and Scheer, M. and Schmid, P.},
@@ -1744,7 +1756,6 @@
   Number                   = {5992},
   Pages                    = {662--665},
   Volume                   = {329},
-  __markedentry            = {[Romain:]},
   Publisher                = {American Association for the Advancement of Science}
 }
 
@@ -3335,7 +3346,7 @@
   Number                   = {5},
   Pages                    = {445},
   Volume                   = {6},
-  __markedentry            = {[Romain:6]},
+  __markedentry            = {[Romain:]},
   Publisher                = {IOP Publishing}
 }
 

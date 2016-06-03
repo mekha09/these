@@ -630,7 +630,7 @@ C'est à partir de cette décomposition que l'on classifie les transitions élec
 \begin{equation*}
 H_1 = \frac{e}{\mu}\bm{A}(0)\cdot\bm{p}.
 \end{equation*}
-L'atome va passer d'un état initial $\ket{i}$ à un état final $\ket{f}$. Ainsi, pour que la transition soit possible, il est nécessaire que l'élément de matrice $\bra{\psi_f}H_1\ket{\psi_i}$ soit non nul. En particulier, il faut que $\bra{l_f,m_f}\bm{p}\ket{l_i,m_i}$ soit non nul. Le calcul montre donne les règles de sélection \mycite{cohen} :
+L'atome va passer d'un état initial $\ket{i}$ à un état final $\ket{f}$. Ainsi, pour que la transition soit possible, il est nécessaire que l'élément de matrice $\bra{\phi_f}H_1\ket{\phi_i}$ soit non nul. En particulier, il faut que $\bra{l_f,m_f}\bm{p}\ket{l_i,m_i}$ soit non nul. Le calcul montre donne les règles de sélection \mycite{cohen} :
 \begin{equation*}
 l_f-l_i=\pm1\text{ et }m_f-m_i=\pm1,\;0.
 \end{equation*}
@@ -656,16 +656,6 @@ Jusqu'ici, nous avons négligé le mouvement du centre de masse. Si on veut trai
 \bm{\pi}_i&=\bm{p_i}-\frac{\mu_i}{M}\sum_{j=0}^N{\bm{p}_j}
 \end{split}
 \end{equation*}
-Ce cas général est étudié en détail dans \mycite{BabikerPRL2002}. Les auteurs considèrent un système à deux électrons interagissant avec une onde électromagnétique de moment angulaire orbital $\ell\hbar$. De la même manière que ce que nous avons fait plus haut, ils calculent l'hamiltonien du système, cette fois en prenant en compte la dynamique du centre de masse. Ils effectuent ensuite un développement multipolaire pour identifier les différents types de transition. On note désormais $\bm{R} = (R,\phi_R)$ la projection de la position du centre de masse en coordonnées cylindriques dans le plan $xy$
 
-\begin{itemize}
-\item Interaction dipolaire électrique : l'hamiltonien 
-\end{itemize}
-
-
-y calculent la forme complète de l'hamiltonien en prenant en compte le mouvement de centre de masse. 
-\begin{equation*}
-
-\end{equation*}
 
 Nous avons maintenant terminé cette partie sur le concept de moment angulaire de la lumière. Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans le chapitre III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans le chapitre IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.
