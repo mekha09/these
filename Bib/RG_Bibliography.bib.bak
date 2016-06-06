@@ -159,6 +159,18 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.113.066102}
 }
 
+@Article{BabikerPRL2002,
+  Title                    = {Orbital angular momentum exchange in the interaction of twisted light with molecules},
+  Author                   = {Babiker, M and Bennett, CR and Andrews, DL and Romero, LC D{\'a}vila},
+  Journal                  = {Physical review letters},
+  Year                     = {2002},
+  Number                   = {14},
+  Pages                    = {143601},
+  Volume                   = {89},
+  __markedentry            = {[Romain:6]},
+  Publisher                = {APS}
+}
+
 @Article{BahrdtPRL2013,
   Title                    = {First Observation of Photons Carrying Orbital Angular Momentum in Undulator Radiation},
   Author                   = {Bahrdt, J. and Holldack, K. and Kuske, P. and M\"uller, R. and Scheer, M. and Schmid, P.},
@@ -1641,6 +1653,17 @@
   Adsurl                   = {http://adsabs.harvard.edu/abs/1992ailf.conf..247K}
 }
 
+@Book{Landau1982a,
+  Title                    = {Quantum Electrodynamics},
+  Author                   = {Berestetskii, V.B. and Lifshitz, E.M. and Pitaevski, L.P.},
+  Publisher                = {Butterworth-Heinemann},
+  Year                     = {1982},
+  Series                   = {vol. 4 of Course of Theoretical Physics},
+  ISBN                     = {9780750633710},
+  Lccn                     = {82202581},
+  URL                      = {https://books.google.fr/books?id=URL5NKX8vbAC}
+}
+
 @Article{LangfordPRL2004,
   Title                    = {Measuring Entangled Qutrits and Their Use for Quantum Bit Commitment},
   Author                   = {Langford, N. K. and Dalton, R. B. and Harvey, M. D. and O'Brien, J. L. and Pryde, G. J. and Gilchrist, A. and Bartlett, S. D. and White, A. G.},
@@ -1733,7 +1756,6 @@
   Number                   = {5992},
   Pages                    = {662--665},
   Volume                   = {329},
-  __markedentry            = {[Romain:]},
   Publisher                = {American Association for the Advancement of Science}
 }
 
@@ -2231,6 +2253,17 @@
   File                     = {Published version:MolinaTerrizaNP2007.pdf:PDF}
 }
 
+@Article{MondalPRA2014,
+  Title                    = {Angular momentum transfer in interaction of Laguerre-Gaussian beams with atoms and molecules},
+  Author                   = {Mondal, Pradip Kumar and Deb, Bimalendu and Majumder, Sonjoy},
+  Journal                  = {Physical Review A},
+  Year                     = {2014},
+  Number                   = {6},
+  Pages                    = {063418},
+  Volume                   = {89},
+  Publisher                = {APS}
+}
+
 @Article{MonroeP2015,
   Title                    = {Big Twist for Electron Beam},
   Author                   = {Monroe, Don},
@@ -2268,6 +2301,17 @@
   Owner                    = {truchon},
   Timestamp                = {2015.03.20},
   URL                      = {http://www.nsf.gov/mps/advisory/mpsac_other_reports/materials_instrumentation-final_from_subcommittee.pdf}
+}
+
+@Article{MuthukrishnanJOB2002,
+  Title                    = {Entanglement of internal and external angular momenta of a single atom},
+  Author                   = {Muthukrishnan, Ashok and Stroud Jr, CR},
+  Journal                  = {Journal of Optics B: Quantum and Semiclassical Optics},
+  Year                     = {2002},
+  Number                   = {2},
+  Pages                    = {S73},
+  Volume                   = {4},
+  Publisher                = {IOP Publishing}
 }
 
 @InBook{Nagali2012,
@@ -2954,6 +2998,13 @@
   URL                      = {http://www.sciencedirect.com/science/article/pii/S0304399111001811}
 }
 
+@Article{schmiegelowarxiv2015,
+  Title                    = {Excitation of an Atomic Transition with a Vortex Laser Beam},
+  Author                   = {Schmiegelow, Christian T and Schulz, Jonas and Kaufmann, Henning and Ruster, Thomas and Poschinger, Ulrich G and Schmidt-Kaler, Ferdinand},
+  Journal                  = {arXiv preprint arXiv:1511.07206},
+  Year                     = {2015}
+}
+
 @Article{scholzpra2014,
   Title                    = {Absorption of twisted light by hydrogenlike atoms},
   Author                   = {Scholz-Marggraf, H. M. and Fritzsche, S. and Serbo, V. G. and Afanasev, A. and Surzhykov, A.},
@@ -3293,17 +3344,6 @@
   DOI                      = {10.1038/nature08904}
 }
 
-@Book{v,
-  Title                    = {Quantum Electrodynamics},
-  Author                   = {Berestetskii, V.B. and Lifshitz, E.M. and Pitaevski, L.P.},
-  Publisher                = {Butterworth-Heinemann},
-  Year                     = {1982},
-  Series                   = {vol. 4 of Course of Theoretical Physics},
-  ISBN                     = {9780750633710},
-  Lccn                     = {82202581},
-  URL                      = {https://books.google.fr/books?id=URL5NKX8vbAC}
-}
-
 @Article{VanDerLaanJP2013,
   Title                    = {Applications of soft x-ray magnetic dichroism},
   Author                   = {G van der Laan},
@@ -3335,7 +3375,7 @@
   Number                   = {5},
   Pages                    = {445},
   Volume                   = {6},
-  __markedentry            = {[Romain:6]},
+  __markedentry            = {[Romain:]},
   Publisher                = {IOP Publishing}
 }
 

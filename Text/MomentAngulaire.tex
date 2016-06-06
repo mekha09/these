@@ -1,16 +1,16 @@
 \chapter{Le moment angulaire de la lumière}
 \label{CH:LightAM}
 
-Le moment angulaire est est à la rotation ce que la quantité de mouvement est à la translation. C'est une grandeur fondamentale en physique car elle est \textit{conservée}. Cette quantité peut être définie pour un satellite, une galaxie, une molécule, ou même un champ. Dans cette thèse, nous nous intéressons au cas du champ électromagnétique : plus précisément, on utilisera le champ infrarouge produit par un laser, ou bien le rayonnement ultraviolet constitué des harmoniques d'ordres élevées décrit dans la partie précédente.\par
-Dans ce chapitre, nous nous attacherons à définir le moment angulaire - d'abord pour un solide, en utilisant la mécanique newtonienne, puis pour le champ électromagnétique, en utilisant l'optique maxwellienne. Ensuite, nous étudierons le concept de moment angulaire en mécanique quantique et verrons que cette grandeur essentielle a deux composantes de natures différentes : le moment angulaire de spin (MAS) et le moment angulaire orbital (MAO). Le champ électromagnétique sera traité comme un système quantique, ce qui nous permettra de construire des champs pour lesquels le MAS et le MAO seront connus. Nous détaillerons enfin la forme et les propriétés de ces champs, ce qui nous permettront dans le chapitre suivant de les générer expérimentalement.
+Le moment angulaire est à la rotation ce que la quantité de mouvement est à la translation. C'est une grandeur fondamentale en physique car elle est \textit{conservée}. Cette quantité peut être définie pour un satellite, une galaxie, une molécule, ou encore un champ. Dans cette thèse, nous nous intéressons au cas du champ électromagnétique : plus précisément, on manipulera le moment angulaire du champ infrarouge produit par un laser, ou bien du rayonnement ultraviolet constitué des harmoniques d'ordres élevées décrit dans la partie précédente.\par
+Dans ce chapitre, nous nous attacherons à définir le moment angulaire - d'abord pour un solide, en utilisant la mécanique newtonienne, puis pour le champ électromagnétique, en utilisant l'optique maxwellienne. Ensuite, nous étudierons le concept de moment angulaire en mécanique quantique et verrons que cette grandeur essentielle a deux composantes de natures différentes : le moment angulaire de spin (MAS) et le moment angulaire orbital (MAO). Le champ électromagnétique sera traité comme un système quantique, ce qui nous permettra de construire des champs pour lesquels le MAS et le MAO seront connus. Nous détaillerons enfin la forme et les propriétés de ces champs, ce qui nous permettront dans le chapitre suivant de les générer expérimentalement. Nous terminerons par une discussion de l'échange de moment angulaire dans une interaction entre un laser et une molécule.
 
 \section{Le moment angulaire en physique classique}
 \subsection{Le concept de moment angulaire en mécanique}
 \subsubsection{Centre de masse d'un objet}
 \label{sec:centremasse}
-En mécanique classique, l'évolution d'un objet est décrite par les lois de Newton. Pour un objet \textit{ponctuel}, on a $\sum_i{\bm{F_i}}=m\bm{a}$, où $\bm{F_i}$ sont les forces appliquées à cet objet, $m$ sa masse et $\bm{a}$ son accélération. Dans le cas d'un objet plus complexe, tel qu'un atome, un fluide ou une galaxie, il faut prendre en compte la structure interne de l'objet : un objet réel peut se déformer de multiples façons sous l'effet des forces reliant les éléments qui le constituent.
+En mécanique classique, l'évolution d'un objet est décrite par les lois de Newton. Pour un objet \textit{ponctuel}, on a $\sum_n{\bm{F_n}}=m\bm{a}$, où $\bm{F_n}$ sont les forces appliquées à cet objet, $m$ sa masse et $\bm{a}$ son accélération. Dans le cas d'un objet plus complexe, tel qu'un atome, un fluide ou une galaxie, il faut prendre en compte la structure interne de l'objet : un objet réel peut se déformer de multiples façons sous l'effet des forces reliant les éléments qui le constituent.
 
-Considérons donc un objet non ponctuel. Si on lance un tel objet en l'air, son comportement sera plus compliqué qu'une particule ponctuelle : notre objet peut tourner, vaciller, se déformer, etc. On peut quand même considérer notre objet comme constitué de nombreuses particules ponctuelles, reliées entre elles par de diverses forces. On sait alors que la force appliquée sur la particule \textit{i} est sa masse fois son accélération : $\bm{F_i} = \rmd^2(m_i\bm{r_i})/\rmd t^2$. \\L'expérience montre toutefois que la trajectoire de notre objet ressemble à une parabole, même si ce n'est pas le cas pour chacune des particules qui le constituent. Ce quelque chose qui décrit une parabole est le \textit{centre de masse} de l'objet. Si on note $M$ la masse totale du système, sa position est définie par le vecteur $\bm{R}$ :
+Considérons donc un objet non ponctuel. Si on lance un tel objet en l'air, son comportement sera plus compliqué que celui d'une particule ponctuelle : notre objet peut tourner, vaciller, se déformer, etc. On peut quand même considérer notre objet comme constitué de nombreuses particules ponctuelles, reliées entre elles par de diverses forces. On sait alors que la force appliquée sur la particule \textit{i} est sa masse fois son accélération : $\bm{F_i} = \rmd^2(m_i\bm{r_i})/\rmd t^2$. \\L'expérience montre toutefois que la trajectoire de notre objet ressemble à une parabole, même si ce n'est pas le cas pour chacune des particules qui le constituent. Ce quelque chose qui décrit une parabole est le \textit{centre de masse} de l'objet. Si on note $M$ la masse totale du système, sa position est définie par le vecteur $\bm{R}$ :
 \begin{equation*}
 \bm{R} = \sum_i{m_i\bm{r_i}/M}.
 \end{equation*}
@@ -18,12 +18,12 @@ La trajectoire de ce point inventé artificiellement est facile à décrire en u
 \begin{equation*}
 \bm{F} = \sum_i{\bm{F_i}} = \frac{\rmd^2(\sum_i{m_i\bm{r_i}})}{\rmd t^2} = \frac{\rmd^2(M\bm{R})}{\rmd t^2} = \frac{M\rmd^2(\bm{R})}{\rmd t^2}.
 \end{equation*}
-Remarquons ici que $\bm{F}$, la somme des forces appliquées à toutes les particules, est égale aux forces \textit{extérieures} au système. En effet, quelque soit la nature des forces internes à notre objet, ces forces s'exercent entre deux particules et la troisième loi de Newton nous dit qu'entre ces particules l'action égale toujours la réaction. Ainsi dans le terme $\sum_i{\bm{F_i}}$, les forces internes s'annulent deux à deux.\\ Cette propriété du centre de masse est particulièrement importante et est d'ailleurs la raison pour laquelle nous l'avons introduit : nous voyons que les mécaniques \textit{internes} et \textit{externes} de l'objet peuvent être traitées séparément. Ainsi, nous allons pouvoir nous concentrer sur les mouvements internes de notre objet, et en particulier sa rotation.
+Remarquons ici que $\bm{F}$, la somme des forces appliquées à toutes les particules, est composée des forces \textit{externes} et \textit{internes} au système. Cependant, quelque soit la nature des forces internes à notre objet, ces forces s'exercent entre deux particules. La troisième loi de Newton nous dit qu'entre deux particules l'action est toujours égale à la réaction. Ainsi dans le terme $\sum_i{\bm{F_i}}$, les forces internes s'annulent deux à deux et la force totale $\bm{F}$ est seulement égale aux forces externes.\\ Cette propriété du centre de masse est particulièrement importante : nous voyons que les mécaniques \textit{internes} et \textit{externes} de l'objet peuvent être traitées séparément. Nous pouvons donc nous concentrer sur les mouvements internes de notre objet, et en particulier sa rotation.
 
 \subsubsection{Rotation d'un corps rigide}
-Comme nous l'avons noté plus haut, le comportement d'un objet réel est plus complexe qu'une simple rotation. Pour simplifier cette discussion nous allons considérer un objet rigide, c'est-à-dire constitué d'un certain nombres de particules reliées par des forces assez fortes pour que l'objet ne se déforme pas au cours du mouvement. Nous considérons également le problème à deux dimensions seulement, et généraliserons ensuite le résultat.
+Comme nous l'avons noté plus haut, le comportement d'un objet réel est plus complexe qu'une simple rotation. Considérons pour simplifier que notre objet est rigide, c'est-à-dire constitué d'un certain nombres de particules reliées entre elles par des forces assez fortes pour que l'objet ne se déforme pas au cours du mouvement. Nous considérons également le problème à deux dimensions seulement, et généraliserons ensuite le résultat.
 
-Si nous nous plaçons dans le référentiel du centre de masse, la seule chose que peut faire notre objet rigide est tourner autour d'un axe. Cet axe est défini comme l'endroit de l'objet restant au repos. La rotation autour de cet axe est alors simplement définie par l'évolution de l'angle d'un quelconque point de l'objet au cours du temps. On peut décrire la rotation à deux dimensions de la même façon qu'une translation à une dimension : l'angle $\theta$ est l'analogue de la distance de laquelle s'est déplacé l'objet, et la vitesse angulaire $\omega=d\theta/dt$ est l'analogue de la vitesse à laquelle se déplace l'objet. Notons maintenant $(x,y)$ les coordonnées cartésiennes de notre espace à deux dimensions. Si l'angle de l'objet a changé d'une petite quantité $\Delta\theta$ après un temps $\Delta t$, alors les changements selon $x$ et $y$ sont simplement :
+Si nous nous plaçons dans le référentiel du centre de masse, la seule chose que peut faire notre objet rigide est tourner autour d'un axe. Cet axe est défini comme l'endroit de l'objet restant au repos. La rotation autour de cet axe est alors définie par l'évolution de l'angle $\theta$ d'un quelconque point de l'objet au cours du temps. On peut décrire la rotation à deux dimensions de la même façon qu'une translation à une dimension : l'angle $\theta$ est l'analogue de la distance de laquelle s'est déplacé l'objet, et la vitesse angulaire $\omega=d\theta/dt$ est l'analogue de la vitesse à laquelle se déplace l'objet. Notons maintenant $(x,y)$ les coordonnées cartésiennes de notre espace à deux dimensions. Si l'angle de l'objet a changé d'une petite quantité $\Delta\theta$ après un temps $\Delta t$, alors les changements selon $x$ et $y$ sont simplement :
 \begin{equation*}
 \Delta x = -y\Delta \theta \mbox{ et } \Delta y = x\Delta \theta
 \end{equation*}
@@ -42,16 +42,16 @@ Ce qui nous fournit l'expression du couple en fonction de la force appliquée :
 
 \subsubsection{Moment angulaire}
 \label{AM_classique}
-Cette analogie nous amène à définir une dernière quantité. Pour une translation linéaire, on sait que la force externe au système est égale à $d(m\bm{r})/dt$, c'est à dire au taux de variation d'une quantité $\bm{p}=m\bm{r}$ appelée moment total de l'objet. De même, le couple appliqué au système est égal au taux de variation de $J$, appelé \textit{moment angulaire} de l'objet. On peut effectivement écrire :
+Cette analogie nous amène à définir une dernière quantité. Pour une translation linéaire, on sait que la force externe au système est égale à $d(m\bm{r})/dt$, c'est à dire au taux de variation d'une quantité $\bm{p}=m\bm{r}$ appelée quantité de mouvement de l'objet. De même, le couple appliqué au système est égal au taux de variation d'une quantité :
 \begin{equation}
 \tau = xF_y-yF_x = xm(\rmd^2y/\rmd t^2)-ym(\rmd^2x/\rmd t^2) = \frac{d}{\rmd t}\biggl[xm\biggl(\frac{\rmd y}{\rmd t}\biggr) - ym\biggl(\frac{\rmd x}{\rmd t}\biggr)\biggr].
 \label{Eq.DefTauL}
 \end{equation}
-$\tau$ est donc bien égal à la variation temporelle d'une quantité dont on obtient l'expression :
+$\tau$ est donc bien égal à la variation temporelle de $J$, appelé \textit{moment angulaire} de l'objet et dont on obtient l'expression :
 \begin{equation*}
 J = x\biggl(\frac{\rmd (my)}{\rmd t}\biggr) - y\biggl(\frac{\rmd (mx)}{\rmd t}\biggr) = xp_y - yp_x.
 \end{equation*}
-Nous avons jusqu'à présent considéré un problème à deux dimensions par simplicité. Si l'on considère maintenant un espace à trois dimensions $(x,y,z)$, les résultats obtenus sont valables pour une rotation dans le plan $xy$, c'est à dire autour de l'axe $z$. On définit donc $J_z$, le moment angulaire selon l'axe $z$. Nous pouvons le faire pour n'importe quel axe, et obtenir pour les trois axes de notre repère
+Nous avons jusqu'à présent considéré un problème à deux dimensions par simplicité. Si l'on considère maintenant un espace à trois dimensions $(x,y,z)$, les résultats obtenus sont valables pour une rotation dans le plan $xy$, c'est à dire autour de l'axe $z$. On définit donc $J_z$, le moment angulaire selon l'axe $z$. Nous pouvons le faire pour n'importe quel axe, et en particulier pour les trois axes de notre repère :
 \begin{equation}
 \begin{alignedat}{6}
 &J_x~&&=y&&p_z&&-z&&p_y&&,\\
@@ -60,12 +60,12 @@ Nous avons jusqu'à présent considéré un problème à deux dimensions par sim
 \end{alignedat}
 \label{Eq.Jdef}
 \end{equation}
-Le moment angulaire à trois dimensions est donc un vecteur, dont les composantes sont données par Eq. \ref{Eq.Jdef}. Il est pratique de réécrire cette expression sous forme vectorielle :
+Le moment angulaire à trois dimensions est donc un vecteur, dont les composantes sont données par l'équation \ref{Eq.Jdef}. Il est pratique de réécrire cette expression sous forme vectorielle :
 \begin{equation}
-\bm{J}=\bm{r}\times\bm{p}
+\bm{J}=\bm{r}\times\bm{p}.
 \label{Eq.DefJ}
 \end{equation}
-Pour terminer, regardons à nouveau l'expression \ref{Eq.DefTauL} : la variation de $\bm{J}$ est égale au couple total appliqué au système. Comme expliqué plus haut, $\bm{F_{tot}} = \bm{F_{ext}}$. En utilisant de la même manière la troisième loi de Newton, on obtient que 
+Pour terminer, regardons à nouveau l'expression \ref{Eq.DefTauL} : la variation de $\bm{J}$ est égale au couple total appliqué au système. Puisque comme on l'a expliqué plus haut, $\bm{F_{tot}} = \bm{F_{ext}}$, on obtient un résultat similaire pour le couple : 
 \begin{equation*}
 \bm{\tau_{tot}} = \bm{\tau_{ext}} = \frac{\rmd\bm{J}}{\rmd t}. 
 \end{equation*}
@@ -73,20 +73,20 @@ Ce résultat est très important puisqu'il nous donne \textit{la loi de conserva
 
 
 \subsection{Les propriétés mécaniques de la lumière}
-Nous avons défini le moment angulaire porté par la matière. Cette matière est capable d'émettre des radiations électromagnétiques, et en se faisant peut perdre de l'énergie. Pour respecter la conservation de l'énergie, il est donc nécessaire que la lumière, et plus généralement les ondes électromagnétiques, portent de l'énergie. De la même façon, nous verrons que comme la matière, la lumière porte une quantité de mouvement ainsi qu'un moment angulaire.
+Nous avons défini le moment angulaire porté par la matière. Cette matière est capable d'émettre des radiations électromagnétiques, et en se faisant peut perdre de l'énergie. Pour respecter la conservation de l'énergie, il est donc nécessaire que la lumière, et plus généralement les ondes électromagnétiques, portent de l'énergie. Nous verrons aussi que comme la matière, la lumière porte une quantité de mouvement ainsi qu'un moment angulaire.
 
 \subsubsection{L'énergie du champ électromagnétique} 
-C'est un sujet qui a vivement animé les débats à la fin du XIXème siècle, principalement car il était incompréhensible qu'une onde se propage dans le vide. La solution alors donnée était le postulat de l'existence de \textit{l'éther}, une substance à travers laquelle se propagerait la lumière, mais qui n’interagirait presque pas avec le reste de la matière. De nombreux travaux ont été dédiés à l'étude de ses propriétés mais n'ont menés à aucun résultat, et ce pour une bonne raison, puisque l'éther n'existe pas. Néanmoins, John H. Poynting produisit à cette époque plusieurs travaux de grande importance sur le sujet de l'énergie des ondes électromagnétiques, la pression de radiation, et même le moment angulaire de la lumière. Poynting faisait partie d'un groupe de physiciens mené par Heaviside, Fitzgerald, Lodge et Hertz qui travaillèrent à développer la théorie de Maxwell après sa mort en 1873. Nous reprenons ici la démarche de son article de 1884 \mycite{Poynting1884}, qui amène à une expression de la densité d'énergie et du flux d'énergie d'un champ électromagnétique.
+C'est un sujet qui a vivement animé les débats à la fin du XIXème siècle, principalement car il était incompréhensible qu'une onde se propage dans le vide. La solution alors donnée était le postulat de l'existence de \textit{l'éther}, une substance à travers laquelle se propagerait la lumière, mais qui n’interagirait presque pas avec le reste de la matière. Si on sait aujourd'hui que l'éther n'existe pas, John H. Poynting produisit néanmoins à cette époque plusieurs travaux de grande importance au sujet de l'énergie des ondes électromagnétiques, la pression de radiation, et même le moment angulaire de la lumière. Poynting faisait partie d'un groupe de physiciens mené par Heaviside, Fitzgerald, Lodge et Hertz qui travaillèrent à développer la théorie de Maxwell après sa mort en 1873. Nous reprenons ici la démarche de son article de 1884 \mycite{Poynting1884}, qui amène à une expression de la densité d'énergie et du flux d'énergie d'un champ électromagnétique.
 
 Considérons une distribution de charges et de courants contenus dans un volume $V$. En un court temps $\rmd t$, une charge bougera de $\bm{v}\rmd t$ et en utilisant l'expression de la force de Lorentz, le travail effectué sur la charge sera
 \begin{equation*}
-\rmd U = \bm{F}\cdot\bm{\rmd l} = q(\bm{E}+\bm{v}\times\bm{B})\cdot\bm{v}\rmd t = q\bm{E}\cdot \bm{v} \rmd t,
+\rmd W = \bm{F}\cdot\bm{\rmd l} = q(\bm{E}+\bm{v}\times\bm{B})\cdot\bm{v}\rmd t = q\bm{E}\cdot \bm{v} \rmd t,
 \end{equation*}
 où l'on retrouve que la force magnétique ne fournit pas de travail. Notons ensuite $\rho$ la densité de charge dans le volume ($q = \rho \rmd V$) et $\bm{J} =\rho \bm{v}$ la densité de courant. En intégrant sur le volume V, on obtient
 \begin{equation*}
-\frac{\rmd U}{\rmd t} = \int_V \bm{E} \cdot \bm{J} \rmd V.
+\frac{\rmd W}{\rmd t} = \int_V \bm{E} \cdot \bm{J} \rmd V.
 \end{equation*}
-$\rmd U/\rmd t$ est le taux auquel le travail est fournit, c'est-à-dire la puissance délivrée au système. $\bm{E} \cdot \bm{J}$ est donc la puissance délivrée par unité de volume, que l'on peut exprimer en utilisant l'équation de Maxwell-Ampère :
+$\rmd W/\rmd t$ est le taux auquel le travail est fournit, c'est-à-dire la puissance délivrée au système. $\bm{E} \cdot \bm{J}$ est donc la puissance délivrée par unité de volume, que l'on peut exprimer en utilisant l'équation de Maxwell-Ampère :
 \begin{align*}
 \bm{E} \cdot \bm{J} &= \frac{1}{\mu_0}\bm{E} \cdot (\bm{\nabla} \times \bm{B})-\epsilon_0\bm{E}\cdot\frac{\partial\bm{E}}{\partial t}\\
 &= \frac{1}{\mu_0}\bigl[\bm{B} \cdot (\bm{\nabla} \times \bm{E})-\bm{\nabla} \cdot (\bm{E} \times \bm{B})\bigr]-\epsilon_0\bm{E}\cdot\frac{\partial\bm{E}}{\partial t}\\
@@ -98,13 +98,13 @@ On note que $\bm{B} \cdot \frac{\partial\bm{B}}{\partial t} = \frac{1}{2}\frac{\
 \end{equation*}
 On intègre ensuite cette équation sur le volume $V$ et on utilise le théorème d'Ostrogradski sur le dernier terme pour obtenir
 \begin{equation*}
-\frac{dU}{dt} = -\frac{\partial}{\partial t}\int_V\frac{1}{2}\biggl(\epsilon_0\bm{E^2}+\frac{1}{\mu_0}\bm{B^2}\biggl)dV-\frac{1}{\mu_0} \oint_S(\bm{E} \times \bm{B})\cdot\bm{dS}
+\frac{\rmd W}{\rmd t} = -\frac{\partial}{\partial t}\int_V\frac{1}{2}\biggl(\epsilon_0\bm{E^2}+\frac{1}{\mu_0}\bm{B^2}\biggl)\rmd V-\frac{1}{\mu_0} \oint_S(\bm{E} \times \bm{B})\cdot\bm{\rmd S}
 \end{equation*}
 Regardons les termes obtenus dans cette expression :
 \begin{itemize}
 \item Le terme de gauche est la puissance délivrée au volume, soit le taux auquel les particules \textit{gagnent} de l'énergie,
-\item Le premier terme de droite est le taux de \textit{pertes} d'énergie électromagnétique du champ à \textit{l'intérieur} du volume,
-\item Le deuxième terme de droite est le taux de transport de l'énergie vers \textit{l'extérieur} du volume, i.e. à travers la surface $S$,
+\item Le premier terme de droite est le taux de \textit{pertes} d'énergie électromagnétique du champ à l'intérieur du volume,
+\item Le deuxième terme de droite est le taux auquel l'énergie sort du volume à travers la surface $S$,
 \end{itemize}
 On peut donc l'exprimer par:\\\'Energie \textit{perdue} par le champ = énergie \textit{gagnée} par les particules + flux d'énergie en dehors du volume. \\On identifie alors deux quantités :
 \begin{equation}
@@ -117,23 +117,23 @@ De manière intéressante, si on considère une onde plane se propageant selon u
 
 \subsubsection{La quantité de mouvement de la lumière}
 Ayant maintenant trouvé l'expression de l'énergie du champ électromagnétique, on s'intéresse à sa quantité de mouvement. Une réponse rapide est donnée par la relativité. Pour une particule donnée, on peut relier l'énergie, la quantité de mouvement et la masse : $E^2=p^2c^2+m^2c^4$. Si on accepte également que la lumière est constituée de photons, particules de masses nulles, on a alors directement $E = pc$.\\
-Cette explication, bien que tout à fait correcte, n'est pas très satisfaisante puisque elle fait appel à (1) un résultat de relativité et (2) le fait que la lumière soit constituée de particules appelées photons. Pourquoi faudrait-il prendre en compte la nature \textit{particulaire} de la lumière pour expliquer qu'une \textit{onde} porte de la quantité de mouvement ? Il serait plus intéressant de ne prendre en compte que les aspects ondulatoires, de la même façon que quelqu'un aurait pû le faire en 1900 (avant la relativité).
+Cette explication, bien que tout à fait correcte, n'est pas très satisfaisante puisque elle fait appel à (1) un résultat de relativité et (2) le fait que la lumière soit constituée de particules appelées photons. Pourquoi faudrait-il prendre en compte la nature \textit{particulaire} de la lumière pour expliquer qu'une \textit{onde} porte de la quantité de mouvement ? Il serait plus intéressant de ne prendre en compte que les aspects ondulatoires, de la même façon que quelqu'un aurait pû le faire en 1900, avant la relativité.
 
-Considérons ici une particule libre de charge $q$, sous l'influence d'une onde électromagnétique. Notons $z$ la direction de propagation de l'onde et $x$ la direction du champ $\bm{E}$. La trajectoire de la particule se fera majoritairement dans la direction $x$, tant que sa vitesse vérifie $v \ll c$. Si on considère l'action du champ pendant plusieurs périodes, on voit que la seule force qui ne s'annule pas une fois sommée sur plusieurs périodes est $\bm{F}_B=\bm{v_x}\times\bm{B}$. Pendant un temps $dt$, cette force donne un moment à la particule égal à
+Considérons ici une particule libre de charge $q$, sous l'influence d'une onde électromagnétique. Notons $z$ la direction de propagation de l'onde et $x$ la direction du champ $\bm{E}$. Tant que la vitesse de la particule vérifie $v \ll c$, sa trajectoire se fera majoritairement dans la direction $x$. Si on considère l'action du champ pendant plusieurs périodes, on voit que la seule force qui ne s'annule pas une fois sommée sur plusieurs périodes est $\bm{F}_B=\bm{v_x}\times\bm{B}$. Pendant un temps $\rmd t$, cette force donne un moment à la particule égal à
 \begin{equation*}
-dp=\left|\bm{F}_Bdt\right|=\left|q\bm{v_x}\times\bm{B}\right|dt=qv_xBdt=\frac{qv_xEdt}{c}.
+\rmd p=\left|\bm{F}_B\rmd t\right|=\left|q\bm{v_x}\times\bm{B}\right|\rmd t=qv_xB\rmd t=\frac{qv_xE\rmd t}{c}.
 \end{equation*}
 Quant au travail fournit par le champ sur la particule, il vaut
 \begin{equation*}
-dW=\bm{F}_E\cdot dx=qv_xEdt.
+\rmd W=\bm{F}_E\cdot \rmd x=qv_xE\rmd t.
 \end{equation*}
-On obtient donc $dp = \frac{dW}{c}$, c'est-à-dire que la quantité de mouvement obtenue par la particule vaut $1/c$ fois l'énergie fournie par l'onde. Ceci est vraie à chaque fois que l'onde rencontre une particule, c'est donc une propriété intrinsèque de l'onde. Il ne reste qu'à diviser par $c$ pour obtenir l'expression de la densité de quantité de mouvement de l'onde électromagnétique :
+On obtient donc $\rmd p = \frac{\rmd W}{c}$, c'est-à-dire que la quantité de mouvement obtenue par la particule vaut $1/c$ fois l'énergie fournie par l'onde. Ceci est vraie à chaque fois que l'onde rencontre une particule, c'est donc une propriété intrinsèque de l'onde. Il ne reste qu'à diviser par $c$ pour obtenir l'expression de la densité de quantité de mouvement de l'onde électromagnétique :
 \begin{equation}
 \bm{p} = \frac{\bm{\Pi}}{c^2} \mbox{, où $\bm{\Pi}$ est donné par \ref{Def.Poynting}.}
 \label{Eq.Defp}
 \end{equation}
 
-C'est l'essence de la démarche utilisée par Henri Poincaré en 1900 \mycite{poincare1900}, où il discute de la \textit{``quantité de mouvement de [...] notre fluide fictif''}. Dans ce même article, Poincaré parle de la force exercée par la lumière sur la matière, notion déjà présente chez Maxwell et même chez Kepler appelée \textit{pression électromagnétique}. On l'appelle aujourd'hui plus couramment \textit{pression de radiation}. Poynting la développa considérablement par la suite \mycite{poynting1903}, et nota que malgré sa faible valeur comparée à la force de gravitation, elle pourrait avoir d'importantes conséquences en astronomie. \`{A} raison : par exemple, si la pression de radiation n'avait pas été prise en compte lors du programme Viking, les deux sondes envoyées sur Mars auraient raté l'orbite de la planète d'environ 15000 kilomètres \mycite{Hecht2001}.
+C'est l'essence de la démarche utilisée par Henri Poincaré en 1900 \mycite{poincare1900}, où il discute de la \textit{``quantité de mouvement de [...] notre fluide fictif''}. Dans ce même article, Poincaré parle de la force exercée par la lumière sur la matière, notion déjà présente chez Maxwell et même chez Kepler appelée \textit{pression électromagnétique}. On l'appelle aujourd'hui plus couramment \textit{pression de radiation}. Poynting développa considérablement ce concept par la suite \mycite{poynting1903}, et nota que malgré sa faible valeur comparée à la force de gravitation, elle pourrait avoir d'importantes conséquences en astronomie. \`{A} raison : par exemple, si la pression de radiation n'avait pas été prise en compte lors du programme Viking, les deux sondes envoyées sur Mars auraient raté l'orbite de la planète d'environ 15000 kilomètres \mycite{Hecht2001}.
 
 \subsubsection{Le moment angulaire de la lumière}
 Poynting, en plus de ces contributions majeures, a été le premier à envisager l'existence du moment \textit{angulaire} de la lumière. Il fit l'analogue entre une onde électromagnétique polarisée circulairement et une onde élastique de torsion, suggérant que la lumière possède un moment angulaire et peut fournir un couple à la matière \mycite{PoyntingPRSL1909}. Il propose à la fin de son article un dispositif expérimental constitué d'une série de lames quart d'ondes, permettant de démultiplier cet effet jusqu'à le rendre mesurable. Il conclut toutefois avec pessimisme que \textit{``even with such multiplications, my present experience of light forces does not give me much hope that the effect could be detected, if it has the value suggested by the mechanical model''}.
@@ -152,7 +152,7 @@ Dans cette partie nous discuterons de la définition du moment angulaire en méc
 
 \subsection{Symétries et lois de conservation}
 
-Dans la partie précédente, nous avons utilisé les lois de la mécanique classique pour définir la notion de moment angulaire. Nous avons vu que comme la masse ou l'énergie, $J$ était une quantité conservée. En mécanique classique, une loi de conservation est presque toujours le point de départ d'un raisonnement. En mécanique quantique au contraire, il est remarquable que les lois de conservation sont profondément reliées et découlent directement des propriétés de symétrie des systèmes. 
+Dans la partie précédente, nous avons utilisé les lois de la mécanique classique pour définir la notion de moment angulaire. Nous avons vu que comme la masse ou l'énergie, $J$ était une quantité conservée. En mécanique classique, une loi de conservation est presque toujours le point de départ d'un raisonnement. En mécanique quantique au contraire, il est remarquable que les lois de conservation soient profondément reliées et découlent directement des propriétés de symétrie des systèmes. 
 
 \subsubsection{Définition de la symétrie d'un système}
 Nous commençons donc par étudier la question de la symétrie d'un système. Notons $\ket{\psi_1}$ l'état de départ du système et $\ket{\psi_2}$ l'état après un temps $t$. On peut noter $\hat{U}$ l'opérateur définit par :
@@ -200,7 +200,7 @@ On en déduit que $(e^{i\delta})^2=1$, c'est à dire $e^{i\delta}=\pm1$. On voit
 Si $\hat{P}\ket{\psi_1}= \ket{\psi_1}$, on dit que $\ket{\psi_1}$ est de parité \textit{paire}, et si $\hat{P}\ket{\psi_1}= -\ket{\psi_1}$, on dit que $\ket{\psi_1}$ est de parité \textit{impaire}. $\hat{P}$ est également appelé opérateur parité. Notons que la grande majorité des lois physiques sont symétriques par rapport à $\hat{P}$. En fait, seule l'interaction faible ne respecte pas cette propriété. Pour tout ce qui va nous intéresser par la suite, on considérera donc toujours que l'hamiltonien de notre système est symétrique par rapport à $\hat{P}$. On en conclut que si le système a une parité définie à un instant, alors il gardera la même parité. C'est ce qu'on appelle \textit{la conservation de la parité}, très importante dans les interactions lumière-matière.
 
 \subsubsection{Le moment angulaire et l'opérateur rotation}
-Enfin, nous pouvons appliquer la même démarche cette fois en utilisant l'opérateur rotation $\hat{R}_z(\theta)$ définit comme la rotation du système d'un angle $\theta$ autour de l'axe $z$. Dans un problème à symétrie cylindrique, un tel opérateur laisse le système inchangé, à un terme de phase près :
+Nous pouvons appliquer la même démarche cette fois en utilisant l'opérateur rotation $\hat{R}_z(\theta)$, défini comme la rotation du système d'un angle $\theta$ autour de l'axe $z$. Dans un problème à symétrie cylindrique, un tel opérateur laisse le système inchangé, à un terme de phase près :
 \begin{equation*}
 \hat{R}_z(\theta)\ket{\psi_1}=e^{i\delta}\ket{\psi_1}.
 \end{equation*}
@@ -319,36 +319,34 @@ Ces résultats sont importants puisqu'ils nous permettront par la suite de cherc
 \subsection{Le moment angulaire du photon}
 \subsubsection{La quantification du champ électromagnétique}
 \label{sec:quant_EM}
-Pour étudier ce problème au niveau du photon, il est nécessaire de traiter le champ électromagnétique comme un système quantique. En d'autres termes, on veut passer du problème classique décrit plus haut à un problème quantifié décrit par un ensemble discret de variables. Cette quantification peut être effectuée de plusieurs façons différentes, on pourra par exemple se rapporter à \mycite{Landau1982a} ou \mycite{Cohen1997} pour une description très complète et rigoureuse de ce problème. On peut également citer l'article de \mycite{VanEnk1994} qui traite exactement du problème qui nous intéresse. N'ayant pas la prétention d'écrire un ouvrage d'électrodynamique quantique, nous nous contenterons d'expliquer la démarche.
+Pour étudier ce problème au niveau du photon, il est nécessaire de traiter le champ électromagnétique comme un système quantique. En d'autres termes, on veut passer du problème classique décrit plus haut à un problème quantifié décrit par un ensemble discret de variables. Cette quantification peut être effectuée de plusieurs façons différentes, on pourra par exemple se rapporter à \mycite{Landau1982a} ou \mycite{Cohen1997} pour une description très complète et rigoureuse de ce problème. On peut également citer l'article de \mycite{VanEnk1994} qui traite exactement du problème qui nous intéresse. N'ayant pas la prétention d'écrire un ouvrage d'électrodynamique quantique, nous nous contenterons d'expliquer la démarche de ces derniers.
 
-Pour commencer, on choisit une variable classique, par exemple le potentiel vecteur $\bm{A}(\bm{r},t)$. Il respecte la condition de transversalité $\nabla\cdot\bm{A}=0$. Pour faire apparaître des paramètres discrets, on considère un volume $V$ grand mais d'extension finie. $\bm{A}$ peut alors s'écrire comme une somme de modes transverses $\bm{F}_\lambda$, qui sont solutions de l'équation d'onde
+Pour commencer, on choisit une variable classique, par exemple le potentiel vecteur $\bm{A}(\bm{r},t)$. Il respecte la condition de transversalité $\nabla\cdot\bm{A}=0$. Pour faire apparaître des paramètres discrets, on considère un volume $V$ grand mais d'extension finie. $\bm{A}$ peut alors s'écrire comme une somme de modes transverses $\bm{F}_\beta$, qui sont solutions de l'équation d'onde
 \begin{equation*}
-\nabla^2\bm{F}_\lambda=-k^2\bm{F}_\lambda,
+\nabla^2\bm{F}_\beta=-k^2\bm{F}_\beta,
 \end{equation*}
-et respectent aussi la conditions de transversalité $\nabla\cdot\bm{F}_\lambda=0$.\\
-$\lambda$ est l'index du mode, et est en fait défini comme les valeurs propres des opérateurs qui commutent et qui ont $\bm{F}_\lambda$ comme fonction propre. Par exemple, on peut choisir pour $\bm{F}_\lambda$ les ondes planes progressives. Pour les décrire complètement, on a besoin de quatre paramètres, par exemple $\lambda = \{k_x, k_y, k_z, \alpha\}$, où $\bm{k}$ est le vecteur d'onde et $\alpha=\pm1$ la polarisation de l'onde. De manière générale on écrit :
+et respectent aussi la conditions de transversalité $\nabla\cdot\bm{F}_\beta=0$.\\
+$\beta$ est l'index du mode, et est en fait défini comme les valeurs propres des opérateurs qui commutent et qui ont $\bm{F}_\beta$ comme fonction propre. Par exemple, on peut choisir pour $\bm{F}_\beta$ les ondes planes progressives. Pour les décrire complètement, on a besoin de quatre paramètres, par exemple $\beta = \{k_x, k_y, k_z, \alpha\}$, où $\bm{k}$ est le vecteur d'onde et $\alpha=\pm1$ l'hélicité de l'onde. De manière générale on écrit :
 \begin{equation}
-\bm{A}=\sum_{\lambda}{a_{\lambda}\bm{F}_\lambda+a^*_{\lambda}\bm{F}_\lambda},
+\bm{A}=\sum_{\beta}{a_{\beta}\bm{F}_\beta+a^*_{\beta}\bm{F}_\beta},
 \label{A_decomp_Flambda}
 \end{equation}
-où $a_{\lambda}$ est une amplitude complexe sans dimension. 
+où $a_{\beta}$ est une amplitude complexe sans dimension. 
 
-La quantification s'effectue alors de la même façon que pour l'oscillateur harmonique, où $a_{\lambda}$ et $a^*_{\lambda} = a^{\dag}_{\lambda}$ deviennent respectivement les opérateurs de création et d'annihilation. Si on choisit encore une fois $\lambda = \{\bm{k}, \alpha\}$, l'énergie et la quantité de mouvement du champ sont donnés par :
+La quantification s'effectue alors de la même façon que pour l'oscillateur harmonique, où $a_{\beta}$ et $a^*_{\beta} = a^{\dag}_{\beta}$ deviennent respectivement les opérateurs de création et d'annihilation. Si on choisit encore une fois $\beta = \{\bm{k}, \alpha\}$, l'énergie et la quantité de mouvement du champ sont donnés par :
 \begin{align*}
 E~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\omega}, \\
 P~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\bm{k}}
 \end{align*}
-Ces expression permettent d'introduire le concept de photon, ou quantum de radiation électromagnétique : le champ est vu comme un ensemble de particules ayant chacune une énergie $\hbar\omega$ et une quantité de mouvement $\hbar\bm{k}$. $N_{\bm{k},\alpha}$, appelé \textit{nombre d'occupation}, est alors vu comme le nombre de photons ayant la quantité de mouvement $\bm{k}$ et la polarisation $e^{(\alpha)}$. Nous verrons plus tard la définition de la polarisation du photon, et en particulier qu'elle est analogue à son spin. 
+Ces expression permettent d'introduire le concept de photon, ou quantum de radiation électromagnétique : le champ est vu comme un ensemble de particules ayant chacune une énergie $\hbar\omega$ et une quantité de mouvement $\hbar\bm{k}$. $N_{\bm{k},\alpha}$, appelé \textit{nombre d'occupation}, est alors vu comme le nombre de photons ayant la quantité de mouvement $\bm{k}$ et de spin $\alpha$.
 
-\fbox{\begin{minipage}{\textwidth}
 \textbf{Remarque :} On peut également calculer la fonction d'onde du photon, mais il faut effectuer une distinction importante avec le cas d'une particule telle qu'un atome. En effet, le photon se déplace à la vitesse de la lumière, ce qui oblige à utiliser une description relativiste. Dans ce cas, la fonction d'onde ne peut pas être vue comme l'amplitude de probabilité de trouver le photon à un endroit donné. En effet, on vient de voir que l'énergie du photon s'écrit $E = \hbar\omega = \hbar\left|\bm{k}\right|\rmc=\left|\bm{p}\right|\rmc$. On peut alors écrire l'incertitude sur la position du photon comme :
 \begin{equation*}
 \Delta x \sim \hbar\rmc/E = \hbar/p.
 \end{equation*}
 $\Delta x$ est donc de l'ordre de grandeur de la longueur de de Broglie de la particule, soit dans le cas du photon la longueur d'onde de la lumière. On voit donc que la position d'un photon n'a de sens que si le problème est grand comparé à la longueur d'onde, ce qui revient en fait à passer à la limite classique.
-\end{minipage}}
 
-Nous revenons maintenant au cas général où les $\bm{F}_\lambda$ ne sont pas spécifiés. \`A partir de l'expression de $\bm{A}$ (\ref{A_decomp_Flambda}) où l'on remplace $a^*_{\lambda}$ par $a^{\dag}_{\lambda}$, on peut directement calculer les champs transverses électrique $\bm{E}$ et magnétique $\bm{B}$. Ces champs sont devenus des opérateurs qui agissent sur l'espace de Fock des états du champ. Ces états décrivent un nombre quelconque de photons et s'écrivent de cette façon :
+Nous revenons maintenant au cas général où les $\bm{F}_\lambda$ ne sont pas spécifiés. \`A partir de l'expression de $\bm{A}$ (\ref{A_decomp_Flambda}) où l'on remplace $a^*_{\lambda}$ par $a^{\dag}_{\lambda}$, on peut directement calculer les champs transverses électrique $\bm{E}$ et magnétique $\bm{B}$. Ces champs sont devenus des opérateurs qui agissent sur l'espace de Fock des états du champ. Ces ``états nombres'' décrivent un nombre quelconque de photons et s'écrivent de cette façon :
 \begin{equation}
 \ket{\{N_{\lambda}\}}=\prod_{\lambda}{\frac{(a^{\dag}_{\lambda})^{N_{\lambda}}}{(N_{\lambda}!)^{1/2}}}\ket{0,0,\ldots},
 \label{fockstates}
@@ -365,7 +363,7 @@ Ayant défini les états du champ, nous cherchons maintenant quels opérateurs p
 \label{defLS_hat}
 \end{equation}
 où $i,j,k=x,y,z$ et $\epsilon_{ijk}$ est le symbole de Levi-Civita.
-Toutefois, un problème se pose ici : on peut montrer qu'une fois appliqués aux modes transverses $\bm{F}_\lambda$, $\hat{\bm{L}}$ et $\hat{\bm{S}}$ ne conservent pas la transversalité du champ. $\hat{\bm{L}}\ket{\bm{F}_\lambda}$ et $\hat{\bm{S}}\ket{\bm{F}_\lambda}$ ne représentent donc plus des états physiques du champ. En réalité, l'état du champ n'est pas représenté par les fonctions $\ket{\bm{F}_\lambda}$ mais par les états de l'espace de Fock (\ref{fockstates}). $\hat{\bm{L}}$ et $\hat{\bm{S}}$ n'agissent donc pas le bon espace - il nous faut chercher des opérateurs agissant dans l'espace de Fock. De la même manière qu'on a obtenu l'expression de $\bm{E}$ et $\bm{B}$ , on part de l'expression classique (\ref{SeparationJS_classique}). On obtient (\mycite{VanEnk1994}) :
+Toutefois, un problème se pose ici : on peut montrer qu'une fois appliqués aux modes transverses $\bm{F}_\lambda$, $\hat{\bm{L}}$ et $\hat{\bm{S}}$ ne conservent pas la transversalité du champ. $\hat{\bm{L}}\ket{\bm{F}_\lambda}$ et $\hat{\bm{S}}\ket{\bm{F}_\lambda}$ ne représentent donc plus des états physiques du champ. En réalité, l'état du champ n'est pas représenté par les fonctions $\ket{\bm{F}_\lambda}$ mais par les états de l'espace de Fock (\ref{fockstates}). $\hat{\bm{L}}$ et $\hat{\bm{S}}$ n'agissent donc pas le bon espace - il nous faut chercher des opérateurs agissant dans l'espace de Fock. De la même manière qu'on a obtenu l'expression de $\bm{E}$ et $\bm{B}$ , on part de l'expression classique (\ref{SeparationJS_classique}). On obtient \mycite{VanEnk1994} :
 \begin{equation}
 \begin{aligned}[c]
 \bm{L}&=\epsilon_0\int{\rmd\bm{r}\sum_{a=x,y,z} \bm{E^a_{\bot}}(\bm{r}\times\bm{\nabla})\bm{A^a_{\bot}}}\\
@@ -613,28 +611,28 @@ Les termes selon $\bm{e_r}$ et $\bm{e_\theta}$ sont symétriques par rapport à 
 
 \subsection{Règles de sélection du moment angulaire dans une interaction laser-matière}
 Ayant maintenant défini les formes du champ électromagnétique utiles en pratique pour contrôler le moment angulaire de la lumière, il nous reste à étudier le rôle respectif du MAO et du MAS dans une interaction avec un atome ou une molécule. Dans cette interaction, la lumière peut induire une transition entre deux états atomiques, mais nous allons voir que le moment angulaire de la lumière impose des restrictions sur les transitions possibles.\\
-Pour classifier ces différentes transitions, on commence par effectuer une expansion multipolaire du champ électromagnétique. En pratique, cela consiste à développer les champs électriques et magnétiques sur la base des harmoniques sphériques. On pourra se référer à \mycite{Landau1982a} pour le détail de leur construction. On montre que les solutions obtenues sont les fonctions $\bm{F}_\lambda$ (voir la section \ref{sec:quant_EM}) modes propres des quatre opérateurs hermitiens qui commutent suivants : $J^2$ le moment angulaire total, $J_z$ sa projection selon $z$, l'énergie, et la parité. Les nombres quantiques correspondant sont $\lambda=\left\{j,m,\omega,P\right\}$. On construit ainsi les modes multipolaires électriques, qui ont une parité $P=(-1)^j$ et les modes multipolaires magnétiques, de parité $P=(-1)^{j+1}$. Une propriété intéressante de ces multipôles est leur comportement à l'origine : le seul qui ne s'annule pas à l'origine est le dipôle électrique $j=1$ et $m=\pm1,\;0$. De même, les seuls modes dont le gradient ne s'annule pas à l'origine sont le quadripôle électrique, qui a un moment angulaire de $j=2$ et le dipôle magnétique, qui lui possède $j=1$.\par
+Pour classifier ces différentes transitions, on commence par effectuer une expansion multipolaire du champ électromagnétique. En pratique, cela consiste à développer les champs électriques et magnétiques sur la base des harmoniques sphériques. On pourra se référer à \mycite{Landau1982a} pour le détail de leur construction. On montre que les solutions obtenues sont les fonctions $\bm{F}_\beta$ (voir la section \ref{sec:quant_EM}) modes propres des quatre opérateurs hermitiens qui commutent suivants : $J^2$ le moment angulaire total, $J_z$ sa projection selon $z$, l'énergie, et la parité. Les nombres quantiques correspondant sont $\beta=\left\{j,m,\omega,P\right\}$. On construit ainsi les modes multipolaires électriques, qui ont une parité $P=(-1)^j$ et les modes multipolaires magnétiques, de parité $P=(-1)^{j+1}$. Une propriété intéressante de ces multipôles est leur comportement à l'origine : le seul qui ne s'annule pas à l'origine est le dipôle électrique $j=1$ et $m=\pm1,\;0$. De même, les seuls modes dont le gradient ne s'annule pas à l'origine sont le quadripôle électrique, qui a un moment angulaire de $j=2$ et le dipôle magnétique, qui lui possède $j=1$.\par
 
 \subsubsection{Transitions multipolaires}
-Le problème de la conservation du moment angulaire dans l'interaction laser-matière est traité de manière intéressante dans \mycite{VanEnk1994a}. Les auteurs s'y intéressent au cas d'atomes froids, mais une partie de leur développement est tout à fait applicable à notre problème. Suivons donc leur raisonnement et considérons un atome placé à l'origine $r=0$. Dans un premier temps, cet atome est modélisé par un électron sans spin de position $\bm{r}$ et de quantité de mouvement $\bm{r}$. On néglige également le mouvement du centre de masse de l'atome, ce qui revient à supposer que son noyau est infiniment lourd. La position du centre de masse $\bm{R}$ (défini en section \ref{sec:centremasse}) est fixe et égale à $R=0$.\par 
+Le problème de la conservation du moment angulaire dans l'interaction laser-matière est traité de manière intéressante dans \mycite{VanEnk1994a}. Les auteurs s'y intéressent au cas d'atomes froids, mais une partie de leur développement est tout à fait applicable à notre problème. Suivons donc leur raisonnement et considérons un atome placé à l'origine $r=0$. Dans un premier temps, cet atome est modélisé par un électron sans spin de position $\bm{r}$ et de quantité de mouvement $\bm{p}$. On néglige également le mouvement du centre de masse de l'atome, ce qui revient à supposer que son noyau est infiniment lourd. La position du centre de masse $\bm{R}$ (défini en section \ref{sec:centremasse}) est fixe et égale à $R=0$.\par 
 Notons $\bm{A}$ le potentiel vecteur du champ. L'interaction entre l'atome et la lumière est alors représentée au premier ordre par l'hamiltonien :
 \begin{equation*}
 H = \frac{e}{\mu}\bm{A}(\bm{r})\cdot\bm{p},
 \end{equation*}
-où $-e$ est la charge de l'électron. Il est retenu autour de l'origine par le potentiel créé par le noyau, ce qui le restreint à une région de l'espace $\left|\bm{r}\right|<a$. En général, $a$ est de l'ordre de l'angström, c'est-à-dire 3 ou 4 ordres de grandeur plus faible que la longueur d'onde du champ $\lambda$. On peut donc effectuer un développement en $a/\lambda$. Cela revient à développer le potentiel vecteur $\bm{A}$ autour de l'origine :
+où $-e$ est la charge de l'électron, qui est retenu autour de l'origine par le potentiel créé par le noyau, ce qui le restreint à une région de l'espace $\left|\bm{r}\right|<a$. En général, $a$ est de l'ordre de l'angström, c'est-à-dire 3 ou 4 ordres de grandeur plus faible que la longueur d'onde du champ $\lambda$. On peut donc effectuer un développement en $a/\lambda$. Cela revient à développer le potentiel vecteur $\bm{A}$ autour de l'origine :
 \begin{equation}
 \bm{A}(\bm{r}) = \bm{A}(0)+(\bm{r}\cdot\bm{\nabla})\bm{A}(0)+\ldots
 \label{eq:dvpmt_A}
 \end{equation}
 C'est à partir de cette décomposition que l'on classifie les transitions électroniques. Considérons par exemple l'ordre 0 du développement \ref{eq:dvpmt_A}:
 \begin{equation*}
-H_1 = \frac{e}{\mu}\bm{A}(0)\cdot\bm{p}.
+H_0 = \frac{e}{\mu}\bm{A}(0)\cdot\bm{p}.
 \end{equation*}
-L'atome va passer d'un état initial $\ket{i}$ à un état final $\ket{f}$. Ainsi, pour que la transition soit possible, il est nécessaire que l'élément de matrice $\bra{\psi_f}H_1\ket{\psi_i}$ soit non nul. En particulier, il faut que $\bra{l_f,m_f}\bm{p}\ket{l_i,m_i}$ soit non nul. Le calcul montre donne les règles de sélection \mycite{cohen} :
+L'atome va passer d'un état initial $\ket{i}$ à un état final $\ket{f}$. Ainsi, pour que la transition soit possible, il est nécessaire que l'élément de matrice $\bra{\psi_f}H_0\ket{\psi_i}$ soit non nul. En particulier, il faut que $\bra{l_f,m_f}\bm{p}\ket{l_i,m_i}$ soit non nul. Le calcul donne les règles de sélection \mycite{cohen} :
 \begin{equation*}
 l_f-l_i=\pm1\text{ et }m_f-m_i=\pm1,\;0.
 \end{equation*}
-Comme dit plus haut, le seul multipôle pour lequel $\bm{A}(0)$ n'est pas nul est le dipôle électrique. C'est donc le seul qui contribue, et qui donne son nom à la cette transition, appelée \textit{dipolaire électrique}. On vérifie que le moment angulaire est conservé : le dipôle électrique possède $j=1$ (le photon a un spin de 1) et une projection $m=\pm1,\;0$.
+Comme dit plus haut, le seul multipôle pour lequel $\bm{A}(0)$ n'est pas nul est le dipôle électrique. C'est donc le seul qui contribue, et qui donne son nom à la cette transition, appelée \textit{dipolaire électrique}. On vérifie que le moment angulaire est conservé : le dipôle électrique possède bien $j=1$ (le photon a un spin de 1) et une projection $m=\pm1,\;0$.
 
 On effectue le même raisonnement pour les termes plus élevés. Le suivant met en jeu le gradient du champ à l'origine, qui est non nul pour un dipôle magnétique ou un quadripôle électrique. Les règles de sélection des transitions respectives sont 
 \begin{align*}
@@ -656,16 +654,37 @@ Jusqu'ici, nous avons négligé le mouvement du centre de masse. Si on veut trai
 \bm{\pi}_i&=\bm{p_i}-\frac{\mu_i}{M}\sum_{j=0}^N{\bm{p}_j}
 \end{split}
 \end{equation*}
-Ce cas général est étudié en détail dans \mycite{BabikerPRL2002}. Les auteurs considèrent un système à deux électrons interagissant avec une onde électromagnétique de moment angulaire orbital $\ell\hbar$. De la même manière que ce que nous avons fait plus haut, ils calculent l'hamiltonien du système, cette fois en prenant en compte la dynamique du centre de masse. Ils effectuent ensuite un développement multipolaire pour identifier les différents types de transition. On note désormais $\bm{R} = (R,\phi_R)$ la projection de la position du centre de masse en coordonnées cylindriques dans le plan $xy$
+Ce cas général est étudié en détail dans \mycite{BabikerPRL2002}, dont nous reprenons les résultats. Les auteurs considèrent un système à deux électrons interagissant avec une onde électromagnétique de moment angulaire orbital $\ell\hbar$. De la même manière que ce que nous avons fait plus haut, ils calculent l'hamiltonien de l'interaction $H_{int}$, cette fois en prenant en compte la dynamique du centre de masse. Ils effectuent ensuite un développement multipolaire pour identifier les différents types de transition. On note désormais $\bm{R} = (R_{\parallel},\;\phi_R,\;R_z)$ la position du centre de masse en coordonnées cylindriques et $\bm{\rho} = \bm{\rho}_1-\bm{\rho}_2 = (\rho_{\parallel},\;\phi_{\rho},\;\rho_z)$ celle de la coordonnée interne du système. \par
+Les auteurs décrivent l'état du système à partir des quatres quantités: $P_z$ et $L_z$, la quantité de mouvement et le moment angulaire orbital du centre de masse, $\ket{j} = \ket{n_j,\;l_j,\;m_j}$ l'état hydrogénoïde qui représente la dynamique interne, et $\ket{N_{k\alpha}}$ l'état nombre du champ électromagnétique (voir l'équation \ref{fockstates}). Les règles de sélection sont donc données par les éléments non nuls des éléments de matrice suivants :
+\begin{equation*}
+M_{if} = \bra{P^f_z,\;L^f_z,\;j^f,\;N^f_{k\alpha}}H_{int}\ket{P^i_z,\;L^i_z,\;j^i,\;N^i_{k\alpha}}.
+\end{equation*}
 
+Nous résumons ici les résultats obtenus une fois le développement en $a/\lambda$ de $H_{int}$ effectué :
 \begin{itemize}
-\item Interaction dipolaire électrique : l'hamiltonien 
+\item Terme d'ordre 0 : l'hamiltonien ne met ici en jeu que les coordonnées du centre de masse $(R_{\parallel},\;\phi_R,\;R_z)$. En particulier, on trouve un terme de phase $\rme^{\rmi\ell\phi_R}$. L'intégration angulaire dans le calcul de $M_{ij}$ va donc donner le delta de Kronecker $\delta(L^f_z-L^i_z,\ell)$, qui montre que le moment angulaire orbital du champ $\ell\hbar$ est transféré à la dynamique \textit{externe} de l'atome. La dynamique interne n'est pas du tout affectée par le MAO de la lumière.\\
+
+\item Premier terme d'ordre 1 : les auteurs exhibent trois termes d'ordre 1 correspondant à des transitions quadripolaires. Le premier d'entre eux présentent une phase en $\rme^{\rmi\ell\phi_R}$, on a donc encore une fois transfert de MAO entre la lumière et la dynamique externe.\\
+
+\item Deuxième terme d'ordre 1 : le terme de phase vaut ici $\rme^{\rmi\phi_\rho}\rme^{\rmi(\ell-1)\phi_R}$. On obtient donc un cas intéressant : une unité de moment angulaire est transférée à la dynamique interne, ne laissant que $(\ell-1)\hbar$ à la dynamique externe.\\
+
+\item Troisième terme d'ordre 2 : ici on a $\rme^{-\rmi\phi_\rho}\rme^{\rmi(\ell+1)\phi_R}$. La dynamique interne de l'atome donne donc une unité de MAO à la lumière, qui fournit à son tour $(\ell+1)\hbar$ à la dynamique externe.\\
 \end{itemize}
 
+Ces résultats démontrent un comportement très riche entre dynamiques externes et internes d'un atome, tant est que l'on puisse réaliser des transitions quadripolaires électriques. Le transfert de MAO vers la dynamique externe de l'atome est maintenant couramment utilisé en manipulation de micro-particules, où il permet de faire tourner la particule autour de l'axe de propagation de la lumière \mycite{heprl1995}. Au contraire, si le MAO est transféré à la dynamique interne de l'atome, il sera mis en rotation autour de son propre axe.\par
+Le couplage entre moments internes et externes a été utilisé notamment par \mycite{MuthukrishnanJOB2002}, qui ont été jusqu'à démontrer l'intrication entre ces deux quantités. On peut également citer le travail théorique de \mycite{MondalPRA2014}, qui propose un schéma d'orientation de molécules froides par un faisceau de Laguerre-Gauss basé sur un transfert de MAO entre dynamique externe et interne.
 
-y calculent la forme complète de l'hamiltonien en prenant en compte le mouvement de centre de masse. 
-\begin{equation*}
+Toutefois, notons que ces deux travaux utilisent des atomes ou des molécules froides pour circonvenir au problème de la faible probabilité d'effectuer une transition quadripolaire électrique. En effet, si un atome est refroidi suffisamment, sa longueur de De Broglie se rapprocher de la longueur d'onde optique, rendant les termes d'ordre supérieurs en $a/\lambda$ plus importants. Le paramètre critique est donc la taille du système par rapport à la longueur d'onde de la lumière. Ce problème se comprend intuitivement si on considère un faisceau de Laguerre-Gauss, dont l'expression est donnée par l'équation \ref{eq:lgmodes}. Si un atome de taille a est placé à une distance $r\gg a$ du centre, la phase du faisceau est localement plate à l'échelle de l'atome. On retrouve donc le comportement d'une onde plane, où aucun MAO n'est transféré à l'atome. Si au contraire on veut que l'atome puisse ``voir'' la phase hélicoïdale, il faut le placer très près du centre, où le gradient de phase est le plus important. Malheureusement, c'est aussi là où l'intensité du faisceau tend vers zéro, rendant le transfert expérimental de MAO vers la dynamique interne de l'atome difficile. Une étude théorique à ce sujet a été effectuée par \mycite{PiconOE2010} : les auteurs considèrent un faisceau ultraviolet portant du MAO interagissant avec un atome à un électron. Ils observent une modification des règles de sélection, mais en utilisant une intensité pic gigantesque, inatteignable en pratique.
 
-\end{equation*}
+Illustrons pour finir les conclusions de cette partie en citant le travail de \mycite{schmiegelowarxiv2015}. Pour observer des échanges de MAO supérieurs à 1, les auteurs ont utilisé un ion refroidi au centre du faisceau et une focalisation proche de la limite de diffraction. Comme mentionné plus haut, au centre du faisceau le gradient d'un champ de Laguerre-Gauss est maximal, et c'est précisément lui qui intervient dans une transition quadripolaire. Les auteurs démontrent très joliment que ce gradient est suffisant pour exciter un atome \textit{in the dark} en mesurant une oscillation de Rabi (voir la figure \ref{Fig:Schmiegelow}), au point d'être capable de mesurer spatialement l'amplitude et le gradient du champ en déplaçant l'ion dans le faisceau.
+\newpage
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.9\columnwidth]{Figures/schmiegelow.png}
+\caption{Observation de transition quadripolaire. (a) Transitions possibles mettant en jeu le MAS et le MAO. (b) Amplitudes de transition mesurées en utilisant une oscillation de Rabi. (c) Amplitude de transition dipolaire (rouge) et quadripolaire (bleu) en fonction de la position transverse de l'ion. Ces amplitudes sont reliées respectivement à l'amplitude du champ et du gradient du champ.}
+\label{Fig:Schmiegelow}
+\end{figure}
+
 
 Nous avons maintenant terminé cette partie sur le concept de moment angulaire de la lumière. Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans le chapitre III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans le chapitre IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.
