@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'Bessel_Fcn.pdf' (pdf, eps, ps)
 %%
@@ -49,7 +49,7 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.55716894)%
-    \put(0,0){\includegraphics[width=\unitlength]{Bessel_Fcn.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Bessel_Fcn.pdf}}%
     \put(0.0847894,0.0330851){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-10}}}%
     \put(0.17584022,0.0330851){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-8}}}%
     \put(0.2668631,0.0330851){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-6}}}%
@@ -61,6 +61,7 @@
     \put(0.8130258,0.0330851){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{6}}}%
     \put(0.90405371,0.0330851){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{8}}}%
     \put(0.99471353,0.0330851){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{10}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Bessel_Fcn.pdf}}%
     \put(0.07664323,0.05318706){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rb]{\smash{-0.6}}}%
     \put(0.07666863,0.11199453){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rb]{\smash{-0.4}}}%
     \put(0.07671433,0.17080199){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rb]{\smash{-0.2}}}%
@@ -70,11 +71,12 @@
     \put(0.07664323,0.40603185){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rb]{\smash{0.6}}}%
     \put(0.07662293,0.46483931){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rb]{\smash{0.8}}}%
     \put(0.0780753,0.52364678){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rb]{\smash{1}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Bessel_Fcn.pdf}}%
     \put(0.53921393,0.53803883){\color[rgb]{1,0.2,0}\makebox(0,0)[lb]{\smash{$m=1$}}}%
-    \put(0.62462416,0.43271488){\color[rgb]{0.74901961,0.14901961,0.25098039}\makebox(0,0)[lb]{\smash{$m=1$}}}%
-    \put(0.67313388,0.39603676){\color[rgb]{0.50196078,0.10196078,0.50196078}\transparent{0.99306285}\makebox(0,0)[lb]{\smash{$m=1$}}}%
-    \put(0.72992587,0.37237347){\color[rgb]{0.25098039,0.05098039,0.74901961}\makebox(0,0)[lb]{\smash{$m=1$}}}%
-    \put(0.80328204,0.35225967){\color[rgb]{0,0,1}\makebox(0,0)[lb]{\smash{$m=1$}}}%
+    \put(0.62462416,0.43271488){\color[rgb]{0.74901961,0.14901961,0.25098039}\makebox(0,0)[lb]{\smash{$m=2$}}}%
+    \put(0.67313388,0.39603676){\color[rgb]{0.50196078,0.10196078,0.50196078}\transparent{0.99306285}\makebox(0,0)[lb]{\smash{$m=3$}}}%
+    \put(0.72992587,0.37237347){\color[rgb]{0.25098039,0.05098039,0.74901961}\makebox(0,0)[lb]{\smash{$m=4$}}}%
+    \put(0.80328204,0.35225967){\color[rgb]{0,0,1}\makebox(0,0)[lb]{\smash{$m=5$}}}%
     \put(0.54050425,0.00252121){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$x$}}}%
     \put(0.01913011,0.30141805){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{$J_m(x)$}}}}%
   \end{picture}%

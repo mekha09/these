@@ -1308,6 +1308,17 @@
   URL                      = {http://link.aps.org/abstract/PRA/v79/e063829}
 }
 
+@Article{heprl1995,
+  Title                    = {Direct observation of transfer of angular momentum to absorptive particles from a laser beam with a phase singularity},
+  Author                   = {He, H and Friese, MEJ and Heckenberg, NR and Rubinsztein-Dunlop, H},
+  Journal                  = {Physical Review Letters},
+  Year                     = {1995},
+  Number                   = {5},
+  Pages                    = {826},
+  Volume                   = {75},
+  Publisher                = {APS}
+}
+
 @Article{HernandezM2011,
   Title                    = {Two-Photon Polarization Dependent Spectroscopy in Chirality: A Novel Experimental-Theoretical Approach to Study Optically Active Systems},
   Author                   = {Hernández, Florencio E. and Rizzo, Antonio},
@@ -3003,6 +3014,17 @@
   Author                   = {Schmiegelow, Christian T and Schulz, Jonas and Kaufmann, Henning and Ruster, Thomas and Poschinger, Ulrich G and Schmidt-Kaler, Ferdinand},
   Journal                  = {arXiv preprint arXiv:1511.07206},
   Year                     = {2015}
+}
+
+@Article{schmiegelowEPJ2012,
+  Title                    = {Light with orbital angular momentum interacting with trapped ions},
+  Author                   = {Schmiegelow, Christian Tom{\'a}s and Schmidt-Kaler, Ferdinand},
+  Journal                  = {The European Physical Journal D},
+  Year                     = {2012},
+  Number                   = {6},
+  Pages                    = {1--9},
+  Volume                   = {66},
+  Publisher                = {Springer}
 }
 
 @Article{scholzpra2014,
