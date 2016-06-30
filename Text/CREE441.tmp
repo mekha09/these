@@ -268,10 +268,9 @@ L'intensité pic évolue donc en $1/\sqrt{\left| \ell  \right|}$, la génératio
 Nous avons la chance de disposer d'un laser assez énergétique (jusqu'à 35 mJ disponibles), qui comme on le verra est suffisant pour générer jusqu'à $\ell_{1}=3$. Il est également probable que l'accord de phase s'effectue différemment avec un faisceau de LG, mais ces effets sont minimisés dans notre dispositif par l'utilisation d'un jet de gaz pulsé fournissant un milieu très fin.
 
 La seconde contrainte expérimentale est due au système d'imagerie. Comme démontré plus haut, le faisceau infrarouge est constitué d'un mode de Laguerre-Gauss principal. Le principe de conservation du moment angulaire nous amène à penser que les harmoniques générées doivent également porter du MAO, et prendront donc problablement la forme de modes de Laguerre-Gauss. Nous avons vu dans la partie \ref{sec:hg_modes} que les modes de Laguerre-Gauss peuvent être vus comme la superposition de plusieurs modes d'Hermite-Gauss et que le déphasage entre ces modes était crucial. En particulier, le convertisseur de mode présenté sur la figure \ref{Fig:Modeconv} repose sur l'utilisation de lentilles cylindriques pour contrôler la phase d'un seul des modes de Hermite-Gauss. On comprend donc que n'importe quel élément optique focalisant différemment les deux composantes cartésiennes du champ va modifier la phase relatives des modes HG et détruire le mode de Laguerre-Gauss. Dans notre dispositif présenté sur la figure \ref{Fig:ExpG}, on trouve deux éléments problématiques :
-
 \begin{itemize}
 \item Les optiques de focalisation peuvent être astigmatiques. En particulier, la lentille de focalisation et le miroir torique doivent être alignés parfaitement, sans quoi notre mode en sera perturbé.\\
-\item Le réseau de diffraction du spectromètre est un réseau cylindrique, il va donc systématiquement détruire le profil du faisceau au passage de son foyer.\\
+\item Le réseau de diffraction du spectromètre est un réseau cylindrique, il va donc systématiquement détruire le profil du faisceau au passage de son foyer. 
 \end{itemize}
 
 L'effet du réseau de diffraction cylindrique peut être calculé. Par exemple, \mycite{VaityPLA2013} proposent d'utiliser l'astigmatisme introduit par une lentille inclinée pour mesurer le MAO porté par un faisceau. Nous adaptons ici leur formalisme au cas de notre réseau de diffraction. Considérons par simplicité un faisceau collimaté incident sur le réseau de diffraction. Pour décrire sa propagation, on peut utiliser les matrices de transfert. La matrice totale du système est
@@ -306,15 +305,7 @@ C = \left(
 \end{array} \right).
 \end{equation*}
 $f$ est la longueur focale effective du réseau dans la direction horizontale. En fonction nominal, le réseau focalise horizontalement les harmoniques dans un plan appelé ''spectral'' situé 235 mm en aval \mycite{KitaAO1983}. Comme on considère ici un faisceau collimaté, on prendra $f$ = 235 mm.
-\`{A} partir de $M_{\mathrm{tot}}$, l'équation (8) de \mycite{VaityPLA2013} donne l'expression analytique du champ à une distance $z_1$ du réseau :
-
-\begin{equation}
-E(x,y)=A(\rmi/2)^{|\ell|+1}\exp{\left[-(\beta_1 x^2+\beta_2 y^2)\right]}\times\gamma^{|\ell|} HG_\ell\left[(\alpha_1 x+\rmi\epsilon\alpha_2 y)/\gamma\right],
-\label{eq:focusgrating}
-\end{equation}
-où $\ell$ est le MAO de l'harmonique considérée, $A$, $\beta_1$, $\beta_2$, $\alpha_1$, $\alpha_2$, $\gamma$ sont des constantes déterminées par les paramètres du problème, et $\epsilon=\pm1$ est le signe de $\ell$.
-
-L'expression \ref{eq:focusgrating} contient un polynôme de Hermite d'ordre $\ell$, signe que le réseau agit comme un convertisseur de mode. Pour évaluer cette expression, choisissons par exemple l'harmonique 11 et supposons qu'elle porte un moment angulaire orbital bien défini. Considérons qu'elle soit collimaté et que son waist soit égal à 10 mm. La figure \ref{Fig:gratingfocus} représente l'intensité obtenue pour $z_1$ variant autour de 235 mm, en supposant $\ell_{11} = 3$ ou 11. Nous voyons d'abord qu'à l'écart du foyer, l'anneau est simplement focalisé dans la dimension spectrale (noter les échelles différentes en $x$ et $y$). Au foyer le faisceau prend la forme d'un mode de Hermite-Gauss d'index $\ell_{11}$ tourné à 45$\deg$ par rapport à l'axe du réseau. On ne peut donc pas imager le spectre harmonique en ce point comme dans le cas Gaussien. Cependant, si on s'écarte trop du plan spectral du réseau, les harmoniques ne sont plus séparées spatialement. De plus, leur intensité est moindre, ce qui rend la mesure plus difficile. Le compromis finalement choisi est de placer le détecteur 8 cm en amont du plan focal, ce qui donne des harmoniques séparées et un effet cylindrique peu visible (voir la section suivante).
+\`{A} partir de $M_{\mathrm{tot}}$, l'équation (8) de \mycite{VaityPLA2013} donne l'expression analytique du champ à une distance $z_1$ du réseau. On y trouve un terme Gaussien elliptique et sans surprise, un polynôme de Hermite. Pour évaluer cette expression, choisissons par exemple l'harmonique 11 et supposons qu'elle porte un moment angulaire orbital bien défini. Considérons qu'elle soit collimaté et que son waist soit égal à 10 mm. La figure \ref{Fig:gratingfocus} représente l'intensité obtenue pour $z_1$ variant autour de 235 mm, en supposant $\ell_{11} = 3$ ou 11. Nous voyons d'abord qu'à l'écart du foyer, l'anneau est simplement focalisé dans la dimension spectrale (noter les échelles différentes en $x$ et $y$), puis qu'au foyer le faisceau prend la forme d'un mode de Hermite-Gauss d'index $\ell_{11}$ tourné à 45$\deg$ par rapport à l'axe du réseau. On ne peut donc pas imager le spectre harmonique en ce point comme dans le cas Gaussien. Cependant, si on s'écarte trop du plan spectral du réseau, les harmoniques ne sont plus séparées spatialement. De plus, leur intensité est moindre, ce qui rend la mesure plus difficile. Le compromis finalement choisi est de placer le détecteur 8 cm en amont du plan focal, ce qui donne des harmoniques séparées et un effet cylindrique peu visible.
 
 \begin{figure}[!ht]
 \centering
@@ -327,7 +318,6 @@ L'expression \ref{eq:focusgrating} contient un polynôme de Hermite d'ordre $\el
 La dernière contrainte expérimentale est celle de la divergence du faisceau, qui évolue comme $\sqrt{\ell}$. Nous choisissons de réduire cette divergence en utilisant une lentille de focale f = 2 m, de sorte à ce que même si $\ell$ devient grand, les harmoniques ne soient pas tronquées par les optiques du dispositif. Le prix à payer étant bien sûr une intensité disponible au foyer plus faible. 
 
 \subsubsection{Résultats}
-\label{sec:results_lg}
 Nous présentons sur la figure \ref{Fig:LGSpectrumAr} les spectres obtenus après les modifications expliquées ci-dessus effectuées, en utilisant $\ell_{1} = 1,\;2,\;3$. 
 
 \begin{figure}[!ht]
@@ -355,109 +345,9 @@ Nous avons également pu effectuer cette expérience dans le Néon, le spectre o
 \label{Fig:LGSpectrumNe}
 \end{figure}
 
-Les propriétés observées sont donc robustes : elles sont vérifiées pour plusieurs valeurs du MAO de l'infrarouge et dans des gaz différents. Nous allons voir dans la partie suivante qu'elles sont suffisantes pour démontrer la conservation du moment angulaire dans le processus de génération d'harmoniques.
-
 \section{Conservation du moment angulaire orbital dans la GHOE}
-\subsection{Vers une mesure non-interférométrique du moment angulaire orbital}
-Comme vu dans le chapitre II, le moment angulaire est une quantité conservée. Dans l'interaction laser-matière que nous étudions, le MAO porté par le faisceau infrarouge doit être transféré soit à la matière, soit au faisceau harmonique généré. Il est donc crucial de parvenir à mesurer le MAO porté par chaque ordre harmonique du spectre. Deux équipes se sont déjà intéressées à ce problème :
-
-\begin{itemize} 
-\item \mycite{ZurchNP2012} ont été les premiers à utiliser des faisceaux de LG dans la GHOE. Ils ont pu étudier l'harmonique 11, et ont mesuré son MAO en la faisant diffracter sur un fil de tungsten de $\SI{5}{\micro\m}$. Le résultat de cette expérience est $\ell_{11}=1$.\\
-\item \mycite{GariepyPRL2014} ont quant à eux choisi de créer deux sources d'harmoniques côte à côte, l'une Gaussienne, et l'autre Laguerre-Gaussienne. Ces deux sources génèrent chacune un spectre, et dans les bonnes conditions interfèrent spatialement. Dans les franges observées pour chaque harmonique, on voit une discontinuité dont l'ordre donne la différence de MAO entre les harmoniques générées par les deux sources. La source Gaussienne sert de référence, ce qui leur a permis de mesurer $\ell_{11}=11$, $\ell_{13}=13$, et $\ell_{15}=15$.\\
-\end{itemize}
-
-Les deux expériences sont clairement contradictoires. Elles ont toutes deux été effectuées dans des conditions de focalisation usuelles, où l'approximation paraxiale est valable. On s'attend donc à ce que les termes non-dipolaires soient totalement négligeables (voir section \ref{sec:selectionrules}), et que le processus de GHOE ne soit pas modifié à l'échelle microscopique. On aura alors la phase usuelle des harmoniques en fonction de celle de l'infrarouge : $\phi_q(r,\theta) = q\times\phi_1(r,\theta) = q\ell_1\theta$. Des simulations numériques plus précises \mycite{HernandezPRL2013} montrent également qu'en restant dans le cadre de la SFA, on obtient bien $\ell_{q}=q\times\ell_1$, ce qui est le résultat de Gariepy \textit{et al}. Cette loi de transfert reflète la conservation du MAO : il faut $q$ photons infrarouges pour générer un photon de l'harmonique $q$, qui doit donc porter $q\times\ell_1$ unités de MAO.
-Toutefois, le résultat de Zürch \textit{et al.} a été obtenu dans des conditions de génération assez inhabituelles, avec un milieu long et une intensité élevée. Les auteurs expliquent l'écart aux prédictions théoriques en disant qu'initialement, les harmoniques portent bien un MAO de $q\times\ell_1$ mais qu'il est détruit par des effets de propagation, qui amènent à $\ell_q = 1$.
-
-Si les conditions de génération sont si importantes dans la GHOE à partir de faisceaux de Laguerre-Gauss, il faut disposer de méthodes de caractérisation robustes. Les techniques utilisées dans ces deux travaux reposent sur l'imagerie de franges d'interférences. Bien que directes et élégantes, ces méthodes ont un inconvénient majeur : elles deviennent impossible à utiliser quand la longueur d'onde diminue. Par exemple, pour $q=15$ les franges d'interférences de \mycite{GariepyPRL2014} deviennent déjà difficiles à analyser. \`{A} un âge de la physique attoseconde où la tendance est de toujours plus diminuer la longueur d'onde (jusqu'à 1.6 keV, \mycite{PopmintchevScience2012}), il est souhaitable de caractériser le MAO de la lumière sans méthode de diffraction. Nous allons démontrer que c'est possible en étudiant une autre signature de la valeur du MAO : le profil radial annulaire dû à la singularité de phase.
-
 \subsection{Interprétation des résultats observés à partir de calculs analytiques}
-On se place dans le cas simple d'une série d'harmoniques d'ordre $q$, et on suppose que chacune est constituée d'un unique mode de Laguerre-Gauss. Supposons de plus que ce mode est d'indice $p=0$ et ne présente donc qu'un anneau unique. Dans la section \ref{sec:results_lg}, on a observé que ces harmoniques avaient le même diamètre en champ lointain. Trouvons maintenant les conditions sur $\ell_q$ imposées par cette propriété.\\
-
-Pour un ordre $q$ et une position $z$ donnés, le rayon de l'anneau est :
-\begin{align}
-{r_{{\mathrm{max}}}}\left( {q,z} \right) =& \;w\left( {q,z} \right)\sqrt {\left| {\frac{{{\ell _q}}}{2}} \right|} \nonumber\\ 
-=& \;w\left( {q,0} \right)\sqrt {1 + {{\left( {\frac{z}{z_R}} \right)}^2}} \sqrt {\left| {\frac{{{\ell _q}}}{2}} \right|} \nonumber\\
-=& \;w\left( {q,0} \right)\sqrt {1 + {{\left( {\frac{{z\lambda _q}}{{{\pi w{{\left( {{q},0} \right)}^2}}}}} \right)}^2}} \sqrt {\left| {\frac{{{\ell _q}}}{2}} \right|},
-\label{eq:rmax_conservation}
-\end{align}
-où ${\lambda _q} = {\lambda _1}/q$ est la longueur d'onde de l'ordre $q$. La GHOE se produit au foyer de la lentille de génération, en $z=0$. De façon générale, en $z=0$ l'intensité XUV est maximale là où l'intensité infrarouge l'est également. On a donc
-\begin{align*}
-\forall q,\;&{r_{{\mathrm{max}}}}\left( {q,0} \right)={r_{{\mathrm{max}}}}\left( {1,0} \right) \text{, soit }\\
-&w\left( {{q},0} \right)\sqrt {\frac{{{\ell _q}}}{2}}  = w\left( {{1},0} \right)\sqrt {\frac{{{\ell _1}}}{2}}
-\end{align*}
-On réinjecte dans \ref{eq:rmax_conservation} et on obtient
-\begin{equation*}
-{r_{{\mathrm{max}}}}\left( {q,z} \right) = w\left( {{1},0} \right)\sqrt {\left| {\frac{{{\ell _1}}}{2}} \right|}\sqrt {1 + {{\left( {\frac{{{z\lambda_1}}}{\pi w{{\left( {{1},0} \right)}^2}}\frac{\ell _q}{q{\ell _1}}}\right)}^2}} 
-\end{equation*}
-
-Le diamètre des anneaux est constant si ${r_{{\mathrm{max}}}}$ est indépendant de $q$. Ceci est vérifié si et seulement si $\ell _q=q\times\ell_1$. De manière étonnante, l'augmentation du diamètre de l'anneau d'un mode de Laguerre-Gauss quand $\ell_q$ augmente est exactement compensée par la diffraction plus faible lorsque $\lambda_q$ diminue. Ainsi, sous les hypothèses effectuées plus haut, l'observation d'un spectre d'anneaux de taille constante est synonyme d'un MAO de $\ell_q=q\times\ell_1\;\;\forall q$. Au contraire, si $\ell_q = \ell_1$ comme mesuré par \mycite{ZurchNP2012}, le diamètres des anneaux diminue avec $q$. 
-
 \subsection{Simulations numériques de la propagation de modes de Laguerre-Gauss}
-\subsubsection{Reformulation de l'intégrale de Huygens-Fresnel pour le calcul}
-Dans la partie précédente nous avons fait l'hypothèse qu'un seul mode de Laguerre-Gauss contribuait à chaque harmonique, et que son index radial $p$ était nul. Nous allons justifier cette hypothèse en effectuant des simulations numériques en essayant un grand nombre d'indices $(\ell,p)$. Le calcul à réaliser est la propagation d'un champ au foyer vers le champ lointain, où l'on observe le spectre harmonique. Cette propagation est décrite par l'intégrale de Huygens-Fresnel \mycite{bornandwolf}, applicable dans l'approximation paraxiale pour tout $z$ le long de l'axe optique :
-	\begin{equation*}
-	{E_{z,{\lambda _q}}}\left( {x,y} \right) = \frac{{{e^{\;\;\rmi\frac{{\pi }}{{{\lambda _q}z}}\left( {{x^2} + {y^2}} \right)}}}}{{\rmi{\lambda _q}z}}\int \limits_{ - \infty }^\infty \int \limits_{ - \infty }^\infty  {E_0}\left( {{x_0},{y_0}} \right)\;\;{{\rme}^{\;\rmi\frac{\pi }{{{\lambda _q}z}}\left( {{x_0}^2 + {y_0}^2} \right)}}{{\rme}^{\;\frac{{ \rmi 2{\pi}\left( {x{x_0} + y{y_0}} \right)}}{{z{\lambda _q}}}}}{\rmd}{x_0}{\rmd}{y_0},
-	\end{equation*}
-
-avec $\left( {{x_0},{y_0}} \right)$ et $\left( {x,y} \right)$ les coordonnées Cartésiennes respectivement au foyer et à la position $z$, ${\lambda _q}$ la longueur d'onde de l'harmonique considérée, et ${E_0}$ le champ électrique harmonique au foyer.
-
-Dans le cas de lumière portant un moment angulaire orbital, cette intégrale peut être réécrite avantageusement en prenant en compte la symétrie du problème. Commençons par passer en coordonnées cylindriques $\left( {r,\theta } \right)$ pour le foyer et $\left( {R,\phi } \right)$ pour le champ lointain :
-\begin{equation*}
-{E_{z,{\lambda _q}}}\left( {R,\phi } \right) = \frac{{{\rme^{\;\rmi\frac{{\pi}}{{{\lambda _q}z}}{R^2}}}}}{{\rmi{\lambda _q}z}}\int \limits_0^\infty \int \limits_0^{2{\pi}} {E_0}\left( {r,\theta } \right){\rme^{\rmi\frac{{\pi}}{{{\lambda _q}z}}{r^2}}}{\rme^{\;\frac{{ \rmi 2{\pi}Rr\cos \left( {\theta  - \phi } \right)}}{{z{\lambda _q}}}}}r{\rmd}r{\rmd}\theta 
-\end{equation*}
-
-Un champ portant un MAO défini s'écrit : ${E_0}\left( {r,\theta } \right) = {U_0}\left( r \right){\rme^{\rmi{\ell _{q}}{\theta}}}$. Ceci est valable pour un mode $(\ell_q,p)$ quelconque et même pour une superposition de modes $\sum_{i=1\ldots N}(\ell_q,p_i)$. On obtient :
-
-\begin{equation*}
-	{E_{z,{\lambda _q}}}\left( {R,\phi } \right) = \frac{{{\rme^{\rmi\frac{{\pi}}{{{\lambda _q}z}}{R^2}}}}}{{\rmi{\lambda _q}z}}\int \limits_0^\infty  {U_0}\left( r \right){\rme^{\rmi\frac{{\pi }}{{{\lambda _q}z}}{r^2}}}
-	\int \limits_0^{2{\pi }} {\rme^{\rmi{\ell _{q}{\theta }}}{\rme^{\frac{{ \rmi 2{\pi }Rr\cos \left( {\theta  - \phi } \right)}}{{z{\lambda _q}}}}}r{\rmd}r{\rmd}\theta}
-\end{equation*}
-Le changement de variable $\theta'=\theta-\phi$ donne
-\begin{equation*}
-	{E_{z,{\lambda _q}}}\left( {R,\phi } \right) = \frac{{{\rme^{\rmi\frac{{\pi}}{{{\lambda _q}z}}{R^2}}}}}{{\rmi{\lambda _q}z}}
-	\rme^{\rmi{\ell _{q}{\phi}}}
-	\int \limits_0^\infty  {U_0}\left( r \right){\rme^{\rmi\frac{{\pi }}{{{\lambda _q}z}}{r^2}}}
-	\int \limits_0^{2{\pi }} {\rme^{\rmi{\ell _{q}{\theta' }}}{\rme^{\frac{{ \rmi 2{\pi }Rr\cos \left( {\theta'} \right)}}{{z{\lambda _q}}}}}r{\rmd}r{\rmd}\theta'}
-\end{equation*}
-
-On utilise ensuite l'identité suivante \mycite{Wolf1979} :
-\begin{equation*}
-\forall(n,x),\;{{\mathrm{J}}_n}\left( x \right) = \frac{1}{{2{\pi }{\rmi^n}}}\mathop \int \limits_0^{2{\pi }} {\rme^{\rmi x\cos \alpha }}{\rme^{\rmi n\alpha }}{\rmd}\alpha,
-\end{equation*}
-où ${{\mathrm{J}}_n}$ est la fonction de Bessel d'ordre n de première espèce (voir la figure \ref{Fig:BesselFcn}). Cette fonction est bien définie pour tout nombre complexe $x$ si $n$ est entier. En prenant $n=\ell_q$ et $x=\frac{{ 2{\pi }Rr}}{{z{\lambda _q}}}$, $n$ est bien entier et on obtient
-\begin{equation*}
-	{E_{z,{\lambda _q}}}\left( {R,\phi } \right) = 
-	2\pi\rmi^{\ell_q}
-	\frac{{{\rme^{\rmi\frac{{\pi}}{{{\lambda _q}z}}{R^2}}}}}{{\rmi{\lambda _q}z}}
-	\rme^{\rmi{\ell _{q}{\phi}}}
-	\int \limits_0^\infty  {U_0}\left( r \right){\rme^{\rmi\frac{{\pi }}{{{\lambda _q}z}}{r^2}}}
-	\mathrm{J}_{\ell_q}\left(\frac{{2{\pi }Rr}}{{z{\lambda_q}}}\right)r{\rmd}r
-\end{equation*}
-On mesure finalement l'intensité :
-\begin{equation}
-	{I_{z,{\lambda_q}}}\left( {R,\phi } \right) = {\left|\frac{{{2\pi}}}{{{\lambda _q}z}}
-	\int \limits_0^\infty  {U_0}\left( r \right){\rme^{\rmi\frac{{\pi }}{{{\lambda _q}z}}{r^2}}}
-	\mathrm{J}_{\ell_q}\left(\frac{{2{\pi }Rr}}{{z{\lambda_q}}}\right)r{\rmd}r\right|}^2
-	\label{I_hankel}
-\end{equation}
-Cette expression prend la forme d'une \textit{transformée de Hankel}. La transformée de Hankel d'ordre $\nu$ d'une fonction $f(r)$ est définie par :
-\begin{equation*}
-F_\nu(k)=\int \limits_0^\infty {f(r)\mathrm{J}_\nu(kr)r\rmd r}
-\end{equation*}
-En prenant $f(r) = {U_0}\left( r \right){\rme^{\rmi\frac{{\pi }}{{{\lambda _q}z}}{r^2}}}$, l'équation \ref{I_hankel} se réécrit :
-\begin{equation*}
-{I_{z,{\lambda_q}}}\left( {R,\phi } \right)=
-{\left|\frac{{{2\pi}}}{{{\lambda _q}z}}
-F_{\ell_q}\left(\frac{{2{\pi }R}}{{z{\lambda_q}}}\right).
-\right|}^2
-\end{equation*}
-La transformée de Hankel exprime une fonction $f(r)$ comme une somme infinie de fonctions de Bessel de première espèce. La transformée d'ordre 0 n'est autre qu'une transformée de Fourier à deux dimensions en coordonnées cylindriques. Elle est intéressante dans notre cas car elle réduit le calcul à une seule dimension. Numériquement, cette transformée doit être évaluée de manière discrète pour tout $z={z_0,\ldots,z_{f}}$. \cite{GuizarJOSA2004} proposent un algorithme qui approxime ce calcul de manière très efficace. D'abord, une matrice de transformation est calculée à partir des zéros des fonctions de Bessel. Ces zéros peuvent être calculés une fois pour toute et stockés. \`{A} partir de cette matrice, la transformée de Hankel est réduite à une simple multiplication matrice-vecteur, opération très rapide qu'on effectue pour tout $z={z_0,\ldots,z_{f}}$.
-
-\subsubsection{Résultats des simulations numériques}
-Cet algorithme a été implémenté sous Matlab et utilis
-
-
 \subsection{Calculs SFA : une simulation complète de l'expérience réalisée}
 
 \section{Rôle des trajectoires quantiques dans la GHOE à partir de faisceaux de Laguerre-Gauss}

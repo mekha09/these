@@ -167,7 +167,7 @@
   Number                   = {14},
   Pages                    = {143601},
   Volume                   = {89},
-  __markedentry            = {[Romain:6]},
+  __markedentry            = {[Romain:]},
   Publisher                = {APS}
 }
 
@@ -369,6 +369,14 @@
   Adsurl                   = {http://adsabs.harvard.edu/abs/2010Natur.465..458B},
   DOI                      = {10.1038/nature09070},
   File                     = {Published version:BoeglinN2010.pdf:PDF}
+}
+
+@Book{bornandwolf,
+  Title                    = {Principles of optics: electromagnetic theory of propagation, interference and diffraction of light},
+  Author                   = {Born, Max and Wolf, Emil},
+  Publisher                = {Cambridge University Press},
+  Year                     = {1999},
+  Edition                  = {7}
 }
 
 @Article{BornschleglCPL2007,
@@ -2722,6 +2730,18 @@
   Volume                   = {5}
 }
 
+@Article{PopmintchevScience2012,
+  Title                    = {Bright coherent ultrahigh harmonics in the keV x-ray regime from mid-infrared femtosecond lasers},
+  Author                   = {Popmintchev, Tenio and Chen, Ming-Chang and Popmintchev, Dimitar and Arpin, Paul and Brown, Susannah and Ali{\v{s}}auskas, Skirmantas and Andriukaitis, Giedrius and Bal{\v{c}}iunas, Tadas and M{\"u}cke, Oliver D and Pugzlys, Audrius and others},
+  Journal                  = {science},
+  Year                     = {2012},
+  Number                   = {6086},
+  Pages                    = {1287--1291},
+  Volume                   = {336},
+  __markedentry            = {[Romain:6]},
+  Publisher                = {American Association for the Advancement of Science}
+}
+
 @Article{PowisChirality2008,
   Title                    = {Photoelectron circular dichroism: Chiral asymmetry in the angular distribution of electrons emitted by (+)-S-carvone},
   Author                   = {Powis, Ivan},
@@ -3366,6 +3386,17 @@
   DOI                      = {10.1038/nature08904}
 }
 
+@Article{VaityPLA2013,
+  Title                    = {Measuring the topological charge of an optical vortex by using a tilted convex lens},
+  Author                   = {Vaity, Pravin and Banerji, J and Singh, RP},
+  Journal                  = {Physics Letters A},
+  Year                     = {2013},
+  Number                   = {15},
+  Pages                    = {1154--1156},
+  Volume                   = {377},
+  Publisher                = {Elsevier}
+}
+
 @Article{VanDerLaanJP2013,
   Title                    = {Applications of soft x-ray magnetic dichroism},
   Author                   = {G van der Laan},
@@ -3397,7 +3428,6 @@
   Number                   = {5},
   Pages                    = {445},
   Volume                   = {6},
-  __markedentry            = {[Romain:]},
   Publisher                = {IOP Publishing}
 }
 

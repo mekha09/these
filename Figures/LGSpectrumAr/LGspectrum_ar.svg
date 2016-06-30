@@ -26,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="104.08643"
-     inkscape:cy="183.29317"
+     inkscape:zoom="2.8"
+     inkscape:cx="470.23902"
+     inkscape:cy="107.95711"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      showgrid="false"
      units="cm"
      inkscape:window-width="1536"
@@ -1030,303 +1030,303 @@
      style="display:inline"
      transform="translate(-1.6991965,34.271657)">
     <text
-       style="font-size:11.41729832px;display:inline;fill:#262626;fill-opacity:1"
+       style="font-size:11.41729832px;display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="360.71893"
        x="-445.97806"
        id="text7032-22">
       <tspan
          id="tspan8155-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.78998375px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';fill:#262626;fill-opacity:1" />
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.78998375px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;" />
     </text>
     <text
-       y="19.269491"
-       x="-315.86871"
-       style="font-size:10.59556293px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline"
+       y="21.116482"
+       x="-133.8539"
+       style="font-size:10.59556293px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';text-align:center;text-anchor:middle;display:inline"
        transform="matrix(0,-1,1,0,0,0)"
        id="text5364">
       <tspan
-         y="19.269491"
-         x="-315.86871"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.61719894px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans Semi-Bold';writing-mode:lr-tb;fill:#262626;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         y="21.116482"
+         x="-133.8539"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.61719894px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans Semi-Bold';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262626;fill-opacity:1;fill-rule:nonzero;stroke:none"
          sodipodi:role="line"
          id="tspan5368">Spatial Dimension (mm)</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.59556293px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.59556293px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="391.24841"
-       x="174.4337"
+       x="283.52936"
        id="text6960">
       <tspan
          y="391.24841"
          x="174.4337"
          id="tspan6962"
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.60386658px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans Semi-Bold';writing-mode:lr-tb;fill:#262626;fill-opacity:1;fill-rule:nonzero;stroke:none">Photon Energy (eV)</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.60386658px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans Semi-Bold';writing-mode:lr-tb;fill:#262626;fill-opacity:1;fill-rule:nonzero;stroke:none;text-anchor:middle;text-align:center;">Photon Energy (eV)</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="316.02335"
-       x="40.437622"
+       x="46.773861"
        id="text7032">
       <tspan
          id="tspan8155"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">-1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">-1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="275.46094"
-       x="43.069077"
+       x="48.217583"
        id="text7032-9">
       <tspan
          id="tspan8155-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">0</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">0</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="235.04329"
-       x="47.885834"
+       x="50.0327"
        id="text7032-9-4">
       <tspan
          id="tspan8155-9-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="190.56935"
-       x="40.437622"
+       x="46.773861"
        id="text7032-6">
       <tspan
          id="tspan8155-93"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">-1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">-1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="149.85674"
-       x="43.069077"
+       x="48.217583"
        id="text7032-9-8">
       <tspan
          id="tspan8155-9-8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">0</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">0</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="109.28902"
-       x="47.885834"
+       x="50.0327"
        id="text7032-9-4-8">
       <tspan
          id="tspan8155-9-4-1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="73.980125"
-       x="40.437622"
+       x="46.773861"
        id="text7032-2">
       <tspan
          id="tspan8155-97"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">-1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">-1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="33.576508"
-       x="43.069077"
+       x="48.217583"
        id="text7032-9-6">
       <tspan
          id="tspan8155-9-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">0</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">0</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="-6.6821074"
-       x="47.885834"
+       x="50.0327"
        id="text7032-9-4-6">
       <tspan
          id="tspan8155-9-4-8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="356.21945"
-       x="62.65173"
+       x="72.139168"
        id="text7032-4">
       <tspan
          id="tspan8155-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1">20</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">20</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="356.21945"
-       x="165.93636"
+       x="174.85725"
        id="text7032-4-2">
       <tspan
          id="tspan8155-3-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1">25</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">25</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="356.22003"
-       x="268.45963"
+       x="277.75821"
        id="text7032-4-2-5">
       <tspan
          id="tspan8155-3-2-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1">30</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">30</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="356.21945"
-       x="371.92514"
+       x="380.6572"
        id="text7032-4-2-5-5">
       <tspan
          id="tspan8155-3-2-2-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1">35</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">35</tspan>
       <tspan
          id="tspan7596"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1" />
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;" />
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="356.21945"
-       x="472.88354"
+       x="482.694"
        id="text7032-4-2-5-5-8">
       <tspan
          id="tspan8155-3-2-2-3-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1">40</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">40</tspan>
       <tspan
          id="tspan7622"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1" />
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.80576587px;word-spacing:70.63708496px;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;" />
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1"
        y="73.313423"
-       x="571.97778"
+       x="586.31403"
        id="text7032-2-6">
       <tspan
          id="tspan8155-97-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">-1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">-1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1"
        y="33.408092"
-       x="573.1875"
+       x="584.07275"
        id="text7032-9-6-5">
       <tspan
          id="tspan8155-9-9-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">0</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">0</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1"
        y="-6.3523469"
-       x="574.63684"
+       x="585.36481"
        id="text7032-9-4-6-5">
       <tspan
          id="tspan8155-9-4-8-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1"
        y="189.43695"
-       x="571.97778"
+       x="586.31403"
        id="text7032-6-0">
       <tspan
          id="tspan8155-93-8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">-1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">-1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1"
        y="149.20407"
-       x="573.1875"
+       x="584.07275"
        id="text7032-9-8-4">
       <tspan
          id="tspan8155-9-8-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">0</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">0</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1"
        y="109.11619"
-       x="574.63684"
+       x="585.36481"
        id="text7032-9-4-8-4">
       <tspan
          id="tspan8155-9-4-1-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="349.28842"
-       x="569.82257"
+       x="571.96942"
        id="text7032-9-4-6-5-9">
       <tspan
          id="tspan8155-9-4-8-0-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
        y="349.21597"
-       x="502.61014"
+       x="507.75864"
        id="text7032-9-6-5-8">
       <tspan
          id="tspan8155-9-9-5-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">0</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">0</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1"
        y="316.43463"
-       x="571.97778"
+       x="586.31403"
        id="text7032-67">
       <tspan
          id="tspan8155-7"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">-1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">-1</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1"
        y="275.74564"
-       x="573.1875"
+       x="584.07275"
        id="text7032-9-5">
       <tspan
          id="tspan8155-9-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">0</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">0</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1"
        y="235.20155"
-       x="574.63684"
+       x="585.36481"
        id="text7032-9-4-7">
       <tspan
          id="tspan8155-9-4-7"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';fill:#262626;fill-opacity:1">1</tspan>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">1</tspan>
     </text>
     <text
        id="text7032-4-2-5-5-8-4"
-       x="465.57578"
+       x="470.33932"
        y="399.53091"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.83349609px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.13891625px;display:inline;fill:#262626;fill-opacity:1">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.83349609px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.13891625px;display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;">
       <tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.83349609px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.13891625px;word-spacing:58.25999069px;fill:#262626;fill-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.83349609px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.13891625px;word-spacing:58.25999069px;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
          id="tspan8155-3-2-2-3-4-3">0</tspan>
       <tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.83349609px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.13891625px;word-spacing:58.25999069px;fill:#262626;fill-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.83349609px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.13891625px;word-spacing:58.25999069px;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
          id="tspan7622-3" />
     </text>
     <text
        id="text7032-4-2-5-5-8-1"
-       x="535.10376"
+       x="545.17126"
        y="399.87119"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.60298347px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.26716375px;display:inline;fill:#262626;fill-opacity:1">
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.60298347px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;letter-spacing:-3.26716375px;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1">
       <tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.60298347px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:-3.26716375px;word-spacing:60.64033508px;fill:#262626;fill-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.60298347px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;letter-spacing:-3.26716375px;word-spacing:60.64033508px;text-anchor:middle;fill:#262626;fill-opacity:1"
          id="tspan8155-3-2-2-3-4-4">1</tspan>
     </text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot16075-2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.22288227px;line-height:125%;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:0px;word-spacing:0px;display:inline;fill:#262626;fill-opacity:1;stroke:none"
-       transform="matrix(1.8093759,0,0,1.8093759,426.37927,366.20519)"><flowRegion
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.22288227px;line-height:125%;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1;stroke:none"
+       transform="matrix(1.8093759,0,0,1.8093759,396.37927,366.91948)"><flowRegion
          id="flowRegion16077-6"><rect
            id="rect16079-3"
            width="125.88538"
            height="22.006468"
            x="-1.2780573"
            y="-3.5272608"
-           style="fill:#262626;fill-opacity:1" /></flowRegion><flowPara
+           style="text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1" /></flowRegion><flowPara
          id="flowPara16081-4"
-         style="font-weight:600;font-size:10.375px;-inkscape-font-specification:'Lucida Sans Semi-Bold';fill:#262626;fill-opacity:1">Intensity (arb. u.)</flowPara></flowRoot>  </g>
+         style="font-weight:600;font-size:10.375px;-inkscape-font-specification:'Lucida Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">Intensity (arb. u.)</flowPara></flowRoot>  </g>
 </svg>
