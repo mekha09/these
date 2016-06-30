@@ -455,7 +455,38 @@ F_{\ell_q}\left(\frac{{2{\pi }R}}{{z{\lambda_q}}}\right).
 La transformée de Hankel exprime une fonction $f(r)$ comme une somme infinie de fonctions de Bessel de première espèce. La transformée d'ordre 0 n'est autre qu'une transformée de Fourier à deux dimensions en coordonnées cylindriques. Elle est intéressante dans notre cas car elle réduit le calcul à une seule dimension. Numériquement, cette transformée doit être évaluée de manière discrète pour tout $z={z_0,\ldots,z_{f}}$. \cite{GuizarJOSA2004} proposent un algorithme qui approxime ce calcul de manière très efficace. D'abord, une matrice de transformation est calculée à partir des zéros des fonctions de Bessel. Ces zéros peuvent être calculés une fois pour toute et stockés. \`{A} partir de cette matrice, la transformée de Hankel est réduite à une simple multiplication matrice-vecteur, opération très rapide qu'on effectue pour tout $z={z_0,\ldots,z_{f}}$.
 
 \subsubsection{Résultats des simulations numériques}
-Cet algorithme a été implémenté sous Matlab et utilis
+La première hypothèse du raisonnement est que chaque harmonique n'est constituée que d'un mode de Laguerre-Gauss d'indice $\ell_q$. L'algorithme décrit ci-dessus a été implémenté sous Matlab et nous permet de vérifier ce point. On considère l'harmonique 11, de longueur d'onde $\lambda_{11}=\SI{72}{nm}$. Au foyer, le diamètre de son anneau est le même que celui de l'infrarouge, que l'on choisit égal à $\SI{150}{\micro\m}$. Le faisceau diverge ensuite jusqu'au réseau de diffraction, puis continue à diverger dans la direction verticale jusqu'au détecteur. On prendra une distance d'observation de $z_f=\SI{500}{mm}$. La figure \ref{fig:H11_L11} donne le résultat de la propagation numérique de l'harmonique 11 dans ces conditions, si on suppose $\ell_{11}$.
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{.5\columnwidth}
+\import{Figures/PropagH11/}{h11_l11.pdf_tex}
+\caption{Intensité normalisée de l'harmonique 11 avec $\ell_{11} = 11$ en fonction de $z$. La dimension verticale est la dimension spatiale, imagée sur le détecteur.}
+\label{Fig:H11_L11}
+\end{figure}
+Comme attendu, l'harmonique garde un profil annulaire le long de sa propagation. Son diamètre dans le plan d'observation vaut 1.6 mm. Le calcul peut être répété en supposant différentes valeurs de $\ell_{11}$. La figure \ref{Fig:H11_L8-25} présente le profil obtenu en $z=z_f$ pour $\ell_11=8\cdots 25$.
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{.7\columnwidth}
+\import{Figures/PropagH11/}{H11_L8-25.pdf_tex}
+\caption{Profil d'intensité en $z=z_f$ de l'harmonique 11 en supposant $\ell_{11} = 8-25$.}
+\label{Fig:H11_L8-25}
+\end{figure}
+On fait deux observations :
+\begin{itemize} 
+\item Le diamètre augmente avec $\ell_{11}$. Remarquons que la dépendance n'est pas forcément en $\sqrt{|\ell_{11}|}$. En effet, le diamètre du faisceau infrarouge reste constant et égal à celui du champ harmonique. Par conséquent, le waist $w_0=r_{\mathrm{max}}\sqrt{2/\ell_11}$ diminue quand $\ell_11$ augmente, et modifie le diamètre de l'anneau en champ lointain.\\
+\item Il est clair que les différents modes se recouvrent spatialement. Si tous ces modes contribuaient à l'harmonique 11, on observerait des interférences entre ces différents modes. La relation $\Delta\ell\Delta\theta>k$ nous donne la forme de ces interférences : si plusieurs modes $\ell_{11}$ contribuent, on assistera à une localisation angulaire de l'émission. De plus, comme les anneaux n'ont pas le même diamètre, on aura également une modulation selon la coordonnée radiale.\\
+\end{itemize}
+
+Pour visualiser le profil obtenu si les modes interfèrent, il faut repasser à deux dimensions. On dispose du champ $U_{\ell_{11},z_f}(R)$, il suffit donc de rajouter une phase et faire une somme cohérente : $U_{tot}=\sum_{\ell_{11}} U_{\ell_{11},z_f}(R)e^{\rmi\ell_{11}\theta}$. La figure \ref{Fig:H11_interf} présente le résultat obtenu.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/PropagH11/}{H11_interferences.pdf_tex}
+\caption{Intensité en échelle logarithmique de la somme cohérente de modes de $\ell_{11}$ différents. De haut en bas et de gauche à droite, on note $\ell_{11}:a\cdot I+b\cdot J$ la somme cohérente du mode $\mathcal{LG}_{I,0}$ et $\mathcal{LG}_{J,0}$ avec les pondérations en intensité $a$ et $b$.
+(1) $\ell_{11}:10+11$, (2) $\ell_{11}:10+11+12$, (3) $\ell_{11}:0.1\cdot10+11+0.1\cdot12$, (4) $\ell_{11}:8+\ldots+ 25$, (5) $\ell_{11}:11+0.1\cdot\left[8+\ldots+10+12+\ldots+25\right]$, (6) $\ell_{11}:9+11+13+15$(6), $\ell_{11}:8+11+14$}
+\label{Fig:H11_interf}
+\end{figure}
 
 
 \subsection{Calculs SFA : une simulation complète de l'expérience réalisée}
