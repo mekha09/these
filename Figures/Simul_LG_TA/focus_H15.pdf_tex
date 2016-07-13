@@ -1,0 +1,68 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'focus_H15.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{251.42856445bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.43863639)%
+    \put(0,0){\includegraphics[width=\unitlength]{focus_H15.pdf}}%
+    \put(0.21310395,0.43985179){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.26106974\unitlength}\centering Intensité\end{minipage}}}%
+    \put(0.52556609,0.27453587){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.52751326,0.35222358){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.62889454,0.43996106){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.26106974\unitlength}\centering Phase\end{minipage}}}%
+    \put(0.05782211,0.09355733){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.3203391\unitlength}\centering -100\end{minipage}}}%
+    \put(0.31796719,0.09355735){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.06285332\unitlength}\centering 0\end{minipage}}}%
+    \put(0.43003574,0.09355735){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.09279469\unitlength}\centering 100\end{minipage}}}%
+    \put(-0.01078755,0.04711279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.72104971\unitlength}\centering X ($\si{\micro\meter}$)\end{minipage}}}%
+    \put(0.05849694,0.1514314){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.24306637\unitlength}\centering -100\end{minipage}}}%
+    \put(0.14650173,0.26603731){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.06285332\unitlength}\centering 0\end{minipage}}}%
+    \put(0.13196248,0.38822151){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.09279468\unitlength}\centering 100\end{minipage}}}%
+    \put(0.95435115,0.27275415){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.95976368,0.35044167){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{$2\pi$}}}%
+    \put(0.11056377,0.16){\color[rgb]{0.14901961,0.14901961,0.14901961}\rotatebox{90}{\makebox(0,0)[lt]{\begin{minipage}{0.09589082\unitlength}\centering Y($\si{\micro\meter}$)\end{minipage}}}}%
+  \end{picture}%
+\endgroup%
