@@ -185,6 +185,7 @@ Pour finir, mentionnons une technique permettant de relâcher un peu les contrai
 La qualité du mode obtenue est donc très correcte même jusqu'à 8 niveaux. Les auteurs montrent également que ces lames de phase sont adaptées à des utilisations avec des faisceaux courts et intenses, contrairement à la plupart des autres méthodes. Pour ces raisons, nous avons finalement choisi d'utiliser une lame de phase discrétisée sur 16 niveaux, et disposons de lames $\Delta\ell = 1$ et $\Delta\ell = 2$ à 800 nm, ce qui nous permet d'aller jusqu’à $\ell = 3$ en les mettant l'une après l'autre.
 
 \subsubsection{Résultats expérimentaux sur la création de modes de Laguerre-Gauss dans l'infrarouge}
+\label{sec:spp}
 Même si le système laser a été décrit plus haut, notons encore une fois l'importance du filtrage spatial installé sur notre chaîne : il nous garantit un mode Gaussien très pur, ce qui favorise grandement la création de modes Laguerre-Gaussien de qualité. \par
 Les lames de phases utilisées ont été construites par la société Silios Technologies et font 17 mm de diamètre. Elle ou elles sont insérées directement après l'iris et avant la lentille. Le faisceau étant bien collimaté, nous n'avons pas observé de différence notable selon le placement de la lame. Il est intéressant d'observer l'intensité du faisceau un peu après le passage dans la lame : 
 
@@ -309,7 +310,7 @@ E(x,y)=A(\rmi/2)^{|\ell|+1}\exp{\left[-(\beta_1 x^2+\beta_2 y^2)\right]}\times\g
 \end{equation}
 où $\ell$ est le MAO de l'harmonique considérée, $A$, $\beta_1$, $\beta_2$, $\alpha_1$, $\alpha_2$, $\gamma$ sont des constantes déterminées par les paramètres du problème, et $\epsilon=\pm1$ est le signe de $\ell$.
 
-L'expression \ref{eq:focusgrating} contient un polynôme de Hermite d'ordre $\ell$, signe que le réseau agit comme un convertisseur de mode. Pour évaluer cette expression, choisissons par exemple l'harmonique 11 et supposons qu'elle porte un moment angulaire orbital bien défini. Considérons qu'elle soit collimaté et que son waist soit égal à 10 mm. La figure \ref{Fig:gratingfocus} représente l'intensité obtenue pour $z_1$ variant autour de 235 mm, en supposant $\ell_{11} = 3$ ou 11. Nous voyons d'abord qu'à l'écart du foyer, l'anneau est simplement focalisé dans la dimension spectrale (noter les échelles différentes en $x$ et $y$). Au foyer le faisceau prend la forme d'un mode de Hermite-Gauss d'index $\ell_{11}$ tourné à 45$\deg$ par rapport à l'axe du réseau. On ne peut donc pas imager le spectre harmonique en ce point comme dans le cas Gaussien. Cependant, si on s'écarte trop du plan spectral du réseau, les harmoniques ne sont plus séparées spatialement. De plus, leur intensité est moindre, ce qui rend la mesure plus difficile. Le compromis finalement choisi est de placer le détecteur 8 cm en amont du plan focal, ce qui donne des harmoniques séparées et un effet cylindrique peu visible (voir la section suivante).
+L'expression \ref{eq:focusgrating} contient un polynôme de Hermite d'ordre $\ell$, signe que le réseau agit comme un convertisseur de mode. Pour évaluer cette expression, choisissons par exemple l'harmonique 11 et supposons qu'elle porte un moment angulaire orbital bien défini. Considérons qu'elle soit collimaté et que son waist soit égal à 10 mm. La figure \ref{Fig:gratingfocus} représente l'intensité obtenue pour $z_1$ variant autour de 235 mm, en supposant $\ell_{11} = 3$ ou 11. Nous voyons d'abord qu'à l'écart du foyer, l'anneau est simplement focalisé dans la dimension spectrale (noter les échelles différentes en $x$ et $y$). Au foyer le faisceau prend la forme d'un mode de Hermite-Gauss d'index $\ell_{11}$ tourné à 45$\degres$ par rapport à l'axe du réseau. On ne peut donc pas imager le spectre harmonique en ce point comme dans le cas Gaussien. Cependant, si on s'écarte trop du plan spectral du réseau, les harmoniques ne sont plus séparées spatialement. De plus, leur intensité est moindre, ce qui rend la mesure plus difficile. Le compromis finalement choisi est de placer le détecteur 8 cm en amont du plan focal, ce qui donne des harmoniques séparées et un effet cylindrique peu visible (voir la section suivante).
 
 \begin{figure}[!ht]
 \centering
@@ -564,36 +565,184 @@ où $(x,y)$ et $(X,Y)$ sont respectivement les coordonnées cartésiennes en cha
 \end{figure}
 
 
-Contrairement aux profils expérimentaux, ces images présentent une série d'anneaux concentriques autour d'un anneau central. Pour réaliser ce calcul SFA, qui prend en compte toutes les trajectoires quantiques de la GHOE, on a choisit de focaliser le faisceau infrarouge au milieu du gaz de génération. Dans cette condition, on sait que les trajectoires courtes et longues contribuent toutes les deux à l'émission. Nous allons voir que la différence entre simulation et expérience s'explique par des poids relatifs différents des deux trajectoires.
+Contrairement aux profils expérimentaux, ces images présentent une série d'anneaux concentriques autour d'un anneau central. Comme on le montrera, l'anneau le plus intense et central est généré par la trajectoire courte de la GHOE, tandis que les anneaux supplémentaires sont dus à la trajectoire longue. Dans l'expérience, on ne détecte que la contribution de la trajectoire courte, les conditions d'accord de phase étant apparemment défavorables à la génération de la longue. Comparons donc les anneaux centraux obtenus par la simulation et ceux mesurés. La figure \ref{Fig:DiamSimu} présente l'évolution du diamètre des anneaux, paramètre identifié comme central.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{.9\columnwidth}
+\import{Figures/Simul_LG_TA/}{diameter_simu.pdf_tex}
+\caption{Diamètre des anneaux harmonique en champ lointain pour $\ell_1=1$ (cercles rouges) et $\ell_1=2$ (triangles bleus).}
+\label{Fig:DiamSimu}
+\end{figure}
+
+Comme attendu, le diamètre est relativement constant sur tout le spectre, mis à part un saut vers l'harmonique 27. Ceci coïncide avec le domaine où les deux trajectoires quantiques commencent à fusionner : l'énergie de coupure est attendue à $I_c=I_p+3.14U_p=28.3\times(\hbar\omega_{IR})$. Dans cette zone, les trajectoires peuvent interférer spatialement et modulent le profil spatial des harmoniques. Le saut est alors interprété comme le passage d'une frange d'interférence sur l'anneau central. Cet effet est bien connu dans la GHOE par faisceau Gaussien \mycite{ZairPRL2008}.\par
+Lorsqu'on double le MAO du faisceau de génération, le diamètre des harmoniques augmente de $1.4\approx\sqrt{2}$, ce qui est consistant avec la loi en $\sqrt{\ell_1}$ trouvée plus haut (\ref{eq:rmax_conservation}). Nous concluons que même en prenant en compte les effets de propagation et d'accord de phase, les résultats obtenus sont inchangés. Dans la section suivante, nous allons étudier plus en détail le rôle des trajectoires quantiques dans le problème, numériquement et expérimentalement.
 
 \section{Rôle des trajectoires quantiques dans la GHOE à partir de faisceaux de Laguerre-Gauss}
 \subsection{Observation des contributions des différentes trajectoires quantiques à partir des calculs numériques}
-Comme la position $z_0$ du foyer infrarouge par rapport au jet de gaz contrôle le poids relatif des trajectoires, nous faisons varier ce paramètre dans la simulation numérique. La figure \ref{Fig:H21_traj}~(a-c) présente le profil obtenu en champ lointain lorsque le laser est focalisé en amont, au milieu, et en aval du jet. Quand $z_0<0$, c'est-à-dire que le laser est focalisé avant le jet, l'accord de phase favorise fortement la trajectoire courte. Dans ce cas, le profil en champ lointain ne présente qu'un seul anneau : comme dans l'expérience on génère un mode de Laguerre-Gauss quasiment pur.
+Nous avons déjà mentionné que la simulation montre deux contributions distinctes au profil en champ lointain. Pour étudier ce point plus en détail, on peut varier la position $z_0$ du foyer infrarouge par rapport au jet de gaz, qui contrôle le poids relatif des trajectoires. Pour la figure \ref{Fig:FarFieldSimu}, nous avions $z_0=0$. La figure \ref{Fig:H21_traj}~(a-c) présente le profil obtenu en champ lointain lorsque le laser est focalisé en amont, au milieu, et en aval du jet. Quand $z_0<0$, c'est-à-dire que le laser est focalisé avant le jet, l'accord de phase favorise fortement la trajectoire courte. Dans ce cas, le profil en champ lointain ne présente qu'un seul anneau : comme dans l'expérience on génère un mode de Laguerre-Gauss quasiment pur. Au contraire si $z_0>0$, on observe plusieurs anneaux sur un profil qui rappelle un mode de LG avec $p\neq 0$. Dans le cas intermédiaire, le profil est beaucoup plus modulé à cause des interférences entre trajectoires quantiques. On vérifie cet effet en sélectionnant numériquement tour à tour une seule trajectoire. Les panneaux \ref{Fig:H21_traj}~(d,e) montrent que l'on retrouve bien un anneau presque pur pour la courte, et une série d'anneaux pour la longue.
+
 
 \begin{figure}[!ht]
 \centering
 \def\svgwidth{.7\columnwidth}
 \import{Figures/Simul_LG_TA/}{trajectories.pdf_tex}
-\caption{Contributions des différentes trajectoires quantiques dans la GHOE par faisceau LG. Le profil d'intensité de l'harmonique 21 est présenté pour (a) $z_0<0$, (b) $z_0=0$, (c) $z_0>0$. La convention de signe est illustrée au-dessus. Les profils (d) et (e) sont calculés avec $z_0=0$ en ne prenant en compte que la contribution respectivement de la trajectoire courte et longue.}
+\caption{Contributions des différentes trajectoires quantiques dans la GHOE par faisceau LG. Le profil d'intensité de l'harmonique 21 est présenté pour (a) $z_0<0$, (b) $z_0=0$, (c) $z_0>0$. La convention de signe est illustrée au-dessus. Les profils (d) et (e) sont calculés avec $z_0=0$ en ne prenant en compte que la contribution respectivement de la trajectoire courte ou longue.}
 \label{Fig:H21_traj}
 \end{figure}
 
-
-
-
-
-
 \subsection{Observation expérimentale de ces contributions}
-\subsection{Interprétation des résultats obtenus : le rôle de l'index radial des modes de Laguerre-Gauss}
+\subsubsection{Modification du dispositif expérimental}
+Cherchons maintenant à observer des profils similaires de manière expérimentale. On s'attend à observer l'apparition d'anneaux supplémentaires plus divergents et moins intenses, il faut adapter notre dispositif en conséquence. En particulier, le réseau cylindrique de diffraction risque de distordre l'image trop fortement, nous avons donc cherché à construire un spectromètre donnant véritablement une image en coordonnées ``spatiale-spatiale''. 
+Nous avons repris le schéma proposé par Hartmut Ruf dans sa thèse \mycite{Ruf2012}. L'idée est d'illuminer aussi peu de traits du réseau que possible, de sorte à réduire la dispersion induite par le réseau. De plus, on cherche à utiliser un dispositif le moins astigmate possible, de sorte à éviter les effets de conversion $\mathcal{LG}\rightarrow \mathcal{HG}$. Pour ce faire, on utilise un réseau de diffraction à incidence quasi-normale. Pour réduire le nombre de traits illuminés, le faisceau est d'abord focalisé par un miroir sphérique, lui aussi en incidence quasi-normale. Le réseau est alors positionné juste avant le foyer du miroir de sorte à rester en dessous du seuil de dommage. Bien sûr, l'incidence normale des optiques réduit fortement le flux dans l'UVX. Pour garantir une réflectivité correcte, le miroir sphérique est traité avec un revêtement de $\mathrm{B}_\mathrm{4}\mathrm{C}$, qui réfléchit à 10-30 \% jusqu'à l'ordre harmonique 19 avec un angle d'incidence de 10$\degres$ (voir figure \ref{Fig:reflectivityB4C}). 
 
-\section{Le profil spatio-temporel des impulsions générées : les ``light springs''}
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{.7\columnwidth}
+\import{Figures/Hartmut_Spectro/}{reflectivity_b4c.pdf_tex}
+\caption{Réflectivité mesurée du miroir avec revêtement de $\mathrm{B}_\mathrm{4}\mathrm{C}$ en fonction de la longueur d'onde. L'angle d'incidence est de 10$\degres$. Adapté de \mycite{Ruf2012}.}
+\label{Fig:reflectivity_B4C}
+\end{figure}
+
+Le réseau de diffraction (Spectrogron) dispose de $\sigma=\SI{600}{grooves/mm}$, son principal avantage étant son faible coût (600€), à comparer avec le prix des réseau cylindriques habituels (de l'ordre de 10000€). Le dispositif complet est présenté sur la figure \ref{Fig:DispHartmut}.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/Hartmut_Spectro/}{disp_exp.pdf_tex}
+\caption{Dispositif expérimental avec spectromètre peu dispersif. Le faisceau infrarouge est mis en forme par une lame de phase en spirale (SPP) et focalisé par une lentille (L) de $f=1m$. Les harmoniques du fondamental sont générées dans le jet de gaz d'argon et réimagées par un ensemble miroir torique (MT) + lame de silice (LS). Le spectromètre est constitué d'un miroir sphérique en $\mathrm{B}_\mathrm{4}\mathrm{C}$ à 10$\degres$ d'incidence et d'un réseau de diffraction à $\approx 6\degres$ d'incidence. Au foyer, on place une fente permettant de sélectionner une unique harmonique, qui est ensuite imagée par l'ensemble MCP+écran de phosphore.}
+\label{Fig:DispHartmut}
+\end{figure}
+
+\subsubsection{Calibration du spectromètre}
+Bien entendu, un réseau de diffraction aussi simple ne sera jamais aussi performant que ceux conçus et optimisés pour la gamme spectrale étudiée (\mycite{KitaAO1983}). En particulier, les différents ordres de diffraction et les différentes harmoniques sont mal séparés, ce qui demande de placer une fente au foyer. Un autre point délicat est la calibration du spectromètre : il est a priori difficile de distinguer les différents ordres de diffraction entre eux. 
+
+Pour calibrer le spectre, il faut pouvoir reconnaître plusieurs ordres de diffraction correspondant à la même longueur d'onde. Pour ce faire, nous choisissons d'utiliser une technique d'interférométrie à deux faisceaux, similaire à celle proposée par \mycite{bertrandprl2011}. \`{A} l'aide d'un interféromètre, on rajoute un deuxième faisceau de perturbation à 800nm, non-colinéaire au premier. Au foyer, les deux faisceaux se croisent avec un angle et créent un réseau de diffraction dans la dimension verticale. Ainsi, il est possible d'absorber un photon venant du deuxième faisceau comme schématisé sur la figure \ref{Fig:DiffSchema}. On observe donc deux pics venant de deux chemins quantiques différents : par exemple pour l'harmonique 11, on peut absorber 11 photons du faisceau principal et créer le pic habituel, ou bien absorber 10 photons du principal et 1 de la perturbation. La conservation des moments nous donne la position de ce nouveau pic, qui est diffracté dans la dimension verticale. Comme sa position dépend de la longueur d'onde de l'harmonique, la différence entre pic principal et diffracté permettent d'identifier 
+les différents ordres de diffraction du réseau de diffraction. Notons qu'en pratique, on a des chemins quantiques d'ordre supérieur, ce qui amène à la génération de pics supplémentaires, éventuellement diffractés de l'autre côté du pic principal.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/Hartmut_Spectro/}{schema_2beam.pdf_tex}
+\caption{Schéma de l'expérience de calibration à deux faisceau pour l'harmonique 11. Le faisceau principal (rouge) est plus intense que le faisceau de perturbation (orange). Ainsi, on a un pic central dominant dans lequel on a absorbé 11 photons de la génération, et un pic diffracté où on a absorbé un photon de la perturbation. La conservation des moments donne directement la direction d'émission de l'harmonique diffractée.}
+\label{Fig:DiffSchema}
+\end{figure}
+
+Le réseau de diffraction est monté sur une rotation motorisée de sorte à pouvoir scanner l'angle de réflexion. On sélectionne les harmoniques une par une grâce à la fente et reconstitue ainsi le spectre complet en fonction de l'angle du réseau. La figure \ref{Fig:calibration} montre les profils obtenus. Mêmes si les profils spatiaux ne sont pas parfaits, on distingue clairement un ou plusieurs ordres de diffraction à côté d'un pic principal. Il reste à mesurer la distance entre les deux pics et à les tracer en fonction de l'angle, comme fait en bas de la figure \ref{Fig:calibration}. La mesure n'est pas extrêment précise du fait des inhomogénéités des profils mais on trouve quand même 5 uniques valeurs d'écart entre les pics, à $\pm 1$ pixel près. Ces valeurs reviennent 2 à 3 fois et correspondent chacune à une seule harmonique, on détecte donc les 5 premières harmoniques du fondamental diffractées jusqu'à l'ordre 3 par le réseau de diffraction. Dans l'argon, le premier ordre généré efficacement est le onzième, on observe donc les ordres allant de 11 à 19, ce qui est cohérent avec la réflectivité du miroir en $\mathrm{B}_\mathrm{4}\mathrm{C}$ (voir figure \ref{Fig:reflectivity_B4C}).
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/Hartmut_Spectro/}{calibration.pdf_tex}
+\caption{Calibration du spectromètre. Un second faisceau infrarouge vient perturber la génération et créer un pic satellite, dont la position dépend de la longueur d'onde. En haut, profil spatial des harmoniques détectées en fonction de l'angle du réseau. En bas, les points rouges représentent la distance entre les deux pics pour les harmoniques correspondantes.\`{A} $\pm1$ pixel près, on retrouve 5 valeurs qui permettent d'identifier 5 harmoniques (rectangles colorés). Les traits noirs relient les ordres de diffraction du réseau.}
+\label{Fig:calibration}
+\end{figure}
+
+Le spectre maintenant calibré, on procède à des mesures de spectres harmoniques. Comme précédemment, on varie $z_0$ pour changer le poids relatif des trajectoires quantiques. La figure \ref{Fig:LensScan} présente les spectres obtenus. Notons que la définition de $z_0=0$ est ici presque arbitraire : il est très difficile de connaître expérimentalement la véritable valeur de $z_0$, on ne peut donc que définir $z_0=0$ pour reproduire la simulation (figure \ref{H21_traj}).
+
+On observe des séries d'anneaux parfaitement ronds et très homogènes, signe que l'on observe bien le profil ``spatial-spatial'' des harmoniques, et non pas une convolution spatio-spectrale. Comme prédit théoriquement, quand $z_0$ augmente, des anneaux dus à la trajectoire longue commencent à apparaître. Nous allons maintenant interpréter ce résultat en terme d'indice $p$ des modes de LG.
+
+\subsection{Interprétation des résultats obtenus : le rôle de l'indice radial des modes de Laguerre-Gauss}
+\subsubsection{Sens physique de l'indice radial}
+Comme mentionné plus haut, le profil obtenu quand la trajectoire longue domine ressemble à un mode de Laguerre-Gauss de $p\neq 0$. Il est a priori impossible de connaître le contenu modal exact à partir d'une mesure d'intensité : le mode peut être une superposition d'un grand nombre de modes de $p$ différents, ayant chacun une phase et une amplitude inconnues. On peut toutefois chercher d'où ces modes $p$ proviennent dans l'expérience réalisée.
+
+N'étant pas relié à la grandeur physique du MAO, le sujet de l'indice radial des modes de Laguerre-Gauss a longtemps était délaissé. En général, la présence de modes $p\neq 0$ est indésirable et considérée comme du bruit dans la génération d'un mode $(\ell,p=0)$ pur. C'est seulement assez récemment que des équipes se sont intéressées à ce paramètre, le nommant par exemple \textit{the forgotten quantum number} \mycite{Plickpra2015}. \mycite{KarimiPRA2014} ont réalisés des interférences de Hong-Ou-Mandel, montrant que $p$ était un nombre quantique valable. L'indice $p$ a été utilisé par \mycite{SalakhutdinovPRL2012} et \mycite{KrennPNAS2014} pour produire des états intriqués de dimensions impressionantes, et ses propriétés physiques sont étudiées en détail dans \mycite{Plickpra2015} et 	\mycite{KarimiPRA2014-2}. Enfin, \mycite{MendozaOL2015} ont montré que les modes de $p$ élevés avaient des propriétés d'auto-régénération similaires à celles d'un faisceau de Bessel. 
+
+Il est donc intéressant de chercher à produire et à contrôler les modes $p$ dans l'extrême ultra-violet, au lieu de les voir comme un effet parasite. Pour créer des modes $p\neq 0$, on pourrait modifier directement le mode infrarouge. Cependant, dû à la forte non-linéarité de la GHOE, il est probable que les anneaux extérieurs ne contribuent pas à la génération. Une autre approche est de chercher dans le processus de GHOE lui-même, une variable permettant d'augmenter le mode radial. Comme dit plus haut, $p$ est une variable quantique valable, elle est valeur propre d'un opérateur qui vérifie $\hat{N}\ket{\mathcal{LG}_(\ell,p)(r,\theta,z)} = p\ket{\mathcal{LG}_(\ell,p)(r,\theta,z)}$. La dérivation de cet opérateur est donnée par \mycite{Plickpra2015} et \mycite{KarimiOL2012}. On sait que le moment linéaire est relié à la translation, le moment angulaire à la rotation, et ces travaux démontrent que $p$ est lui relié à la \textit{dilatation} selon la coordonnée radiale. Tout effet créant une forme de dilatation radiale du faisceau modifiera donc le contenu en mode $p$ du champ.
+
+Nous avons déjà vu qu'au foyer le faisceau infrarouge est bien décrit par un mode $\mathcal{LG}(\ell,p=0)$ (voir section \ref{sec:spp}). Dans la GHOE, on identifie deux effets menant à une modification radiale du champ : 
+\begin{enumerate}
+\item La non-linéarité de la GHOE : si un processus a une non-linéarité d'ordre $n$, alors le champ obtenu sera $E_2=E_1^n$. Un profil Laguerre-Gaussien sera donc modifié en profil plus piqué autour de ses maxima.
+
+\item La phase du moment dipolaire atomique : dans le modèle à trois étapes, l'électron acquiert une phase au cours de sa propagation qui dépend de l'intensité infrarouge locale. Le rayonnement émis présente donc une phase non uniforme spatialement spatiale. Dans le plateau, cette phase est approximativement linéaire avec l'intensité \mycite{SalieresPRL1995}. Elle s'écrit $\phi^{at}(r,\theta) = \alpha_{traj} I_{IR}(r,\theta)$, où $\alpha_{traj}$ est un coefficient de proportionnalité dépendant de la trajectoire quantique en question. Ici, $I_{IR}(r,\theta)$ est un mode de Laguerre-Gauss, cette phase spatiale peut donc modifier le mode et créer une forme de dilatation.
+\end{enumerate}
+Nous allons étudier ces deux effets en effectuant des simulations numériques.
+
+\subsubsection{\'{E}tude du contenu modal du champ par un modèle simple de la GHOE}
+Pour étudier ces effets, une description simple du processus est suffisante. On ne prendra pas en compte les effets liés à la propagation du champ ni les effets de dispersion et de déplétion dans le milieu. On considère donc un plan d'atomes infiniment fin placé en $z=0$. On se place dans les conditions expérimentales pour calculer la propagation du champ infrarouge jusqu'au foyer, et on obtient le champ déjà présenté en figure \ref{Fig:DecompIR}. On utilise ensuite la formule ADK \mycite{AmmosovJETP1986} et le modèle SFA \mycite{LewensteinPRA1994} pour calculer le dipôle harmonique qui donne directement le champ émis. Les deux effets mentionnés plus haut sont alors simples à identifier : la non-linéarité est contrôlée par l'intensité du champ infrarouge, tandis que la phase atomique varie à la fois avec l'intensité et avec la valeur de $\alpha_{traj}$, qui dépend de la trajectoire considérée.
+
+\paragraph*{Trajectoire courte} Commençons par sélectionner uniquement la trajectoire courte de la GHOE, ce qui est équivalent expérimentalement à modifier la position du foyer par rapport au jet. Pour cette trajectoire, $\alpha_{courte}$ est de l'ordre de $\SI{1e-14}{cm²/W}$. On aura donc une courbure relativement faible, et donc un très faible effet de la phase atomique. La figure \ref{Fig:DecompShort}~(a) présente le champ harmonique obtenu en $z=0$ pour l'harmonique 19.
+
+On voit bien l'effet de $\phi^{at}$ sur la phase spatiale, avec une légère courbure le long de l'anneau. On effectue ensuite une décomposition en modes de Laguerre-Gauss de ce champ, qui est présentée sur le panneau (b) de la figure \ref{Fig:DecompShort}. Le champ est donc composé à 98,9\% du mode $(\ell,p) = (0,0)$. De manière surprenante, ce mode est encore plus pur que le champ infrarouge utilisé pour le générer. C'est un effet de la non-linéarité du processus, qui ne fait contribuer que les parties les plus intenses du faisceau infrarouge et gomme les reliquats dus au vignetage et aux imperfections de la lame de phase. En conclusion, on voit que l'effet (i) et l'effet (ii) avec une valeur faible de $\alpha_{traj}$ ne perturbent aucunement le contenu du mode et ne sont pas responsables des anneaux observés en champ lointain. On peut illustrer ce point en propageant numériquement ce champ jusqu'au détecteur, ce qui est montré sur la figure \ref{Fig:PropShort}~(c), qui ne présente bien qu'un anneau unique.
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/P_Modes/}{short_trajectory.pdf_tex}
+\caption{Profil de l'harmonique 19 généré par la trajectoire courte. (a) De gauche à droite, intensité spatiale, phase spatiale, et représentation mixte où la couleur donne la phase et la luminosité l'intensité. (b) Module des coefficients de la décomposition du champ sur la base de Laguerre-Gauss. Les coefficients de module inférieur à $\num{1e-4}$ sont ignorés. (c) Intensité en fonction de $z$ obtenue par propagation du champ présenté en (a).}
+\label{Fig:DecompShort}
+\end{figure}
+
+\paragraph*{Trajectoire longue} Effectuons maintenant le même calcul dans le cas de la trajectoire longue. La figure \ref{Fig:DecompLong} présente les résultats obtenus. Dans ce cas, $\alpha_{longue}\approx\SI{20e-14}{cm²/W}$, valeur 20 fois plus élevée que pour la trajectoire courte. Comme on le voit sur la phase spatiale, la courbure de phase est ici beaucoup plus importante. Quand on effectue la décomposition sur la base de Laguerre-Gauss, on obtient une superposition d'un assez grand nombre de modes ayant $\ell_{19}=19$ et $p$ allant de 0 à $\approx 30$. Le mode $(0,0)$ domine toujours, mais ne compte que pour 52\% de l'émission\footnote{La figure \ref{Fig:DecompLong}~(b) donne les coefficients $\left|c_{\ell,p}\right|$. La normalisation du champ s'écrit $\sum_{\ell,p}{\left|c_{\ell,p}\right|^2} = 1$, c'est donc bien $\left|c_{\ell,p}\right|^2$ qui donne la contribution du mode $(\ell,p)$ en pourcentage.}. 
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/P_Modes/}{long_trajectory.pdf_tex}
+\caption{Profil de l'harmonique 19 généré par la trajectoire longue. (a) De gauche à droite, intensité spatiale, phase spatiale, et représentation mixte où la couleur donne la phase et la luminosité l'intensité. (b) Module des coefficients de la décomposition du champ sur la base de Laguerre-Gauss. Les coefficients de module inférieur à $\num{1e-4}$ sont ignorés. (c) Intensité en fonction de $z$ obtenue par propagation du champ présenté en (a).}
+\label{Fig:DecompLong}
+\end{figure}
+
+Comme le montre le calcul de propagation, en champ lointain ces modes interfèrent et créent une série d'anneaux concentriques similaires à ceux observés expérimentalement. Pour que cet effet soit possible, il faut que la phase relative entre les différents modes change. En effet, au foyer les modes $p$ interfèrent pour créer un unique anneau, ce qui leur impose une phase relative donnée. Pour que plusieurs anneaux apparaissent, cette phase doit changer. En regardant l'expression d'un mode de Laguerre-Gauss, on voit que le seul terme responsable est la phase de Gouy, qui s'écrit
+\begin{equation*}
+\psi _{\ell ,p}(z)=(2p+\left|\ell\right|+1)\arctan{\frac{z}{z_R}}.
+\end{equation*}
+Pour $z>z_R$, le mode $(\ell,p)$ a donc acquis une phase $(2p+\left|\ell\right|+1)\frac{\pi}{2}$, soit une différence de $\pi$ avec les modes $p-1$ et $p+1$. 
+
+En conclusion, nous avons relié la présence de modes $p$ dans la GHOE à la phase $\phi^{at}(r,\theta)$. Cette phase dépend à la fois de la trajectoire considérée et de l'intensité infrarouge. La figure \ref{Fig:pmode_Iscan} présente l'évolution du contenu modal lorsque l'intensité infrarouge varie entre 0.5 et 2.5 $\si{W/cm²}$. (A FAIRE : CODE DE CELINE)
+
+\section{Le profil spatio-temporel des impulsions générées : les \textit{light springs}}
+Jusqu'à présent nous nous sommes intéressés au moment angulaire orbital du faisceau et donc à ses propriétés spatiales. Une des propriétés remarquables de la GHOE est qu'elle permet de générer des impulsions extrêmement courtes, le record actuel étant de $\SI{67e-15}{s}=\SI{67}{as}$ (attosecondes). Dans cette partie nous étudions les propriétés temporelles des impulsions générées par un faisceau de LG, obtenues lorsqu'on considère la totalité du spectre harmonique.
+
 \subsection{Mesure de la phase spectrale de l'impulsion à partir de la technique RABBIT}
+Pour obtenir des informations temporelles, on cherche à mesurer à la fois l'intensité et la phase spectrale de l'impulsion. Nous disposons déjà de l'intensité spectrale, mesurée optiquement à l'aide du spectromètre. Pour la phase spectrale, nous choisissons d'appliquer la technique RABBIT décrite dans la partie \ref{sec:rabbit}.
+
+Le dispositif expérimental utilisé est similaire à celui décrit par \mycite{MairesseScience2003} et utilisé à de maintes reprises par la suite \mycite{BoutuNP2008, DivekiNJP2012, HaesslerNJP2013, DivekiCP2013}. Pour effectuer une mesure RABBIT, le faisceau laser est séparé en deux parties dans un interféromètre de Mach-Zender, où la séparation et la recombinaison sont effectuées par des miroirs troués. Le délai entre les deux bras est contrôlé par une ligne à retard piézoélectrique de précision attoseconde. La partie centrale sert de faisceau d'habillage tandis que la partie annulaire est utilisée comme faisceau de génération : au foyer, ce faisceau annulaire présente un profil d'Airy dont le lobe central génère des harmoniques qui seront émises sur l'axe \mycite{PeatrossOL1994}. En champ lointain, le faisceau redevient annulaire et est donc spatialement séparé des harmoniques et du faisceau d'habillage. Ainsi, un simple iris permet de filtrer l'infrarouge de génération pour ne garder que le rayonnement harmonique et l'infrarouge d'habillage. Ces deux rayonnements sont focalisés par le miroir torique (voir figure \ref{Fig:ExpG}) au foyer duquel on place un spectromètre à temps de vol d'électrons à bouteille magnétique (TOF pour \textit{Time Of Flight}). Dans ce spectromètre, des photoélectrons sont créés par le rayonnement harmonique dans un second jet de gaz d'argon. Un électroaimant à pièces polaires trouées impose un champ magnétique initial d’environ 1Tesla, à l’endroit de la photoionisation. Une fois collectés, les électrons sont guidés dans un champ magnétique faible sur une longueur d’1m jusqu'à une galette de micro-canaux. Les temps d’arrivée sur le détecteur sont discrétisés avec un pas d’une nanoseconde. Ce détecteur procure une résolution de 100 meV pour les électrons lents. 
+
+Dans notre cas, le faisceau de génération et ses différentes harmoniques sont des modes de Laguerre-Gauss. Commençons par vérifier qu'après réflexion sur un miroir troué, le mode de LG n'est pas perturbé. On image simplement le foyer de la lentille de génération :
+
+\textcolor[rgb]{1,0,0}{FIGURE A FAIRE}
+
+Le foyer est donc une convolution entre une fonction d'Airy et le foyer sans miroir troué. Encore une fois, les rebonds extérieurs ne modifieront aucunement la GHOE; le miroir troué ne pose donc aucun autre problème à part de diminuer l'énergie disponible.
+La deuxième question est celle de la photoionisation du gaz de détection par des faisceaux portant du MAO. Les conditions de focalisation étant très douces, l'approximation paraxiale est tout à fait vérifiée. Par conséquent, comme montré dans la partie \ref{sec:selectionrules}, les règles de sélection ne sont pas du tout modifiée par la présence de MAO : au niveau microscopique, la théorie habituelle du RABBIT s'applique. Au niveau macroscopique, le gaz d'atomes forme un volume fin selon la dimension longitudinale et plus grand que le faisceau dans la dimension transverse. Ainsi, le signal mesuré sur une sideband est une moyenne spatiale des contributions de chaque électron émis dans la région d'interaction. Considérons la composante oscillante de la sideband $q+1$ en fonction du retard génération-habillage $\tau$. Un point $(r,\theta)$ dans la région d'interaction y contribue selon la loi suivante \ref{sec:rabbit}):
+\begin{align*}
+  & \text{S}{{\text{B}}_{q+1}}\left( \tau ,r,\theta  \right)=\text{cos}\left[ 2\omega {\left(\tau-{\tau }_{0}\right)}+{{\varphi }_{q+2}}-{{\varphi }_{q}}+{{\Phi }_{q+2}}\left( r,\theta  \right)-{{\Phi }_{q}}\left( r,\theta  \right)-2{{\Phi }_{hab}}(r,\theta ) \right],
+\end{align*}
+où on a négligé les phases atomiques et où on a noté $\omega$ la pulsation de l'infrarouge, $\tau_0$ l'origine des temps, $\varphi_q$ et $\Phi_q(r,\theta)$ les phases spectrales et spatiales de l'harmonique $q$, et ${\Phi }_{hab}(r,\theta)$ la phase spatiale du faisceau d'habillage. Or, on sait que $\Phi_q(r,\theta)=\ell_q\theta = q\times\ell_1\theta$. Le signal intégré est donc donné par :
+\begin{equation*}
+\text{S}{{\text{B}}_{q+1}}\left(\tau\right)=\iint_{r,\theta}{\text{cos}\left[ 2\omega {\left(\tau-{\tau }_{0}\right)}+{{\varphi }_{q+2}}-{{\varphi }_{q}}+\left(\ell_{q+2}-\ell_q\right)\theta-2{{\Phi }_{hab}}(r,\theta ) \right]r\rmd r \rmd \theta}.
+\end{equation*}
+Pour que l'intégration selon $\theta$ du cosinus donne un résultat non nul, il faut que $\left(\ell_{q+2}-\ell_q\right)\theta-2{{\Phi }_{hab}}(r,\theta )$ s'annule. On obtient donc la condition pour observer une trace RABBIT : 
+\begin{equation*}
+{\Phi }_{hab}(r,\theta )=\left(\ell_{q+2}-\ell_q\right)\theta/2=\ell_1\theta.
+\end{equation*}
+Il est donc nécessaire que le faisceau d'habillage porte le même MAO que le faisceau de génération. Expérimentalement, on déplace simplement le masque de phase en spirale avec l'interféromètre de Mach-Zender. Notons pour finir qu'on peut effectuer le raisonnement dans l'autre sens : si on ne connaît pas le MAO harmonique $\ell_q$, et qu'on observe des sidebands oscillantes avec ${\Phi }_{hab}(r,\theta )=\ell_1\theta$, alors $\left(\ell_{q+2}-\ell_q\right)=2\ell_1\theta$. L'observation d'oscillations est alors vue comme une preuve que le rayonnement harmonique est bien accordé sur le faisceau d'habillage connu. Nous avons essayé de pousser ce raisonnement pour effectuer des mesures RABBIT résolues spatialement pour un faisceau quelconque en modulant le faisceau d'habillage. Ce fut le sujet d'une campagne d'expériences dans le groupe du professeur L. DiMauro à Columbus, Ohio qui n'a pour l'instant pas été conclue.
+
+Avec le faisceau d'habillage adéquat, nous avons pu mesurer la trace RABBIT présentée sur la figure \ref{Fig:omabbit} quand les deux faisceaux infrarouges portaient $\ell_1=1$.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/OMABBIT/}{rabbit_trace.pdf_tex}
+\caption{Trace RABBIT avec faisceau portant du MAO. (a) Spectrogramme de la photoionisation à deux couleurs et à deux photons de l'argon, le champ générateur portant $\ell_1=1$. Les lignes brillantes correspondent aux harmoniques impaires, tandis que les lignes plus faible et oscillantes, de périodicité T=1.33 fs et 2.7 fs, sont les sidebands. (b) Spectre moyenné sur le délai en échalle logarithmique (rouge) et délai de groupe de l'impulsion attoseconde (cercles bleu, la surface bleu clair représentant la barre d'erreur d'analyse numérique à $3\sigma$).}
+\label{Fig:omabbit}
+\end{figure}
+
+On observe clairement des sidebands oscillant à $2\omega$ (période de  $\SI{2.7}{fs}$). Elles présentent également une autre composante à $\omega$, effet inévitable dans notre schéma. En effet, le faisceau d'habillage se propage à travers le milieu de génération et module le rendement de génération harmonique à la fréquence $\omega$. Comme expliqué, la présence d'oscillations à $2\omega$ confirme une fois de plus la conservation du moment angulaire orbital dans le processus. On cherche ensuite la phase de l'oscillation à $2\omega$, et on obtient le délai de groupe présenté en \ref{Fig:omabbit}~(b) : il s'agit de la dérivée de la phase spectrale de l'impulsion attoseconde. Un fit linéaire de cette courbe donne une pente de $103\pm9$ as, ce qui est exactement la même valeur que celle obtenue avec un faisceau Gaussien à la même longueur d'onde et à la même intensité de génération \mycite{MairesseScience2003}. Les processus de GHOE et de photoionisation n'étant pas changés à l'échelle microscopique, le MAO ne peut pas modifier les phases induites par ces processus, ce qui explique qu'on retrouve la même valeur.
+
 \subsection{Reconstruction du profil spatio-temporel de l'émission}
+Nous disposons désormais d'informations d'intensité et de phase spatiales et spectrales, à partir desquels on va reconstruire le profil spatio-temporel de l'émission attoseconde. Nos impulsions infrarouges de 50 fs comportent de nombreux cycles, on néglige donc les effets d'enveloppe et on écrit en $z = 0$ :
+\begin{equation*}
+I_{atto}(r,\theta,t) = \sum_{q=11}^{23}\;\sqrt{I_q(r,\theta)}\cdot\exp{(\rmi\left[\Phi_q(r,\theta)+\phi_q+\omega_q t\right])}.
+\end{equation*}
+On effectue alors l'hypothèse que la phase spatiale des harmoniques $\Phi_q(r,\theta)$ est celle d'un mode de Laguerre-Gauss parfait : $\Phi_q(r,\theta) = \ell_q \theta$. La phase spectrale $\phi_q$ est donnée par la mesure RABBIT, tandis que l'intensité $I_q(r,\theta)$ est donné par la mesure optique. On obtient alors l'intensité représentée sur la figure \ref{Fig:corkscrew}, où l'on a tracé une isosurface pour pouvoir la visualiser. 
 
-\section{Contrôle complet du moment orbital angulaire de l'émission dans un schéma à deux faisceaux}
-\subsection{Lois de conservations dans un schéma à deux faisceaux}
-\subsection{Dispositif colinéaire}
-\subsection{Dispositif non colinéaire}
+\begin{figure}[!ht]
+\includegraphics[width=\columnwidth]{Figures/OMABBIT/corkscrew.png}%
+\caption{Profil spatio-temporel de l'émission. (a) Iso-surface d'intensité de l'impulsion attoseconde à 80\% de sa valeur maximale. Le panneau noir et blanc est une projection de cette intensité dans le plan $t=-2$ fs. (b) Coupes temporelles pour trois différents angles dans l'impulsion attoseconde $\theta=0$\degres (rouge), $\theta=40$\degres (bleu pointillé) et $\theta=-60$\degres (vert). \textcolor[rgb]{1,0,0}{METTRE BONNE IMAGE}}
+\label{Fig:corkscrew}%
+\end{figure}
 
-\section{Le reste?}
-\subsection{Le FEL?}
+On obtient donc une structure en tire-bouchon, déjà prédite théoriquement par \mycite{HernandezPRL2013} puis décrite par \mycite{ParienteOL2015}, qui l'ont nommée \textit{light springs} (ressort optique en français). Ici, on trouve deux ressorts entrelacés, conséquence de la présence des harmoniques impaires seulement. En effet, dans un plan $t$ donné, on somme plusieurs harmoniques séparées de $\Delta\ell = 2$. Une périodicité doublée dans un espace impose une périodicité de moitié dans l'espace réciproque, donc $\Delta\theta = \pi$ : on trouve bien deux lobes d'intensité dans chaque plan $t$ donné. Le profil temporel quant à lui possède bien une structure de train d'impulsions attoseconde, où chaque impulsion dure environ 200 as. Cette structure présente un couplage spatio-temporel particulièrement intéressant : comme illustré sur la droite de la figure \ref{Fig:corkscrew}, si on change l'angle auquel on regarde le train d'impulsions, on observe le même train, mais retardé. Par exemple, entre $\theta=0$\degres et $\theta=40$\degres, on obtient un retard de 296 as. En 180$\degres$, on effectue une demi-période du laser infrarouge de génération (1330 as), la pente est donc de 7.4 as/\degres. 
+Comme démontré dans \ref{HernandezPRL2013}, la structure de light spring existe toujours dans le cas d'une impulsion attoseconde unique. Nous pensons donc que ce type d'impulsion constitue une sonde particulièrement pratique pour des expériences de spectroscopie d'absorption transitoires : en effet, ces expériences nécessitent de réaliser et de contrôler des délai pompe-sonde de l'ordre de l'attoseconde. Ici, on peut mapper le délai attoseconde sur la coordonnée angulaire en un seul tir laser, rendant l'expérience insensible aux instabilités. Dans une expérience pompe-sonde, l'autre paramètre est la gamme dynamique : elle est ici de 1.33 fs, i.e. le demi-cycle optique infrarouge. Cette gamme peut être facilement augmentée en augmentant la longueur d'onde de génération ou encore en brisant la symétrie du processus, de sorte à générer des harmoniques paires.
+
+\section{Conclusion et perspectives}

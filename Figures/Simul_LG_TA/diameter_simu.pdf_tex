@@ -1,0 +1,75 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'diameter_simu.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{356.5181612bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.43236658)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diameter_simu.pdf}}%
+    \put(0.56533551,0.00540986){\makebox(0,0)[b]{\smash{\textbf{Ordre harmonique $q$}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{diameter_simu.pdf}}%
+    \put(0.11976657,0.05264144){\makebox(0,0)[b]{\smash{13}}}%
+    \put(0.02179016,0.23963884){\rotatebox{90}{\makebox(0,0)[b]{\smash{\textbf{Diamètre de l'anneau (mm)}}}}}%
+    \put(0.19757314,0.05280853){\makebox(0,0)[b]{\smash{15}}}%
+    \put(0.27537998,0.05255077){\makebox(0,0)[b]{\smash{17}}}%
+    \put(0.35318763,0.05264144){\makebox(0,0)[b]{\smash{19}}}%
+    \put(0.43262044,0.05238355){\makebox(0,0)[b]{\smash{21}}}%
+    \put(0.51042728,0.05264144){\makebox(0,0)[b]{\smash{23}}}%
+    \put(0.58823494,0.05264144){\makebox(0,0)[b]{\smash{25}}}%
+    \put(0.6660415,0.05238355){\makebox(0,0)[b]{\smash{27}}}%
+    \put(0.74384752,0.05264144){\makebox(0,0)[b]{\smash{29}}}%
+    \put(0.82118706,0.05264144){\makebox(0,0)[b]{\smash{31}}}%
+    \put(0.89899472,0.05264144){\makebox(0,0)[b]{\smash{33}}}%
+    \put(0.97679854,0.05264144){\makebox(0,0)[b]{\smash{35}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{diameter_simu.pdf}}%
+    \put(0.06105364,0.39718965){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{8}}}%
+    \put(0.0614174,0.27002865){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{6}}}%
+    \put(0.06157737,0.14287382){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{4}}}%
+    \put(0.90818736,0.22798519){\color[rgb]{0.89411765,0.10196078,0.10980392}\makebox(0,0)[b]{\smash{$\ell_1=1$}}}%
+    \put(0.90818736,0.32559593){\color[rgb]{0.21568627,0.49411765,0.72156863}\makebox(0,0)[b]{\smash{$\ell_1=2$}}}%
+  \end{picture}%
+\endgroup%
