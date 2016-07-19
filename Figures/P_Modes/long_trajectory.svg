@@ -16,7 +16,7 @@
    id="svg13125"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="long_trajectory.svg">
+   sodipodi:docname="long_trajectory.pdf">
   <defs
      id="defs13127">
     <marker
@@ -2784,7 +2784,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
