@@ -700,6 +700,19 @@
   DOI                      = {10.1088/1464-4266/4/2/370}
 }
 
+@Article{DelannoyAPL2005,
+  Title                    = {Direct observation of a photon spin-induced constant acceleration in macroscopic systems},
+  Author                   = {Delannoy, G. and Emile, O. and Le Floch, A.},
+  Journal                  = {Applied Physics Letters},
+  Year                     = {2005},
+  Number                   = {8},
+  Volume                   = {86},
+  __markedentry            = {[Romain:6]},
+  DOI                      = {http://dx.doi.org/10.1063/1.1869539},
+  Eid                      = {081109},
+  URL                      = {http://scitation.aip.org/content/aip/journal/apl/86/8/10.1063/1.1869539}
+}
+
 @Article{DholakiaPRA1996,
   Title                    = {{Second-harmonic generation and the orbital angular momentum of light}},
   Author                   = {{Dholakia}, K. and {Simpson}, N.~B. and {Padgett}, M.~J. and {Allen}, L.},
@@ -721,7 +734,6 @@
   Year                     = {2013},
   Pages                    = {121--129},
   Volume                   = {414},
-  __markedentry            = {[Romain:]},
   Publisher                = {Elsevier}
 }
 
@@ -1060,6 +1072,14 @@
   Pages                    = {123--126},
   Volume                   = {47},
   Publisher                = {Elsevier}
+}
+
+@Book{Goldstein2001,
+  Title                    = {Classical mechanics},
+  Author                   = {Goldstein, Herbert and Poole, C. P. and Safko, J. L.},
+  Publisher                = {Addison-Wesley},
+  Year                     = {2001},
+  Edition                  = {3rd}
 }
 
 @Book{Goodman,
@@ -1548,6 +1568,14 @@
   Abstract                 = {Soft X-ray natural circular dichroism (SXNCD) spectra of serine (Ser) and alanine (Ala) thin films, were measured in absolute value with the focus at the oxygen 1s- pi * transition of COO - . In the case of L-Ser, a positive and negative SXNCD peaks were observed around 531.5 and 532.5 eV, respectively. In the case of L-Ala, a negative SXNCD peak was observed around 532.8 eV. The SXNCD intensity of L-Ala was about ten times as large as that of L-Ser. Those differences would reflect the chiral environment of the core hole oxygen atoms of COO - .},
   File                     = {IzumiJP2009.pdf:IzumiJP2009.pdf:PDF},
   URL                      = {http://stacks.iop.org/1742-6596/190/i=1/a=012209}
+}
+
+@Book{Jackson1999,
+  Title                    = {Classical electrodynamics},
+  Author                   = {Jackson, John David},
+  Publisher                = {Wiley},
+  Year                     = {1999},
+  __markedentry            = {[Romain:]}
 }
 
 @Article{JohnssonPRL2007,
@@ -2838,7 +2866,6 @@
   Number                   = {13},
   Pages                    = {942--944},
   Volume                   = {19},
-  __markedentry            = {[Romain:6]},
   Publisher                = {Optical Society of America}
 }
 
@@ -3685,6 +3712,17 @@
   File                     = {VilaComamalaOL2014.pdf:VilaComamalaOL2014.pdf:PDF}
 }
 
+@Article{VincentiPRL2012,
+  Title                    = {Attosecond lighthouses: how to use spatiotemporally coupled light fields to generate isolated attosecond pulses},
+  Author                   = {Vincenti, Henri and Qu{\'e}r{\'e}, F},
+  Journal                  = {Physical review letters},
+  Year                     = {2012},
+  Number                   = {11},
+  Pages                    = {113904},
+  Volume                   = {108},
+  Publisher                = {APS}
+}
+
 @Article{VodungboNC2012,
   Title                    = {{Laser-induced ultrafast demagnetization in the presence of a nanoscale magnetic domain network}},
   Author                   = {{Vodungbo}, B. and {Gautier}, J. and {Lambert}, G. and {Sardinha}, A.~B. and {Lozano}, M. and {Sebban}, S. and {Ducousso}, M. and {Boutu}, W. and {Li}, K. and {Tudu}, B. and {Tortarolo}, M. and {Hawaldar}, R. and {Delaunay}, R. and {L{\'o}pez-Flores}, V. and {Arabski}, J. and {Boeglin}, C. and {Merdji}, H. and {Zeitoun}, P. and {L{\"u}ning}, J. },
@@ -3732,7 +3770,7 @@
 
 @Article{wangOE2009,
   Title                    = {Partially coherent standard and elegant Laguerre-Gaussian beams of all orders},
-  Author                   = {Wang, F. Yangjian, C. Korotkiva, O.},
+  Author                   = {Wang, F. and Yangjian, C. and Korotkiva, O.},
   Journal                  = {Optics Express},
   Year                     = {2009},
   Number                   = {25},

@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% Creator: Inkscape 0.48.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'corkscrew.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{2768.62856407bp}%
+    \setlength{\unitlength}{739.05615234bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,7 +48,41 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.37259498)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{corkscrew.pdf}}%
+  \begin{picture}(1,0.44164812)%
+    \put(0,0){\includegraphics[width=\unitlength]{corkscrew.pdf}}%
+    \put(0.0627782,0.3598472){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-50}}}%
+    \put(0.13459013,0.37468612){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.20825566,0.39030148){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{50}}}%
+    \put(0.09595156,0.39975164){\color[rgb]{0,0,0}\rotatebox{10.99999974}{\makebox(0,0)[lb]{\smash{X ($\si{\micro\metre}$)}}}}%
+    \put(0.10166523,0.10126001){\color[rgb]{0,0,0}\rotatebox{-34.00000166}{\makebox(0,0)[lb]{\smash{Temps (fs)}}}}%
+    \put(0.01093367,0.22055372){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{Y ($\si{\micro\metre}$)}}}}%
+    \put(0.51318978,0.25430936){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\theta=40$\degres}}}%
+    \put(0.51278458,0.19676629){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\theta=0$\degres}}}%
+    \put(0.51658918,0.12436923){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\theta=60$\degres}}}%
+    \put(0.74654253,0.36567839){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{296 as}}}%
+    \put(0.03781023,0.32933187){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{50}}}%
+    \put(0.03923201,0.25459603){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.04174684,0.18389986){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-50}}}%
+    \put(0.14332539,0.10652714){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.0428626,0.16520656){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-2}}}%
+    \put(0.09361145,0.13591957){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-1}}}%
+    \put(0.198282,0.07427369){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{1}}}%
+    \put(0.24679616,0.0451125){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{2}}}%
+    \put(0.03148406,0.00067211){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.09124409,0.00069906){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{1}}}%
+    \put(0.02299647,0.07123478){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15582567\unitlength}\raggedright Intensité\\ \end{minipage}}}%
+    \put(0.73567986,0.10254217){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Temps (fs)}}}%
+    \put(0.74846194,0.25476094){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{217 as}}}%
+    \put(0.59040113,0.12486451){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-2}}}%
+    \put(0.68322936,0.12502096){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-1}}}%
+    \put(0.77142092,0.12500774){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.86379381,0.12502096){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{1}}}%
+    \put(0.95485299,0.12486451){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{2}}}%
+    \put(0.98443993,0.33598072){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{Intensité (u. arb.)}}}}%
+    \put(0.96087127,0.33880818){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.97391843,0.14900319){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.02299647,0.04525567){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15582566\unitlength}\raggedright (u. arb.)\end{minipage}}}%
+    \put(0.01569195,0.43105989){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{(a)}}}%
+    \put(0.5670881,0.43105989){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{(b)}}}%
   \end{picture}%
 \endgroup%
