@@ -242,36 +242,36 @@ breaklinks = true
 % Part style (i.e. for the page preceeding the papers)
 \newcounter{bands}
 \newlength{\bandwidth}
-\setlength{\bandwidth}{10cm}
+\setlength{\bandwidth}{10cm} 
 \newlength{\bandheight}
 \setlength{\bandheight}{33pt}
 \newlength{\bandoverlap}
-\setlength{\bandoverlap}{5mm}
+\setlength{\bandoverlap}{5mm} 
 \newlength{\bandrightmargin}
 \setlength{\bandrightmargin}{5mm}
 \newlength{\fullmarginwidth}
 \setlength{\fullmarginwidth}{\paperwidth-\textwidth-\spinemargin}
 
-
-\renewcommand{\beforepartskip}{}
-\renewcommand{\printparttitle}[1]{
-\pdfbookmark[-1]{Papers}{Papers}
-\begin{adjustwidth}{}{-\fullmarginwidth-\bandoverlap}
-    \begin{flushright}
-    \colorbox{black}{\textcolor{white}{\normalfont\HUGE\scshape \parbox[t]{\bandwidth+\bandrightmargin+\bandoverlap}{
-        \vspace*{5pt}
-        \begin{flushright}
-        #1 \hspace*{\bandoverlap}\hspace*{\bandrightmargin}
-        \end{flushright}
-        \vspace*{1pt} % was 5
-        \addtocounter{bands}{-1}
-        \vspace{\value{bands}\bandheight}
-        \addtocounter{bands}{1}
-    }}}
-    \end{flushright}
-\end{adjustwidth}
-\thispagestyle{empty}
-}
+%% commented - r.géneaux
+%\renewcommand{\beforepartskip}{}
+%\renewcommand{\printparttitle}[1]{
+%\pdfbookmark[-1]{Papers}{Papers}
+%\begin{adjustwidth}{}{-\fullmarginwidth-\bandoverlap}
+    %\begin{flushright}
+    %\colorbox{black}{\textcolor{white}{\normalfont\HUGE\scshape \parbox[t]{\bandwidth+\bandrightmargin+\bandoverlap}{
+        %\vspace*{5pt}
+        %\begin{flushright}
+        %#1 \hspace*{\bandoverlap}\hspace*{\bandrightmargin}
+        %\end{flushright}
+        %\vspace*{1pt} % was 5
+        %\addtocounter{bands}{-1}
+        %\vspace{\value{bands}\bandheight}
+        %\addtocounter{bands}{1}
+    %}}}
+    %\end{flushright}
+%\end{adjustwidth}
+%\thispagestyle{empty}
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter styles

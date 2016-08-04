@@ -1,11 +1,11 @@
-\chapter{Le moment angulaire de la lumière}
-\label{CH:LightAM}
-
+\part{Le moment angulaire de la lumière}
+\label{PA:LightAM}
+\chapter{Le moment angulaire en physique classique}
+\label{CH:ClassicAM}
 Dans ce chapitre, nous nous attacherons d'abord à définir le moment angulaire (MA) classiquement, dans le cas d'un objet quelconque puis pour le champ électromagnétique, en utilisant l'optique maxwellienne. Nous étudierons ensuite l'équation d'onde et le moment angulaire de plusieurs de ses solutions, mettant en évidence deux types de MA de nature différente. Pour comprendre la natures de ces MA, nous étudierons le concept de moment angulaire en mécanique quantique, où on trouvera deux composantes du moment angulaire : le moment angulaire de spin (MAS) et le moment angulaire orbital (MAO). Le champ électromagnétique sera traité comme un système quantique, ce qui nous permettra de construire des champs pour lesquels le MAS et le MAO sont connus. En particulier, nous détaillerons la forme et les propriétés de ces champs. Nous terminerons par une discussion de l'échange de moment angulaire lors d'une interaction entre un laser et une molécule. Cette présentation nous fournira les outils utiles à l'analyse des expériences décrites dans le chapitre suivant.
 \newpage
-\section{Le moment angulaire en physique classique}
-\subsection{Mécanique Lagrangienne}
-\subsubsection{L'\'{e}quation de Lagrange}
+\section{Mécanique Lagrangienne}
+\subsection{L'\'{e}quation de Lagrange}
 \label{sec:lagrange}
 En mécanique classique, l'évolution d'un objet est décrite par les lois de Newton. Pour un objet ponctuel, on a $\bm{F}=m\bm{\ddot{x}}$, où $\bm{F}$ est la somme des forces appliquées à cet objet, $m$ sa masse et $\bm{\ddot{x}}$ son accélération. Dans le cas d'objets plus complexes tels que ceux qui nous intéresserons dans ce chapitre, une description plus adaptée est celle développée par J.-L. Lagrange en 1764. Initialement utilisé pour l'étude de la libration de lune, ce formalisme a très largement dépassé son origine pour devenir une méthode générale de résolution de problèmes dynamiques. Le système y est décrit par un ensemble de \textit{coordonnées généralisées}, qui définissent l'espace des configuration. 
 
@@ -19,7 +19,7 @@ Remarquons que le terme de gauche est la dérivée de la quantité de mouvement 
 \label{eq:lag}
 \frac{d}{dt}\frac{\partial L}{\partial \dot{x}_i}-\frac{\partial L}{\partial x_i}=0,
 \end{equation}
-qui est appelée \textbf{équation de Lagrange}. Montrons que cette équation est valable quels que soient les coordonnées généralisée utilisée pour décrire le système. Supposons que l'espace des configurations soit décrit par ${q_j}$, $j\in[1,\;N]$, qui s'écrivent en fonction des coordonnées cartésiennes ${x_i}$ et du temps :
+qui est appelée \textbf{équation de Lagrange}. Montrons que cette équation est valable quelles que soient les coordonnées généralisée utilisée pour décrire le système. Supposons que l'espace des configurations soit décrit par ${q_j}$, $j\in[1,\;N]$, qui s'écrivent en fonction des coordonnées cartésiennes ${x_i}$ et du temps :
 \begin{equation*}
 \begin{split}
 \forall j, q_j=q_j(x_1,\ldots,x_N,t)\text{ et inversement, }
@@ -67,7 +67,7 @@ $\frac{\partial q_j}{\partial x_i}$ est non singulière puisque son inverse est 
 \end{equation}
 Nous avons donc démontré que l'équation de Lagrange est invariante par changement des coordonnées utilisées pour décrire le système, ce qui en fait une formulation très pratique. 
 
-\subsubsection{Symétries du Lagrangien et loi de conservation}
+\subsection{Symétries du Lagrangien et loi de conservation}
 L'équation de Lagrange permet d'obtenir des résultats généraux assez directement, tels que des lois de conservation. Une coordonnée $q_k$ est dite \textit{ignorable} ou \textit{cyclique} si le Lagrangien $L$ ne dépend pas de $q_k$. L'équation de Lagrange donne alors :
 \begin{equation*}
 \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_k} = \frac{\partial L}{\partial q_k} = 0.
@@ -78,7 +78,7 @@ P_k\equiv\frac{\partial L}{\partial \dot{q}_k},
 \end{equation*}
 appelé \textit{moment généralisé conjugué} de $q_k$, et qui est une constante du mouvement. Nous allons utiliser ce point pour établir trois lois de conservation : l'énergie, la quantité de mouvement et le moment angulaire.
 
-\paragraph*{\'{E}nergie et translation dans le temps}
+\subsubsection{\'{E}nergie et translation dans le temps}
 La dérivée temporelle du Lagrangien s'écrit : 
 \begin{align*}
 \frac{dL}{dt}&=\sum_i\frac{\partial L}{\partial q_i}\frac{\partial q_i}{\partial t}+\sum_i\frac{\partial L}{\partial \dot{q}_i}\frac{\partial \dot{q}_i}{\partial t}+\frac{\partial L}{\partial t}\\
@@ -100,7 +100,7 @@ on a donc
 On voit que si le Lagrangien ne dépend pas explicitement du temps, i.e. est invariant par translation temporelle, alors $h$ est conservé. Dans de nombreux cas, $h$ peut se réduire à l'énergie mécanique du système (voir p. 62 de \mycite{Goldstein2001}). Le résultat obtenu est alors la \textit{conservation de l'énergie mécanique}. 
 
 
-\paragraph*{Quantité de mouvement et translation dans l'espace}
+\subsubsection{Quantité de mouvement et translation dans l'espace}
 Considérons maintenant un système invariant par translation dans l'espace. C'est le cas d'une particule libre, ou encore de $N$ particules reliées par des interactions ne dépendant que de leur coordonnées relatives $\left|\bm{r}_i-\bm{r}_j\right|$. 
 On note $\bm{r}_i(t)$ la trajectoire des particules et on considère une translation infinitésimale du système de coordonnées : $\bm{r}_i\rightarrow \bm{r}_i+\epsilon$. Le changement du Lagrangien vaut :
 \begin{align*}
@@ -113,7 +113,7 @@ Si le système est invariant par rapport à la translation, alors $\delta L=0$ e
 est conservée. Si l'invariance n'est vraie que dans une direction, alors seulement la composante de $\bm{P}$ dans cette direction sera conservée.
 
 
-\paragraph*{Moment angulaire et rotation}
+\subsubsection{Moment angulaire et rotation}
 Enfin, considérons un système invariant par rotation autour d'un axe $\bm{u}$. Prenons une rotation infinitésimale d'angle $\delta\theta$ et notons $\delta\bm{\theta}=\bm{u}\delta\theta$. Si on choisit l'origine du repère sur l'axe de rotation, le changement pour chaque vecteur de coordonnées est $\delta\bm{r}_i(t) = \delta\bm{\theta}\times\bm{r}_i(t)$. De même, $\delta\bm{\dot{r}}_i(t) = \delta\bm{\theta}\times\bm{\dot{r}}_i(t)$. Le changement du Lagrangien est :
 \begin{align*}
 \delta L &=\sum_i \left(\delta\bm{\theta}\times\bm{r}_i(t)\right)\cdot\frac{\partial L}{\partial \bm{r}_i}+\sum_i \left(\delta\bm{\theta}\times\bm{\dot{r}}_i(t)\right)\cdot\frac{\partial L}{\partial \bm{\dot{r}}_i}\\
@@ -126,7 +126,7 @@ où on a permuté circulairement les produits mixtes et utilisé l'équation de 
 \bm{J}\equiv\sum_i \bm{r}_i(t)\times\frac{\partial L}{\partial \bm{\dot{r}}_i}=\sum_i \bm{r}_i\times\bm{p}_i.
 \label{eq:defJ}
 \end{equation}
-$J$ est le \textit{moment angulaire} du système. Il est clair que sa valeur dépend du choix du centre du système de coordonnées. Si on applique $\bm{r}_i\rightarrow \bm{r}_i+\bm{a}$, alors $\bm{J}_i\rightarrow \bm{J}+\bm{a}\times\bm{P}$. Notons que dans le référentiel du centre de masse (c.d.m.), $\bm{P}=0$. $\bm{J}$ est alors indépendant du choix de l'origine des coordonnées. Pour des raisons qui paraîtront claires plus tard, notons $\bm{S}$ la valeur de $\bm{J}$ dans le référentiel du c.d.m. Dans un référentiel où le c.d.m se déplace à une vitesse uniforme $\bm{V}$, 
+$J$ est le \textit{moment angulaire} du système. Il est clair que sa valeur dépend du choix du centre du système de coordonnées. Si on applique $\bm{r}_i\rightarrow \bm{r}_i+\bm{a}$, alors $\bm{J}\rightarrow \bm{J}+\bm{a}\times\bm{P}$. Notons que dans le référentiel du centre de masse (c.d.m.), $\bm{P}=0$. $\bm{J}$ est alors indépendant du choix de l'origine des coordonnées. Pour des raisons qui paraîtront claires plus tard, notons $\bm{S}$ la valeur de $\bm{J}$ dans le référentiel du c.d.m. Dans un référentiel où le c.d.m se déplace à une vitesse uniforme $\bm{V}$, 
 \begin{align*}
 \bm{J}&=\sum_i \left(\bm{r}_i+\bm{V}t\right)\times\left(\bm{p}_i+m_i\bm{V}\right)\\
 &= \sum_i\bm{r}_i\times\bm{p}_i+\bm{V}t\times\bm{P}+\sum_i m_i\bm{r}_i\times\bm{V} \\
@@ -134,10 +134,10 @@ $J$ est le \textit{moment angulaire} du système. Il est clair que sa valeur dé
 \end{align*}
 où $M=\sum_i m_i$ est la masse totale du système et $\bm{R}_{cdm}$ la position du centre de masse. On décompose donc le moment angulaire total en deux parties : $\bm{S}$, qui est indépendante du choix du repère, et $\bm{R}_{cdm}\times\bm{P}$.
 
-\subsection{Les propriétés mécaniques de la lumière}
+\section{Les propriétés mécaniques de la lumière}
 Comme nous l'avons fait pour la matière, nous établissons ici les expressions de l'énergie, de la quantité de mouvement et du moment angulaire associé à un rayonnement électromagnétique.
 
-\subsubsection{L'énergie du champ électromagnétique} 
+\subsection{L'énergie du champ électromagnétique} 
 Définir l'énergie du champ électromagnétique a donné lieu à de vifs débats à la fin du XIXème siècle, liés aux discussions sur la propagation d'une onde dans le vide. Dans une série de travaux pionniers, John H. Poynting a largement clarifié les dicussions au sujet de l'énergie des ondes électromagnétiques, la pression de radiation, et même le moment angulaire de la lumière. Poynting faisait partie d'un groupe de physiciens mené par Heaviside, Fitzgerald, Lodge et Hertz qui travaillèrent à développer la théorie de Maxwell après sa mort en 1873. Nous reprenons ici la démarche de son article de 1884 \mycite{Poynting1884}, qui amène à une expression de la densité d'énergie et du flux d'énergie d'un champ électromagnétique.
 
 Considérons une distribution de charges et de courants contenus dans un volume $V$. En un court temps $\rmd t$, une charge bougera de $\bm{v}\rmd t$. En utilisant l'expression de la force de Lorentz, le travail effectué sur la charge sera
@@ -174,7 +174,7 @@ Le taux de variation de l'énergie électromagnétique dans V + L'énergie qui s
 
 $\bm{\Pi}$ est connu sous le nom de \textbf{vecteur de Poynting}. De manière intéressante, si on considère une onde plane se propageant selon un vecteur d'onde $\bm{k}$, on voit que $\bm{\Pi}$ est parallèle à $\bm{k}$. Ce n'est pas le cas de manière générale : $\bm{k}$ pointe dans la direction de la vitesse de phase alors que $\bm{\Pi}$ pointe dans celle de la vitesse de groupe. De nombreux exemples montrent que ces quantités sont distinctes, tel que la biréfringence ou le phare attoseconde (\mycite{VincentiPRL2012}). 
 
-\subsubsection{La quantité de mouvement de la lumière}
+\subsection{La quantité de mouvement de la lumière}
 Nous avons démontré la conservation de l'énergie du système combiné du champ et des particules. De la même façon, la quantité de mouvement de ce système doit être conservée. On note $\bm{P}_{part}$ la somme des quantités de mouvement des particules dans le volume V. La seconde loi de Newton donne :
 \begin{equation*}
 \frac{d\bm{P}_{part}}{dt}=\int_V \rho \bm{E} + \bm{J}\times\bm{B}\;\rmd V.
@@ -203,7 +203,7 @@ Comme démontré dans la section 6.9 de \mycite{Jackson1999}, le terme de droite
 
 C'est l'essence de la démarche utilisée par Henri Poincaré en 1900 \mycite{poincare1900}, où il discute de la \textit{``quantité de mouvement de [...] notre fluide fictif''}. Dans ce même article, Poincaré parle de la force exercée par la lumière sur la matière, notion déjà présente chez Maxwell et même chez Kepler appelée \textit{pression électromagnétique}. On l'appelle aujourd'hui plus couramment \textit{pression de radiation}. Poynting développa considérablement ce concept par la suite \mycite{poynting1903}, et nota que malgré sa faible valeur comparée à la force de gravitation, elle pourrait avoir d'importantes conséquences en astronomie. \`{A} raison : par exemple, si la pression de radiation n'avait pas été prise en compte lors du programme Viking, les deux sondes envoyées sur Mars auraient raté l'orbite de la planète d'environ 15000 kilomètres \mycite{Hecht2001}.
 
-\subsubsection{Le moment angulaire de la lumière}
+\subsection{Le moment angulaire de la lumière}
 Poynting, en plus de ces contributions majeures, a été le premier à envisager l'existence du moment \textit{angulaire} de la lumière. Il fit l'analogie entre une onde électromagnétique polarisée circulairement et une onde élastique de torsion, suggérant que la lumière possède un moment angulaire et peut fournir un couple à la matière \mycite{PoyntingPRSL1909}. Il propose à la fin de son article un dispositif expérimental constitué d'une série de lames quart d'ondes, permettant de démultiplier cet effet jusqu'à le rendre mesurable. Il conclut toutefois avec pessimisme que \textit{``even with such multiplications, my present experience of light forces does not give me much hope that the effect could be detected, if it has the value suggested by the mechanical model''}.
 
 Il aurait donc probablement été heureux d'apprendre qu'en 1936, R. A. Beth observa cet effet avec un schéma légèrement modifié \mycite{BethPR1936}, confirmant ainsi l'existence du moment angulaire de la lumière. \mycite{DelannoyAPL2005} réalisèrent une expérience similaire en utilisant de la soie d'araignée.\par
@@ -215,9 +215,9 @@ L'expression de la densité de moment angulaire du champ est directement obtenue
 
 C'est l'expression classique du moment angulaire du champ électromagnétique, la quantité qui nous intéressera pendant la majorité de cette thèse. Nous allons maintenant étudier le moment angulaire de différentes solutions de l'équation d'onde.
 
-\section{Solutions de l'équation d'onde}
-\subsection{Ondes planes et polarisation}
-\subsubsection{L'équation d'Helmholtz}
+\chapter{L'équation d'onde et les modes du champ}
+\section{Ondes planes et polarisation}
+\subsection{L'équation d'Helmholtz}
 Par simplicité, nous ne considérerons pas la présence de densités de charges ou de courant. Dans ce cas, les équations de Maxwell donnent les équations d'onde :
 \begin{align*}
 &\nabla^2\bm{E}-\frac{1}{c^2}\frac{\partial^2}{\partial t^2}\bm{E}=0,
@@ -249,7 +249,7 @@ On suppose $k_x$, $k_y$, $k_z$ réels et on obtient
 \end{equation*}
 qui sont appelées les ondes planes. Les solutions avec un signe $+$ (resp. $-$) se propagent dans la direction de (resp. inversement à) $\bm{k}$. Pour que ces solutions vérifient les équations de Maxwell, il reste à vérifier qu'elles sont de divergence nulle : $\bm{\nabla}\cdot\bm{E} = 0$. Par conséquent, $\bm{k}\cdot\bm{\mathcal{E_0}}= 0$ : le champ électrique est nécessairement perpendiculaire à $\bm{k}$, on parle d'onde transverse électrique. La direction du champ $\bm{B}$ est donnée par l'équation de Maxwell-Faraday : en notation complexe, $\bm{\nabla}\times\bm{\mathcal{E}}=-\rmi\omega\bm{\mathcal{B}}$. Ainsi, $\bm{B}$ est perpendiculaire à $\bm{E}$ et $\bm{k}$.
 
-\subsubsection{La polarisation des ondes planes}
+\subsection{La polarisation des ondes planes}
 On choisit un repère cartésien tel que $\bm{k}=\bm{e_z}$. Un champ électrique transverse s'écrit :
 \begin{equation*}
 \bm{E}=\begin{pmatrix}
@@ -268,7 +268,7 @@ E_{0x}\cos{(\omega t-kz)}\\
 \end{equation*}
 Le signe $+$ représente une PEG et $-$ une PED. Dans le cas particulier où $E_{0x}=E_{0y}$, l'ellipse devient un cercle et on dit que la polarisation est circulaire gauche (PCG) ou droite (PCD). Enfin, notons que la phase $\phi$ peut être nulle. Dans ce cas, la polarisation est rectiligne. Cette polarisation peut être construite en effectuant la somme d'une PEG et d'une PED. Inversement, une onde polarisée elliptiquement peut être vue comme la superposition de deux polarisations rectilignes.
 
-\subsubsection{Moment angulaire d'une onde plane circulaire}
+\subsection{Moment angulaire d'une onde plane circulaire}
 \label{sec:ma_circ}
 Intéressons nous maintenant au moment angulaire porté par ces ondes planes. L'équation \ref{eq:defJ} donne son moment angulaire selon l'axe de propagation: 
 \begin{align*}
@@ -280,7 +280,7 @@ Ce problème peut être résolu en restreignant le problème à un volume $V$ o�
 
 Remarquons pour terminer que dans l'expérience de Beth, la lumière transmet du moment angulaire à un objet qui se met à tourner \textit{sur lui-même}, et pas par rapport au centre du faisceau. Ceci est cohérent avec la structure d'une onde plane : dans le plan transverse, son profil ne dépend pas du tout des coordonnées $(x,y)$. C'est bien sa polarisation, c'est-à-dire sa structure vectorielle intrinsèque, qui lui donne du moment angulaire. 
 
-\subsection{L'approximation paraxiale}
+\section{L'approximation paraxiale}
 En optique géométrique, un rayon est appelé \textit{paraxial} son inclinaison par rapport à l'axe optique est faible. En optique ondulatoire paraxiale, le spectre angulaire d'une onde doit être composé d'ondes planes paraxiales par rapport à la direction de propagation de l'onde. Cette condition est vérifiée dans la plupart des expériences de GHOE. Nous allons voir qu'elle permet de simplifier l'équation d'Helmholtz et d'en trouver des solutions.\par
 On commence par transformer l'équation d'Helmholtz vectorielle en équation scalaire. Pour ce faire, on considère une onde de polarisation transverse à l'axe optique. On écrit alors:
 \begin{equation}
@@ -361,8 +361,8 @@ et
 \label{eq:para15}
 \end{equation}
 
-\subsection{Les modes de Hermite-Gauss et de Laguerre-Gauss}
-\subsubsection{Modes de Hermite-Gauss}
+\section{Les modes de Hermite-Gauss et de Laguerre-Gauss}
+\subsection{Modes de Hermite-Gauss}
 Une solution de l'équation d'onde paraxiale \ref{eq:para13} couramment employé est la famille des modes de Hermite-Gauss (HG). On se place en coordonnées cartésiennes et comme expliqué plus haut, on écrit le vecteur potentiel :
 \begin{equation*}
 \bm{A}=\bm{e_x}u(x,y,z)\exp{(\rmi k z)},
@@ -402,7 +402,7 @@ On remarquera que le mode $(0,0)$ n'est autre que le mode Gaussien usuel. Grâce
 \label{Fig:hgmodes}
 \end{figure}
 
-\subsubsection{Modes de Laguerre-Gauss}
+\subsection{Modes de Laguerre-Gauss}
 Les modes de HG sont fondamentaux en optique et particulièrement en physique des lasers, mais ils ne présentent pas de moment angulaire particulier, au contraire des modes de Laguerre-Gauss que nous présentons ici. Ils apparaissent naturellement en coordonnées cylindriques, notées $(r,\theta,z)$. L'équation d'onde paraxiale s'écrit :
 \begin{equation*}
 \left(\frac{1}{r}\frac{\partial}{\partial r} + \frac{\partial^2}{\partial^2 r} + \frac{1}{r^2}\frac{\partial^2}{\partial^2 \theta} + 2\rmi k\frac{\partial}{\partial z}\right)u^{LG}_{\ell, p}=0.
@@ -495,7 +495,7 @@ Le cas $p\neq 0$ est plus compliqué à cause du terme $L_p^{\left| \ell  \right
 \end{equation*}
 où on a utilisé la relation $\frac{d}{dx}\left[L_{p}^{\left| \ell \right|}(x)\right] = -L_{p-1}^{\left| \ell \right|+1}(x)$. Cette équation peut être résolue au cas par cas mais ne semble pas présenter de solution générale.
 
-\subsubsection{Moment angulaire d'un faisceau de Laguerre-Gauss}
+\subsection{Moment angulaire d'un faisceau de Laguerre-Gauss}
 Le lien entre modes de Laguerre-Gauss et moment orbital angulaire est dû à \mycite{AllenPRA1992}, même si l'existence des modes de Laguerre-Gauss comme solutions de l'équation d'onde paraxiale était connue avant leur travail. La présence de moment angulaire peut être classiquement en s'intéressant à la forme bien particulière du vecteur de Poynting d'un mode de Laguerre-Gauss.\par
 Pour visualiser ce lien, commençons par calculer les fronts d'ondes d'un mode de Laguerre-Gauss, qui sont normaux au vecteur de Poynting.
 Un front d'onde est par définition une surface d'équiphase. En reprenant l'expression \ref{eq:lgmodes}, on obtient directement leur définition :
@@ -543,16 +543,17 @@ On remarque ici une différence avec le cas de l'onde plane polarisée circulair
 
 On en conclut qu'il y a deux types de moment angulaires de nature différente. Pour expliquer cette différence, il est nécessaire d'adopter une description quantique. 
 On peut déjà noter que le rapport entre le flux de moment angulaire et le flux d'énergie est $J_z/(\Pi_z/\rmc) = \ell/\omega$. Si on considère le champ comme constitué de $N$ photons, et qu'on note $J_{avg}$ le moment angulaire moyen par photon, alors le moment angulaire total du champ est $NJ_{avg}$. L'énergie totale vaut $N\hbar\omega$, donc le rapport entre moment angulaire et énergie vaut $J_{avg}/(\hbar\omega)$. Pour être en accord avec le résultat classique, on obtient $J_{avg} = \ell\hbar$. Il reste à savoir si le moment angulaire est une quantité bien définie pour un photon, et si chacun des photons du champ porte effectivement $\ell\hbar$. Autrement dit, il faut comprendre comment se manifeste la grandeur macroscopique $J_z$ au niveau microscopique. 
- 
 
-\section{Le moment angulaire en mécanique quantique}
+
+
+\chapter{Le moment angulaire en mécanique quantique}
 Dans cette partie nous discuterons de la définition du moment angulaire en mécanique quantique. Comme nous le verrons, cette approche est complémentaire de la précédente pour comprendre certaines des propriétés de la lumière portant du moment angulaire. 
 
-\subsection{Symétries et lois de conservation}
+\section{Symétries et lois de conservation}
 
 Dans la partie précédente, nous avons utilisé les lois de la mécanique classique pour définir la notion de moment angulaire. Nous avons vu que comme la masse ou l'énergie, $J$ était une quantité conservée. En mécanique classique, une loi de conservation est presque toujours le point de départ d'un raisonnement. En mécanique quantique au contraire, il est remarquable que les lois de conservation soient profondément reliées et découlent directement des propriétés de symétrie des systèmes. 
 
-\subsubsection{Définition de la symétrie d'un système}
+\subsection{Définition de la symétrie d'un système}
 Nous commençons donc par étudier la question de la symétrie d'un système. Notons $\ket{\psi_1}$ l'état de départ du système et $\ket{\psi_2}$ l'état après un temps $t$. On peut noter $\hat{U}$ l'opérateur définit par :
 \begin{equation*}
 \ket{\psi_2}=\hat{U}(t,0)\ket{\psi_1},
@@ -572,7 +573,7 @@ On obtient le résultat que $\hat{U}$ et $\hat{Q}$ commutent. On peut montrer qu
 \end{equation*}
 qui est la \textit{définition} de la symétrie d'un système physique d'hamitonien $\hat{H}$ par rapport à l'opérateur $\hat{Q}$.
 
-\subsubsection{Relation entre symétrie et loi de conservation}
+\subsection{Relation entre symétrie et loi de conservation}
 Supposons maintenant qu'une fois l'opérateur $\hat{Q}$ appliqué à notre état, on obtienne un état qui soit \textit{physiquement le même}. C'est-à-dire que $\hat{Q}\ket{\psi_1}$ est égal à $\ket{\psi_1}$ à un facteur de phase près qu'on note $e^{i\delta}$. Après un temps $t$, on obtient $\ket{\psi_2}$ à qui on peut appliquer $\hat{Q}$ :
 \begin{align*}
 \hat{Q}\ket{\psi_2}&=\hat{Q}\hat{U}(t,0)\ket{\psi_1}=\hat{U}(t,0)\hat{Q}\ket{\psi_1} \mbox{ en utilisant la symétrie du système,}\\
@@ -581,7 +582,7 @@ Supposons maintenant qu'une fois l'opérateur $\hat{Q}$ appliqué à notre état
 
 On vient de vérifier qui si la propriété de symétrie est vraie initialement, elle est vraie à n'importe quel autre instant, ce qui ressemble fortement à \textit{une loi de conservation}. C'est en fait exactement le cas : si le système est initialement dans un état à caractère symétrique \textbf{et} que l'hamiltonien du système est symétrique par rapport à cette opération, \textbf{alors} l'état du système aura ce même caractère symétrique à tout instant. C'est de cette relation que découlent les lois de conservation en mécanique quantique, particulièrement utiles puisqu'il n'est pas nécessaire de connaître tout le détail de l'évolution du système au cours du temps. Nous en détaillons quelques unes ici.
 
-\subsubsection{La parité et l'opérateur inversion}
+\subsection{La parité et l'opérateur inversion}
 Commençons par appliquer notre résultat au cas de l'opérateur inversion $\hat{P}$, définit par l'opérateur qui change $(x,y,z)$ en $(-x,-y,-z)$. Supposons que l'on ait un état symétrique par rapport à $\hat{P}$ : 
 \begin{equation*}
 \hat{P}\ket{\psi_1} = e^{i\delta}\ket{\psi_1}.
@@ -597,7 +598,7 @@ On en déduit que $(e^{i\delta})^2=1$, c'est à dire $e^{i\delta}=\pm1$. On voit
 
 Si $\hat{P}\ket{\psi_1}= \ket{\psi_1}$, on dit que $\ket{\psi_1}$ est de parité \textit{paire}, et si $\hat{P}\ket{\psi_1}= -\ket{\psi_1}$, on dit que $\ket{\psi_1}$ est de parité \textit{impaire}. $\hat{P}$ est également appelé opérateur parité. Notons que la grande majorité des lois physiques sont symétriques par rapport à $\hat{P}$. En fait, seule l'interaction faible ne respecte pas cette propriété. Pour tout ce qui va nous intéresser par la suite, on considérera donc toujours que l'hamiltonien de notre système est symétrique par rapport à $\hat{P}$. On en conclut que si le système a une parité définie à un instant, alors il gardera la même parité. C'est ce qu'on appelle \textit{la conservation de la parité}, très importante dans les interactions lumière-matière.
 
-\subsubsection{Le moment angulaire et l'opérateur rotation}
+\subsection{Le moment angulaire et l'opérateur rotation}
 Nous pouvons appliquer la même démarche cette fois en utilisant l'opérateur rotation $\hat{R}_z(\theta)$, défini comme la rotation du système d'un angle $\theta$ autour de l'axe $z$. Dans un problème à symétrie cylindrique, un tel opérateur laisse le système inchangé, à un terme de phase près :
 \begin{equation*}
 \hat{R}_z(\theta)\ket{\psi_1}=e^{i\delta}\ket{\psi_1}.
@@ -614,7 +615,7 @@ Nous savons donc que si le système est symétrique par rapport à la rotation a
 
 Avant de donner continuer, on mentionnera que le raisonnement donné ici en utilisant $\hat{P}$ et $\hat{R}_z(\theta)$ pour démontrer la conservation respectivement de la parité et du moment angulaire peuvent être appliqués pour d'autres opérateurs. Ainsi, la symétrie par rapport à $\hat{D}_x(a)$, opérateur qui déplace le système d'une distance $a$ selon l'axe $x$, donne la conservation de $\hbar k_x$, la quantité de mouvement selon x. De même, $\hat{D}_t(\tau)$, l'opérateur qui fournit un délai temporel $\tau$, donne la conservation de $\omega \hbar$, l'énergie du système.
 
-\subsection{L'opérateur moment angulaire}
+\section{L'opérateur moment angulaire}
 Nous avons démontré dans la partie précédente que la quantité $m$ était une grandeur constante du mouvement. Nous allons maintenant expliquer pourquoi cette quantité est appelée moment angulaire, et par la même occasion donner une définition d'un opérateur moment angulaire en mécanique quantique.
 
 Partons donc de la notion classique de moment angulaire $\bm{\cJ}$. Comme nous l'avons vu, sa composante selon $x$ s'écrit :
@@ -658,7 +659,7 @@ On obtient donc :
 \end{equation*}
 En d'autres mots, si on applique $\hat{J}_z$ sur un état ayant un moment angulaire selon z défini, alors on obtient la quantité de moment angulaire $m\hbar$. 
 
-\subsection{Moment angulaire de spin et moment angulaire orbital}
+\section{Moment angulaire de spin et moment angulaire orbital}
 Un moment angulaire peut être défini en mécanique quantique à partir des relations \ref{Eq.CommutJ}, sans nécessairement que ce moment angulaire ait un équivalent en mécanique classique. \`A partir d'ici, nous définirons un moment angulaire \textbf{orbital} comme un moment ayant un équivalent en mécanique classique, et un moment angulaire \textbf{de spin} comme un effet purement quantique. Nous les noterons respectivement $\bm{\hat{L}}$ et $\bm{\hat{S}}$. On peut alors montrer en utilisant les règles d'additions des moments angulaires (Chapitre X de \mycite{cohen}) que le moment angulaire total du système est donné par :
 \begin{equation}
 \bm{\hat{J}}=\bm{\hat{L}}+\bm{\hat{S}}.
@@ -668,37 +669,77 @@ L'existence de moments angulaires n'ayant pas d'équivalent classique est liée 
 
 Pour décrire complètement l'état d'un système et donc écrire sa fonction d'onde, il faut rajouter aux coordonnées spatiales un quatrième paramètre - la variable de spin. Puisqu'il ne dépend pas des coordonnées spatiales, $\bm{\hat{S}}$ est également appelé moment angulaire \textit{intrinsèque}. C'est un opérateur qui n'agit pas sur les coordonnées spatiales, contrairement à $\bm{\hat{L}}$. 
 
-\section{Séparation entre moment orbital et moment de spin de la lumière}
-Nous savons donc que pour un système quantique, il est possible d'exhiber un $\bm{\hat{S}}$ et un $\bm{\hat{L}}$. Tout au long de cette thèse, nous nous intéresserons à ces deux quantités dans le cas de la lumière. Dans un premier temps, nous essayerons d'effectuer cette séparation pour un champ électromagnétique classique, avant de s'intéresser au cas quantique : le champ électromagnétique sera alors considéré comme un système quantique.
+\chapter{Séparation entre moment orbital et moment de spin de la lumière}
+Dans cette partie nous identifierons les composantes intrinsèques et extrinsèques du moment angulaire de la lumière, d'abord classiquement puis quantiquement.
 
-\subsection{Le cas du champ classique}
-Nous avons vu dans la partie \ref{AM_classique} que le moment angulaire d'un champ classique s'écrivait 
+\section{Moments intrinsèque et extrinsèque d'un champ classique}
+Nous avons vu dans la partie \ref{CH:ClassicAM} que le moment angulaire d'un champ classique s'écrivait 
 \begin{equation}
-\bm{J}=\int{\rmd\bm{r}\epsilon_0\bm{r}\times(\bm{E}\times\bm{B})}.
+\bm{J}=\int{\epsilon_0\bm{r}\times(\bm{E}\times\bm{B})\rmd\bm{r}}.
 \label{Eq.JClassEM}
 \end{equation} 
-Nous aimerions pouvoir identifier deux contributions à $\bm{J}$, on pourrait alors écrire $\bm{J}=\bm{L}+\bm{S}$. Pour y parvenir, nous séparons $\bm{E}$ et $\bm{B}$ en leur partie longitudinale et transverse. Un champ longitudinal $\bm{U_{\parallel}}(\bm{r})$ est défini par 
-\begin{align*}
-\bm{\nabla}\times\bm{U_{\parallel}}(\bm{r})=0,
-\end{align*}
-alors qu'un champ transverse vérifie 
-\begin{align*}
-\bm{\nabla}\cdot\bm{U_{\bot}}(\bm{r})=0.
-\end{align*}
-L'équation de Maxwell-Thomson nous donne directement que le champ magnétique est purement transverse : $\bm{B}=\bm{B_{\bot}}$. On écrit ensuite $\bm{E}=\bm{E_{\parallel}}+\bm{E_{\bot}}$, et en utilisant \ref{Eq.JClassEM} on peut calculer la contribution du champ électrique transverse et du champ longitudinal (voir pp. 45-48 de \mycite{Cohen1997}) :
+Nous cherchons à identifier deux contributions à $\bm{J}$, dont l'une serait intrinsèque, c'est-à-dire dépendante de l'origine des coordonnées. On pourrait alors écrire $\bm{J}=\bm{L}+\bm{S}$. Pour y parvenir, nous séparons $\bm{E}$ et $\bm{B}$ en leurs parties longitudinales et transverses. Un champ $\bm{U}$ est longitudinal (resp. transverse) s'il vérifie $\bm{\nabla}\times\bm{U}=0$ (resp. $\nabla\cdot\bm{U}=0$). On note :
 \begin{equation*}
-\begin{aligned}[c]
-\bm{J_{\parallel}}&=\int{\rmd\bm{r}\epsilon_0\bm{r}\times(\bm{E_{\parallel}}\times\bm{B})} \\
-&=\int{\rmd\bm{r}\rho(\bm{r}\times\bm{A}_{\bot})}
-\end{aligned}
-\qquad
-\begin{aligned}[c]
-\bm{J_{\bot}}&=\int{\rmd\bm{r}\epsilon_0\bm{r}\times(\bm{E_{\bot}}\times\bm{B})}\\
-&=\epsilon_0\int{\rmd\bm{r}\bigl[\sum_{a=x,y,z} \bm{E^a_{\bot}}(\bm{r}\times\bm{\nabla})\bm{A^a_{\bot}}+\bm{E_{\bot}}\times\bm{A_{\bot}}\bigr]}
-\end{aligned}
-\end{equation*} 
+\bm{E}=\bm{E}_{\parallel}+\bm{E}_{\bot} \text{ et } \bm{B}=\bm{B}_{\parallel}+\bm{B}_{\bot},
+\end{equation*}
+où $\parallel$ et $\bot$ représentent respectivement la composante longitudinale et transverse d'un champ.
+L'équation de Maxwell-Thomson, $\nabla\cdot\bm{B}=0$, montre que le champ magnétique est purement transverse : $\bm{B}=\bm{B}_{\bot}$. \par
 
-Où l'on a noté $\bm{A}_{\bot}$ la composante transverse du potentiel vecteur du champ. On voit que $\bm{J_{\parallel}}$ dépend de la densité de charge $\rho$, elle est donc reliée aux particules présentes dans le volume. Par contre, $\bm{J_{\bot}}$ ne dépend que du champ électromagnétique. On remarque que le premier terme dépend explicitement de $\bm{r}$ alors que le second dépend de la nature vectorielle du champ (et donc de sa polarisation) mais pas du choix de l'origine des coordonnées du système. Par analogie avec les opérateurs quantiques, on identifie donc une partie orbitale et une partie de spin :
+\subsubsection{Composante longitudinale}
+Considérons maintenant le système {lumière+particules}. La contribution de $E_{\parallel}$ au moment angulaire du système s'écrit : 
+\begin{align}
+\bm{J}_{\parallel}&=\int{\epsilon_0\bm{r}\times(\bm{E}_{\parallel}\times\bm{B})\rmd\bm{r}}\nonumber\\
+&=\epsilon_0\int{\bm{r}\times(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right])\rmd\bm{r}}\nonumber\\
+&=\epsilon_0\int{\left(\sum_{a=x,y,z} E^a_{\parallel}(\bm{r}\times\bm{\nabla})A^a_{\bot}-\bm{r}\times(\bm{E}_{\parallel}\cdot\bm{\nabla})\bm{A}_{\bot}\right)\rmd\bm{r}}.
+\label{eq:Jlong1}
+\end{align}
+Le terme de droite se réécrit :
+\begin{align*}
+\int{\bm{r}\times(\bm{E}_{\parallel}\cdot\bm{\nabla})\bm{A}_{\bot})\rmd\bm{r}}&=
+\int{-\bm{E}_{\parallel}\cdot\bm{r}\times(\bm{\nabla}\cdot\bm{A}_{\bot})\rmd\bm{r}}\nonumber\\
+&=\int{-\bm{E}_{\parallel}\cdot\left(\bm{\nabla}\left[\bm{r}\times\bm{A}_{\bot}\right]-\left[\bm{\nabla}\cdot\bm{r}\right]\times\bm{A}_{\bot}\right)\rmd\bm{r}}\nonumber\\
+&=\int{\left[\bm{E}_{\parallel}\cdot\bm{\nabla}(\bm{r}\times\bm{A}_{\bot})-\bm{E}_{\parallel}\times\bm{A}_{\bot}\right]\rmd\bm{r}}
+\end{align*}
+On intègre ensuite le premier terme de cette relation par partie :
+\begin{equation*}
+\int{\bm{E}_{\parallel}\cdot\bm{\nabla}(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}}=
+\int{-(\bm{\nabla}\cdot\bm{E}_{\parallel})(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}}+\oint_{\partial V}{\bm{E}_{\parallel}(\bm{r}\times\bm{A}_{\bot})\rmd S}
+\label{eq:Jlong5}
+\end{equation*}
+L'intégrale de surface s'annule si $\bm{E}$ tend vers zéro suffisamment rapidement. De plus, l'équation de Maxwell-Gauss donne 
+$(\bm{\nabla}\cdot\bm{E}_{\parallel}) = \rho/\epsilon_0$. On réécrit maintenant l'équation \ref{eq:Jlong1} en remplaçant $\bm{E}_{\parallel}$ par $-\bm{\nabla}\Phi$, où $\Phi$ est le potentiel vecteur dans la jauge de Coulomb.
+\begin{equation}
+\bm{J}_{\parallel}=\int{\left[-\epsilon_0\sum_{a=x,y,z}(\nabla^a\Phi)(\bm{r}\times\bm{\nabla})A^a_{\bot}
++\rho(\bm{r}\times\bm{A}_{\bot})
+-\epsilon_0(\bm{\nabla}\Phi)\times\bm{A}_{\bot}
+\right]\rmd\bm{r}}
+\label{eq:Jlong2}
+\end{equation}
+Montrons maintenant que le premier et le dernier terme de cette expression s'annulent. En les intégrant par partie et en considérant les intégrales de surface nulles, on obtient :
+\begin{align}
+\int[\sum_{a=x,y,z}(\nabla^a\Phi)(\bm{r}\times\bm{\nabla})A^a_{\bot}+(\bm{\nabla}\Phi)\times\bm{A}_{\bot}]\rmd\bm{r}
+&=\int[\sum_{a=x,y,z}\Phi\nabla^a(\bm{r}\times\bm{\nabla})A^a_{\bot}+\Phi(\bm{\nabla}\times\bm{A}_{\bot})]\rmd\bm{r}.
+\label{eq:Jlong3}
+\end{align}
+De plus,
+\begin{align*}
+\sum_{a=x,y,z}\Phi\nabla^a(\bm{r}\times\bm{\nabla})A^a_{\bot}=\Phi(\bm{r}\times\bm{\nabla})(\bm{\nabla}\cdot\bm{A}_{\bot})-\Phi(\bm{\nabla}\times\bm{A}_{\bot})
+\end{align*}
+Dans la jauge de Coulomb, $\bm{\nabla}\cdot\bm{A}_{\bot}=0$, donc le premier terme est nul. Le second s'annule avec le dernier terme de \ref{eq:Jlong3}. Il ne reste donc qu'un terme à \ref{eq:Jlong2} :
+\begin{equation}
+\bm{J}_{\parallel}=\int{\rho(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}}
+\label{eq:Jlong4}
+\end{equation}
+$\bm{A}_{\bot}$ est invariant par transformation de jauge (voir I.B.4 de \mycite{Cohen1997}), donc l'expression \ref{eq:Jlong4} l'est aussi.
+
+\subsubsection{Composante transverse}
+Le calcul réalisé pour la composante longitudinale est valable en remplaçant $\bm{E}_{\parallel}$ par $\bm{E}_{\bot}$. On a de plus $\bm{\nabla}\cdot\bm{E}_{\bot}=0$, donc l'intégration par partie \ref{eq:Jlong5} donne zéro. Il reste donc :
+\begin{align*}
+\bm{J_{\bot}}&=\int{\epsilon_0\bm{r}\times(\bm{E_{\bot}}\times\bm{B})\rmd\bm{r}}\nonumber\\
+&=\epsilon_0\int{\bigl[\sum_{a=x,y,z} \bm{E^a_{\bot}}(\bm{r}\times\bm{\nabla})\bm{A^a_{\bot}}+\bm{E_{\bot}}\times\bm{A_{\bot}}\bigr]\rmd\bm{r}}
+\label{eq:Jtran}
+\end{align*}
+$\bm{J_{\parallel}}$ dépend de la densité de charge $\rho$, elle est donc reliée aux particules présentes dans le volume. Par contre, $\bm{J_{\bot}}$ ne dépend que du champ électromagnétique. On remarque que le premier terme dépend explicitement de $\bm{r}$ alors que le second dépend de la nature vectorielle du champ (et donc de sa polarisation) mais pas du choix de l'origine des coordonnées du système. Par analogie avec les opérateurs quantiques, on identifie donc une partie orbitale et une partie de spin :
 \begin{equation}
 \begin{aligned}[c]
 \bm{L}&=\epsilon_0\int{\rmd\bm{r}\sum_{a=x,y,z} \bm{E^a_{\bot}}(\bm{r}\times\bm{\nabla})\bm{A^a_{\bot}}}
@@ -714,8 +755,8 @@ Ces résultats sont importants puisqu'ils nous permettront par la suite de cherc
 
 
 
-\subsection{Le moment angulaire du photon}
-\subsubsection{La quantification du champ électromagnétique}
+\section{Le moment angulaire du photon}
+\subsection{La quantification du champ électromagnétique}
 \label{sec:quant_EM}
 Pour étudier ce problème au niveau du photon, il est nécessaire de traiter le champ électromagnétique comme un système quantique. Cette quantification peut être effectuée de plusieurs façons différentes, on pourra par exemple se rapporter à \mycite{Landau1982a} ou \mycite{Cohen1997} pour une description très complète et rigoureuse de ce problème. On peut également citer l'article de \mycite{VanEnk1994} qui quantifie précisément le problème qui nous intéresse. N'ayant pas la prétention d'écrire un ouvrage d'électrodynamique quantique, nous nous contenterons d'expliquer la démarche de ces derniers.
 
@@ -751,7 +792,7 @@ Nous revenons maintenant au cas général où les $\bm{F}_\beta$ ne sont pas sp�
 \end{equation}
 où $\ket{0,0,..}$ est l'état vide de photon.
 
-\subsubsection{Opérateurs de moment angulaires} 
+\subsection{Opérateurs de moment angulaires} 
 Ayant défini les états du champ, nous cherchons maintenant quels opérateurs peuvent correspondre au moment angulaire de spin et orbital. On pourrait commencer par étudier les opérateurs de la mécanique quantique pour le moment angulaire orbital et de spin : pour une particule de spin 1 telle que le photon, ils s'écrivent :
 \begin{equation}
 \begin{aligned}
@@ -790,10 +831,10 @@ Ce résultat peut paraître étonnant : la séparation de $\bm{J}$ n'est pas pos
 
 Tout n'est cependant pas perdu : nous allons voir que dans certains cas, un moment angulaire de spin et orbital peuvent être définis et que ce sont des quantités conservées dans une interaction lumière-matière. En particulier, il est possible de montrer \mycite{VanEnk1994} que les composantes de $\bm{S}$ et de $\bm{L}$ selon $\bm{k}$ génèrent bien des rotation autour de $\bm{k}$. Si l'onde se propage selon une direction $z$ bien définie, c'est-à-dire que $k\approx k_z$, alors la séparation $J_z = S_z + L_z$ est justifiée. $S_z$ et $L_z$ constituent alors des observables qui commutent, et il est possible de chercher des fonctions de bases qui sont des états propres communs à ces deux opérateurs.
 
-\section{Modes du champ portant du moment angulaire}
+\chapter{Modes du champ portant du moment angulaire}
 Pour pouvoir étudier expérimentalement le moment angulaire de la lumière, il est nécessaire de pouvoir contrôler ce moment. En d'autre mot, il faut trouver des solutions de l'équation d'onde pour lesquelles les moment angulaires de spin et orbital sont bien définis.
 
-\subsection{\'Etats propres de moment angulaire}
+\section{\'Etats propres de moment angulaire}
 Nous cherchons donc à construire un ensemble de modes transverses du champ pour lesquels chaque photon est dans un état propre à la fois de $S_z$ et de $L_z$. La démarche est détaillée dans \mycite{VanEnk1994}. Nous avons déjà mentionné la base des ondes planes $\bm{F}_\beta$ où $\beta=\left\{k_x,k_y,k_z,\alpha\right\}$. Ici, on choisit plutôt $\beta=\left\{k_t,k_z,m,s\right\}$, où $k_z$ est le vecteur d'onde longitudinal, $k_t^2=k^2-k_z^2$ est le vecteur d'onde transverse, $m$ est le moment angulaire total et $s$ est le moment angulaire de spin. Les fonctions $\bm{F}_{\left\{k_t,k_z,m,s\right\}}$ ainsi construites sont modes propres de $\bm{P}^2$, $P_z$, $L_z$ et $S_z$, où $\bm{P}$ est l'opérateur quantité de mouvement. Leur expression en coordonnées cartésiennes est donnée par :
 \begin{equation}
 \begin{aligned}
@@ -832,7 +873,7 @@ Remarquons que $\frac{sk_z\hbar}{k}$ est une quantité continue : encore une foi
 
 Nous allons maintenant utiliser ces résultats pour obtenir des formes de champs électromagnétiques dans lesquels le moment angulaire de spin et le moment angulaire orbital peuvent être contrôlés.
 
-\subsection{Moment angulaire de spin et polarisation de la lumière}
+\section{Moment angulaire de spin et polarisation de la lumière}
 Commençons par le moment angulaire de spin. $s$ n'apparaît pas dans l'expression \ref{eqModeFcn}, mais plutôt dans \ref{eqAMModes}, qui exprime les relations entre les différentes composantes du champ. C'est assez naturel, puisque le spin est relié à la structure vectorielle du champ et non à sa dépendance spatiale. Nous avions déjà observé ce point dans le cas classique, où la contribution du moment angulaire de spin s'écrit $\bm{S}=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}$ (\ref{SeparationJS_classique}). Il est donc assez naturel de penser que la polarisation du champ électromagnétique soit reliée à $s$.
 
 En physique classique, un champ polarisé circulairement droit (resp. gauche) a une composante selon $y$ égale (resp. opposée) à celle selon $x$ et un déphasage de $90\degres$ entre ces deux composantes. La même chose est vraie pour un photon : si on note l'état d'un photon de polarisation circulaire droite $\ket{R}$ et gauche $\ket{L}$, on peut écrire :
@@ -877,7 +918,7 @@ Effectuons une dernière remarque avant de passer au cas du moment orbital. Si o
 Cependant, pour une onde plane il est clair que $\bm{J}$ s'annule. Ceci contredit à la fois le résultat d'électrodynamique quantique que l'on vient d'obtenir et ce qui est observé dans l'expérience de Beth \mycite{BethPR1936}. En fait, ce cas est singulier : $\Pi_x$ et $\Pi_y $ sont nuls alors que l'extension transverse de l'onde est infinie. On est donc confrontés à une indétermination du type $0\times \infty$. 
 Ce problème peut être résolu en restreignant le problème à un volume $V$ où l'on prend en compte rigoureusement les effets de bords, puis en faisant tendre les dimensions du volume vers l'infini : voir \mycite{StewartEJP2005}. Une autre approche intéressante est celle de \mycite{MansuripurOE2005}, qui considère 4 ondes planes se propageant avec un angle $\theta$ par rapport à $z$ dans chacun des quadrants de $(x,y)$. Chacune de ces ondes ayant un vecteur d'onde formant un angle avec $z$, $\bm{J}$ est non nul. Quand on somme le moment angulaire de ces 4 ondes, si $\theta$ est assez petit on obtient une quantité ne dépendant pas de $\theta$. Il reste ensuite à faire tendre $\theta$ vers 0 pour retrouver l'onde plane comme cas limite, avec un moment angulaire non nul.
 
-\subsection{Moment angulaire orbital et modes de Laguerre-Gauss}
+\section{Moment angulaire orbital et modes de Laguerre-Gauss}
 \label{sec:oamLG}
 Nous avons vu que la polarisation de lumière était reliée au moment angulaire de spin, essayons maintenant de trouver la grandeur macroscopique reliée au moment angulaire orbital. 
 Les fonctions de bases trouvées auparavant sont les faisceaux de Bessel généralisés. Ces modes sont intéressants puisqu'ils sont solution de l'équation d'Helmholtz sans aucune approximation. Les modes $\bm{F}_{\left\{k_t,k_z,m,s\right\}}$ étant fonctions propres des opérateurs $\bm{P}^2$, $P_z$, $L_z$ et $S_z$, n'importe quelle combinaison linéaire de ces modes seront également solution. Il est donc facile de construire un mode ne portant que du moment angulaire orbital : prenons par exemple la somme $F'=\bm{F}_{\left\{k_t,k_z,m,s\right\}}+\bm{F}_{\left\{k_t,k_z,m,-s\right\}}$. On obtient alors directement :
@@ -892,7 +933,7 @@ Pour construire les modes de LG, on effectue une superposition cohérente de mod
 Les modes de Laguerre-Gauss sont donc solutions de l'équation d'Helmholtz \textit{paraxiale}. Dans ces conditions, les valeurs propres de $S_z$ et $L_z$ deviennent respectivement $\frac{sk_z\hbar}{k}\sim s\hbar$ et $m\hbar-\frac{sk_z\hbar}{k}\sim (m-s)\hbar$. Nous noterons par la suite la valeur propre du moment angulaire orbital $\ell\hbar = (m-s)\hbar$. Le mode ainsi construit porte donc un moment angulaire orbital de $\ell\hbar$ par photon et un moment de spin de $s\hbar$ par photon.
 De même que pour les ondes planes polarisées circulairement présentées plus haut, les valeurs propres sont ici discrètes. Dans l'approximation paraxiale, la séparation $J_z=L_z+S_z$ est également légitime.
 
-\subsubsection{Expression et propriétés transverses des modes de Laguerre-Gauss}
+\subsection{Expression et propriétés transverses des modes de Laguerre-Gauss}
 Notons d'abord que si un champ électromagnétique est purement transverse et d'extension finie, $\bm{r}\times(\bm{E}\times\bm{B})\cdot\bm{e_z}$ s'annule et le moment angulaire orbital est nul. Les modes qui nous intéressent doivent donc avoir une composante selon l'axe de propagation $z$. Il est possible d'écrire les trois composantes cartésiennes du champ électrique $\bm{E_{LG}}$ et magnétique $\bm{B_{LG}}$ pour un mode de Laguerre-Gauss (voir \mycite{AroraIEE1994}), ce qui permet de voir que les champs possèdent une petite composante selon $z$. En pratique, il est courant de négliger les composantes faibles : si le champ est polarisé selon l'axe $x$, on écrira $\bm{E_{LG}} \approx E_{LG} \bm{x}$ \mycite{LaxPRA1975}. Dans cette approximation, on peut écrire l'amplitude du champ dans les  coordonnées cylindriques $(r,\theta,z)$ :
 \begin{align}
 {\mathcal{LG}_{\ell,p} }\left( {r,\theta ,z} \right) &= {\;}\frac{C_{\ell,p}}{w(z)}
@@ -964,7 +1005,7 @@ Le cas $p\neq 0$ est plus compliqué à cause du terme $L_p^{\left| \ell  \right
 \end{equation*}
 où on a utilisé la relation $\frac{d}{dx}\left[L_{p}^{\left| \ell \right|}(x)\right] = -L_{p-1}^{\left| \ell \right|+1}(x)$. Cette équation peut être résolue au cas par cas mais ne semble pas présenter de solution générale.
 
-\subsubsection{Front d'onde et vecteur de Poynting des modes de Laguerre-Gauss}
+\subsection{Front d'onde et vecteur de Poynting des modes de Laguerre-Gauss}
 Le lien entre modes de Laguerre-Gauss et moment orbital angulaire est dû à \mycite{AllenPRA1992}, même si l'existence des modes de Laguerre-Gauss comme solutions de l'équation d'onde paraxiale était connue avant leur travail. Ils furent les premiers à faire l'analogie entre le terme de phase $\exp{({\rmi}\ell \theta )}$ et la définition du moment angulaire orbital en mécanique quantique à partir d'une rotation (équation \ref{Eq.DefMQuantum}). La présence de moment orbital peut également être comprise classiquement en s'intéressant à la forme bien particulière du vecteur de Poynting d'un mode de Laguerre-Gauss.\par
 Pour visualiser ce lien, commençons par calculer les fronts d'ondes d'un mode de Laguerre-Gauss, qui sont normaux au vecteur de Poynting.
 Un front d'onde est par définition une surface d'équiphase. En reprenant l'expression \ref{eq:lgmodes}, on obtient directement leur définition :
@@ -1008,12 +1049,12 @@ Ces représentations du vecteur de Poynting illustrent le lien entre MAO et fais
 \end{equation*}
 Les termes selon $\bm{e_r}$ et $\bm{e_\theta}$ sont symétriques par rapport à l'axe, ils s'annulent donc lorsqu'on intègre sur le profil transverse du faisceau. Il ne reste donc que la composante selon $\bm{e_z}$. Le rapport entre le flux de moment angulaire et le flux d'énergie est donc $J_z/(\Pi_z/\rmc) = \ell/\omega$. Ceci est cohérent avec un raisonnement utilisant les photons : le faisceau étant composé de $N$ photons, son énergie est $N\hbar\omega$ et son moment angulaire total est $N\ell\hbar$. On retrouve bien que le rapport des flux est $\ell/\omega$.
 
-\subsection{Règles de sélection du moment angulaire dans une interaction laser-matière}
+\section{Règles de sélection du moment angulaire dans une interaction laser-matière}
 \label{sec:selectionrules}
 Ayant maintenant défini les formes du champ électromagnétique utiles en pratique pour contrôler le moment angulaire de la lumière, il nous reste à étudier le rôle respectif du MAO et du MAS dans une interaction avec un atome ou une molécule. Dans cette interaction, la lumière peut induire une transition entre deux états atomiques, mais nous allons voir que le moment angulaire de la lumière impose des restrictions sur les transitions possibles.\\
 Pour classifier ces différentes transitions, on commence par effectuer une expansion multipolaire du champ électromagnétique. En pratique, cela consiste à développer les champs électriques et magnétiques sur la base des harmoniques sphériques. On pourra se référer à \mycite{Landau1982a} pour le détail de leur construction. On montre que les solutions obtenues sont les fonctions $\bm{F}_\beta$ (voir la section \ref{sec:quant_EM}), modes propres des quatre opérateurs hermitiens qui commutent suivants : $\bm{J}^2$ le moment angulaire total, $J_z$ sa projection selon $z$, l'énergie, et la parité. Les nombres quantiques correspondant sont $\beta=\left\{j,m,\omega,P\right\}$. Les modes ainsi construits sont appelés modes multipolaires électriques, qui ont une parité $P=(-1)^j$ et modes multipolaires magnétiques, de parité $P=(-1)^{j+1}$. Une propriété intéressante de ces multipôles est leur comportement à l'origine : le seul qui ne s'annule pas à l'origine est le dipôle électrique $j=1$ et $m=\pm1,\;0$. De même, les seuls modes dont le gradient ne s'annule pas à l'origine sont le quadripôle électrique, qui a un moment angulaire de $j=2$ et le dipôle magnétique, qui lui possède $j=1$.\par
 
-\subsubsection{Transitions multipolaires}
+\subsection{Transitions multipolaires}
 Le problème de la conservation du moment angulaire dans l'interaction laser-matière est traité de manière intéressante dans \mycite{VanEnk1994a}. Les auteurs s'y intéressent au cas d'atomes froids, mais une partie de leur développement est tout à fait applicable à notre problème. Suivons donc leur raisonnement et considérons un atome placé à l'origine $r=0$. Dans un premier temps, cet atome est modélisé par un électron sans spin de position $\bm{r}$ et de quantité de mouvement $\bm{p}$. On néglige également le mouvement du centre de masse de l'atome, ce qui revient à supposer que son noyau est infiniment lourd. La position du centre de masse $\bm{R}$ (défini en section \ref{sec:centremasse}) est fixe et égale à $R=0$.\par 
 Notons $\bm{A}$ le potentiel vecteur du champ. L'interaction entre l'atome et la lumière est alors représentée au premier ordre par l'hamiltonien :
 \begin{equation*}
@@ -1041,7 +1082,7 @@ l_f-l_i&=\pm2,\;0\text{ et }m_f-m_i=\pm2,\;\pm1,\;0\text{ pour une transition qu
 \end{align*}
 Nous arrivons au cas qui nous intéresse : on voit que dans une transition quadripolaire électrique, deux unités de moment angulaire peuvent être échangés entre le champ et l'atome. D'où vient la seconde unité de moment angulaire, si le photon ne peut porter que $s=1$ ? Intuitivement, on peut répondre que cette seconde unité est fournie par le moment angulaire \textit{orbital} du champ. Nous allons considérer le problème plus précisément pour voir que ce n'est pas forcément le cas.
 
-\subsubsection{Variables internes et externes}
+\subsection{Variables internes et externes}
 Jusqu'ici, nous avons négligé le mouvement du centre de masse. Si on veut traiter du moment angulaire orbital, nous allons voir qu'il faut le prendre en compte. Si $\bm{R}$ n'est ni nul ni constant au cours du temps, il est utile de définir les variables \textit{internes} et \textit{externes} de l'atome. Considérons un système à $N+1$ particules constituées des particules $i=0\ldots N$, où la particule $0$ est le noyau et où la position et la quantité de mouvement de la particule $i$ sont notées $\bm{r}_i$ et $\bm{p}_i$. Les variables internes $\bm{\rho}_i$ et $\bm{\pi}_i$, respectivement position et quantité de mouvement, sont définies par rapport au noyau, tandis que les variables externes sont $\bm{R}$ et $\bm{P}$, position et quantité de mouvement de centre de masse :
 \begin{equation*}
 \begin{split}
