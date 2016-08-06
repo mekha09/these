@@ -159,6 +159,11 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.113.066102}
 }
 
+@Book{aspect2005-2,
+  Title                    = {Optique quantique 2: Photons},
+  Author                   = {Aspect, Alain and Grangier, Philippe}
+}
+
 @Article{augustepra2008,
   Title                    = {Numerical study on high-order harmonic generation by a Bessel-Gauss laser beam},
   Author                   = {T. Auguste, O. Gobert, B. Carré},
@@ -698,6 +703,21 @@
   Adsnote                  = {Provided by the SAO/NASA Astrophysics Data System},
   Adsurl                   = {http://adsabs.harvard.edu/abs/2002JOptB...4S..66D},
   DOI                      = {10.1088/1464-4266/4/2/370}
+}
+
+@Article{DavisPRA1979,
+  Title                    = {Theory of electromagnetic beams},
+  Author                   = {Davis, L. W.},
+  Journal                  = {Phys. Rev. A},
+  Year                     = {1979},
+  Month                    = {Mar},
+  Pages                    = {1177--1179},
+  Volume                   = {19},
+  DOI                      = {10.1103/PhysRevA.19.1177},
+  Issue                    = {3},
+  Numpages                 = {0},
+  Publisher                = {American Physical Society},
+  URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.19.1177}
 }
 
 @Article{DelannoyAPL2005,
@@ -2884,21 +2904,6 @@
   Keywords                 = {X-ray optics; Synchrotron radiation},
   Publisher                = {OSA},
   URL                      = {http://ol.osa.org/abstract.cfm?URI=ol-27-20-1752}
-}
-
-@Article{PhysRevA.19.1177,
-  Title                    = {Theory of electromagnetic beams},
-  Author                   = {Davis, L. W.},
-  Journal                  = {Phys. Rev. A},
-  Year                     = {1979},
-  Month                    = {Mar},
-  Pages                    = {1177--1179},
-  Volume                   = {19},
-  DOI                      = {10.1103/PhysRevA.19.1177},
-  Issue                    = {3},
-  Numpages                 = {0},
-  Publisher                = {American Physical Society},
-  URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.19.1177}
 }
 
 @Article{PiconOE2010,

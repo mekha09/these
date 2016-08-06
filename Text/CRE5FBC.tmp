@@ -404,7 +404,6 @@ On remarquera que le mode $(0,0)$ n'est autre que le mode Gaussien usuel. Grâce
 \end{figure}
 
 \subsection{Modes de Laguerre-Gauss}
-\label{sec:LGmodes}
 Les modes de HG sont fondamentaux en optique et particulièrement en physique des lasers, mais ils ne présentent pas de moment angulaire particulier, au contraire des modes de Laguerre-Gauss que nous présentons ici. Ils apparaissent naturellement en coordonnées cylindriques, notées $(r,\theta,z)$. L'équation d'onde paraxiale s'écrit :
 \begin{equation*}
 \left(\frac{1}{r}\frac{\partial}{\partial r} + \frac{\partial^2}{\partial^2 r} + \frac{1}{r^2}\frac{\partial^2}{\partial^2 \theta} + 2\rmi k\frac{\partial}{\partial z}\right)u^{LG}_{\ell, p}=0.
@@ -758,10 +757,9 @@ Ces résultats permettent de définir $\bm{L}$ et $\bm{S}$ pour un faisceau donn
 \section{Le moment angulaire du photon}
 \subsection{Exemple de quantification : ensemble d'oscillateurs harmoniques matériels}
 Expliquons le processus de quantification sur l'exemple simple d'un ensemble de $N$ oscillateurs harmoniques indépendants, de même masse $m$ mais de pulsations différentes $\omega_{i},\;i=1\ldots N$. On commence par écrire l'énergie du système :
-\begin{equation}
+\begin{equation*}
 H = \sum_{i=1\ldots N}\left(\frac{1}{2 m} p_i^2+\frac{1}{2} m \omega_i^2x_i^2\right),
-\label{eq:oscharm1}
-\end{equation}
+\end{equation*}
 où $x_i$ et $p_i$ sont la position et l'impulsion de la particule $i$, les variables classiques conjuguées. On les remplace par les \textit{opérateurs} $\hat{x}_i$ et $\hat{p}_i$, qui obéissent aux règles de commutation canoniques :
 \begin{equation*}
 \left[\hat{x}_i,\hat{p}_{i'}\right]=\rmi\hbar\delta_{ii'},
@@ -778,7 +776,7 @@ On inverse ces relations pour exprimer $\hat{x}_i$ et $\hat{p}_i$ :
 \end{align*}
 L'hamiltonien prend alors la forme intéressante :
 \begin{equation*}
-\hat{H}=\sum_i \frac{\hbar\omega_i}{2}\left(\hat{a}^{\dag}_{i}\hat{a}_{i}+\hat{a}_{i}\hat{a}^{\dag}_{i}\right)
+\hat{H}_i=\sum_i \frac{\hbar\omega_i}{2}\left(\hat{a}^{\dag}_{i}\hat{a}_{i}+\hat{a}_{i}\hat{a}^{\dag}_{i}\right)
 =\sum_i \hbar\omega_i\left(\hat{a}^{\dag}_{i}\hat{a}_{i}+\frac{1}{2}\right),
 \end{equation*}
 où on a utilisé la règle de commutation $\left[\hat{a}_{i},\hat{a}^{\dag}_{i'}\right] = \delta_{ii'}$ facilement obtenue à partir de celles de $\hat{x}_i$ et $\hat{p}_i$. On introduit alors $\hat{N}_i=\hat{a}^{\dag}_{i}\hat{a}_{i}$, appelé opérateur \textit{nombre}. Le spectre de cet opérateur est l'ensemble des nombres entiers $n_i$ non-négatifs (voir section V.B.2 de \mycite{cohen}). On en conclut que l'énergie du système est quantifiée et vaut :
@@ -791,158 +789,140 @@ E = \sum_{i=1\ldots N} \hbar \omega_i (n_i + \frac{1}{2}).
 \label{sec:quant_EM}
 Le champ électromagnétique peut être traité de façon analogue à l'ensemble d'oscillateurs harmoniques. Pour ce faire, on l'exprime en fonction de $N$ modes, qui seront analogues aux $N$ oscillateurs. Nous avons déjà détaillé ce problème au chapitre \ref{ch:modes}. Nous avons vu qu'on part du vecteur potentiel $\bm{A}$ et qu'on l'exprime sur une base de notre choix, telle que les ondes planes, les modes de Laguerre-Gauss, de Hermite-Gauss, etc. On considère des modes purement transverses, qu'on note $\bm{F}_i$. Dans la jauge de Coulomb, $\bm{A}$ est également transverse et s'écrit :
 \begin{equation}
-\bm{A}=\sum_{i}{\mathcal{A}_i (a_{i}\bm{F}_i+a^*_{i}\bm{F}^*_i}),
+\bm{A}=\sum_{i}{a_{i}\bm{F}_i+a^*_{i}\bm{F}^*_i},
 \label{A_decomp_Flambda}
 \end{equation}
-où $a_{i}$ est une amplitude complexe sans dimension et $\mathcal{A}_i=\sqrt{\frac{\hbar}{2\epsilon_0\omega_i}}$ est une constante de normalisation. 
+où $a_{i}$ est une amplitude complexe sans dimension. 
 
-De manière générale, il est intéressant de choisir une base $\bm{F}_i$ adaptée aux grandeurs physiques que l'on mesure. Dans une approche quantique, on choisit un ensemble d'opérateurs hermitiens qui commutent et on cherche leurs fonctions propres communes. Par exemple, si on choisit les opérateurs d'impulsion $\hat{p}_x$, $\hat{p}_y$, $\hat{p}_z$ et l'opérateur de spin, les fonctions propres communes sont les ondes planes progressives. Les valeurs propres sont alors $k_x$, $k_y$, $k_z$, et l'hélicité $\alpha = \pm 1$. On indexera par la suite $\bm{F}_i$ par l'ensemble $\beta$ de ces valeurs propres : pour les ondes planes, la base est $\bm{F}_{\beta},\;\beta=k_x,\;k_y,\;k_z,\;\alpha$.
+De manière générale, il est intéressant de choisir une base $\bm{F}_i$ adaptée aux grandeurs physiques que l'on mesure. Dans une approche quantique, on choisit un ensemble d'opérateurs hermitiens qui commutent et on cherche leurs fonctions propres communes. Par exemple, si on choisit les opérateurs d'impulsion $\hat{p}_x$, $\hat{p}_y$, $\hat{p}_z$ et l'opérateur de spin, les fonctions propres communes sont les ondes planes progressives. Les valeurs propres sont alors $k_x$, $k_y$, $k_z$, et l'hélicité $\epsilon = \pm 1$. On indexera par la suite $\bm{F}_i$ par l'ensemble $\beta$ de ces valeurs propres : pour les ondes planes, la base est $\bm{F}_{\beta=k_x,\;k_y,\;k_z,\;\epsilon}$.
 
-L'énergie du rayonnement peut alors s'écrire en fonction de $\bm{A}$. \mycite{aspect2005-2} montrent qu'elle prend la même forme que l'énergie de l'ensemble d'oscillateurs harmoniques \ref{eq:oscharm1} avec $\bm{A}$ comme analogue de la position et $\bm{E}_{\bot}$ celui de l'impulsion. On peut alors définir les opérateur de création et d'annihilation de la même façon qu'auparavant pour obtenir l'hamiltonien sous la forme :
-\begin{equation*}
-\hat{H}=\sum_{\beta} \hbar\omega_{\beta}\left(\hat{a}^{\dag}_{\beta}\hat{a}_{\beta}+\frac{1}{2}\right),
-\end{equation*}
-Tout comme $\hat{x}_i$ et $\hat{p}_i$ auparavant, les opérateurs associées aux grandeurs physiques s'expriment en fonction des $\hat{a}^{\dag}_{\beta}$ et $\hat{a}_{\beta}$ (voir \mycite{VanEnk1994}) :
+$\beta$ est l'index du mode, et est en fait défini comme les valeurs propres des opérateurs qui commutent et qui ont $\bm{F}_\beta$ comme fonction propre. Par exemple, on peut choisir pour $\bm{F}_\beta$ les ondes planes progressives. Pour les décrire complètement, on a besoin de quatre paramètres, par exemple $\beta = \{k_x, k_y, k_z, \alpha\}$, où $\bm{k}$ est le vecteur d'onde et $\alpha=\pm1$ l'hélicité de l'onde. De manière générale on écrit :
+
+
+
+La quantification s'effectue alors de la même façon que pour l'oscillateur harmonique, où $a_{\beta}$ et $a^*_{\beta} = a^{\dag}_{\beta}$ deviennent respectivement les opérateurs de création et d'annihilation. Si on choisit encore une fois $\beta = \{\bm{k}, \alpha\}$, l'énergie et la quantité de mouvement du champ sont donnés par :
 \begin{align*}
-\hat{\bm{A}} &= \sum_{\beta}{\mathcal{A}_{\beta} (\hat{a}_{\beta}\bm{F}_{\beta}+\hat{a}^{\dag}_{\beta}\bm{F}^*_{\beta}}) \\
-\hat{\bm{E}}_{\bot} &= \sum_{\beta}{\rmi \omega_{\beta}\mathcal{A}_{\beta} (\hat{a}_{\beta}\bm{F}_{\beta}-\hat{a}^{\dag}_{\beta}\bm{F}^*_{\beta}}) \\
-\hat{\bm{B}} &=\sum_{\beta}{\mathcal{A}_{\beta} (\hat{a}_{\beta}\bm{\nabla}\times\bm{F}_{\beta}+\hat{a}^{\dag}_{\beta}\bm{\nabla}\times\bm{F}^*_{\beta}})
-\label{eq:Qfields}
+E~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\omega}, \\
+P~&=~\sum_{\bm{k},\alpha}{N_{\bm{k},\alpha} \hbar\bm{k}}
 \end{align*}
-Précisons la forme de l'espace dans lequel évolue le champ. Nous avons déjà introduit l'opérateur nombre $\hat{N}_{\beta}=\hat{a}^{\dag}_{\beta}\hat{a}_{\beta}$, dont les valeurs propres sont les entiers positifs ou nuls $n_{\beta}$. On note ses vecteurs propres $\ket{n_{\beta}}$. Ces vecteurs forment une base des états du champ dans le mode ${\beta}$. Les modes $\bm{F}_{\beta}$ constituant une base complète, on voit que les états propres de $\hat{H}$ sont les produits tensoriels entre tous les états $\ket{n_{\beta}}$ : $\ket{n_{\beta_1}}\otimes\ket{n_{\beta_2}}\otimes\ldots$. En fait, chaque état peut être vu comme un ensemble de particules indépendantes comportant $n_{\beta_1}$ particules dans le mode ${\beta_1}$, $n_{\beta_2}$ dans le mode ${\beta_2}$, etc. Ces particules sont appelées \textbf{photons}\footnote{Comme pour toute particule, on peut définir la fonction d'onde d'un photon. Il faut cependant effectuer une distinction importante avec le cas d'une particule telle qu'un atome. En effet, le photon se déplace à la vitesse de la lumière, ce qui oblige à utiliser une description relativiste. Dans ce cas, la fonction d'onde ne peut pas être vue comme l'amplitude de probabilité de trouver le photon à un endroit donné. En effet, on vient de voir que l'énergie du photon s'écrit $E = \hbar\omega = \hbar\left|\bm{k}\right|\rmc=\left|\bm{p}\right|\rmc$. On peut alors écrire l'incertitude sur la position du photon comme :
+Ces expression permettent d'introduire le concept de photon, ou quantum de radiation électromagnétique : le champ est vu comme un ensemble de particules ayant chacune une énergie $\hbar\omega$ et une quantité de mouvement $\hbar\bm{k}$. $N_{\bm{k},\alpha}$, appelé \textit{nombre d'occupation}, est alors vu comme le nombre de photons ayant le vecteur d'onde $\bm{k}$ et de spin $\alpha$.
+
+\textbf{Remarque :} On peut également calculer la fonction d'onde du photon, mais il faut effectuer une distinction importante avec le cas d'une particule telle qu'un atome. En effet, le photon se déplace à la vitesse de la lumière, ce qui oblige à utiliser une description relativiste. Dans ce cas, la fonction d'onde ne peut pas être vue comme l'amplitude de probabilité de trouver le photon à un endroit donné. En effet, on vient de voir que l'énergie du photon s'écrit $E = \hbar\omega = \hbar\left|\bm{k}\right|\rmc=\left|\bm{p}\right|\rmc$. On peut alors écrire l'incertitude sur la position du photon comme :
 \begin{equation*}
 \Delta x \sim \hbar\rmc/E = \hbar/p.
 \end{equation*}
-$\Delta x$ est donc de l'ordre de grandeur de la longueur de de Broglie de la particule, soit dans le cas du photon la longueur d'onde de la lumière. On voit donc que la position d'un photon n'a de sens que si le problème est grand comparé à la longueur d'onde, ce qui revient en fait à passer à la limite classique.} et décrivent les excitations élémentaires de chacun des modes du champ quantifié. L'opérateur de création $\hat{a}^{\dag}_{\beta}$ augmente le nombre de photon dans le mode ${\beta}$ d'une unité, tandis que $\hat{a}_{\beta}$ le diminue.
+$\Delta x$ est donc de l'ordre de grandeur de la longueur de de Broglie de la particule, soit dans le cas du photon la longueur d'onde de la lumière. On voit donc que la position d'un photon n'a de sens que si le problème est grand comparé à la longueur d'onde, ce qui revient en fait à passer à la limite classique.
 
-\subsection{Opérateurs de moment angulaire}
-Ayant obtenu les expressions des opérateurs associés au champ électromagnétique, calculons celles des opérateurs de moment angulaire orbital et de spin. On utilise les expressions trouvées classiquement (équation \ref{SeparationJS_classique}), par exemple pour $S$ : 
-\begin{equation*}
-\bm{S}=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}
-\end{equation*}
-On subsistue alors les expressions quantifiées ({eq:Qfields}) de $\bm{E_{\bot}}$ et $\bm{A_{\bot}}$ :
-\begin{equation*}
-\hat{\bm{S}}= \epsilon_0 \sum_{\beta,\beta '} \rmi \omega_{\beta}\mathcal{A}_{\beta}\mathcal{A}_{\beta '}\int{\rmd\bm{r}
-[\hat{a}_{\beta}\bm{F}_{\beta}-\hat{a}^{\dag}_{\beta}\bm{F}^*_{\beta}]\times[\hat{a}_{\beta '}\bm{F}_{\beta '}+\hat{a}^{\dag}_{\beta '}\bm{F}^*_{\beta '}}]\\
-\end{equation*}
-\mycite{VanEnk1994} montre qu'on obtient les résultats suivants pour $\hat{\bm{S}}$ et $\hat{\bm{L}}$ :
+Nous revenons maintenant au cas général où les $\bm{F}_\beta$ ne sont pas spécifiés. \`A partir de l'expression de $\bm{A}$ (\ref{A_decomp_Flambda}) où l'on remplace $a^*_{\beta}$ par $a^{\dag}_{\beta}$, on peut directement calculer les champs transverses électrique $\bm{E}$ et magnétique $\bm{B}$. Ces champs sont devenus des opérateurs qui agissent sur l'espace de Fock des états du champ. Ces ``états nombres'' décrivent un nombre quelconque de photons et s'écrivent de cette façon :
 \begin{equation}
-\begin{aligned}[c]
-\hat{\bm{L}}=\frac{1}{2}\sum_{\beta,\beta'}{(a^{\dag}_{\beta}a_{\beta'}+a_{\beta'}a^{\dag}_{\beta})}\bra{\bm{F}_\beta}\hat{\mathcal{L}}\ket{\bm{F}_{\beta'}}
-\end{aligned}
-\qquad
-\begin{aligned}[c]
-\hat{\bm{S}}=\frac{1}{2}\sum_{\beta,\beta'}{(a^{\dag}_{\beta}a_{\beta'}+a_{\beta'}a^{\dag}_{\beta})}\bra{\bm{F}_\beta}\hat{\mathcal{S}}\ket{\bm{F}_{\beta'}},
-\end{aligned}
-\label{eqLS_QED}
+\ket{\{N_{\beta}\}}=\prod_{\beta}{\frac{(a^{\dag}_{\beta})^{N_{\beta}}}{(N_{\beta}!)^{1/2}}}\ket{0,0,\ldots},
+\label{fockstates}
 \end{equation}
-où on a utilisé les opérateurs de la mécanique quantique pour le moment angulaire orbital et de spin d'une particule de spin 1, définis par :
+où $\ket{0,0,..}$ est l'état vide de photon.
+
+\subsection{Opérateurs de moment angulaires} 
+Ayant défini les états du champ, nous cherchons maintenant quels opérateurs peuvent correspondre au moment angulaire de spin et orbital. On pourrait commencer par étudier les opérateurs de la mécanique quantique pour le moment angulaire orbital et de spin : pour une particule de spin 1 telle que le photon, ils s'écrivent :
 \begin{equation}
 \begin{aligned}
-\hat{\mathcal{L}}~=~-i\hbar(\bm{r}\times\bm{\nabla}),\\
-(\hat{\mathcal{S}}_k)_{ij}~=~-i\hbar\epsilon_{ijk},
+\hat{\bm{L}}~=~-i\hbar(\bm{r}\times\bm{\nabla}),\\
+(\hat{\bm{S}}_k)_{ij}~=~-i\hbar\epsilon_{ijk},
 \end{aligned} 
 \label{defLS_hat}
 \end{equation}
 où $i,j,k=x,y,z$ et $\epsilon_{ijk}$ est le symbole de Levi-Civita.
+Toutefois, un problème se pose ici : on peut montrer qu'une fois appliqués aux modes transverses $\bm{F}_\beta$, $\hat{\bm{L}}$ et $\hat{\bm{S}}$ ne conservent pas la transversalité du champ. $\hat{\bm{L}}\ket{\bm{F}_\beta}$ et $\hat{\bm{S}}\ket{\bm{F}_\beta}$ ne représentent donc plus des états physiques du champ. En réalité, l'état du champ n'est pas représenté par les fonctions $\ket{\bm{F}_\beta}$ mais par les états de l'espace de Fock (\ref{fockstates}). $\hat{\bm{L}}$ et $\hat{\bm{S}}$ n'agissent donc pas dans le bon espace - il nous faut chercher des opérateurs agissant dans l'espace de Fock. De la même manière qu'on a obtenu l'expression de $\bm{E}$ et $\bm{B}$ , on part de l'expression classique (\ref{SeparationJS_classique}). On obtient \mycite{VanEnk1994} :
+\begin{equation}
+\begin{aligned}[c]
+\bm{L}&=\epsilon_0\int{\rmd\bm{r}\sum_{a=x,y,z} \bm{E^a_{\bot}}(\bm{r}\times\bm{\nabla})\bm{A^a_{\bot}}}\\
+&=\frac{1}{2}\sum_{\beta,\beta'}{(a^{\dag}_{\beta}a_{\beta'}+a_{\beta'}a^{\dag}_{\beta})}\bra{\bm{F}_\beta}\hat{\bm{L}}\ket{\bm{F}_{\beta'}}
+\end{aligned}
+\qquad
+\begin{aligned}[c]
+\bm{S}&=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}\\
+&=\frac{1}{2}\sum_{\beta,\beta'}{(a^{\dag}_{\beta}a_{\beta'}+a_{\beta'}a^{\dag}_{\beta})}\bra{\bm{F}_\beta}\hat{\bm{S}}\ket{\bm{F}_{\beta'}},
+\end{aligned}
+\label{eqLS_QED}
+\end{equation} 
+les opérateurs $\hat{\bm{L}}$ et $\hat{\bm{S}}$ ayant été définis plus haut (\ref{defLS_hat}).
+Il est rassurant de retrouver dans cette expression les opérateurs de la mécanique quantique pour le MAO et le MAS d'une particule de spin 1. On peut montrer que $\bm{S}$ et $\bm{L}$, contrairement à $\hat{\bm{L}}$ et $\hat{\bm{S}}$, sont des observables.
 
-\'{E}tudions maintenant les relations de commutations de $\hat{\bm{S}}$ et $\hat{\bm{L}}$. L'opérateur moment angulaire total est donné par $\hat{\bm{J}} = \hat{\bm{S}}+\hat{\bm{L}}$. On peut montrer \mycite{LenstraPRA1982} que $\hat{\bm{J}}$ génère bien des rotations dans l'espace et vérifie les règles de commutations \ref{Eq.CommutJ} qui définissent un opérateur moment angulaire.\\
-Ce n'est pas le cas de l'opérateur $\hat{\bm{S}}$. Il suffit pour s'en rendre compte de choisir la base des ondes planes pour décomposer le champ. On choisit les $\bm{F}_{\beta}$ avec $\beta={k_x,k_y,k_z,\alpha}$, ce qui permet d'écrire $\bm{F}_{\bm{k}\alpha}=\bm{\epsilon}_{\bm{k}\alpha}e^{\rmi \bm{k}\cdot\bm{r}}$, où $\bm{\epsilon}_{\bm{k}\alpha}$ est un vecteur unitaire. On réécrit alors l'équation \ref{eqLS_QED} :
-\begin{align}
-\hat{\bm{S}} &= \frac{1}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(a^{\dag}_{\bm{k}\alpha}a_{\bm{k'}\alpha'}+a_{\bm{k'}\alpha'}a^{\dag}_{\bm{k}\alpha})}\int{\rmd\bm{r}\;\bm{\epsilon}_{\bm{k}\alpha}e^{\rmi \bm{k}\cdot\bm{r}}\times\bm{\epsilon}_{\bm{k'}\alpha '}e^{\rmi \bm{k'}\cdot\bm{r}}}\\
-&= \frac{1}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(a^{\dag}_{\bm{k}\alpha}a_{\bm{k'}\alpha'}+a_{\bm{k'}\alpha'}a^{\dag}_{\bm{k}\alpha})}\bm{\epsilon}_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k'}\alpha '}
-\int{\rmd\bm{r}\;e^{\rmi \bm{k}\cdot\bm{r}}e^{\rmi \bm{k'}\cdot\bm{r}}}\\
-&= \frac{1}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(a^{\dag}_{\bm{k}\alpha}a_{\bm{k'}\alpha'}+a_{\bm{k'}\alpha'}a^{\dag}_{\bm{k}\alpha})}\bm{\epsilon}_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k'}\alpha '}\delta_{\bm{k}\bm{k'}}\\
-&= \frac{1}{2}\sum_{\bm{k}\alpha,\alpha'}{\bm{\epsilon}_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '}(a^{\dag}_{\bm{k}\alpha}a_{\bm{k}\alpha'}+a_{\bm{k}\alpha'}a^{\dag}_{\bm{k}\alpha})}\\
+Il nous reste à étudier les relations de commutations de $\bm{S}$ et $\bm{L}$. L'opérateur moment angulaire total est donné par $\bm{J} = \bm{S}+\bm{L}$. On peut montrer \mycite{LenstraPRA1982} que $\bm{J}$ génère bien des rotations dans l'espace et vérifie les règles de commutations \ref{Eq.CommutJ} qui définissent un opérateur moment angulaire.\\
+Ce n'est pas le cas de l'opérateur $\bm{S}$. Il suffit pour s'en rendre compte d'utiliser la décomposition du champ en ondes planes $F_{\bm{k},\alpha}$ mentionnée plus haut. On peut alors exprimer $\bm{S}$ en utilisant \ref{eqLS_QED} :
+\begin{equation}
+\bm{S} = \sum_k{\frac{\hbar\bm{k}}{k}(a^{\dag}_{\bm{k},+}a_{\bm{k},+}-a^{\dag}_{\bm{k},-}a_{\bm{k},-})}
 \label{eqS_planewave}
-\end{align}
+\end{equation}
 
-On voit que $\hat{\bm{S}}$ n'est constitué que des opérateurs \textit{nombres} définis plus haut. Par conséquent, toutes ses composantes commutent. Autrement dit, $[S_i,S_j] = 0 \;\forall(i,j)$. $\hat{\bm{S}}$ n'est donc pas un opérateur moment angulaire. Les relations de commutations pour $\hat{\bm{L}}$ peuvent être directement obtenues en utilisant celles de $\hat{\bm{J}}$ et $\hat{\bm{S}}$, et on trouve également que $\hat{\bm{L}}$ n'est pas un moment angulaire, et que $\hat{\bm{L}}$ et $\hat{\bm{S}}$ ne commutent pas. 
+$\bm{S}$ n'étant constitué que d'opérateurs nombres de particules, toutes ses composantes commutent. Autrement dit, $[S_i,S_j] = 0 \;\forall(i,j)$. $\bm{S}$ n'est donc pas un opérateur moment angulaire. Les relations de commutations pour $\bm{L}$ peuvent être directement obtenues en utilisant celles de $\bm{J}$ et $\bm{S}$, et on trouve également que $\bm{L}$ n'est pas un moment angulaire, et que $\bm{L}$ et $\bm{S}$ ne commutent pas. 
 
-Ce résultat peut paraître étonnant : la séparation de $\hat{\bm{L}}$ n'est donc pas possible pour le champ électromagnétique. Ce problème est en fait lié au fait que le photon se déplace à la vitesse de la lumière. En effet, le moment angulaire de spin peut être vu comme le moment angulaire de la particule dans le référentiel dans lequel elle est au repos. Un tel référentiel n'existe pas pour le photon. Une autre façon de le voir consiste à utiliser le lien entre rotations et moment angulaire. Pour qu'un opérateur soit un moment angulaire de spin, il doit générer des rotations de la polarisation par rapport à un axe quelconque. Dans le cas du photon, c'est seulement vrai autour de l'axe de propagation : il ne peut y avoir de symétrie autour de tous les axes puisqu'il existe toujours un axe privilégié. Ainsi, seul le moment angulaire \textit{total} du champ a un sens.
+Ce résultat peut paraître étonnant : la séparation de $\bm{J}$ n'est pas possible pour le champ électromagnétique. Ce problème est en fait lié, encore une fois, au fait que le photon se déplace à la vitesse de la lumière. En effet, le moment angulaire de spin peut être vu comme le moment angulaire de la particule dans le référentiel dans lequel elle est au repos. Mais on sait bien qu'un tel référentiel n'existe pas pour le photon, qui se déplace à $\rmc$. Une autre façon de le voir consiste à utiliser le lien entre rotations et moment angulaire. Pour qu'un opérateur soit un moment angulaire de spin, il doit générer des rotations de la polarisation par rapport à un axe quelconque. Dans le cas du photon, c'est seulement vrai autour de l'axe de propagation : il ne peut y avoir de symétrie autour de tous les axes puisqu'il existe toujours un axe privilégié. Ainsi, seul le moment angulaire \textit{total} du champ a un sens.
 
-Tout n'est cependant pas perdu : nous allons voir que dans certains cas, un moment angulaire de spin et orbital peuvent être définis et que ce sont des quantités conservées dans une interaction lumière-matière. En particulier, il est possible de montrer \mycite{VanEnk1994} que les composantes de $\bm{S}$ et de $\bm{L}$ selon $\bm{k}$ génèrent bien des rotations autour de $\bm{k}$. Si l'onde se propage selon une direction $z$ bien définie, c'est-à-dire que $k\approx k_z$, alors la séparation $J_z = S_z + L_z$ est justifiée. $S_z$ et $L_z$ constituent alors des observables qui commutent, et il est possible de chercher des fonctions de bases qui sont des états propres communs à ces deux opérateurs.
+Tout n'est cependant pas perdu : nous allons voir que dans certains cas, un moment angulaire de spin et orbital peuvent être définis et que ce sont des quantités conservées dans une interaction lumière-matière. En particulier, il est possible de montrer \mycite{VanEnk1994} que les composantes de $\bm{S}$ et de $\bm{L}$ selon $\bm{k}$ génèrent bien des rotation autour de $\bm{k}$. Si l'onde se propage selon une direction $z$ bien définie, c'est-à-dire que $k\approx k_z$, alors la séparation $J_z = S_z + L_z$ est justifiée. $S_z$ et $L_z$ constituent alors des observables qui commutent, et il est possible de chercher des fonctions de bases qui sont des états propres communs à ces deux opérateurs.
 
 \chapter{Modes du champ portant du moment angulaire}
-Au chapitre \ref{ch:modes}, nous avons remarqué que deux formes de champ particulières portaient du moment angulaire : les ondes polarisées circulairement et les modes de Laguerre-Gauss. Nous disposons maintenant des outils pour chercher des solutions de l'équation d'onde pour lesquelles le photon a un moment angulaire défini.
+Pour pouvoir étudier expérimentalement le moment angulaire de la lumière, il est nécessaire de pouvoir contrôler ce moment. En d'autre mot, il faut trouver des solutions de l'équation d'onde pour lesquelles les moment angulaires de spin et orbital sont bien définis.
 
 \section{\'Etats propres de moment angulaire}
-On cherche une base des états du champ dans laquelle le moment angulaire de spin et orbital sont bien définis. Les solutions de ce problème doivent être fonctions propres des opérateurs correspondant. On choisit donc les observables $\hat{S}_z$ et $\hat{L}_z$. On rajoute $\hat{P}_z$, la quantité de mouvement selon $z$, et $\bm{\hat{P}}^2$. Les solutions $\bm{F}_{\beta}$ doivent alors vérifier :
-\begin{align*}
-\hat{S}_z\ket{\bm{F}_{\beta}} &= s\ket{\bm{F}_{\beta}}\\
-\hat{L}_z\ket{\bm{F}_{\beta}} &= (m-s)\ket{\bm{F}_{\beta}}\\
-\hat{P}_z\ket{\bm{F}_{\beta}} &= k_z\ket{\bm{F}_{\beta}}\\
-\bm{\hat{P}}^2\ket{\bm{F}_{\beta}} &= k^2\ket{\bm{F}_{\beta}} = (k_t^2+k_z^2)\ket{\bm{F}_{\beta}}
-\end{align*}
-où $s$ est le moment angulaire de spin, $m$ est le moment angulaire total, $k_z$ est le nombre d'onde longitudinal et $k_t$ est le nombre d'onde transverse. La résolution de ce problème est détaillée dans \mycite{VanEnk1994}, qui montrent que ces équations permettent de définir une base $\bm{F}_{s,m,k_z,k_t}$. L'expression de ces fonctions de base est donnée en coordonnées cartésiennes :
+Nous cherchons donc à construire un ensemble de modes transverses du champ pour lesquels chaque photon est dans un état propre à la fois de $S_z$ et de $L_z$. La démarche est détaillée dans \mycite{VanEnk1994}. Nous avons déjà mentionné la base des ondes planes $\bm{F}_\beta$ où $\beta=\left\{k_x,k_y,k_z,\alpha\right\}$. Ici, on choisit plutôt $\beta=\left\{k_t,k_z,m,s\right\}$, où $k_z$ est le vecteur d'onde longitudinal, $k_t^2=k^2-k_z^2$ est le vecteur d'onde transverse, $m$ est le moment angulaire total et $s$ est le moment angulaire de spin. Les fonctions $\bm{F}_{\left\{k_t,k_z,m,s\right\}}$ ainsi construites sont modes propres de $\bm{P}^2$, $P_z$, $L_z$ et $S_z$, où $\bm{P}$ est l'opérateur quantité de mouvement. Leur expression en coordonnées cartésiennes est donnée par :
 \begin{equation}
 \begin{aligned}
-F_{\beta}^x ~&= ~\frac{k_z - sk}{k}f(k_t,k_z,m+1)+\frac{k_z + sk}{k}f(k_t,k_z,m-1),\\
-F_{\beta}^y ~&= ~-i\left[\frac{k_z - sk}{k}f(k_t,k_z,m+1)-\frac{k_z + sk}{k}f(k_t,k_z,m-1)\right],\\
-F_{\beta}^z ~&= ~\frac{k_t}{\sqrt{2}k}f(k_t,k_z,m).
+\frac{1}{\sqrt{2}}(F_x+\rmi F_y) ~&= ~\frac{k_z + sk}{2k}f(k_t,k_z,m+1),\\
+\frac{1}{\sqrt{2}}(F_x-\rmi F_y) ~&= ~\frac{k_z - sk}{2k}f(k_t,k_z,m-1),\\
+F_z ~&= ~\frac{k_t}{\sqrt{2}k}f(k_t,k_z,m).
 \end{aligned}
 \label{eqAMModes}
 \end{equation}
-avec
+Les modes propres sont donc des combinaison linéaire des $f(k_z,k_z,m)$, qui ont la forme suivante :
 \begin{equation}
-f(k_t,k_z,m) = J_m(k_t\rho)\exp{(\rmi k_zz)}\exp{(\rmi m\phi)},
+f(k_z,k_z,m) = J_m(k_t\rho)\exp{(\rmi k_zz)}\exp{(\rmi m\phi)},
 \label{eqModeFcn}
 \end{equation}
-où $(\rho,\phi)$ sont les coordonnées cylindriques et où $J_m$ est la fonction de Bessel de première espèce d'ordre $m$. Les fonctions $J_m$ sont représentées pour $m=0\ldots4$ sur la Figure \ref{Fig:BesselFcn}. 
+où $(\rho,\phi)$ sont les coordonnées cylindriques et où $J_m$ est la fonction de Bessel de première espèce d'ordre $m$. Ces modes sont en fait une forme généralisée des faisceaux de Bessel, bien connus pour être des solutions non diffractantes de l'équation d'onde \mycite{DurninJOSA1987}. Les fonctions $J_m$ sont représentées pour $m=1\ldots5$ sur la Figure \ref{Fig:BesselFcn}. 
 
 \begin{figure}[!ht]
 \centering
 \def\svgwidth{0.8\columnwidth}
 \import{Figures/Bessel_Functions/}{Bessel_Fcn.pdf_tex}
-\caption{Fonctions de Bessel de première espèce $J_m(x)$ tracées pour $m=0\ldots4$ et $x=-10\ldots10$.}
+\caption{Fonctions de Bessel de première espèce $J_m(x)$ tracées pour $m=1\ldots5$ et $x=-10\ldots10$.}
 \label{Fig:BesselFcn}
 \end{figure}
 
-Quand on applique les opérateurs de moment angulaire à ces fonctions fonctions $\bm{F}_{\beta}$, on obtient :
+On peut ensuite calculer les valeurs propres des opérateurs de moment angulaire, et on obtient :
 \begin{equation}
 \begin{alignedat}{1}
-\hat{J}_z\ket{\bm{F}_{\beta}} &= m\ket{\bm{F}_{\beta}}\\
-\hat{S}_z\ket{\bm{F}_{\beta}} &= \frac{sk_z\hbar}{k}\ket{\bm{F}_{\beta}}\\
-\hat{L}_z\ket{\bm{F}_{\beta}} &= m\hbar-\frac{sk_z\hbar}{k}\ket{\bm{F}_{\beta}}.
+m\hbar ~&\mbox{ pour } J_z\mbox{,}\\
+\frac{sk_z\hbar}{k} ~&\mbox{ pour } S_z\mbox{,}\\
+m\hbar-\frac{sk_z\hbar}{k} ~&\mbox{ pour } L_z\mbox{.}
 \end{alignedat}
 \label{eq.VP_AM}
 \end{equation}
-On a donc bien trouvé des fonctions propres de ces opérateurs. Remarquons toutefois que $\frac{sk_z\hbar}{k}$ est une quantité continue : encore une fois, $S_z$ et $L_z$ ne sont pas des opérateurs de moment angulaire dans le cas général, sans quoi leurs valeurs propres seraient discrètes. \par
-Nous pouvons maintenant étudier le moment angulaire porté par une onde plane circulaire ou un mode de Laguerre-Gauss. Nous retrouverons ainsi les résultats obtenus classiquement au chapitre \ref{ch:modes}, mais ils auront cette fois un sens au niveau microscopique.
+Remarquons que $\frac{sk_z\hbar}{k}$ est une quantité continue : encore une fois, $S_z$ et $L_z$ ne sont pas des opérateurs de moment angulaire dans le cas général, sans quoi leurs valeurs propres seraient discrètes. 
+
+
+Nous allons maintenant utiliser ces résultats pour obtenir des formes de champs électromagnétiques dans lesquels le moment angulaire de spin et le moment angulaire orbital peuvent être contrôlés.
 
 \section{Moment angulaire de spin et polarisation de la lumière}
-Commençons par le moment angulaire de spin. Remarquons d'abord que $s$ n'apparaît pas dans le profil transverse des modes $\bm{F}_{\beta}$, mais plutôt dans les relations entre les différentes composantes du champ. C'est assez naturel, puisque le spin est relié à la structure vectorielle du champ et donc à sa polarisation. Nous avions déjà observé ce point dans le cas classique, où la contribution du moment angulaire de spin s'écrit $\bm{S}=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}$ (\ref{SeparationJS_classique}).
+Commençons par le moment angulaire de spin. $s$ n'apparaît pas dans l'expression \ref{eqModeFcn}, mais plutôt dans \ref{eqAMModes}, qui exprime les relations entre les différentes composantes du champ. C'est assez naturel, puisque le spin est relié à la structure vectorielle du champ et non à sa dépendance spatiale. Nous avions déjà observé ce point dans le cas classique, où la contribution du moment angulaire de spin s'écrit $\bm{S}=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}$ (\ref{SeparationJS_classique}). Il est donc assez naturel de penser que la polarisation du champ électromagnétique soit reliée à $s$.
 
-Une onde plane progressive selon $z$ et polarisée circulairement a une extension transverse infinie, et vérifie $k_t = 0$, ou $k = k_z$. Les expressions \ref{eqAMModes} se simplifient :
+En physique classique, un champ polarisé circulairement droit (resp. gauche) a une composante selon $y$ égale (resp. opposée) à celle selon $x$ et un déphasage de $90\degres$ entre ces deux composantes. La même chose est vraie pour un photon : si on note l'état d'un photon de polarisation circulaire droite $\ket{R}$ et gauche $\ket{L}$, on peut écrire :
+\begin{align*}
+\ket{R}~&=~\frac{1}{\sqrt{2}}(\ket{x}+\rmi\ket{y}),\\
+\ket{L}~&=~\frac{1}{\sqrt{2}}(\ket{x}-\rmi\ket{y}).
+\end{align*}
+Bien sûr, le choix de la base cartésienne $(x,y)$ ne doit pas avoir d'influence sur la polarisation du photon. Si on choisit une base $(x',y')$ tournée d'un angle $\theta$ par rapport à $(x,y)$, on obtient :
 \begin{equation*}
-\begin{aligned}
-F_{\beta}^x ~&= ~(1-s)f(0,k_z,m+1)+(1+s)f(0,k_z,m-1),\\
-F_{\beta}^y ~&= ~-\rmi\left[(1-s)f(0,k_z,m+1)-(1+s)f(0,k_z,m-1)\right],\\
-F_{\beta}^z ~&= 0
-\end{aligned}
+\begin{alignedat}{3}
+&\ket{R'}~&&=~\frac{1}{\sqrt{2}}(\ket{x}+\rmi\ket{y})(\cos{\theta}-\rmi\sin{\theta}) ~&&=~ e^{-\rmi\theta}\ket{R},\\
+&\ket{L'}~&&=~\frac{1}{\sqrt{2}}(\ket{x}-\rmi\ket{y})(\cos{\theta}+\rmi\sin{\theta}) ~&&=~ e^{\rmi\theta}\ket{L}.
+\end{alignedat}
 \end{equation*}
-On retrouve bien que $F_{\beta}^z$ s'annule. Remarquons ensuite que $f(0,k_z,i) \propto J_i(0)$. Ainsi, $f(0,k_z,i)$ est non nul si et seulement si $i = 0$. Les seules valeurs de $m$ pour lesquelles le champ n'est pas totalement nul sont donc $m=\pm 1$. On trouve donc deux solutions :
-\[
-\begin{array}{|c|c|}
-	\hline
-	m = 1 &m = -1 \\
-	\hline
-	F_{\beta}^x ~= ~(1+s)f(0,k_z,m-1) & F_{\beta}^x ~= ~(1-s)f(0,k_z,m+1)\\
-		F_{\beta}^y ~= ~\rmi(1+s)f(0,k_z,m-1) & F_{\beta}^y ~= ~-\rmi(1-s)f(0,k_z,m+1)\\
-		\hline
-\end{array}\]
+Cette relation ressemble exactement à la définition du moment angulaire à partir d'une rotation donnée auparavant (\ref{Eq.DefMQuantum}). On obtient donc directement qu'un photon L ou R possède un moment angulaire égal à $\pm\hbar$. 
 
-On trouve ainsi les valeurs de $s$ pour que le champ ne soit pas nul :
-\[
-\begin{array}{|c|c|}
-		\hline
-		m = 1,\;s = 1&m = -1,\;s = -1\\
-		\hline
-		F_{\beta}^x ~= ~\rmi F_{\beta}^y ~= \exp{(\rmi k_zz)} & F_{\beta}^x ~= ~-\rmi F_{\beta}^y ~= \exp{(\rmi k_zz)}\\
-		\text{Onde circulaire gauche} & \text{Onde circulaire droite}\\
-		\hline
-\end{array}\]
-Nous avons ainsi retrouvé les polarisations circulaires droites et gauches, contenues dans les fonctions $\bm{F}_{\beta}$. On obtient également leur moment angulaire en tant que valeur propre des opérateurs agissant sur l'espace $\ket{n_1}\otimes\ket{n_2}\otimes\ldots$ du champ quantifié :
+Vérifions donc que c'est également le cas pour le champ électromagnétique. Le champ le plus simple de polarisation circulaire est une onde plane polarisée circulairement se propageant selon $k_z$, dont l'extension transverse est infinie. On a donc $k = k_z$ et $k_t = 0$. En utilisant ces valeurs dans \ref{eqAMModes}, on voit directement que $F_z$ s'annule. De plus, les fonctions $J_m(k_t\rho)$ de l'expression \ref{eqModeFcn} s'annulent toutes lorsque $k_t = 0$ et $m\neq 0$. Les seules valeurs de $m$ pour lesquelles la solution n'est pas triviale sont donc :
+\begin{equation*}
+m=\pm 1 \Rightarrow \frac{1}{\sqrt{2}}(F_x\mp\rmi F_y) ~= ~\frac{(1\mp s)}{2}f(0,k,0) ~=~ \frac{1}{\sqrt{2}}f(0,k,0) \;\mbox{ avec }\; s=\pm 1.
+\end{equation*}
+On retrouve donc les deux polarisations circulaires $\ket{R}$ et $\ket{L}$, pour lesquelles on connaît désormais les valeurs propres des opérateurs de moment angulaire en utilisant \ref{eq.VP_AM} :
 \begin{equation*}
 \begin{aligned}[c]
 &\text{Circulaire Gauche}\\
@@ -958,106 +938,222 @@ Nous avons ainsi retrouvé les polarisations circulaires droites et gauches, con
 &L_z\ket{R} = m\hbar-\frac{sk_z\hbar}{k}\ket{R} = 0.
 \end{aligned}
 \end{equation*}
-La séparation du moment angulaire en parties spin et orbitale est ici justifiée, ce qui est cohérent avec le fait qu'on obtienne des valeurs propres discrètes pour ces opérateurs.
+Nous avons donc démontré qu'un champ électromagnétique polarisé circulairement porte une unité de moment angulaire de spin par photon. C'est un résultat important puisqu'il nous donne un moyen macroscopique de contrôler une propriété microscopique : il est très simple de varier la polarisation d'un faisceau laser en utilisant une lame quart-d'onde, et par la même le moment angulaire des photons qui le composent.
+
+Le cas particulier de l'onde plane polarisée circulairement est intéressant puisqu'on a $k=k_z$. Comme dit plus haut, la séparation du moment angulaire en parties spin et orbitale est justifiée, ce qui est cohérent avec le fait qu'on obtienne des valeurs propres discrètes pour ces opérateurs.
+
+Effectuons une dernière remarque avant de passer au cas du moment orbital. Si on considère classiquement une onde plane polarisée circulairement, son moment angulaire total est donné par $\bm{J_z}=(\bm{r}\times\bm{\Pi})\cdot\bm{e_z}$.\\
+Cependant, pour une onde plane il est clair que $\bm{J}$ s'annule. Ceci contredit à la fois le résultat d'électrodynamique quantique que l'on vient d'obtenir et ce qui est observé dans l'expérience de Beth \mycite{BethPR1936}. En fait, ce cas est singulier : $\Pi_x$ et $\Pi_y $ sont nuls alors que l'extension transverse de l'onde est infinie. On est donc confrontés à une indétermination du type $0\times \infty$. 
+Ce problème peut être résolu en restreignant le problème à un volume $V$ où l'on prend en compte rigoureusement les effets de bords, puis en faisant tendre les dimensions du volume vers l'infini : voir \mycite{StewartEJP2005}. Une autre approche intéressante est celle de \mycite{MansuripurOE2005}, qui considère 4 ondes planes se propageant avec un angle $\theta$ par rapport à $z$ dans chacun des quadrants de $(x,y)$. Chacune de ces ondes ayant un vecteur d'onde formant un angle avec $z$, $\bm{J}$ est non nul. Quand on somme le moment angulaire de ces 4 ondes, si $\theta$ est assez petit on obtient une quantité ne dépendant pas de $\theta$. Il reste ensuite à faire tendre $\theta$ vers 0 pour retrouver l'onde plane comme cas limite, avec un moment angulaire non nul.
 
 \section{Moment angulaire orbital et modes de Laguerre-Gauss}
 \label{sec:oamLG}
-Appliquons maintenant la même démarche aux modes de Laguerre-Gauss. Nous avons vu que ces modes étaient solution de l'équation d'Helmholtz paraxiale (voir partie \ref{sec:LGmodes}), ce qui amène à considérer $k_t \ll k$. Sans perte de généralité, supposons $s=1$, c'est-à-dire une onde polarisée circulaire gauche. Dans les conditions paraxiales, les expressions \ref{eqAMModes} s'écrivent :
-\begin{equation*}
-\begin{aligned}
-F_{\beta}^x ~&\approx ~ f(k_t,k_z,m-1),\\
-F_{\beta}^y ~&\approx ~\rmi f(k_t,k_z,m-1),\\
-F_{\beta}^z ~&\approx 0
-\end{aligned}
-\end{equation*}
-Les $\bm{F}_{\beta}$ constituent une base, on peut donc y décomposer le champ de LG. Pour chaque composante du champ $a=x,y,z$, on écrit :
+Nous avons vu que la polarisation de lumière était reliée au moment angulaire de spin, essayons maintenant de trouver la grandeur macroscopique reliée au moment angulaire orbital. 
+Les fonctions de bases trouvées auparavant sont les faisceaux de Bessel généralisés. Ces modes sont intéressants puisqu'ils sont solution de l'équation d'Helmholtz sans aucune approximation. Les modes $\bm{F}_{\left\{k_t,k_z,m,s\right\}}$ étant fonctions propres des opérateurs $\bm{P}^2$, $P_z$, $L_z$ et $S_z$, n'importe quelle combinaison linéaire de ces modes seront également solution. Il est donc facile de construire un mode ne portant que du moment angulaire orbital : prenons par exemple la somme $F'=\bm{F}_{\left\{k_t,k_z,m,s\right\}}+\bm{F}_{\left\{k_t,k_z,m,-s\right\}}$. On obtient alors directement :
+\begin{align*}
+&J_z\ket{F'} = m\hbar\ket{F'},\\
+&S_z\ket{F'} = 0,\\
+&L_z\ket{F'} = m\hbar\ket{F'}.
+\end{align*}
+Toutefois, deux problèmes se présentent si on continue à utiliser ces modes de Bessel : leur extension spatiale est infinie, ce qui les rend impossible à utiliser en pratique. De plus, même si on arrive à en produire une approximation, le profil d'intensité d'un mode de Bessel présente un très grand nombres d'anneaux concentriques : l'énergie est diluée entre ces différents anneaux et il est difficile d'obtenir une intensité pic élevée, ce qui est particulièrement important dans les expériences de GHOE.\par Expérimentalement, nous travaillerons dans l'approximation paraxiale, c'est-à-dire que l'angle formé entre le vecteur d'onde du faisceau et l'axe de propagation reste faible. Ceci revient à considérer $k_t \ll k$. Dans des conditions paraxiales, il est possible de construire d'autres modes à partir des modes de Bessel appelés \textit{modes de Laguerre-Gauss} (LG). Nous verrons par la suite qu'il est possible de générer expérimentalement des modes de LG purs (voir la partie \ref{sec:hg_modes}) et que certains de ces modes ne comportent qu'un seul anneau sur lequel toute l'énergie est concentrée.
+Pour construire les modes de LG, on effectue une superposition cohérente de modes de Bessel portant le même moment orbital par photon, avec la condition d'optique paraxiale $k_t \ll k$. Selon la valeur de $s$ choisie, on obtient des faisceaux polarisés circulairement, ou bien encore une fois en sommant $+s$ et $-s$ un faisceau polarisé linéairement, ne portant que du moment angulaire orbital.
+
+Les modes de Laguerre-Gauss sont donc solutions de l'équation d'Helmholtz \textit{paraxiale}. Dans ces conditions, les valeurs propres de $S_z$ et $L_z$ deviennent respectivement $\frac{sk_z\hbar}{k}\sim s\hbar$ et $m\hbar-\frac{sk_z\hbar}{k}\sim (m-s)\hbar$. Nous noterons par la suite la valeur propre du moment angulaire orbital $\ell\hbar = (m-s)\hbar$. Le mode ainsi construit porte donc un moment angulaire orbital de $\ell\hbar$ par photon et un moment de spin de $s\hbar$ par photon.
+De même que pour les ondes planes polarisées circulairement présentées plus haut, les valeurs propres sont ici discrètes. Dans l'approximation paraxiale, la séparation $J_z=L_z+S_z$ est également légitime.
+
+\subsection{Expression et propriétés transverses des modes de Laguerre-Gauss}
+Notons d'abord que si un champ électromagnétique est purement transverse et d'extension finie, $\bm{r}\times(\bm{E}\times\bm{B})\cdot\bm{e_z}$ s'annule et le moment angulaire orbital est nul. Les modes qui nous intéressent doivent donc avoir une composante selon l'axe de propagation $z$. Il est possible d'écrire les trois composantes cartésiennes du champ électrique $\bm{E_{LG}}$ et magnétique $\bm{B_{LG}}$ pour un mode de Laguerre-Gauss (voir \mycite{AroraIEE1994}), ce qui permet de voir que les champs possèdent une petite composante selon $z$. En pratique, il est courant de négliger les composantes faibles : si le champ est polarisé selon l'axe $x$, on écrira $\bm{E_{LG}} \approx E_{LG} \bm{x}$ \mycite{LaxPRA1975}. Dans cette approximation, on peut écrire l'amplitude du champ dans les  coordonnées cylindriques $(r,\theta,z)$ :
 \begin{align}
-\mathcal{LG}_{\ell,p}^a &= \sum_{\beta} \Braket{\mathcal{LG}_{\ell,p}^a|F_{\beta}^a}\ket{F_{\beta}^a} \nonumber\\
-&= \sum_{\beta} \left[\int_{\rho,\phi}{(\mathcal{LG}_{\ell,p}^a)^*\cdot F_{\beta}^a\;\rmd V}\right]\ket{F_{\beta}^a}.
-\label{eq:lg_quant1}
+{\mathcal{LG}_{\ell,p} }\left( {r,\theta ,z} \right) &= {\;}\frac{C_{\ell,p}}{w(z)}
+{\left( {\frac{r\sqrt{2}}{{w\left(z\right)}}} \right)^{\left| \ell  \right|}}
+\exp{\left(- \frac{{{r^2}}}{{{{w^2(z)}}}}\right)}
+L_p^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right)\nonumber\\
+&\times
+\exp{({\rmi}\ell \theta )}
+\exp{\left(-{\rmi}k\frac{r^2}{2R(z)}\right)}
+\exp{(-{\rmi}kz)}
+\exp{(i\psi _{\ell ,p})},
+\label{eq:lgmodes} 
 \end{align}
-Remarquons maintenant que $\mathcal{LG}_{\ell,p}^a \propto e^{\rmi \ell \phi}$ et $F_{\beta}^a \propto e^{\rmi (m-1) \phi}$. Ainsi, l'intégrale dans \ref{eq:lg_quant1} est non nulle si et seulement si $m = \ell+1$. On obtient donc le moment angulaire d'un mode de Laguerre-Gauss polarisé circulairement gauche : son MAS vaut $s\hbar=\hbar$, son MA total vaut $m\hbar=(\ell+s)\hbar$, et son MA orbital vaut $(m-s)\hbar = \ell\hbar$. 
+où on a noté les paramètres :
+\begin{itemize}
+ \setlength\itemsep{1em}
+\item $\ell$ l'index azimutal du mode. Il s'agit bien de la même quantité que le moment angulaire orbital par photon porté par le faisceau.
+\item $p$ l'index radial du mode,
+\item $w(z)$ la largeur en une position $z$ du mode ${\mathcal{LG}_{0,0}}$, qui n'est autre que le mode Gaussien. Il vaut $w(z)=w_0\sqrt{1+\left(\frac{z}{z_R}\right)^2}$, où $w_0$ est la largeur minimale du faisceau (ou ``waist'') obtenue à l'origine, et $z_R=\frac{\pi w_0}{\lambda}$.
+\item $R(z)=z\left[1+\left(\frac{z_R}{z}\right)^2\right]$ est le rayon de courbure
+\item $\psi _{\ell ,p}$ est la phase de Gouy définie par $\psi _{\ell ,p}=(2p+\left|\ell\right|+1)\arctan{\frac{z}{z_R}}=(2p+\left|\ell\right|+1)\psi _{0,0}$. On remarque qu'elle est modifiée par rapport à un faisceau Gaussien habituel.
+\item $C_{\ell,p}$ est une constante de normalisation qui vaut $C_{\ell,p}=\sqrt{2p!/\left[\pi(1+\delta_{0\ell})(p+\left|l\right|)!\right]}$, où $\delta_{0\ell}$ est le delta de Kronecker.
+\item $L_p^{\left| \ell  \right|}$ est le polynôme de Laguerre généralisé, d'où ces modes tiennent leur nom. 
+\end{itemize}
 
-De même que pour les ondes planes polarisées circulairement, les valeurs propres sont ici discrètes. Dans l'approximation paraxiale, la séparation $J_z=L_z+S_z$ est également légitime. Ainsi, on peut générer un mode ne portant que du moment angulaire orbital : la somme de deux modes de LG de même $\ell$, l'un polarisé gauche et l'autre droit, donne un MAS de 0 et un MAO de $\ell$.  
+La Figure \ref{Fig:LGModes} illustre le profil d'intensité et de phase de ces modes, tracés pour différentes valeurs de $\ell$ et $p$.
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/LG_Modes/}{LG_Modes.pdf_tex}
+\caption{Profils transverses des modes de Laguerre-Gauss tracés pour différentes valeurs de $(\ell,p)$. De haut en bas et de gauche à droite, $(\ell,p) =$ (0,0), (1,0), (-2,0), (3,0), (1,1), (1,2), (3,5), (5,10). Ces profils représentent à la fois l'intensité et la phase du mode : la couleur d'un pixel est donnée par la phase en ce point (de 0 à $2\pi$) tandis que la luminosité d'un pixel est l'intensité. En pratique, on trace la phase en deux dimensions puis on multiplie la valeur RGB de chaque point par l'intensité normalisée.}
+\label{Fig:LGModes}
+\end{figure}
+
+On voit directement à quoi correspondent les index azimutaux et radiaux d'un mode : $\ell$ est le nombre de sauts de phase effectués quand on va de $\theta = 0$ à $2\pi$, tandis que $p+1$ est le nombre d'anneaux concentriques du mode. Physiquement, tout l'intérêt des modes de Laguerre-Gauss est contenu dans le terme $\exp{({\rmi}\ell \theta )}$ : comme on l'a vu, $\ell$ est la quantité de moment angulaire par photon porté par le mode. On remarque au passage que ce terme est également présent dans l'expression des modes de Bessel généralisés \ref{eqModeFcn}. Une autre caractéristique importante des modes de Laguerre-Gauss est le zéro d'intensité en leur centre pour $\ell \neq 0$. C'est également une conséquence du terme $\exp{({\rmi}\ell \theta )}$ : en $r=0$, la phase n'est pas définie, ce qui se traduit nécessairement par un zéro d'intensité. Nous verrons par la suite que cette propriété a été largement exploitée dans de nombreuses applications. 
+
+Les modes de Laguerre-Gauss constituent une base orthonormée : 
+\begin{align}
+&\int_{r=0}^{\infty}\int_{\theta=0}^{2\pi}{\mathcal{LG}_{\ell,p} r\mathrm{d}r\mathrm{d}\theta} = 1, \mbox{ et}\nonumber\\ 
+&\int_{r=0}^{\infty}\int_{\theta=0}^{2\pi}{\mathcal{LG}_{\ell_1,p_1} \mathcal{LG}^{*}_{\ell_2,p_2} r\mathrm{d}r\mathrm{d}\theta} = \delta_{\ell_1\ell_2}\delta_{p_1p_2}.
+\label{Eq:orthoLG}
+\end{align}
+Remarquons ici l'importance de deux paramètres non mentionnés dans ces équations : la largeur $w(z)$ et le rayon de courbure $R(z)$ du mode. En effet, la relation d'orthogonalité \ref{Eq:orthoLG} n'est valable que si les deux modes en question ont les mêmes $w(z)$ et $R(z)$. Une décomposition s'effectue donc pour un choix de ces paramètres, on parle parfois de choix de la base Gaussienne équivalente. Ces deux paramètres peuvent être combinés dans le \textit{rayon de courbure complexe} $q$:
+\begin{equation*}
+q = z + \mathrm{i}z_r = z + \mathrm{i}\frac{\pi w_0^2}{\lambda},
+\end{equation*}
+On travaillera souvent avec des champs au foyer, dont le rayon de courbure est infini. On a donc $q = \mathrm{i}\frac{\pi w_0^2}{\lambda}$ et le seul paramètre ajustable restant est $w_0$, le waist Gaussien.
+
+Pour choisir $w(z)$, il faut pouvoir le relier à une quantité physique. Intéressons nous pour commencer au cas d'un mode $(\ell,\;0)$, dont le profil transverse ne présente qu'un seul anneau. Une grandeur facilement mesurable est le rayon de cet anneau, défini par la distance à l'origine $r_\mathrm{max}$ pour laquelle l'intensité est maximale. Remarquons que $\forall\ell, \;L_0^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right) = 1$, ce qui permet d'écrire l'intensité :
+\begin{equation*}
+{I_\ell }(r,\theta ,z) = \frac{C_{\ell,0}^2}{{{w}^2\left( {z} \right)}}{\left( {\frac{r\sqrt{2}}{{w\left( z \right)}}} \right)^{2\left| \ell  \right|}}{e^{\left( { - \frac{{2{r^2}}}{{{w^2}\left( {\lambda ,z} \right)}}} \right)}}
+\end{equation*}
+Le maximum d'intensité le long d'un rayon est obtenue pour $\partial {I_\ell }/\partial r = 0$, i.e. 
+\begin{equation*}
+	\left( {\frac{{2\left| \ell  \right|}}{r} - \frac{{4r}}{{{w^2}\left( z \right)}}} \right){\left( {\frac{r}{{w\left( z \right)}}} \right)^{2\left| \ell  \right|}}{e^{\left( { - \frac{{2{r^2}}}{{{w^2}\left( z \right)}}} \right)}} = 0
+\end{equation*}
+Dont la solution est :
+\begin{equation}
+{r_{{\mathrm{max}}}} = w\left( {z} \right)\sqrt {\frac{{\left| \ell  \right|}}{2}}.
+\label{Eq:rmax_LG}
+\end{equation}
+Ce qui permet de déterminer de manière univoque $w(z)$ si on connaît $\ell$.
+
+Le cas $p\neq 0$ est plus compliqué à cause du terme $L_p^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right)$ qui n'est pas nul. On peut quand même écrire l'équation vérifiée par $r_\mathrm{max}$ :
+\begin{equation*}
+ \left[{\frac{{2\left| \ell  \right|}}{r} - \frac{{4r}}{{{w^2}\left( z \right)}}}\right]L_p^{\left| \ell  \right|}\left(\frac{2r^2}{w^2(z)}\right)
+	- \frac{8r}{w^2(z)} L_{p-1}^{\left| \ell \right|+1}\left(\frac{2r^2}{w^2(z)}\right)
+	= 0
+\end{equation*}
+où on a utilisé la relation $\frac{d}{dx}\left[L_{p}^{\left| \ell \right|}(x)\right] = -L_{p-1}^{\left| \ell \right|+1}(x)$. Cette équation peut être résolue au cas par cas mais ne semble pas présenter de solution générale.
+
+\subsection{Front d'onde et vecteur de Poynting des modes de Laguerre-Gauss}
+Le lien entre modes de Laguerre-Gauss et moment orbital angulaire est dû à \mycite{AllenPRA1992}, même si l'existence des modes de Laguerre-Gauss comme solutions de l'équation d'onde paraxiale était connue avant leur travail. Ils furent les premiers à faire l'analogie entre le terme de phase $\exp{({\rmi}\ell \theta )}$ et la définition du moment angulaire orbital en mécanique quantique à partir d'une rotation (équation \ref{Eq.DefMQuantum}). La présence de moment orbital peut également être comprise classiquement en s'intéressant à la forme bien particulière du vecteur de Poynting d'un mode de Laguerre-Gauss.\par
+Pour visualiser ce lien, commençons par calculer les fronts d'ondes d'un mode de Laguerre-Gauss, qui sont normaux au vecteur de Poynting.
+Un front d'onde est par définition une surface d'équiphase. En reprenant l'expression \ref{eq:lgmodes}, on obtient directement leur définition :
+\begin{equation*}
+\ell\theta-k\frac{r^2}{2R(z)}-kz+\psi _{\ell ,p} = \mathrm{C}^\mathrm{ste}.
+\end{equation*}
+Commençons par considérer un faisceau collimaté : le rayon de courbure est alors infini et la phase de Gouy est constante. L'équation prend alors la forme très simple d'une surface \textit{hélicoïdale}. Ces surfaces sont tracées sur la figure \ref{Fig:LGwf} pour $\ell = 1,2,3$. Le front d'onde d'un mode d'indice $\ell$ est donc constitué de $\ell$ hélices entremêlées.
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/LG_Wavefront/}{LG_Wf.pdf_tex}
+\caption{Fronts d'ondes de modes de Laguerre-Gauss pour $\ell=1,2,3$. Les échelles dans la direction de propagation selon pas les mêmes - elles sont précisées par rapport à la longueur d'onde $\lambda$.}
+\label{Fig:LGwf}
+\end{figure}
+
+Il est alors facile de visualiser le vecteur de Poynting : il est normal à la surface d'onde en tout point, comme on le voit sur la Figure \ref{Fig:LGPoynting}. On voit bien que pour une distance $r$ fixée par rapport au centre, ce vecteur décrit une spirale autour de l'axe de propagation. $\bm{\Pi}$ donnant la direction de propagation de l'énergie, il est assez intuitif dans cette image qu'un mode de Laguerre-Gauss puisse transmettre un mouvement de rotation à un objet.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{0.7\columnwidth}
+\import{Figures/LG_Poynting/}{LG_Poynting.pdf_tex}
+\caption{Vecteur de Poynting d'un mode de Laguerre-Gauss $\ell=1$. Sa définition est $\bm{\Pi} \propto \bm{E}\times\bm{B}$. Le trait rose pointillé représente l'évolution de sa direction au cours de la propagation pour une distance $r$ choisie.}
+\label{Fig:LGPoynting}
+\end{figure}
+
+On peut calculer explicitement l'expression du vecteur de Poynting. On obtient \mycite{AllenPRA1992} :
+\begin{equation*}
+\bm{\Pi} = \rmc\left|\mathcal{LG}_{\ell,p}\right|^2\left(\frac{zr}{z_R^2+z^2}\bm{e_r}+\frac{\ell}{kr}\bm{e_\theta}+\bm{e_z}\right).
+\end{equation*}
+Cette expression, contrairement aux deux figures tracées plus haut, prend en compte le rayon de courbure du faisceau, ce qui explique la composante selon $\bm{e_r}$. La composante selon $\bm{e_\theta}$ est source de moment angulaire, et celle selon $\bm{e_z}$ est simplement la quantité de mouvement portée par l'onde. Pour un faisceau collimaté, on obtient directement l'angle entre le vecteur de Poynting et l'axe de propagation :
+\begin{equation*}
+\alpha \sim \tan{\alpha} = \frac{\ell}{kr}.
+\end{equation*}
+Pour un rayon donné, le vecteur de Poynting forme donc un angle constant avec l'axe de propagation. Cet angle est communément appelé angle d'inclinaison (\textit{pitch angle} en anglais), et a été mesuré expérimentalement \mycite{LeachOE2006}.\par
+Dans \mycite{PadgettOC1995}, les auteurs remarquent qu'étudier le vecteur de Poynting pour un $r$ constant n'a pas vraiment de sens pour un faisceau divergent. Si on a affaire à un faisceau qui diverge, le chemin ``emprunté'' par l'énergie du champ n'est pas donné par l'expression ci-dessus. Il faut plutôt choisir un rayon $r(z)$ tel que $r(z)/w(z)$ soit constant au court de la propagation.\par
+Pour un mode $p=0$, il est assez naturel de choisir $r_\mathrm{max}(z)$, défini plus haut (\ref{Eq:rmax_LG}). En substituant cette expression, on peut montrer \mycite{PadgettOC1995} qu'après une propagation jusqu'à l'abscisse $z$, le vecteur de Poynting en $r_\mathrm{max}$ a tourné exactement de $\arctan{(z/z_R)}$. Cette rotation ne dépend pas de $\ell$ : le vecteur de Poynting en $r_\mathrm{max}$ tourne donc toujours exactement de $\pi$ au passage du foyer. 
+
+Ces représentations du vecteur de Poynting illustrent le lien entre MAO et faisceaux de LG, mais elles peuvent également le démontrer quantitativement. $\bm{\Pi}$ donne en effet directement la densité de moment angulaire $\bm{J} = \bm{r}\times\bm{\Pi}/\rmc^2$ (\ref{Eq.DefJEM}) :
+\begin{equation*}
+\bm{J} = \left|\mathcal{LG}_{\ell,p}\right|^2\left(-\frac{\ell}{\omega}\frac{z}{r}\bm{e_r}+\frac{r}{c}\left(\frac{z^2}{z^2+z_R^2} -1\right)\bm{e_\theta}+\frac{\ell}{\omega}\bm{e_z}\right).
+\end{equation*}
+Les termes selon $\bm{e_r}$ et $\bm{e_\theta}$ sont symétriques par rapport à l'axe, ils s'annulent donc lorsqu'on intègre sur le profil transverse du faisceau. Il ne reste donc que la composante selon $\bm{e_z}$. Le rapport entre le flux de moment angulaire et le flux d'énergie est donc $J_z/(\Pi_z/\rmc) = \ell/\omega$. Ceci est cohérent avec un raisonnement utilisant les photons : le faisceau étant composé de $N$ photons, son énergie est $N\hbar\omega$ et son moment angulaire total est $N\ell\hbar$. On retrouve bien que le rapport des flux est $\ell/\omega$.
+
+\section{Règles de sélection du moment angulaire dans une interaction laser-matière}
+\label{sec:selectionrules}
+Ayant maintenant défini les formes du champ électromagnétique utiles en pratique pour contrôler le moment angulaire de la lumière, il nous reste à étudier le rôle respectif du MAO et du MAS dans une interaction avec un atome ou une molécule. Dans cette interaction, la lumière peut induire une transition entre deux états atomiques, mais nous allons voir que le moment angulaire de la lumière impose des restrictions sur les transitions possibles.\\
+Pour classifier ces différentes transitions, on commence par effectuer une expansion multipolaire du champ électromagnétique. En pratique, cela consiste à développer les champs électriques et magnétiques sur la base des harmoniques sphériques. On pourra se référer à \mycite{Landau1982a} pour le détail de leur construction. On montre que les solutions obtenues sont les fonctions $\bm{F}_\beta$ (voir la section \ref{sec:quant_EM}), modes propres des quatre opérateurs hermitiens qui commutent suivants : $\bm{J}^2$ le moment angulaire total, $J_z$ sa projection selon $z$, l'énergie, et la parité. Les nombres quantiques correspondant sont $\beta=\left\{j,m,\omega,P\right\}$. Les modes ainsi construits sont appelés modes multipolaires électriques, qui ont une parité $P=(-1)^j$ et modes multipolaires magnétiques, de parité $P=(-1)^{j+1}$. Une propriété intéressante de ces multipôles est leur comportement à l'origine : le seul qui ne s'annule pas à l'origine est le dipôle électrique $j=1$ et $m=\pm1,\;0$. De même, les seuls modes dont le gradient ne s'annule pas à l'origine sont le quadripôle électrique, qui a un moment angulaire de $j=2$ et le dipôle magnétique, qui lui possède $j=1$.\par
+
+\subsection{Transitions multipolaires}
+Le problème de la conservation du moment angulaire dans l'interaction laser-matière est traité de manière intéressante dans \mycite{VanEnk1994a}. Les auteurs s'y intéressent au cas d'atomes froids, mais une partie de leur développement est tout à fait applicable à notre problème. Suivons donc leur raisonnement et considérons un atome placé à l'origine $r=0$. Dans un premier temps, cet atome est modélisé par un électron sans spin de position $\bm{r}$ et de quantité de mouvement $\bm{p}$. On néglige également le mouvement du centre de masse de l'atome, ce qui revient à supposer que son noyau est infiniment lourd. La position du centre de masse $\bm{R}$ (défini en section \ref{sec:centremasse}) est fixe et égale à $R=0$.\par 
+Notons $\bm{A}$ le potentiel vecteur du champ. L'interaction entre l'atome et la lumière est alors représentée au premier ordre par l'hamiltonien :
+\begin{equation*}
+H = \frac{e}{\mu}\bm{A}(\bm{r})\cdot\bm{p},
+\end{equation*}
+où $-e$ est la charge de l'électron, qui est retenu autour de l'origine par le potentiel créé par le noyau, ce qui le restreint à une région de l'espace $\left|\bm{r}\right|<a$. En général, $a$ est de l'ordre de l'angström, c'est-à-dire 3 ou 4 ordres de grandeur plus faible que la longueur d'onde du champ $\lambda$. On peut donc effectuer un développement en $a/\lambda$. Cela revient à développer le potentiel vecteur $\bm{A}$ autour de l'origine :
+\begin{equation}
+\bm{A}(\bm{r}) = \bm{A}(0)+(\bm{r}\cdot\bm{\nabla})\bm{A}(0)+\ldots
+\label{eq:dvpmt_A}
+\end{equation}
+C'est à partir de cette décomposition que l'on classifie les transitions électroniques. Considérons par exemple l'ordre 0 du développement \ref{eq:dvpmt_A}:
+\begin{equation*}
+H_0 = \frac{e}{\mu}\bm{A}(0)\cdot\bm{p}.
+\end{equation*}
+L'atome va passer d'un état initial $\ket{i}$ à un état final $\ket{f}$. Ainsi, pour que la transition soit possible, il est nécessaire que l'élément de matrice $\bra{\psi_f}H_0\ket{\psi_i}$ soit non nul. En particulier, il faut que $\bra{l_f,m_f}\bm{p}\ket{l_i,m_i}$ soit non nul. Le calcul donne les règles de sélection \mycite{cohen} :
+\begin{equation*}
+l_f-l_i=\pm1\text{ et }m_f-m_i=\pm1,\;0.
+\end{equation*}
+Comme dit plus haut, le seul multipôle pour lequel $\bm{A}(0)$ n'est pas nul est le dipôle électrique. C'est donc le seul qui contribue, et qui donne son nom à la cette transition, appelée \textit{dipolaire électrique}. On vérifie que le moment angulaire est conservé : le dipôle électrique possède bien $j=1$ (le photon a un spin de 1) et une projection $m=\pm1,\;0$.
+
+On effectue le même raisonnement pour les termes plus élevés. Le suivant met en jeu le gradient du champ à l'origine, qui est non nul pour un dipôle magnétique ou un quadripôle électrique. Les règles de sélection des transitions respectives sont 
+\begin{align*}
+l_f-l_i&=\pm1\text{ et }m_f-m_i=\pm1,\;0\text{ pour une transition dipolaire magnétique, et}\\
+l_f-l_i&=\pm2,\;0\text{ et }m_f-m_i=\pm2,\;\pm1,\;0\text{ pour une transition quadripolaire électrique.}
+\end{align*}
+Nous arrivons au cas qui nous intéresse : on voit que dans une transition quadripolaire électrique, deux unités de moment angulaire peuvent être échangés entre le champ et l'atome. D'où vient la seconde unité de moment angulaire, si le photon ne peut porter que $s=1$ ? Intuitivement, on peut répondre que cette seconde unité est fournie par le moment angulaire \textit{orbital} du champ. Nous allons considérer le problème plus précisément pour voir que ce n'est pas forcément le cas.
+
+\subsection{Variables internes et externes}
+Jusqu'ici, nous avons négligé le mouvement du centre de masse. Si on veut traiter du moment angulaire orbital, nous allons voir qu'il faut le prendre en compte. Si $\bm{R}$ n'est ni nul ni constant au cours du temps, il est utile de définir les variables \textit{internes} et \textit{externes} de l'atome. Considérons un système à $N+1$ particules constituées des particules $i=0\ldots N$, où la particule $0$ est le noyau et où la position et la quantité de mouvement de la particule $i$ sont notées $\bm{r}_i$ et $\bm{p}_i$. Les variables internes $\bm{\rho}_i$ et $\bm{\pi}_i$, respectivement position et quantité de mouvement, sont définies par rapport au noyau, tandis que les variables externes sont $\bm{R}$ et $\bm{P}$, position et quantité de mouvement de centre de masse :
+\begin{equation*}
+\begin{split}
+\bm{R} &= \sum_{j=0}^N{\frac{\mu_j \bm{r}_j}{M}}\\
+\bm{P} &= \sum_{j=0}^N{\bm{p}_j}
+\end{split}
+\quad
+\begin{split}
+\bm{\rho}_i&=\bm{r}_i-\bm{r}_0\\
+\bm{\pi}_i&=\bm{p_i}-\frac{\mu_i}{M}\sum_{j=0}^N{\bm{p}_j}
+\end{split}
+\end{equation*}
+Ce cas général est étudié en détail dans \mycite{BabikerPRL2002}, dont nous reprenons les résultats. Les auteurs considèrent un système à deux électrons interagissant avec une onde électromagnétique de moment angulaire orbital $\ell\hbar$. De la même manière que ce que nous avons fait plus haut, ils calculent l'hamiltonien de l'interaction $H_{int}$, cette fois en prenant en compte la dynamique du centre de masse. Ils effectuent ensuite un développement multipolaire pour identifier les différents types de transition. On note désormais $\bm{R} = (R_{\parallel},\;\phi_R,\;R_z)$ la position du centre de masse en coordonnées cylindriques et $\bm{\rho} = \bm{\rho}_1-\bm{\rho}_2 = (\rho_{\parallel},\;\phi_{\rho},\;\rho_z)$ celle de la coordonnée interne du système. \par
+Les auteurs décrivent l'état du système à partir des quatres quantités: $P_z$ et $L_z$, la quantité de mouvement et le moment angulaire orbital du centre de masse, $\ket{j} = \ket{n_j,\;l_j,\;m_j}$ l'état hydrogénoïde qui représente la dynamique interne, et $\ket{N_{k\alpha}}$ l'état nombre du champ électromagnétique (voir l'équation \ref{fockstates}). Les règles de sélection sont donc données par les termes non nuls des éléments de matrice suivants :
+\begin{equation*}
+M_{if} = \bra{P^f_z,\;L^f_z,\;j^f,\;N^f_{k\alpha}}H_{int}\ket{P^i_z,\;L^i_z,\;j^i,\;N^i_{k\alpha}}.
+\end{equation*}
+
+Nous résumons ici les résultats obtenus une fois le développement en $a/\lambda$ de $H_{int}$ effectué :
+\begin{itemize}
+\item Terme d'ordre 0 : l'hamiltonien ne met ici en jeu que les coordonnées du centre de masse $(R_{\parallel},\;\phi_R,\;R_z)$. En particulier, on trouve un terme de phase $\rme^{\rmi\ell\phi_R}$. L'intégration angulaire dans le calcul de $M_{ij}$ va donc donner le delta de Kronecker $\delta(L^f_z-L^i_z,\ell)$, qui montre que le moment angulaire orbital du champ $\ell\hbar$ est transféré à la dynamique \textit{externe} de l'atome. La dynamique interne n'est pas du tout affectée par le MAO de la lumière.\\
+
+\item Premier terme d'ordre 1 : les auteurs exhibent trois termes d'ordre 1 correspondant à des transitions quadripolaires. Le premier d'entre eux présentent une phase en $\rme^{\rmi\ell\phi_R}$, on a donc encore une fois transfert de MAO entre la lumière et la dynamique externe.\\
+
+\item Deuxième terme d'ordre 1 : le terme de phase vaut ici $\rme^{\rmi\phi_\rho}\rme^{\rmi(\ell-1)\phi_R}$. On obtient donc un cas intéressant : une unité de moment angulaire est transférée à la dynamique interne, ne laissant que $(\ell-1)\hbar$ à la dynamique externe.\\
+
+\item Troisième terme d'ordre 2 : ici on a $\rme^{-\rmi\phi_\rho}\rme^{\rmi(\ell+1)\phi_R}$. La dynamique interne de l'atome donne donc une unité de MAO à la lumière, qui fournit à son tour $(\ell+1)\hbar$ à la dynamique externe.\\
+\end{itemize}
+
+Ces résultats démontrent un comportement très riche entre dynamiques externes et internes d'un atome, tant est que l'on puisse réaliser des transitions quadripolaires électriques. Le transfert de MAO vers la dynamique externe de l'atome est maintenant couramment utilisé en manipulation de micro-particules, où il permet de faire tourner la particule autour de l'axe de propagation de la lumière \mycite{heprl1995}. Au contraire, si le MAO est transféré à la dynamique interne de l'atome, il sera mis en rotation autour de son propre axe.\par
+Le couplage entre moments internes et externes a été utilisé notamment par \mycite{MuthukrishnanJOB2002}, qui ont été jusqu'à démontrer l'intrication entre ces deux quantités. On peut également citer le travail théorique de \mycite{MondalPRA2014}, qui propose un schéma d'orientation de molécules froides par un faisceau de Laguerre-Gauss basé sur un transfert de MAO entre dynamique externe et interne.
+
+Toutefois, notons que ces deux travaux utilisent des atomes ou des molécules froides pour circonvenir au problème de la faible probabilité d'effectuer une transition quadripolaire électrique. En effet, si un atome est refroidi suffisamment, sa longueur de de Broglie se rapproche de la longueur d'onde optique, rendant les termes d'ordre supérieurs en $a/\lambda$ plus importants. \mycite{schmiegelowEPJ2012} montrent que le poids du terme quadripolaire évolue en $a/w_0$. Ce problème se comprend intuitivement si on considère un faisceau de Laguerre-Gauss, dont l'expression est donnée par l'équation \ref{eq:lgmodes}. Si un atome de taille $a$ est placé à une distance $r\gg a$ du centre, la phase du faisceau est localement plate à l'échelle de l'atome. On retrouve donc le comportement d'une onde plane, où aucun MAO n'est transféré à l'atome. Si au contraire on veut que l'atome puisse ``voir'' la phase hélicoïdale, il faut le placer très près du centre, où le gradient de phase est le plus important. Malheureusement, c'est aussi là où l'intensité du faisceau tend vers zéro, rendant le transfert expérimental de MAO vers la dynamique interne de l'atome difficile. Une étude théorique à ce sujet a été effectuée par \mycite{PiconOE2010} : les auteurs considèrent un faisceau ultraviolet portant du MAO interagissant avec un atome à un électron. Ils observent une modification des règles de sélection, mais en utilisant une intensité pic gigantesque, inatteignable en pratique.
+
+Illustrons pour finir les conclusions de cette partie en citant le travail de \mycite{schmiegelowarxiv2015}. Pour observer des échanges de MAO supérieurs à 1, les auteurs ont utilisé un ion refroidi placé au centre du faisceau et une focalisation proche de la limite de diffraction. On vérifie facilement qu'au centre du faisceau le gradient d'un champ de Laguerre-Gauss est maximal, et c'est précisément lui qui intervient dans une transition quadripolaire. Les auteurs démontrent très joliment que ce gradient est suffisant pour exciter un ion \textit{in the dark} en mesurant une oscillation de Rabi (voir la figure \ref{Fig:Schmiegelow}), au point d'être capable de mesurer spatialement l'amplitude et le gradient du champ en déplaçant l'ion dans le faisceau.
+\newpage
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.9\columnwidth]{Figures/schmiegelow.png}
+\caption{Observation de transition quadripolaire. (a) Transitions possibles mettant en jeu le MAS et le MAO. (b) Amplitudes de transition mesurées en utilisant une oscillation de Rabi. (c) Amplitude de transition dipolaire (rouge) et quadripolaire (bleu) en fonction de la position transverse de l'ion. Ces amplitudes sont reliées respectivement à l'amplitude du champ et du gradient du champ.}
+\label{Fig:Schmiegelow}
+\end{figure}
 
 
-%\section{Règles de sélection du moment angulaire dans une interaction laser-matière}
-%\label{sec:selectionrules}
-%Ayant maintenant défini les formes du champ électromagnétique utiles en pratique pour contrôler le moment angulaire de la lumière, il nous reste à étudier le rôle respectif du MAO et du MAS dans une interaction avec un atome ou une molécule. Dans cette interaction, la lumière peut induire une transition entre deux états atomiques, mais nous allons voir que le moment angulaire de la lumière impose des restrictions sur les transitions possibles.\\
-%Pour classifier ces différentes transitions, on commence par effectuer une expansion multipolaire du champ électromagnétique. En pratique, cela consiste à développer les champs électriques et magnétiques sur la base des harmoniques sphériques. On pourra se référer à \mycite{Landau1982a} pour le détail de leur construction. On montre que les solutions obtenues sont les fonctions $\bm{F}_\beta$ (voir la section \ref{sec:quant_EM}), modes propres des quatre opérateurs hermitiens qui commutent suivants : $\bm{J}^2$ le moment angulaire total, $J_z$ sa projection selon $z$, l'énergie, et la parité. Les nombres quantiques correspondant sont $\beta=\left\{j,m,\omega,P\right\}$. Les modes ainsi construits sont appelés modes multipolaires électriques, qui ont une parité $P=(-1)^j$ et modes multipolaires magnétiques, de parité $P=(-1)^{j+1}$. Une propriété intéressante de ces multipôles est leur comportement à l'origine : le seul qui ne s'annule pas à l'origine est le dipôle électrique $j=1$ et $m=\pm1,\;0$. De même, les seuls modes dont le gradient ne s'annule pas à l'origine sont le quadripôle électrique, qui a un moment angulaire de $j=2$ et le dipôle magnétique, qui lui possède $j=1$.\par
-%
-%\subsection{Transitions multipolaires}
-%Le problème de la conservation du moment angulaire dans l'interaction laser-matière est traité de manière intéressante dans \mycite{VanEnk1994a}. Les auteurs s'y intéressent au cas d'atomes froids, mais une partie de leur développement est tout à fait applicable à notre problème. Suivons donc leur raisonnement et considérons un atome placé à l'origine $r=0$. Dans un premier temps, cet atome est modélisé par un électron sans spin de position $\bm{r}$ et de quantité de mouvement $\bm{p}$. On néglige également le mouvement du centre de masse de l'atome, ce qui revient à supposer que son noyau est infiniment lourd. La position du centre de masse $\bm{R}$ (défini en section \ref{sec:centremasse}) est fixe et égale à $R=0$.\par 
-%Notons $\bm{A}$ le potentiel vecteur du champ. L'interaction entre l'atome et la lumière est alors représentée au premier ordre par l'hamiltonien :
-%\begin{equation*}
-%H = \frac{e}{\mu}\bm{A}(\bm{r})\cdot\bm{p},
-%\end{equation*}
-%où $-e$ est la charge de l'électron, qui est retenu autour de l'origine par le potentiel créé par le noyau, ce qui le restreint à une région de l'espace $\left|\bm{r}\right|<a$. En général, $a$ est de l'ordre de l'angström, c'est-à-dire 3 ou 4 ordres de grandeur plus faible que la longueur d'onde du champ $\lambda$. On peut donc effectuer un développement en $a/\lambda$. Cela revient à développer le potentiel vecteur $\bm{A}$ autour de l'origine :
-%\begin{equation}
-%\bm{A}(\bm{r}) = \bm{A}(0)+(\bm{r}\cdot\bm{\nabla})\bm{A}(0)+\ldots
-%\label{eq:dvpmt_A}
-%\end{equation}
-%C'est à partir de cette décomposition que l'on classifie les transitions électroniques. Considérons par exemple l'ordre 0 du développement \ref{eq:dvpmt_A}:
-%\begin{equation*}
-%H_0 = \frac{e}{\mu}\bm{A}(0)\cdot\bm{p}.
-%\end{equation*}
-%L'atome va passer d'un état initial $\ket{i}$ à un état final $\ket{f}$. Ainsi, pour que la transition soit possible, il est nécessaire que l'élément de matrice $\bra{\psi_f}H_0\ket{\psi_i}$ soit non nul. En particulier, il faut que $\bra{l_f,m_f}\bm{p}\ket{l_i,m_i}$ soit non nul. Le calcul donne les règles de sélection \mycite{cohen} :
-%\begin{equation*}
-%l_f-l_i=\pm1\text{ et }m_f-m_i=\pm1,\;0.
-%\end{equation*}
-%Comme dit plus haut, le seul multipôle pour lequel $\bm{A}(0)$ n'est pas nul est le dipôle électrique. C'est donc le seul qui contribue, et qui donne son nom à la cette transition, appelée \textit{dipolaire électrique}. On vérifie que le moment angulaire est conservé : le dipôle électrique possède bien $j=1$ (le photon a un spin de 1) et une projection $m=\pm1,\;0$.
-%
-%On effectue le même raisonnement pour les termes plus élevés. Le suivant met en jeu le gradient du champ à l'origine, qui est non nul pour un dipôle magnétique ou un quadripôle électrique. Les règles de sélection des transitions respectives sont 
-%\begin{align*}
-%l_f-l_i&=\pm1\text{ et }m_f-m_i=\pm1,\;0\text{ pour une transition dipolaire magnétique, et}\\
-%l_f-l_i&=\pm2,\;0\text{ et }m_f-m_i=\pm2,\;\pm1,\;0\text{ pour une transition quadripolaire électrique.}
-%\end{align*}
-%Nous arrivons au cas qui nous intéresse : on voit que dans une transition quadripolaire électrique, deux unités de moment angulaire peuvent être échangés entre le champ et l'atome. D'où vient la seconde unité de moment angulaire, si le photon ne peut porter que $s=1$ ? Intuitivement, on peut répondre que cette seconde unité est fournie par le moment angulaire \textit{orbital} du champ. Nous allons considérer le problème plus précisément pour voir que ce n'est pas forcément le cas.
-%
-%\subsection{Variables internes et externes}
-%Jusqu'ici, nous avons négligé le mouvement du centre de masse. Si on veut traiter du moment angulaire orbital, nous allons voir qu'il faut le prendre en compte. Si $\bm{R}$ n'est ni nul ni constant au cours du temps, il est utile de définir les variables \textit{internes} et \textit{externes} de l'atome. Considérons un système à $N+1$ particules constituées des particules $i=0\ldots N$, où la particule $0$ est le noyau et où la position et la quantité de mouvement de la particule $i$ sont notées $\bm{r}_i$ et $\bm{p}_i$. Les variables internes $\bm{\rho}_i$ et $\bm{\pi}_i$, respectivement position et quantité de mouvement, sont définies par rapport au noyau, tandis que les variables externes sont $\bm{R}$ et $\bm{P}$, position et quantité de mouvement de centre de masse :
-%\begin{equation*}
-%\begin{split}
-%\bm{R} &= \sum_{j=0}^N{\frac{\mu_j \bm{r}_j}{M}}\\
-%\bm{P} &= \sum_{j=0}^N{\bm{p}_j}
-%\end{split}
-%\quad
-%\begin{split}
-%\bm{\rho}_i&=\bm{r}_i-\bm{r}_0\\
-%\bm{\pi}_i&=\bm{p_i}-\frac{\mu_i}{M}\sum_{j=0}^N{\bm{p}_j}
-%\end{split}
-%\end{equation*}
-%Ce cas général est étudié en détail dans \mycite{BabikerPRL2002}, dont nous reprenons les résultats. Les auteurs considèrent un système à deux électrons interagissant avec une onde électromagnétique de moment angulaire orbital $\ell\hbar$. De la même manière que ce que nous avons fait plus haut, ils calculent l'hamiltonien de l'interaction $H_{int}$, cette fois en prenant en compte la dynamique du centre de masse. Ils effectuent ensuite un développement multipolaire pour identifier les différents types de transition. On note désormais $\bm{R} = (R_{\parallel},\;\phi_R,\;R_z)$ la position du centre de masse en coordonnées cylindriques et $\bm{\rho} = \bm{\rho}_1-\bm{\rho}_2 = (\rho_{\parallel},\;\phi_{\rho},\;\rho_z)$ celle de la coordonnée interne du système. \par
-%Les auteurs décrivent l'état du système à partir des quatres quantités: $P_z$ et $L_z$, la quantité de mouvement et le moment angulaire orbital du centre de masse, $\ket{j} = \ket{n_j,\;l_j,\;m_j}$ l'état hydrogénoïde qui représente la dynamique interne, et $\ket{N_{k\alpha}}$ l'état nombre du champ électromagnétique (voir l'équation \ref{fockstates}). Les règles de sélection sont donc données par les termes non nuls des éléments de matrice suivants :
-%\begin{equation*}
-%M_{if} = \bra{P^f_z,\;L^f_z,\;j^f,\;N^f_{k\alpha}}H_{int}\ket{P^i_z,\;L^i_z,\;j^i,\;N^i_{k\alpha}}.
-%\end{equation*}
-%
-%Nous résumons ici les résultats obtenus une fois le développement en $a/\lambda$ de $H_{int}$ effectué :
-%\begin{itemize}
-%\item Terme d'ordre 0 : l'hamiltonien ne met ici en jeu que les coordonnées du centre de masse $(R_{\parallel},\;\phi_R,\;R_z)$. En particulier, on trouve un terme de phase $\rme^{\rmi\ell\phi_R}$. L'intégration angulaire dans le calcul de $M_{ij}$ va donc donner le delta de Kronecker $\delta(L^f_z-L^i_z,\ell)$, qui montre que le moment angulaire orbital du champ $\ell\hbar$ est transféré à la dynamique \textit{externe} de l'atome. La dynamique interne n'est pas du tout affectée par le MAO de la lumière.\\
-%
-%\item Premier terme d'ordre 1 : les auteurs exhibent trois termes d'ordre 1 correspondant à des transitions quadripolaires. Le premier d'entre eux présentent une phase en $\rme^{\rmi\ell\phi_R}$, on a donc encore une fois transfert de MAO entre la lumière et la dynamique externe.\\
-%
-%\item Deuxième terme d'ordre 1 : le terme de phase vaut ici $\rme^{\rmi\phi_\rho}\rme^{\rmi(\ell-1)\phi_R}$. On obtient donc un cas intéressant : une unité de moment angulaire est transférée à la dynamique interne, ne laissant que $(\ell-1)\hbar$ à la dynamique externe.\\
-%
-%\item Troisième terme d'ordre 2 : ici on a $\rme^{-\rmi\phi_\rho}\rme^{\rmi(\ell+1)\phi_R}$. La dynamique interne de l'atome donne donc une unité de MAO à la lumière, qui fournit à son tour $(\ell+1)\hbar$ à la dynamique externe.\\
-%\end{itemize}
-%
-%Ces résultats démontrent un comportement très riche entre dynamiques externes et internes d'un atome, tant est que l'on puisse réaliser des transitions quadripolaires électriques. Le transfert de MAO vers la dynamique externe de l'atome est maintenant couramment utilisé en manipulation de micro-particules, où il permet de faire tourner la particule autour de l'axe de propagation de la lumière \mycite{heprl1995}. Au contraire, si le MAO est transféré à la dynamique interne de l'atome, il sera mis en rotation autour de son propre axe.\par
-%Le couplage entre moments internes et externes a été utilisé notamment par \mycite{MuthukrishnanJOB2002}, qui ont été jusqu'à démontrer l'intrication entre ces deux quantités. On peut également citer le travail théorique de \mycite{MondalPRA2014}, qui propose un schéma d'orientation de molécules froides par un faisceau de Laguerre-Gauss basé sur un transfert de MAO entre dynamique externe et interne.
-%
-%Toutefois, notons que ces deux travaux utilisent des atomes ou des molécules froides pour circonvenir au problème de la faible probabilité d'effectuer une transition quadripolaire électrique. En effet, si un atome est refroidi suffisamment, sa longueur de de Broglie se rapproche de la longueur d'onde optique, rendant les termes d'ordre supérieurs en $a/\lambda$ plus importants. \mycite{schmiegelowEPJ2012} montrent que le poids du terme quadripolaire évolue en $a/w_0$. Ce problème se comprend intuitivement si on considère un faisceau de Laguerre-Gauss, dont l'expression est donnée par l'équation \ref{eq:lgmodes}. Si un atome de taille $a$ est placé à une distance $r\gg a$ du centre, la phase du faisceau est localement plate à l'échelle de l'atome. On retrouve donc le comportement d'une onde plane, où aucun MAO n'est transféré à l'atome. Si au contraire on veut que l'atome puisse ``voir'' la phase hélicoïdale, il faut le placer très près du centre, où le gradient de phase est le plus important. Malheureusement, c'est aussi là où l'intensité du faisceau tend vers zéro, rendant le transfert expérimental de MAO vers la dynamique interne de l'atome difficile. Une étude théorique à ce sujet a été effectuée par \mycite{PiconOE2010} : les auteurs considèrent un faisceau ultraviolet portant du MAO interagissant avec un atome à un électron. Ils observent une modification des règles de sélection, mais en utilisant une intensité pic gigantesque, inatteignable en pratique.
-%
-%Illustrons pour finir les conclusions de cette partie en citant le travail de \mycite{schmiegelowarxiv2015}. Pour observer des échanges de MAO supérieurs à 1, les auteurs ont utilisé un ion refroidi placé au centre du faisceau et une focalisation proche de la limite de diffraction. On vérifie facilement qu'au centre du faisceau le gradient d'un champ de Laguerre-Gauss est maximal, et c'est précisément lui qui intervient dans une transition quadripolaire. Les auteurs démontrent très joliment que ce gradient est suffisant pour exciter un ion \textit{in the dark} en mesurant une oscillation de Rabi (voir la figure \ref{Fig:Schmiegelow}), au point d'être capable de mesurer spatialement l'amplitude et le gradient du champ en déplaçant l'ion dans le faisceau.
-%\newpage
-%
-%\begin{figure}[!ht]
-%\centering
-%\includegraphics[width=0.9\columnwidth]{Figures/schmiegelow.png}
-%\caption{Observation de transition quadripolaire. (a) Transitions possibles mettant en jeu le MAS et le MAO. (b) Amplitudes de transition mesurées en utilisant une oscillation de Rabi. (c) Amplitude de transition dipolaire (rouge) et quadripolaire (bleu) en fonction de la position transverse de l'ion. Ces amplitudes sont reliées respectivement à l'amplitude du champ et du gradient du champ.}
-%\label{Fig:Schmiegelow}
-%\end{figure}
-%
-%
-%Nous avons maintenant terminé cette partie sur le concept de moment angulaire de la lumière. Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans le chapitre III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans le chapitre IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.
+Nous avons maintenant terminé cette partie sur le concept de moment angulaire de la lumière. Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans le chapitre III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans le chapitre IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.
