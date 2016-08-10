@@ -161,7 +161,9 @@
 
 @Book{aspect2005-2,
   Title                    = {Optique quantique 2: Photons},
-  Author                   = {Aspect, Alain and Grangier, Philippe}
+  Author                   = {Aspect, Alain and Grangier, Philippe},
+  Editor                   = {École polytechnique, Département de physique},
+  Year                     = {2005}
 }
 
 @Article{augustepra2008,
@@ -3899,6 +3901,15 @@
   Adsurl                   = {http://adsabs.harvard.edu/abs/1995RScI...66.1592Y},
   DOI                      = {10.1063/1.1145917},
   File                     = {Published version:YagiRSI1995.pdf:PDF}
+}
+
+@Article{yamagata1966,
+  Title                    = {A hypothesis for the asymmetric appearance of biomolecules on earth},
+  Author                   = {Yamagata, Y.},
+  Journal                  = {Journal of Theoretical Biology},
+  Year                     = {1966},
+  Pages                    = {495-498},
+  Volume                   = {11}
 }
 
 @Article{YaoAOP2011,
