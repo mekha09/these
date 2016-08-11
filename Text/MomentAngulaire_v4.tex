@@ -195,7 +195,9 @@ Finalement,
 -\frac{1}{\mu_0}\bm{B}\times(\bm{\nabla}\times\bm{B})\right]\rmd V.
 \end{equation*} 
 
-Comme démontré dans la section 6.9 de \mycite{Jackson1999}, le terme de droite est le flux du quantité de mouvement vers l'extérieur du volume V à travers la surface S. On identifie donc finalement la quantité de mouvement totale du champ électromagnétique :
+Comme démontré dans la section 6.9 de \mycite{Jackson1999}, le terme de droite est le flux du quantité de mouvement vers l'extérieur du volume V à travers la surface S. Il s'écrit à l'aide du tenseur des contraintes de Maxwell $\tensor{\bm{T_M}}$. On trouve alors une équation de conservation pour la quantité de mouvement :
+\[\frac{d\left(\bm{P}_{part}+\bm{P}_{champ}\right)}{dt} = \oint_S \bm{n}\cdot\tensor{\bm{T_M}}\;\rmd S,\]
+avec :
 \begin{align}
 \bm{P}_{champ} &= \epsilon_0\frac{d}{dt}\int_V (\bm{E}\times\bm{B})\; \rmd V \nonumber\\
 &= \frac{\bm{\Pi}}{c^2} \mbox{, où $\bm{\Pi}$ est donné par \ref{Def.Poynting}.}
@@ -208,7 +210,13 @@ C'est l'essence de la démarche utilisée par Henri Poincaré en 1900 \mycite{po
 Poynting, en plus de ces contributions majeures, a été le premier à envisager l'existence du moment \textit{angulaire} de la lumière. Il fit l'analogie entre une onde électromagnétique polarisée circulairement et une onde élastique de torsion, suggérant que la lumière possède un moment angulaire et peut fournir un couple à la matière \mycite{PoyntingPRSL1909}. Il propose à la fin de son article un dispositif expérimental constitué d'une série de lames quart d'ondes, permettant de démultiplier cet effet jusqu'à le rendre mesurable. Il conclut toutefois avec pessimisme que \textit{``even with such multiplications, my present experience of light forces does not give me much hope that the effect could be detected, if it has the value suggested by the mechanical model''}.
 
 Il aurait donc probablement été heureux d'apprendre qu'en 1936, R. A. Beth observa cet effet avec un schéma légèrement modifié \mycite{BethPR1936}, confirmant ainsi l'existence du moment angulaire de la lumière. \mycite{DelannoyAPL2005} réalisèrent une expérience similaire en utilisant de la soie d'araignée.\par
-L'expression de la densité de moment angulaire du champ est directement obtenue en utilisant la définition \ref{eq:defJ} et l'expression \ref{eq:defP}:
+On obtient l'expression de la densité de moment angulaire du champ de la même façon que celle de la quantité de mouvement. La somme des moments angulaires des particules dans le volume V vaut :
+\begin{align*}
+\bm{J}_{part} &= \bm{r}\times\bm{P}_{part} \\
+&= \bm{r}\times\left(-\bm{P}_{champ} + \oint_S \bm{n}\cdot\tensor{\bm{T_M}}\;\rmd S\right)\text{, donc} \\
+\bm{J}_{part}+\bm{J}_{champ} &= \oint_S \bm{n}\cdot(\bm{r}\times\tensor{\bm{T_M}})\;\rmd S,
+\end{align*}
+avec
 \begin{equation}
 \bm{J}(\bm{r})=\bm{r}\times\bm{\bm{P}_{champ}}=\frac{\bm{r}\times\bm{\Pi}}{c^2} = \epsilon_0\bm{r}\times(\bm{E}\times\bm{B})
 \label{Eq.DefJEM}
@@ -320,7 +328,7 @@ Cette inégalité est vérifiée si le profil varie lentement avec $z$. En effet
 \left|\frac{\partial^2}{\partial z^2} u\right|\ll\left|\nabla_t^2 u \right|
 \label{eq:para7}
 \end{equation}
-Cette condition est problématique si on l'applique à l'équation d'Helmholtz pour le champ électrique. Un champ électrique dans le vide a une divergence nulle, ce qui implique que sa divergence dans la direction transverse est nulle : $\nabla_{\bm{t}} E=0$. Le Lapacien transverse est alors également nul, ce qui contredit l'inégalité \ref{eq:para7}. \mycite{DavisPRA1979} montre que ce problème peut être contourné en considérant à la place le potentiel vecteur $\bm{A}$ dans la jauge de Lorentz. Il est défini par :
+Cette condition est problématique si on l'applique à l'équation d'Helmholtz pour le champ électrique. Un champ électrique dans le vide a une divergence nulle, ce qui implique que sa divergence dans la direction transverse est nulle : $\nabla_{\bm{t}} E=0$. Le Lapacien transverse est alors également nul, ce qui contredit l'inégalité \ref{eq:para7}. \mycite{DavisPRA1979} montre que ce problème peut être contourné en considérant à la place le potentiel vecteur $\bm{A}$ dans la jauge de Lorenz. Il est défini par :
 \begin{equation}
 \bm{B} = \bm{\nabla}\times\bm{A},
 \label{eq:para8}
@@ -335,7 +343,7 @@ Il existe donc un potentiel scalaire $\Phi$ défini par :
 \nabla\Phi=-\left(\bm{E}+\frac{\partial}{\partial t}\bm{A}\right).
 \label{eq:para10}
 \end{equation}
-Les potentiels $\Phi$ et $\bm{A}$ ne sont pas définis de manière unique. Pour les fixer, on utilise une condition de jauge. La jauge de Lorentz est donné par :
+Les potentiels $\Phi$ et $\bm{A}$ ne sont pas définis de manière unique. Pour les fixer, on utilise une condition de jauge. La jauge de Lorenz est donné par :
 \begin{equation}
 \bm{\nabla}\cdot\bm{A}+\frac{1}{\rmc^2}\frac{\partial}{\partial t}\Phi=0.
 \label{eq:para11}
@@ -867,12 +875,12 @@ L'énergie du rayonnement peut alors s'écrire en fonction de $\bm{A}$. \mycite{
 \hat{H}=\sum_{\beta} \hbar\omega_{\beta}\left(\hat{a}^{\dag}_{\beta}\hat{a}_{\beta}+\frac{1}{2}\right),
 \end{equation*}
 Tout comme $\hat{x}_i$ et $\hat{p}_i$ auparavant, les opérateurs associées aux grandeurs physiques s'expriment en fonction des $\hat{a}^{\dag}_{\beta}$ et $\hat{a}_{\beta}$ (voir \mycite{VanEnk1994}) :
-\begin{align*}
-\hat{\bm{A}} &= \sum_{\beta}{\mathcal{A}_{\beta} (\hat{a}_{\beta}\bm{F}_{\beta}+\hat{a}^{\dag}_{\beta}\bm{F}^*_{\beta}}) \\
-\hat{\bm{E}}_{\bot} &= \sum_{\beta}{\rmi \omega_{\beta}\mathcal{A}_{\beta} (\hat{a}_{\beta}\bm{F}_{\beta}-\hat{a}^{\dag}_{\beta}\bm{F}^*_{\beta}}) \\
+\begin{align}
+\hat{\bm{A}} &= \sum_{\beta}{\mathcal{A}_{\beta} (\hat{a}_{\beta}\bm{F}_{\beta}+\hat{a}^{\dag}_{\beta}\bm{F}^*_{\beta}}) \nonumber\\
+\hat{\bm{E}}_{\bot} &= \sum_{\beta}{\rmi \omega_{\beta}\mathcal{A}_{\beta} (\hat{a}_{\beta}\bm{F}_{\beta}-\hat{a}^{\dag}_{\beta}\bm{F}^*_{\beta}}) \nonumber\\
 \hat{\bm{B}} &=\sum_{\beta}{\mathcal{A}_{\beta} (\hat{a}_{\beta}\bm{\nabla}\times\bm{F}_{\beta}+\hat{a}^{\dag}_{\beta}\bm{\nabla}\times\bm{F}^*_{\beta}})
 \label{eq:Qfields}
-\end{align*}
+\end{align}
 Précisons la forme de l'espace dans lequel évolue le champ. Nous avons déjà introduit l'opérateur nombre $\hat{N}_{\beta}=\hat{a}^{\dag}_{\beta}\hat{a}_{\beta}$, dont les valeurs propres sont les entiers positifs ou nuls $n_{\beta}$. On note ses vecteurs propres $\ket{n_{\beta}}$. Ces vecteurs forment une base des états du champ dans le mode ${\beta}$. Les modes $\bm{F}_{\beta}$ constituant une base complète, on voit que les états propres de $\hat{H}$ sont les produits tensoriels entre tous les états $\ket{n_{\beta}}$ : $\ket{n_{\beta_1}}\otimes\ket{n_{\beta_2}}\otimes\ldots$. En fait, chaque état peut être vu comme un ensemble de particules indépendantes comportant $n_{\beta_1}$ particules dans le mode ${\beta_1}$, $n_{\beta_2}$ dans le mode ${\beta_2}$, etc. Ces particules sont appelées \textbf{photons}\footnote{Comme pour toute particule, on peut définir la fonction d'onde d'un photon. Il faut cependant effectuer une distinction importante avec le cas d'une particule telle qu'un atome. En effet, le photon se déplace à la vitesse de la lumière, ce qui oblige à utiliser une description relativiste. Dans ce cas, la fonction d'onde ne peut pas être vue comme l'amplitude de probabilité de trouver le photon à un endroit donné. En effet, on vient de voir que l'énergie du photon s'écrit $E = \hbar\omega = \hbar\left|\bm{k}\right|\rmc=\left|\bm{p}\right|\rmc$. On peut alors écrire l'incertitude sur la position du photon comme :
 \begin{equation*}
 \Delta x \sim \hbar\rmc/E = \hbar/p.
@@ -884,7 +892,7 @@ Ayant obtenu les expressions des opérateurs associés au champ électromagnéti
 \begin{equation*}
 \bm{S}=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}
 \end{equation*}
-On subsistue alors les expressions quantifiées (\ref{eq:Qfields}) de $\bm{E_{\bot}}$ et $\bm{A_{\bot}}$ :
+On substitue alors les expressions quantifiées (\ref{eq:Qfields}) de $\bm{E_{\bot}}$ et $\bm{A_{\bot}}$ :
 \begin{equation*}
 \hat{\bm{S}}= \epsilon_0 \sum_{\beta,\beta '} \rmi \omega_{\beta}\mathcal{A}_{\beta}\mathcal{A}_{\beta '}\int{\rmd\bm{r}
 [\hat{a}_{\beta}\bm{F}_{\beta}-\hat{a}^{\dag}_{\beta}\bm{F}^*_{\beta}]\times[\hat{a}_{\beta '}\bm{F}_{\beta '}+\hat{a}^{\dag}_{\beta '}\bm{F}^*_{\beta '}}]\\
@@ -1049,7 +1057,7 @@ De même que pour les ondes planes polarisées circulairement, les valeurs propr
 \label{sec:selectionrules}
 
 \section{Transitions multipolaires}
-Nous étudions ici le rôle respectif du MAO et du MAS dans une interaction entre la lumière et un atome. Notons $\ket{\psi_i}$ l'état initial de l'atome. Il peut émettre ou absorber un photon d'énergie $\hbar\omega$ et passer à l'état final $\ket{\psi_f}$. Cette transition doit bien sûr vérifier la conservation de l'énergie : $\hbar\omega = \Delta E$, où $\Delta E$ est la différence d'énergie entre les deux états atomiques. On considère le système {atome + champ électromagnétique}, dont l'hamiltonien prend la forme :
+Nous étudions ici le rôle respectif du MAO et du MAS dans une interaction entre la lumière et un atome. Notons $\ket{\psi_i}$ l'état initial de l'atome. Il peut émettre ou absorber un photon d'énergie $\hbar\omega$ et passer à l'état final $\ket{\psi_f}$. On considère le système {atome + champ électromagnétique}, dont l'hamiltonien prend la forme :
 \[ H = H_{champ} + H_{atome} + H_{int},\]
 où $H_{champ}$ et $H_{atome}$ sont les hamiltoniens du champ et de l'atome non perturbés, et $H_{int}$ est l'hamiltonien d'interaction. Pour une particule de charge $q$, de masse $m$, de position $\bm{r}$ et de moment canonique $\bm{p}$, il s'écrit dans la jauge de Coulomb :
 \begin{equation}
@@ -1058,22 +1066,22 @@ H_{int} = -\frac{q}{m}\bm{A}(\bm{r},t)\cdot\bm{p}+\frac{q^2}{2m}\bm{A}(\bm{r},t)
 \end{equation}
 où $\bm{A}$ et $\Phi$ sont les potentiels vecteurs et scalaires définis page \pageref{eq:para10}. L'hamiltonien d'interaction total est obtenu en sommant ceux des $N$ particules. 
 
-Pour simplifier le problème, intéressons-nous aux échelles de grandeur. L'extension typique d'une fonction d'onde électronique autour d'un atome, qu'on note $a$, est de l'ordre de l'angström, c'est-à-dire 3 ou 4 ordres de grandeur plus faible que la longueur d'onde du champ $\lambda$. On a donc $a/\lambda\ll 1$. Notons $\bm{R_0}$ la position du centre de masse de l'atome. On effectue alors un développement limité  des champs électromagnétiques en terme de $a/\lambda$ au voisinage de $\bm{r} = \bm{R_0}$. Ce développement s'écrit, par exemple pour $\bm{E}$ :
+Pour simplifier le problème, intéressons-nous aux échelles de grandeur. L'extension typique d'une fonction d'onde électronique autour d'un atome, qu'on note $a$, est de l'ordre de l'angström, c'est-à-dire 3 ou 4 ordres de grandeur plus faible que la longueur d'onde du champ $\lambda$. On a donc $a/\lambda\ll 1$. Notons $\bm{R_0}$ la position du centre de masse de l'atome et $\bm{r} = \bm{R_0} + \delta \bm{r}$ celle de la particule considérée. Comme $|\delta \bm{r}| \approx a \ll |\bm{R_0}|$, on peut effectuer un développement limité des champs électromagnétiques au voisinage de $\bm{r} = \bm{R_0}$. Ce développement s'écrit, par exemple pour $\bm{E}$ :
 \begin{equation}
 \bm{E}(\bm{r}) = \bm{E}(R_0)+(\bm{r}\cdot\bm{\nabla})\bm{E}(R_0)+\frac{1}{2!}(\bm{r}\cdot\bm{\nabla})^2\bm{E}(R_0)+\ldots
 \label{eq:dvpmt_E}
 \end{equation}
-On en déduit $\bm{A}$ et $\Phi$, qu'on réinjecte dans \ref{eq:hint} pour obtenir $H_int$ comme un développement limité en puissances de $\bm{r}$. Ce développement se réécrit \mycite{barron} :
+On en déduit $\bm{A}$ et $\Phi$, qu'on réinjecte dans \ref{eq:hint} pour obtenir $H_{int}$ comme un développement limité en puissances de $\bm{r}$. Ce développement se réécrit \mycite{barron} :
 \begin{equation}
-H_{int} = q_{tot} \Phi(R_0,t) - \bm{p}\cdot\bm{E}(R_0,t)-\bm{m}\cdot\bm{B}(R_0,t)-[\bm{\check{Q}}\bm{\nabla}]\cdot\bm{E}(R_0,t)-\ldots,
+H_{int} = q_{tot} \Phi(R_0,t) - \bm{p}\cdot\bm{E}(R_0,t)-\bm{m}\cdot\bm{B}(R_0,t)-[\tensor{\bm{Q}}\cdot\bm{\nabla}]\cdot\bm{E}(R_0,t)-\ldots,
 \label{eq:hint2}
 \end{equation}
 où on a noté
 \begin{align*}
-&\text{La charge totale du système } \; &q_{tot} &= \sum_n q_n\\
+&\text{La charge totale du système (monopole) } \; &q_{tot} &= \sum_n q_n\\
 &\text{Le moment dipolaire électrique total} \; &\bm{p} &= \sum_n q_n\bm{r}_n\\
 &\text{Le moment dipolaire magnétique total} \; &\bm{m} &= \sum_n (q_n/2m_n)\bm{r}_n\times\bm{p}_n\\
-&\text{Le moment quadripolaire électrique total} \; &\bm{\check{Q}} &= \sum_n (q_n/2)\bm{r}_n\cdot\bm{r}_n\\
+&\text{Le moment quadripolaire électrique total} \; &\tensor{\bm{Q}} &= \sum_n (q_n/2)\bm{r}_n\cdot\bm{r}_n\\
 \end{align*}
 On vient de réaliser une \textit{expansion multipolaire} du champ électromagnétique. Le premier terme de \ref{eq:hint2} disparaît pour un système neutre. Les suivants décrivent respectivement une interaction dipolaire électrique, une dipolaire magnétique, une quadripolaire électrique, puis tous les $2^j$-polaires électriques et magnétiques. $a/\lambda$ étant faible, le premier terme non nul domine en général tous les suivants et on dit que la transition $i\rightarrow f$ est $2^j$-polaire électrique ou magnétique.
 
@@ -1084,7 +1092,7 @@ l_f-l_i=\pm j\;\text{ et }\;\pi_f=P\pi_i.
 \end{align*}
 Si ces règles ne sont pas vérifiées, la transition est interdite et l'élément de matrice de transition $\Braket{\psi_f|H_{int}|\psi_i}$ est nul.
 
-De manière intéressante, on voit que dans une transition quadripolaire électrique, deux unités de moment angulaire peuvent être échangés entre le champ et l'atome. Bien sûr, le photon ne peut porter qu'un moment angulaire de spin $s=1$. Il est donc tentant de penser que la seconde unité de moment angulaire est fournie par le moment angulaire \textit{orbital}. Dans la partie suivante, nous verrons que ce n'est pas nécessairement le cas.
+De manière intéressante, on voit que dans une transition quadripolaire électrique, deux unités de moment angulaire peuvent être échangés entre le champ et l'atome. Bien sûr, le photon ne peut porter qu'un moment angulaire de spin $s=\pm 1$. Il est donc tentant de penser que la seconde unité de moment angulaire est fournie par le moment angulaire \textit{orbital}. Dans la partie suivante, nous verrons que ce n'est pas nécessairement le cas.
 
 \section{Rôle du moment angulaire orbital dans une transition multipolaire}
 Considérons donc un champ portant du moment angulaire orbital. Dans les coordonnées cylindriques, nous l'écrivons :
@@ -1119,19 +1127,20 @@ $\alpha,\;\beta,\;\chi,\;\delta,\;\epsilon,\;\gamma$ étant des facteurs dont l'
 On obtient bien un développement en puissance des composantes cartésiennes de $q$. On peut donc identifier les transitions multipolaires et trouver lorsque l'élément de matrice de transition \ref{eq:matrixelement} est non nul.
 
 (1) Transition dipolaire électrique : on considère la partie de \ref{eq:hint3} linéaire en $\bm{q}$ : 
-\[H^{dipole}_{int} = \alpha\bm{u}\cdot\bm{q}\times\chi e^{\rmi\ell\phi_Q}+\text{c.c.}.\]
+\[H^{dipole}_{int} = \alpha\bm{u}\cdot\bm{q}\times\chi e^{\rmi\ell\phi_Q}+\text{c.c.}\]
 On effectue alors l'intégrale sur toutes les coordonnées pour calculer l'élément de matrice de transition. Le terme intéressant ici est $e^{\rmi\ell\phi_Q}$. En effet, en calculant $\mathcal{M}_{if}$, ce terme intervient dans $\Braket{L'_Q|e^{\rmi\ell\phi_Q}|L_Q}$. On obtient une intégrale de la forme :
-\[\ldots\int_{\phi_Q=0}^{2\pi} e^{-\rmi\L'_Q\phi}e^{\rmi\ell\phi}e^{\rmi\L_Q\phi} \rmd\phi\]
+\[\int_{\phi_Q=0}^{2\pi} \ldots e^{-\rmi L'_Q\phi}e^{\rmi\ell\phi}e^{\rmi L_Q\phi} \rmd\phi\]
 Cette intégrale est non nulle si et seulement si $L'_Q+\ell-L_Q=0$. On voit donc que le MAO du champ, $\ell$, est transféré au centre de masse de position $\bm{Q}$. Les règles de sélection internes ne sont quant à elles pas modifiées par la présence de MAO.
 
 (2) Transition quadripolaire électrique : on étudie la partie quadratique en $\bm{q}$. On obtient trois termes différents :
 \begin{itemize}
 \renewcommand{\labelitemi}{$\bullet$}
 \setlength\itemsep{1em}
-\item $H^{quad,1}_{int} = \alpha\bm{u}\cdot\bm{q}\beta q_z \times\chi e^{\rmi\ell\phi_Q}+\text{c.c.}.$ 
-\item $H^{quad,2}_{int} = \alpha\bm{u}\cdot\bm{q} \times \delta q_{\parallel}\epsilon e^{\rmi(\ell-1)\phi_Q}e^{\rmi \phi_q}+\text{c.c.}.$
-\item $H^{quad,3}_{int} = \alpha\bm{u}\cdot\bm{q} \times \delta q_{\parallel}\gamma e^{\rmi(\ell+1)\phi_Q}e^{-\rmi \phi_q}+\text{c.c.}.$
+\item $H^{quad,1}_{int} = \alpha\bm{u}\cdot\bm{q}\beta q_z \times\chi e^{\rmi\ell\phi_Q}+\text{c.c.}$ 
+\item $H^{quad,2}_{int} = \alpha\bm{u}\cdot\bm{q} \times \delta q_{\parallel}\epsilon e^{\rmi(\ell-1)\phi_Q}e^{\rmi \phi_q}+\text{c.c.}$
+\item $H^{quad,3}_{int} = \alpha\bm{u}\cdot\bm{q} \times \delta q_{\parallel}\gamma e^{\rmi(\ell+1)\phi_Q}e^{-\rmi \phi_q}+\text{c.c.}$
 \end{itemize}
+
 
 $H^{quad,1}_{int}$ ne présente qu'un terme de phase en $\phi_Q$. Les conclusions sont donc identiques à celles avec $H^{dipole}_{int}$ : le MAO du champ est transféré au centre de masse.\par
 Au contraire, $H^{quad,2}_{int}$ et $H^{quad,3}_{int}$ sont différents. Pour le premier, la phase est $e^{\rmi(\ell-1)\phi_Q}e^{\rmi \phi_q}$. Le calcul de $\Braket{L'_Q|e^{\rmi(\ell-1)\phi_Q}|L_Q}$, intégrale selon l'angle externe, va donner la règle de sélection :
@@ -1143,19 +1152,19 @@ Le champ de MAO $\ell$ transfère donc $(\ell-1)$ unités de moment angulaire à
 Ces résultats démontrent un comportement très riche entre dynamiques externes et internes d'un atome, tant est que l'on puisse réaliser des transitions quadripolaires électriques. Le transfert de MAO vers la dynamique externe de l'atome est maintenant couramment utilisé en manipulation de micro-particules, où il permet de faire tourner la particule autour de l'axe de propagation de la lumière \mycite{heprl1995}. Au contraire, si le MAO est transféré à la dynamique interne de l'atome, il sera mis en rotation autour de son propre axe.\par
 Le couplage entre moments internes et externes a été utilisé notamment par \mycite{MuthukrishnanJOB2002}, qui ont même pu intriquer ces deux quantités. On peut également citer le travail théorique de \mycite{MondalPRA2014}, qui propose un schéma d'orientation de molécules froides par un faisceau de Laguerre-Gauss basé sur un transfert de MAO entre dynamique externe et interne.
 
-Notons toutefois que ces deux travaux utilisent des atomes ou des molécules froides pour circonvenir au problème de la faible probabilité d'effectuer une transition quadripolaire électrique. En effet, si un atome est suffisamment refroidi, sa longueur de de Broglie se rapproche de la longueur d'onde optique, rendant les termes d'ordre supérieurs en $a/\lambda$ plus importants. \mycite{schmiegelowEPJ2012} montrent que le poids du terme quadripolaire évolue en $a/w_0$. Une autre piste serait de diminuer la longueur d'onde du rayonnement. Comme on le verra dans la partie suivante, la génération d'harmonique d'ordre élevé permet de générer des champs portant du MAO à des longueurs d'onde très faibles.
+Notons toutefois que ces deux travaux utilisent des atomes ou des molécules froides pour circonvenir au problème de la faible probabilité d'effectuer une transition quadripolaire électrique. En effet, si un atome est suffisamment refroidi, sa longueur de de Broglie se rapproche de la longueur d'onde optique, rendant les termes d'ordre supérieurs en $a/\lambda$ plus importants.  Une autre piste serait de diminuer la longueur d'onde du rayonnement. Comme on le verra dans la partie suivante, la génération d'harmonique d'ordre élevé permet de générer des champs portant du MAO à des longueurs d'onde très faibles.%\mycite{schmiegelowEPJ2012} montrent que le poids du terme quadripolaire évolue en $a/w_0$.
 
-Pour comprendre de manière intuitive les conclusions obtenues, considérons un faisceau de Laguerre-Gauss, dont l'expression est donnée par l'équation \ref{eq:lgmodes}. Si un atome de taille $a$ est placé à une distance $r\gg a$ du centre, la phase du faisceau est localement plate à l'échelle de l'atome. On retrouve donc le comportement d'une onde plane, où aucun MAO n'est transféré à l'atome. Si au contraire on veut que l'atome puisse ``voir'' la phase hélicoïdale, il faut le placer très près du centre, où le gradient de phase est le plus important. Malheureusement, c'est aussi là où l'intensité du faisceau tend vers zéro, rendant le transfert expérimental de MAO vers la dynamique interne de l'atome difficile. Une étude théorique à ce sujet a été effectuée par \mycite{PiconOE2010} : les auteurs considèrent un faisceau ultraviolet portant du MAO interagissant avec un atome à un électron. Ils observent une modification des règles de sélection, mais en utilisant une intensité pic gigantesque, inatteignable en pratique.
+Pour comprendre de manière intuitive les conclusions obtenues, considérons un faisceau de Laguerre-Gauss, dont l'expression est donnée par l'équation \ref{eq:lgmodes}. Si un atome de taille $a$ est placé à une distance $r\gg a$ du centre, la phase du faisceau est localement plate à l'échelle de l'atome. On retrouve donc le comportement d'une onde plane, où aucun MAO n'est transféré à l'atome. Si au contraire on veut que l'atome puisse ``voir'' la phase hélicoïdale, il faut le placer très près du centre, où le gradient de phase est le plus important. Malheureusement, c'est aussi là où l'intensité du faisceau tend vers zéro, rendant le transfert expérimental de MAO vers la dynamique interne de l'atome difficile. Une étude théorique à ce sujet a été effectuée par \mycite{PiconOE2010} : les auteurs considèrent un faisceau ultraviolet portant du MAO interagissant avec un atome à un électron. Leur calcul montre une modification des règles de sélection, mais en utilisant une intensité pic gigantesque, inatteignable en pratique.
 
-Illustrons pour finir les conclusions de cette partie en citant le travail de \mycite{schmiegelowarxiv2015}. Pour observer des échanges de MAO supérieurs à 1, les auteurs ont utilisé un ion refroidi placé au centre du faisceau et une focalisation proche de la limite de diffraction. On vérifie facilement qu'au centre du faisceau le gradient d'un champ de Laguerre-Gauss est maximal, et c'est précisément lui qui intervient dans une transition quadripolaire. Les auteurs démontrent très joliment que ce gradient est suffisant pour exciter un ion \textit{in the dark} en mesurant une oscillation de Rabi (voir la figure \ref{Fig:Schmiegelow}), au point d'être capable de mesurer spatialement l'amplitude et le gradient du champ en déplaçant l'ion dans le faisceau.
+Illustrons pour finir les conclusions de cette partie en citant le travail de \mycite{schmiegelowarxiv2015}. Pour observer des échanges de MAO supérieurs à 1, les auteurs ont utilisé un ion refroidi placé au centre du faisceau et une focalisation proche de la limite de diffraction. On vérifie facilement qu'au centre du faisceau le gradient d'un champ de Laguerre-Gauss est maximal, et c'est précisément lui qui intervient dans une transition quadripolaire. Les auteurs démontrent que ce gradient est suffisant pour exciter un ion \textit{in the dark} en mesurant une oscillation de Rabi (voir la figure \ref{Fig:Schmiegelow}), et s'en servent pour mesurer spatialement l'amplitude et le gradient du champ en déplaçant l'ion dans le faisceau.
 \newpage
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.9\columnwidth]{Figures/schmiegelow.png}
-\caption{Observation de transition quadripolaire. (a) Transitions possibles mettant en jeu le MAS et le MAO. (b) Amplitudes de transition mesurées en utilisant une oscillation de Rabi. (c) Amplitude de transition dipolaire (rouge) et quadripolaire (bleu) en fonction de la position transverse de l'ion. Ces amplitudes sont reliées respectivement à l'amplitude du champ et du gradient du champ.}
+\caption{Observation de transitions quadripolaires électriques. (a) Transitions possibles mettant en jeu le MAS et le MAO. (b) Amplitudes de transition mesurées en utilisant une oscillation de Rabi. (c) Amplitude de transition dipolaire (rouge) et quadripolaire (bleu) en fonction de la position transverse de l'ion. Ces amplitudes sont reliées respectivement à l'amplitude du champ et du gradient du champ. Tiré de \mycite{schmiegelowarxiv2015}.}
 \label{Fig:Schmiegelow}
 \end{figure}
 
-
-Nous avons maintenant terminé cette partie sur le concept de moment angulaire de la lumière. Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans le chapitre III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans le chapitre IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.
+\subsubsection{Conclusion de la partie II}
+Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans le chapitre III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans le chapitre IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.

@@ -399,6 +399,17 @@
   File                     = {Published version:BoeglinN2010.pdf:PDF}
 }
 
+@Article{bonner2000,
+  Title                    = {Parity violation and the evolution of biomolecular homochirality},
+  Author                   = {Bonner, William A},
+  Journal                  = {Chirality},
+  Year                     = {2000},
+  Number                   = {3},
+  Pages                    = {114--126},
+  Volume                   = {12},
+  Publisher                = {Wiley Online Library}
+}
+
 @Book{bornandwolf,
   Title                    = {Principles of optics: electromagnetic theory of propagation, interference and diffraction of light},
   Author                   = {Born, Max and Wolf, Emil},
