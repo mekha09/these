@@ -1,19 +1,19 @@
-\chapter{Le moment angulaire orbital dans la génération d'harmoniques d'ordre élevé}
+\part{Le moment angulaire orbital dans la génération d'harmoniques d'ordre élevé}
 \label{CH:OAM_HHG}
-\section{Introduction}
+\chapter{Introduction}
 La GHOE est un phénomène aujourd'hui bien compris et qui a été longuement étudié en fonction de nombreux paramètres : intensité, pression, longueur d'onde, etc. Toutefois, mis à part quelques travaux numériques sur les faisceaux de Bessel \mycite{augustepra2008}, la GHOE à partir de faisceaux portant du MAO n'a été que très peu étudiée. 
 
 Dans ce chapitre nous décrirons en détail le processus de GHOE à partir de faisceaux de Laguerre-Gauss, qui comme on l'a vu dans la partie \ref{sec:oamLG} sont des modes propres du moment angulaire orbital. Nous commencerons par décrire notre dispositif de génération d'harmoniques d'ordre élevé dans le cas habituel d'un mode laser Gaussien, puis expliquerons comment passer au cas Laguerre-Gaussien. Les résultats observés seront ensuite expliqués à l'aide de simulations numériques, avant de conclure par une mesure spatio-temporelle complète du rayonnement généré. 
 
 \newpage
-\section{Génération d'harmoniques d'ordre élevé à partir de modes de Laguerre-Gauss}
-\subsection{Le cas Gaussien : Aspects expérimentaux de la génération d'harmoniques d'ordre élevé}
+\chapter{Génération d'harmoniques d'ordre élevé à partir de modes de Laguerre-Gauss}
+\section{Le cas Gaussien : Aspects expérimentaux de la génération d'harmoniques d'ordre élevé}
 \label{Sec:HHG_G}
 Note : cette section sera probablement déplacée en partie \ref{sec:expHHG}.
-\subsubsection{Système laser}
+\subsection{Système laser}
 Toutes les expériences présentées dans ce chapitre ont été réalisées sur le laser LUCA (Laser Ultra-Court Accordable) du LIDYL au CEA Saclay. Il délivre des impulsions ayant une enveloppe temporelle gaussienne de largeur à mi-hauteur $\tau = 50$ fs et un profil spatial gaussien de largeur $w_0 = 15$ mm à $\frac{1}{e^2}$. La longueur d'onde utilisée est 800 nm, et le taux de répétition est de 20 Hz. Ce système dispose d'une fibre utilisée pour filtrer spatialement le faisceau, ce qui garantit un profil très proche d'un mode gaussien pur \mycite{MahieuAPB2015}. Le prix à payer est une diminution de l'énergie par impulsion, qui atteint quand même environ 35 mJ après la fibre et le dernier étage de compression.
 
-\subsubsection{Génération d'harmoniques d'ordre élevé}
+\subsection{Génération d'harmoniques d'ordre élevé}
 Nous commençons par mettre en forme le faisceau laser : son diamètre est ajusté à l'aide d'un iris et son énergie est ajustée grâce à un atténuateur constitué d'une lame demi-onde et d'une paire de polariseur croisés. \`{A} la sortie de cet atténuateur, la polarisation du laser est verticale (S). Le faisceau est ensuite focalisé par une lentille dans un jet de gaz délivré par une vanne pulsée à la fréquence du laser par un système piezo-électrique (Attotech). L'utilisation d'une vanne pulsée permet de n'envoyer du gaz que lorsque le faisceau laser est présent, ce qui limite la pression résiduelle dans les chambres à vide. Ainsi, on peut atteindre une pression assez élevé (XXX) dans la région focale sans que l'émission harmonique ne soit réabsorbée par le gaz résiduel. Un autre paramètre important est le diamètre de l'orifice de la vanne (ici, 150 $\si{\micro\metre}$) : en choisissant un diamètre faible, on crée une extension supersonique du gaz ce qui garantit une longueur d'interaction avec le laser courte dans la direction longitudinale. On s'approche ainsi des conditions idéales d'un plan d'atomes, ce qui limite l'importance des effets d'accord de phase dans la GHOE. \par
 Le choix du gaz dépend de l'expérience réalisée : on peut par exemple utiliser une molécule dont on étudie la réponse - c'est le principe de la spectroscopie harmonique. Le gaz n'est pas l'objet d'étude dans notre cas, on préférera donc choisir un système simple, facile à se procurer, et ayant une grande section efficace. Le gaz le plus courant est l'Argon, qui est peu coûteux et génère de manière très efficace. Son potentiel d'ionisation est de 15.76 eV, ce qui donne une énergie de coupure assez faible et qui empêche de générer des ordres harmoniques très élevés. Dans les cas où on désire générer des ordres élevés et nombreux, on pourra utiliser d'autres gaz rares comme le Néon ($I_p$ = 21.6 eV) même si la génération sera moins efficace.
 
@@ -97,10 +97,10 @@ Les figures \ref{Fig:SpectrumGAr} et \ref{Fig:SpectrumGNe} présentent des spect
 \label{Fig:SpectrumGNe}
 \end{figure}
 
-\subsection{Génération de modes de Laguerre-Gauss dans le visible et proche infrarouge}
+\section{Génération de modes de Laguerre-Gauss dans le visible et proche infrarouge}
 Ayant décrit la génération ``habituelle'' d'harmoniques d'ordre élevé, décrivons maintenant l'expérience où le laser générateur possède un mode de Laguerre-Gauss, dont l'expression a été donnée au chapitre précédent (équation \ref{eq:lgmodes}). Les modes de Laguerre-Gauss possèdent un moment angulaire orbital bien défini grâce à leur phase hélicoïdale. Plus précisément, c'est le terme $e^{\rmi\ell\theta}$, également présent dans les modes de Bessel, qui leur confère cette propriété. Il sera question de l'index radial $p$ des modes de Laguerre-Gauss plus loin dans cette thèse, mais il n'a pour l'instant pas d'importance pour notre problème. La première question est donc de savoir comment produire un mode de Laguerre-Gauss d'index $(\ell_{IR},0)$ dans l'infrarouge. 
 
-\subsubsection{Superposition de modes de Hermite-Gauss}
+\subsection{Superposition de modes de Hermite-Gauss}
 \label{sec:hg_modes}
 Les faisceaux de LG étant des modes du champ électromagnétique, on peut d'abord penser à modifier le laser lui-même pour qu'il lase directement dans le mode désiré. En introduisant des éléments absorbants dans la cavité, il est a priori possible d'interdire la génération d'un mode Gaussien. En pratique, il est assez compliqué de sélectionner un mode de LG. Il est par contre assez simple de sélectionner un des modes de \textit{Hermite-Gauss}, qui sont les solutions de l'équation d'onde en coordonnées cartésiennes. Ces modes sont souvent appelés modes $\mbox{TEM}_{nm}$, pour ``Transverse Electro-Magnetic'', dont le mode Gaussien $\mbox{TEM}_{00}$ n'est simplement que le mode d'index le plus bas. Quelques uns de ces modes sont représentés sur la figure \ref{Fig:hgmodes}. En insérant simplement un fil vertical (resp. horizontal) dans la cavité laser, on bloque la génération du $\mbox{TEM}_{00}$ et on obtient un mode $\mbox{TEM}_{01}$ (resp. $\mbox{TEM}_{10}$).
 
@@ -134,7 +134,7 @@ Comme dit plus haut, il est possible de générer un mode $\mbox{TEM}_{n,m}$ en 
 
 L'intérêt de ce dispositif est de créer des modes purs : on obtient exactement le faisceau de Laguerre-Gauss recherché. Il présente cependant deux inconvénients : (1) il faut disposer d'un mode $\mbox{TEM}_{0\ell}$ au départ, ce qui devient compliqué dès que $\ell$ augmente. De plus, il est peu pratique de devoir modifier la cavité laser, particulièrement dans le cas des lasers de puissances utilisés pour la HHG. (2) Le faisceau est focalisé dans une dimension entre les deux lentilles. La puissance fournie par notre laser imposerait de réaliser la conversion dans une enceinte à vide, sans quoi la focalisation dans l'air détruira le profil spatial et temporel du faisceau. Pour ces raisons, nous avons choisi une méthode plus flexible et plus adapté à un laser de puissance.
 
-\subsubsection{Utilisation d'une lame de phase à spirale}
+\subsection{Utilisation d'une lame de phase à spirale}
 Cette technique est probablement la façon la plus intuitive d'ajouter le terme de phase qui nous intéresse au faisceau. Pour rajouter une phase $e^{\rmi\ell\theta}$, il suffit d'utiliser une lame de verre transparente dont l'épaisseur varie proportionnellement à $\theta$. On forme ainsi une \textit{lame de phase à spirale} (Spiral Phase Plate, SPP), concept proposé dans \mycite{BeijersbergenOC1994} et représenté sur la Figure \ref{Fig:SPP}.\par
 \begin{figure}[!ht]
 \centering
@@ -187,7 +187,7 @@ Pour finir, mentionnons une technique permettant de relâcher un peu les contrai
 \end{center}
 La qualité du mode obtenue est donc très correcte même jusqu'à 8 niveaux. Les auteurs montrent également que ces lames de phase sont adaptées à des utilisations avec des faisceaux courts et intenses, contrairement à la plupart des autres méthodes. Pour ces raisons, nous avons finalement choisi d'utiliser une lame de phase discrétisée sur 16 niveaux, et disposons de lames $\Delta\ell = 1$ et $\Delta\ell = 2$ à 800 nm, ce qui nous permet d'aller jusqu’à $\ell = 3$ en les mettant l'une après l'autre.
 
-\subsubsection{Résultats expérimentaux sur la création de modes de Laguerre-Gauss dans l'infrarouge}
+\subsection{Résultats expérimentaux sur la création de modes de Laguerre-Gauss dans l'infrarouge}
 \label{sec:spp}
 Même si le système laser a été décrit plus haut, notons encore une fois l'importance du filtrage spatial installé sur notre chaîne : il nous garantit un mode Gaussien très pur, ce qui favorise grandement la création de modes Laguerre-Gaussien de qualité. \par
 Les lames de phases utilisées ont été construites par la société Silios Technologies et font 17 mm de diamètre. Elle ou elles sont insérées directement après l'iris et avant la lentille. Le faisceau étant bien collimaté, nous n'avons pas observé de différence notable selon le placement de la lame. Il est intéressant d'observer l'intensité du faisceau un peu après le passage dans la lame : 
@@ -241,8 +241,8 @@ Ceci constitue donc une preuve directe que le faisceau est composé très majori
 
 Nous concluons donc que même si le contenu modal devient moins pur à mesure que $\ell$ augmente, le mode dominant reste celui qui nous intéresse. La GHOE étant un processus très non-linéaire, c'est lui qui contribuera majoritairement. 
 
-\subsection{Génération d'harmoniques d'ordre élevé d'un faisceau de Laguerre-Gauss}
-\subsubsection{Contraintes expérimentales}
+\section{Génération d'harmoniques d'ordre élevé d'un faisceau de Laguerre-Gauss}
+\subsection{Contraintes expérimentales}
 \label{sec:contraintes}
 Une fois qu'on dispose d'un faisceau infrarouge de MAO défini, l'expérience ne diffère en principe pas du cas Gaussien présenté dans la partie \ref{Sec:HHG_G}. En pratique, un problème important subsiste : celui de l'intensité pic. Nous avons vu que pour générer des harmoniques d'ordre élevé, l'intensité au foyer doit être de l'ordre de $\SI{1e14}{W/cm^2}$. Pour un mode de Laguerre-Gauss d'index $(\ell,0)$, l'intensité maximale est obtenue en $r_\mathrm{max}$ (équation \ref{Eq:rmax_LG}) :
 \begin{align*}
@@ -325,7 +325,7 @@ L'expression \ref{eq:focusgrating} contient un polynôme de Hermite d'ordre $\el
 
 La dernière contrainte expérimentale est celle de la divergence du faisceau, qui évolue comme $\sqrt{\ell}$. Nous choisissons de réduire cette divergence en utilisant une lentille de focale f = 2 m, de sorte à ce que même si $\ell$ devient grand, les harmoniques ne soient pas tronquées par les optiques du dispositif. Le prix à payer étant bien sûr une intensité disponible au foyer plus faible. 
 
-\subsubsection{Résultats}
+\subsection{Résultats}
 \label{sec:results_lg}
 Nous présentons sur la figure \ref{Fig:LGSpectrumAr} les spectres obtenus après les modifications expliquées ci-dessus effectuées, en utilisant $\ell_{1} = 1,\;2,\;3$. 
 
@@ -356,8 +356,8 @@ Nous avons également pu effectuer cette expérience dans le Néon, le spectre o
 
 Les propriétés observées sont donc robustes : elles sont vérifiées pour plusieurs valeurs du MAO de l'infrarouge et dans des gaz différents. Nous allons voir dans la partie suivante qu'elles sont suffisantes pour démontrer la conservation du moment angulaire dans le processus de génération d'harmoniques.
 
-\section{Conservation du moment angulaire orbital dans la GHOE}
-\subsection{Vers une mesure non-interférométrique du moment angulaire orbital}
+\chapter{Conservation du moment angulaire orbital dans la GHOE}
+\section{Vers une mesure non-interférométrique du moment angulaire orbital}
 Comme vu dans le chapitre II, le moment angulaire est une quantité conservée. Dans l'interaction laser-matière que nous étudions, le MAO porté par le faisceau infrarouge doit être transféré soit à la matière, soit au faisceau harmonique généré. Il est donc crucial de parvenir à mesurer le MAO porté par chaque ordre harmonique du spectre. Deux équipes se sont déjà intéressées à ce problème :
 
 \begin{itemize} 
@@ -370,7 +370,7 @@ Toutefois, le résultat de Zürch \textit{et al.} a été obtenu dans des condit
 
 Si les conditions de génération sont si importantes dans la GHOE à partir de faisceaux de Laguerre-Gauss, il faut disposer de méthodes de caractérisation robustes. Les techniques utilisées dans ces deux travaux reposent sur l'imagerie de franges d'interférences. Bien que directes et élégantes, ces méthodes ont un inconvénient majeur : elles deviennent impossible à utiliser quand la longueur d'onde diminue. Par exemple, pour $q=15$ les franges d'interférences de \mycite{GariepyPRL2014} deviennent déjà difficiles à analyser. \`{A} un âge de la physique attoseconde où la tendance est de toujours plus diminuer la longueur d'onde (jusqu'à l'°angström, \mycite{PopmintchevScience2012}), il est souhaitable de caractériser le MAO de la lumière sans méthode de diffraction. Nous allons démontrer que c'est possible en étudiant une autre signature de la valeur du MAO : le profil radial annulaire dû à la singularité de phase.
 
-\subsection{Simulations numériques de la propagation de modes de Laguerre-Gauss}
+\section{Simulations numériques de la propagation de modes de Laguerre-Gauss}
 Dans la section \ref{sec:results_lg}, on a observé que les harmoniques étaient composées d'un unique anneau et avaient le même diamètre en champ lointain. Dans cette partie nous allons démontrer que ces résultats expérimentaux sont seulement compatibles avec les points suivants :
 
 \begin{enumerate}
@@ -380,7 +380,7 @@ Dans la section \ref{sec:results_lg}, on a observé que les harmoniques étaient
 \label{enum:properties}
 \end{enumerate}
 
-\subsubsection{Reformulation de l'intégrale de Huygens-Fresnel pour le calcul}
+\subsection{Reformulation de l'intégrale de Huygens-Fresnel pour le calcul}
 Pour démontrer ces résultats nous calculerons le profil en champ lointain des harmoniques pour de nombreuses valeurs de $(\ell_q,p_q)$. La propagation d'un champ au foyer vers le champ lointain, où l'on observe le spectre harmonique, est décrite par l'intégrale de Huygens-Fresnel \mycite{bornandwolf}, applicable dans l'approximation paraxiale pour tout $z$ le long de l'axe optique :
 	\begin{equation*}
 	{E_{z,{\lambda _q}}}\left( {x,y} \right) = \frac{{{e^{\;\;\rmi\frac{{\pi }}{{{\lambda _q}z}}\left( {{x^2} + {y^2}} \right)}}}}{{\rmi{\lambda _q}z}}\int \limits_{ - \infty }^\infty \int \limits_{ - \infty }^\infty  {E_0}\left( {{x_0},{y_0}} \right)\;\;{{\rme}^{\;\rmi\frac{\pi }{{{\lambda _q}z}}\left( {{x_0}^2 + {y_0}^2} \right)}}{{\rme}^{\;\frac{{ \rmi 2{\pi}\left( {x{x_0} + y{y_0}} \right)}}{{z{\lambda _q}}}}}{\rmd}{x_0}{\rmd}{y_0},
@@ -441,7 +441,7 @@ F_{\ell_q}\left(\frac{{2{\pi }R}}{{z{\lambda_q}}}\right).
 \end{equation}
 La transformée de Hankel exprime une fonction $f(r)$ comme une somme infinie de fonctions de Bessel de première espèce. La transformée d'ordre 0 n'est autre qu'une transformée de Fourier à deux dimensions en coordonnées cylindriques. Elle est intéressante dans notre cas car elle réduit le calcul à une seule dimension. Numériquement, cette transformée doit être évaluée de manière discrète pour tout $z={z_0,\ldots,z_{f}}$. \cite{GuizarJOSA2004} proposent un algorithme qui approxime ce calcul de manière très efficace. D'abord, une matrice de transformation est calculée à partir des zéros des fonctions de Bessel. Ces zéros peuvent être calculés une fois pour toute et stockés. \`{A} partir de cette matrice, la transformée de Hankel est réduite à une simple multiplication matrice-vecteur, opération très rapide qu'on effectue pour tout $z={z_0,\ldots,z_{f}}$.
 
-\subsubsection{Résultats des simulations numériques}
+\subsection{Résultats des simulations numériques}
 
 Le premier point à démontrer (voir page \pageref{enum:properties}) est que les mode qui constituent l'harmonique $q$ sont tous d'indice $\ell_q$. L'algorithme décrit ci-dessus a été implémenté sous Matlab et nous permet de vérifier ce point. On considère l'harmonique 11, de longueur d'onde $\lambda_{11}=\SI{72}{nm}$. Par simplicité on suppose que les modes qui la constituent vérifient tous $p=0$. On a donc $E_{11} = \mathcal{LG}(\ell_q^1,0)+\ldots+\mathcal{LG}(\ell_q^N,0)$. L'expression \ref{eq:hankelprop} permet de calculer la propagation de chacun des modes $\mathcal{LG}(\ell_q^i,0)$, qu'on pourra ensuite sommer pour obtenir le profil de l'harmonique. \par
 Au foyer, le diamètre de l'anneau de l'harmonique 11 est le même que celui de l'infrarouge, que l'on choisit égal à $\SI{150}{\micro\m}$. Le faisceau diverge ensuite jusqu'au réseau de diffraction, puis continue à diverger dans la direction verticale jusqu'au détecteur. On prendra une distance d'observation de $z_f=\SI{500}{mm}$. La figure \ref{fig:H11_L11} donne le résultat de la propagation numérique de l'harmonique 11 dans ces conditions, si on suppose $\ell_{11}=11$.
@@ -507,7 +507,7 @@ On voit dans tous les cas que le profil d'intensité en champ lointain présente
 
 
 
-\subsection{Interprétation des résultats observés à partir de calculs analytiques}
+\section{Interprétation des résultats observés à partir de calculs analytiques}
 Nous sommes donc dans le cas simple d'une série d'harmoniques d'ordre $q$, chacune étant constituée d'un unique mode de Laguerre-Gauss. On sait également que ce mode est  d'indice $p=0$ et ne présente donc qu'un anneau unique. Expérimentalement, nous avons observé que le diamètre de l'anneau était constant en fonction de $q$. Trouvons alors les conditions sur $\ell_q$ imposées par cette propriété.\\
 
 Pour un ordre $q$ et une position $z$ donnés, le rayon de l'anneau est :
@@ -531,7 +531,7 @@ Le diamètre des anneaux est constant si ${r_{{\mathrm{max}}}}$ est indépendant
 
 En conclusion, nous avons démontré qu'une condition suffisante à la relation $\forall q,\; \ell_q = q\times\ell_1$ était l'observation d'une série d'anneaux simples de diamètre constant avec $q$. Cette méthode ne nécessite qu'une simple mesure d'intensité en champ lointain et est suffisante pour caractériser le moment angulaire orbital porté par le faisceau harmonique. Dans la section suivante, nous allons étudier le contenu modal de cette émission plus en détail. Pour ce faire, il sera nécessaire d'effectuer des calculs précis de la GHOE.
 
-\subsection{Calculs SFA : une simulation complète de l'expérience réalisée}
+\section{Calculs SFA : une simulation complète de l'expérience réalisée}
 Jusqu'à présent nous avons adopté une description très simple où la GHOE est une ``boîte noire''. Les seuls arguments utilisés ont été le profil en champ lointain observé et le fait que les maxima d'intensité des harmoniques et de l'infrarouge coïncident au foyer.\\
 Ici, nous nous intéressons au processus plus en détail. En particulier, nous aimerions comprendre l'influence de l'accord de phase et des effets de propagation dans le milieu de génération, \mycite{ZurchNP2012} utilisant ces effets pour expliquer leurs résultats. Les calculs ont été effectués par Thierry Auguste et s'attachent à reproduire numériquement l'expérience réalisée. Pour le faisceau infrarouge, l'intégralité du dispositif expérimental (voir figure \ref{Fig:ExpG}) est prise en compte. On considère un faisceau spatialement et temporellement gaussien, de waist égal à 6.25 mm et de durée égale à 50 fs (largeur à mi-hauteur). Ce faisceau $\bm{E_1}$ passe d'abord à travers la lame de phase en spirale, modélisée par $\phi(x,y) = \ell_1 \arctan{(y/x)}$, où $(x,y)$ sont les coordonnées cartésiennes. $\bm{E_1}$ est ensuite propagé à l'aide de l'intégrale de Huygens-Fresnel jusqu'à une lentille de focale 1 m, qui le focalise au milieu d'un jet d'argon de profil Lorentzien (largeur à mi-hauteur de $\SI{500}{\micro\meter}$). Au foyer, on obtient un waist Gaussien équivalent de $\SI{40}{\micro\meter}$, soit une distance de Rayleigh équivalente $z_R=\SI{6,5}\mm$. La pression de gaz maximale est de $\SI{10}{\milli\bar}$ et l'intensité pic du laser vaut \SI{1,5e14}{W/cm^2}.
 
@@ -581,8 +581,8 @@ Contrairement aux profils expérimentaux, ces images présentent une série d'an
 Comme attendu, le diamètre est relativement constant sur tout le spectre, mis à part un saut vers l'harmonique 27. Ceci coïncide avec le domaine où les deux trajectoires quantiques commencent à fusionner : l'énergie de coupure est attendue à $I_c=I_p+3.14U_p=28.3\times(\hbar\omega_{IR})$. Dans cette zone, les trajectoires peuvent interférer spatialement et modulent le profil spatial des harmoniques. Le saut est alors interprété comme le passage d'une frange d'interférence sur l'anneau central. Cet effet est bien connu dans la GHOE par faisceau Gaussien \mycite{ZairPRL2008}.\par
 Lorsqu'on double le MAO du faisceau de génération, le diamètre des harmoniques augmente de $1.4\approx\sqrt{2}$, ce qui est consistant avec la loi en $\sqrt{\ell_1}$ trouvée plus haut (\ref{eq:rmax_conservation}). Nous concluons que même en prenant en compte les effets de propagation et d'accord de phase, les résultats obtenus sont inchangés. Dans la section suivante, nous allons étudier plus en détail le rôle des trajectoires quantiques dans le problème, numériquement et expérimentalement.
 
-\section{Rôle des trajectoires quantiques dans la GHOE à partir de faisceaux de Laguerre-Gauss}
-\subsection{Observation des contributions des différentes trajectoires quantiques à partir des calculs numériques}
+\chapter{Rôle des trajectoires quantiques dans la GHOE à partir de faisceaux de Laguerre-Gauss}
+\section{Observation des contributions des différentes trajectoires quantiques à partir des calculs numériques}
 Nous avons déjà mentionné que la simulation montre deux contributions distinctes au profil en champ lointain. Pour étudier ce point plus en détail, on peut varier la position $z_0$ du foyer infrarouge par rapport au jet de gaz, qui contrôle le poids relatif des trajectoires. Pour la figure \ref{Fig:FarFieldSimu}, nous avions $z_0=0$. La figure \ref{Fig:H21_traj}~(a-c) présente le profil obtenu en champ lointain lorsque le laser est focalisé en amont, au milieu, et en aval du jet. Quand $z_0<0$, c'est-à-dire que le laser est focalisé avant le jet, l'accord de phase favorise fortement la trajectoire courte. Dans ce cas, le profil en champ lointain ne présente qu'un seul anneau : comme dans l'expérience on génère un mode de Laguerre-Gauss quasiment pur. Au contraire si $z_0>0$, on observe plusieurs anneaux sur un profil qui rappelle un mode de LG avec $p\neq 0$. Dans le cas intermédiaire, le profil est beaucoup plus modulé à cause des interférences entre trajectoires quantiques. On vérifie cet effet en sélectionnant numériquement tour à tour une seule trajectoire. Les panneaux \ref{Fig:H21_traj}~(d,e) montrent que l'on retrouve bien un anneau presque pur pour la courte, et une série d'anneaux pour la longue.
 
 
@@ -594,8 +594,8 @@ Nous avons déjà mentionné que la simulation montre deux contributions distinc
 \label{Fig:H21_traj}
 \end{figure}
 
-\subsection{Observation expérimentale de ces contributions}
-\subsubsection{Modification du dispositif expérimental}
+\section{Observation expérimentale de ces contributions}
+\subsection{Modification du dispositif expérimental}
 Cherchons maintenant à observer des profils similaires de manière expérimentale. On s'attend à observer l'apparition d'anneaux supplémentaires plus divergents et moins intenses, il faut adapter notre dispositif en conséquence. En particulier, le réseau cylindrique de diffraction risque de distordre l'image trop fortement, nous avons donc cherché à construire un spectromètre donnant véritablement une image en coordonnées ``spatiale-spatiale''. 
 Nous avons repris le schéma proposé par Hartmut Ruf dans sa thèse \mycite{Ruf2012}. L'idée est d'illuminer aussi peu de traits du réseau que possible, de sorte à réduire la dispersion induite par le réseau. De plus, on cherche à utiliser un dispositif le moins astigmate possible, de sorte à éviter les effets de conversion $\mathcal{LG}\rightarrow \mathcal{HG}$. Pour ce faire, on utilise un réseau de diffraction à incidence quasi-normale. Pour réduire le nombre de traits illuminés, le faisceau est d'abord focalisé par un miroir sphérique, lui aussi en incidence quasi-normale. Le réseau est alors positionné juste avant le foyer du miroir de sorte à rester en dessous du seuil de dommage. Bien sûr, l'incidence normale des optiques réduit fortement le flux dans l'UVX. Pour garantir une réflectivité correcte, le miroir sphérique est traité avec un revêtement de $\mathrm{B}_\mathrm{4}\mathrm{C}$, qui réfléchit à 10-30 \% jusqu'à l'ordre harmonique 19 avec un angle d'incidence de 10$\degres$ (voir figure \ref{Fig:reflectivityB4C}). 
 
@@ -617,7 +617,7 @@ Le réseau de diffraction (Spectrogron) dispose de $\sigma=\SI{600}{grooves/mm}$
 \label{Fig:DispHartmut}
 \end{figure}
 
-\subsubsection{Calibration du spectromètre}
+\subsection{Calibration du spectromètre}
 Bien entendu, un réseau de diffraction aussi simple ne sera jamais aussi performant que ceux conçus et optimisés pour la gamme spectrale étudiée (\mycite{KitaAO1983}). En particulier, les différents ordres de diffraction et les différentes harmoniques sont mal séparés, ce qui demande de placer une fente au foyer. Un autre point délicat est la calibration du spectromètre : il est a priori difficile de distinguer les différents ordres de diffraction entre eux. 
 
 Pour calibrer le spectre, il faut pouvoir reconnaître plusieurs ordres de diffraction correspondant à la même longueur d'onde. Pour ce faire, nous choisissons d'utiliser une technique d'interférométrie à deux faisceaux, similaire à celle proposée par \mycite{bertrandprl2011}. \`{A} l'aide d'un interféromètre, on rajoute un deuxième faisceau de perturbation à 800nm, non-colinéaire au premier. Au foyer, les deux faisceaux se croisent avec un angle et créent un réseau de diffraction dans la dimension verticale. Ainsi, il est possible d'absorber un photon venant du deuxième faisceau comme schématisé sur la figure \ref{Fig:DiffSchema}. On observe donc deux pics venant de deux chemins quantiques différents : par exemple pour l'harmonique 11, on peut absorber 11 photons du faisceau principal et créer le pic habituel, ou bien absorber 10 photons du principal et 1 de la perturbation. La conservation des moments nous donne la position de ce nouveau pic, qui est diffracté dans la dimension verticale. Comme sa position dépend de la longueur d'onde de l'harmonique, la différence entre pic principal et diffracté permettent d'identifier 
@@ -647,8 +647,8 @@ Le spectre maintenant calibré, on procède à des mesures de spectres harmoniqu
 
 On observe des séries d'anneaux parfaitement ronds et très homogènes, signe que l'on observe bien le profil ``spatial-spatial'' des harmoniques, et non pas une convolution spatio-spectrale. Comme prédit théoriquement, quand $z_0$ augmente, des anneaux dus à la trajectoire longue commencent à apparaître. Nous allons maintenant interpréter ce résultat en terme d'indice $p$ des modes de LG.
 
-\subsection{Interprétation des résultats obtenus : le rôle de l'indice radial des modes de Laguerre-Gauss}
-\subsubsection{Sens physique de l'indice radial}
+\section{Interprétation des résultats obtenus : le rôle de l'indice radial des modes de Laguerre-Gauss}
+\subsection{Sens physique de l'indice radial}
 Comme mentionné plus haut, le profil obtenu quand la trajectoire longue domine ressemble à un mode de Laguerre-Gauss de $p\neq 0$. Il est a priori impossible de connaître le contenu modal exact à partir d'une mesure d'intensité : le mode peut être une superposition d'un grand nombre de modes de $p$ différents, ayant chacun une phase et une amplitude inconnues. On peut toutefois chercher d'où ces modes $p$ proviennent dans l'expérience réalisée.
 
 N'étant pas relié à la grandeur physique du MAO, le sujet de l'indice radial des modes de Laguerre-Gauss a longtemps était délaissé. En général, la présence de modes $p\neq 0$ est indésirable et considérée comme du bruit dans la génération d'un mode $(\ell,p=0)$ pur. C'est seulement assez récemment que des équipes se sont intéressées à ce paramètre, le nommant par exemple \textit{the forgotten quantum number} \mycite{Plickpra2015}. \mycite{KarimiPRA2014} ont réalisés des interférences de Hong-Ou-Mandel, montrant que $p$ était un nombre quantique valable. L'indice $p$ a été utilisé par \mycite{SalakhutdinovPRL2012} et \mycite{KrennPNAS2014} pour produire des états intriqués de dimensions impressionantes, et ses propriétés physiques sont étudiées en détail dans \mycite{Plickpra2015} et 	\mycite{KarimiPRA2014-2}. Enfin, \mycite{MendozaOL2015} ont montré que les modes de $p$ élevés avaient des propriétés d'auto-régénération similaires à celles d'un faisceau de Bessel. 
@@ -663,7 +663,7 @@ Nous avons déjà vu qu'au foyer le faisceau infrarouge est bien décrit par un 
 \end{enumerate}
 Nous allons étudier ces deux effets en effectuant des simulations numériques.
 
-\subsubsection{\'{E}tude du contenu modal du champ par un modèle simple de la GHOE}
+\subsection{\'{E}tude du contenu modal du champ par un modèle simple de la GHOE}
 Pour étudier ces effets, une description simple du processus est suffisante. On ne prendra pas en compte les effets liés à la propagation du champ ni les effets de dispersion et de déplétion dans le milieu. On considère donc un plan d'atomes infiniment fin placé en $z=0$. On se place dans les conditions expérimentales pour calculer la propagation du champ infrarouge jusqu'au foyer, et on obtient le champ déjà présenté en figure \ref{Fig:DecompIR}. On utilise ensuite la formule ADK \mycite{AmmosovJETP1986} et le modèle SFA \mycite{LewensteinPRA1994} pour calculer le dipôle harmonique qui donne directement le champ émis. Les deux effets mentionnés plus haut sont alors simples à identifier : la non-linéarité est contrôlée par l'intensité du champ infrarouge, tandis que la phase atomique varie à la fois avec l'intensité et avec la valeur de $\alpha_{traj}$, qui dépend de la trajectoire considérée.
 
 \paragraph*{Trajectoire courte} Commençons par sélectionner uniquement la trajectoire courte de la GHOE, ce qui est équivalent expérimentalement à modifier la position du foyer par rapport au jet. Pour cette trajectoire, $\alpha_{courte}$ est de l'ordre de $\SI{1e-14}{cm²/W}$. On aura donc une courbure relativement faible, et donc un très faible effet de la phase atomique. La figure \ref{Fig:DecompShort}~(a) présente le champ harmonique obtenu en $z=0$ pour l'harmonique 19.
@@ -695,10 +695,10 @@ Pour $z>z_R$, le mode $(\ell,p)$ a donc acquis une phase $(2p+\left|\ell\right|+
 
 En conclusion, nous avons relié la présence de modes $p$ dans la GHOE à la phase $\phi^{at}(r,\theta)$. Cette phase dépend à la fois de la trajectoire considérée et de l'intensité infrarouge. La figure \ref{Fig:pmode_Iscan} présente l'évolution du contenu modal lorsque l'intensité infrarouge varie entre 0.5 et 2.5 $\si{W/cm²}$. (A FAIRE : CODE DE CELINE)
 
-\section{Le profil spatio-temporel des impulsions générées : les \textit{light springs}}
+\chapter{Le profil spatio-temporel des impulsions générées : les \textit{light springs}}
 Jusqu'à présent nous nous sommes intéressés au moment angulaire orbital du faisceau et donc à ses propriétés spatiales. Une des propriétés remarquables de la GHOE est qu'elle permet de générer des impulsions extrêmement courtes, le record actuel étant de $\SI{67e-15}{s}=\SI{67}{as}$ (attosecondes). Dans cette partie nous étudions les propriétés temporelles des impulsions générées par un faisceau de LG, obtenues lorsqu'on considère la totalité du spectre harmonique.
 
-\subsection{Mesure de la phase spectrale de l'impulsion à partir de la technique RABBIT}
+\section{Mesure de la phase spectrale de l'impulsion à partir de la technique RABBIT}
 \label{omabbit}
 Pour obtenir des informations temporelles, on cherche à mesurer à la fois l'intensité et la phase spectrale de l'impulsion. Nous disposons déjà de l'intensité spectrale, mesurée optiquement à l'aide du spectromètre. Pour la phase spectrale, nous choisissons d'appliquer la technique RABBIT décrite dans la partie \ref{sec:thRABBIT}.
 
@@ -741,7 +741,7 @@ Avec le faisceau d'habillage adéquat, nous avons pu mesurer la trace RABBIT pr�
 
 On observe clairement des sidebands oscillant à $2\omega$ (période de  $\SI{2.7}{fs}$). Elles présentent également une autre composante à $\omega$, effet inévitable dans notre schéma. En effet, le faisceau d'habillage se propage à travers le milieu de génération et module le rendement de génération harmonique à la fréquence $\omega$. Comme expliqué, la présence d'oscillations à $2\omega$ confirme une fois de plus la conservation du moment angulaire orbital dans le processus. On cherche ensuite la phase de l'oscillation à $2\omega$, et on obtient le délai de groupe présenté en \ref{Fig:omabbit}~(b) : il s'agit de la dérivée de la phase spectrale de l'impulsion attoseconde. Un fit linéaire de cette courbe donne une pente de $103\pm9$ as, ce qui est exactement la même valeur que celle obtenue avec un faisceau Gaussien à la même longueur d'onde et à la même intensité de génération \mycite{MairesseScience2003}. Les processus de GHOE et de photoionisation n'étant pas changés à l'échelle microscopique, le MAO ne peut pas modifier les phases induites par ces processus, ce qui explique qu'on retrouve la même valeur.
 
-\subsection{Reconstruction du profil spatio-temporel de l'émission}
+\section{Reconstruction du profil spatio-temporel de l'émission}
 Nous disposons désormais d'informations d'intensité et de phase spatiales et spectrales, à partir desquels on va reconstruire le profil spatio-temporel de l'émission attoseconde. Nos impulsions infrarouges de 50 fs comportent de nombreux cycles, on néglige donc les effets d'enveloppe et on écrit en $z = 0$ :
 \begin{equation*}
 I_{atto}(r,\theta,t) = \sum_{q=11}^{23}\;\sqrt{I_q(r,\theta)}\cdot\exp{(\rmi\left[\Phi_q(r,\theta)+\phi_q+\omega_q t\right])}.
@@ -759,7 +759,7 @@ On effectue alors l'hypothèse que la phase spatiale des harmoniques $\Phi_q(r,\
 On obtient donc une structure en tire-bouchon, déjà prédite théoriquement par \mycite{HernandezPRL2013} puis décrite par \mycite{ParienteOL2015}, qui l'ont nommée \textit{light springs} (ressort optique en français). Ici, on trouve deux ressorts entrelacés, conséquence de la présence des harmoniques impaires seulement. En effet, dans un plan $t$ donné, on somme plusieurs harmoniques séparées de $\Delta\ell = 2$. Une périodicité doublée dans un espace impose une périodicité de moitié dans l'espace réciproque, donc $\Delta\theta = \pi$ : on trouve bien deux lobes d'intensité dans chaque plan $t$ donné. Le profil temporel quant à lui possède bien une structure de train d'impulsions attoseconde, où chaque impulsion dure environ 200 as. Cette structure présente un couplage spatio-temporel particulièrement intéressant : comme illustré sur la droite de la figure \ref{Fig:corkscrew}, si on change l'angle auquel on regarde le train d'impulsions, on observe le même train, mais retardé. Par exemple, entre $\theta=0$\degres et $\theta=40$\degres, on obtient un retard de 296 as. En 180$\degres$, on effectue une demi-période du laser infrarouge de génération (1330 as), la pente est donc de 7.4 as/\degres. 
 Comme démontré dans \ref{HernandezPRL2013}, la structure de light spring existe toujours dans le cas d'une impulsion attoseconde unique. Nous pensons donc que ce type d'impulsion constitue une sonde particulièrement pratique pour des expériences de spectroscopie d'absorption transitoires : en effet, ces expériences nécessitent de réaliser et de contrôler des délai pompe-sonde de l'ordre de l'attoseconde. Ici, on peut mapper le délai attoseconde sur la coordonnée angulaire en un seul tir laser, rendant l'expérience insensible aux instabilités. Dans une expérience pompe-sonde, l'autre paramètre est la gamme dynamique : elle est ici de 1.33 fs, i.e. le demi-cycle optique infrarouge. Cette gamme peut être facilement augmentée en augmentant la longueur d'onde de génération ou encore en brisant la symétrie du processus, de sorte à générer des harmoniques paires.
 
-\section{Conclusion et perspectives}
+\chapter{Conclusion et perspectives}
 En conclusion, nous avons détaillé dans ce chapitre comment générer des harmoniques d'ordre élevé à partir d'un faisceau de Laguerre-Gauss. Nous avons mis en évidence les difficultés supplémentaires et les différences par rapport au cas Gaussien habituel. Grâce à des calculs numériques, nous avons démontré qu'une simple observation de l'intensité harmonique en champ lointain permet de caractériser le moment angulaire orbital porté par le rayonnement. Dans notre cas, nous avons pu vérifier la conservation du moment angulaire orbital dans la GHOE. Nous avons ensuite réalisé des simulations numériques SFA, qui ont mis en évidence l'importance des trajectoires quantiques dans le processus. Ces trajectoires quantiques ont été observées expérimentalement et reliées à l'indice radial des modes de Laguerre-Gauss. Enfin, nous avons mesuré le profil spatio-temporel du train d'impulsions attosecondes et démontré qu'il a la forme d'un \textit{light spring}.
 
 Nous disposons désormais d'une source de lumière unique : nous pouvons générer un rayonnement dans l'XUV portant du moment angulaire orbital, et temporellement extrêmement bref. Pour améliorer encore la flexibilité de la source, il serait intéressant de dévier de la loi $\ell_q=q\times\ell_1$ et de pouvoir accorder le MAO de chaque harmonique. Des expériences à cet effet sont en cours à Saclay et en collaboration avec le groupe du professeur G. De Ninno à l'université de Nova Gorica (Slovénie). Enfin, nous avons également participé aux premières expériences visant à transférer du MAO dans un laser à électron libre selon le principe proposé par \mycite{RibiPRL2014}. Les premiers essais ont été réalisés sur le laser à électron libre Fermi à Trieste (Italie). 
