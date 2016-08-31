@@ -1,0 +1,87 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'n2ell.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{480bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.32738096)%
+    \put(0,0){\includegraphics[width=\unitlength]{n2ell.pdf}}%
+    \put(0.26227276,0.01260014){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[b]{\smash{Ordre harmonique}}}%
+    \put(0.03689767,0.19352157){\color[rgb]{0.1372549,0.12156863,0.1254902}\rotatebox{90}{\makebox(0,0)[b]{\smash{Ellipticité $\epsilon^{max}_q$}}}}%
+    \put(0.4153998,0.29661076){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[b]{\smash{40\degres}}}%
+    \put(0.41499696,0.27260253){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[b]{\smash{50\degres}}}%
+    \put(0.415058,0.24859923){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[b]{\smash{60\degres}}}%
+    \put(0.51919397,0.08382225){\color[rgb]{0,0,0}\rotatebox{90.69061536}{\makebox(0,0)[lb]{\smash{Ordre harmonique}}}}%
+    \put(0.6191153,0.01249046){\color[rgb]{0,0,0}\rotatebox{-0.05059172}{\makebox(0,0)[lb]{\smash{Angle d'alignement (\degres)}}}}%
+    \put(0.35388988,0.04023076){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{25}}}%
+    \put(0.13187913,0.04036816){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{15}}}%
+    \put(0.17544159,0.04015637){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{17}}}%
+    \put(0.2197497,0.04023076){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{19}}}%
+    \put(0.26721235,0.04001898){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{21}}}%
+    \put(0.30953015,0.04023076){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{23}}}%
+    \put(0.39745231,0.04001898){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{27}}}%
+    \put(0.54732633,0.08378609){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{15}}}%
+    \put(0.54663803,0.13667599){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{17}}}%
+    \put(0.54669537,0.18985092){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{19}}}%
+    \put(0.54990731,0.24274081){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{21}}}%
+    \put(0.54797443,0.29605261){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{23}}}%
+    \put(0.58821627,0.05773697){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-80}}}%
+    \put(0.65942028,0.05759957){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-40}}}%
+    \put(0.73688268,0.05738779){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.80920027,0.05759957){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{40}}}%
+    \put(0.88378922,0.05738779){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{80}}}%
+    \put(0.9354043,0.11499612){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.94329141,0.17483781){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.2}}}%
+    \put(0.94329141,0.23439436){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.4}}}%
+    \put(0.94329141,0.29770615){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.6}}}%
+    \put(0.0689609,0.05855555){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.1}}}%
+    \put(0.06524421,0.1298981){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.2}}}%
+    \put(0.06414296,0.27777474){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.4}}}%
+    \put(0.06509507,0.20426144){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.3}}}%
+    \put(0.97655825,0.22563694){\color[rgb]{0.1372549,0.12156863,0.1254902}\rotatebox{-90}{\makebox(0,0)[b]{\smash{Ellipticité $\epsilon^{max}_q$}}}}%
+  \end{picture}%
+\endgroup%

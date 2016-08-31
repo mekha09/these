@@ -218,7 +218,7 @@ On obtient l'expression de la densité de moment angulaire du champ de la même 
 \end{align*}
 avec
 \begin{equation}
-\bm{J}(\bm{r})=\bm{r}\times\bm{\bm{P}_{champ}}=\frac{\bm{r}\times\bm{\Pi}}{c^2} = \epsilon_0\bm{r}\times(\bm{E}\times\bm{B})
+\bm{J}_{champ}(\bm{r})=\bm{r}\times{\bm{P}_{champ}}=\frac{\bm{r}\times\bm{\Pi}}{c^2} = \epsilon_0\bm{r}\times(\bm{E}\times\bm{B})
 \label{Eq.DefJEM}
 \end{equation}
 
@@ -692,12 +692,12 @@ Considérons l'opérateur de rotation d'angle infinitésimal $\rmd\theta$, $\hat
 
 Les composantes de $\mathcal{R}_z^{-1}(\rmd\theta)\bm{r}$ s'écrivent :
 \[\mathcal{R}_z^{-1}(\rmd\theta)\bm{r} = \mathcal{R}_z(-\rmd\theta)\bm{r} = (\bm{r}-\rmd\theta\bm{z}\times\bm{r}).\]
-Si on note (x,y,z) les coordonnées cartésiennes, on a :
+Si on note $(x,y,z)$ les coordonnées cartésiennes, on a :
 \[\psi'(x,y,z) = \psi(x+\rmd\theta y,\;y-\rmd\theta x,\;z).\]
 Au premier ordre,
 \begin{align*}
 \psi'(x,y,z) &= \psi(x,y,z)+\rmd\theta\left[y\frac{\partial\psi}{\partial x}-x\frac{\partial\psi}{\partial y}\right]\\
-&= \psi(x,y,z)-\rmd\theta\left[x\frac{\partial}{\partial y}-y\frac{\partial\psi}{\partial x}\right]\psi(x,y,z)
+&= \psi(x,y,z)-\rmd\theta\left[x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right]\psi(x,y,z)
 \end{align*}
 On reconnaît alors l'opérateur $\hat{J_z}$ présenté plus haut exprimé en représentation $\ket{\bm{r}}$. Ainsi, $\forall\;\ket{\psi}$,
 \begin{align*}
@@ -1102,7 +1102,7 @@ où $\bm{u}$ est le vecteur unitaire selon la polarisation du champ, $f(r)$ est 
 
 On considère un système hydrogénoïde à deux particules : un électron et un neutron sans spin, notés 1 et 2. On note leurs vecteurs positions $\bm{q}_i$. Le centre de masse du système est alors en $\bm{Q} = (m_1 \bm{q}_1+m_2 \bm{q}_2)/M$, et la coordonnée interne du système est $\bm{q} = \bm{q}_1-\bm{q}_2$. Nous verrons qu'il est essentiel ici de considérer $\bm{Q}$ comme un variable quantique et non pas de la laisser fixe.
 
-Dans ces conditions, le système {atome + champ} est par les variables quantiques suivantes :
+Dans ces conditions, le système {atome + champ} est défini par les variables quantiques suivantes :
 \begin{itemize}
 \renewcommand{\labelitemi}{$\bullet$}
 \setlength\itemsep{1em}

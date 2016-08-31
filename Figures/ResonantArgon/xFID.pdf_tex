@@ -1,0 +1,295 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'xFID.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{202.6365938bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.2652044)%
+    \put(2.37849087,0.43802418){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{xFID.pdf}}%
+    \put(-0.10434301,-0.80322744){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{FIG.1.(a)SpatiallyresolvedHHGspectrumusing7fslaser\\ pulses(}}}%
+    \put(0.05210949,-0.85485187){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(0.07198744,-0.85976708){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.11197528,-0.85485187){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{=5}}}%
+    \put(0.18958219,-0.85485187){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(0.20221564,-0.85485187){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2x10}}}%
+    \put(0.33343083,-0.83605468){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{13}}}%
+    \put(0.39144109,-0.85485187){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{W/cm}}}%
+    \put(0.51814081,-0.83605468){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.53862576,-0.85485187){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{).(b)Intensitydependence\\ ofHHGspectrausing7fspulses.(c)TDSEcalculationof\\ spatiallyresolvedHHGspectrumusing7fslaserpulse(}}}%
+    \put(1.06475481,-0.95810075){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(1.08463276,-0.96301595){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(-0.10434301,-1.00972025){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{=5}}}%
+    \put(-0.03073833,-1.00972025){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(-0.01810488,-1.00972025){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0x10}}}%
+    \put(0.1051009,-0.99092305){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{13}}}%
+    \put(0.15910892,-1.00972025){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{W/cm}}}%
+    \put(0.28580864,-0.99092305){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.30629358,-1.00972025){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{).(d)TDSEcalculationoftheintensity\\ dependenceofHHGspectra.Thedashedlineservesasguides\\ totheeyes.}}}%
+    \put(-0.10434301,-1.22674423){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{monicsshowclearsub-cycleconfnementsynchronized\\ withthedrivinginfraredlaserfeld,thexFIDshowsno\\ signofattosecondstructure.Inaddition,wefndthat\\ thee-HHGemissionoccursonlyonthefallingedgeof\\ thelaserpulse.\\ Theexperimentswereperformedwiththe1kHzAU-\\ RORElasersystematCELIAwhichdelivers8mJ,28\\ fs,800nmpulses.Wefocusedupto4mJintoa1.5m\\ longstretchedhollowcorefber(500}}}%
+    \put(0.70490865,-1.70215194){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{µm}}}%
+    \put(0.79569186,-1.70215194){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{diameter,few-\\ cycleinc.)flledwithapressuregradientofargon(0-400\\ mbar)tobroadenthesprectrum(}}}%
+    \put(0.64663191,-1.82015136){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{∼}}}%
+    \put(0.70516527,-1.82015136){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{650-950nmtail-to-\\ tail)throughself-phasemodulation.Sixpairsofchirped\\ mirrors(-50}}}%
+    \put(0.16621523,-1.93814584){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{fs}}}%
+    \put(0.21862433,-1.92030603){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.25543406,-1.93814584){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{perbounce,UltrafastInnovations)were\\ usedtocompensatethegroupdelaydispersion.Asingle-\\ shot,in-lineultra-broadbandsecond-orderautocorrela-\\ tor(FemtoEasy)wasusedtomeasurethepulsedura-\\ tion.Thefew-cyclepulseenergywasvariedbyrotating\\ azeroordersuper-achromatichalf-waveplate(Fichou)in\\ frontofabroadbandpolarizer(FemtoLaser).Thefew-\\ cyclepulsesweresentundervacuumandfocusedbya\\ f=37.5cmsphericalmirrorintoa250}}}%
+    \put(0.73250979,-2.41012871){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{µm}}}%
+    \put(0.82328313,-2.41012871){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{thickefusive\\ Argasjettogeneratehigh-orderharmonics.TheXUV\\ radiationwasanalyzedbyafat-feldXUVspectrometer,\\ consistingofa1200grooves/mmcylindricalgrating(Shi-\\ madzu)andasetofdualmicrochannelplatescoupledto\\ afastP46phosphorscreen(Hamamatsu)enablingsingle\\ shotmeasurements.A12-bitcooledCCDcamera(PCO)\\ recordedthespatially-resolvedharmonicspectra.\\ Figure1(a)showsthespatiallyresolvedHHGspec-\\ trumofargondrivenwith7fspulses.Inadditiontothe\\ usualfrequencycombseparatedbytwicethelaserfre-\\ quency,newstructuresappearintheharmonicspectrum\\ :aseriesofnarrowspectrallinesbetween14.2and15.6\\ eV,abroadpeakaround19eVnearH13andadistinct\\ shoulderonthelow-energysideofharmonic15around\\ 23eV.Varyingthelaserintensityfrom2}}}%
+    \put(2.07444905,0.01520322){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(2.08810403,0.01520322){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0to7}}}%
+    \put(2.21385624,0.01520322){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(2.22751123,0.01520322){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(2.26305762,0.01520322){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{×}}}%
+    \put(2.31225407,0.01520322){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(2.3614209,0.03304303){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{13}}}%
+    \put(1.19361604,-0.04379896){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{W/cm}}}%
+    \put(1.33154769,-0.02595421){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(1.35360689,-0.04379896){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{)(Fig.1(b))showsthatthenarrow-bandwidth\\ structuresappearatverylowintensityanddonotex-\\ hibitashiftinenergywithintensity.Thepeakaround\\ 19eVisonlyvisiblewhenthelaserintensityisabove3}}}%
+    \put(1.21819699,-0.27978792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(1.23185198,-0.27978792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{5}}}%
+    \put(1.26628307,-0.27978792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{×}}}%
+    \put(1.31436916,-0.27978792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(1.36353599,-0.26194811){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{13}}}%
+    \put(1.42103794,-0.27978792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{W/cm}}}%
+    \put(1.55897453,-0.26194811){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(1.58102879,-0.27978792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{,andshowsalinearredshiftasthein-\\ tensityincreases,withaslopeof}}}%
+    \put(1.89138241,-0.3387901){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{∼−}}}%
+    \put(1.98151914,-0.3387901){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+    \put(2.00610009,-0.3387901){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(2.01975507,-0.3387901){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(2.04962628,-0.3387901){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{×}}}%
+    \put(2.09314754,-0.3387901){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(2.14231438,-0.32094535){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{−}}}%
+    \put(2.17304427,-0.32094535){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{11}}}%
+    \put(2.22826628,-0.3387901){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{meV/W}}}%
+    \put(1.19361604,-0.39778734){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{·}}}%
+    \put(1.22365997,-0.39778734){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{cm}}}%
+    \put(1.28648179,-0.37994259){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(1.30853605,-0.39778734){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{.\\ Whatistheoriginofthesetwocomponents?The\\ narrowstructuresbelowtheionizationthresholdare\\ clearlyassociatedtobound-boundemissionfromRyd-\\ bergstates,asrecentlypredicted[14].Becausetheexci-\\ tationmechanismiscoherent,allatomsinthemedium\\ decayinphasetothegroundstatebyspontaneousemis-\\ sion,resultingincoherentemissionreferredtohereas\\ xFID.IntheXUVrange,xFIDhasrecentlybeeniden-\\ tifedinthecaseofexcitationofRydbergandFanores-\\ onancesbyanXUVbeam[15].Theemissionprocessis\\ similarhere,thediferencebeingthatmultipleIRpho-\\ tonsareabsorbedtopopulatetheexcitedstates.The\\ coherenceofthexFIDprocessexplainsthecollimated\\ natureoftheXUVemission.Sincethelifetimeofthe\\ RydbergstatesismuchlongerthantheIRpulsedura-\\ tion,thexFIDmostlytakesplaceafterthegenerating\\ laserpulseisover.ThexFIDemissionthusoccursat\\ photonenergiescorrespondingtothefeld-freeresonance\\ energies[14].\\ Theoriginoftheemissionfeaturelocated}}}%
+    \put(2.21819406,-1.58107312){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{∼}}}%
+    \put(2.25643493,-1.58107312){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3.2eV\\ abovethe}}}%
+    \put(1.44051616,-1.6400753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(1.46213121,-1.6474481){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{p}}}%
+    \put(1.51270944,-1.6400753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(1.53182741,-1.6400753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{∼}}}%
+    \put(1.57006828,-1.6400753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{19eV)isnotasobviousasthatof\\ thexFIDfeatures.Itsspectralshiftwithintensityin-\\ dicatesthattheemissionistriggeredbyaprocessthat\\ occurswhenthelaserfeldison.Interestingly,itshowsa\\ broaderspatialproflethantheneighboringharmonics.\\ Weinvestigatethisspatialprofledisparityasafunction\\ oflaserintensityinFig.2.InconventionalHHG,the\\ spatialprofleofharmonic}}}%
+    \put(1.8022228,-2.05306092){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{q}}}%
+    \put(1.84923306,-2.05306092){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{isdictatedbythecurva-\\ tureoftheatomicdipolephase(}}}%
+    \put(1.91449274,-2.11205816){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{φ}}}%
+    \put(1.94378657,-2.09421834){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{l,sq}}}%
+    \put(1.98911401,-2.11205816){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(2.00823198,-2.11205816){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{r,t}}}%
+    \put(2.06865049,-2.11205816){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{))inthegener-\\ atingmedium.Thisatomicdipolephasedependslin-\\ earlyonthelaserintensityprofle,}}}%
+    \put(1.98097629,-2.23005265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(2.00258641,-2.23743038){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(2.02464067,-2.23005265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(2.04376357,-2.23005265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{r,t}}}%
+    \put(2.10418208,-2.23005265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{):}}}%
+    \put(2.16922462,-2.23005265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{φ}}}%
+    \put(2.19851844,-2.21221283){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{l,sq}}}%
+    \put(2.24384096,-2.23005265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(2.26296386,-2.23005265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{r,t}}}%
+    \put(2.32338237,-2.23005265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{)=}}}%
+    \put(1.19361604,-2.29555908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{−}}}%
+    \put(1.23185198,-2.29555908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.26348496,-2.27771432){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{l,sq}}}%
+    \put(1.32065134,-2.29555908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{·}}}%
+    \put(1.34615019,-2.29555908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(1.3677603,-2.30293188){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(1.38981456,-2.29555908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(1.40893746,-2.29555908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{r,t}}}%
+    \put(1.46935597,-2.29555908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{).Thecoefcient}}}%
+    \put(1.86134341,-2.29555908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.89297639,-2.27771432){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{l,sq}}}%
+    \put(1.95605977,-2.29555908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{isdeterminedbythe\\ electrontrajectoryinthecontinuum,anditsvaluein-\\ creaseswiththetrajectoryexcursiontime.Eachhar-\\ monic}}}%
+    \put(1.33897478,-2.4725508){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{q}}}%
+    \put(1.37967325,-2.4725508){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{canbeemittedbytwodiferentelectrontrajec-\\ tories,labeledshort(}}}%
+    \put(1.65439658,-2.53155298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{s}}}%
+    \put(1.67744277,-2.53155298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{)andlong(}}}%
+    \put(1.93389694,-2.53155298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{l}}}%
+    \put(1.94953084,-2.53155298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{),withrespectivelya\\ smallandlarge}}}%
+    \put(1.54506293,-2.59055022){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.57669591,-2.59055022){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{,asmallandlargespatialdivergence,\\ andaslowandfastincreaseofthespatialdivergence\\ withlaserintensity.Weusedthespatialprofletore-\\ trievethevalueof}}}%
+    \put(1.5854505,-2.76754194){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.63033874,-2.76754194){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{ofeachspectralcomponentandgain\\ someinsightabouttheassociatedelectrondynamicsin\\ thecontinuum.TheprocedureisdetailedintheSI.Fore-\\ HHG,thisanalysisprovides}}}%
+    \put(1.80699489,-2.9445386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.85228286,-2.9445386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{=(14}}}%
+    \put(1.98133161,-2.9445386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{±}}}%
+    \put(2.02843564,-2.9445386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1)}}}%
+    \put(2.08100265,-2.9445386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{·}}}%
+    \put(2.10352573,-2.9445386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(2.15269256,-2.92669385){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{−}}}%
+    \put(2.18341752,-2.92669385){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{14}}}%
+    \put(2.22507337,-2.9445386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{cm}}}%
+    \put(2.28951879,-2.92669385){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(2.31157305,-2.9445386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{/W}}}%
+    \put(2.38941684,-2.9445386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{,}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{xFID.pdf}}%
+    \put(2.37851351,0.697118){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{xFID.pdf}}%
+    \put(-0.10432037,-0.54413362){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{FIG.1.(a)SpatiallyresolvedHHGspectrumusing7fslaser\\ pulses(}}}%
+    \put(0.05213212,-0.59575806){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(0.07201007,-0.60067326){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.11199791,-0.59575806){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{=5}}}%
+    \put(0.18960482,-0.59575806){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(0.20223828,-0.59575806){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2x10}}}%
+    \put(0.33345347,-0.57696086){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{13}}}%
+    \put(0.39146372,-0.59575806){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{W/cm}}}%
+    \put(0.51816344,-0.57696086){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.53864839,-0.59575806){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{).(b)Intensitydependence\\ ofHHGspectrausing7fspulses.(c)TDSEcalculationof\\ spatiallyresolvedHHGspectrumusing7fslaserpulse(}}}%
+    \put(1.06477745,-0.69900693){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(1.0846554,-0.70392214){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(-0.10432037,-0.75062643){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{=5}}}%
+    \put(-0.0307157,-0.75062643){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(-0.01808225,-0.75062643){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{0x10}}}%
+    \put(0.10512354,-0.73182924){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{13}}}%
+    \put(0.15913155,-0.75062643){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{W/cm}}}%
+    \put(0.28583127,-0.73182924){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.30631622,-0.75062643){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{).(d)TDSEcalculationoftheintensity\\ dependenceofHHGspectra.Thedashedlineservesasguides\\ totheeyes.}}}%
+    \put(-0.10432037,-0.96765041){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{monicsshowclearsub-cycleconfnementsynchronized\\ withthedrivinginfraredlaserfeld,thexFIDshowsno\\ signofattosecondstructure.Inaddition,wefndthat\\ thee-HHGemissionoccursonlyonthefallingedgeof\\ thelaserpulse.\\ Theexperimentswereperformedwiththe1kHzAU-\\ RORElasersystematCELIAwhichdelivers8mJ,28\\ fs,800nmpulses.Wefocusedupto4mJintoa1.5m\\ longstretchedhollowcorefber(500}}}%
+    \put(0.70493129,-1.44305813){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{µm}}}%
+    \put(0.7957145,-1.44305813){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{diameter,few-\\ cycleinc.)flledwithapressuregradientofargon(0-400\\ mbar)tobroadenthesprectrum(}}}%
+    \put(0.64665455,-1.56105755){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{∼}}}%
+    \put(0.70518791,-1.56105755){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{650-950nmtail-to-\\ tail)throughself-phasemodulation.Sixpairsofchirped\\ mirrors(-50}}}%
+    \put(0.16623787,-1.67905203){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{fs}}}%
+    \put(0.21864696,-1.66121221){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.2554567,-1.67905203){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{perbounce,UltrafastInnovations)were\\ usedtocompensatethegroupdelaydispersion.Asingle-\\ shot,in-lineultra-broadbandsecond-orderautocorrela-\\ tor(FemtoEasy)wasusedtomeasurethepulsedura-\\ tion.Thefew-cyclepulseenergywasvariedbyrotating\\ azeroordersuper-achromatichalf-waveplate(Fichou)in\\ frontofabroadbandpolarizer(FemtoLaser).Thefew-\\ cyclepulsesweresentundervacuumandfocusedbya\\ f=37.5cmsphericalmirrorintoa250}}}%
+    \put(0.73253242,-2.15103489){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{µm}}}%
+    \put(0.82330576,-2.15103489){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{thickefusive\\ Argasjettogeneratehigh-orderharmonics.TheXUV\\ radiationwasanalyzedbyafat-feldXUVspectrometer,\\ consistingofa1200grooves/mmcylindricalgrating(Shi-\\ madzu)andasetofdualmicrochannelplatescoupledto\\ afastP46phosphorscreen(Hamamatsu)enablingsingle\\ shotmeasurements.A12-bitcooledCCDcamera(PCO)\\ recordedthespatially-resolvedharmonicspectra.\\ Figure1(a)showsthespatiallyresolvedHHGspec-\\ trumofargondrivenwith7fspulses.Inadditiontothe\\ usualfrequencycombseparatedbytwicethelaserfre-\\ quency,newstructuresappearintheharmonicspectrum\\ :aseriesofnarrowspectrallinesbetween14.2and15.6\\ eV,abroadpeakaround19eVnearH13andadistinct\\ shoulderonthelow-energysideofharmonic15around\\ 23eV.Varyingthelaserintensityfrom2}}}%
+    \put(2.07447168,0.27429703){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(2.08812667,0.27429703){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{0to7}}}%
+    \put(2.21387888,0.27429703){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(2.22753387,0.27429703){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(2.26308026,0.27429703){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{×}}}%
+    \put(2.3122767,0.27429703){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(2.36144354,0.29213685){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{13}}}%
+    \put(1.19363868,0.21529485){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{W/cm}}}%
+    \put(1.33157033,0.23313961){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(1.35362952,0.21529485){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{)(Fig.1(b))showsthatthenarrow-bandwidth\\ structuresappearatverylowintensityanddonotex-\\ hibitashiftinenergywithintensity.Thepeakaround\\ 19eVisonlyvisiblewhenthelaserintensityisabove3}}}%
+    \put(1.21821963,-0.02069411){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(1.23187461,-0.02069411){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{5}}}%
+    \put(1.26630571,-0.02069411){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{×}}}%
+    \put(1.31439179,-0.02069411){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(1.36355863,-0.00285429){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{13}}}%
+    \put(1.42106058,-0.02069411){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{W/cm}}}%
+    \put(1.55899717,-0.00285429){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(1.58105142,-0.02069411){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{,andshowsalinearredshiftasthein-\\ tensityincreases,withaslopeof}}}%
+    \put(1.89140504,-0.07969629){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{∼−}}}%
+    \put(1.98154177,-0.07969629){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+    \put(2.00612272,-0.07969629){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{.}}}%
+    \put(2.01977771,-0.07969629){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(2.04964892,-0.07969629){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{×}}}%
+    \put(2.09317018,-0.07969629){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(2.14233701,-0.06185153){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{−}}}%
+    \put(2.1730669,-0.06185153){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{11}}}%
+    \put(2.22828891,-0.07969629){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{meV/W}}}%
+    \put(1.19363868,-0.13869353){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{·}}}%
+    \put(1.22368261,-0.13869353){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{cm}}}%
+    \put(1.28650443,-0.12084877){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(1.30855869,-0.13869353){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{.\\ Whatistheoriginofthesetwocomponents?The\\ narrowstructuresbelowtheionizationthresholdare\\ clearlyassociatedtobound-boundemissionfromRyd-\\ bergstates,asrecentlypredicted[14].Becausetheexci-\\ tationmechanismiscoherent,allatomsinthemedium\\ decayinphasetothegroundstatebyspontaneousemis-\\ sion,resultingincoherentemissionreferredtohereas\\ xFID.IntheXUVrange,xFIDhasrecentlybeeniden-\\ tifedinthecaseofexcitationofRydbergandFanores-\\ onancesbyanXUVbeam[15].Theemissionprocessis\\ similarhere,thediferencebeingthatmultipleIRpho-\\ tonsareabsorbedtopopulatetheexcitedstates.The\\ coherenceofthexFIDprocessexplainsthecollimated\\ natureoftheXUVemission.Sincethelifetimeofthe\\ RydbergstatesismuchlongerthantheIRpulsedura-\\ tion,thexFIDmostlytakesplaceafterthegenerating\\ laserpulseisover.ThexFIDemissionthusoccursat\\ photonenergiescorrespondingtothefeld-freeresonance\\ energies[14].\\ Theoriginoftheemissionfeaturelocated}}}%
+    \put(2.21821669,-1.32197931){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{∼}}}%
+    \put(2.25645757,-1.32197931){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{3.2eV\\ abovethe}}}%
+    \put(1.4405388,-1.38098148){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(1.46215385,-1.38835429){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{p}}}%
+    \put(1.51273208,-1.38098148){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(1.53185005,-1.38098148){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{∼}}}%
+    \put(1.57009092,-1.38098148){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{19eV)isnotasobviousasthatof\\ thexFIDfeatures.Itsspectralshiftwithintensityin-\\ dicatesthattheemissionistriggeredbyaprocessthat\\ occurswhenthelaserfeldison.Interestingly,itshowsa\\ broaderspatialproflethantheneighboringharmonics.\\ Weinvestigatethisspatialprofledisparityasafunction\\ oflaserintensityinFig.2.InconventionalHHG,the\\ spatialprofleofharmonic}}}%
+    \put(1.80224543,-1.79396711){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{q}}}%
+    \put(1.8492557,-1.79396711){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{isdictatedbythecurva-\\ tureoftheatomicdipolephase(}}}%
+    \put(1.91451538,-1.85296435){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{φ}}}%
+    \put(1.9438092,-1.83512453){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{l,sq}}}%
+    \put(1.98913665,-1.85296435){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(2.00825462,-1.85296435){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{r,t}}}%
+    \put(2.06867312,-1.85296435){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{))inthegener-\\ atingmedium.Thisatomicdipolephasedependslin-\\ earlyonthelaserintensityprofle,}}}%
+    \put(1.98099893,-1.97095883){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(2.00260904,-1.97833657){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(2.0246633,-1.97095883){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(2.04378621,-1.97095883){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{r,t}}}%
+    \put(2.10420471,-1.97095883){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{):}}}%
+    \put(2.16924726,-1.97095883){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{φ}}}%
+    \put(2.19854108,-1.95311901){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{l,sq}}}%
+    \put(2.24386359,-1.97095883){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(2.2629865,-1.97095883){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{r,t}}}%
+    \put(2.323405,-1.97095883){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{)=}}}%
+    \put(1.19363868,-2.03646526){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{−}}}%
+    \put(1.23187461,-2.03646526){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.2635076,-2.01862051){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{l,sq}}}%
+    \put(1.32067397,-2.03646526){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{·}}}%
+    \put(1.34617282,-2.03646526){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(1.36778294,-2.04383807){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(1.3898372,-2.03646526){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(1.4089601,-2.03646526){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{r,t}}}%
+    \put(1.4693786,-2.03646526){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{).Thecoefcient}}}%
+    \put(1.86136605,-2.03646526){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.89299903,-2.01862051){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{l,sq}}}%
+    \put(1.9560824,-2.03646526){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{isdeterminedbythe\\ electrontrajectoryinthecontinuum,anditsvaluein-\\ creaseswiththetrajectoryexcursiontime.Eachhar-\\ monic}}}%
+    \put(1.33899742,-2.21345699){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{q}}}%
+    \put(1.37969589,-2.21345699){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{canbeemittedbytwodiferentelectrontrajec-\\ tories,labeledshort(}}}%
+    \put(1.65441922,-2.27245916){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{s}}}%
+    \put(1.6774654,-2.27245916){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{)andlong(}}}%
+    \put(1.93391958,-2.27245916){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{l}}}%
+    \put(1.94955347,-2.27245916){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{),withrespectivelya\\ smallandlarge}}}%
+    \put(1.54508556,-2.3314564){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.57671855,-2.3314564){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{,asmallandlargespatialdivergence,\\ andaslowandfastincreaseofthespatialdivergence\\ withlaserintensity.Weusedthespatialprofletore-\\ trievethevalueof}}}%
+    \put(1.58547313,-2.50844813){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.63036137,-2.50844813){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{ofeachspectralcomponentandgain\\ someinsightabouttheassociatedelectrondynamicsin\\ thecontinuum.TheprocedureisdetailedintheSI.Fore-\\ HHG,thisanalysisprovides}}}%
+    \put(1.80701752,-2.68544478){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{α}}}%
+    \put(1.85230549,-2.68544478){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{=(14}}}%
+    \put(1.98135425,-2.68544478){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{±}}}%
+    \put(2.02845827,-2.68544478){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{1)}}}%
+    \put(2.08102529,-2.68544478){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{·}}}%
+    \put(2.10354836,-2.68544478){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(2.1527152,-2.66760003){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{−}}}%
+    \put(2.18344015,-2.66760003){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{14}}}%
+    \put(2.22509601,-2.68544478){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{cm}}}%
+    \put(2.28954142,-2.66760003){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(2.31159568,-2.68544478){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{/W}}}%
+    \put(2.38943947,-2.68544478){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{,}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{xFID.pdf}}%
+  \end{picture}%
+\endgroup%

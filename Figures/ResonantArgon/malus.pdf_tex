@@ -1,0 +1,74 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'malus.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{430.72094054bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.53094798)%
+    \put(0.60793916,1.33484574){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{}}}%
+    \put(-0.04509625,1.16715247){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{malus.pdf}}%
+    \put(0.41381213,-0.01422186){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\theta_p$ (\degres)}}}%
+    \put(0.02735283,0.28894694){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Signal harmonique (u.arb.)}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{malus.pdf}}%
+    \put(0.24479823,0.45191612){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{$\eta$}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{malus.pdf}}%
+    \put(0.7096662,0.17447793){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{Polarisation linéaire}}}%
+    \put(0.7096662,0.42336298){\color[rgb]{0,1,0}\makebox(0,0)[lb]{\smash{Polarisation elliptique}}}%
+    \put(0.59907525,0.02468298){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{600}}}%
+    \put(0.45953665,0.02468298){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{400}}}%
+    \put(0.31418872,0.02468298){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{200}}}%
+    \put(0.16512604,0.02468298){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.06654275,0.04647919){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.06654275,0.14828672){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.06654275,0.25009425){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.06654275,0.35190167){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{3}}}%
+    \put(0.06654275,0.45370919){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{4}}}%
+    \put(0.7096662,0.14104561){\color[rgb]{1,0,0}\makebox(0,0)[lb]{\smash{$\epsilon_{IR} =0$}}}%
+    \put(0.7096662,0.39364536){\color[rgb]{0,1,0}\makebox(0,0)[lb]{\smash{$\epsilon_{IR} =0.287$}}}%
+  \end{picture}%
+\endgroup%
