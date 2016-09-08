@@ -1,0 +1,83 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Diffraction_f_d.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{791.0668457bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.5893532)%
+    \put(0.94540563,0.00838168){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{$\times 10^{-6}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Diffraction_f_d.pdf}}%
+    \put(0.19645125,0.03223646){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.5}}}%
+    \put(0.35409151,0.03223646){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.51708528,0.03223646){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{1.5}}}%
+    \put(0.67667723,0.03223646){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.83905992,0.03223646){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{2.5}}}%
+    \put(0.99746682,0.03223646){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{3}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Diffraction_f_d.pdf}}%
+    \put(0.00064116,0.08621833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.2}}}%
+    \put(0.000693,0.25051288){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.4}}}%
+    \put(0.00066338,0.41480743){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.6}}}%
+    \put(0.00051894,0.57910201){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.8}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Diffraction_f_d.pdf}}%
+    \put(0.08360472,0.57761377){\color[rgb]{0.04313725,0.09019608,0.15686275}\makebox(0,0)[b]{\smash{H9}}}%
+    \put(0.08360472,0.4926652){\color[rgb]{0.08627451,0.17647059,0.31372549}\makebox(0,0)[b]{\smash{H11}}}%
+    \put(0.08360472,0.41580696){\color[rgb]{0.12941176,0.26666667,0.47058824}\makebox(0,0)[b]{\smash{H13}}}%
+    \put(0.08360472,0.36321978){\color[rgb]{0.17254902,0.35294118,0.62745098}\makebox(0,0)[b]{\smash{H15}}}%
+    \put(0.08360472,0.33085842){\color[rgb]{0.21568627,0.44313725,0.78431373}\makebox(0,0)[b]{\smash{H17}}}%
+    \put(0.08360472,0.28433896){\color[rgb]{0.37254902,0.55294118,0.82745098}\makebox(0,0)[b]{\smash{H19}}}%
+    \put(0.08360472,0.30860999){\color[rgb]{0.16862745,0,0}\makebox(0,0)[b]{\smash{H9}}}%
+    \put(0.08360472,0.25804536){\color[rgb]{0.33333333,0,0}\makebox(0,0)[b]{\smash{H11}}}%
+    \put(0.08360472,0.22366141){\color[rgb]{0.50196078,0,0}\makebox(0,0)[b]{\smash{H13}}}%
+    \put(0.08360472,0.20141298){\color[rgb]{0.66666667,0,0}\makebox(0,0)[b]{\smash{H15}}}%
+    \put(0.08360472,0.18118713){\color[rgb]{0.83137255,0,0}\makebox(0,0)[b]{\smash{H17}}}%
+    \put(0.08360472,0.16096127){\color[rgb]{1,0,0}\makebox(0,0)[b]{\smash{H19}}}%
+    \put(0.30081555,0.25456046){\color[rgb]{0.08627451,0.17647059,0.31372549}\makebox(0,0)[lb]{\smash{Deuxième ordre}}}%
+    \put(0.06621638,0.09545008){\color[rgb]{0.66666667,0,0}\makebox(0,0)[lb]{\smash{Premier ordre}}}%
+    \put(0.53150274,0.00305165){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{Pas du réseau (m)}}}%
+    \put(-0.03006028,0.3205386){\color[rgb]{0.14901961,0.14901961,0.14901961}\rotatebox{90}{\makebox(0,0)[b]{\smash{Angle de réflexion (rad)}}}}%
+  \end{picture}%
+\endgroup%

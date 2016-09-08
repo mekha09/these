@@ -56,6 +56,21 @@
   File                     = {Published version:AllariaNP2012.pdf:PDF}
 }
 
+@Article{AllariaPRX2014,
+  Title                    = {Control of the Polarization of a Vacuum-Ultraviolet, High-Gain, Free-Electron Laser},
+  Author                   = {Allaria, Enrico and Diviacco, Bruno and Callegari, Carlo and Finetti, Paola and Mahieu, Beno\^{\i}t and Viefhaus, Jens and Zangrando, Marco and De Ninno, Giovanni and Lambert, Guillaume and Ferrari, Eugenio and Buck, Jens and Ilchen, Markus and Vodungbo, Boris and Mahne, Nicola and Svetina, Cristian and Spezzani, Carlo and Di Mitri, Simone and Penco, Giuseppe and Trov\'o, Mauro and Fawley, William M. and Rebernik, Primoz R. and Gauthier, David and Grazioli, Cesare and Coreno, Marcello and Ressel, Barbara and Kivim\"aki, Antti and Mazza, Tommaso and Glaser, Leif and Scholz, Frank and Seltmann, Joern and Gessler, Patrick and Gr\"unert, Jan and De Fanis, Alberto and Meyer, Michael and Knie, Andr\'e and Moeller, Stefan P. and Raimondi, Lorenzo and Capotondi, Flavio and Pedersoli, Emanuele and Plekan, Oksana and Danailov, Miltcho B. and Demidovich, Alexander and Nikolov, Ivaylo and Abrami, Alessandro and Gautier, Julien and L\"uning, Jan and Zeitoun, Philippe and Giannessi, Luca},
+  Journal                  = {Phys. Rev. X},
+  Year                     = {2014},
+  Month                    = {Dec},
+  Pages                    = {041040},
+  Volume                   = {4},
+  DOI                      = {10.1103/PhysRevX.4.041040},
+  Issue                    = {4},
+  Numpages                 = {15},
+  Publisher                = {American Physical Society},
+  URL                      = {http://link.aps.org/doi/10.1103/PhysRevX.4.041040}
+}
+
 @Article{AllenPRA1992,
   Title                    = {Orbital angular momentum of light and the transformation of Laguerre-Gaussian laser modes},
   Author                   = {Allen, L. and Beijersbergen, M. W. and Spreeuw, R. J. C. and Woerdman, J. P.},
@@ -313,6 +328,20 @@
   Year                     = {2004}
 }
 
+@Article{Barron1986,
+  Title                    = {True and false chirality and absolute asymmetric synthesis},
+  Author                   = { L. D. Barron },
+  Journal                  = {Journal of the American Chemical Society},
+  Year                     = {1986},
+  Number                   = {18},
+  Pages                    = {5539-5542},
+  Volume                   = {108},
+  DOI                      = {10.1021/ja00278a029},
+  Eprint                   = { http://dx.doi.org/10.1021/ja00278a029 },
+  URL                      = { http://dx.doi.org/10.1021/ja00278a029
+ }
+}
+
 @Article{BayerPRL2013,
   Title                    = {Charge Oscillation Controlled Molecular Excitation},
   Author                   = {Bayer, Tim and Braun, Hendrike and Sarpe, Cristian and Siemering, Robert and von den Hoff, Philipp and de Vivie-Riedle, Regina and Baumert, Thomas and Wollenhaupt, Matthias},
@@ -432,6 +461,20 @@
   File                     = {BethPR1936.pdf:BethPR1936.pdf:PDF;BethPR1936.pdf:BethPR1936.pdf:PDF},
   Issue                    = {2},
   Publisher                = {American Physical Society}
+}
+
+@Article{Bijvoet1951,
+  Title                    = {Determination of the Absolute Configuration of Optically Active Compounds by Means of X-Rays},
+  Author                   = {Bijvoet, J. M. and Peerdeman, A. F. and van Bommel, A. J.},
+  Journal                  = {Nature},
+  Year                     = {1951},
+  Month                    = {Aug},
+  Number                   = {4268},
+  Pages                    = {271-272},
+  Volume                   = {168},
+  Day                      = {18},
+  DOI                      = {10.1038/168271a0},
+  URL                      = {http://dx.doi.org/10.1038/168271a0}
 }
 
 @Article{BliokhPRL2007,
@@ -555,6 +598,17 @@
   ISBN                     = {978-3-319-03031-9},
   Language                 = {English},
   URL                      = {http://dx.doi.org/10.1007/978-3-319-03032-6_11}
+}
+
+@Article{BoweringPRL2001,
+  Title                    = {Asymmetry in photoelectron emission from chiral molecules induced by circularly polarized light},
+  Author                   = {B{\"o}wering, N and Lischke, T and Schmidtke, B and M{\"u}ller, Norbert and Khalil, T and Heinzmann, Ulrich},
+  Journal                  = {Physical review letters},
+  Year                     = {2001},
+  Number                   = {7},
+  Pages                    = {1187},
+  Volume                   = {86},
+  Publisher                = {APS}
 }
 
 @Article{BreunigCPC2009,
@@ -831,6 +885,15 @@
   File                     = {CorkumPRL1993.pdf:CorkumPRL1993.pdf:PDF;CorkumPRL1993.pdf:CorkumPRL1993.pdf:PDF;CorkumPRL1993.pdf:CorkumPRL1993.pdf:PDF;CorkumPRL1993.pdf:CorkumPRL1993.pdf:PDF}
 }
 
+@Article{cotton1895,
+  Title                    = {Absorption in\'egale des rayons circulaires droit et gauche dans certains corps actifs},
+  Author                   = {Cotton, A},
+  Journal                  = {Compt. Rend},
+  Year                     = {1895},
+  Pages                    = {989--991},
+  Volume                   = {120}
+}
+
 @Article{CourtialPRA1997,
   Title                    = {Second-harmonic generation and the conservation of orbital angular momentum with high-order Laguerre-Gaussian modes},
   Author                   = {Courtial, J. and Dholakia, K. and Allen, L. and Padgett, M. J.},
@@ -857,6 +920,17 @@
   Volume                   = {45},
   Abstract                 = {This tutorial presents an introduction to the interaction of light and matter on the attosecond timescale. Our aim is to detail the theoretical description of ultra-short time delays and to relate these to the phase of extreme ultraviolet (XUV) light pulses and to the asymptotic phaseshifts of photoelectron wave packets. Special emphasis is laid on time-delay experiments, where attosecond XUV pulses are used to photoionize target atoms at well-defined times, followed by a probing process in real time by a phase-locked, infrared laser field. In this way, the laser field serves as a ‘clock’ to monitor the ionization event, but the observable delays do not correspond directly to the delay associated with single-photon ionization. Instead, a significant part of the observed delay originates from a measurement induced process, which obscures the single-photon ionization dynamics. This artefact is traced back to a phaseshift of the above-threshold ionization transition matrix element, which we call the continuum–continuum phase . It arises due to the laser-stimulated transitions between Coulomb continuum states. As we shall show here, these measurement-induced effects can be separated from the single-photon ionization process, using analytical expressions of universal character, so that eventually the attosecond time delays in photoionization can be accessed.},
   URL                      = {http://stacks.iop.org/0953-4075/45/i=18/a=183001}
+}
+
+@Article{DalyJCP2011,
+  Title                    = {Photoionization of epichlorohydrin enantiomers and clusters studied with circularly polarized vacuum ultraviolet radiation},
+  Author                   = {Daly, Steven and Powis, Ivan and Garcia, Gustavo A and Soldi-Lose, H{\'e}lo{\"\i}se and Nahon, Laurent},
+  Journal                  = {The Journal of Chemical Physics},
+  Year                     = {2011},
+  Number                   = {6},
+  Pages                    = {064306},
+  Volume                   = {134},
+  Publisher                = {AIP Publishing}
 }
 
 @Article{DavilaJOSAB2002,
@@ -1258,6 +1332,19 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.64.013820}
 }
 
+@Article{GarciaJCP2003,
+  Title                    = {Circular dichroism in the photoelectron angular distribution from randomly oriented enantiomers of camphor},
+  Author                   = {Garcia, Gustavo A. and Nahon, Laurent and Lebech, Mogens and Houver, Jean-Christophe and Dowek, Danielle and Powis, Ivan},
+  Journal                  = {The Journal of Chemical Physics},
+  Year                     = {2003},
+  Number                   = {17},
+  Pages                    = {8781-8784},
+  Volume                   = {119},
+  __markedentry            = {[Romain:]},
+  DOI                      = {http://dx.doi.org/10.1063/1.1621379},
+  URL                      = {http://scitation.aip.org/content/aip/journal/jcp/119/17/10.1063/1.1621379}
+}
+
 @Article{GarciaNC2013,
   Title                    = {{Vibrationally induced inversion of photoelectron forward-backward asymmetry in chiral molecule photoionization by circularly polarized light}},
   Author                   = {{Garcia}, G.~A. and {Nahon}, L. and {Daly}, S. and {Powis}, I.},
@@ -1285,6 +1372,17 @@
   Issue                    = {12},
   Publisher                = {The Royal Society of Chemistry},
   URL                      = {http://dx.doi.org/10.1039/B714095A}
+}
+
+@Article{GarciaPCCP2008,
+  Title                    = {Chiral signatures in angle-resolved valence photoelectron spectroscopy of pure glycidol enantiomers},
+  Author                   = {Garcia, Gustavo A and Nahon, Laurent and Harding, Chris J and Powis, Ivan},
+  Journal                  = {Physical Chemistry Chemical Physics},
+  Year                     = {2008},
+  Number                   = {12},
+  Pages                    = {1628--1639},
+  Volume                   = {10},
+  Publisher                = {Royal Society of Chemistry}
 }
 
 @PhdThesis{Gariepy2013,
@@ -1596,6 +1694,15 @@
   DOI                      = {10.1103/PhysRevA.80.011404},
   Eid                      = {011404},
   Keywords                 = {Autoionization photoionization and photodetachment, Photoelectron spectra, Frequency conversion, harmonic generation including higher-order harmonic generation, Coherent spectroscopy of atoms and molecules}
+}
+
+@Article{Haidinger1847,
+  Title                    = {Ueber den Pleochroismus des Amethysts},
+  Author                   = {Haidinger, W.},
+  Journal                  = {Poggendorff's Annalen der Physik},
+  Year                     = {1847},
+  Pages                    = {531--544},
+  Volume                   = {70}
 }
 
 @Article{HamazakiOE2010,
@@ -2021,6 +2128,13 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.85.053409}
 }
 
+@Book{kelvin1894,
+  Title                    = {The molecular tactics of a crystal},
+  Author                   = {Kelvin, William Thomson Baron},
+  Publisher                = {Clarendon Press},
+  Year                     = {1894}
+}
+
 @Article{KfirNP2015,
   Title                    = {{Generation of bright phase-matched circularly-polarized extreme ultraviolet high harmonics}},
   Author                   = {{Kfir}, O. and {Grychtol}, P. and {Turgut}, E. and {Knut}, R. and {Zusin}, D. and {Popmintchev}, D. and {Popmintchev}, T. and {Nembach}, H. and {Shaw}, J.~M. and {Fleischer}, A. and {Kapteyn}, H. and {Murnane}, M. and {Cohen}, O.},
@@ -2171,6 +2285,19 @@
   ISBN                     = {978-94-010-7866-5},
   Language                 = {English},
   URL                      = {http://dx.doi.org/10.1007/978-94-009-3039-1_17}
+}
+
+@Article{Kuhn1930,
+  Title                    = {The physical significance of optical rotatory power},
+  Author                   = {Kuhn, Werner},
+  Journal                  = {Trans. Faraday Soc. },
+  Year                     = {1930},
+  Pages                    = {293-308},
+  Volume                   = {26},
+  DOI                      = {10.1039/TF9302600293},
+  Issue                    = {0},
+  Publisher                = {The Royal Society of Chemistry},
+  URL                      = {http://dx.doi.org/10.1039/TF9302600293}
 }
 
 @InProceedings{Kulander1992,
@@ -2360,6 +2487,22 @@
   Numpages                 = {4},
   Publisher                = {American Physical Society},
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.99.243001}
+}
+
+@Article{Levi1980,
+  Title                    = {Circular dichroism of an optically active olefin chromophore: (R)-3-methylcyclopentene},
+  Author                   = {M. Levi and D. Cohen and V. Schurig and Harold Basch and A. Gedanken},
+  Journal                  = {Journal of the American Chemical Society},
+  Year                     = {1980},
+  Number                   = {23},
+  Pages                    = {6972-6975},
+  Volume                   = {102},
+  DOI                      = {10.1021/ja00543a011},
+  Eprint                   = { http://dx.doi.org/10.1021/ja00543a011 },
+  URL                      = { 
+        http://dx.doi.org/10.1021/ja00543a011
+    
+}
 }
 
 @Article{LewensteinPRA1994,
@@ -3213,6 +3356,17 @@
   File                     = {Published version:PatchkovskiiNP2012.pdf:PDF}
 }
 
+@Article{patterson2013,
+  Title                    = {Enantiomer-specific detection of chiral molecules via microwave spectroscopy},
+  Author                   = {Patterson, David and Schnell, Melanie and Doyle, John M},
+  Journal                  = {Nature},
+  Year                     = {2013},
+  Number                   = {7450},
+  Pages                    = {475--477},
+  Volume                   = {497},
+  Publisher                = {Nature Publishing Group}
+}
+
 @Article{PaulCPL1999,
   Title                    = {Large natural circular dichroism in photoionization },
   Author                   = {Johannes Paul and Konstantin Siegmann},
@@ -3276,7 +3430,6 @@
   Number                   = {1–3},
   Pages                    = {167 - 190},
   Volume                   = {100},
-  __markedentry            = {[Romain:]},
   DOI                      = {http://dx.doi.org/10.1016/S0368-2048(99)00046-8},
   ISSN                     = {0368-2048},
   Keywords                 = {Shape resonances},
@@ -3298,6 +3451,17 @@
   Keywords                 = {Atomic and molecular physics; Physical optics},
   Publisher                = {OSA},
   URL                      = {http://www.opticsexpress.org/abstract.cfm?URI=oe-18-4-3660}
+}
+
+@Article{pitzer2013,
+  Title                    = {Direct determination of absolute molecular stereochemistry in gas phase by Coulomb explosion imaging},
+  Author                   = {Pitzer, Martin and Kunitski, Maksim and Johnson, Allan S and Jahnke, Till and Sann, Hendrik and Sturm, Felix and Schmidt, Lothar Ph H and Schmidt-B{\"o}cking, Horst and D{\"o}rner, Reinhard and Stohner, J{\"u}rgen and others},
+  Journal                  = {Science},
+  Year                     = {2013},
+  Number                   = {6150},
+  Pages                    = {1096--1100},
+  Volume                   = {341},
+  Publisher                = {American Association for the Advancement of Science}
 }
 
 @Article{PitzerS2013,
@@ -3379,6 +3543,17 @@
   Keywords                 = {absolute configuration, chirality, circular dichroism, photoelectron spectroscopy, photoionization dynamics},
   Publisher                = {WILEY-VCH Verlag},
   URL                      = {http://dx.doi.org/10.1002/cphc.200700748}
+}
+
+@Article{PowisJPCA2000,
+  Title                    = {Photoelectron spectroscopy and circular dichroism in chiral biomolecules: L-alanine},
+  Author                   = {Powis, Ivan},
+  Journal                  = {The Journal of Physical Chemistry A},
+  Year                     = {2000},
+  Number                   = {5},
+  Pages                    = {878--882},
+  Volume                   = {104},
+  Publisher                = {ACS Publications}
 }
 
 @Article{Poynting1884,
@@ -3501,6 +3676,21 @@
   Numpages                 = {5},
   Publisher                = {American Physical Society},
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.112.203602}
+}
+
+@Article{RitchiePRA1976,
+  Title                    = {Theory of the angular distribution of photoelectrons ejected from optically active molecules and molecular negative ions},
+  Author                   = {Ritchie, Burke},
+  Journal                  = {Phys. Rev. A},
+  Year                     = {1976},
+  Month                    = {Apr},
+  Pages                    = {1411--1415},
+  Volume                   = {13},
+  DOI                      = {10.1103/PhysRevA.13.1411},
+  Issue                    = {4},
+  Numpages                 = {0},
+  Publisher                = {American Physical Society},
+  URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.13.1411}
 }
 
 @Article{RogerSR2013,
@@ -3677,6 +3867,17 @@
   Keywords                 = {TEM},
   Pages                    = {1461 - 1468},
   URL                      = {http://www.sciencedirect.com/science/article/pii/S0304399111001811}
+}
+
+@Article{schellman1975,
+  Title                    = {Circular dichroism and optical rotation},
+  Author                   = {Schellman, John A},
+  Journal                  = {Chemical Reviews},
+  Year                     = {1975},
+  Number                   = {3},
+  Pages                    = {323--331},
+  Volume                   = {75},
+  Publisher                = {ACS Publications}
 }
 
 @Article{schmiegelowarxiv2015,
@@ -4008,6 +4209,15 @@
   Eprint                   = { http://dx.doi.org/10.1021/ac001150v },
   URL                      = { http://dx.doi.org/10.1021/ac001150v 
 }
+}
+
+@PhdThesis{Tia2014,
+  Title                    = {Dichroïsme Circulaire de Photoélectrons (PECD) sur des systèmes chiraux isolés},
+  Author                   = {Tia, Maurice},
+  Year                     = {2014},
+  Note                     = {Thèse de doctorat dirigée par Nahon, Laurent Physique Paris 11 2014},
+  __markedentry            = {[Romain:6]},
+  URL                      = {http://www.theses.fr/2014PA112337}
 }
 
 @Article{TiaJPCL2013,
@@ -4446,7 +4656,6 @@
   Number                   = {1–2},
   Pages                    = {163 - 179},
   Volume                   = {94},
-  __markedentry            = {[Romain:6]},
   DOI                      = {http://dx.doi.org/10.1016/S0368-2048(98)00085-1},
   ISSN                     = {0368-2048},
   Keywords                 = {SF6},
@@ -4556,6 +4765,9 @@
   Adsurl                   = {http://adsabs.harvard.edu/abs/2012NatPh...8..743Z},
   DOI                      = {10.1038/nphys2397},
   File                     = {ZurchNP2012.PDF:ZurchNP2012.PDF:PDF}
+}
+
+@Article{,
 }
 
 @Article{,

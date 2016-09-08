@@ -13,9 +13,9 @@
    inkscape:version="0.91 r13725"
    version="1.1"
    id="svg4635"
-   viewBox="0 0 775.58313 221.34806"
-   height="62.469341mm"
-   width="218.8868mm">
+   viewBox="0 0 781.58311 229.34806"
+   height="64.727119mm"
+   width="220.58012mm">
   <defs
      id="defs4637">
     <clipPath
@@ -48,8 +48,8 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="140.33906"
-     inkscape:cx="461.03587"
+     inkscape:cy="148.33906"
+     inkscape:cx="467.03587"
      inkscape:zoom="0.98994949"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -73,7 +73,7 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0.73042297,-107.69339)">
+     transform="translate(6.730423,-107.6934)">
     <path
        inkscape:connector-curvature="0"
        id="path5309"
@@ -249,12 +249,12 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
        transform="matrix(0,-1,1,0,0,0)"
        x="-194.31213"
-       y="9.6846161">
+       y="3.6846161">
       <tspan
          id="tspan5535"
          sodipodi:role="line"
          x="-194.31213"
-         y="9.6846161">Probabilités</tspan>
+         y="3.6846161">Probabilités</tspan>
     </text>
     <path
        d="m 84.893761,275.31252 162.436919,0 0,-162.43691 -162.436919,0 0,162.43691 z"
@@ -556,16 +556,16 @@
        id="text5649"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
        x="427.25021"
-       y="325.80414">
+       y="333.80414">
       <tspan
          id="tspan5653"
          sodipodi:role="line"
          x="427.25021"
-         y="325.80414">\'Energie de l'électron (a.u.)</tspan>
+         y="333.80414">\'Energie de l'électron (a.u.)</tspan>
     </text>
     <g
        id="g9880"
-       transform="translate(38,4)">
+       transform="translate(38,12)">
       <text
          sodipodi:linespacing="125%"
          id="text9864"
@@ -612,7 +612,7 @@
            y="293.28415">0.24</tspan></text>
     </g>
     <g
-       transform="translate(-225.65666,3.9999986)"
+       transform="translate(-225.65666,11.999999)"
        id="g9880-4">
       <text
          sodipodi:linespacing="125%"
@@ -660,7 +660,7 @@
            y="293.28415">0.24</tspan></text>
     </g>
     <g
-       transform="translate(293.9862,4.0000029)"
+       transform="translate(293.9862,12.000003)"
        id="g9880-7">
       <text
          sodipodi:linespacing="125%"
@@ -743,34 +743,34 @@
     <text
        id="text5649-0-5"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       x="55.446823"
+       x="47.446823"
        y="118.45999">
       <tspan
          id="tspan5653-5-1"
          sodipodi:role="line"
-         x="55.446823"
+         x="47.446823"
          y="118.45999">$\num{3e2}$</tspan>
     </text>
     <text
        y="171.97249"
-       x="55.446823"
+       x="47.446823"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="text10073">
       <tspan
          y="171.97249"
-         x="55.446823"
+         x="47.446823"
          sodipodi:role="line"
          id="tspan10075">$\num{2e2}$</tspan>
     </text>
     <text
        id="text10077"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       x="55.446823"
+       x="47.446823"
        y="225.48499">
       <tspan
          id="tspan10079"
          sodipodi:role="line"
-         x="55.446823"
+         x="47.446823"
          y="225.48499">$\num{1e2}$</tspan>
     </text>
     <text

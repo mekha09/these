@@ -319,8 +319,137 @@ En conclusion, nous avons construit une source de rayonnement ultraviolet ultra-
 %
 \chapter{Polarisation circulaire et chiralité}
 \section{Définitions de la chiralité}
-\section{Dichroïsme circulaire et activité optique}
+\subsection{Molécules chirales}
+La découverte du concept de polarisation de la lumière est historiquement lié à celle de la \textit{chiralité}. En 1808, Malus observa que la lumière réfléchie par une substance diaphane possédait une polarisation (mot qu'il introduisit en 1810). Cette polarisation était mise en évidence par une transmission à travers un cristal de calcite. Cette propriété fut observée par Arago dans des cristaux de quartz, avant d'être étudiée par Biot qui en 1812 montra que différents types de quartz tournaient la direction de polarisation soit à droite soit à gauche, propriété appelée \textit{activité optique}. Il mesura le même effet dans des substances organiques telles que des molécules de camphre. En 1848, Pasteur relia cette propriété optique à la géométrie du cristal ou de la molécule considérée. Il émit l'idée que certaines molécules existaient sous des formes géométriques dissymétriques tout en ayant les mêmes propriétés chimiques. Le mot de \textit{chiralité} fut introduit en 1893 par Lord Kelvin durant la deuxième "Robert Boyle Lecture" à l'université d'Oxford \mycite{kelvin1894} :
+\begin{quotation}
+I call any geometrical figure, or group of points, 'chiral', and say that it has chirality if its image in a plane mirror, ideally realized, cannot be brought to coincide with itself.
+\end{quotation}
+Le terme de chiralité dérive du mot grec sigifiant "main", un exemple d'objet chiral (voir figure \ref{fig:chirality}). Les deux formes possèdent un pouvoir rotatoire opposé et sont nommées \textit{énantiomères} (formes opposées en grec). On peut les nommer selon le signe de la rotation qu'ils imposent à la lumière : on parle alors de molécule dextrogyre (D ou +) ou lévogire (L ou -). Cependant, une même molécule peut imposer une rotation gauche ou droite selon la longueur d'onde de la lumière utilisée. On utilise donc également la configuration absolue de la molécule, définie à partir de sa structure tri-dimensionelle. On note alors les énantiomère R (rectus) et S (sinister). La configuration absolue d'une molécule est habituellement mesurée par diffraction X \mycite{Bijvoet1951}, par explosion coulombienne \mycite{pitzer2013} ou encore par spectroscopie micro-onde \mycite{patterson2013}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=.5\columnwidth]{Figures/Chirality/chirality_with_hands.pdf}%
+\caption{Une molécule "chirale" n'est pas superposable à son image dans un miroir. De même que les mains gauches et droites ont un pouce et des doigts dans le même ordre, les molécules chirales ont les mêmes atomes dans le même ordre mais ne sont pas images l'une de l'autre dans un miroir.}
+\label{fig:chirality}
+\end{figure}
+
+\subsection{La chiralité de la lumière}
+Deux énantiomères ont les mêmes propriétés chimiques. Cependant, elles interagiront différemment avec un objet lui-même chiral. Par exemple, la plupart des récepteurs biologiques sont chiraux et réagiront très différemment à une protéine R ou S. Le contrôle et la mesure des propriétés chirales est donc central dans l'industrie alimentaire, pharmaceutique et cosmétique. 
+
+Si on peut caractériser leurs molécules par leur interaction avec la lumière, il est nécessaire que la lumière soit également un objet chiral. La définition donnée plus haut est insuffisante, car comme noté par Lord Kelvin dans ses \textit{Baltimore Lecture}, elle ne permet pas de distinguer les effets due à la chiralité de ceux dues à d'autres types de dissymétries telles que l'effet Faraday. \mycite{Barron1986} donne une définition généralisable à la chiralité de particules élémentaires telles qu'un photon :
+
+\begin{quotation}
+True chirality is exhibited by systems that exist in two distinct enantiomeric (enantiomorphic) states that are interconverted by space inversion, but not by time reversal combined with any proper spatial rotation.
+\end{quotation}
+
+Cette définition permet de distinguer la "vraie" chiralité de la fausse, c'est-à-dire une chiralité indépendante du temps. Les opérations spatiales et temporelles décrites sont représentées sur la figure \ref{fig:truefalsechir}, où elles sont notées T (inversion du temps), P (inversion de l'espace), et $\text{R}_{\pi}$ (rotation, ici d'angle $\pi$). 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=.9\columnwidth]{Figures/Chirality/truefalsechir.pdf}%
+\caption{Vraie et fausse chiralité. \textit{(a)} Cône en rotation immobile. P (inversion de l'espace) donne le même résultat que T (inversion du temps) suivi de $\text{R}_{\pi}$ (rotation d'angle $\pi$). \textit{(b)} Cône en rotation en translation. Il présente cette fois une vraie chiralité. \textit{(c)} Lumière polarisée circulairement : un photon est analogue au cône en translation. Tiré de \mycite{barron}.}
+\label{fig:truefalsechir}
+\end{figure}
+
+Dans cette figure, on prend l'exemple d'un cône en rotation. Si le cône est immobile, P donne la même chose que T suivi de $\text{R}_{\pi}$, il ne présente pas de vraie chiralité. Au contraire, s'il est en translation, il a une vraie chiralité. Le cas du photon est similaire : l'hélicité du photon peut être représentée classiquement par une rotation. Le photon ne peut de plus pas être immobile, la lumière polarisée circulairement est donc chirale selon cette définition. Pour des molécules chirales, on appelle mélange \textit{racémique} un mélange composé d'autant de chacun des deux énantiomères. Ceci est analogue à une lumière polarisée linéairement, constituée d'autant de photons polarisés circulairement droit que gauche. 
+
+La lumière polarisée circulairement est donc un outil de choix pour sonder et caractériser les molécules chirales. De nombreuses interactions sont possibles, nous décrirons dans la section suivante celle nommée dichroïsme circulaire, avant de présenter le dichroïsme circulaire de photoélectron, que nous mesurerons avec la source décrite dans la partie \ref{CH:Circular_HHG}.
+
+\section{Dichroïsme circulaire d'absorption}
+Fresnel expliqua le phénomène d'activité optique par une différence de vitesse de propagation de la composante circulaire droite (notée D) et gauche (G) d'une onde polarisée linéairement. Le milieu présente donc un indice de réfraction pour chaque composante. Considèrons un champ polarisé linéairement tel que les vecteurs champs électriques RCP et LCP soient parallèles à $z = 0$. Après une propagation sur une distance $L$, les champs auront tourné de $\theta^{G}=2\pi\rmc L/(\lambda v^{G})$ et $\theta^{R}=-2\pi\rmc L/(\lambda v^{RCP})$. L'angle de rotation de la direction du champ s'écrit alors :
+\begin{align*}
+\chi = \frac{1}{2}(\theta^{G}+\theta^{D}) &= \frac{\pi\rmc L}{\lambda}\left(\frac{1}{v^{G}}-\frac{1}{v^{D}}\right)\\
+&= \frac{\pi}{\lambda}\left(n^{G}-n^{D}\right).
+\end{align*}
+
+Mais si $n^{G}$ et $n^{D}$ sont différents, le milieu doit également absorber différemment chaque composante du champ. Cet effet a été mesuré pour la première fois par \mycite{Haidinger1847} puis étudié par \mycite{Cotton1895}, qui le nomma \textit{dichroïsme circulaire}. Cet effet est toujours couramment utilisé avec des longueurs d'ondes visibles ou infrarouges. Il est généralement préféré à la mesure de l'activité optique car il évolue plus rapidement avec la longueur d'onde, et permet donc de distinguer plus facilement différentes bandes spectrales. Le dichroïsme circulaire est ainsi utilisé pour la détermination de structures de protéines, de changements de structures induits par par exemple le pH ou le solvant, de repliements/dépliements de protéines, ou encore de liaison de ligands.
+
+L'absorption correspond à une transition d'un état initial vers un état excité. Lorsque la lumière traverse un ensemble de molécule, son intensité est gouvernée par la loi de Beer-Lambert, c'est-à-dire une décroissance exponentielle en fonction de la longueur parcourue. On note $\alpha^{D}$ et $\alpha^{G}$ les coefficients d'absorption de chacune des composantes du champ. Le dichroïsme circulaire vaut :
+\[\Delta \alpha = \alpha^{G}-\alpha^{D}.\]
+En pratique, on préfère utiliser le ratio entre le dichroïsme circulaire et l'absorption habituelle, appelé facteur de dissymétrie \mycite{Kuhn1930} : 
+\begin{equation}
+g = \frac{\alpha^{G}-\alpha^{D}}{\frac{1}{2}(\alpha^{G}-\alpha^{D})}.
+\label{eq:kuhn}
+\end{equation}
+
+Relions $\alpha$ aux propriétés de la molécule. Pour une longueur de propagation $\delta z$ dans le milieu infinitésimale, l'intensité absorbée par unité de surface $\delta I$ s'écrit :
+\begin{align*}
+\frac{\delta I}{I} = \alpha c \delta z,
+\end{align*}
+où $c$ est le nombre de molécule par mètre cube. On note $w$ l'énergie moyenne absorbée par molécule, on a donc $\delta I = c \delta z w$. On obtient alors :
+\begin{align}
+\alpha = \frac{\delta I}{Ic \delta z} = \frac{c \delta z w}{Ic \delta z} = \frac{w}{I}.
+\label{eq:cd1}
+\end{align}
+Notons qu'un facteur de proportionnalité s'ajoute à cette expression si on choisit d'utiliser un coefficient d'absorption molaire.
+
+Considérons maintenant la transition électronique $i\rightarrow f$. \`A cette transition est associé un élément de matrice de transition qu'on note $V_{if}$. La bande d'absorption a un profil spectral qui donne la probabilité de transition en fonction de la fréquence, qu'on note $\rho(\omega)$. \mycite{schellman1975} montre que ces quantités sont reliés à $w$ par la relation :
+\begin{equation}
+w(\omega) = \frac{\pi \omega |V_{if}|^2 \rho(\omega)}{2\hbar}.
+\label{eq:cd2}
+\end{equation}
+
+Il faut donc déterminer $V_{if}$ pour obtenir $\alpha$. Commençons dans l'approximation dipolaire électrique. Dans ce cas, le champ électrique se couple avec le moment dipolaire de la molécule : $V_{if} = -\bm{\mu}_{if}\cdot \bm{E}$, où $\mu_{if}$ est le moment dipolaire (voir partie \ref{sec:multipolar}). \mycite{schellman1975} montre que si le champ est polarisé circulairement droite ou gauche, on a $(V_{if}^{D/G})^2 = (\bm{\mu}_{if})^2E^2_0/3$, où la division par 3 provient d'une moyenne sur les orientation possibles des moments dipolaires.
+On utilise alors les équations \ref{eq:cd1} et \ref{eq:cd2} :
+\begin{align*}
+\alpha^{D/G}(\omega) &= \frac{w^{D/G}(\omega)}{I} = \frac{\pi \omega |V_{if}^{D/G}|^2 \rho(\omega)}{2\hbar I} 
+= \frac{\pi \omega |\mu_{if}E_0|^2 \rho(\omega)}{6\hbar I} 
+= \frac{\pi \omega |\mu_{if}|^2 \rho(\omega)E^2_0}{6\hbar I} \\
+&= \frac{4\pi^2 \omega |\mu_{if}|^2 \rho(\omega)}{3\hbar n \rmc} 
+\end{align*}
+On obtient donc directement le dichroïsme circulaire : $\Delta\alpha = \alpha^G-\alpha^D = 0$. Dans l'approximation dipolaire, le dichroïsme circulaire est donc nul. \par Il faut considérer le terme suivant du développement multipolaire : 
+\[V_{if} = -\bm{\mu}_{if}\cdot \bm{E} - \bm{m}_{if}\cdot \bm{B}.\] 
+\mycite{schellman1975} réalise le calcul de $V_{if}$ pour une polarisation circulaire :
+\begin{align*}
+(V_{if}^{D/G})^2 &= \frac{(\bm{\mu}_{if})^2E^2_0}{3}+\frac{(\bm{m}_{if})^2B^2_0}{3} \mp \frac{2}{3}\text{Im}(\bm{\mu}_{if}\cdot\bm{m}_{if})E_0B_0 \\
+&= \frac{8\pi I}{3 \rmc}\left[\frac{(\bm{\mu}_{if})^2}{n} +  n(\bm{m}_{if})^2 \mp 2 \text{Im}(\bm{\mu}_{if}\cdot\bm{m}_{if})\right]. 
+\end{align*}
+Chacun des trois terme a sa propre probabilité de transition, qu'on note $\rho(\omega)$, $\tau(\omega)$ et $\sigma(\omega)$. On obtient donc pour le coefficient d'atténuation :
+\begin{equation*}
+\alpha^{D/G}(\omega) = \frac{4\pi^2 \omega}{3\hbar \rmc}\left[\frac{\rho(\omega)(\bm{\mu}_{if})^2}{n} +  n\tau(\omega)(\bm{m}_{if})^2 \mp 2 \sigma(\omega)\text{Im}(\bm{\mu}_{if}\cdot\bm{m}_{if})\right] 
+\end{equation*}
+
+Les trois termes obtenus correspondent à l'absorption dipolaire électrique, l'absorption dipolaire magnétique, et le dichroïsme circulaire. En effet, on obtient :
+\[ \Delta \alpha = \alpha^G-\alpha^D = \frac{16\pi^2 \omega\sigma(\omega)\text{Im}(\bm{\mu}_{if}\cdot\bm{m}_{if})}{3\hbar \rmc}. \]
+Le fait que l'on ait besoin de s'utiliser l'approximation dipolaire magnétique pour observer du dichroïsme circulaire signifie que cet effet sera faible en général. Ainsi, le facteur d'asymétrie $g$ (voir équation \ref{eq:kuhn}) a des valeurs typiques de $10^{-5}\text{-}10^{-3}$ \mycite{Levi1980}. Ceci impose de réaliser des mesures à densité élevée, c'est-à-dire en phase liquide ou sur des films minces. La mesure est alors parasitée par la contribution du solvant ou du substrat, empêchant la mesure du dichroïsme de la molécule libre.
+
 \section{Dichroïsme circulaire de photoélectron (PECD)}
+On s'intéresse désormais à un autre type de dichroïsme, qui comme nous allons voir a des propriétés très différentes. Jusque ici, nous avons présenté des techniques chiroptiques (terme désignant l'étude de molécule chirales par la lumière) dans le domaine visible ou proche infrarouge. Le passage à énergies de photon plus élevées donne accès à un phénomène supplémentaire : la photoionisation. Nous allons donc décrire l'émission d'un électron par une molécule chirale suite à l'absorption de lumière polarisée circulairement. 
+
+On considère une impulsion lumineuse se propageant selon la direction $e_z$. On place une molécule chirale au centre d'un repère sphérique $(r,\theta,\phi)$, où $r$ est la position du photoélectron, $\theta$ est l'angle par rapport à l'axe $e_z$, comme représenté sur la figure \ref{fig:geomPECD}.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{0.5\columnwidth}
+\import{Figures/PECD/}{geomPECD.pdf_tex}
+\caption{Géométrie de photoionisation.}
+\label{fig:geomPECD}
+\end{figure}
+
+Dans le cas de molécules d'orientation aléatoire et d'un champ parfaitement polarisé, le phénomène ne dépend pas de $\phi$. En 1976, \mycite{RitchiePRA1976} obtint l'expression de la distribution angulaire des photoélectrons éjectés et montra qu'elle prend la forme suivante :
+\begin{equation}
+I^p(r,\theta) = b_0^p(r) + b_1^p(r) P_1(\cos\theta) + b_2^p(r) P_2(\cos\theta)
+\label{eq:angulardistrib}
+\end{equation}
+où les $b_i$ sont des fonctions du potentiel moléculaire et de l'énergie $h\nu$ et de la polarisation $p$ du photon incident ($p = 0$, polarisation linéaire, $p =\pm1$ polarisation circulaire gauche/droite). Les $P_i$ sont les polynômes de Legendre, qui valent $P_1(x) = x$ et $P_2(x) = (3x^2-1)/2$. Il est important de noter que contrairement à celui du dichroïsme circulaire, ce calcul a été réalisé dans l'approximation dipolaire électrique. Le calcul complet des $b_i$ permet d'obtenir les propriétés suivantes :
+\begin{align}
+b_0^1 &= b_0^{-1} \nonumber\\
+b_1^0 &= 0\nonumber\\
+b_1^1 &= -b_1^{-1}\nonumber\\
+b_2^1 &= b_2^{-1}.
+\label{eq:bi}
+\end{align}
+$b_0$ est couramment appelé PES (PhotoElectron Spectrum), et correspond simplement à la section efficace de photoionisation de la molécule. $b_2$ est souvent noté $\beta$ et appelé paramètre d'anisotropie. Quant à $b_1$, on remarque qu'il fait apparaître un dichroïsme :
+\begin{equation}
+I^{1}(r,\theta)-I^{-1}(r,\theta) = (b_1^1(r)-b_1^{-1}(r))P_1(\cos\theta) = 2b_1^1(r)\cos\theta
+\label{eq:pecddef}
+\end{equation}
+On obtient donc une asymétrie autour de $\theta = 90\degres$, c'est-à-dire avant-arrière par rapport à la direction de propagation de la lumière. Cet effet est appelé dichroïsme circulaire de photoélectron (PECD, \textit{PhotoElectron Circular Dichroism}), et $b_1$ est le \textit{paramètre dichroïque}. On note souvent $PECD = 2b_1$.
+
+\mycite{PowisJPCA2000} obtint théoriquement des asymétries allant jusqu'à 40\% de la section efficace totale. Des démonstrations expérimentales n'ont pas tardé à arriver, profitant du développement de sources synchrotrons fournissant de la lumière XUV polarisée circulairement. \mycite{BoweringPRL2001} ont mesuré le PECD du bromocamphre en 2001, avant que \mycite{GarciaJCP2003} étudient le camphre et \mycite{TurchiniJACS2004} le methyloxirane. L'asymétrie la plus haute aujourd'hui mesurée est de 32\% \mycite{DalyJCP2011}. Ces valeurs élevées s'expliquent par le caractère purement dipolaire électrique du PECD et permettent de réaliser des études chiroptiques en phase gazeuse.
+Par la suite, l'étude du PECD a montré son incroyable sensibilité aux finesses du potentiel moléculaire. Tout d'abord, $b_1$ est différent selon l'orbitale ionisée, comme démontré dans le camphre par \mycite{NahonJCP2006}. Ensuite, le PECD peut varier drastiquement avec des substitutions chimiques, comme illustré sur la figure \ref{fig:substitution}, tirée de \mycite{Tia2014}. On y voit qu'en changeant un élément de la molécule, la section efficace et le paramètre $\beta$ ne changent presque pas, car l'orbitale ionisée est localisé sur l'atome d'oxygène. Cependant, le paramètre $b_1$ évolue drastiquement, permettant de différencier les quatres molécules. Un autre exemple est celui des conformères, qui sont des molécules de même formule mais dont les atomes ont tourné autour d'une liaison chimique. Le PECD est également capable de distinguer ces deux molécules \mycite{GarciaPCCP2008}. Pour finir, il a récemment été observé que le PECD était sensible aux modes de vibration, c'est-à-dire aux mouvements des noyaux \mycite{GarciaNC2013}.
+
+Cette sensibilité  
 %
 %\chapter{Mesures de PECD avec une source d'harmoniques d'ordre élevé}
 %\section{Mesures de PECD dans la fenchone}
