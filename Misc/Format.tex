@@ -274,6 +274,52 @@ breaklinks = true
 %\thispagestyle{empty}
 %}
 
+
+%%%
+%\renewcommand*{\thepart}{\arabic{part}}
+%\renewcommand*{\parttitlefont}{\normalfont\large\MakeUppercase}
+%\renewcommand*{\partnamefont}{\normalfont\scshape\MakeLowercase}
+%\renewcommand*{\partnumfont}{\normalfont\scshape\MakeLowercase}
+%
+%%Pour "première partie"
+%%\renewcommand*{\printpartname}{\partnamefont{\ordinalstring{part}[f] partie}}
+%%\renewcommand*{\printpartnum}{}
+%
+%%Pour "partie 1"
+%\renewcommand*{\printpartname}{\partnamefont Partie}
+%\renewcommand*{\printpartnum}{\partnumfont\thepart}
+%
+%\renewcommand{\midpartskip}{\par\parbox{0.5in}{\hrulefill}\par}
+%\renewcommand{\beforepartskip}{\vspace*{\fill}}
+%\renewcommand{\afterpartskip}{\vspace*{\fill}}
+
+\makeatletter
+
+% define a user command to choose the image
+% this command also creates an internal command to insert the image
+\newcommand{\partimage}[2][]{\gdef\@partimage{\includegraphics[#1]{#2}}}
+\def\@part[#1]#2{%
+  \ifnum \c@secnumdepth >-2\relax \refstepcounter{part}%
+    \addcontentsline{toc}{part}{\thepart.
+        \protect\enspace\protect\noindent#1}%
+  \else
+    \addcontentsline{toc}{part}{#1}\fi
+  \begingroup\centering
+  \ifnum \c@secnumdepth >-2\relax
+       {\fontsize{\@xviipt}{22}\bfseries \normalfont\scshape\MakeLowercase
+         \partname} %\vskip 20\p@ \fi
+				\par\parbox{0.5in}{\hrulefill}\par
+  \fontsize{\@xxpt}{22}\bfseries \normalfont\scshape\MakeLowercase
+      #1\vfil\@partimage\vfil\endgroup \newpage\thispagestyle{empty}}
+\makeatother
+
+%% Pour la table des matières
+%\renewcommand*{\cftpartname}{Partie}
+%\renewcommand*{\cftpartpresnum}{\space}
+%\renewcommand*{\cftpartaftersnum}{.}
+%\renewcommand*{\cftpartaftersnumb}{\space}
+%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter styles
 \makeatletter
@@ -651,7 +697,7 @@ breaklinks = true
 % Select styles
 \pagestyle{mypagestyle}
 %\chapterstyle{mychapterstyle}
-\chapterstyle{dash}
+\chapterstyle{thatcher}
 %\chapterstyle{veelo}
 \strictpagechecktrue
 

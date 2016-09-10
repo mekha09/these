@@ -1,3 +1,4 @@
+\partimage[width=0.6\textwidth]{Figures/PartImages/PECD_image.png}
 \part{Polarisation circulaire, molécules chirales et harmoniques d'ordre élevé}
 \label{PA:Spin_HHG}
 \chapter{Génération d'harmoniques d'ordre élevé polarisée elliptiquement}
@@ -412,7 +413,7 @@ Chacun des trois terme a sa propre probabilité de transition, qu'on note $\rho(
 Les trois termes obtenus correspondent à l'absorption dipolaire électrique, l'absorption dipolaire magnétique, et le dichroïsme circulaire. En effet, on obtient :
 \[ \Delta \alpha = \alpha^G-\alpha^D = \frac{16\pi^2 \omega\sigma(\omega)\text{Im}(\bm{\mu}_{if}\cdot\bm{m}_{if})}{3\hbar \rmc}. \]
 Le fait que l'on ait besoin de s'utiliser l'approximation dipolaire magnétique pour observer du dichroïsme circulaire signifie que cet effet sera faible en général. Ainsi, le facteur d'asymétrie $g$ (voir équation \ref{eq:kuhn}) a des valeurs typiques de $10^{-5}\text{-}10^{-3}$ \mycite{Levi1980}. Ceci impose de réaliser des mesures à densité élevée, c'est-à-dire en phase liquide ou sur des films minces. La mesure est alors parasitée par la contribution du solvant ou du substrat, empêchant la mesure du dichroïsme de la molécule libre.
-
+\clearpage
 \section{Dichroïsme circulaire de photoélectron (PECD)}
 On s'intéresse désormais à un autre type de dichroïsme, qui comme nous allons voir a des propriétés très différentes. Jusque ici, nous avons présenté des techniques chiroptiques (terme désignant l'étude de molécule chirales par la lumière) dans le domaine visible ou proche infrarouge. Le passage à énergies de photon plus élevées donne accès à un phénomène supplémentaire : la photoionisation. Nous allons donc décrire l'émission d'un électron par une molécule chirale suite à l'absorption de lumière polarisée circulairement. 
 
@@ -444,15 +445,37 @@ $b_0$ est couramment appelé PES (PhotoElectron Spectrum), et correspond simplem
 I^{1}(r,\theta)-I^{-1}(r,\theta) = (b_1^1(r)-b_1^{-1}(r))P_1(\cos\theta) = 2b_1^1(r)\cos\theta
 \label{eq:pecddef}
 \end{equation}
-On obtient donc une asymétrie autour de $\theta = 90\degres$, c'est-à-dire avant-arrière par rapport à la direction de propagation de la lumière. Cet effet est appelé dichroïsme circulaire de photoélectron (PECD, \textit{PhotoElectron Circular Dichroism}), et $b_1$ est le \textit{paramètre dichroïque}. On note souvent $PECD = 2b_1$.
+On obtient donc une asymétrie autour de $\theta = 90\degres$, c'est-à-dire avant-arrière par rapport à la direction de propagation de la lumière. Cet effet est appelé dichroïsme circulaire de photoélectron (PECD, \textit{PhotoElectron Circular Dichroism}), et $b_1$ est le \textit{paramètre dichroïque}. On note souvent $PECD = 2b_1$. L'équation \ref{eq:bi} montre directement que le PECD change de signe si on change l'hélicité de la lumière. De même, le signe change si on change d'énantiomère.
 
 \mycite{PowisJPCA2000} obtint théoriquement des asymétries allant jusqu'à 40\% de la section efficace totale. Des démonstrations expérimentales n'ont pas tardé à arriver, profitant du développement de sources synchrotrons fournissant de la lumière XUV polarisée circulairement. \mycite{BoweringPRL2001} ont mesuré le PECD du bromocamphre en 2001, avant que \mycite{GarciaJCP2003} étudient le camphre et \mycite{TurchiniJACS2004} le methyloxirane. L'asymétrie la plus haute aujourd'hui mesurée est de 32\% \mycite{DalyJCP2011}. Ces valeurs élevées s'expliquent par le caractère purement dipolaire électrique du PECD et permettent de réaliser des études chiroptiques en phase gazeuse.
 Par la suite, l'étude du PECD a montré son incroyable sensibilité aux finesses du potentiel moléculaire. Tout d'abord, $b_1$ est différent selon l'orbitale ionisée, comme démontré dans le camphre par \mycite{NahonJCP2006}. Ensuite, le PECD peut varier drastiquement avec des substitutions chimiques, comme illustré sur la figure \ref{fig:substitution}, tirée de \mycite{Tia2014}. On y voit qu'en changeant un élément de la molécule, la section efficace et le paramètre $\beta$ ne changent presque pas, car l'orbitale ionisée est localisé sur l'atome d'oxygène. Cependant, le paramètre $b_1$ évolue drastiquement, permettant de différencier les quatres molécules. Un autre exemple est celui des conformères, qui sont des molécules de même formule mais dont les atomes ont tourné autour d'une liaison chimique. Le PECD est également capable de distinguer ces deux molécules \mycite{GarciaPCCP2008}. Pour finir, il a récemment été observé que le PECD était sensible aux modes de vibration, c'est-à-dire aux mouvements des noyaux \mycite{GarciaNC2013}.
 
-Cette sensibilité  
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=.7\columnwidth]{Figures/PECD/substitution.png}%
+\caption{Effet d'une substitution sur le PECD. Quatres molécules sont représentées à droite. \`A gauche, on voit leur section efficace de photoionisation $\sigma$, leur paramètre d'anisotropie $\beta$ et le paramètre dichroïque $b_1$, ici noté D. Tiré de \mycite{Tia2014}.}
+\label{fig:substitution}
+\end{figure}
+
+Cette haute sensibilité au détails fins du potentiel moléculaire peut être expliquée dans un modèle où un électron diffuse sur la molécule après avoir été ionisé. On part d'un état initial où l'électron est lié, et on observe l'électron dans le continuum après qu'il ait diffusé sur le potentiel moléculaire. \mycite{DillDehmer1974} montrent que la fonction d'onde du photoélectron dans le continuum se décompose en différentes composantes de moment angulaire défini. Chacune de ces composante est déphasée différemment par le potentiel moléculaire. La phase de chaque composante $\ell$, que l'on note $\sigma_\ell$, est responsable d'interférences dans le continuum entre ondes partielles. Ainsi, une observable sera d'autant plus sensible au potentiel moléculaire qu'elle est sensible à des petites variations de $\sigma_\ell$. Le calcul de \mycite{RitchiePRA1976} donne les dépendances en $\sigma_\ell$ des $b_i$ :
+
+\begin{itemize}
+\renewcommand{\labelitemi}{$\bullet$}
+\setlength\itemsep{1em}
+\item $b_0$ ne dépend pas du tout de $\sigma_\ell$. La section efficace intégrée sur tout l'espace ne présente donc que peu d'information.
+\item $b_2$ dépend de $\sigma_\ell$ pour une valeur de $\ell$ sur deux. Plus précisément, $b_2$ présente un terme $\cos(\sigma_\ell-\sigma_{\ell+2})$. $b_2$ fournit donc davantage d'information que la section efficace totale.
+\item Le cas qui nous intéresse est celui de $b_1$, qui lui présente un terme $\sin(\sigma_\ell-\sigma_{\ell+1})$. Toutes les composantes $\ell$ influent donc sur sa valeur. De plus, on a une dépendance en sinus, qui varie significativement pour des petites valeurs de déphasage entre composantes $\ell$. Au contraire, le cosinus dans l'expression de $b_2$ est relativement plat au voisinnage de $\sigma_\ell-\sigma_{\ell+2} = 0$.
+\end{itemize}
+
+Nous avons jusque ici mentionné des études réalisées sur synchrotron. Ces travaux présentent une très bonne résolution spectrale, mais faute de source adaptée, aucune étude \textit{dynamique} du PECD n'a été réalisée. Nous allons utiliser la source présentée en partie \ref{CH:Circular_HHG} à cet effet.
 %
-%\chapter{Mesures de PECD avec une source d'harmoniques d'ordre élevé}
-%\section{Mesures de PECD dans la fenchone}
+\chapter{Mesures de PECD avec une source d'harmoniques d'ordre élevé}
+\section{Dispositif expérimental}
+\section{Résultats dans la fenchone}
+
+\chapter{Le PECD comme outil de caractérisation du rayonnement}
+\section{Mesures de référence sur synchrotron}
+\section{Comparaison entre mesures synchrotron et harmoniques}
 %\section{Caractérisation de l'état de polarisation des harmoniques par le PECD}
 %
 %\chapter{Mesures chiroptiques à l'échelle femtoseconde}
