@@ -87,6 +87,7 @@ list-final-separator = { et }
 
 \usepackage{transparent} %Handles transparency when importing svg files
 \usepackage[all]{xy} %Used for drawings with arrows
+\usepackage{ragged2e} %Justify command
 
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
@@ -451,6 +452,13 @@ breaklinks = true
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Define justified environment
+\makeatletter
+\newcommand{\justified}{%
+  \rightskip\z@skip%
+  \leftskip\z@skip}
+\makeatother
+
 % List of papers
 \newlistof{listofpapers}{lop}{\loptitle}
 \renewcommand{\afterloptitle}{\afterchaptertitle \preloptext\par}

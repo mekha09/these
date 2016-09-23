@@ -1,0 +1,77 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'waveplates.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{459.81334296bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.52020239)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{waveplates.pdf}}%
+    \put(0.21774897,0.25457882){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
+    \put(0.11493522,0.36881633){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Y}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{waveplates.pdf}}%
+    \put(0.60293706,0.0567084){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
+    \put(0.46233712,0.21178789){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Y}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{waveplates.pdf}}%
+    \put(0.60293706,0.36075591){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
+    \put(0.45354959,0.50133072){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Y}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{waveplates.pdf}}%
+    \put(0.97768614,0.0567084){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
+    \put(0.88531138,0.21618165){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Y}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{waveplates.pdf}}%
+    \put(0.97420647,0.36075591){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
+    \put(0.87754424,0.50438425){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Y}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{waveplates.pdf}}%
+    \put(0.11866219,0.42593508){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Lame demi onde}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{waveplates.pdf}}%
+    \put(0.24631706,0.36178631){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\frac{\beta}{2}$}}}%
+    \put(0.24631706,0.11326747){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$-\frac{\beta}{2}$}}}%
+    \put(0.6829655,0.48156234){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Lame quart d'onde}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{waveplates.pdf}}%
+    \put(0.98788453,0.4876975){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\epsilon_0=\tan\beta$}}}%
+    \put(0.98788453,0.18148629){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\epsilon_0=-\tan\beta$}}}%
+  \end{picture}%
+\endgroup%

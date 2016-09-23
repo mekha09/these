@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% Creator: Inkscape 0.48.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'h11_l11.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{416.18287094bp}%
+    \setlength{\unitlength}{416.18286133bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,14 +48,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.67766987)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{h11_l11.pdf}}%
-    \put(0.06610212,0.36805775){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Dimension verticale (mm)}}}}%
-    \put(0.18345424,0.34757156){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.15733653,0.61960865){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{15}}}%
-    \put(0.14791711,0.07643127){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-15}}}%
-    \put(0.58125245,-0.01750872){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{z (mm)}}}%
-    \put(0.21602489,0.01060603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.92227251,0.01060603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{500}}}%
+  \begin{picture}(1,0.67766989)%
+    \put(0,0){\includegraphics[width=\unitlength]{h11_l11.pdf}}%
+    \put(0.06610212,0.36805776){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Dimension verticale (mm)}}}}%
+    \put(0.18345424,0.34757157){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.15733653,0.61960866){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.5}}}%
+    \put(0.14791711,0.07643128){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-1.5}}}%
+    \put(0.58125245,-0.01750871){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{z (mm)}}}%
+    \put(0.21602489,0.01060604){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.92227251,0.01060604){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{500}}}%
   \end{picture}%
 \endgroup%

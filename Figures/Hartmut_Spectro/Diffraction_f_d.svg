@@ -35,8 +35,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1018"
+     inkscape:window-width="1536"
+     inkscape:window-height="803"
      id="namedview179"
      showgrid="false"
      fit-margin-top="0"
@@ -44,8 +44,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.91904762"
-     inkscape:cx="492.06357"
-     inkscape:cy="355.29183"
+     inkscape:cx="524.84214"
+     inkscape:cy="268.26368"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -172,8 +172,8 @@
   <line
      y2="526.32385"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:2.60229349;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     x1="68.131294"
-     x2="985.9339"
+     x1="28.179533"
+     x2="985.87738"
      y1="526.32385"
      id="line69" />
   <line
@@ -261,62 +261,62 @@
   <line
      y2="6.4518738"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:2.56178689;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     x1="67.830299"
-     x2="67.830299"
+     x1="25.830299"
+     x2="25.830299"
      y1="526.32385"
      id="line109" />
   <line
      y2="493.83182"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:2.56178689;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     x1="67.830299"
-     x2="76.724831"
+     x1="25.830299"
+     x2="34.724831"
      y1="493.83182"
      id="line111" />
   <line
      y2="412.60178"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:2.56178689;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     x1="67.830299"
-     x2="76.724831"
+     x1="25.830299"
+     x2="34.724831"
      y1="412.60178"
      id="line113" />
   <line
      y2="331.3718"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:2.56178689;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     x1="67.830299"
-     x2="76.724831"
+     x1="25.830299"
+     x2="34.724831"
      y1="331.3718"
      id="line115" />
   <line
      y2="250.14188"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:2.56178689;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     x1="67.830299"
-     x2="76.724831"
+     x1="25.830299"
+     x2="34.724831"
      y1="250.14188"
      id="line117" />
   <line
      y2="168.91183"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:2.56178689;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     x1="67.830299"
-     x2="76.724831"
+     x1="25.830299"
+     x2="34.724831"
      y1="168.91183"
      id="line119" />
   <line
      y2="87.681824"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:2.56178689;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     x1="67.830299"
-     x2="76.724831"
+     x1="25.830299"
+     x2="34.724831"
      y1="87.681824"
      id="line121" />
   <line
      y2="6.4518738"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:2.56178689;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     x1="67.830299"
-     x2="76.724831"
+     x1="25.830299"
+     x2="34.724831"
      y1="6.4518738"
      id="line123" />
   <g
      id="g4452"
-     transform="translate(-100.92536,-317.0986)">
+     transform="translate(-142.92536,-317.0986)">
     <text
        id="text127"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#262626;stroke:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
@@ -403,7 +403,7 @@
      id="path177"
      inkscape:connector-curvature="0" />
   <text
-     x="110.67115"
+     x="82.67115"
      xml:space="preserve"
      y="11.608337"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#0b1728;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
@@ -413,9 +413,9 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#162d50;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
      y="95.608337"
      xml:space="preserve"
-     x="110.67115">H11</text>
+     x="82.67115">H11</text>
   <text
-     x="110.67115"
+     x="82.67115"
      xml:space="preserve"
      y="171.60834"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#214478;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
@@ -425,27 +425,27 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#2c5aa0;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
      y="223.60831"
      xml:space="preserve"
-     x="110.67115">H15</text>
+     x="82.67115">H15</text>
   <text
-     x="110.67115"
+     x="82.67115"
      xml:space="preserve"
-     y="263.60831"
+     y="255.60831"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#3771c8;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
      id="text4487">H17</text>
   <text
      id="text4489"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#5f8dd3;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
-     y="293.60831"
+     y="301.60831"
      xml:space="preserve"
-     x="110.67115">H19</text>
+     x="82.67115">H19</text>
   <text
      id="text4491"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#2b0000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
      y="277.60831"
      xml:space="preserve"
-     x="110.67115">H9</text>
+     x="82.67115">H9</text>
   <text
-     x="110.67115"
+     x="82.67115"
      xml:space="preserve"
      y="327.60831"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#550000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
@@ -455,9 +455,9 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
      y="361.60831"
      xml:space="preserve"
-     x="110.67115">H13</text>
+     x="82.67115">H13</text>
   <text
-     x="110.67115"
+     x="82.67115"
      xml:space="preserve"
      y="383.60831"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
@@ -465,37 +465,37 @@
   <text
      id="text4499"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
-     y="399.60831"
+     y="403.60831"
      xml:space="preserve"
-     x="110.67115">H17</text>
+     x="82.67115">H17</text>
   <text
-     x="110.67115"
+     x="82.67115"
      xml:space="preserve"
-     y="415.60831"
+     y="423.60831"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;color-interpolation:linearRGB;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:optimizeQuality;image-rendering:optimizeQuality;shape-rendering:auto;text-rendering:geometricPrecision"
      id="text4501">H19</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#162d50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="283.45651"
+     x="297.45651"
      y="331.05429"
      id="text4503"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan4505"
-       x="283.45651"
+       x="297.45651"
        y="331.05429"
        style="font-size:15px;fill:#162d50;fill-opacity:1">Deuxième ordre</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;color-interpolation:auto;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
-     x="127.47698"
+     x="65.476982"
      y="488.38797"
      id="text4503-1"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan4505-4"
-       x="127.47698"
+       x="65.476982"
        y="488.38797"
        style="font-size:15px;fill:#aa0000;fill-opacity:1">Premier ordre</tspan></text>
   <text
@@ -514,13 +514,13 @@
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;color-interpolation:auto;fill:#262626;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
      x="-265.8129"
-     y="12.275391"
+     y="-29.724609"
      id="text4503-6-6"
      sodipodi:linespacing="125%"
      transform="matrix(0,-1,1,0,0,0)"><tspan
        sodipodi:role="line"
        id="tspan4505-6-1"
        x="-265.8129"
-       y="12.275391"
+       y="-29.724609"
        style="font-size:15px;text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">Angle de réflexion (rad)</tspan></text>
 </svg>

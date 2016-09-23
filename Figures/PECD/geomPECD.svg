@@ -184,9 +184,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="115.62042"
-     inkscape:cy="134.78222"
+     inkscape:zoom="1.979899"
+     inkscape:cx="142.31393"
+     inkscape:cy="132.17715"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -217,7 +217,7 @@
      id="layer1"
      transform="translate(-78.427293,40.563086)">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 251.73494,73.773375 c 0,0 1.8847,-18.148885 16.7601,-8.917201"
        id="path5228-2"
        inkscape:connector-curvature="0"
@@ -229,7 +229,7 @@
        d="M 268.57601,111.01679 229.30412,27.11754"
        style="fill:none;fill-rule:evenodd;stroke:#800000;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 308.12565,78.975183 c 0,0 20.08616,15.952734 5.54788,41.045417"
        id="path5228"
        inkscape:connector-curvature="0"
@@ -243,15 +243,15 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="344.49896"
-       y="104.45454"
+       x="335.35907"
+       y="102.44495"
        id="text5230"
        sodipodi:linespacing="125%"
-       transform="scale(0.994693,1.0053353)"><tspan
+       transform="scale(0.99469301,1.0053353)"><tspan
          sodipodi:role="line"
          id="tspan5232"
-         x="344.49896"
-         y="104.45454"
+         x="335.35907"
+         y="102.44495"
          style="font-size:15px">$\theta$</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#666666;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker5236)"

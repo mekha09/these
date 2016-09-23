@@ -46,7 +46,7 @@
      fit-margin-bottom="0"
      inkscape:zoom="1.0488751"
      inkscape:cx="1258.1822"
-     inkscape:cy="174.37292"
+     inkscape:cy="136.23683"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -321,13 +321,13 @@
      xml:space="preserve"
      y="833.3869"
      style="font-size:medium;text-align:center;text-anchor:middle;fill:#262626;stroke:none;font-family:SansSerif"
-     id="text149">0.5</text>
+     id="text149">1</text>
   <text
      x="1583.5812"
      xml:space="preserve"
      y="833.3869"
      style="font-size:medium;text-align:center;text-anchor:middle;fill:#262626;stroke:none;font-family:SansSerif"
-     id="text161">1</text>
+     id="text161">2</text>
   <line
      y2="4.6289062"
      style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"

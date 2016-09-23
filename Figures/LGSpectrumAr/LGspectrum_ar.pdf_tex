@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% Creator: Inkscape 0.48.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'LGspectrum_ar.pdf' (pdf, eps, ps)
 %%
@@ -49,10 +49,9 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.74231738)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{LGspectrum_ar.pdf}}%
-    \put(-0.76545912,0.06694434){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{}}}%
-    \put(0.03320057,0.45484859){\rotatebox{90}{\makebox(0,0)[b]{\smash{\textbf{Spatial Dimension (mm)}}}}}%
-    \put(0.48188615,0.01474363){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{\textbf{Photon Energy (eV)}}}}%
+    \put(0,0){\includegraphics[width=\unitlength]{LGspectrum_ar.pdf}}%
+    \put(0.03320057,0.45484859){\rotatebox{90}{\makebox(0,0)[b]{\smash{Dimension Spatiale (mm)}}}}%
+    \put(0.48188615,0.01474363){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{\'Energie de photon\footnotemark[1] (eV)}}}%
     \put(0.07707073,0.1433669){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-1}}}%
     \put(0.07953927,0.21272237){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
     \put(0.08264284,0.28183032){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{1}}}%
@@ -80,6 +79,6 @@
     \put(0.99797826,0.28155971){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{1}}}%
     \put(0.80130241,0.00058183){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
     \put(0.92925349,0.00000002){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{1}}}%
-    \put(0.67088812,0.06725483){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.3894584\unitlength}\centering \textbf{Intensity (arb. u.)}\end{minipage}}}%
+    \put(0.67088812,0.06725483){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[lt]{\begin{minipage}{0.38945841\unitlength}\centering Intensité (u. arb.)\end{minipage}}}%
   \end{picture}%
 \endgroup%

@@ -1,0 +1,64 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Setup_pecd.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1003.82858637bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.50361472)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Setup_pecd.pdf}}%
+    \put(-0.18899485,0.47608633){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.38483443\unitlength}\centering Polarisation Elliptique gauche\end{minipage}}}%
+    \put(-0.24957249,0.37345095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.39394243\unitlength}\centering Polarisation Elliptique droite\end{minipage}}}%
+    \put(0.12368186,0.47254022){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.56433291\unitlength}\centering Cellule de \sf6\end{minipage}}}%
+    \put(0.71211888,0.3821492){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Iris}}}%
+    \put(0.88937639,0.39426603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Jet de fenchone}}}%
+    \put(0.36921906,0.29280598){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21414059\unitlength}\centering Harmoniques \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Setup_pecd.pdf}}%
+    \put(0.1935362,0.25614633){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.56916319\unitlength}\centering  quasi-circulaires\end{minipage}}}%
+    \put(-0.29205016,0.09168762){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.05446176\unitlength}\centering Distribution de Photoélectron\end{minipage}}}%
+    \put(0.52099794,0.05502798){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.42989133\unitlength}\centering Asymétrique\end{minipage}}}%
+  \end{picture}%
+\endgroup%

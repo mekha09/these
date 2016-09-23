@@ -14,8 +14,8 @@
    height="434.14285"
    id="svg3508"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="LGspectrum_ar.svg"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="LGspectrum_ar.pdf"
    inkscape:export-filename="C:\Users\rgeneaux\Documents\Articles\Article OAM\NatureComm\Final submission\Figures_Finalsub\Article\Fig2.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="470.23902"
-     inkscape:cy="107.95711"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="414.5628"
+     inkscape:cy="201.74897"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -326,42 +326,6 @@
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
-       id="clipPath6514">
-      <rect
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:102.96437836;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect6516"
-         width="9663.335"
-         height="1199.2344"
-         x="1632.6201"
-         y="-4227.5596"
-         transform="scale(1,-1)" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath6520">
-      <rect
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:102.6107254;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect6522"
-         width="9629.5508"
-         height="1326.5938"
-         x="1634.1044"
-         y="-4289.8599"
-         transform="scale(1,-1)" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath6526">
-      <rect
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:102.43952942;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect6528"
-         width="9620.4287"
-         height="1731.2874"
-         x="1658.9463"
-         y="-4494.3574"
-         transform="scale(1,-1)" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
        id="clipPath3604-7">
       <path
          inkscape:connector-curvature="0"
@@ -502,8 +466,8 @@
      transform="translate(-1.6991965,34.271657)">
     <g
        style="display:inline"
-       transform="matrix(0.04450723,0,0,-0.08306944,-3.3424507,443.30484)"
-       clip-path="url(#clipPath6520)"
+       transform="matrix(0.04450723,0,0,-0.04450717,-3.3424507,303.46782)"
+       clip-path="none"
        id="g6571">
       <g
          transform="matrix(9765.08,0,0,2476.15,1635,2388.19)"
@@ -518,8 +482,8 @@
     </g>
     <g
        style="display:inline"
-       transform="matrix(0.04435435,0,0,-0.08728115,-3.0223721,342.42216)"
-       clip-path="url(#clipPath6514)"
+       transform="matrix(0.04435435,0,0,-0.04435442,-3.0223721,186.61208)"
+       clip-path="none"
        id="g5702">
       <g
          transform="matrix(9764.95,0,0,2360.05,1635,2446.24)"
@@ -534,8 +498,8 @@
     </g>
     <g
        style="display:inline"
-       transform="matrix(0.04458161,0,0,-0.07140955,-5.0130475,526.61924)"
-       clip-path="url(#clipPath6526)"
+       transform="matrix(0.04458161,0,0,-0.0445815,-5.0130475,429.06875)"
+       clip-path="none"
        id="g7056">
       <g
          transform="matrix(9765.07,0,0,2773,1635,2239.76)"
@@ -1041,27 +1005,27 @@
     <text
        y="21.116482"
        x="-133.8539"
-       style="font-size:10.59556293px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';text-align:center;text-anchor:middle;display:inline"
+       style="font-size:10.59556293px;text-align:center;text-anchor:middle;display:inline;font-family:Franklin Gothic Demi;-inkscape-font-specification:Franklin Gothic Demi"
        transform="matrix(0,-1,1,0,0,0)"
        id="text5364">
       <tspan
          y="21.116482"
          x="-133.8539"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.61719894px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans Semi-Bold';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262626;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-size:22.61719894px;font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262626;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Lucida Sans Semi-Bold"
          sodipodi:role="line"
-         id="tspan5368">Spatial Dimension (mm)</tspan>
+         id="tspan5368">Dimension Spatiale (mm)</tspan>
     </text>
     <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.59556293px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
+       style="font-size:10.59556293px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1;display:inline;font-family:Lucida Sans;-inkscape-font-specification:Lucida Sans"
        y="391.24841"
        x="283.52936"
        id="text6960">
       <tspan
          y="391.24841"
-         x="174.4337"
+         x="283.52936"
          id="tspan6962"
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.60386658px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans Semi-Bold';writing-mode:lr-tb;fill:#262626;fill-opacity:1;fill-rule:nonzero;stroke:none;text-anchor:middle;text-align:center;">Photon Energy (eV)</tspan>
+         style="font-size:22.60386658px;font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262626;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Lucida Sans Semi-Bold">\'Energie de photon\footnotemark[1] (eV)</tspan>
     </text>
     <text
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.35547829px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';display:inline;fill:#262626;fill-opacity:1;text-anchor:middle;text-align:center;"
@@ -1318,7 +1282,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot16075-2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.22288227px;line-height:125%;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#262626;fill-opacity:1;stroke:none"
+       style="font-size:2.22288227px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#262626;fill-opacity:1;stroke:none;display:inline;font-family:Lucida Sans;-inkscape-font-specification:Lucida Sans"
        transform="matrix(1.8093759,0,0,1.8093759,396.37927,366.91948)"><flowRegion
          id="flowRegion16077-6"><rect
            id="rect16079-3"
@@ -1328,5 +1292,5 @@
            y="-3.5272608"
            style="text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1" /></flowRegion><flowPara
          id="flowPara16081-4"
-         style="font-weight:600;font-size:10.375px;-inkscape-font-specification:'Lucida Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1">Intensity (arb. u.)</flowPara></flowRoot>  </g>
+         style="font-size:10.375px;font-weight:600;text-align:center;text-anchor:middle;fill:#262626;fill-opacity:1;-inkscape-font-specification:Lucida Sans Semi-Bold">Intensité (u. arb.)</flowPara></flowRoot>  </g>
 </svg>

@@ -1,0 +1,94 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'I_photon.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1109.16240234bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.36964659)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{I_photon.pdf}}%
+    \put(0.09111012,0.03545547){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-0.8}}}%
+    \put(0.13810574,0.03545547){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-0.6}}}%
+    \put(0.18510347,0.03545547){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-0.4}}}%
+    \put(0.23200401,0.03545547){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-0.2}}}%
+    \put(0.27986351,0.03545547){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.32605474,0.03545547){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.2}}}%
+    \put(0.37309896,0.03545547){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.4}}}%
+    \put(0.42004599,0.03545547){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.6}}}%
+    \put(0.46699513,0.03545547){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.8}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{I_photon.pdf}}%
+    \put(0.05403837,0.05475508){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{$10^{-6}$}}}%
+    \put(0.05403837,0.15356838){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{$10^{-4}$}}}%
+    \put(0.05403837,0.25310296){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{$10^{-2}$}}}%
+    \put(0.05600776,0.351195){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{$10^0$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{I_photon.pdf}}%
+    \put(0.62198517,0.03742328){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-1}}}%
+    \put(0.71529887,0.03742328){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-0.5}}}%
+    \put(0.81015596,0.03742328){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.90329432,0.03742328){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.5}}}%
+    \put(0.99757225,0.03742328){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{I_photon.pdf}}%
+    \put(0.60595543,0.06689279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-1}}}%
+    \put(0.60028317,0.14349114){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-0.5}}}%
+    \put(0.60827841,0.21511275){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.60243081,0.29106195){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.5}}}%
+    \put(0.60780508,0.3633327){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.00885381,0.02489791){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{Intensité harmonique (u. arb.)}}}}%
+    \put(0.42251671,0.34155597){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{H11}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{I_photon.pdf}}%
+    \put(0.42251671,0.24346398){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{H17}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{I_photon.pdf}}%
+    \put(0.42251671,0.27617011){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{H15}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{I_photon.pdf}}%
+    \put(0.42251671,0.30887625){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{H13}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{I_photon.pdf}}%
+    \put(0.54523552,0.2053756){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Valeur moyenne du }}}}%
+    \put(0.56860553,0.20453565){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{moment angulaire de spin}}}}%
+    \put(0.81112507,0.00223458){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Ellipticité infrarouge}}}%
+    \put(0.28083254,0.00223458){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Ellipticité infrarouge}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{I_photon.pdf}}%
+  \end{picture}%
+\endgroup%
