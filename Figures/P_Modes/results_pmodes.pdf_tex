@@ -75,5 +75,6 @@
     \put(0.9584697,0.16587881){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[b]{\smash{y (cm)}}}}%
     \put(0.04205776,0.30883811){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.8}}}%
     \put(0.04205776,0.16102543){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.0}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{results_pmodes.pdf}}%
   \end{picture}%
 \endgroup%
