@@ -1,0 +1,69 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'rabbit_total.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{707.86098633bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.48768665)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{rabbit_total.pdf}}%
+    \put(0.54139867,0.23128465){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{\'Energie des photons}}}}%
+    \put(0.64401918,0.00312168){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$H_q$}}}%
+    \put(0.7631256,0.00203739){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$H_{q+2}$}}}%
+    \put(0.87464273,0.15011616){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Nombre}}}%
+    \put(0.99172094,0.31551702){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Energie des électrons}}}}%
+    \put(0.63568393,0.42934414){\color[rgb]{0.28627451,0.45490196,0.59607843}\transparent{0.99686855}\makebox(0,0)[b]{\smash{XUV + }}}%
+    \put(0.71038563,0.43176592){\color[rgb]{0.60392157,0.23137255,0}\makebox(0,0)[b]{\smash{IR}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{rabbit_total.pdf}}%
+    \put(0.19496387,0.2077657){\makebox(0,0)[b]{\smash{$e^{-}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{rabbit_total.pdf}}%
+    \put(0.24888266,0.32929632){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{jet de gaz de}}}%
+    \put(0.34344124,0.20962302){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{spectromètre à}}}%
+    \put(0.87464273,0.11169054){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{d'électrons}}}%
+    \put(0.24888266,0.29991202){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{détection}}}%
+    \put(0.34344124,0.18701975){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{électron}}}%
+  \end{picture}%
+\endgroup%

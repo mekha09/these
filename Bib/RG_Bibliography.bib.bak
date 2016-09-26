@@ -218,6 +218,18 @@
   Volume                   = {78}
 }
 
+@Article{AugustePRA2016,
+  Title                    = {Attosecond lighthouses in gases: A theoretical and numerical study},
+  Author                   = {Auguste, T. and Gobert, O. and Ruchon, T. and Quere, F.},
+  Journal                  = {Phys. Rev. A},
+  Year                     = {2016},
+  Pages                    = {033825},
+  Volume                   = {93},
+  DOI                      = {10.1103/PhysRevA.93.033825},
+  Publisher                = {American Physical Society},
+  URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.93.033825}
+}
+
 @Article{BabikerPRL2002,
   Title                    = {Orbital angular momentum exchange in the interaction of twisted light with molecules},
   Author                   = {Babiker, M and Bennett, CR and Andrews, DL and Romero, LC D{\'a}vila},
@@ -624,7 +636,7 @@
   Number                   = {1},
   Pages                    = {1-23},
   Volume                   = {21},
-  __markedentry            = {[Romain:6]},
+  __markedentry            = {[Romain:]},
   DOI                      = {10.1137/S1064827595289108},
   Eprint                   = { http://dx.doi.org/10.1137/S1064827595289108 },
   URL                      = { 
@@ -1398,7 +1410,6 @@
   Number                   = {11},
   Pages                    = {4989-4996},
   Volume                   = {75},
-  __markedentry            = {[Romain:]},
   DOI                      = {http://dx.doi.org/10.1063/1.1807578},
   URL                      = {http://scitation.aip.org/content/aip/journal/rsi/75/11/10.1063/1.1807578}
 }
@@ -3086,6 +3097,17 @@
   URL                      = {http://www.sciencedirect.com/science/article/pii/S0968089607007432}
 }
 
+@Article{MullerAPB2002,
+  Title                    = {Reconstruction of attosecond harmonic beating by interference of two-photon transitions},
+  Author                   = {Muller, H \_ G},
+  Journal                  = {Applied Physics B},
+  Year                     = {2002},
+  Number                   = {1},
+  Pages                    = {s17--s21},
+  Volume                   = {74},
+  Publisher                = {Springer}
+}
+
 @TechReport{Murray2014,
   Title                    = {Closing the Loop},
   Author                   = {Cherry Murray and George Crabtree},
@@ -4073,6 +4095,17 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.103.073902}
 }
 
+@Book{Siegman1986,
+  Title                    = {Lasers},
+  Author                   = {Siegman, A.E.},
+  Publisher                = {University Science Books},
+  Year                     = {1986},
+  __markedentry            = {[Romain:6]},
+  ISBN                     = {9780935702118},
+  Lccn                     = {81051269},
+  URL                      = {https://books.google.fr/books?id=1BZVwUZLTkAC}
+}
+
 @InCollection{simons1984roles,
   Title                    = {Roles played by metastable states in chemistry},
   Author                   = {Simons, JACK},
@@ -4507,6 +4540,21 @@
   Publisher                = {American Physical Society}
 }
 
+@Article{VeniardPRA1996,
+  Title                    = {Phase dependence of ( \textit{N} +1)-color ( \textit{N} \&gt;1) ir-uv photoionization of atoms with higher harmonics},
+  Author                   = {V\'eniard, Val\'erie and Ta\"{\i}eb, Richard and Maquet, Alfred},
+  Journal                  = {Phys. Rev. A},
+  Year                     = {1996},
+  Month                    = {Jul},
+  Pages                    = {721--728},
+  Volume                   = {54},
+  DOI                      = {10.1103/PhysRevA.54.721},
+  Issue                    = {1},
+  Numpages                 = {0},
+  Publisher                = {American Physical Society},
+  URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.54.721}
+}
+
 @Article{VerbeeckN2010,
   Title                    = {{Production and application of electron vortex beams}},
   Author                   = {{Verbeeck}, J. and {Tian}, H. and {Schattschneider}, P.},
@@ -4863,11 +4911,5 @@
   Adsurl                   = {http://adsabs.harvard.edu/abs/2012NatPh...8..743Z},
   DOI                      = {10.1038/nphys2397},
   File                     = {ZurchNP2012.PDF:ZurchNP2012.PDF:PDF}
-}
-
-@Book{,
-}
-
-@Article{,
 }
 

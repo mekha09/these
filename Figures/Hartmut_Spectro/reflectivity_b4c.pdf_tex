@@ -61,5 +61,7 @@
     \put(0.0610451,0.59805495){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0.4}}}%
     \put(0.54255177,-0.01096061){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Longueur d'onde (nm)}}}%
     \put(0.0227972,0.32501274){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Réflectivité}}}}%
+    \put(0.36758734,0.56652396){\color[rgb]{0.83137255,0,0}\makebox(0,0)[b]{\smash{H9}}}%
+    \put(0.18200832,0.56652396){\color[rgb]{0.83137255,0,0}\makebox(0,0)[b]{\smash{H19}}}%
   \end{picture}%
 \endgroup%

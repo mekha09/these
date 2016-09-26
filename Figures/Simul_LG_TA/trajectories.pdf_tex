@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{565.15952148bp}%
+    \setlength{\unitlength}{574.84746094bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,34 +48,34 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.98368314)%
+  \begin{picture}(1,1.23115932)%
     \put(0,0){\includegraphics[width=\unitlength]{trajectories.pdf}}%
-    \put(0.17489704,0.02492935){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-8}}}%
-    \put(0.25207726,0.02492935){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-4}}}%
-    \put(0.3295085,0.0249327){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.40684596,0.02492935){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{4}}}%
-    \put(0.48402952,0.02492935){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{8}}}%
-    \put(0.14033141,0.05736054){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-8}}}%
-    \put(0.14025443,0.13461784){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-4}}}%
-    \put(0.14042843,0.21187837){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.14050878,0.28913234){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{4}}}%
-    \put(0.14043517,0.36638954){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{8}}}%
-    \put(0.22577172,-0.00387709){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\theta_x$ (mrad)}}}%
-    \put(0.11273092,0.11334347){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{$\theta_y$ (mrad)}}}}%
-    \put(0.11183861,0.45554319){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$z_0<0$}}}%
-    \put(0.45341572,0.45554319){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$z_0=0$}}}%
-    \put(0.79499274,0.45554319){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$z_0>0$}}}%
-    \put(0.32912576,0.07997718){\color[rgb]{1,1,1}\makebox(0,0)[b]{\smash{Courte}}}%
-    \put(0.67044584,0.0841756){\color[rgb]{1,1,1}\makebox(0,0)[b]{\smash{Longue}}}%
-    \put(0.01139684,0.72117486){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(a)}}}%
-    \put(0.3537021,0.72117486){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(b)}}}%
-    \put(0.69735697,0.72117486){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(c)}}}%
-    \put(0.18616842,0.34048727){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(d)}}}%
-    \put(0.52912944,0.34048727){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(e)}}}%
-    \put(0.90844764,0.2841836){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
-    \put(0.90875832,0.13875755){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.76415538,0.88633357){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(a)}}}%
-    \put(0.52598493,0.88633357){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(b)}}}%
-    \put(0.27986941,0.88633357){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(c)}}}%
+    \put(0.17542866,0.18262928){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-8}}}%
+    \put(0.25130815,0.18262928){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-4}}}%
+    \put(0.32743444,0.18263257){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.40346853,0.18262928){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{4}}}%
+    \put(0.47935132,0.18262928){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{8}}}%
+    \put(0.12752884,0.23678069){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-8}}}%
+    \put(0.12745315,0.31273596){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-4}}}%
+    \put(0.12762422,0.38869441){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.12770322,0.46464641){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{4}}}%
+    \put(0.12763085,0.5406016){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{8}}}%
+    \put(0.22544594,0.14595827){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\theta_x$ (mrad)}}}%
+    \put(0.10039349,0.29182012){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{$\theta_y$ (mrad)}}}}%
+    \put(0.11343296,0.62825274){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$z_0<0$}}}%
+    \put(0.44925345,0.62825274){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$z_0=0$}}}%
+    \put(0.78507385,0.62825274){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$z_0>0$}}}%
+    \put(0.32705816,0.25901616){\color[rgb]{1,1,1}\makebox(0,0)[b]{\smash{Courte}}}%
+    \put(0.66262595,0.26314383){\color[rgb]{1,1,1}\makebox(0,0)[b]{\smash{Longue}}}%
+    \put(0.01468394,0.8894077){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(a)}}}%
+    \put(0.35122031,0.8894077){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(b)}}}%
+    \put(0.68908354,0.8894077){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(c)}}}%
+    \put(0.18651009,0.51513586){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(d)}}}%
+    \put(0.52369116,0.51513586){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{(e)}}}%
+    \put(0.89661669,0.45978108){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.89692213,0.3168059){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.75475619,1.05178298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(a)}}}%
+    \put(0.52059965,1.05178298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(b)}}}%
+    \put(0.27863193,1.05178298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(c)}}}%
   \end{picture}%
 \endgroup%
