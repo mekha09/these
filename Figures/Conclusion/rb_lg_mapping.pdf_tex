@@ -1,0 +1,77 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'rb_lg_mapping.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{586.60092773bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.95128674)%
+    \put(0,0){\includegraphics[width=\unitlength]{rb_lg_mapping.pdf}}%
+    \put(0.10660491,0.9296314){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{(a) Scan de délai :}}}%
+    \put(0.11258783,0.85028809){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\tau$ variable}}}%
+    \put(0.38231809,0.79033764){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Ordre harmonique}}}}%
+    \put(0.8428879,0.59523898){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Délai (cycle optique à 400 nm)}}}%
+    \put(0.40696227,0.61946675){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.63565225,0.61946675){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.86570798,0.61946675){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.1956957,0.40487889){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{+}}}%
+    \put(0.14134558,0.51913086){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{(b) Couplage angle-délai :}}}%
+    \put(0.64811273,0.30686528){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Délai $\tau$ encodé spatialement}}}%
+    \put(0.62961005,0.5482575){\color[rgb]{1,0,0}\makebox(0,0)[b]{\smash{Phases $\phi_q$}}}%
+    \put(0.75618798,0.47487721){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.75618798,0.33577072){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.64821761,0.27712841){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{(unités de cycle optique à 400 nm)}}}%
+    \put(0.19598371,0.23051306){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{(c) Profil des harmoniques au foyer :}}}%
+    \put(0.08829555,0.30060632){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{400 nm}}}%
+    \put(0.29870876,0.30281815){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{800 nm}}}%
+    \put(0.14520682,0.00444253){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{H11}}}%
+    \put(0.32440458,0.00168723){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{H12}}}%
+    \put(0.50413171,0.00030963){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{H13}}}%
+    \put(0.68347927,0.00582014){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{H14}}}%
+    \put(0.86333134,0.00459736){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{H15}}}%
+    \put(0.04463946,0.03477818){\color[rgb]{1,0,0}\makebox(0,0)[b]{\smash{$\phi_q$}}}%
+  \end{picture}%
+\endgroup%
