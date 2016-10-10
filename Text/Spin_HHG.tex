@@ -281,7 +281,7 @@ L'influence de ces deux effets a été étudiée expérimentalement en détail a
 \label{fig:xFID}
 \end{figure}
 
-L'effet xFID est également très intéressant fondamentalement et permet de mesurer des observables similaires à celles obtenue en spectroscopie d'absorption transitoire attoseconde (ATAS, pour \textit{Attosecond Transient Absorption Spectroscopy}) \mycite{BeckNJP2014}. En collaboration avec Samuel Beaulieu, \'{E}tienne Bloch, Valérie Blanchet et Yann Mairesse, nous avons étudié ce point expérimentalement, cette fois avec une longueur d'onde de 400 nm et en choisissant des conditions de focalisation favorisant grandement le xFID. Ces expériences sont en cours d'analyse et ne seront pas présentées dans ce manuscrit. Nous nous intéressons maintenant à la polarisation du rayonnement au voisinage du seuil d'ionisation.
+
 
 \subsection{Ellipticité du rayonnement près du seuil de l'argon}
 \label{sec:resonant_argon_exp}
@@ -309,7 +309,7 @@ La figure \ref{fig:resonant_argon_exp} présente les résultats obtenus lorsque 
 \centering
 \def\svgwidth{1\columnwidth}
 \import{Figures/ResonantArgon/}{exp_result.pdf_tex}
-\caption{Mesure d'ellipticité dans l'argon près du seuil d'ionisation. Le laser à 404 nm a une ellipticité de $\epsilon_IR=0.4$. Sur l'échelle de gauche (bleue), intensité en fonction de l'énergie de photon. On observe trois harmoniques, desquelles on mesure l'ellipticité apparente. On obtient les courbes rouges, échelle de droite.}
+\caption{Mesure d'ellipticité dans l'argon près du seuil d'ionisation. Le laser à 404 nm a une ellipticité de $\epsilon_{IR}=0.4$. Sur l'échelle de gauche (bleue), intensité en fonction de l'énergie de photon. On observe trois harmoniques, desquelles on mesure l'ellipticité apparente. On obtient les courbes rouges, échelle de droite.}
 \label{fig:resonant_argon_exp}
 \end{figure}
 
@@ -750,6 +750,7 @@ Nous présentons ici les mesures réalisées aux énergies correspondant aux har
 Dans la figure \ref{fig:results_pecd}, on trace $b_0$, $b_1$, et $b_1/b_0$ pour les trois énergies harmoniques et pour un ou deux énantiomère. La polarisation étant ici complètement circulaire, l'utilisation de pBasex est justifiée. Quand on augmente l'énergie de photon, l'énergie maximale de photoélectron observée augmente également. Dans tous les cas, on observe clairement l'ionisation depuis la HOMO, à une énergie égale à $\hbar\omega-I_P^\text{HOMO}$, c'est-à-dire $\simeq \SI{0.7}{eV},\; \SI{6.9}{eV},\text{ et }\SI{13.1}{eV}$ respectivement pour H3, H5 et H7. Pour les énergies de photons plus élevées, la contribution d'orbitales plus basses apparaît. Les énergies de ces orbitales sont de plus en plus proches, et leurs contributions sont sommées dans le $b_1$ observé. $b_1$ est différent pour chacune d'entre elles et peut changer de signe, ce qui explique les profils riches observés dans cette région. Précisons pour terminer qu'à cause de problèmes de calibration en énergie aux hautes énergies de photon, certaines courbes ont été interpolées pour être cohérentes avec potentiels d'ionisation des différentes orbitales publiés dans la littérature \mycite{PowisCPC2008}.
 \newpage
 \section{Comparaison entre mesures synchrotron et harmoniques}
+\label{sec:soleil_vs_celia}
 \subsubsection{Formulation mathématique}
 Nous dispose désormais des données synchrotron nécessaires à la caractérisation complète de l'état de polarisation du champ harmonique. Toutefois, nous allons voir que nos mesures harmoniques sont incomplètes. Nous illustrerons ici le principe à suivre mais nous pourrons pas donner de véritable valeurs numériques en l'état.
 
@@ -838,8 +839,3 @@ Toutefois, nous montrons ici la possibilité de réaliser une caractérisation d
 
 \chapternonum{Conclusion et perspectives}
 Dans cette partie, nous avons d'abord développé une source d'harmoniques d'ordre élevé polarisées elliptiquement. En plus du contrôle du moment angulaire orbital, démontré à la partie précédente, nous contrôlons ici le moment angulaire de spin dans le domaine ultraviolet. En tant qu'objet chiral, la lumière polarisée circulairement est sensible à la chiralité de molécules, ce que nous avons démontré en effectuant des mesures de dichroïsme circulaire de photoélectron. Nous avons réalisé ces mêmes mesures sur un synchrotron, source de lumière parfaitement caractérisée. La comparaison entre les deux montre d'abord que les deux sources donnent des mesures spectroscopiques comparables. Nous avons ensuite étudié la possibilité de caractériser l'état de polarisation de notre source harmonique grâce au PECD.
-
-Au cours de ces études, nous nous sommes intéressés à la GHOE au voisinage de résonances atomiques et moléculaires. Ceci a permis à \mycite{beaulieuArXiv2016} d'expliquer le phénomène de xFID au voisinage du seuil d'ionisation de l'argon. Toujours dans le cadre de notre collaboration avec le CELIA Bordeaux, et en particulier avec Samuel Beaulieu, \'Etienne Bloch, Valérie Blanchet et Yann Mairesse, nous avons poursuivi l'étude de ce phénomène et réalisé des expériences pompe-sonde. Des expériences visant à mesurer des dynamiques transitoires de paquets d'ondes électroniques de Rydberg grâce à cet effet sont en cours au CELIA Bordeaux.
-
-Quant au PECD, nous n'avons présenté qu'ici des mesures \textit{statiques}. Cette grandeur était jusque ici résolue en fréquence dans des expériences réalisées sur synchrotron. Nos travaux permettent de réaliser ces expériences sur une source ultra-brève et d'y ajouter une résolution temporelle. Nous avons commencé une série d'expériences pompe-sonde dans lesquelles on explore les dynamiques électroniques dans des potentiels chiraux. Dans un premier temps, nous nous sommes intéressés au cas plus simple à mettre en œuvre du PECD multi-photonique \mycite{LuxAC2012}. Nos résultats indiquent la possibilité de créer des densités et des courants chiraux, et de les sonder à l'échelle femtoseconde. Ces résultats constituent la première mesure \textit{dynamique} de PECD et feront l'objet d'une prochaine publication. Dans la suite logique de cette démarche, nous préparons des expériences pompe-sondes XUV-Infrarouge, où on pourrait observer des traces similaires au RABBIT (voir section \ref{sec:omabbit}). Nous pourrions ainsi mesurer des délais de photoionisation entre les différents canaux d'ionisation et observer l'effet temporel du potentiel chiral. 
-

@@ -1,0 +1,145 @@
+\appendix
+\addcontentsline{toc}{part}{Annexes}
+\chapter{Démonstrations de la partie I}
+\section{Invariance de l'équation de Lagrange par changement de coordonnées}
+Nous démontrons ici l'équation \ref{eq:lagq}. L'espace des configurations est décrit par ${q_j}$, $j\in[1,\;3N]$, qui s'écrivent en fonction des coordonnées cartésiennes ${x_i}$ et du temps :
+\begin{equation}
+\begin{split}
+\forall j, q_j=q_j(x_1,\ldots,x_N,t)\text{ et inversement, }
+\end{split}
+\begin{split}
+\forall i, x_i=x_i(q_1,\ldots,q_N,t).
+\end{split}
+\end{equation}
+
+L'équation de Lagrange s'écrit :
+\begin{equation}
+\label{eq:lagapp}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{x}_i}-\frac{\partial L}{\partial x_i}=0,
+\end{equation}
+
+Réécrivons \ref{eq:lagapp} en fonction des ${q_j}$. On a : 
+\begin{equation}
+\label{eq:lag1}
+\frac{\partial L}{\partial \dot{x}_i} = \sum_j \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial \dot{x}_i}+ \sum_j\frac{\partial L}{\partial \dot{q}_j}\frac{\partial \dot{q}_j}{\partial \dot{x}_i}.
+\end{equation}
+$q_j$ ne dépend que de $x_i$ et $t$, donc ${\partial q_j}/{\partial \dot{x}_i}=0$ et le premier terme s'annule. De plus,
+\begin{equation}
+\dot{q}_j = \sum_i \frac{\partial q_j}{\partial x_i}\dot{x}_i+\frac{\partial q_j}{\partial t}\text{,  donc  }
+\frac{\partial \dot{q}_j}{\partial \dot{x}_i}=\frac{\partial q_j}{\partial x_i}.
+\label{eq:lag3}
+\end{equation}
+\ref{eq:lag1} donne donc :
+\begin{equation}
+\label{eq:lag2}
+\frac{\partial L}{\partial \dot{x}_i} = \sum_j\frac{\partial L}{\partial \dot{q}_j}\frac{\partial q_j}{\partial x_i}.
+\end{equation}
+L'équation de Lagrange en coordonnées cartésiennes comprend la dérivée temporelle de cette expression, qui s'écrit :
+\begin{align}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{x}_i} &= 
+\sum_j\left(\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_j}\right)\frac{\partial q_j}{\partial x_i}+
+\sum_j\frac{\partial L}{\partial \dot{q}_j}\left(\frac{d}{dt}\frac{\partial q_j}{\partial x_i}\right) \\
+&=\sum_j \left(\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_j}\right)\frac{\partial q_j}{\partial x_i}+\sum_j\frac{\partial L}{\partial \dot{q}_j}\left(\sum_k \frac{\partial^2q_j}{\partial x_i \partial x_k}\dot{x}_k + \frac{\partial^2q_j}{\partial x_i \partial t}\right).
+\end{align}
+Par ailleurs, le second terme de l'équation de Lagrange s'écrit :
+\begin{align}
+\frac{\partial L}{\partial x_i}&= \sum_j \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial x_i}+ \sum_j\frac{\partial L}{\partial \dot{q}_j}\frac{\partial \dot{q}_j}{\partial x_i} \\
+&=\sum_j \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial x_i}+ \sum_j\frac{\partial L}{\partial \dot{q}_j}\left(\sum_k \frac{\partial^2q_j}{\partial x_i \partial x_k}\dot{x}_k + \frac{\partial^2q_j}{\partial x_i \partial t}\right),
+\end{align}
+où on a utilisé \ref{eq:lag3}. On connaît maintenant tous les termes de l'équation de Lagrange en fonction des ${q_j}$, et en les soustrayant un terme s'annule, ce qui donne :
+\begin{equation}
+\sum_j\left(\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_j}-\frac{\partial L}{\partial q_j}\right)\frac{\partial q_j}{\partial x_i}=0.
+\end{equation}
+$\frac{\partial q_j}{\partial x_i}$ est non singulière puisque son inverse est $\frac{\partial x_i}{\partial q_j}$, une quantité finie. Comme les $q_j$ sont tous indépendants, on obtient l'équation de Lagrange en coordonnées généralisées : 
+\begin{equation}
+\label{eq:lagqapp}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_i}-\frac{\partial L}{\partial q_i}=0.
+\end{equation}
+Nous avons donc démontré que l'équation de Lagrange est invariante par changement des coordonnées utilisées pour décrire le système, ce qui en fait une formulation très pratique. 
+
+\section{Composantes longitudinale et transverse du moment angulaire classique}
+\label{app:calculj}
+On démontre ici les relation \ref{eq:Jlong4} puis \ref{eq:Jtran}, composantes longitudinales et transverse de $\bm{J}$ en électromagnétisme classique.
+
+\subsubsection{Composante longitudinale}
+On considère le système {lumière+particules}. La contribution de $E_{\parallel}$ au moment angulaire du système s'écrit : 
+\begin{align}
+\bm{J}_{\parallel}&=\int{\epsilon_0\bm{r}\times(\bm{E}_{\parallel}\times\bm{B})\rmd\bm{r}}\nonumber\\
+&=\epsilon_0\int{\bm{r}\times(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right])\rmd\bm{r}}\text{, où on a utilisé \ref{eq:para15}}%&=\epsilon_0\int{\left(\sum_{a=x,y,z} E^a_{\parallel}(\bm{r}\times\bm{\nabla})A^a_{\bot}-\bm{r}\times(\bm{E}_{\parallel}\cdot\bm{\nabla})\bm{A}_{\bot}\right)\rmd\bm{r}}.
+\label{eq:Jlong1app}
+\end{align}
+
+\'Ecrivons la $n$-ième composante de $\bm{r}\times(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right])$. On utilise la convention d'écriture où une somme sur les indices indice répétés est implicite. Tout d'abord,
+\begin{align}
+\left(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right]\right)_n &= 
+(E_i\nabla_nA_i-E_i\nabla_iA_n)
+\end{align}
+On utilise ensuite le symbole de Levi-Civita $\epsilon_{lmn}$, défini par 
+\begin{equation}
+\epsilon_{lmn}=\left\lbrace
+\begin{array}{rl}
+0,& \mbox{si un des trois indices apparaît plus d'une fois}\\
+1,&\mbox{si }l,m,n\mbox{ est une permutation paire de 1,2,3}\\
+-1,&\mbox{si }l,m,n\mbox{ est une permutation impaire de 1,2,3}\\
+\end{array}
+\right.
+\end{equation}
+On écrit le produit vectoriel comme :
+\begin{align}
+r\times\left(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right]\right)_l &= 
+\epsilon_{lmn}r_m(E_i\nabla_nA_i-E_i\nabla_iA_n)\\
+&=\epsilon_{lmn}r_mE_i\nabla_nA_i-\epsilon_{lmn}E_i\nabla_i(r_mA_n)+\epsilon_{lmn}E_i\nabla_i(r_m)A_n.
+\end{align}
+On a $\nabla_i(r_m)=\delta_{im}$, donc
+\begin{align}
+r\times\left(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right]\right)_l 
+&=E_i\epsilon_{lmn}r_m\nabla_nA_i-E_i\nabla_i\epsilon_{lmn}(r_mA_n)+\epsilon_{lmn}E_mA_n.
+\end{align}
+On repasse en notation vectorielle et on obtient :
+\begin{equation}
+\bm{J}_{\parallel}=\epsilon_0\int{\left(\sum_{i=x,y,z} E^i_{\parallel}(\bm{r}\times\bm{\nabla})A^i_{\bot}-
+(\bm{E}_{\parallel}\cdot\bm{\nabla})(\bm{r}\times\bm{A}_{\bot})+\bm{E}_{\parallel}\times\bm{A}_{\bot}\right)\rmd\bm{r}}.
+\label{eq:Jlongnew}
+\end{equation}
+
+On intègre ensuite le deuxième de cette relation par partie :
+\begin{equation}
+\int{(\bm{E}_{\parallel}\cdot\bm{\nabla})(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}}=
+\int{-(\bm{\nabla}\cdot\bm{E}_{\parallel})(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}}+\oint_{\partial V}{\bm{E}_{\parallel}(\bm{r}\times\bm{A}_{\bot})\rmd S}
+\label{eq:Jlong5}
+\end{equation}
+L'intégrale de surface s'annule si $\bm{E}$ tend vers zéro suffisamment rapidement. De plus, l'équation de Maxwell-Gauss donne 
+$(\bm{\nabla}\cdot\bm{E}_{\parallel}) = \rho/\epsilon_0$. On réécrit maintenant l'équation \ref{eq:Jlongnew} en remplaçant $\bm{E}_{\parallel}$ par $-\bm{\nabla}\Phi$, où $\Phi$ est le potentiel vecteur dans la jauge de Coulomb.
+\begin{equation}
+\bm{J}_{\parallel}=\int{\left[-\epsilon_0\sum_{i=x,y,z}(\nabla^i\Phi)(\bm{r}\times\bm{\nabla})A^i_{\bot}
++\rho(\bm{r}\times\bm{A}_{\bot})
+-\epsilon_0(\bm{\nabla}\Phi)\times\bm{A}_{\bot}
+\right]\rmd\bm{r}}
+\label{eq:Jlong2}
+\end{equation}
+Montrons maintenant que le premier et le dernier terme de cette expression s'annulent. En les intégrant par partie et en considérant les intégrales de surface nulles, on obtient :
+\begin{align}
+\int[\sum_{i=x,y,z}(\nabla^i\Phi)(\bm{r}\times\bm{\nabla})A^i_{\bot}+(\bm{\nabla}\Phi)\times\bm{A}_{\bot}]\rmd\bm{r}
+&=\int[\sum_{i=x,y,z}\Phi\nabla^i(\bm{r}\times\bm{\nabla})A^i_{\bot}+\Phi(\bm{\nabla}\times\bm{A}_{\bot})]\rmd\bm{r}.
+\label{eq:Jlong3}
+\end{align}
+De plus (Complément $\text{B}_{\text{I}}$ de \mycite{Cohen1997}),
+\begin{align}
+\sum_{i=x,y,z}\Phi\nabla^i(\bm{r}\times\bm{\nabla})A^i_{\bot}=\Phi(\bm{r}\times\bm{\nabla})(\bm{\nabla}\cdot\bm{A}_{\bot})-\Phi(\bm{\nabla}\times\bm{A}_{\bot})
+\end{align}
+Dans la jauge de Coulomb, $\bm{\nabla}\cdot\bm{A}_{\bot}=0$, donc le premier terme est nul. Le second s'annule avec le dernier terme de \ref{eq:Jlong3}. Il ne reste donc qu'un terme à \ref{eq:Jlong2} :
+\begin{equation}
+\bm{J}_{\parallel}=\int{\rho(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}}
+\label{eq:Jlong4app}
+\end{equation}
+$\bm{A}_{\bot}$ est invariant par transformation de jauge (voir I.B.4 de \mycite{Cohen1997}), donc l'expression \ref{eq:Jlong4app} l'est aussi.
+
+\subsubsection{Composante transverse}
+Le calcul réalisé pour la composante longitudinale est valable en remplaçant $\bm{E}_{\parallel}$ par $\bm{E}_{\bot}$. On a de plus $\bm{\nabla}\cdot\bm{E}_{\bot}=0$, donc l'intégration par partie \ref{eq:Jlong5} donne zéro.
+
+On obtient donc simplement 
+\begin{align}
+\bm{J_{\bot}}&=\int{\epsilon_0\bm{r}\times(\bm{E_{\bot}}\times\bm{B})\rmd\bm{r}}\nonumber\\
+&=\epsilon_0\int{\bigl[\sum_{i=x,y,z} \bm{E}^i_{\bot}(\bm{r}\times\bm{\nabla})\bm{A}^i_{\bot}+\bm{E_{\bot}}\times\bm{A_{\bot}}\bigr]\rmd\bm{r}}.
+\label{eq:Jtranapp}
+\end{align}

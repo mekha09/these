@@ -1,9 +1,9 @@
-\partimage[width=1\columnwidth]{Figures/PartImages/FigCh4.png}
+\partimage[width=1\columnwidth]{Figures/PartImages/FigCh1.png}
 \part{Le moment angulaire de la lumière}
 \label{PA:LightAM}
 \chapter{Le moment angulaire en physique classique}
 \label{CH:ClassicAM}
-Dans ce chapitre, nous nous attacherons d'abord à définir le moment angulaire (MA) classiquement, dans le cas d'un objet quelconque puis pour le champ électromagnétique, en utilisant l'optique maxwellienne. Nous étudierons ensuite l'équation d'onde et le moment angulaire de plusieurs de ses solutions, mettant en évidence deux types de MA de natures différentes. Pour comprendre la nature de ces MA, nous étudierons le concept de moment angulaire en mécanique quantique, où on trouvera deux composantes du moment angulaire : le moment angulaire de spin (MAS) et le moment angulaire orbital (MAO). Le champ électromagnétique sera traité comme un système quantique, ce qui nous permettra de construire des champs pour lesquels le MAS et le MAO sont connus. En particulier, nous détaillerons la forme et les propriétés de ces champs. Nous terminerons par une discussion de l'échange de moment angulaire lors d'une interaction entre un laser et une molécule. Cette présentation nous fournira les outils utiles à l'analyse des expériences décrites dans le chapitre suivant.
+Dans ce chapitre, nous nous attacherons d'abord à définir le moment angulaire (MA) classiquement, dans le cas d'un objet quelconque puis pour le champ électromagnétique, en utilisant l'optique maxwellienne. Nous étudierons ensuite l'équation d'onde et le moment angulaire de plusieurs de ses solutions, mettant en évidence deux types de MA de natures différentes. Pour comprendre la nature de ces MA, nous étudierons le concept de moment angulaire en mécanique quantique, où on trouvera deux composantes du moment angulaire : le moment angulaire de spin (MAS) et le moment angulaire orbital (MAO). Le champ électromagnétique sera traité comme un système quantique, ce qui nous permettra de construire des champs pour lesquels le MAS et le MAO sont connus. En particulier, nous détaillerons la forme et les propriétés de ces champs. Nous terminerons par une discussion de l'échange de moment angulaire lors d'une interaction entre un laser et une molécule ou un atome. Cette présentation nous fournira les outils utiles à l'analyse des expériences décrites dans le chapitre suivant.
 \newpage
 \section{Mécanique Lagrangienne}
 \subsection{L'\'{e}quation de Lagrange}
@@ -21,7 +21,7 @@ $p_i=m\dot{x}_i=\partial T/\partial\dot{x}_i$, où $T$ est l'énergie cinétique
 \label{eq:lag}
 \frac{d}{dt}\frac{\partial L}{\partial \dot{x}_i}-\frac{\partial L}{\partial x_i}=0,
 \end{equation}
-qui est appelée \textbf{équation de Lagrange}. Montrons que cette équation est valable quelles que soient les coordonnées généralisées utilisées pour décrire le système. Supposons que l'espace des configurations soit décrit par ${q_j}$, $j\in[1,\;3N]$, qui s'écrivent en fonction des coordonnées cartésiennes ${x_i}$ et du temps :
+qui est appelée \textbf{équation de Lagrange}. Cette équation est valable quelles que soient les coordonnées généralisées utilisées pour le système. Supposons que l'espace des configurations soit décrit par ${q_j}$, $j\in[1,\;3N]$, qui s'écrivent en fonction des coordonnées cartésiennes ${x_i}$ et du temps :
 \begin{equation}
 \begin{split}
 \forall j, q_j=q_j(x_1,\ldots,x_N,t)\text{ et inversement, }
@@ -30,44 +30,12 @@ qui est appelée \textbf{équation de Lagrange}. Montrons que cette équation es
 \forall i, x_i=x_i(q_1,\ldots,q_N,t).
 \end{split}
 \end{equation}
-Réécrivons l'équation de Lagrange \ref{eq:lag} en fonction des ${q_j}$. On a : 
-\begin{equation}
-\label{eq:lag1}
-\frac{\partial L}{\partial \dot{x}_i} = \sum_j \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial \dot{x}_i}+ \sum_j\frac{\partial L}{\partial \dot{q}_j}\frac{\partial \dot{q}_j}{\partial \dot{x}_i}.
-\end{equation}
-$q_j$ ne dépend que de $x_i$ et $t$, donc ${\partial q_j}/{\partial \dot{x}_i}=0$ et le premier terme s'annule. De plus,
-\begin{equation}
-\dot{q}_j = \sum_i \frac{\partial q_j}{\partial x_i}\dot{x}_i+\frac{\partial q_j}{\partial t}\text{,  donc  }
-\frac{\partial \dot{q}_j}{\partial \dot{x}_i}=\frac{\partial q_j}{\partial x_i}.
-\label{eq:lag3}
-\end{equation}
-\ref{eq:lag1} donne donc :
-\begin{equation}
-\label{eq:lag2}
-\frac{\partial L}{\partial \dot{x}_i} = \sum_j\frac{\partial L}{\partial \dot{q}_j}\frac{\partial q_j}{\partial x_i}.
-\end{equation}
-L'équation de Lagrange en coordonnées cartésiennes comprend la dérivée temporelle de cette expression, qui s'écrit :
-\begin{align}
-\frac{d}{dt}\frac{\partial L}{\partial \dot{x}_i} &= 
-\sum_j\left(\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_j}\right)\frac{\partial q_j}{\partial x_i}+
-\sum_j\frac{\partial L}{\partial \dot{q}_j}\left(\frac{d}{dt}\frac{\partial q_j}{\partial x_i}\right) \\
-&=\sum_j \left(\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_j}\right)\frac{\partial q_j}{\partial x_i}+\sum_j\frac{\partial L}{\partial \dot{q}_j}\left(\sum_k \frac{\partial^2q_j}{\partial x_i \partial x_k}\dot{x}_k + \frac{\partial^2q_j}{\partial x_i \partial t}\right).
-\end{align}
-Par ailleurs, le second terme de l'équation de Lagrange s'écrit :
-\begin{align}
-\frac{\partial L}{\partial x_i}&= \sum_j \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial x_i}+ \sum_j\frac{\partial L}{\partial \dot{q}_j}\frac{\partial \dot{q}_j}{\partial x_i} \\
-&=\sum_j \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial x_i}+ \sum_j\frac{\partial L}{\partial \dot{q}_j}\left(\sum_k \frac{\partial^2q_j}{\partial x_i \partial x_k}\dot{x}_k + \frac{\partial^2q_j}{\partial x_i \partial t}\right),
-\end{align}
-où on a utilisé \ref{eq:lag3}. On connaît maintenant tous les termes de l'équation de Lagrange en fonction des ${q_j}$, et en les soustrayant un terme s'annule, ce qui donne :
-\begin{equation}
-\sum_j\left(\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_j}-\frac{\partial L}{\partial q_j}\right)\frac{\partial q_j}{\partial x_i}=0.
-\end{equation}
-$\frac{\partial q_j}{\partial x_i}$ est non singulière puisque son inverse est $\frac{\partial x_i}{\partial q_j}$, on obtient donc l'équation de Lagrange en coordonnées généralisées : 
+On montre alors que l'équation de Lagrange \ref{eq:lag} est toujours valable en coordonnées généralisées :
 \begin{equation}
 \label{eq:lagq}
 \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_i}-\frac{\partial L}{\partial q_i}=0.
 \end{equation}
-Nous avons donc démontré que l'équation de Lagrange est invariante par changement des coordonnées utilisées pour décrire le système, ce qui en fait une formulation très pratique. 
+L'invariance de l'équation de Lagrange par changement des coordonnées utilisées pour décrire le système en fait une formulation très pratique.
 
 \subsection{Symétries du Lagrangien et lois de conservation}
 \label{sec:symlagrange}
@@ -147,7 +115,7 @@ Considérons une distribution de charges et de courants contenus dans un volume 
 \begin{equation}
 \rmd W = \bm{F}\cdot\bm{\rmd l} = q(\bm{E}+\bm{v}\times\bm{B})\cdot\bm{v}\rmd t = q\bm{E}\cdot \bm{v} \rmd t,
 \end{equation}
-où l'on retrouve que la force magnétique ne fournit pas de travail. Notons ensuite $\rho$ la densité de charge dans le volume ($q = \rho \rmd V$) et $\bm{j} =\rho \bm{v}$ la densité de courant. En intégrant sur le volume V, on obtient
+où l'on retrouve que la force magnétique ne fournit pas de travail. Notons ensuite $\rho$ la densité de charge dans le volume ($q = \int\rho \rmd V$) et $\bm{j} =\rho \bm{v}$ la densité de courant. En intégrant sur le volume V, on obtient
 \begin{equation}
 \frac{\rmd W}{\rmd t} = \int_V \bm{E} \cdot \bm{j} \rmd V.
 \end{equation}
@@ -180,7 +148,7 @@ $\bm{\Pi}$ est connu sous le nom de \textbf{vecteur de Poynting}. De manière in
 \subsection{La quantité de mouvement de la lumière}
 L'expression du vecteur de Poynting a été obtenue en partant de la conservation de l'énergie du système champ + particules. De la même façon, la quantité de mouvement de ce système doit être conservée. On note $\bm{P}_{part}$ la somme des quantités de mouvement des particules dans le volume V. La seconde loi de Newton donne :
 \begin{equation}
-\frac{\rmd\bm{P}_{part}}{\rmd t}=\int_V \rho \bm{E} + \bm{j}\times\bm{B}\;\rmd V.
+\frac{\rmd\bm{P}_{part}}{\rmd t}=\int_V \left(\rho \bm{E} + \bm{j}\times\bm{B}\right)\rmd V.
 \end{equation} 
 On utilise l'équation de Maxwell-Gauss et de Maxwell-Ampère pour écrire :
 \begin{align}
@@ -197,8 +165,8 @@ Finalement,
 -\frac{1}{\mu_0}\bm{B}\times(\bm{\nabla}\times\bm{B})\right]\rmd V.
 \end{equation} 
 
-Comme démontré dans la section 6.9 de \mycite{Jackson1999}, le terme de droite est le flux du quantité de mouvement vers l'extérieur du volume V à travers la surface S. Il s'écrit à l'aide du tenseur des contraintes de Maxwell $\tensor{\bm{T_M}}$. On trouve alors une équation de conservation pour la quantité de mouvement :
-\[\frac{\rmd\left(\bm{P}_{part}+\bm{P}_{champ}\right)}{\rmd t} = \oint_S \bm{n}\cdot\tensor{\bm{T_M}}\;\rmd S,\]
+Comme démontré dans la section 6.9 de \mycite{Jackson1999}, le terme de droite est le flux du quantité de mouvement vers l'extérieur du volume V à travers la surface S. Il s'écrit à l'aide du tenseur des contraintes de Maxwell $\tensor{\bm{T}}_M$. On trouve alors une équation de conservation pour la quantité de mouvement :
+\[\frac{\rmd\left(\bm{P}_{part}+\bm{P}_{champ}\right)}{\rmd t} = \oint_S \bm{n}\cdot\tensor{\bm{T}}_M\;\rmd S,\]
 avec :
 \begin{align}
 \bm{P}_{champ} &= \epsilon_0\frac{\rmd}{\rmd t}\int_V (\bm{E}\times\bm{B})\; \rmd V \nonumber\\
@@ -267,7 +235,7 @@ qui sont appelées les ondes planes. Les solutions avec un signe $+$ (resp. $-$)
 
 \subsection{La polarisation des ondes planes}
 \label{sec:circpolar}
-On choisit un repère cartésien tel que $\bm{k}=\bm{e_z}$. Un champ électrique transverse s'écrit :
+On choisit un repère cartésien tel que $\bm{e_z}$ soit la direction de propagation de l'onde. Pour une onde plane, on a $\bm{k}=\bm{e_z}$. Un champ électrique transverse s'écrit :
 \begin{equation}
 \bm{E}=\begin{pmatrix}
 E_{0x}\cos{(\omega t-kz)}\\
@@ -335,7 +303,7 @@ Cette inégalité est vérifiée si le profil varie lentement avec $z$ à l'éch
 \left|\frac{\partial^2}{\partial z^2} u\right|\ll\left|\nabla_t^2 u \right|
 \label{eq:para7}
 \end{equation}
-Comme noté par \mycite{lax1975}, cette condition est problématique si on choisit $\bm{\mathcal{V}}=\bm{E}$, le champ électrique. Un champ électrique dans le vide a une divergence nulle. S'il est de plus transverse, il n'a pas de composante selon $\bm{e}_z$ et sa divergence dans la direction transverse est nulle : $\nabla_{\bm{t}} E=0$. On a donc $\nabla_{\bm{t}}^2 u=0$, ce qui empêche de vérifier l'inégalité \ref{eq:para7}. \mycite{DavisPRA1979} montre que ce problème peut être contourné en considérant à la place le potentiel vecteur $\bm{A}$ dans la jauge de Lorenz. Il est défini par :
+Comme noté par \mycite{LaxPRA1975}, cette condition est problématique si on choisit $\bm{\mathcal{V}}=\bm{E}$, le champ électrique. Un champ électrique dans le vide a une divergence nulle. S'il est de plus transverse, il n'a pas de composante selon $\bm{e}_z$ et sa divergence dans la direction transverse est nulle : $\nabla_{\bm{t}} E=0$. On a donc $\nabla_{\bm{t}}^2 u=0$, ce qui empêche de vérifier l'inégalité \ref{eq:para7}. \mycite{DavisPRA1979} montre que ce problème peut être contourné en considérant à la place le potentiel vecteur $\bm{A}$ dans la jauge de Lorenz. Il est défini par :
 \begin{equation}
 \bm{B} = \bm{\nabla}\times\bm{A},
 \label{eq:para8}
@@ -365,12 +333,12 @@ Cette fois, $\nabla \cdot\bm{A} \neq 0$. Choisissons donc $\bm{\mathcal{V}} = \b
 \begin{equation}
 \left|\frac{\partial^2}{\partial z^2} u\right| \sim \frac{1}{s^2} \left|\nabla_t^2 u \right|.
 \end{equation}
-En général, $w_0\ll l$, donc $s\ll 1$. L'inégalité \ref{eq:para7} est alors vérifiée et on peut donc négliger $\frac{\partial^2}{\partial z^2} u$, ce qui donne l'équation d'onde paraxiale :
+En général, $w_0\ll l$, donc $s\ll 1$. L'inégalité \ref{eq:para7} est alors vérifiée et on peut donc négliger $\frac{\partial^2}{\partial z^2} u$ devant $\nabla_t^2 u$, ce qui donne l'équation d'onde paraxiale :
 \begin{equation}
 \nabla_t^2 u+2\rmi k\frac{\partial}{\partial z}{u}=0.
 \label{eq:para13}
 \end{equation}
-Une fois $\bm{A}$ obtenu, on peut retrouver les champs électrique et magnétique. Avec les notations complexes $\bm{E}=\text{Re}[\bm{\mathcal{E}}\exp{(-\rmi\omega t)}]$, $\bm{B}=\text{Re}[\bm{\mathcal{B}}\exp{(-\rmi\omega t)}]$ et $\Phi=\text{Re}[\phi\exp{(-\rmi\omega t)}]$, \ref{eq:para10} se réécrit, en utilisant la relation de jauge :
+Une fois $\bm{A}$ obtenu, on peut retrouver les champs électrique et magnétique. Avec la notation complexe $\Phi=\text{Re}[\phi\exp{(-\rmi\omega t)}]$, \ref{eq:para10} se réécrit, en utilisant la relation de jauge :
 \begin{align}
 \bm{\mathcal{E}}&=-\nabla\phi +\rmi\omega\bm{\mathcal{A}}\\
 &=-\bm{\nabla}\left(-\frac{\rmc^2\bm{\nabla}\cdot\bm{\mathcal{A}}}{\rmi \omega}\right)+\rmi\omega\bm{\mathcal{A}}\\
@@ -398,7 +366,7 @@ où $n$ et $m$ sont les indices du mode dans chacune des directions transverses.
 \begin{equation}
 \left(\nabla_t^2 +2\rmi k\frac{\partial}{\partial z}\right)u^{HG}_{n}(x,z)=0.
 \end{equation}
-On vérifie que le champ suivant est une solution normalisée ce cette équation :
+On vérifie que le champ suivant est une solution normalisée de cette équation \mycite{Siegman1986} :
 \begin{align}
 u^{HG}_{n}(x,z)&=\frac{C_n^{HG}}{\sqrt{w(z)}}\exp{\left[\rmi k \frac{x^2 z}{2(z_R^2 + z^2)}\right]}\exp{\left(-\frac{x^2}{w^2(z)}\right)}\\
 &\times \exp{\left[-\rmi\left(n+\frac{1}{2}\right)\chi(z)\right]}H_n\left(\frac{\sqrt{2}x}{w(z)}\right).
@@ -432,7 +400,7 @@ On part encore une fois du vecteur potentiel $\bm{A}=\bm{t}u(r,\theta,z)\exp{(\r
 \begin{equation}
 \left(\frac{1}{r}\frac{\partial}{\partial r} + \frac{\partial^2}{\partial^2 r} + \frac{1}{r^2}\frac{\partial^2}{\partial^2 \theta} + 2\rmi k\frac{\partial}{\partial z}\right)u^{LG}_{\ell, p}=0.
 \end{equation}
-Une solution normalisée de cette équation est donnée par : 
+Une solution normalisée de cette équation est donnée par \mycite{Siegman1986} : 
 \begin{align}
 {u^{LG}_{\ell,p} }\left( {r,\theta ,z} \right) &= {\;}\frac{C_{\ell,p}}{w(z)}
 {\left( {\frac{r\sqrt{2}}{{w\left(z\right)}}} \right)^{\left| \ell  \right|}}
@@ -610,13 +578,17 @@ Ceci s'écrit formellement :
 \hat{Q}\ket{\psi_2}&=\hat{U}\hat{Q}\ket{\psi_1}, \mbox{ ou encore}\\
 \hat{Q}\hat{U}\ket{\psi_1}&=\hat{U}\hat{Q}\ket{\psi_1}.
 \end{align}
-On en conclut que $\hat{U}$ et $\hat{Q}$ commutent.
-
-Pour un temps infinitésimal $\rmd t$, l'équation de Schrödinger donne :
-\[\ket{\psi(t+\rmd t)} = \hat{U}(t+dt,t)\ket{\psi(t)} = (\hat{1}-\frac{\rmi}{\hbar} \hat{H}\rmd t)\ket{\psi(t)},\]
-où $\hat{H}$ est l'hamiltonien du système. Ceci montre que si $\hat{U}$ et $\hat{Q}$ commutent, alors $\hat{H}$ et $\hat{Q}$ aussi :
+On en conclut que $\hat{U}$ et $\hat{Q}$ commutent. Pour un temps infinitésimal $\rmd t$, l'équation de Schrödinger donne :
 \begin{equation}
-[\hat{H},\hat{Q}]=0,
+\ket{\psi(t+\rmd t)}-\ket{\psi(t)} = -\frac{\rmi}{\hbar} \hat{H}\rmd t\ket{\psi(t)},
+\end{equation}
+où $\hat{H}$ est l'hamiltonien du système. On a donc :
+\begin{equation}
+\hat{U}(t+dt,t)\ket{\psi(t)} = \ket{\psi(t+\rmd t)} = (\hat{1}-\frac{\rmi}{\hbar} \hat{H}\rmd t)\ket{\psi(t)}.
+\end{equation}
+Ceci montre que si $\hat{U}$ et $\hat{Q}$ commutent, alors $\hat{H}$ et $\hat{Q}$ aussi :
+\begin{equation}
+[\hat{H},\hat{Q}]=0.
 \end{equation}
 Les symétries du système sont toutes les opérations qui commutent avec son hamiltonien.
 
@@ -662,12 +634,12 @@ Nous pouvons appliquer la même démarche cette fois en utilisant l'opérateur r
 Appliquer $n$ fois $\hat{R}_z(\theta)$ est équivalent à appliquer $\hat{R}_z(n\theta)$. Ceci est également vrai pour $n<0$ car $\hat{R}^{-1}_z(\theta)=\hat{R}_z(-\theta)$. Par conséquent, $\forall n\in\mathbb{Z},\;\forall\theta\in\mathbb{R},\; n\delta(\theta) = \delta(n\theta)$. \\
 Notons $\delta(1) = m$. On a alors :
 \begin{equation}
-\forall n\in\mathbb{Z}*,\; n\delta(\frac{1}{n}) = \delta(\frac{n}{n}) = m.
+\forall n\in\mathbb{Z}^*,\; n\delta(\frac{1}{n}) = \delta(\frac{n}{n}) = m.
 \label{eq:ndelta_1}
 \end{equation}
 On peut écrire :
 \begin{align}
-\forall q\in\mathbb{Z}*,\; \forall p\in\mathbb{Z},\; \delta(\frac{p}{q}) &= p\;\delta(\frac{1}{q})\nonumber\\
+\forall q\in\mathbb{Z}^*,\; \forall p\in\mathbb{Z},\; \delta(\frac{p}{q}) &= p\;\delta(\frac{1}{q})\nonumber\\
 &= p\; \frac{m}{q} \text{ en utilisant \ref{eq:ndelta_1}}\nonumber\\
 &= m\; \frac{p}{q}. \nonumber\\
 \text{Ainsi, } \forall r\in\mathbb{Q},\; \delta(r) &= mr.
@@ -683,7 +655,7 @@ On a ainsi démontré que
 \end{equation}
 où le facteur de proportionnalité $m$ est un nombre réel.
 
-Nous savons donc que si le système est symétrique par rapport à la rotation autour de l'axe $z$, et que l'état initial vérifie \ref{Eq.DefMQuantum}, alors cette relation reste vraie au cours du temps. La quantité $m$ est donc importante : c'est une constante du mouvement. Nous verrons juste après que $m$ est en fait le moment angulaire du système par rapport à l'axe $z$
+Nous savons de plus que si le système est symétrique par rapport à la rotation autour de l'axe $z$, et que l'état initial vérifie \ref{Eq.DefMQuantum}, alors cette relation reste vraie au cours du temps. La quantité $m$ est donc importante : c'est une constante du mouvement. Nous verrons juste après que $m$ est en fait le moment angulaire du système par rapport à l'axe $z$.
 
 Le raisonnement effectué en utilisant $\hat{P}$ et $\hat{R}_z(\theta)$ pour démontrer la conservation respectivement de la parité et du moment angulaire s'applique pour d'autres opérateurs. Ainsi, la symétrie par rapport à $\hat{D}_x(a)$, opérateur qui translate le système d'une distance $a$ selon l'axe $x$, donne la conservation de $\hbar k_x$, la quantité de mouvement selon x. De même, $\hat{D}_t(\tau)$, l'opérateur de translation temporelle $\tau$, donne la conservation de $\omega \hbar$, l'énergie du système.
 
@@ -768,7 +740,7 @@ Il reste à développer l'expression de gauche et à identifier les termes à l'
 En permutant les axes $x$, $y$ et $z$, on retrouve ainsi toutes les relations de commutation \ref{Eq.CommutJ}, cette fois-ci en utilisant uniquement la structures des rotations géométriques. 
 
 \section{Moment angulaire de spin et moment angulaire orbital}
-Nous avons mis en avant le lien fort entre symétries du système et moment angulaire. Ceci permet de définir le moment angulaire quantiquement, sans qu'il ait forcément d'équivalent classique. \`A partir d'ici, nous définirons un moment angulaire \textbf{orbital} comme un moment ayant un équivalent en mécanique classique, et un moment angulaire \textbf{de spin} comme un effet purement quantique. Nous les noterons respectivement $\bm{\hat{L}}$ et $\bm{\hat{S}}$. On peut alors montrer en utilisant les règles d'additions des moments angulaires (Chapitre X de \mycite{cohen}) que le moment angulaire total du système est donné par :
+Nous avons mis en avant le lien fort entre symétries du système et moment angulaire. Ceci permet de définir le moment angulaire quantiquement, sans qu'il ait forcément d'équivalent classique. \`A partir d'ici, nous définirons un moment angulaire \textbf{orbital} comme un moment ayant un équivalent en mécanique classique, et un moment angulaire \textbf{de spin} comme une propriété purement quantique. Nous les noterons respectivement $\bm{\hat{L}}$ et $\bm{\hat{S}}$. On peut alors montrer en utilisant les règles d'additions des moments angulaires (Chapitre X de \mycite{cohen}) que le moment angulaire total du système est donné par :
 \begin{equation}
 \bm{\hat{J}}=\bm{\hat{L}}+\bm{\hat{S}}.
 \label{Eq.JegalLplusS}
@@ -801,64 +773,15 @@ Considérons maintenant le système {lumière+particules}. La contribution de $E
 &=\epsilon_0\int{\bm{r}\times(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right])\rmd\bm{r}}\text{, où on a utilisé \ref{eq:para15}}%&=\epsilon_0\int{\left(\sum_{a=x,y,z} E^a_{\parallel}(\bm{r}\times\bm{\nabla})A^a_{\bot}-\bm{r}\times(\bm{E}_{\parallel}\cdot\bm{\nabla})\bm{A}_{\bot}\right)\rmd\bm{r}}.
 \label{eq:Jlong1}
 \end{align}
-
-\'Ecrivons la $n$-ième composante de $\bm{r}\times(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right])$. On utilise la convention d'écriture où une somme sur les indices indice répétés est implicite. Tout d'abord,
-\begin{align}
-\left(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right]\right)_n &= 
-(E_i\nabla_nA_i-E_i\nabla_iA_n)
-\end{align}
-On utilise ensuite le symbole de Levi-Civita $\epsilon_{lmn}$ pour écrire :
-\begin{align}
-r\times\left(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right]\right)_l &= 
-\epsilon_{lmn}r_m(E_i\nabla_nA_i-E_i\nabla_iA_n)\\
-&=\epsilon_{lmn}r_mE_i\nabla_nA_i-\epsilon_{lmn}E_i\nabla_i(r_mA_n)+\epsilon_{lmn}E_i\nabla_i(r_m)A_n.
-\end{align}
-On a $\nabla_i(r_m)=\delta_{im}$, donc
-\begin{align}
-r\times\left(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right]\right)_l 
-&=E_i\epsilon_{lmn}r_m\nabla_nA_i-E_i\nabla_i\epsilon_{lmn}(r_mA_n)+\epsilon_{lmn}E_mA_n.
-\end{align}
-On repasse en notation vectorielle et on obtient :
+On montre (la démonstration est donnée dans l'annexe \ref{app:calculj}) que \ref{eq:Jlong1} se réécrit :
 \begin{equation}
-\bm{J}_{\parallel}=\epsilon_0\int{\left(\sum_{i=x,y,z} E^i_{\parallel}(\bm{r}\times\bm{\nabla})A^i_{\bot}-
-(\bm{E}_{\parallel}\cdot\bm{\nabla})(\bm{r}\times\bm{A}_{\bot})+\bm{E}_{\parallel}\times\bm{A}_{\bot}\right)\rmd\bm{r}}.
-\label{eq:Jlongnew}
-\end{equation}
-
-On intègre ensuite le deuxième de cette relation par partie :
-\begin{equation}
-\int{(\bm{E}_{\parallel}\cdot\bm{\nabla})(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}}=
-\int{-(\bm{\nabla}\cdot\bm{E}_{\parallel})(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}}+\oint_{\partial V}{\bm{E}_{\parallel}(\bm{r}\times\bm{A}_{\bot})\rmd S}
-\label{eq:Jlong5}
-\end{equation}
-L'intégrale de surface s'annule si $\bm{E}$ tend vers zéro suffisamment rapidement. De plus, l'équation de Maxwell-Gauss donne 
-$(\bm{\nabla}\cdot\bm{E}_{\parallel}) = \rho/\epsilon_0$. On réécrit maintenant l'équation \ref{eq:Jlongnew} en remplaçant $\bm{E}_{\parallel}$ par $-\bm{\nabla}\Phi$, où $\Phi$ est le potentiel vecteur dans la jauge de Coulomb.
-\begin{equation}
-\bm{J}_{\parallel}=\int{\left[-\epsilon_0\sum_{i=x,y,z}(\nabla^i\Phi)(\bm{r}\times\bm{\nabla})A^i_{\bot}
-+\rho(\bm{r}\times\bm{A}_{\bot})
--\epsilon_0(\bm{\nabla}\Phi)\times\bm{A}_{\bot}
-\right]\rmd\bm{r}}
-\label{eq:Jlong2}
-\end{equation}
-Montrons maintenant que le premier et le dernier terme de cette expression s'annulent. En les intégrant par partie et en considérant les intégrales de surface nulles, on obtient :
-\begin{align}
-\int[\sum_{i=x,y,z}(\nabla^i\Phi)(\bm{r}\times\bm{\nabla})A^i_{\bot}+(\bm{\nabla}\Phi)\times\bm{A}_{\bot}]\rmd\bm{r}
-&=\int[\sum_{i=x,y,z}\Phi\nabla^i(\bm{r}\times\bm{\nabla})A^i_{\bot}+\Phi(\bm{\nabla}\times\bm{A}_{\bot})]\rmd\bm{r}.
-\label{eq:Jlong3}
-\end{align}
-De plus (Complément $\text{B}_{\text{I}}$ de \mycite{Cohen1997}),
-\begin{align}
-\sum_{i=x,y,z}\Phi\nabla^i(\bm{r}\times\bm{\nabla})A^i_{\bot}=\Phi(\bm{r}\times\bm{\nabla})(\bm{\nabla}\cdot\bm{A}_{\bot})-\Phi(\bm{\nabla}\times\bm{A}_{\bot})
-\end{align}
-Dans la jauge de Coulomb, $\bm{\nabla}\cdot\bm{A}_{\bot}=0$, donc le premier terme est nul. Le second s'annule avec le dernier terme de \ref{eq:Jlong3}. Il ne reste donc qu'un terme à \ref{eq:Jlong2} :
-\begin{equation}
-\bm{J}_{\parallel}=\int{\rho(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}}
+\bm{J}_{\parallel}=\int{\rho(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}},
 \label{eq:Jlong4}
 \end{equation}
-$\bm{A}_{\bot}$ est invariant par transformation de jauge (voir I.B.4 de \mycite{Cohen1997}), donc l'expression \ref{eq:Jlong4} l'est aussi. En général, $\rho = 0$, donc $\bm{J}_{\parallel} = 0$ et $\bm{J}=\bm{J}_{\bot}$.
+où $\rho$ est la densité de charge. En général, $\rho = 0$, donc $\bm{J}_{\parallel} = 0$ et $\bm{J}=\bm{J}_{\bot}$.
 
 \subsubsection{Composante transverse}
-Le calcul réalisé pour la composante longitudinale est valable en remplaçant $\bm{E}_{\parallel}$ par $\bm{E}_{\bot}$. On a de plus $\bm{\nabla}\cdot\bm{E}_{\bot}=0$, donc l'intégration par partie \ref{eq:Jlong5} donne zéro. Il reste alors :
+Pour la composante transverse, on obtient (voir l'annexe \ref{app:calculj}) :
 \begin{align}
 \bm{J_{\bot}}&=\int{\epsilon_0\bm{r}\times(\bm{E_{\bot}}\times\bm{B})\rmd\bm{r}}\nonumber\\
 &=\epsilon_0\int{\bigl[\sum_{i=x,y,z} \bm{E}^i_{\bot}(\bm{r}\times\bm{\nabla})\bm{A}^i_{\bot}+\bm{E_{\bot}}\times\bm{A_{\bot}}\bigr]\rmd\bm{r}}
@@ -904,7 +827,7 @@ L'hamiltonien prend alors la forme intéressante :
 \hat{H}=\sum_i \frac{\hbar\omega_i}{2}\left(\hat{a}^{\dag}_{i}\hat{a}_{i}+\hat{a}_{i}\hat{a}^{\dag}_{i}\right)
 =\sum_i \hbar\omega_i\left(\hat{a}^{\dag}_{i}\hat{a}_{i}+\frac{1}{2}\right),
 \end{equation}
-où on a utilisé la règle de commutation $\left[\hat{a}_{i},\hat{a}^{\dag}_{i'}\right] = \delta_{ii'}$ facilement obtenue à partir de celles de $\hat{x}_i$ et $\hat{p}_i$. On introduit alors $\hat{N}_i=\hat{a}^{\dag}_{i}\hat{a}_{i}$, appelé opérateur \textit{nombre}. Le spectre de cet opérateur est l'ensemble des nombres entiers $n_i$ non-négatifs (voir section V.B.2 de \mycite{cohen}). On en conclut que l'énergie du système est quantifiée et vaut :
+où on a utilisé la règle de commutation $\left[\hat{a}_{i},\hat{a}^{\dag}_{i'}\right] = \delta_{ii'}$ facilement obtenue à partir de celles de $\hat{x}_i$ et $\hat{p}_i$. On introduit alors $\hat{N}_i=\hat{a}^{\dag}_{i}\hat{a}_{i}$, appelé opérateur \textit{nombre d'occupation}. Le spectre de cet opérateur est l'ensemble des nombres entiers $n_i$ non-négatifs (voir section V.B.2 de \mycite{cohen}). On en conclut que l'énergie du système est quantifiée et vaut :
 \begin{equation}
 E = \sum_{i=1\ldots N} \hbar \omega_i (n_i + \frac{1}{2}).
 \end{equation}
@@ -914,10 +837,10 @@ E = \sum_{i=1\ldots N} \hbar \omega_i (n_i + \frac{1}{2}).
 \label{sec:quant_EM}
 Le champ électromagnétique peut être traité de façon analogue à l'ensemble d'oscillateurs harmoniques. Pour ce faire, on l'exprime en fonction de $N$ modes, qui seront analogues aux $N$ oscillateurs. Nous avons déjà détaillé ce problème au chapitre \ref{ch:modes}. Nous avons vu qu'on part du vecteur potentiel $\bm{A}$ et qu'on l'exprime sur une base de notre choix, telle que les ondes planes, les modes de Laguerre-Gauss, de Hermite-Gauss, etc. On considère des modes purement transverses, qu'on note $\bm{F}_i$. Ils forment une base orthonormée. Dans la jauge de Coulomb, $\bm{A}$ est également transverse et s'écrit :
 \begin{equation}
-\bm{A}=\sum_{i}{\mathcal{A}_i (a_{i}\bm{F}_i+a^*_{i}\bm{F}^*_i}),
+\bm{A}=\sum_{i}{\mathcal{A}_i (\alpha_{i}\bm{F}_i+\alpha^*_{i}\bm{F}^*_i}),
 \label{A_decomp_Flambda}
 \end{equation}
-où $a_{i}$ est une amplitude complexe sans dimension et $\mathcal{A}_i=\sqrt{\frac{\hbar}{2\epsilon_0\omega_i}}$ est une constante de normalisation. 
+où $\alpha_{i}$ est une amplitude complexe sans dimension et $\mathcal{A}_i=\sqrt{\frac{\hbar}{2\epsilon_0\omega_i}}$ est une constante de normalisation. 
 
 De manière générale, il est intéressant de choisir une base $\bm{F}_i$ adaptée aux grandeurs physiques que l'on mesure. Dans une approche quantique, on choisit un ensemble d'opérateurs hermitiens qui commutent et on cherche leurs fonctions propres communes. Par exemple, si on choisit les opérateurs d'impulsion $\hat{p}_x$, $\hat{p}_y$, $\hat{p}_z$ et l'opérateur de spin, les fonctions propres communes sont les ondes planes progressives. Les valeurs propres sont alors $k_x$, $k_y$, $k_z$, et l'hélicité $\alpha = \pm 1$. On indexera par la suite $\bm{F}_i$ par l'ensemble $\beta$ de ces valeurs propres : pour les ondes planes, la base est $\bm{F}_{\beta}$, avec $\beta=(k_x,\;k_y,\;k_z,\;\alpha)$.
 
@@ -932,7 +855,7 @@ Tout comme $\hat{x}_i$ et $\hat{p}_i$ auparavant, les opérateurs associées aux
 \hat{\bm{B}} &=\sum_{\beta}{\mathcal{A}_{\beta} (\hat{a}_{\beta}\bm{\nabla}\times\bm{F}_{\beta}+\hat{a}^{\dag}_{\beta}\bm{\nabla}\times\bm{F}^*_{\beta}})
 \label{eq:Qfields}
 \end{align}
-Précisons la forme de l'espace dans lequel évolue le champ. Nous avons déjà introduit l'opérateur nombre $\hat{N}_{\beta}=\hat{a}^{\dag}_{\beta}\hat{a}_{\beta}$, dont les valeurs propres sont les entiers positifs ou nuls $n_{\beta}$. On note ses vecteurs propres $\ket{n_{\beta}}$. Ces vecteurs forment une base des états du champ dans le mode ${\beta}$. Les modes $\bm{F}_{\beta}$ constituant une base complète, on voit que les états propres de $\hat{H}$ sont les produits tensoriels entre tous les états $\ket{n_{\beta}}$ : $\ket{n_{\beta_1}}\otimes\ket{n_{\beta_2}}\otimes\ldots$. En fait, chaque état peut être vu comme un ensemble de particules indépendantes comportant $n_{\beta_1}$ particules dans le mode ${\beta_1}$, $n_{\beta_2}$ dans le mode ${\beta_2}$, etc. Ces particules sont appelées \textbf{photons}\footnote{Comme pour toute particule, on peut définir la fonction d'onde d'un photon. Il faut cependant effectuer une distinction importante avec le cas d'une particule telle qu'un atome. En effet, le photon se déplace à la vitesse de la lumière, ce qui oblige à utiliser une description relativiste. Dans ce cas, la fonction d'onde ne peut pas être vue comme l'amplitude de probabilité de trouver le photon à un endroit donné. En effet, on vient de voir que l'énergie du photon s'écrit $E = \hbar\omega = \hbar\left|\bm{k}\right|\rmc=\left|\bm{p}\right|\rmc$. On peut alors écrire l'incertitude sur la position du photon comme :
+Précisons la forme de l'espace dans lequel évolue le champ. Nous avons déjà introduit l'opérateur nombre d'occupation $\hat{N}_{\beta}=\hat{a}^{\dag}_{\beta}\hat{a}_{\beta}$, dont les valeurs propres sont les entiers positifs ou nuls $n_{\beta}$. On note ses vecteurs propres $\ket{n_{\beta}}$. Ces vecteurs forment une base des états du champ dans le mode ${\beta}$. Les modes $\bm{F}_{\beta}$ constituant une base complète, on voit que les états propres de $\hat{H}$ sont les produits tensoriels entre tous les états $\ket{n_{\beta}}$ : $\ket{n_{\beta_1}}\otimes\ket{n_{\beta_2}}\otimes\ldots$. En fait, chaque état peut être vu comme un ensemble de particules indépendantes comportant $n_{\beta_1}$ particules dans le mode ${\beta_1}$, $n_{\beta_2}$ dans le mode ${\beta_2}$, etc. Ces particules sont appelées \textbf{photons}\footnote{Comme pour toute particule, on peut définir la fonction d'onde d'un photon. Il faut cependant effectuer une distinction importante avec le cas d'une particule telle qu'un atome. En effet, le photon se déplace à la vitesse de la lumière, ce qui oblige à utiliser une description relativiste. Dans ce cas, la fonction d'onde ne peut pas être vue comme l'amplitude de probabilité de trouver le photon à un endroit donné. En effet, on vient de voir que l'énergie du photon s'écrit $E = \hbar\omega = \hbar\left|\bm{k}\right|\rmc=\left|\bm{p}\right|\rmc$. On peut alors écrire l'incertitude sur la position du photon comme :
 \begin{equation}
 \Delta x \sim \hbar\rmc/E = \hbar/p.
 \end{equation}
@@ -975,7 +898,16 @@ où on a utilisé les opérateurs de la mécanique quantique pour le moment angu
 \end{aligned} 
 \label{defLS_hat}
 \end{equation}
-où $i,j,k=x,y,z$ et $\epsilon_{ijk}$ est le symbole de Levi-Civita.
+où $i,j,k=x,y,z$ et $\epsilon_{ijk}$ est le symbole de Levi-Civita, défini par 
+\begin{equation}
+\epsilon_{ijk}=\left\lbrace
+\begin{array}{rl}
+0,& \mbox{si un des trois indices apparaît plus d'une fois}\\
+1,&\mbox{si }i,j,k\mbox{ est une permutation paire de 1,2,3}\\
+-1,&\mbox{si }i,j,k\mbox{ est une permutation impaire de 1,2,3}\\
+\end{array}
+\right.
+\end{equation}
 
 \'{E}tudions maintenant les relations de commutations de $\hat{\bm{S}}$ et $\hat{\bm{L}}$. L'opérateur moment angulaire total est donné par $\hat{\bm{J}} = \hat{\bm{S}}+\hat{\bm{L}}$. On peut montrer \mycite{LenstraPRA1982} que $\hat{\bm{J}}$ génère bien des rotations dans l'espace et vérifie les règles de commutations \ref{Eq.CommutJ} qui définissent un opérateur moment angulaire.\\
 Ce n'est pas le cas de l'opérateur $\hat{\bm{S}}$. Il suffit pour s'en rendre compte de choisir la base des ondes planes pour décomposer le champ. On choisit les $\bm{F}_{\beta}$ avec $\beta={k_x,k_y,k_z,\alpha}$, ce qui permet d'écrire $\bm{F}_{\bm{k}\alpha}=\bm{\epsilon}_{\bm{k}\alpha}e^{\rmi \bm{k}\cdot\bm{r}}$, où $\bm{\epsilon}_{\bm{k}\alpha}$ est un vecteur unitaire. On réécrit alors l'équation \ref{eqLS_QED} :
@@ -1044,7 +976,7 @@ On a donc bien trouvé des fonctions propres de ces opérateurs. $m$ est le mome
 Nous pouvons maintenant étudier le moment angulaire porté par une onde plane polarisée circulairement ou un mode de Laguerre-Gauss. Nous retrouverons ainsi les résultats obtenus classiquement au chapitre \ref{ch:modes}, mais ils auront cette fois un sens au niveau microscopique.
 
 \section{Moment angulaire de spin et polarisation de la lumière}
-Commençons par le moment angulaire de spin. Remarquons d'abord que $s$ n'apparaît pas dans le profil transverse des modes $\bm{F}_{\beta}$, mais plutôt dans les relations entre les différentes composantes du champ. C'est assez naturel, puisque le spin est relié à la structure vectorielle du champ et donc à sa polarisation. Nous avions déjà observé ce point dans le cas classique, où la contribution du moment angulaire de spin s'écrit $\bm{S}=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}$ (\ref{SeparationJS_classique}).
+Commençons par le moment angulaire de spin. Remarquons d'abord que $s$ n'apparaît pas dans le profil spatial des modes $\bm{F}_{\beta}$, mais plutôt dans les relations entre les différentes composantes du champ. C'est assez naturel, puisque le spin est relié à la structure vectorielle du champ et donc à sa polarisation. Nous avions déjà observé ce point dans le cas classique, où la contribution du moment angulaire de spin s'écrit $\bm{S}=\epsilon_0\int{\rmd\bm{r}\bm{E_{\bot}}\times\bm{A_{\bot}}}$ (\ref{SeparationJS_classique}).
 
 Une onde plane progressive selon $z$ et polarisée circulairement a une extension transverse infinie, et vérifie $k_t = 0$, ou $k = k_z$. Les expressions \ref{eqAMModes} se simplifient :
 \begin{equation}
@@ -1054,7 +986,7 @@ F_{\beta}^y ~&= ~-\rmi\left[(1-s)f(0,k_z,m+1)-(1+s)f(0,k_z,m-1)\right],\\
 F_{\beta}^z ~&= 0
 \end{aligned}
 \end{equation}
-On retrouve bien que $F_{\beta}^z$ s'annule. Remarquons ensuite que $f(0,k_z,i) \propto J_i(0)$. Ainsi, $f(0,k_z,i)$ est non nul si et seulement si $i = 0$. Les seules valeurs de $m$ pour lesquelles le champ n'est pas totalement nul sont donc $m=\pm 1$. On trouve donc deux solutions :
+On retrouve bien que $F_{\beta}^z$ s'annule. Remarquons ensuite que $f(0,k_z,i) \propto J_i(0)$. Ainsi, $f(0,k_z,i)$ est non nul si et seulement si $i = 0$. Les seules valeurs de $m$ pour lesquelles le champ n'est pas totalement nul sont donc $m=\pm 1$. On trouve donc deux solutions non nulles :
 \[
 \begin{array}{|c|c|}
 	\hline
@@ -1079,23 +1011,23 @@ Nous avons ainsi retrouvé les polarisations circulaires droites et gauches, con
 \begin{equation}
 \begin{aligned}[c]
 &\text{Circulaire Gauche}\\
-&\hat{J}_z\ket{L} = m\hbar\ket{L} = \hbar\ket{L},\\
-&\hat{S}_z\ket{L} = \frac{sk_z\hbar}{k}\ket{L} = \hbar\ket{L},\\
-&\hat{L}_z\ket{L} = m\hbar-\frac{sk_z\hbar}{k}\ket{L} = 0.
+&\hat{J}_z\ket{L} = \hbar\ket{L},\\
+&\hat{S}_z\ket{L} = \hbar\ket{L},\\
+&\hat{L}_z\ket{L} = 0.
 \end{aligned}
 \qquad
 \begin{aligned}[c]
 &\text{Circulaire Droite}\\
-&\hat{J}_z\ket{R} = m\hbar\ket{R} = -\hbar\ket{R},\\
-&\hat{S}_z\ket{R} = \frac{sk_z\hbar}{k}\ket{R} = -\hbar\ket{R},\\
-&\hat{L}_z\ket{R} = m\hbar-\frac{sk_z\hbar}{k}\ket{R} = 0.
+&\hat{J}_z\ket{R} = -\hbar\ket{R},\\
+&\hat{S}_z\ket{R} = -\hbar\ket{R},\\
+&\hat{L}_z\ket{R} = 0.
 \end{aligned}
 \end{equation}
 La séparation du moment angulaire en parties spin et orbitale est ici justifiée, ce qui est cohérent avec le fait qu'on obtienne des valeurs propres discrètes pour ces opérateurs. Enfin, les ondes polarisées linéairement sont constituées d'un même nombre de photons circulaires droits et gauches, ce qui donne une valeur propre de $S_z$ égale à zéro.
 
 \section{Moment angulaire orbital et modes de Laguerre-Gauss}
 \label{sec:oamLG}
-Appliquons maintenant la même démarche aux modes de Laguerre-Gauss. Nous avons vu que ces modes étaient solution de l'équation d'Helmholtz paraxiale (voir partie \ref{sec:LGmodes}), ce qui amène à considérer $k_t \ll k$. Sans perte de généralité, supposons $s=1$, c'est-à-dire une onde polarisée circulaire gauche. Dans les conditions paraxiales, les expressions \ref{eqAMModes} s'écrivent :
+Appliquons maintenant la même démarche aux modes de Laguerre-Gauss. Nous avons vu que ces modes étaient solution de l'équation d'Helmholtz paraxiale (voir partie \ref{sec:LGmodes}), ce qui amène à considérer $k_t \ll k$. Sans perte de généralité, supposons $s=1$, c'est-à-dire une onde polarisée circulaire gauche. Dans les conditions paraxiales, les fonctions de base adaptées \ref{eqAMModes} s'écrivent :
 \begin{equation}
 \begin{aligned}
 F_{\beta}^x ~&\approx ~ f(k_t,k_z,m-1),\\

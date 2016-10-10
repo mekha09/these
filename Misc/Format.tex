@@ -379,11 +379,24 @@ breaklinks = true
 }                           % Abstract, etc.
 
 \newcommand{\chapternonumtoc}[1]{
+\makeatletter
+\def\toclevel@chapter{-1}
+\def\toclevel@section{0}
+\def\toclevel@subsection{1}
+\makeatother
+
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{#1}
+%\addcontentsline{toc}{chapter}{#1}
+\addcontentsline{toc}{part}{#1}
 \chapter*{#1}
 \markboth{#1}{#1}
+
+\makeatletter
+\def\toclevel@chapter{0}
+\def\toclevel@section{1}
+\def\toclevel@subsection{2}
+\makeatother
 }                           % Acknowledgements
 
 \newcommand{\chapternonumtitle}[2]{
