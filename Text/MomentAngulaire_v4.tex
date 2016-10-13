@@ -882,11 +882,11 @@ On substitue alors les expressions quantifiées (\ref{eq:Qfields}) de $\bm{E_{\b
 \mycite{VanEnk1994} montrent qu'on obtient les résultats suivants pour $\hat{\bm{S}}$ et $\hat{\bm{L}}$ :
 \begin{equation}
 \begin{aligned}[c]
-\hat{\bm{L}}=\frac{1}{2}\sum_{\beta,\beta'}{(a^{\dag}_{\beta}a_{\beta'}+a_{\beta'}a^{\dag}_{\beta})}\bra{\bm{F}_\beta}\hat{\mathcal{L}}\ket{\bm{F}_{\beta'}}
+\hat{\bm{L}}=\frac{1}{2}\sum_{\beta,\beta'}{(\hat{a}^{\dag}_{\beta}\hat{a}_{\beta'}+\hat{a}_{\beta'}\hat{a}^{\dag}_{\beta})}\bra{\bm{F}_\beta}\hat{\mathcal{L}}\ket{\bm{F}_{\beta'}}
 \end{aligned}
 \qquad
 \begin{aligned}[c]
-\hat{\bm{S}}=\frac{1}{2}\sum_{\beta,\beta'}{(a^{\dag}_{\beta}a_{\beta'}+a_{\beta'}a^{\dag}_{\beta})}\bra{\bm{F}_\beta}\hat{\mathcal{S}}\ket{\bm{F}_{\beta'}},
+\hat{\bm{S}}=\frac{1}{2}\sum_{\beta,\beta'}{(\hat{a}^{\dag}_{\beta}\hat{a}_{\beta'}+\hat{a}_{\beta'}\hat{a}^{\dag}_{\beta})}\bra{\bm{F}_\beta}\hat{\mathcal{S}}\ket{\bm{F}_{\beta'}},
 \end{aligned}
 \label{eqLS_QED}
 \end{equation}
@@ -912,14 +912,14 @@ où $i,j,k=x,y,z$ et $\epsilon_{ijk}$ est le symbole de Levi-Civita, défini par
 \'{E}tudions maintenant les relations de commutations de $\hat{\bm{S}}$ et $\hat{\bm{L}}$. L'opérateur moment angulaire total est donné par $\hat{\bm{J}} = \hat{\bm{S}}+\hat{\bm{L}}$. On peut montrer \mycite{LenstraPRA1982} que $\hat{\bm{J}}$ génère bien des rotations dans l'espace et vérifie les règles de commutations \ref{Eq.CommutJ} qui définissent un opérateur moment angulaire.\\
 Ce n'est pas le cas de l'opérateur $\hat{\bm{S}}$. Il suffit pour s'en rendre compte de choisir la base des ondes planes pour décomposer le champ. On choisit les $\bm{F}_{\beta}$ avec $\beta={k_x,k_y,k_z,\alpha}$, ce qui permet d'écrire $\bm{F}_{\bm{k}\alpha}=\bm{\epsilon}_{\bm{k}\alpha}e^{\rmi \bm{k}\cdot\bm{r}}$, où $\bm{\epsilon}_{\bm{k}\alpha}$ est un vecteur unitaire. On réécrit alors l'équation \ref{eqLS_QED} :
 \begin{align}
-\hat{\bm{S}} &= \frac{1}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(a^{\dag}_{\bm{k}\alpha}a_{\bm{k'}\alpha'}+a_{\bm{k'}\alpha'}a^{\dag}_{\bm{k}\alpha})}\int{\rmd\bm{r}\;\bm{\epsilon}_{\bm{k}\alpha}e^{\rmi \bm{k}\cdot\bm{r}}\times\bm{\epsilon}_{\bm{k'}\alpha '}e^{\rmi \bm{k'}\cdot\bm{r}}}\\
-&= \frac{1}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(a^{\dag}_{\bm{k}\alpha}a_{\bm{k'}\alpha'}+a_{\bm{k'}\alpha'}a^{\dag}_{\bm{k}\alpha})}\bm{\epsilon}_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k'}\alpha '}
+\hat{\bm{S}} &= \frac{1}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(\hat{a}^{\dag}_{\bm{k}\alpha}\hat{a}_{\bm{k'}\alpha'}+\hat{a}_{\bm{k'}\alpha'}\hat{a}^{\dag}_{\bm{k}\alpha})}\int{\rmd\bm{r}\;\bm{\epsilon}_{\bm{k}\alpha}e^{\rmi \bm{k}\cdot\bm{r}}\times\bm{\epsilon}_{\bm{k'}\alpha '}e^{\rmi \bm{k'}\cdot\bm{r}}}\\
+&= \frac{1}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(\hat{a}^{\dag}_{\bm{k}\alpha}\hat{a}_{\bm{k'}\alpha'}+\hat{a}_{\bm{k'}\alpha'}\hat{a}^{\dag}_{\bm{k}\alpha})}\bm{\epsilon}_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k'}\alpha '}
 \int{\rmd\bm{r}\;e^{\rmi \bm{k}\cdot\bm{r}}e^{\rmi \bm{k'}\cdot\bm{r}}}\\
-&= \frac{1}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(a^{\dag}_{\bm{k}\alpha}a_{\bm{k'}\alpha'}+a_{\bm{k'}\alpha'}a^{\dag}_{\bm{k}\alpha})}\bm{\epsilon}_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k'}\alpha '}\delta_{\bm{k}\bm{k'}}\\
-&= \frac{1}{2}\sum_{\bm{k}\alpha,\alpha'}{\bm{\epsilon}_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '}(a^{\dag}_{\bm{k}\alpha}a_{\bm{k}\alpha'}+a_{\bm{k}\alpha'}a^{\dag}_{\bm{k}\alpha})}\\
+&= \frac{1}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(\hat{a}^{\dag}_{\bm{k}\alpha}\hat{a}_{\bm{k'}\alpha'}+\hat{a}_{\bm{k'}\alpha'}\hat{a}^{\dag}_{\bm{k}\alpha})}\bm{\epsilon}_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k'}\alpha '}\delta_{\bm{k}\bm{k'}}\\
+&= \frac{1}{2}\sum_{\bm{k}\alpha,\alpha'}{\bm{\epsilon}_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '}(\hat{a}^{\dag}_{\bm{k}\alpha}\hat{a}_{\bm{k}\alpha'}+\hat{a}_{\bm{k}\alpha'}\hat{a}^{\dag}_{\bm{k}\alpha})}\\
 \label{eqS_planewave}
 \end{align}
-
+2N+1
 On voit que $\hat{\bm{S}}$ n'est constitué que des opérateurs \textit{nombres} définis plus haut. Par conséquent, toutes ses composantes commutent. Autrement dit, $[S_i,S_j] = 0 \;\forall(i,j)$. $\hat{\bm{S}}$ n'est donc pas un opérateur moment angulaire. Les relations de commutations pour $\hat{\bm{L}}$ peuvent être directement obtenues en utilisant celles de $\hat{\bm{J}}$ et $\hat{\bm{S}}$, et on trouve également que $\hat{\bm{L}}$ n'est pas un moment angulaire, et que $\hat{\bm{L}}$ et $\hat{\bm{S}}$ ne commutent pas. 
 
 Ce résultat peut paraître étonnant : la séparation de $\hat{\bm{J}}$ n'est donc pas possible pour le champ électromagnétique. Ce problème est lié au fait que le photon se déplace à la vitesse de la lumière. En effet, le moment angulaire de spin peut être vu comme le moment angulaire de la particule dans le référentiel dans lequel elle est au repos. Un tel référentiel n'existe pas pour le photon. Une autre façon de le voir consiste à utiliser le lien entre rotations et moment angulaire. Pour qu'un opérateur soit un moment angulaire de spin, il doit générer des rotations de la polarisation par rapport à un axe quelconque. Dans le cas du photon, c'est seulement vrai autour de l'axe de propagation : il ne peut y avoir de symétrie autour de tous les axes puisqu'il existe toujours un axe privilégié. Ainsi, seul le moment angulaire \textit{total} du champ a un sens.

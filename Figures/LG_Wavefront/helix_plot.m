@@ -22,18 +22,18 @@ for J=1:Nframes
         
         % plots
         hold on
-%         surface([x;x2],[y;y2],[z;z2],'FaceColor',[32 167 255]./255);
-%         xlim([0 25])
+        surface([x;x2],[y;y2],[z;z2],'FaceColor',[32 167 255]./255);
+        xlim([0 25])
         ylim([-1 1])
         zlim([-1 1])
     end
     
-    %spiral
-    dt = 0.5;
-    st = 0.5*sin(-a+pi/2);
-    ct = 0.5*cos(-a+pi/2);
-    hold on
-    plot3(a,ct,st,'r','LineWidth',1)
+%     %spiral
+%     dt = 0.5;
+%     st = 0.5*sin(-a+pi/2);
+%     ct = 0.5*cos(-a+pi/2);
+%     hold on
+%     plot3(a,ct,st,'r','LineWidth',1)
 %     for i = 1:14
 %         % calculates x, y, and z
 %         y = radius(i).*cos(-a+t(J)+pi);
