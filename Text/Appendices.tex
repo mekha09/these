@@ -1,5 +1,12 @@
 \appendix
 \addcontentsline{toc}{part}{Annexes}
+\renewcommand{\theHsection}{AN.\the\value{section}}
+\makeatletter
+\def\toclevel@chapter{0}
+\def\toclevel@section{1}
+\def\toclevel@subsection{2}
+\makeatother
+
 \chapter{Démonstrations de la partie I}
 \section{Invariance de l'équation de Lagrange par changement de coordonnées}
 Nous démontrons ici l'équation \ref{eq:lagq}. L'espace des configurations est décrit par ${q_j}$, $j\in[1,\;3N]$, qui s'écrivent en fonction des coordonnées cartésiennes ${x_i}$ et du temps :
@@ -59,7 +66,7 @@ Nous avons donc démontré que l'équation de Lagrange est invariante par change
 
 \section{Composantes longitudinale et transverse du moment angulaire classique}
 \label{app:calculj}
-On démontre ici les relation \ref{eq:Jlong4} puis \ref{eq:Jtran}, composantes longitudinales et transverse de $\bm{J}$ en électromagnétisme classique.
+On démontre ici les relation \ref{eq:Jlong4} puis \ref{eq:Jtran}, expressions des composantes longitudinales et transverse de $\bm{J}$ en électromagnétisme classique.
 
 \subsubsection{Composante longitudinale}
 On considère le système {lumière+particules}. La contribution de $E_{\parallel}$ au moment angulaire du système s'écrit : 

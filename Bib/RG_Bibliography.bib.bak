@@ -219,7 +219,6 @@
   Number                   = {4795},
   Pages                    = {1517--1520},
   Volume                   = {235},
-  __markedentry            = {[Romain:]},
   DOI                      = {10.1126/science.3547653},
   Eprint                   = {http://science.sciencemag.org/content/235/4795/1517.full.pdf},
   ISSN                     = {0036-8075},
@@ -454,16 +453,21 @@
   Volume                   = {52}
 }
 
-@Article{beaulieu_submitted,
-  Title                    = {Universality of photoelectron circular dichroism in the photoionization of chiral molecules},
-  Author                   = {Beaulieu, Samuel and Ferré, Amélie and Géneaux, Romain and Canonge, Rafael and Descamps, Dominique and Fabre, Baptiste and Fedorov, Nikita and Legare, Francois and Petit, Stephane and Ruchon, Thierry and Blanchet, Valérie and Mairesse, Yann and Pons, Bernard}
-}
-
 @Article{beaulieuArXiv2016,
   Title                    = {Role of Rydberg States In High-order Harmonic Generation},
   Author                   = {Beaulieu, Samuel and Descamps, Dominique and Comby, Antoine and Wanie, Vincent and Petit, St{\'e}phane and L{\'e}gar{\'e}, Fran{\c{c}}ois and Catoire, Fabrice and Mairesse, Yann},
   Journal                  = {arXiv:1603.07905},
   Year                     = {2016}
+}
+
+@Article{BeaulieuNJP2016,
+  Title                    = {Universality of photoelectron circular dichroism in the photoionization of chiral molecules},
+  Author                   = {Beaulieu, Samuel and Ferré, Amélie and Géneaux, Romain and Canonge, Rafael and Descamps, Dominique and Fabre, Baptiste and Fedorov, Nikita and Legare, Francois and Petit, Stephane and Ruchon, Thierry and Blanchet, Valérie and Mairesse, Yann and Pons, Bernard},
+  Journal                  = {New Journal of Physics},
+  Year                     = {2016},
+  Number                   = {102002},
+  Volume                   = {18},
+  DOI                      = {http://dx.doi.org/10.1088/1367-2630/18/10/102002}
 }
 
 @Article{BeckNJP2014,
@@ -629,6 +633,22 @@
   File                     = {Published version:BoeglinN2010.pdf:PDF}
 }
 
+@Article{Bohr1913,
+  Title                    = {On the constitution of atoms and molecules},
+  Author                   = {N. Bohr},
+  Journal                  = {Philosophical Magazine},
+  Year                     = {1913},
+  Number                   = {151},
+  Pages                    = {1-25},
+  Volume                   = {26},
+  DOI                      = {10.1080/14786441308634955},
+  Eprint                   = { http://dx.doi.org/10.1080/14786441308634955 },
+  URL                      = { 
+        http://dx.doi.org/10.1080/14786441308634955
+    
+}
+}
+
 @Article{BomzonAPL2001,
   Title                    = {Formation of radially and azimuthally polarized light using space-variant subwavelength metal stripe gratings},
   Author                   = {Bomzon, Ze’ev and Kleiner, Vladimir and Hasman, Erez},
@@ -651,6 +671,17 @@
   Publisher                = {Wiley Online Library}
 }
 
+@Article{BorgesPRA2010,
+  Title                    = {Bell-like inequality for the spin-orbit separability of a laser beam},
+  Author                   = {Borges, CVS and Hor-Meyll, M and Huguenin, JAO and Khoury, AZ},
+  Journal                  = {Physical Review A},
+  Year                     = {2010},
+  Number                   = {3},
+  Pages                    = {033833},
+  Volume                   = {82},
+  Publisher                = {APS}
+}
+
 @Book{bornandwolf,
   Title                    = {Principles of optics: electromagnetic theory of propagation, interference and diffraction of light},
   Author                   = {Born, Max and Wolf, Emil},
@@ -671,6 +702,15 @@
   File                     = {BornschlegCPL2007.pdf:BornschleglCPL2007.pdf:PDF;BornschleglCPL2007.pdf:BornschleglCPL2007.pdf:PDF},
   ISSN                     = {0009-2614},
   URL                      = {http://www.sciencedirect.com/science/article/pii/S000926140701233X}
+}
+
+@Article{Bose1924,
+  Title                    = {Plancks Gesetz und Lichtquantenhypothese},
+  Author                   = {S. N. Bose},
+  Journal                  = {Zeitschrift fur Physik},
+  Year                     = {1924},
+  Pages                    = {178--181},
+  Volume                   = {26}
 }
 
 @Article{BourassinNC2015,
@@ -1167,6 +1207,21 @@
   URL                      = {http://scitation.aip.org/content/aip/journal/jcp/61/2/10.1063/1.1681947}
 }
 
+@Article{DinuPRL2003,
+  Title                    = {Measurement of the Subcycle Timing of Attosecond XUV Bursts in High-Harmonic Generation},
+  Author                   = {Dinu, L. C. and Muller, H. G. and Kazamias, S. and Mullot, G. and Aug\'e, F. and Balcou, Ph. and Paul, P. M. and Kova\ifmmode \check{c}\else \v{c}\fi{}ev, M. and Breger, P. and Agostini, P.},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2003},
+  Month                    = {Aug},
+  Pages                    = {063901},
+  Volume                   = {91},
+  DOI                      = {10.1103/PhysRevLett.91.063901},
+  Issue                    = {6},
+  Numpages                 = {4},
+  Publisher                = {American Physical Society},
+  URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.91.063901}
+}
+
 @InProceedings{Dirac1931,
   Title                    = {Quantised singularities in the electromagnetic field},
   Author                   = {Dirac, Paul AM},
@@ -1176,6 +1231,14 @@
   Organization             = {The Royal Society},
   Pages                    = {60--72},
   Volume                   = {133}
+}
+
+@Book{dirac1981,
+  Title                    = {The principles of quantum mechanics},
+  Author                   = {Dirac, Paul Adrien Maurice},
+  Publisher                = {Oxford university press},
+  Year                     = {1981},
+  Number                   = {27}
 }
 
 @Article{DivekiCP2013,
@@ -1261,6 +1324,25 @@
   Numpages                 = {0},
   Publisher                = {American Physical Society},
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.51.R3414}
+}
+
+@Article{einstein1905,
+  Title                    = {{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt},
+  Author                   = {Einstein, Albert},
+  Journal                  = {Annalen der physik},
+  Year                     = {1905},
+  Pages                    = {132--148},
+  Volume                   = {17}
+}
+
+@Article{einstein1909,
+  Title                    = {\"{U}ber die Entwicklung unserer Anschauungen \"{u}ber das Wesen und die Konstitution der Strahlung},
+  Author                   = {A. Einstein},
+  Journal                  = {Physikalische Zeitschrift},
+  Year                     = {1909},
+  Pages                    = {817--825},
+  Volume                   = {10},
+  URL                      = {https://en.wikisource.org/?curid=53013}
 }
 
 @Article{EppinkParker1997,
@@ -1460,6 +1542,18 @@
   Keywords                 = {orbital angular momentum; vortices},
   Publisher                = {WILEY-VCH Verlag},
   URL                      = {http://dx.doi.org/10.1002/lpor.200810007}
+}
+
+@Article{Franke-ArnoldNJP2004,
+  Title                    = {Uncertainty principle for angular position and angular momentum},
+  Author                   = {Sonja Franke-Arnold and Stephen M Barnett and Eric Yao and Jonathan Leach and Johannes Courtial and Miles Padgett},
+  Journal                  = {New Journal of Physics},
+  Year                     = {2004},
+  Number                   = {1},
+  Pages                    = {103},
+  Volume                   = {6},
+  __markedentry            = {[Romain:6]},
+  URL                      = {http://stacks.iop.org/1367-2630/6/i=1/a=103}
 }
 
 @Article{FrankePRA2002,
@@ -1711,6 +1805,16 @@
   URL                      = {http://www.opticsexpress.org/abstract.cfm?URI=oe-21-9-11441}
 }
 
+@Article{Gerlach1922,
+  Title                    = {{Das magnetische Moment des Silberatoms}},
+  Author                   = {{Gerlach}, W. and {Stern}, O.},
+  Journal                  = {Zeitschrift fur Physik},
+  Year                     = {1922},
+  Month                    = dec,
+  Pages                    = {353-355},
+  Volume                   = {9}
+}
+
 @Article{ghai2009,
   Title                    = {Single-slit diffraction of an optical beam with phase singularity},
   Author                   = {Ghai, Devinder Pal and Senthilkumaran, P and Sirohi, RS},
@@ -1755,6 +1859,14 @@
   Keywords                 = {Nonlinear optics; Ultrafast nonlinear optics},
   Publisher                = {OSA},
   URL                      = {http://ol.osa.org/abstract.cfm?URI=ol-34-21-3280}
+}
+
+@InCollection{Gotte,
+  Title                    = {Quantum formulation of angle and orbital angular momentum},
+  Author                   = {J. B. G\"{o}tte and S. M. Barnett},
+  Booktitle                = {The Angular Momentum of Light},
+  Publisher                = {Cambridge University Press},
+  Year                     = {2012}
 }
 
 @Article{GoulonJSR2000,
@@ -2096,7 +2208,7 @@
 @Article{HentschelN2001,
   Title                    = {{Attosecond metrology}},
   Author                   = {{Hentschel}, M. and {Kienberger}, R. and {Spielmann}, C. and {Reider}, G.~A. and {Milosevic}, N. and {Brabec}, T. and {Corkum}, P. and {Heinzmann}, U. and {Drescher}, M. and {Krausz}, F.},
-  Journal                  = {\nat},
+  Journal                  = {Nature},
   Year                     = {2001},
   Month                    = nov,
   Pages                    = {509-513},
@@ -2304,6 +2416,14 @@
   Year                     = {1999}
 }
 
+@Unpublished{JoffreCours,
+  Title                    = {Lasers femtosecondes : principes et applications en physique, chimie et biologie},
+  Author                   = {M. Joffre},
+  Note                     = {Cours d'Ecole Doctorale},
+  Year                     = {2006},
+  URL                      = {https://www.enseignement.polytechnique.fr/profs/physique/Manuel.Joffre/femto/}
+}
+
 @Article{JohnssonPRL2007,
   Title                    = {Attosecond Control of Ionization by Wave-Packet Interference},
   Author                   = {Johnsson, P. and Mauritsson, J. and Remetter, T. and L'Huillier, A. and Schafer, K. J.},
@@ -2363,6 +2483,36 @@
   Numpages                 = {6},
   Publisher                = {American Physical Society},
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.89.063813}
+}
+
+@Article{KazamiasPRA2004,
+  Title                    = {Intrinsic chirp of attosecond pulses: Single-atom model versus experiment},
+  Author                   = {Kazamias, S. and Balcou, Ph.},
+  Journal                  = {Phys. Rev. A},
+  Year                     = {2004},
+  Month                    = {Jun},
+  Pages                    = {063416},
+  Volume                   = {69},
+  DOI                      = {10.1103/PhysRevA.69.063416},
+  Issue                    = {6},
+  Numpages                 = {6},
+  Publisher                = {American Physical Society},
+  URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.69.063416}
+}
+
+@Article{KazamiasPRL2003,
+  Title                    = {Global Optimization of High Harmonic Generation},
+  Author                   = {Kazamias, S. and Douillet, D. and Weihe, F. and Valentin, C. and Rousse, A. and Sebban, S. and Grillon, G. and Aug\'e, F. and Hulin, D. and Balcou, Ph.},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2003},
+  Month                    = {May},
+  Pages                    = {193901},
+  Volume                   = {90},
+  DOI                      = {10.1103/PhysRevLett.90.193901},
+  Issue                    = {19},
+  Numpages                 = {4},
+  Publisher                = {American Physical Society},
+  URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.90.193901}
 }
 
 @Article{KazanskyJPB2014,
@@ -2560,6 +2710,15 @@
   ISBN                     = {978-94-010-7866-5},
   Language                 = {English},
   URL                      = {http://dx.doi.org/10.1007/978-94-009-3039-1_17}
+}
+
+@Article{kuchiev1987,
+  Title                    = {Atomic antenna},
+  Author                   = {Kuchiev, M Yu},
+  Journal                  = {Soviet Journal of Experimental and Theoretical Physics Letters},
+  Year                     = {1987},
+  Pages                    = {404},
+  Volume                   = {45}
 }
 
 @Article{Kuhn1930,
@@ -3470,6 +3629,15 @@
   URL                      = {http://www.sciencedirect.com/science/article/pii/S0969806X09003247}
 }
 
+@InProceedings{nannarone2004,
+  Title                    = {The BEAR beamline at ELETTRA},
+  Author                   = {Nannarone, S and Borgatti, F and DeLuisa, A and Doyle, BP and Gazzadi, GC and Giglia, A and Finetti, P and Mahne, N and Pasquali, L and Pedio, M and others},
+  Booktitle                = {Synchrotron Radiation Instrumentation},
+  Year                     = {2004},
+  Pages                    = {450--453},
+  Volume                   = {705}
+}
+
 @Article{NicolasNP2014,
   Title                    = {{A quantum memory for orbital angular momentum photonic qubits}},
   Author                   = {{Nicolas}, A. and {Veissier}, L. and {Giner}, L. and {Giacobino}, E. and {Maxein}, D. and {Laurat}, J.},
@@ -3874,6 +4042,15 @@
   URL                      = {http://www.sciencemag.org/content/341/6150/1096.abstract}
 }
 
+@Article{planck1989,
+  Title                    = {Ueber irreversible Strahlungsvorg\"{a}nge},
+  Author                   = {M. Planck},
+  Journal                  = {K\"{o}niglich-Preu{\ss}ische Akademie der Wissenschaften. Sitzungsberichte},
+  Year                     = {1989},
+  Pages                    = {440--480},
+  Volume                   = {25}
+}
+
 @Article{Plickpra2015,
   Title                    = {Physical meaning of the radial index of Laguerre-Gauss beams},
   Author                   = {Plick, William N. and Krenn, Mario},
@@ -4015,6 +4192,15 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.69.062717}
 }
 
+@Article{Raman1931,
+  Title                    = {Experimental proof of the spin of the photon},
+  Author                   = {C.V. Raman and S. Bhagavantam},
+  Journal                  = {Indian Journal of Physics},
+  Year                     = {1931},
+  Pages                    = {353--366},
+  Volume                   = {6}
+}
+
 @Book{Rankine,
   Title                    = {A manual of applied mechanics},
   Author                   = {Rankine, William John Macquorn},
@@ -4150,7 +4336,6 @@
   School                   = {Universit{\'e} Rennes 1},
   Year                     = {2005},
   Type                     = {Th{\`e}ses},
-  __markedentry            = {[Romain:6]},
   URL                      = {http://www.theses.fr/2005REN1S037}
 }
 
@@ -4376,6 +4561,17 @@
   File                     = {ScottS2009.pdf:ScottS2009.pdf:PDF}
 }
 
+@Article{ScrinziJPB2006,
+  Title                    = {Attosecond physics},
+  Author                   = {A Scrinzi and M Yu Ivanov and R Kienberger and D M Villeneuve},
+  Journal                  = {Journal of Physics B: Atomic, Molecular and Optical Physics},
+  Year                     = {2006},
+  Number                   = {1},
+  Pages                    = {R1},
+  Volume                   = {39},
+  URL                      = {http://stacks.iop.org/0953-4075/39/i=1/a=R01}
+}
+
 @Article{ShigematsuJJAP2013,
   Title                    = {Orbital Angular Momentum Spectral Dynamics of GaN Excitons Excited by Optical Vortices},
   Author                   = {Kyohhei Shigematsu and Yasunori Toda and Keisaku Yamane and Ryuji Morita},
@@ -4414,6 +4610,14 @@
   URL                      = {https://books.google.fr/books?id=1BZVwUZLTkAC}
 }
 
+@Book{simmons,
+  Title                    = {States, waves, and photons: A modern introduction to light.},
+  Author                   = {Simmons, Joseph W and Guttmann, Mark J},
+  Publisher                = {Addison-Wesley},
+  Year                     = {1970},
+  Volume                   = {1}
+}
+
 @InCollection{simons1984roles,
   Title                    = {Roles played by metastable states in chemistry},
   Author                   = {Simons, JACK},
@@ -4421,6 +4625,21 @@
   Year                     = {1984},
   Pages                    = {3--16},
   Volume                   = {263}
+}
+
+@InCollection{SmirnovaIvanov2014,
+  Title                    = {Multielectron High Harmonic Generation: Simple Man on a Complex Plane},
+  Author                   = {Smirnova, Olga and Ivanov, Misha},
+  Booktitle                = {Attosecond and XUV Physics},
+  Publisher                = {Wiley-VCH Verlag GmbH \& Co. KGaA},
+  Year                     = {2014},
+  Chapter                  = {1},
+  Pages                    = {201--256},
+  __markedentry            = {[Romain:]},
+  DOI                      = {10.1002/9783527677689.ch7},
+  ISBN                     = {9783527677689},
+  Keywords                 = {high harmonic generation, Lewenstein model, saddle point equations, photoelectron model, multi-electron effects, quantum trajectories},
+  URL                      = {http://dx.doi.org/10.1002/9783527677689.ch7}
 }
 
 @Article{SmirnovaPRL2009,
@@ -4796,6 +5015,16 @@
   Eprint                   = {http://pubs.acs.org/doi/pdf/10.1021/ja039348v},
   File                     = {Published version:TurchiniJACS2004.pdf:PDF},
   URL                      = {http://pubs.acs.org/doi/abs/10.1021/ja039348v}
+}
+
+@Article{uhlenbeck1925,
+  Title                    = {Ersetzung der Hypothese vom unmechanischen Zwang durch eine Forderung bez{\"u}glich des inneren Verhaltens jedes einzelnen Elektrons},
+  Author                   = {Uhlenbeck, George Eugene and Goudsmit, Samuel},
+  Journal                  = {Naturwissenschaften},
+  Year                     = {1925},
+  Number                   = {47},
+  Pages                    = {953--954},
+  Volume                   = {13}
 }
 
 @Article{UshidaN2010,
@@ -5237,6 +5466,21 @@
   Year                     = {2010},
   ISBN                     = {978-1-4200-8227-2},
   Optnote                  = {exported from refbase (http://web.ismo.u-psud.fr/biblio/show.php?record=1773), last updated on Tue, 30 Apr 2013 10:04:46 +0200}
+}
+
+@Article{ZhaoPRL2007,
+  Title                    = {Spin-to-Orbital Angular Momentum Conversion in a Strongly Focused Optical Beam},
+  Author                   = {Zhao, Yiqiong and Edgar, J. Scott and Jeffries, Gavin D. M. and McGloin, David and Chiu, Daniel T.},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2007},
+  Month                    = {Aug},
+  Pages                    = {073901},
+  Volume                   = {99},
+  DOI                      = {10.1103/PhysRevLett.99.073901},
+  Issue                    = {7},
+  Numpages                 = {4},
+  Publisher                = {American Physical Society},
+  URL                      = {http://link.aps.org/doi/10.1103/PhysRevLett.99.073901}
 }
 
 @Article{ZhouOL2014,
