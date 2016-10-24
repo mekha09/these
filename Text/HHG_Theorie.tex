@@ -192,91 +192,91 @@ Notons $\bm{k}_q$ le vecteur d'onde de l'harmonique d'ordre $q$ et $\bm{k}_1$ ce
 
 En conclusion, nous avons mis en évidence deux familles de trajectoires électroniques, qui donnent lieu à deux composantes dans l'émission harmoniques de propriétés différentes. Finalement, nous avons vu que l'accord de phase permet de favoriser l'une ou l'autre : la trajectoire courte sera accordée lorsque le foyer optique se situe en amont du jet de gaz, tandis que la longue le sera lorsqu'il se situe en aval. Pour une description plus complète de la théorie de la GHOE, on se reportera à \mycite{ScrinziJPB2006} et à \mycite{SmirnovaIvanov2014}. Le modèle SFA présenté ici est la base des calculs numériques présentés plus loin (partie \ref{sec:sfa}), qui prendront en compte tous les effets de propagation et d'accord de phase dans le milieu. Dans la suite de cette partie, nous expliquons comment réaliser une expérience de GHOE dans le cas habituel d'un faisceau de génération gaussien.
 
-%\chapter{Aspects expérimentaux de la génération d'harmoniques d'ordre élevé}
-%\label{Sec:HHG_G}
-%\section{Système laser}
-%\label{sec:laser}
-%Toutes les expériences présentées dans ce chapitre et dans la partie \ref{CH:OAM_HHG} ont été réalisées sur le laser LUCA (Laser Ultra-Court Accordable) du LIDYL au CEA Saclay. Il s'agit d'un laser basé sur la technique "Chirped Pulse Amplification" utilisant le titane saphir comme milieu à gain. Partant d'un oscillateur femtoseconde oscillant autour de 800 nm, le faisceau est étalé temporellement avant d'être amplifié d'abord dans un amplificateur régénératif, puis dans un amplificateur multi-passages. Il est finalement recomprimé dans un compresseur à réseaux \mycite{StricklandOC1985}. La spécificité de ce système est l'insertion récente, juste avant la compression, d'un étage de filtrage modal \mycite{MahieuAPB2015}. Il s'agit d'une fibre creuse de 30 cm de long et $\SI{128}{\micro\metre}$ de diamètre dans laquelle le faisceau est injecté avant d'être collimaté de nouveau. Ceci a pour effet de sélectionner un mode de propagation très proche d'un mode gaussien pur. Finalement on obtient des impulsions dont l'intensité a une enveloppe temporelle gaussienne de largeur à mi-hauteur $\tau = 50$ fs et un profil spatial gaussien de largeur $w_0 = 15$ mm à $\frac{1}{e^2}$. La longueur d'onde utilisée est 792 nm, et l'énergie par impulsion est de 35 mJ pour un taux de répétition de 20 Hz. 
-%
-%\section{Génération d'harmoniques d'ordre élevé}
-%Nous commençons par mettre en forme le faisceau laser : son diamètre est ajusté à l'aide d'un iris et son énergie est ajustée grâce à un atténuateur constitué d'une lame demi-onde et d'une paire de polariseur croisés. \`{A} la sortie de cet atténuateur, la polarisation du laser est verticale (S). Le faisceau est ensuite focalisé par une lentille dans un jet de gaz délivré par une vanne pulsée à la fréquence du laser par un système piezo-électrique (Attotech). L'utilisation d'une vanne pulsée permet de n'envoyer du gaz que lorsque le faisceau laser est présent, ce qui limite la pression résiduelle dans les chambres à vide. Ainsi, on peut atteindre une pression assez élevée ($\simeq$10 mbar) dans la région focale sans que l'émission harmonique ne soit réabsorbée par le gaz résiduel. Un autre paramètre important est le diamètre de l'orifice de la vanne (ici, 150 $\si{\micro\metre}$) : en choisissant un diamètre faible, on crée une extension supersonique du gaz ce qui garantit une longueur d'interaction avec le laser courte dans la direction longitudinale. On s'approche ainsi des conditions idéales d'un plan d'atomes, ce qui limite l'importance des effets d'accord de phase dans la GHOE. \par
-%Le choix du gaz dépend de l'expérience réalisée : on peut par exemple utiliser une molécule dont on étudie la réponse - c'est le principe de la spectroscopie harmonique. Dans notre cas le gaz n'est pas l'objet d'étude et on préférera utiliser un système simple, facile à se procurer, et ayant une grande section efficace. Le gaz le plus courant est l'Argon, qui est peu coûteux et génère de manière très efficace. Son potentiel d'ionisation est de 15.76 eV, ce qui donne une énergie de coupure assez faible et qui empêche de générer des ordres harmoniques très élevés. Dans les cas où on désire générer des ordres élevés et nombreux, on pourra utiliser d'autres gaz rares comme le Néon ($I_p$ = 21.6 eV), bien que la génération soit moins efficace.
-%
-%Pour notre système, les paramètres nominaux sont :
-%\begin{itemize}
-%\item Le diamètre avant focalisation \O{} $\approx$ 10-15 mm,
-%\item L'énergie par impulsion de l'ordre de E = 1-3 mJ,
-%\item La lentille de longueur focale f = 1 m. \\
-%\end{itemize}
-%Pour calculer la valeur de l'intensité pic au foyer, le profil du faisceau après focalisation peut être calculé numériquement. Le champ avant la lentille est défini dans les coordonnées cylindriques $(R,\theta)$ par :
-%\begin{equation*}
-%E(R,\theta) = \sqrt{I_0} \exp{\left(-\frac{R^2}{w_0^2}\right)}\times\delta(\frac{\mbox{\O}}{2}-R),
-%\end{equation*}
-%où $w_0$ est la largeur du faisceau collimaté avant l'iris, \O{}  est le diamètre de l'iris, $\delta$ est la fonction de Heaviside, et $I_0 = \frac{2E\sqrt{\frac{4\log{2}}{\pi}}}{\tau\pi w_0^2}$.
-%La focalisation d'un faisceau par une lentille mince peut être calculée par une transformée de Fourier (voir \mycite{Goodman}, un des ouvrages de référence pour l'optique de Fourier, et \mycite{Tan} pour des exemples d'implémentations numériques). Ces calculs permettent d'étudier l'influence des différents paramètres. Par exemple, on peut faire varier le diamètre de l'iris : la Figure \ref{Fig:IrisScan} montre le profil du faisceau au foyer quand \O{} varie entre 5 et 25 mm. On voit alors que l'intensité pic au foyer part d'une valeur $<10^{13}$ et monte jusqu'à $\SI{10e14}{W/cm²}$. On se trouve donc parfaitement dans le régime d'intensité nécessaire à la génération d'harmonique : l'intensité est suffisante pour enclencher une ionisation tunnel mais reste assez faible pour ne pas ioniser et dépléter tout le milieu.
-%
-%\begin{figure}[!ht]
-%\centering
-%\def\svgwidth{\columnwidth}
-%\import{Figures/Iris_Scan/}{Fig_IrisScan.pdf_tex}
-%\caption{\'{E}volution du foyer lorsqu'on varie la taille de l'iris. De gauche à droite : (1) profil transverse de l'intensité au foyer, (2) intensité pic, (3) taille du waist. Les paramètres sont les suivants : E = 1 mJ, $w_0$ = 15 mm, $\tau$ = 50 fs, $\lambda$ = 792 nm, f = 1 m et \O{} variant de 5 à 25 mm par pas de 1 mm. Le calcul est réalisé sur une grille de 1025x1025 points correspondant à une taille réelle de 5*\O{}.}
-%\label{Fig:IrisScan}
-%\end{figure}
-%
-%Les harmoniques d'ordre élevé du laser infrarouge sont ainsi générées par le gaz injecté près du foyer de la lentille. Pour leur détection et caractérisation, nous avons utilisé d'une part un spectromètre électronique à temps de vol, d'autre part un spectromètre de photons. Le premier requiert un rayonnement focalisé alors que le second accepte en entrée un rayonnement divergent. Afin de pouvoir utiliser ces deux diagnostics successivement, avant d'entrer dans le spectromètre, le rayonnement XUV est ré-imagé par un dispositif composé de deux optiques (représentées plus bas sur la figure \ref{Fig:ExpG}) :
-%\begin{enumerate}
-%\item Un miroir torique en or de 50 cm de focale. Le miroir travaille à $11.5\degres$ d'incidence rasante ($78.5\degres$ par rapport à la normale au miroir), ce qui permet d'avoir une réflectivité importante et plate sur la gamme spectrale considérée (voir Figure \ref{Fig:TorR}).
-%
-%\begin{figure}[!ht]
-%\centering
-%\def\svgwidth{0.6\columnwidth}
-%\import{Figures/Reflect_Torique/}{torR.pdf_tex}
-%\caption{Réflectivité calculée du miroir torique en or à un angle d'incidence de $11.5\degres$. (CXRO, \mycite{Henke1993}).}
-%\label{Fig:TorR}
-%\end{figure}
-%Le miroir torique est utilisé dans une configuration 2f-2f de sorte à garder un rapport\shorthandoff{:} 1:1 \shorthandon{:}entre le foyer de génération et le second foyer. \`{A} la position de ce second foyer nous pouvons placer le spectromètre à temps de vol, qui sert dans le cas d'une mesure RABBIT (voir la partie \ref{sec:omabbit}). Un autre avantage de cette imagerie est d'éloigner la zone de génération, où la pression est élevée, du spectromètre de photons, qui requiert un vide de l'ordre de $10^{-5}$ mbar pour que les détecteurs fonctionnent.\\
-%
-%\item La deuxième optique est une lame de Si$\mbox{O}_{\mbox{2}}$, qui joue le rôle de filtre de l'infrarouge de génération. La lame de silice est traitée antireflet pour l'infrarouge grâce à un dépôt de multicouches. La dernière de ces couches est en silice, ce qui, combiné à une bonne qualité de surface permet de réfléchir efficacement le rayonnement harmonique. La Figure \ref{Fig:SilR}, tirée de \mycite{MairessePhD} présente la réflectivité de la lame pour le rayonnement harmonique et infrarouge. La réflectivité dans l'extrême ultra violet (XUV) est donc supérieure à 50\% jusqu'à l'ordre $\approx 37$, tandis que moins de 10\% de l'infrarouge est réfléchi. Le filtrage de l'infrarouge de génération est souvent crucial : il constitue un bruit de mesure non négligeable, sans compter qu'il peut facilement endommager des optiques ou des détecteurs en aval s'il est focalisé.
-%
-%\begin{figure}[!ht]
-%\centering
-%\def\svgwidth{\columnwidth}
-%\import{Figures/Reflect_Silice/}{silR.pdf_tex}
-%\caption{Réflectivité de la lame de silice. \`{A} gauche, transmission et réflectivité à 800 nm en fonction de l'angle d'incidence rasante. Les pointillés repèrent notre angle de $11.5\degres$. \`{A} droite, réflectivité XUV mesurée (cercles bleus) et donnée par le CXRO (ligne violette) (\mycite{Henke1993}). Figure adaptée de \mycite{MairessePhD}.}
-%\label{Fig:SilR}
-%\end{figure}
-%\end{enumerate}
-%
-%Comme nous le verrons plus loin, pour l'étude des faisceaux de Laguerre-Gauss, il sera crucial d'imager le spectre harmonique, c'est-à-dire de séparer les différents ordres harmoniques et de mesurer leurs propriétés spatiales. C'est le rôle du spectromètre de photons. Environ 50 cm en aval du second foyer, les harmoniques sont dispersées par un réseau à pas variable cylindrique Hitachi 001-0437 (voir \mycite{KitaAO1983} pour des détails sur son fonctionnement). Comme pour les réseaux à pas fixe, l'angle de réflexion d'un rayonnement monochromatique de longueur d'onde $\lambda$ est donné par la formule :
-%\begin{equation*}
-%m\lambda=\frac{\sin{\alpha}+\sin{\beta}}{\sigma},
-%\end{equation*}
-%où $m$ est l'ordre de diffraction considéré (généralement 1), $\sigma$ le nombre de trait par mètre (1200 traits/mm dans notre cas), $\alpha$ et $\beta$ les angles d'incidence et de réflexion, définis par rapport à la normale au réseau (la documentation donne $\alpha = 87$\degres{} pour un fonctionnement optimal).\par
-%Le réseau de diffraction est cylindrique, le rendant focalisant uniquement dans la dimension horizontale. Un rayonnement gaussien de faible largeur spectrale $\Delta\lambda$ et de largeur spatiale $w(z)$ formera donc dans le plan focal du réseau une fine ligne verticale de largeur proportionnelle à $\Delta\lambda$ et de hauteur $w(z)$. On image ainsi à la fois les dimensions spectrale et spatiale, si on suppose la symétrie cylindrique. Ce spectre est imagé par des galettes de micro-canaux couplées à un écran de phosphore, lui-même observé par une caméra CCD Basler A102f. 
-%
-%L'intégralité du dispositif expérimental est représenté sur la Figure \ref{Fig:ExpG}.
-%
-%\vspace{\baselineskip}
-%\begin{figure}[!ht]
-%\centering
-%\def\svgwidth{\columnwidth}
-%\import{Figures/Setup_G/}{setupG_wbitmap.pdf_tex}
-%\caption{Dispositif expérimental de génération et détection d'harmoniques d'ordre élevé.}
-%\label{Fig:ExpG}
-%\end{figure}
-%
-%Les figures \ref{Fig:SpectrumGAr} et \ref{Fig:SpectrumGNe} présentent des spectres obtenus avec ce dispositif en utilisant respectivement l'argon et le néon comme gaz de génération. On observe les ordres harmoniques allant de 13 à 29 dans l'argon, et de 13 à 57 dans le néon. Le potentiel d'ionisation du Néon, plus élevé que celui de l'argon, a permis d'utiliser une intensité plus importante sans ioniser complètement le milieu. Conformément à la loi de coupure on obtient dans ce cas un spectre plus étendu. Sur le spectre de l'argon, on observe clairement les deux premières trajectoires quantiques de la GHOE (voir partie \ref{sec:thTraj}) : une contribution sur l'axe correspond à la trajectoire courte et une plus divergente et moins intense correspond à la trajectoire longue. Dans le cas du néon, les conditions d'accord de phase utilisées favorisent la trajectoire courte. On remarque également que la divergence de la trajectoire courte (resp. longue) augmente (rep. diminue) avec l'ordre harmonique, jusqu'à ce que les deux trajectoires se confondent dans la coupure. Notons finalement la présence sur le spectre du néon de pics satellites autour des harmoniques les plus basses : il s'agit des harmoniques plus élevées diffractées au second ordre par le réseau.
-%\begin{figure}[!ht]
-%\centering
-%\def\svgwidth{\columnwidth}
-%\import{Figures/Spectrum_G/}{Spectrum_G_Ar.pdf_tex}
-%\caption{Spectre d'harmoniques d'ordre élevé générées dans l'argon à partir d'un mode laser gaussien.}
-%\label{Fig:SpectrumGAr}
-%\end{figure}
-%\begin{figure}[!ht]
-%\centering
-%\def\svgwidth{\columnwidth}
-%\import{Figures/Spectrum_G/}{Spectrum_G_Ne.pdf_tex}
-%\caption{Spectre d'harmoniques d'ordre élevé générées dans le néon à partir d'un mode laser gaussien.}
-%\label{Fig:SpectrumGNe}
-%\end{figure}
+\chapter{Aspects expérimentaux de la génération d'harmoniques d'ordre élevé}
+\label{Sec:HHG_G}
+\section{Système laser}
+\label{sec:laser}
+Toutes les expériences présentées dans ce chapitre et dans la partie \ref{PA:OAM_HHG} ont été réalisées sur le laser LUCA (Laser Ultra-Court Accordable) du LIDYL au CEA Saclay. Il s'agit d'un laser basé sur la technique "Chirped Pulse Amplification" utilisant le titane saphir comme milieu à gain. Partant d'un oscillateur femtoseconde oscillant autour de 800 nm, le faisceau est étalé temporellement avant d'être amplifié d'abord dans un amplificateur régénératif, puis dans un amplificateur multi-passages. Il est finalement recomprimé dans un compresseur à réseaux \mycite{StricklandOC1985}. La spécificité de ce système est l'insertion récente, juste avant la compression, d'un étage de filtrage modal \mycite{MahieuAPB2015}. Il s'agit d'une fibre creuse de 30 cm de long et $\SI{128}{\micro\metre}$ de diamètre dans laquelle le faisceau est injecté avant d'être collimaté de nouveau. Ceci a pour effet de sélectionner un mode de propagation très proche d'un mode gaussien pur. Finalement on obtient des impulsions dont l'intensité a une enveloppe temporelle gaussienne de largeur à mi-hauteur $\tau = 50$ fs et un profil spatial gaussien de largeur $w_0 = 15$ mm à $\frac{1}{e^2}$. La longueur d'onde utilisée est 792 nm, et l'énergie par impulsion est de 35 mJ pour un taux de répétition de 20 Hz. 
+
+\section{Génération d'harmoniques d'ordre élevé}
+Nous commençons par mettre en forme le faisceau laser : son diamètre est ajusté à l'aide d'un iris et son énergie est ajustée grâce à un atténuateur constitué d'une lame demi-onde et d'une paire de polariseur croisés. \`{A} la sortie de cet atténuateur, la polarisation du laser est verticale (S). Le faisceau est ensuite focalisé par une lentille dans un jet de gaz délivré par une vanne pulsée à la fréquence du laser par un système piezo-électrique (Attotech). L'utilisation d'une vanne pulsée permet de n'envoyer du gaz que lorsque le faisceau laser est présent, ce qui limite la pression résiduelle dans les chambres à vide. Ainsi, on peut atteindre une pression assez élevée ($\simeq$10 mbar) dans la région focale sans que l'émission harmonique ne soit réabsorbée par le gaz résiduel. Un autre paramètre important est le diamètre de l'orifice de la vanne (ici, 150 $\si{\micro\metre}$) : en choisissant un diamètre faible, on crée une extension supersonique du gaz ce qui garantit une longueur d'interaction avec le laser courte dans la direction longitudinale. On s'approche ainsi des conditions idéales d'un plan d'atomes, ce qui limite l'importance des effets d'accord de phase dans la GHOE. \par
+Le choix du gaz dépend de l'expérience réalisée : on peut par exemple utiliser une molécule dont on étudie la réponse - c'est le principe de la spectroscopie harmonique. Dans notre cas le gaz n'est pas l'objet d'étude et on préférera utiliser un système simple, facile à se procurer, et ayant une grande section efficace. Le gaz le plus courant est l'Argon, qui est peu coûteux et génère de manière très efficace. Son potentiel d'ionisation est de 15.76 eV, ce qui donne une énergie de coupure assez faible et qui empêche de générer des ordres harmoniques très élevés. Dans les cas où on désire générer des ordres élevés et nombreux, on pourra utiliser d'autres gaz rares comme le Néon ($I_p$ = 21.6 eV), bien que la génération soit moins efficace.
+
+Pour notre système, les paramètres nominaux sont :
+\begin{itemize}
+\item Le diamètre avant focalisation \O{} $\approx$ 10-15 mm,
+\item L'énergie par impulsion de l'ordre de E = 1-3 mJ,
+\item La lentille de longueur focale f = 1 m. \\
+\end{itemize}
+Pour connaître la valeur de l'intensité pic au foyer, le profil du faisceau après focalisation peut être calculé numériquement. Le champ avant la lentille est défini dans les coordonnées cylindriques $(R,\theta)$ par :
+\begin{equation*}
+E(R,\theta) = \sqrt{I_0} \exp{\left(-\frac{R^2}{w_0^2}\right)}\times\delta(\frac{\mbox{\O}}{2}-R),
+\end{equation*}
+où $w_0$ est la largeur du faisceau collimaté avant l'iris, \O{}  est le diamètre de l'iris, $\delta$ est la fonction de Heaviside, et $I_0 = \frac{2E\sqrt{\frac{4\log{2}}{\pi}}}{\tau\pi w_0^2}$.
+La focalisation d'un faisceau par une lentille mince peut être calculée par une transformée de Fourier (voir \mycite{Goodman}, un des ouvrages de référence pour l'optique de Fourier, et \mycite{Tan} pour des exemples d'implémentations numériques). Ces calculs permettent d'étudier l'influence des différents paramètres. Par exemple, on peut faire varier le diamètre de l'iris : la Figure \ref{Fig:IrisScan} montre le profil du faisceau au foyer quand \O{} varie entre 5 et 25 mm. On voit alors que l'intensité pic au foyer part d'une valeur $<10^{13}$ et monte jusqu'à $\SI{10e14}{W/cm²}$. On se trouve donc parfaitement dans le régime d'intensité nécessaire à la génération d'harmonique : l'intensité est suffisante pour enclencher une ionisation tunnel mais reste assez faible pour ne pas ioniser et dépléter tout le milieu.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/Iris_Scan/}{Fig_IrisScan.pdf_tex}
+\caption{\'{E}volution du foyer lorsqu'on varie la taille de l'iris. De gauche à droite : (1) profil transverse de l'intensité au foyer, (2) intensité pic, (3) taille du waist. Les paramètres sont les suivants : E = 1 mJ, $w_0$ = 15 mm, $\tau$ = 50 fs, $\lambda$ = 792 nm, f = 1 m et \O{} variant de 5 à 25 mm par pas de 1 mm. Le calcul est réalisé sur une grille de 1025x1025 points correspondant à une taille réelle de 5*\O{}.}
+\label{Fig:IrisScan}
+\end{figure}
+
+Les harmoniques d'ordre élevé du laser infrarouge sont ainsi générées par le gaz injecté près du foyer de la lentille. Pour leur détection et caractérisation, nous avons utilisé d'une part un spectromètre électronique à temps de vol, d'autre part un spectromètre de photons. Le premier requiert un rayonnement focalisé alors que le second accepte en entrée un rayonnement divergent. Afin de pouvoir utiliser ces deux diagnostics successivement, avant d'entrer dans le spectromètre, le rayonnement XUV est ré-imagé par un dispositif composé de deux optiques (représentées plus bas sur la figure \ref{Fig:ExpG}) :
+\begin{enumerate}
+\item Un miroir torique en or de 50 cm de focale. Le miroir travaille à $11.5\degres$ d'incidence rasante ($78.5\degres$ par rapport à la normale au miroir), ce qui permet d'avoir une réflectivité importante et plate sur la gamme spectrale considérée (voir Figure \ref{Fig:TorR}).
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{0.6\columnwidth}
+\import{Figures/Reflect_Torique/}{torR.pdf_tex}
+\caption{Réflectivité calculée du miroir torique en or à un angle d'incidence de $11.5\degres$. (CXRO, \mycite{Henke1993}).}
+\label{Fig:TorR}
+\end{figure}
+Le miroir torique est utilisé dans une configuration 2f-2f de sorte à garder un rapport\shorthandoff{:} 1:1 \shorthandon{:}entre le foyer de génération et le second foyer. \`{A} la position de ce second foyer nous pouvons placer le spectromètre à temps de vol, qui sert dans le cas d'une mesure RABBIT (voir la partie \ref{sec:omabbit}). Un autre avantage de cette imagerie est d'éloigner la zone de génération, où la pression est élevée, du spectromètre de photons, qui requiert un vide de l'ordre de $10^{-5}$ mbar pour que les détecteurs fonctionnent.\\
+
+\item La deuxième optique est une lame de Si$\mbox{O}_{\mbox{2}}$, qui joue le rôle de filtre de l'infrarouge de génération. La lame de silice est traitée antireflet pour l'infrarouge grâce à un dépôt de multicouches. La dernière de ces couches est en silice, ce qui, combiné à une bonne qualité de surface permet de réfléchir efficacement le rayonnement harmonique. La Figure \ref{Fig:SilR}, tirée de \mycite{MairessePhD}, présente la réflectivité de la lame pour le rayonnement harmonique et infrarouge. La réflectivité dans l'extrême ultra violet (XUV) est donc supérieure à 50\% jusqu'à l'ordre $\approx 37$, tandis que moins de 10\% de l'infrarouge est réfléchi. Le filtrage de l'infrarouge de génération est souvent crucial : il constitue un bruit de mesure non négligeable, sans compter qu'il peut facilement endommager des optiques ou des détecteurs en aval s'il est focalisé.
+
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/Reflect_Silice/}{silR.pdf_tex}
+\caption{Réflectivité de la lame de silice. \`{A} gauche, transmission et réflectivité à 800 nm en fonction de l'angle d'incidence rasante. Les pointillés repèrent notre angle de $11.5\degres$. \`{A} droite, réflectivité XUV mesurée (cercles bleus) et donnée par le CXRO (ligne violette) (\mycite{Henke1993}). Figure adaptée de \mycite{MairessePhD}.}
+\label{Fig:SilR}
+\end{figure}
+\end{enumerate}
+
+Comme nous le verrons plus loin, pour l'étude des faisceaux de Laguerre-Gauss, il sera crucial d'imager le spectre harmonique, c'est-à-dire de séparer les différents ordres harmoniques et de mesurer leurs propriétés spatiales. C'est le rôle du spectromètre de photons. Environ 50 cm en aval du second foyer, les harmoniques sont dispersées par un réseau à pas variable cylindrique Hitachi 001-0437 (voir \mycite{KitaAO1983} pour des détails sur son fonctionnement). Comme pour les réseaux à pas fixe, l'angle de réflexion d'un rayonnement monochromatique de longueur d'onde $\lambda$ est donné par la formule :
+\begin{equation*}
+m\lambda=\frac{\sin{\alpha}+\sin{\beta}}{\sigma},
+\end{equation*}
+où $m$ est l'ordre de diffraction considéré (généralement 1), $\sigma$ le nombre de trait par mètre (1200 traits/mm dans notre cas), $\alpha$ et $\beta$ les angles d'incidence et de réflexion, définis par rapport à la normale au réseau (la documentation donne $\alpha = 87$\degres{} pour un fonctionnement optimal).\par
+Le réseau de diffraction est cylindrique, le rendant focalisant uniquement dans la dimension horizontale. Un rayonnement gaussien de faible largeur spectrale $\Delta\lambda$ et de largeur spatiale $w(z)$ formera donc dans le plan focal du réseau une fine ligne verticale de largeur proportionnelle à $\Delta\lambda$ et de hauteur $w(z)$. On image ainsi à la fois les dimensions spectrale et spatiale, si on suppose la symétrie cylindrique. Ce spectre est imagé par des galettes de micro-canaux couplées à un écran de phosphore, lui-même observé par une caméra CCD Basler A102f. 
+
+L'intégralité du dispositif expérimental est représenté sur la Figure \ref{Fig:ExpG}.
+
+\vspace{\baselineskip}
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/Setup_G/}{setupG_wbitmap.pdf_tex}
+\caption{Dispositif expérimental de génération et détection d'harmoniques d'ordre élevé.}
+\label{Fig:ExpG}
+\end{figure}
+
+Les figures \ref{Fig:SpectrumGAr} et \ref{Fig:SpectrumGNe} présentent des spectres obtenus avec ce dispositif en utilisant respectivement l'argon et le néon comme gaz de génération. On observe les ordres harmoniques allant de 13 à 29 dans l'argon, et de 13 à 57 dans le néon. Le potentiel d'ionisation du Néon, plus élevé que celui de l'argon, a permis d'utiliser une intensité plus importante sans ioniser complètement le milieu. Conformément à la loi de coupure on obtient dans ce cas un spectre plus étendu. Sur le spectre de l'argon, on observe clairement les deux premières trajectoires quantiques de la GHOE (voir partie \ref{sec:thTraj}) : une contribution sur l'axe correspond à la trajectoire courte et une plus divergente et moins intense correspond à la trajectoire longue. Dans le cas du néon, les conditions d'accord de phase utilisées favorisent la trajectoire courte. On remarque également que la divergence de la trajectoire courte (resp. longue) augmente (rep. diminue) avec l'ordre harmonique, jusqu'à ce que les deux trajectoires se confondent dans la coupure. Notons finalement la présence sur le spectre du néon de pics satellites autour des harmoniques les plus basses : il s'agit des harmoniques plus élevées diffractées au second ordre par le réseau.
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/Spectrum_G/}{Spectrum_G_Ar.pdf_tex}
+\caption{Spectre d'harmoniques d'ordre élevé générées dans l'argon à partir d'un mode laser gaussien.}
+\label{Fig:SpectrumGAr}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\def\svgwidth{\columnwidth}
+\import{Figures/Spectrum_G/}{Spectrum_G_Ne.pdf_tex}
+\caption{Spectre d'harmoniques d'ordre élevé générées dans le néon à partir d'un mode laser gaussien.}
+\label{Fig:SpectrumGNe}
+\end{figure}

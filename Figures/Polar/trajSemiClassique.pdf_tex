@@ -1,0 +1,65 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'trajSemiClassique.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{300.56530762bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.49874581)%
+    \put(0,0){\includegraphics[width=\unitlength]{trajSemiClassique.pdf}}%
+    \put(0.88727319,0.13257024){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$x$ (u.a.)}}}%
+    \put(0.71371718,0.46802246){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$y$ (u.a.)}}}%
+    \put(0.64117833,0.12986659){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.22653974,0.12406389){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-20}}}%
+    \put(0.65527416,0.03941119){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-2}}}%
+    \put(0.90074732,0.33447546){\color[rgb]{0.47843137,0.47843137,0.47843137}\makebox(0,0)[b]{\smash{$E_{IR}$}}}%
+    \put(0.64603376,0.21394997){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.6476713,0.33009683){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{4}}}%
+    \put(0.41558146,0.12406389){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-10}}}%
+    \put(0.40610364,0.06395669){\color[rgb]{0.12941176,0.26666667,0.47058824}\makebox(0,0)[b]{\smash{$\beta_l$}}}%
+    \put(0.48595317,0.12783632){\color[rgb]{0.50196078,0,0}\makebox(0,0)[b]{\smash{$\beta_c$}}}%
+  \end{picture}%
+\endgroup%

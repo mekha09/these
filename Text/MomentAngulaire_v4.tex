@@ -30,7 +30,7 @@ qui est appelée \textbf{équation de Lagrange}. Cette équation est valable que
 \forall i, x_i=x_i(q_1,\ldots,q_N,t).
 \end{split}
 \end{equation}
-On montre alors que l'équation de Lagrange \ref{eq:lag} est toujours valable en coordonnées généralisées :
+On montre alors que l'équation de Lagrange \ref{eq:lag} est toujours valable en coordonnées généralisées (la démonstration est donnée dans l'annexe \hyperref[ann:lagrange]{A.I}) :
 \begin{equation}
 \label{eq:lagq}
 \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_i}-\frac{\partial L}{\partial q_i}=0.
@@ -177,14 +177,15 @@ avec :
 C'est l'essence de la démarche utilisée par Henri Poincaré en 1900 \mycite{poincare1900}, où il discute de la \textit{``quantité de mouvement de [...] notre fluide fictif''}. Dans ce même article, Poincaré parle de la force exercée par la lumière sur la matière, notion déjà présente chez Maxwell et même chez Kepler appelée \textit{pression électromagnétique}. On l'appelle aujourd'hui plus couramment \textit{pression de radiation}. Poynting développa considérablement ce concept par la suite \mycite{poynting1903}, et nota que malgré sa faible valeur comparée à la force de gravitation, elle pourrait avoir d'importantes conséquences en astronomie. \`{A} raison : par exemple, si la pression de radiation n'avait pas été prise en compte lors du programme Viking, les deux sondes envoyées sur Mars auraient raté l'orbite de la planète d'environ 15000 kilomètres \mycite{Hecht2001}.
 
 \subsection{Le moment angulaire de la lumière}
+\label{sec:classicallightam}
 Poynting, en plus de ces contributions majeures, a été le premier à envisager l'existence du moment \textit{angulaire} de la lumière. Il fit l'analogie entre une onde électromagnétique polarisée circulairement et une onde élastique de torsion, suggérant que la lumière possède un moment angulaire et peut fournir un couple à la matière \mycite{PoyntingPRSL1909}. Il propose à la fin de son article un dispositif expérimental constitué d'une série de lames quart d'ondes, permettant de démultiplier cet effet jusqu'à le rendre mesurable. Il conclut toutefois avec pessimisme que \textit{``even with such multiplications, my present experience of light forces does not give me much hope that the effect could be detected, if it has the value suggested by the mechanical model''}.
 
 Il aurait donc probablement été heureux d'apprendre qu'en 1936, R. A. Beth observa cet effet avec un schéma légèrement modifié \mycite{BethPR1936}, confirmant ainsi l'existence du moment angulaire de la lumière. \mycite{DelannoyAPL2005} réalisèrent une expérience similaire en utilisant de la soie d'araignée.\par
 On obtient l'expression de la densité de moment angulaire du champ de la même façon que celle de la quantité de mouvement. La somme de la variation des moments angulaires des particules dans le volume V vaut :
 \begin{align}
 \frac{\rmd\bm{J}_{part}}{\rmd t} &= \bm{r}\times\frac{d\bm{P}_{part}}{dt} \\
-&= \bm{r}\times\left(-\frac{\rmd \bm{P}_{champ}}{\rmd t} + \oint_S \bm{n}\cdot\tensor{\bm{T_M}}\;\rmd S\right)\text{, donc} \\
-\frac{\rmd\left(\bm{J}_{part}+\bm{J}_{champ}\right)}{\rmd t} &= \oint_S \bm{n}\cdot(\bm{r}\times\tensor{\bm{T_M}})\;\rmd S,
+&= \bm{r}\times\left(-\frac{\rmd \bm{P}_{champ}}{\rmd t} + \oint_S \bm{n}\cdot\tensor{\bm{T}}_M\;\rmd S\right)\text{, donc} \\
+\frac{\rmd\left(\bm{J}_{part}+\bm{J}_{champ}\right)}{\rmd t} &= \oint_S \bm{n}\cdot(\bm{r}\times\tensor{\bm{T}}_M)\;\rmd S,
 \end{align}
 avec
 \begin{equation}
@@ -754,7 +755,7 @@ Dans la partie suivante, nous décrirons plus précisément chacun de ces deux m
 Dans cette partie nous identifierons les composantes intrinsèques et extrinsèques du moment angulaire de la lumière, d'abord classiquement puis quantiquement.
 
 \section{Moments intrinsèque et extrinsèque d'un champ classique}
-Nous avons vu dans la partie \ref{CH:ClassicAM} que le moment angulaire d'un champ classique s'écrivait 
+Nous avons vu à la partie \ref{sec:classicallightam} que le moment angulaire d'un champ classique s'écrivait 
 \begin{equation}
 \bm{J}=\int{\epsilon_0\bm{r}\times(\bm{E}\times\bm{B})\rmd\bm{r}}.
 \label{Eq.JClassEM}
@@ -773,7 +774,7 @@ Considérons maintenant le système {lumière+particules}. La contribution de $E
 &=\epsilon_0\int{\bm{r}\times(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right])\rmd\bm{r}}\text{, où on a utilisé \ref{eq:para15}}%&=\epsilon_0\int{\left(\sum_{a=x,y,z} E^a_{\parallel}(\bm{r}\times\bm{\nabla})A^a_{\bot}-\bm{r}\times(\bm{E}_{\parallel}\cdot\bm{\nabla})\bm{A}_{\bot}\right)\rmd\bm{r}}.
 \label{eq:Jlong1}
 \end{align}
-On montre (la démonstration est donnée dans l'annexe \ref{app:calculj}) que \ref{eq:Jlong1} se réécrit :
+On montre (la démonstration est donnée dans l'annexe \hyperref[app:calculj]{A.II}) que \ref{eq:Jlong1} se réécrit :
 \begin{equation}
 \bm{J}_{\parallel}=\int{\rho(\bm{r}\times\bm{A}_{\bot})\rmd\bm{r}},
 \label{eq:Jlong4}
@@ -781,7 +782,7 @@ On montre (la démonstration est donnée dans l'annexe \ref{app:calculj}) que \r
 où $\rho$ est la densité de charge. En général, $\rho = 0$, donc $\bm{J}_{\parallel} = 0$ et $\bm{J}=\bm{J}_{\bot}$.
 
 \subsubsection{Composante transverse}
-Pour la composante transverse, on obtient (voir l'annexe \ref{app:calculj}) :
+Pour la composante transverse, on obtient (voir l'annexe \hyperref[app:calculj]{A.II}) :
 \begin{align}
 \bm{J_{\bot}}&=\int{\epsilon_0\bm{r}\times(\bm{E_{\bot}}\times\bm{B})\rmd\bm{r}}\nonumber\\
 &=\epsilon_0\int{\bigl[\sum_{i=x,y,z} \bm{E}^i_{\bot}(\bm{r}\times\bm{\nabla})\bm{A}^i_{\bot}+\bm{E_{\bot}}\times\bm{A_{\bot}}\bigr]\rmd\bm{r}}
@@ -1194,5 +1195,5 @@ Illustrons pour finir les conclusions de cette partie en citant le travail de \m
 \label{Fig:Schmiegelow}
 \end{figure}
 
-\subsubsection{Conclusion de la partie II}
+\section*{Conclusion de la partie II}
 Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans le chapitre III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans le chapitre IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.

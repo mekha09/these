@@ -1,13 +1,13 @@
 \partimage[width=1\columnwidth]{Figures/PartImages/FigCh4.png}
 \part{Polarisation circulaire, molécules chirales et harmoniques d'ordre élevé}
 \label{PA:Spin_HHG}
-\chapter{Génération d'harmoniques d'ordre élevé polarisées elliptiquement}
+\chapter{Formalisme et état de l'art de la génération d'harmoniques d'ordre élevé polarisées elliptiquement}
 \label{CH:Circular_HHG}
 Dans cette partie nous présenterons comment générer des harmoniques d'ordre élevé portant du moment angulaire de spin, c'est-à-dire ayant une polarisation elliptique. Pour commencer nous donnerons le formalisme utile à la description d'ondes polarisées, puis étudierons le mécanisme de GHOE dans un atome ou une molécule quand le laser de génération est polarisé elliptiquement. Nous verrons que le transfert de moment angulaire n'est pas efficace dans le schéma habituel de GHOE et mentionnerons les solutions existantes, avant d'en démontrer une nouvelle qui utilise une résonance de l'atome ou la molécule de génération.
 
 \section{Formalisme pour la description d'ondes polarisées elliptiquement}
 \label{sec:polardef}
-Comme on l'a vu dans la partie \ref{sec:circpolar}, le champ électrique d'une onde polarisée elliptiquement décrit une ellipse au cours de sa propagation. Soit $(x,y,z)$ un repère cartésien tel que $z$ soit selon la direction de propagation et $x$ soit selon l'axe majeur de l'ellipse. Un champ elliptique monochromatique s'écrit :
+Comme on l'a vu dans la partie \ref{sec:circpolar}, le champ électrique d'une onde polarisée elliptiquement décrit une ellipse au cours de sa propagation. Soit $(x,y,z)$ un repère cartésien tel que $z$ soit selon la direction de propagation et $x$ soit selon l'axe majeur de l'ellipse. Un champ elliptique monochromatique plan s'écrit :
 \begin{equation}
 \bm{E}=\begin{pmatrix}
 E_{x}\cos{(\omega t-kz)}\\
@@ -21,7 +21,7 @@ E_{y}\sin{(\omega t-kz)}\\
 \end{pmatrix},
 \label{eq:jones}
 \end{equation}
-où $\epsilon = E_{y}/E_{x}$ est appelé ellipticité du champ. $\epsilon$ varie de 0 pour une polarisation linéaire à 1 pour une polarisation circulaire.  On a vu que si $\epsilon>0$ (resp. $<0$), l'onde était elliptique gauche (resp. droite) et porte un moment angulaire de spin de $\epsilon\hbar$ (resp. $-\epsilon\hbar$) par photon. 
+où $\epsilon = E_{y}/E_{x}$ est appelé ellipticité du champ. $\epsilon$ varie de 0 pour une polarisation linéaire à 1 pour une polarisation circulaire.  On a vu que si $\epsilon>0$ (resp. $<0$), l'onde était polarisée elliptiquement gauche (resp. droite) et porte un moment angulaire de spin de $\epsilon\hbar$ (resp. $-\epsilon\hbar$) par photon. 
 
 \begin{figure}[!ht]
 \centering
@@ -70,12 +70,12 @@ L'onde est maintenant complètement décrite par $E_0$, $\chi$, $\eta$ et $P$. C
 
 Pour terminer, notons qu'en plus d'une inhomogénéité temporelle, la polarisation partielle de la lumière peut également découler d'une inhomogénéité spatiale : si les paramètres de l'ellipse varient avec la coordonnée transverse et que l'expérience moyenne spatialement ces différentes contributions, on aura $P<1$.
 
-\section{GHOE à partir d'un faisceau infrarouge polarisé elliptiquement}
+\section{GHOE non résonante à partir d'un faisceau infrarouge polarisé elliptiquement}
 \label{sec:ghoepolar}
-Dans la partie précédente, nous avons démontré qu'en donnant du moment angulaire orbital à l'infrarouge de génération, il était transmis au rayonnement harmonique. Ce principe devrait s'appliquer au moment angulaire de spin, qui doit être conservé dans le processus. 
+Dans la partie précédente, nous avons démontré qu'en faisant porter du moment angulaire orbital à l'infrarouge de génération, le rayonnement harmonique héritait de ce moment angulaire. Ce principe doit s'appliquer de la même façon au moment angulaire de spin, qui doit être conservé dans le processus de GHOE. Même si l'interprétation n'est pas présentée dans ce cadre général, c'est une observation qui a été faite peu de temps après les premières observations de GHOE \mycite{budilPRA1993}. Depuis, de nombreuses méthodes pour obtenir un rayonnement de GHOE polarisé elliptiquement ont été proposées. Nous en présentons ici un état des lieux. 
 
 \subsection{Résultats de la littérature}
-\mycite{budilPRA1993} ont réalisé la première expérience à ce sujet. Ils ont généré les harmoniques d'ordre élevé d'un laser Cr:LiSAF et mesuré l'intensité de chaque harmonique en fonction de l'ellipticité de l'infrarouge. Le résultat pour le néon est présenté sur la figure \ref{Fig:budil}.
+\mycite{budilPRA1993} ont rapporté les résultats de la première expérience de GHOE utilisant un champ fondamental polarisé elliptiquement. Ils ont généré les harmoniques d'ordre élevé d'un laser \shorthandoff{:} Cr:LiSAF \shorthandon{:} et mesuré l'intensité de chaque harmonique en fonction de l'ellipticité de l'infrarouge. Le résultat pour le néon est présenté sur la figure \ref{Fig:budil}.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.6\columnwidth]{Figures/Polar/Intensity_f_ellipticity_budil}%
@@ -85,7 +85,7 @@ Dans la partie précédente, nous avons démontré qu'en donnant du moment angul
 
 On observe une décroissance de l'intensité harmonique en fonction de l'ellipticité. Cet effet est marqué : on perd environ un ordre de grandeur en intensité quand $|\epsilon_{IR}| = 0.2$. On remarque également que cette décroissance est de plus en plus piquée lorsque l'ordre harmonique augmente.
 
-\'{E}tudions ensuite les résultats de \mycite{AntoinePRA1997}. Les auteurs se sont cette fois intéressés à l'état de polarisation du rayonnement harmonique en fonction de l'ellipticité de l'infrarouge. Ces expériences ont été réalisées sur une version antérieure du système laser que nous avons utilisé dans la partie III. Pour caractériser le rayonnement, les auteurs mesurent des \textit{lois de Malus}, méthode optique qui sera présentée plus loin (section \ref{sec:resonant_argon_exp}). Comme on le verra, cette technique est incapable de mesurer le degré de polarisation $P$. Elle ne donne qu'une borne supérieure sur l'ellipticité, atteinte uniquement lorsque la lumière est complètement polarisée. Ce point est crucial dans le cas de la GHOE : comme expliqué dans la partie \ref{sec:phase_spatiale} le dipôle de chaque ordre harmonique dépend de l'intensité infrarouge. Le champ émis sera donc non homogène en polarisation spatialement et temporellement, donc nécessairement partiellement polarisé.
+\mycite{AntoinePRA1997} ont analysé, dans des conditions similaires, l'état de polarisation du rayonnement harmonique en fonction de l'ellipticité de l'infrarouge. Ces expériences ont été réalisées sur une version antérieure du système laser que nous avons utilisé dans la partie III. Pour caractériser le rayonnement, les auteurs mesurent des \textit{lois de Malus}, méthode optique qui sera présentée plus loin (section \ref{sec:resonant_argon_exp}). Comme on le verra, cette technique est incapable de mesurer le degré de polarisation $P$ \mycite{gruson}. Elle ne donne qu'une borne supérieure à l'ellipticité, atteinte uniquement lorsque la lumière est complètement polarisée. Ce point est crucial dans le cas de la GHOE : comme expliqué dans la partie \ref{sec:phase_spatiale} le dipôle de chaque ordre harmonique dépend de l'intensité infrarouge. Le champ émis sera donc non homogène en polarisation spatialement et temporellement, donc nécessairement partiellement polarisé.
 
 La figure \ref{fig:antoinepra} présente quelques résultats extraits de \mycite{AntoinePRA1997}. On y voit l'évolution de l'ellipticité des harmoniques et de l'angle d'orientation de l'ellipse $\eta$, pris par rapport à un axe de référence fixe. L'ellipticité mesurée n'étant qu'une borne supérieure de l'ellipticité vraie, on la note $\epsilon^{max}_q$. La figure \ref{fig:antoinepra} inclut un résultat numérique qui donne lui accès à $P$ et donne une idée de la quantité de lumière non-polarisée.
 
@@ -93,7 +93,7 @@ La figure \ref{fig:antoinepra} présente quelques résultats extraits de \mycite
 \centering
 \def\svgwidth{\columnwidth}
 \import{Figures/Polar/}{antoinePRA.pdf_tex}
-\caption{\`{A} gauche, mesure de l'ellipticité des harmoniques 17 et 23 générées dans l'argon par un champ infrarouge elliptique. Carrés rouges : mesures expérimentales de $\epsilon^{max}_q$ par loi de Malus. Comme expliqué plus haut, ce n'est qu'une borne supérieure sur la vraie valeur de l'ellipticité. En traits rouges, même quantité obtenue par le calcul. En pointillés noirs, véritable ellipticité obtenue par le calcul. En traits-pointillés verts, degré de polarisation obtenu par le calcul. \`{A} droite, mesure de l'angle de rotation de l'ellipse (carrés rouges) et même quantité obtenue par le calcul (traits rouges). Adapté de \mycite{AntoinePRA1997}.}
+\caption{\`{A} gauche, mesure de l'ellipticité des harmoniques 17 et 23 générées dans l'argon par un champ infrarouge elliptique. Carrés rouges : mesures expérimentales de $\epsilon^{max}_q$ par loi de Malus. Comme expliqué plus haut, ce n'est qu'une borne supérieure à la valeur de l'ellipticité. En traits rouges, même quantité obtenue par le calcul. En pointillés noirs, ellipticité obtenue par le calcul. En traits-pointillés verts, degré de polarisation obtenu par le calcul. \`{A} droite, mesure de l'angle de rotation de l'ellipse (carrés rouges) et même quantité obtenue par le calcul (traits rouges). Adapté de \mycite{AntoinePRA1997}.}
 \label{fig:antoinepra}
 \end{figure}
 
@@ -109,19 +109,19 @@ On fait les observations suivantes :
 \item $\eta$ augmente plus rapidement pour l'harmonique basse.
 \end{itemize}
 \vspace{\baselineskip}
-Ces deux travaux démontrent deux résultats généraux. En premier lieu, on voit que l'ellipticité de l'infrarouge est bien transférée au champ harmonique. Toutefois, l'ellipticité harmonique semble toujours rester inférieure à celle du laser générateur. Deuxièmement, le rendement harmonique décroît exponentiellement avec l'ellipticité de l'infrarouge. Nous concluons donc qu'il est très difficile d'obtenir un rayonnement ultraviolet d'ellipticité significative tout en gardant un niveau de signal suffisant. Dans la section suivante, nous expliquons les effets physiques à l'origine de ces propriétés.
+Ces deux travaux démontrent deux résultats généraux. En premier lieu, on voit que l'ellipticité de l'infrarouge est bien transférée au champ harmonique. Toutefois, l'ellipticité harmonique semble toujours rester inférieure à celle du laser générateur. Deuxièmement, le rendement harmonique décroît exponentiellement avec l'ellipticité de l'infrarouge. Nous concluons donc qu'il est très difficile d'obtenir un rayonnement XUV d'ellipticité significative tout en gardant un niveau de signal suffisant. Dans la section suivante, nous expliquons les effets physiques à l'origine de ces propriétés.
 
 \subsection{Description théorique de la GHOE en polarisation elliptique}
-Dans le modèle à trois étapes (voir section \ref{sec:threestep}), la polarisation du champ intervient dans le calcul de la trajectoire électronique dans le continuum. On note $(x,y)$ la position dans le plan transverse de l'électron, que l'on considère classiquement. Sa trajectoire dans un champ complètement polarisé est donnée par :
+Dans le modèle à trois étapes (voir section \ref{sec:threestep}), la polarisation du champ laser intervient dans le calcul de la trajectoire électronique dans le continuum. On note $(x,y)$ la position dans le plan transverse de l'électron, que l'on considère classiquement. Sa trajectoire dans un champ complètement polarisé est donnée par :
 \[\left\{
 \begin{array}{l}
   \ddot{x}(t) = -\frac{qE_0}{m}\cos\omega t \\
   \ddot{y}(t) = -\epsilon\frac{qE_0}{m}\sin\omega t,
 \end{array}
 \right.\]
-avec $q$ et $m$ la charge et la masse de l'électron, et $\epsilon$ et $\omega$ l'ellipticité et la fréquence angulaire du champ. L'équation selon $x$ se résoud exactement de la même façon que pour une polarisation linéaire : on suppose $x(t_i) = \dot{x}(t_i) = 0$, où $t_i$ est le temps d'ionisation, et pour chaque $t_i$, on obtient l'instant de recombinaison $t_r$.
+avec $q$ et $m$ la charge et la masse de l'électron, et $\epsilon$ et $\omega$ l'ellipticité et la fréquence angulaire du champ. L'équation selon $x$ se résout exactement de la même façon que pour une polarisation linéaire : on suppose $x(t_i) = \dot{x}(t_i) = 0$, où $t_i$ est le temps d'ionisation, et pour chaque $t_i$, on obtient l'instant de recombinaison $t_r$.
 
-Selon la dimension $y$, l'électron doit bien sûr être émis au niveau du noyau : $y(t_i) = 0$. Cependant, si on suppose que $\dot{y}(t_i) = 0$, l'équation $y(t_r) = 0$ n'a pas de solution : l'électron 'rate' l'atome et ne peut pas recombiner, comme illustré sur la figure \ref{fig:ellgruson}.
+Selon la dimension $y$, l'électron doit bien sûr être émis au niveau du noyau : $y(t_i) = 0$. Cependant, si on suppose que $\dot{y}(t_i) = 0$, l'équation $y(t_r) = 0$ n'a pas de solution : l'électron "rate" l'atome et ne peut pas recombiner, comme illustré sur la figure \ref{fig:ellgruson}.
 
 \begin{figure}[!ht]
 \centering
@@ -131,40 +131,62 @@ Selon la dimension $y$, l'électron doit bien sûr être émis au niveau du noya
 \label{fig:ellgruson}
 \end{figure}
 
-Classiquement, la génération d'harmonique en polarisation elliptique est donc impossible. En vérité, le déplacement et la vitesse de l'électron selon l'axe $y$ sont trop faibles pour utiliser une description classique. Si on décrit cette dimension quantiquement, on a un paquet d'onde électronique émis lors de l'ionisation tunnel. Ce paquet d'onde est localisé spatialement autour de l'atome, sur une longueur $\Delta y$ dépendant de l'orbitale en jeu. Le moment cinétique selon $y$ est donc lui aussi confiné à une largeur $\Delta p_y$. La distribution de $p_y$ est centrée sur y=0 à $t=0$ et peut maintenant contenir des valeurs non nulles. \mycite{strelkov2006} démontre que pour avoir recombinaison, le moment cinétique initial doit valoir $p_y(t=0) = -\bar{y}/\tau$, où $\bar{y}$ est la quantité représentée sur la figure \ref{fig:ellgruson}, et $\tau$ le temps d'excursion total de l'électron. Ceci permet d'expliquer simplement le résultat de \mycite{budilPRA1993} présenté plus haut : si $\epsilon_{IR}$ augmente, $\bar{y}$ augmente également. Il faut donc un moment cinétique initial plus important pour avoir recombinaison, ce qui est moins probable puisque la distribution de $p_y(t=0)$ est centrée en y=0. Ceci explique la diminution du rendement harmonique avec l'ellipticité de l'infrarouge.
+Classiquement, la génération d'harmonique en polarisation elliptique est donc impossible. Cependant, le déplacement et la vitesse de l'électron selon l'axe $y$ sont trop faibles pour utiliser une description classique. Si on décrit cette dimension quantiquement, on a un paquet d'ondes électroniques émis lors de l'ionisation tunnel. Ce paquet d'onde est localisé spatialement autour de l'atome, sur une longueur $\Delta y$ dépendant de l'orbitale en jeu \mycite{MurrayPRL2011}. Le moment cinétique selon $y$ est donc étalé sur une largeur $\Delta p_y\sim\hbar/\Delta y$. La distribution de $p_y$ est centrée en 0 à $t=0$ et peut maintenant contenir des valeurs non nulles. \mycite{strelkov2006} démontre que pour avoir recombinaison, le moment cinétique initial doit valoir $p_y(t=0) = -\bar{y}/\tau$, où $\bar{y}$ est la quantité représentée sur la figure \ref{fig:ellgruson}, et $\tau$ le temps d'excursion total de l'électron. Ceci permet d'expliquer simplement le résultat de \mycite{budilPRA1993} présenté plus haut : si $\epsilon_{IR}$ augmente, $\bar{y}$ augmente également. Il faut donc un moment cinétique initial plus important pour avoir recombinaison, ce qui est moins probable puisque la distribution de $p_y(t=0)$ est centrée autour de 0. Ceci explique la diminution du rendement harmonique avec l'ellipticité de l'infrarouge.
 
-Pour comprendre qualitativement les résultats de \mycite{AntoinePRA1997}, on trace les trajectoires classiques de l'électron, cette fois avec la condition initiale $p_y(t=0) = -\bar{y}/\tau$ et avec les deux trajectoires quantiques.
+Pour comprendre qualitativement les résultats de \mycite{AntoinePRA1997}, on trace sur la figure \ref{fig:ellhiguet} les trajectoires classiques de l'électron, cette fois avec la condition initiale $p_y(t=0) = -\bar{y}/\tau$ et avec les deux trajectoires quantiques.
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.9\columnwidth]{Figures/Polar/higuet.png}%
-\caption{Trajectoires électroniques correspondant à l’harmonique 111 d'un laser à 1800 nm, pour un éclairement de $\SI{1e14}{W/cm^2}$ et une ellipticité de 0.2 (champ représenté en gris).
+\def\svgwidth{0.7\columnwidth}
+\import{Figures/Polar/}{trajSemiClassique.pdf_tex}
+\caption{Trajectoires électroniques correspondant à l’harmonique 17 d'un laser à 800 nm, pour un éclairement de $\SI{1.2e14}{W/cm^2}$ et une ellipticité de 0.2 (champ représenté en gris).
 En ligne pointillée, la direction du champ à l’instant d’ionisation. On notera la différence entre les échelles
-des axes $x$ et $y$. Tiré de \mycite{higuet}}
-\label{fig:ellhiguet}%
+des axes $x$ et $y$. Adapté de \mycite{ShafirPRL2012}.}
+\label{fig:ellhiguet}
 \end{figure}
 
-La figure \ref{fig:ellhiguet}, tirée de \mycite{higuet}, n'est pas directement comparable à la figure \ref{fig:ellgruson}, le calcul ayant été réalisé à une longueur d'onde plus élevée. Une longueur d'onde plus grande conduit à des trajectoires électroniques plus longues et à des effets plus marqués qu'à 800 nm.
-On observe toutefois un effet intéressant : l'électron recombine sur l'atome avec un angle variable $\beta_{c/l}$ (pour trajectoire courte/longue). Cette angle est responsable de la rotation d'angle $\eta$ de l'ellipse harmonique. En effet, pour une orbitale de symétrie sphérique, l'axe principal de l'ellipse de polarisation du rayonnement harmonique est dirigé selon la direction de recollision de l'électron à la recombinaison \mycite{strelkov2006}. L'ellipse harmonique est donc tournée d'un angle $\beta_{c/l}\approx\eta$, qui dépend de l'ordre harmonique et de la trajectoire considérée. On remarque que $\beta_c$ et $\beta_l$ sont de signes différents, la dépendance de $\eta$ est donc de signe opposé pour la trajectoire longue. Ceci peut être mesuré expérimentalement (voir e.g. la figure 3.11 de \mycite{higuet}).\par
-Enfin, cet angle explique également que le rayonnement harmonique soit elliptique. L'argument donné par \mycite{Strelkov2011} est le suivant : on considère un état lié $\psi_0(x,y,z) = \psi(x)\psi(y)\psi(z)$ et un paquet d'onde électronique. Ce paquet se déplace principalement dans la direction $x$ et possède une amplitude dans les deux autres dimensions : $\chi(x,y,z) = f(y,z)\exp(\rmi p_x x)$. Comme on l'a vu, l'amplitude $f(y,z)$ est initialement centrée en $y=0$ puis se décale selon $y$ au cours de la propagation. \`{A} la recombinaison, on peut faire un développement de Taylor de $f$ : $f(y,z) = f_0 + f_1 y$, où $f_1$ est relié à l'angle de recombinaison. Le moment dipolaire du système vaut 
-\[\bm{d} = \int{\psi_0^* \bm{r} \chi \rmd\bm{r}} + \text{c.c.}\]
+On observe ici un effet intéressant : l'électron recombine sur l'atome avec un angle variable $\beta_{c/l}$ (pour trajectoire courte/longue). Cet angle est responsable de la rotation d'angle $\eta$ de l'ellipse de polarisation harmonique. En effet, pour une orbitale de symétrie sphérique, l'axe principal de l'ellipse de polarisation du rayonnement harmonique est dirigé selon la direction de recollision de l'électron à la recombinaison \mycite{strelkov2006}. L'ellipse harmonique est donc tournée d'un angle $\beta_{c/l}\approx\eta$, qui dépend de l'ordre harmonique et de la trajectoire considérée. On remarque que $\beta_c$ et $\beta_l$ sont de signes différents, la dépendance de $\eta$ est donc de signe opposé pour la trajectoire longue. Ceci peut être mesuré expérimentalement (voir e.g. la figure 3.11 de \mycite{higuet}).\par
+Enfin, cet angle explique également que le rayonnement harmonique soit elliptique. L'argument donné par \mycite{Strelkov2011} est le suivant : on considère un état électronique lié $\psi_0(x,y,z) = \psi(x)\psi(y)\psi(z)$, où $\psi$ est une fonction paire, et un paquet d'onde électronique. Ce paquet se déplace principalement dans la direction $x$ et possède une amplitude dans les deux autres dimensions : $\chi(x,y,z) = f(y,z)\exp(\rmi p_x x)$. Comme on l'a vu, l'amplitude $f(y,z)$ est initialement centrée en $y=0$ puis se décale selon $y$ au cours de la propagation. \`{A} la recombinaison, on peut faire un développement de Taylor de $f$ : $f(y,z) = f_0 + f_1 y$, où $f_1$ est relié à l'angle de recombinaison. Le moment dipolaire du système vaut 
+\[\bm{d} = \int{\psi_0^*(x,y,z) \bm{r} \chi(x,y,z) \rmd\bm{r}} + \text{c.c.}\]
 On obtient donc ses composantes cartésiennes :
-\[d_x \propto f_0 \text{  et  } d_y \propto \rmi f_1.\]
-On excite donc un dipôle dans les deux directions transverses, et leurs oscillations sont décalées de $\pi/2$. Le signal émis est donc polarisé elliptiquement.
+\begin{align}
+d_x &= f_0\int{\psi^*(y)\rmd y}\int{\psi^*(z)\rmd z}\int{x\psi^*(x)\rme^{\rmi p_x x}\rmd x} + 
+f_1\int{y \psi^*(y)\rmd y}\int{\psi^*(z)\rmd z}\int{x\psi^*(x)\rme^{\rmi p_x x}\rmd x}\nonumber\\
+d_y &= f_0\int{y \psi^*(y)\rmd y}\int{\psi^*(z)\rmd z}\int{\psi^*(x)\rme^{\rmi p_x x}\rmd x} + 
+f_1\int{y^2 \psi^*(y)\rmd y}\int{\psi^*(z)\rmd z}\int{\psi^*(x)\rme^{\rmi p_x x}\rmd x}
+\end{align}
+$y\psi(y)$ est impaire en $y$, son intégrale est donc nulle, ce qui donne :
+\begin{align}
+d_x &= f_0\int{\psi^*(y)\rmd y}\int{\psi^*(z)\rmd z}\int{x\psi^*(x)\rme^{\rmi p_x x}\rmd x}\nonumber\\
+d_y &= f_1\int{y^2 \psi^*(y)\rmd y}\int{\psi^*(z)\rmd z}\int{\psi^*(x)\rme^{\rmi p_x x}\rmd x},
+\end{align}
+qui font apparaître les transformées de Fourier de $x\psi^*(x)$ et $\psi^*(x)$, respectivement fonction impaire et paire de $x$. Ces quantités sont de surcroît réelles, leur transformée de Fourier est donc respectivement purement imaginaire et réelle \footnote{La fonction d'onde $\psi$ peut en effet toujours être choisie réelle. Pour les relations de parité et d'imaginarité des transformée de Fourier, on se reportera par exemple à l'annexe C de \mycite{HaesslerPhD}.}.
 
-\section{Méthodes existantes de génération d'harmoniques elliptiques}
+En conclusion, $d_x$ et $d_y$ sont respectivement imaginaire pur et réel. Les composantes transverses du dipôle sont donc en opposition de phase, c'est-à-dire que le signal émis est polarisé elliptiquement.
+
+\section{Autres méthodes de génération d'harmoniques elliptiques}
 Dans la partie précédente, nous avons expliqué le mécanisme de GHOE en polarisation elliptique et vu que le processus ne permettait pas un transfert direct et efficace de l'ellipticité de l'infrarouge vers l'ultraviolet. Nous présentons ici trois méthodes existantes pour circonvenir à ce problème. 
 
-\subsection{Réflexion sur des surfaces métalliques}
-\label{sec:metalsurface}
-L'idée est ici de générer des harmoniques polarisée linéairement puis d'utiliser un dispositif similaire à une lame quart d'onde. Dans ces gammes spectrales, il est impossible de réaliser une lame quart-d'onde conventionnelle, mais on peut obtenir le même effet à partir de plusieurs surfaces métalliques. \par
-On appelle plan d'incidence le plan formé par le vecteur d'onde du champ incident et le vecteur normal à la surface. Il est alors courant d'appeler $p$ la composante du champ \textit{parallèle} à ce plan et $s$ la composante perpendiculaire (\textit{senkrecht} en allemand). Selon le métal utilisé, ces deux composantes ne sont pas réfléchies également : la surface métallique présente une réflectivité selon chaque dimension, habituellement notées $R_p$ et $R_s$. De plus, elle introduit un déphasage entre ces deux composantes. Il est ainsi possible d'introduire un déphasage de $\pi/2$ en choisissant une bonne combinaison de miroirs. \mycite{VodungboOE2011} ont développé un dispositif à 4 miroirs de Mo/$\text{B}_\text{4}$C qui permettent d'obtenir les harmoniques 31 à 45 avec une ellipticité variant de 1 à 0.61. Ces caractéristiques sont très intéressantes, malgré un inconvénient majeur : la transmission du dispositif varie entre 2.6 et 3.7 \% sur la plage considérée. Ce type de dispositif a continué à être amélioré, \mycite{WillemsPRB2015} reportent par exemple une transmission de 10-30\% et une ellipticité de $\approx 0.8$ entre 45 et 70 eV.\par
+\subsection{Manipulation de la trajectoire électronique par un champ bicolore}
+Commençons par une méthode qui est peut-être la plus intuitive. Le principe est ici de modifier le champ électromagnétique de sorte à ce que la trajectoire électronique revienne sur l'atome parent quelque soit l'ellipticité infrarouge. Une solution à ce problème a été initialement donnée par \mycite{EichmannPRA1995}. Pour ce faire, on utilise deux faisceaux colinéaires d’ellipticités opposées et de longueurs d'onde différentes. Si ces longueurs d'ondes sont commensurables, par exemple 400 et 800 nm, la trajectoire électronique se présente comme un trèfle à trois feuilles avec lequel la GHOE est toujours possible. L'expérience a été réalisée par \mycite{FleischerNP2014} et montre que la génération est efficace dans ces conditions, et permet de générer des harmoniques paires et impaires d'ellipticité $|\epsilon^{max}_q|\approx 1$. \mycite{KfirNP2015} a mesuré l'hélicité (le signe de $\epsilon$) et montré que les ordres harmoniques étaient polarisés ainsi:
+\[\left\{
+\begin{aligned}
+  \text{Si }q&=3m-1,\quad &\epsilon_q \approx \pm 1 \\
+	&=3m+1, &\epsilon_q \approx \mp 1 \\
+	&=3m, &\text{l'harmonique n'est pas générée},
+\end{aligned}
+\right.\]
+où $\pm$ dépend de l'hélicité des champs générateurs. Tous les effets ne sont cependant pas encore compris, on observe notamment souvent une asymétrie non négligeable entre les $3m+1$ et $3m-1$ ainsi qu'une extinction non totale des harmoniques $3m$.
+Cette méthode est toutefois très intéressante car elle produit un rayonnement fortement polarisé et intense. Elle a été utilisée avec succès par \mycite{KfirNP2015} des mesures de dichroïsme circulaire magnétique dans le cobalt, un effet voisin de ceux dont il sera question au chapitre \ref{CH:PECD}. Cette méthode est ainsi particulièrement adaptée à la spectroscopie de la phase solide.\par
+Sa pertinence pour la spectroscopie en phase diluée est moins évidente. En effet, une molécule présente un grand nombre de degrés de liberté et différents canaux d'ionisation qui contribuent au spectre total. Il n'est jamais facile d'identifier chacune de ces contributions, on préférera donc avoir un rayonnement le plus simple possible.
+La technique présentée ici fournit un spectre harmonique dense fait d'harmoniques paires et impaires d'hélicité en alternance, ce qui s'oppose à ces exigences.
 
-Ces dispositifs sont assez difficiles à implémenter, ce qui couplé à leur faible transmission explique qu'ils ne soient pas très répandus aujourd'hui. 
+Une autre méthode utilisant un champ bicolore a été proposée par \mycite{LambertNC2015}. Les champs sont ici linéaires mais polarisés orthogonalement. Les auteurs démontrent également une GHOE efficace et utilisent ce rayonnement pour mesurer le dichroïsme circulaire magnétique du nickel.
+
 
 \subsection{Génération dans des molécules alignées}
-Considérons la GHOE avec un faisceau polarisé linéairement, cette fois dans un gaz de molécules diatomiques. Au niveau microscopique, l'orientation de l'axe de la molécule par rapport à la polarisation du laser joue un rôle crucial : l'angle de recombinaison de l'électron par rapport à cet axe modifie l'émission, exactement comme le champ elliptique représenté sur la figure \ref{fig:ellhiguet}. L'électron peut donc exciter les deux composantes du dipôle. L'interprétation est toutefois plus compliquée, puisque l'ellipticité obtenue dépend de la symétrie de ou des orbitales ionisées, de leur phases relatives ou encore de l'intensité de génération (voir \mycite{MairessePRL2010}). \par
-\`{A} l'échelle macroscopique, toutes les orientations de molécules par rapport au laser sont équiprobables. On a donc un effet de moyenne, qui donne un rayonnement harmonique macroscopique polarisé linéairement. Il faut donc \textit{aligner} les molécules. Une technique courante est l'alignement impulsionnel, qui utilise une pré-impulsion quelques secondes avant l'impulsion de génération \mycite{RoscaPRL2001}. La figure \ref{fig:n2ell} présente deux exemples de résultats obtenus avec $\text{N}_\text{2}$, tirés de \mycite{ZhouPRL2009} et \mycite{MairessePRL2010}. Dans les deux cas, on observe un maximum d'ellipticité pour l'harmonique 23 et pour un angle d'alignement d'environ 60\degres.
+Cette seconde méthode se repose sur l'observation suivante : en optique conventionnelle, la production de rayonnement circulaire repose sur l'emploi de matériaux anisotropes, tels qu'une lame quart d'onde. On cherche donc à briser l'isotropie du milieu de génération. On considère la GHOE avec un faisceau polarisé linéairement, cette fois dans un gaz de molécules diatomiques. L'isotropie du milieu peut alors être brisée en alignant ces molécules. L'orientation de l'axe de la molécule par rapport à la polarisation du laser joue alors un rôle crucial. Comme l'état fondamental présente une dissymétrie, les taux d'ionisation et les divergences seront différentes selon que l'on excite l'une ou l'autre des composantes de polarisabilité. De même, l'angle de recombinaison de l'électron par rapport à l'axe moléculaire modifiera l'émission harmonique. \mycite{MairessePRL2010} montre que selon la symétrie de ou des orbitales ionisées, leurs phases relatives et l'intensité de génération, on obtient un rayonnement harmonique polarisé elliptiquement. \par
+Il est ici nécessaire d'aligner les molécules, sans quoi leurs orientations par rapport au laser seront équiprobables. Une technique courante est l'alignement impulsionnel, qui utilise une pré-impulsion quelques secondes avant l'impulsion de génération \mycite{RoscaPRL2001}. La figure \ref{fig:n2ell} présente deux exemples de résultats obtenus avec $\text{N}_\text{2}$, tirés de \mycite{ZhouPRL2009} et \mycite{MairessePRL2010}. Dans les deux cas, on observe un maximum d'ellipticité pour l'harmonique 23 et pour un angle d'alignement d'environ 60\degres.
 
 \begin{figure}[!ht]
 \centering
@@ -174,25 +196,21 @@ Considérons la GHOE avec un faisceau polarisé linéairement, cette fois dans u
 \label{fig:n2ell}
 \end{figure}
 
-Ce résultat s'explique en fait par la présence de plusieurs canaux d'ionisation et est donc très intéressant du point de vue de la spectroscopie harmonique. Il est toutefois assez peu flexible et nécessite d'aligner des molécules, et fournit une ellipticité modeste. De plus, l'utilisation d'une impulsion d'alignement a tendance à créer davantage d'inhomogénéités spatiales et temporelles, ce qui produit un rayonnement peu polarisé. Cette question est étudiée en détail expérimentalement dans la thèse de Vincent Gruson \mycite{gruson}.
+Ce résultat s'explique en fait par la présence de plusieurs canaux d'ionisation et est donc très intéressant du point de vue de la spectroscopie harmonique. Il est toutefois assez peu flexible, nécessite d'aligner des molécules et fournit une ellipticité modeste. De plus, l'utilisation d'une impulsion d'alignement a tendance à créer davantage d'inhomogénéités spatiales et temporelles, ce qui produit un rayonnement peu polarisé. Cette question est étudiée en détail expérimentalement dans la thèse de Vincent Gruson \mycite{gruson}.
 
-\subsection{Manipulation de la trajectoire électronique par un champ bicolore}
-Terminons par la méthode la plus récente, qui est peut-être la plus intuitive. Le principe est ici de contrôler optiquement la trajectoire électronique de sorte à ce que la recombinaison soit possible quelque soit l'ellipticité infrarouge. Une solution à ce problème a été initialement donnée par \mycite{EichmannPRA1995}. En utilisant un champ à deux couleurs d’ellipticités opposées et de deux longueurs d'onde commensurables, par exemple 400 et 800 nm, la GHOE est possible. L'expérience réalisée par \mycite{FleischerNP2014} montre que la génération est efficace dans ces conditions, et permet de générer des harmoniques paires et impaires d'ellipticité $|\epsilon^{max}_q|\approx 1$. \mycite{KfirNP2015} a mesuré l'hélicité (le signe de $\epsilon$) et montré que les ordres harmoniques étaient polarisés ainsi:
-\[\left\{
-\begin{aligned}
-  \text{Si }q&=3m-1,\quad &\epsilon_q \approx \pm 1 \\
-	&=3m+1, &\epsilon_q \approx \mp 1 \\
-	&=3m, &\text{l'harmonique n'est pas générée},
-\end{aligned}
-\right.\]
-où $\pm$ dépend de l'hélicité des champs générateurs. Cette méthode est très intéressante car elle produit un rayonnement fortement polarisé et intense. Elle a été utilisée avec succès par \mycite{KfirNP2015} pour réaliser des mesures de dichroïsme circulaire magnétique dans le cobalt, un effet voisin de ceux dont il sera question au chapitre \ref{sec:PECD}. Cette méthode est ainsi particulièrement adaptée à la spectroscopie de la phase solide.\par
-La réponse d'une molécule est quant à elle plus difficile à interpréter. En effet, un grand nombre de degrés de liberté et différents canaux d'ionisation contribuent au spectre total, et il n'est jamais facile d'identifier chacune de ces contributions. 
-On préférera donc avoir un rayonnement très simple, de sorte à exciter le moins d'effets possibles et de pouvoir les identifier. La technique présentée ici fournit un spectre harmonique dense fait d'harmoniques paires et impaires d'hélicité en alternance, ce qui est à l'opposé des besoins de la spectroscopie moléculaire.
+
+\subsection{Réflexion sur des surfaces métalliques}
+\label{sec:metalsurface}
+L'idée est ici de générer des harmoniques polarisées linéairement puis d'utiliser un dispositif similaire à une lame quart d'onde. Dans ces gammes spectrales, il est difficile de réaliser une lame quart-d'onde conventionnelle en transmission, mais on peut obtenir le même effet à partir de plusieurs réflexions sur des miroirs multicouches. \par
+On appelle plan d'incidence le plan formé par le vecteur d'onde du champ incident et le vecteur normal à la surface. Il est alors courant d'appeler $p$ la composante du champ \textit{parallèle} à ce plan et $s$ la composante perpendiculaire (\textit{senkrecht} en allemand). Selon le métal utilisé, ces deux composantes ne sont pas réfléchies également : la surface métallique présente une réflectivité complexe selon chaque dimension, habituellement notées $r_p$ et $r_s$. Il est ainsi possible d'introduire un déphasage de $\pi/2$ en choisissant une bonne combinaison de miroirs tout en gardant des amplitudes sur $s$ et $p$ comparables. \mycite{VodungboOE2011} ont développé un dispositif à 4 miroirs de Mo/$\text{B}_\text{4}$C qui permettent d'obtenir les harmoniques 31 à 45 avec une ellipticité variant de 1 à 0.61. Ces caractéristiques sont très intéressantes, malgré un inconvénient majeur : la transmission du dispositif varie entre 2.6 et 3.7 \% sur la plage considérée. Ce type de dispositif a continué à être amélioré, \mycite{WillemsPRB2015} reportent par exemple une transmission de 10-30\% et une ellipticité de $\approx 0.8$ entre 45 et 70 eV.\par
+
+Ces dispositifs sont assez difficiles à implémenter et onéreux. Comme en plus leur transmission est faible, leur utilisation en GHOE reste rares aujourd'hui. Ces dispositifs sont toutefois utilisés depuis longtemps sur les sources synchrotrons, en particulier comme outil de caractérisation complète de l'état de polarisation du rayonnement \mycite{NahonAO2004}. 
+
 
 \section{Une image photonique de la GHOE en polarisation elliptique}
-Les travaux de \mycite{FleischerNP2014} que nous venons de mentionner ont suscité de nombreuses questions sur la conservation du moment angulaire de spin dans la GHOE. Avant ces travaux, la conservation du spin n'avait été étudiée ni théoriquement, ni expérimentalement.
+L'approche privilégiée par les auteurs cités dans cet état des lieux est l'étude de l'ellipticité du faisceau harmonique~; quasiment aucune référence n'est faite aux lois de conservation du MAS dans la GHOE. Une exception notable récente est le travail de \mycite{FleischerNP2014}. Ils analysent un cas relativement complexe, mettant en jeu un champ bichromatique. Nous nous d'interpréter les résultats de \mycite{AntoinePRA1997} et de \mycite{budilPRA1993} par le prisme des lois de conservation.
 
-Jusqu'à présent, nous avons utilisé une description macroscopique du champ électromagnétique. \`A l'étape de recombinaison de la GHOE, l'électron recombine sur l'état fondamental de l'atome. Le processus de GHOE peut être vu comme un processus \textit{paramétrique} dans lequel l'état initial et final sont les mêmes. On considère alors que chaque photon harmonique est issu de l'absorption et/ou de l'émission d'un certain nombre de photons du fondamental. Si la GHOE est effectivement un processus paramétrique, elle doit conserver l'énergie, la quantité de mouvement et les moments angulaires orbitaux et de spin. Nous avons pu observer la conservation des trois premières quantités au cours de cette thèse, et nous intéressons ici à la quatrième.
+Jusqu'à présent, nous avons utilisé une description macroscopique du champ électromagnétique. \`A l'étape de recombinaison de la GHOE, l'électron recombine sur l'état fondamental de l'atome. Le processus de GHOE peut être vu comme un processus \textit{paramétrique} dans lequel l'état initial et final sont les mêmes. On considère alors que chaque photon harmonique est issu de l'absorption et/ou de l'émission d'un certain nombre de photons du fondamental. Si la GHOE est effectivement un processus paramétrique, elle doit conserver l'énergie, la quantité de mouvement et les moments angulaires orbitaux et de spin. Nous avons pu observer la conservation des trois premières quantités au cours de cette thèse, et nous nous intéressons ici à la quatrième.
 
 \mycite{FleischerNP2014} ont proposé un modèle simple prédisant le MAS de chaque harmonique dans leur dispositif à deux couleurs, en supposant la conservation du MAS. De manière surprenante, ils observèrent de très larges déviations à ce modèle et proposèrent deux mécanismes pour les expliquer : (1) l'électron ionisé emporte avec lui un moment angulaire de spin non nul, ce qui remet en question le fait que la GHOE soit un processus paramétrique, et (2) les différentes harmoniques sont émises de façon corrélées, ce qui empêche de considérer le moment angulaire de spin d'une harmonique seule.\par
 \mycite{PisantyPRA2014} proposa ensuite un modèle différent, qui montra que les données de \mycite{FleischerNP2014} étaient cohérentes avec la conservation du MAS sans avoir à utiliser de tels arguments. Nous reprenons sa démarche pour expliquer le cas plus simple de la génération à un seul faisceau polarisé elliptiquement, déjà décrit macroscopiquement dans la partie \ref{sec:ghoepolar}, mais cette fois avec une image photonique.
@@ -202,23 +220,23 @@ On considère un champ d'ellipticité $\epsilon_0$ arbitraire. On décompose ce 
 \bm{E} = \frac{E_0 e^{-\rmi\omega t}}{2\sqrt{2}}\left(\frac{1+\epsilon_0}{\sqrt{1+\epsilon_0^2}}\bm{e}_R+\frac{1-\epsilon_0}{\sqrt{1+\epsilon_0^2}}\bm{e}_L\right)+\text{c.c.},
 \label{eq:Eell_RL}
 \end{equation}
-où $\bm{e}_{R/L}=(\bm{e}_x\pm\rmi\bm{e}_y)/\sqrt{2}$ sont les vecteurs unitaires complexes des polarisations circulaires droites et gauches.
+où $\bm{e}_{R/L}=(\bm{e}_x\pm\rmi\bm{e}_y)/\sqrt{2}$ sont les vecteurs unitaires complexes des polarisations circulaires droites et gauches, et $\bm{e}_x$ et $\bm{e}_y$ sont pris selon les axes perpendiculaires de l'ellipse de polarisation.
 
-Les composantes R et L du champ sont alors considérées séparément : on note $n_R$ et $n_L$ le nombre de photons respectif impliqués dans le processus. On note $q$ l'ordre harmonique, et la conservation de l'énergie s'écrit :
+Les composantes R et L du champ sont alors considérées séparément : on note $n_R$ et $n_L$ les nombres de photons respectifs impliqués dans le processus. On note $q$ l'ordre harmonique, et la conservation de l'énergie s'écrit :
 \[ q\hbar\omega = n_R\hbar\omega+n_L\hbar\omega, \]
-soit $q = n_R + n_L$, ce qui est consistant avec la conservation de la parité car le nombre de photon absorbé est impair. On a donc un grand nombre de paires $(n_R,n_L)$ qui contribuent à l'émission de chaque harmonique $q$. On peut restreindre ces paires en écrivant la conservation du moment angulaire de spin pour chacune d'entre elles. En notant $s$ le MAS, on a :
+soit $q = n_R + n_L$. On a donc un grand nombre de couples $(n_R,n_L)$ qui contribuent à l'émission de chaque harmonique $q$. On peut restreindre ces couples en écrivant la conservation du moment angulaire de spin pour chacune d'entre elles. En notant $s$ le MAS, on a :
 \[s_{(n_R,n_L)} = n_R s_R + n_L s_L = n_R - n_L.\]
 Le MAS d'un photon ne peut prendre que deux valeurs : $s_{(n_R,n_L)}=\pm1$, ce qui restreint les canaux possibles à 2 :
 \[n_R = \frac{q+1}{2},\; n_L = \frac{q-1}{2}\quad\text{ou}\quad n_R = \frac{q-1}{2},\; n_L = \frac{q+1}{2}.\]
 
-Ces deux canaux n'ont pas la même amplitude. Par simplicité, on suppose que l'amplitude d'un processus à n-photons évolue comme la $\text{n}^{i\`{e}me}$ puissance du champ fondamental. Cette approximation est un développement perturbatif à l'ordre le plus bas, qui a de nombreuses limitations pour la description de la GHOE, comme l'absence de plateau. On verra qu'elle permet toutefois de comprendre les comportements observés. Dans cette approximation, l'expression \ref{eq:Eell_RL} donne l'amplitude de chaque canal :
+Ces deux canaux n'ont pas la même amplitude. Par simplicité, on suppose que l'amplitude d'un processus à n-photons évolue comme la $\text{n}^{\text{i\`{e}me}}$ puissance du champ fondamental. Cette approximation est un développement perturbatif à l'ordre le plus bas, qui a de nombreuses limitations pour la description de la GHOE, comme l'absence de plateau. On verra qu'elle permet toutefois de comprendre les comportements observés. Dans cette approximation, l'expression \ref{eq:Eell_RL} donne l'amplitude de chaque canal :
 \[ E_{(n_R,n_L)} \propto \left(\frac{1+\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^{n_R}\left(\frac{1-\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^{n_L}\]
 donc son intensité est :
 \[ I_{(n_R,n_L)} \propto \left(\frac{1+\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^{2n_R}\left(\frac{1-\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^{2n_L}\]
 
 On somme alors les deux canaux pondérés par $I_{(n_R,n_L)}$ pour obtenir la valeur moyenne du MAS de chaque harmonique :
 \begin{align}
-<s_q> &= \frac{I_{(\frac{q+1}{2},\frac{q-1}{2})} s_{(\frac{q+1}{2},\frac{q-1}{2})}+I_{(\frac{q-1}{2},\frac{q+1}{2})} s_{(\frac{q-1}{2},\frac{q+1}{2})}}{I_{(\frac{q+1}{2},\frac{q-1}{2})}+I_{(\frac{q-1}{2},\frac{q+1}{2})}}\nonumber\\
+<s_q> &= \frac{I_{(\frac{q+1}{2},\frac{q-1}{2})}\times s_{(\frac{q+1}{2},\frac{q-1}{2})}+I_{(\frac{q-1}{2},\frac{q+1}{2})} \times s_{(\frac{q-1}{2},\frac{q+1}{2})}}{I_{(\frac{q+1}{2},\frac{q-1}{2})}+I_{(\frac{q-1}{2},\frac{q+1}{2})}}\nonumber\\
 &= \frac{\left(\frac{1+\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^{q+1}\left(\frac{1-\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^{q-1}
 -
 \left(\frac{1+\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^{q-1}\left(\frac{1-\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^{q+1}
@@ -238,7 +256,7 @@ I_q &= \frac{1}{2}\left[\left(\frac{1+\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^
 \label{eq:I_q}
 \end{align}
 
-Ces deux quantités sont tracées sur la figure \ref{fig:mas_photon}. Ce modèle simple reproduit qualitativement les mesures de \mycite{AntoinePRA1997} et \mycite{budilPRA1993} (figures \ref{fig:antoinepra} et \ref{Fig:budil}) : l'ellipticité harmonique augmente avec l'ellipticité du fondamental, et l'efficacité du processus décroît exponentiellement. On retrouve également la décroissance de l'efficacité plus rapide pour les ordres plus élevés, due à au terme en puissance de $q$ dans l'équation \ref{eq:I_q}. Ce modèle ne décrit par contre pas l'évolution du MAS entre différents ordres harmoniques, l'équation \ref{eq:mas_q} ne dépendant pas de $q$.
+Ces deux quantités sont tracées sur la figure \ref{fig:mas_photon}. Ce modèle simple reproduit qualitativement les mesures de \mycite{AntoinePRA1997} et \mycite{budilPRA1993} (figures \ref{fig:antoinepra} et \ref{Fig:budil}) : l'ellipticité harmonique augmente avec l'ellipticité du fondamental, et l'efficacité du processus décroît exponentiellement. On retrouve également la décroissance de l'efficacité plus rapide pour les ordres plus élevés, due à au terme en puissance de $q$ dans l'équation \ref{eq:I_q}. Ce modèle ne décrit par contre pas l'évolution du MAS entre différents ordres harmoniques, et ne donne pas $s_q<\epsilon_0$ comme l'expérience. Ces deux écarts sont dus au traitement perturbatif utilisé, qui est peu adapté à la description de la GHOE.
 
 \begin{figure}[!ht]
 \centering
@@ -248,7 +266,9 @@ Ces deux quantités sont tracées sur la figure \ref{fig:mas_photon}. Ce modèle
 \label{fig:mas_photon}
 \end{figure}
 
-\chapter{Harmoniques elliptiques produites par GHOE résonante}
+Il apparaît donc que pour générer efficacement un rayonnement polarisé elliptiquement, il faut s'écarter des hypothèses de ce modèle. Nous avons choisi de jouer sur l'étape de recombinaison, ce qui comme on le verra au chapitre suivant donne le temps au paquet d'onde électronique d'exciter efficacement un dipôle perpendiculaire. 
+
+\chapter{Harmoniques de polarisation fortement elliptiques produites par GHOE résonante à partir d'un faisceau polarisé elliptiquement}
 Nous présentons ici notre méthode pour produire un rayonnement ultraviolet polarisé elliptiquement. Cette source a été développée pour l'étude de la photoionisation de molécules. Ces travaux, ainsi que la totalité du reste de ce chapitre, ont été réalisés au CELIA Bordeaux en collaboration avec l'équipe de Yann Mairesse. Les résultats correspondant aux parties \ref{sec:sf6ghoe} à \ref{sec:results_fenchone} ont été publiés dans \mycite{FerreNP2015}, Article \ref{pap:FerreNP2015} inclus dans cette thèse.
 
 L'idée ici est de modifier la dynamique électronique dans la GHOE non pas en structurant le champ laser, mais en utilisant le potentiel de la molécule lui-même. En particulier, ce potentiel peut être structuré par la présence de \textit{résonances}. Ces phénomènes ont été très largement étudiés dans le cadre de la photoionisation, et se manifestent en général par une augmentation de la section efficace d'absorption pour une énergie de photon précise. Cette énergie résonante coïncide avec l'énergie nécessaire à un des canaux d'ionisation de la molécule, ce qui ouvre ce canal et augmente la section efficace. Cette augmentation dépend de la force d'oscillateur de cette transition. De nombreux mécanismes sont connus et documentés par des études réalisées sur synchrotron, peuvent impliquer un ou plusieurs électrons, ou encore apparaître en dessous ou au dessus du seuil d'ionisation.
@@ -256,7 +276,7 @@ L'idée ici est de modifier la dynamique électronique dans la GHOE non pas en s
 La photoionisation est le processus conjugué à la recombinaison radiative. Il est donc naturel que des effets des résonances moléculaires soient visibles en GHOE, où la recombinaison joue un rôle central. Une résonance peut avoir des effets très variés sur la GHOE. L'étape résonante peut être soit l'ionisation, par exemple dans le cas d'une résonance multiphotonique \mycite{AckermannOE2012,ChuPRA2013}, soit à la recombinaison, qui peut être magnifiée par une résonance de forme ou par un piégeage dans un état de Rydberg \mycite{TaeibPRA2003,TudorovskayaPRA2011}. La présence d'une résonance empêche souvent de réaliser l'approximation de champ fort et met en défaut le modèle à trois étapes \mycite{StrelkovPRL2010}. Commençons par étudier le cas de l'argon.
 
 \section{Génération résonante dans l'argon : cas des résonances sous le seuil}
-\subsection{Mécanismes résonants autour du seuil}
+\subsection{Mécanismes résonants proche du seuil}
 La figure \ref{fig:ArIp} montre la section efficace de photoabsorption de l'argon. On y voit une série de pics d'absorption en dessous du seuil d'ionisation, qui correspondent aux états de Rydberg de l'atome.
 
 \begin{figure}[!ht]
@@ -389,7 +409,8 @@ Pour les mêmes raisons qu'expliqué auparavant, il est avantageux d'utiliser un
 
 En conclusion, nous avons construit une source de rayonnement ultraviolet ultra-bref polarisé circulairement. Chaque harmonique considérée séparément a en effet une durée de l'ordre de la durée de l'impulsion de génération, c'est-à-dire $\simeq 20$ femtosecondes, ce qui en fait une alternative particulièrement intéressante aux sources synchrotrons malgré son flux moindre. Comparé aux lasers à électron libre, eux aussi capables de produire des polarisation circulaires \mycite{AllariaPRX2014}, le flux est bien sûr bien moindre, mais le taux de répétition et la résolution temporelle fournis par la GHOE sont très avantageux pour des mesures de spectroscopie moléculaire. Dans la suite nous démontrerons ce point en effectuant des expériences de photoionisation sur des molécules chirales. 
 %
-\chapter{Polarisation circulaire et chiralité}
+\chapter{Mesures de PECD avec une source d'harmoniques d'ordre élevé polarisées elliptiquement}
+\label{CH:PECD}
 \section{Définitions de la chiralité}
 \subsection{Molécules chirales}
 Le concept de polarisation de la lumière est historiquement lié à celui de la \textit{chiralité}. En 1808, Malus observa que la lumière réfléchie par une substance diaphane possédait une polarisation (mot qu'il introduisit en 1810). Cette polarisation était mise en évidence par une transmission à travers un cristal de calcite. Cette propriété fut observée par Arago dans des cristaux de quartz, avant d'être étudiée par Biot qui en 1812 montra que différents types de quartz tournaient la direction de polarisation soit à droite soit à gauche, propriété appelée \textit{activité optique}. Il mesura le même effet dans des substances organiques telles que des molécules de camphre. En 1848, Pasteur relia cette propriété optique à la géométrie du cristal ou de la molécule considérée. Il émit l'idée que certaines molécules existaient sous des formes géométriques dissymétriques tout en ayant les mêmes propriétés chimiques. Le mot de \textit{chiralité} fut introduit en 1893 par Lord Kelvin durant la deuxième "Robert Boyle Lecture" à l'université d'Oxford \mycite{kelvin1894} :
@@ -541,7 +562,6 @@ Cette haute sensibilité au détails fins du potentiel moléculaire peut être e
 
 Nous avons jusque ici mentionné des études réalisées sur synchrotron. Ces travaux présentent une très bonne résolution spectrale, mais faute de source adaptée, aucune étude \textit{dynamique} du PECD n'a été réalisée. Nous allons utiliser la source présentée en partie \ref{CH:Circular_HHG} à cet effet.
 %
-\chapter{Mesures de PECD avec une source d'harmoniques d'ordre élevé}
 \section{Dispositif expérimental}
 \subsubsection{Source de lumière}
 Nous utilisons la source décrite en partie \ref{CH:Circular_HHG}, dont nous rappelons brièvement les propriétés : le système laser Aurore délivre des impulsions à $\simeq$800 nm, qui sont doublées dans un cristal de BBO de type 1 de 200 $\si{\micro\metre}$. On dispose alors d'impulsions de 1 mJ à 404 nm à une fréquence de 1 kHz. Pour mesurer un PECD, il est pratique d'alterner successivement polarisations circulaires droite et gauche et de faire la différence entre elles, de sorte à éviter des effets de dérive lente. Pour ce faire, il faut alterner la polarisation du champ de génération à 404 nm. On utilise une lame demi-onde d'ordre 0 large bande placée avant une lame quart d'onde. L'orientation de la lame quart d'onde est fixe selon l'axe vertical. On peut ainsi tourner la lame demi-onde d'un angle $\pm\beta/2$ pour obtenir une ellipticité $\epsilon_0 = \pm \tan\beta$, tout en gardant l'axe de l'ellipse vertical après les lames d'onde. On choisit ici $\epsilon_0 = \pm 0.3$. La figure \ref{fig:waveplates} illustre le fonctionnement du dispositif. Le rayonnement est ensuite focalisé dans un jet de \sf6 par lentille de $\text{SiO}_2$ de 50 cm de focale. Les harmoniques générées sont alors polarisées elliptiquement et d'ellipticité de même signe que celui du fondamental. Les valeurs d'ellipticité apparentes ont été présentées plus haut (voir figure \ref{fig:sf6_ell}).
@@ -631,7 +651,7 @@ En conclusion, ces mesures démontrent la possibilité de mesurer un PECD à par
 
 Nous terminerons cette partie par une autre vision du PECD : à la place d'effectuer la spectroscopie d'une molécule grâce à la lumière, nous allons chercher à caractériser l'état de polarisation du rayonnement harmonique grâce à une molécule chirale.
 
-\chapter{Le PECD comme outil de caractérisation du rayonnement}
+\chapter{Le PECD comme outil de caractérisation de l'état de polarisation du rayonnement}
 \section{Le PECD en polarisation elliptique}
 Jusqu'à présent, nous avons décrit le PECD en supposant que le rayonnement harmonique était quasi-circulaire. Ce n'est pas exact pour trois raisons :
 
@@ -710,7 +730,7 @@ Sur la ligne DESIRS, la polarisation de la lumière est contrôlée à l'aide de
 
 Pour la mesure de PECD, le polarimètre est retiré et le champ est envoyé dans la zone d'interaction du spectromètre VMI Delicious. Ce spectromètre est amélioré par rapport à celui présenté plus haut car il est capable de mesurer à la fois la distribution de vecteur vitesse des électrons et le temps de vol des ions créés par le champ VUV. Le temps de vol donne la masse des ions, ce qui permet d'effectuer une analyse de corrélation et de sélectionner les électrons provenant d'une espèce donnée. On résout également les différents rapports de branchement de l'espèce chirale, même si nous ne nous sommes pas encore intéressés à cette quantité.
 
-\subsection{Comparaison entre PECD en polarisation elliptique ou circulaire}
+\subsection{Comparaison de mesures de PECD en polarisation elliptique et circulaire}
 Commençons par étudier expérimentalement l'effet d'une polarisation elliptique sur la mesure de PECD. Comme expliqué plus haut, la polarisation du rayonnement synchrotron est modifiée en ajustant les paramètres de l'onduleur puis mesurée par le polarimètre VUV. On se place à une énergie de photon de 9.3 eV (énergie de la troisième harmonique dans la mesure réalisée au CELIA), et on choisit un rayonnement purement circulaire ou bien elliptique. Le champ elliptique a les paramètres de Stokes suivants :
 \[ s_1=0.53\quad s_2=0.03\quad s_3=0.82, \]
 ce qui correspond à une ellipse de polarisation tournée de $\eta=1.61$\degres~et d'ellipticité $\epsilon = 0.54$ (voir formules \ref{eq:stokes2inv}), tracée plus bas sur la figure \ref{fig:circ_ell_b0} .
@@ -737,7 +757,7 @@ Sur la figure \ref{fig:circ_ell_b1} est représenté le paramètre dichroïque $
 
 On voit que là où le signal est significatif (entre $\simeq8.5$ et $\simeq 9$ eV), les deux courbes de $b_1$ sont très ressemblantes, à un facteur de proportionnalité près. Sur la largeur à mi-hauteur du pic, on mesure $b_1^{\text{ell}}/b_1^{\text{circ}} = 0.83 \pm 0.03$. Rappelons qu'on a mesuré $s_3^{\text{ell}} = 0.82$ et que la ligne fournit en moyenne $s_3^{\text{circ}} \simeq 1$. Le PECD évoluant linéairement en $s_3$, on s'attend donc à une valeur théorique de $b_1^{\text{ell}}/b_1^{\text{circ}} \simeq 0.82$, ce qui est tout à fait dans notre intervalle de confiance. Nous avons donc vérifié expérimentalement la dépendance du PECD pour une polarisation imparfaite telle que celle du rayonnement harmonique.
 
-\subsection{Mesures de $b_1$ aux énergies harmoniques}
+\subsection{Mesures de PECD aux énergies harmoniques}
 Nous présentons ici les mesures réalisées aux énergies correspondant aux harmoniques de la source présentée à la partie \ref{sec:sf6ghoe} : 9.3 eV (H3), 15.5 eV (H5) et 21.7 eV (H7). Nous avons également mesuré le PECD de la fenchone aux énergies correspondant à H4 et H6, ainsi que dans la zone 9.3 à 11.5 eV. Ces mesures, non présentées ici, serviront de données de référence pour de futures expériences dans lesquelles on prévoit d'observer des dynamiques vibrationnelles grâce au PECD résolu en temps.
 
 \begin{figure}[!ht]
@@ -837,5 +857,5 @@ Toutefois, nous montrons ici la possibilité de réaliser une caractérisation d
 \item Un polarimètre a été installé juste après le VMI. Il permet de réaliser des loi de Malus et de mesurer $s_1$, $s_2$, et la borne supérieure $s_3^{\text{max}}$. Il est également adapté à la mesure des paramètres de la troisième harmonique, ce qui n'était pas le cas jusqu'à présent (voir figure \ref{fig:sf6_ell}). Les mesures de PECD et de loi de Malus seront effectuées dans des conditions identiques, ce qui permettra de déterminer $\eta$, $P$, et $\epsilon$. 
 \end{itemize}
 
-\chapternonum{Conclusion et perspectives}
+\section*{Conclusion et perspectives}
 Dans cette partie, nous avons d'abord développé une source d'harmoniques d'ordre élevé polarisées elliptiquement. En plus du contrôle du moment angulaire orbital, démontré à la partie précédente, nous contrôlons ici le moment angulaire de spin dans le domaine ultraviolet. En tant qu'objet chiral, la lumière polarisée circulairement est sensible à la chiralité de molécules, ce que nous avons démontré en effectuant des mesures de dichroïsme circulaire de photoélectron. Nous avons réalisé ces mêmes mesures sur un synchrotron, source de lumière parfaitement caractérisée. La comparaison entre les deux montre d'abord que les deux sources donnent des mesures spectroscopiques comparables. Nous avons ensuite étudié la possibilité de caractériser l'état de polarisation de notre source harmonique grâce au PECD.
