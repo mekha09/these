@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% Creator: Inkscape 0.48.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'setupG_wbitmap.pdf' (pdf, eps, ps)
 %%
@@ -49,19 +49,20 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.29636793)%
-    \put(0.51128442,0.0527796){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Lame de}}}%
+    \put(0,0){\includegraphics[width=\unitlength]{setupG_wbitmap.pdf}}%
+    \put(0.51128443,0.0527796){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Lame de}}}%
     \put(0.90921425,0.23486041){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{MCP +}}}%
-    \put(0.12170651,0.27763949){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Lentille de}}}%
-    \put(0.29259514,0.27430872){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Jet de gaz}}}%
-    \put(0.48062313,0.24138461){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Miroir torique}}}%
-    \put(0.87135426,0.03432147){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Réseau de}}}%
-    \put(0.1549046,0.0480157){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Iris \O}}}%
-    \put(0.17014608,0.09675577){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Lame $\lambda$/2}}}%
-    \put(0.15839886,0.13744707){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Polariseurs}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{setupG_wbitmap.pdf}}%
-    \put(0.12305818,0.2473889){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{focalisation}}}%
-    \put(0.51128442,0.02275754){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{silice}}}%
-    \put(0.87135426,0.00253341){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{diffraction}}}%
+    \put(0.12170654,0.27763949){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Lentille de}}}%
+    \put(0.29259516,0.27430872){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Jet de gaz}}}%
+    \put(0.48062314,0.24138462){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Miroir torique}}}%
+    \put(0.87135426,0.03432148){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Réseau de}}}%
+    \put(0.15490463,0.04801571){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Iris \O}}}%
+    \put(0.1701461,0.09675578){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Lame $\lambda$/2}}}%
+    \put(0.15839888,0.13744707){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Polariseurs}}}%
+    \put(0.1230582,0.2473889){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{focalisation}}}%
+    \put(0.51128443,0.02275755){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{silice}}}%
+    \put(0.87135426,0.00253342){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{diffraction}}}%
     \put(0.90921425,0.20837036){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Phosphore}}}%
+    \put(0.71560542,0.27483244){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Temps de vol}}}%
   \end{picture}%
 \endgroup%

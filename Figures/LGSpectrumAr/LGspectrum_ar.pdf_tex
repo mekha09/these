@@ -51,7 +51,7 @@
   \begin{picture}(1,0.74231738)%
     \put(0,0){\includegraphics[width=\unitlength]{LGspectrum_ar.pdf}}%
     \put(0.03320057,0.45484859){\rotatebox{90}{\makebox(0,0)[b]{\smash{Dimension Spatiale (mm)}}}}%
-    \put(0.48188615,0.01474363){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{\'Energie de photon\footnotemark[1] (eV)}}}%
+    \put(0.48188615,0.01474363){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{\'Energie de photon$^1$ (eV)}}}%
     \put(0.07707073,0.1433669){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{-1}}}%
     \put(0.07953927,0.21272237){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{0}}}%
     \put(0.08264284,0.28183032){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[b]{\smash{1}}}%

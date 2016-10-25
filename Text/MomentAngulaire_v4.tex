@@ -16,7 +16,7 @@ Par exemple, considérons un ensemble de particules soumises à un ensemble de f
 \forall i,\;m\ddot{x}_i = F_i.
 \end{equation}
 C'est un système d'équations différentielles du second d'ordre qui peut se ramener à un système du premier ordre en considérant les variables $(x_i,\dot{x}_i)$. En effet, le terme de gauche de \ref{eq:newton} est la dérivée de la quantité
-$p_i=m\dot{x}_i=\partial T/\partial\dot{x}_i$, où $T$ est l'énergie cinétique. Le terme droite est quant à lui la dérivée de l'énergie potentielle, $\partial U/\partial x_i$. Dans ces coordonnées, $T$ est indépendant de $x_i$ et $U$ est indépendant de $\dot{x}_i$. On définit alors le \textbf{Lagrangien} $L=T-U$, qui est une fonction des $x_i$ et des $\dot{x}_i$, et on réécrit \ref{eq:newton} :
+$p_i=m\dot{x}_i=\partial T/\partial\dot{x}_i$, où $T$ est l'énergie cinétique. Le terme de droite est quant à lui la dérivée de l'énergie potentielle, $\partial U/\partial x_i$. Dans ces coordonnées, $T$ est indépendant de $x_i$ et $U$ est indépendant de $\dot{x}_i$. On définit alors le \textbf{Lagrangien} $L=T-U$, qui est une fonction des $x_i$ et des $\dot{x}_i$, et on réécrit \ref{eq:newton} :
 \begin{equation}
 \label{eq:lag}
 \frac{d}{dt}\frac{\partial L}{\partial \dot{x}_i}-\frac{\partial L}{\partial x_i}=0,
@@ -103,7 +103,7 @@ $J$ est le \textit{moment angulaire} du système. Il est clair que sa valeur dé
 &= \sum_i\bm{r}_i\times\bm{p}_i+\bm{V}t\times\bm{P}+\sum_i m_i\bm{r}_i\times\bm{V} \\
 &= \bm{S} + M \bm{R}_{cdm}\times\bm{V} = \bm{S} + \bm{R}_{cdm}\times\bm{P}.
 \end{align}
-où $M=\sum_i m_i$ est la masse totale du système et $\bm{R}_{cdm}$ la position du centre de masse. On décompose donc le moment angulaire total en deux parties : $\bm{S}$, qui est indépendante du choix du repère, et $\bm{R}_{cdm}\times\bm{P}$.
+où $M=\sum_i m_i$ est la masse totale du système et $\bm{R}_{cdm}$ la position du centre de masse. On décompose donc le moment angulaire total en deux parties : $\bm{S}=\sum_i\bm{r}_i\times\bm{p}_i$, qui est indépendante du choix du repère, et $\bm{R}_{cdm}\times\bm{P}$.
 
 \section{Les propriétés mécaniques de la lumière}
 Comme nous l'avons fait pour la matière, nous établissons ici les expressions de l'énergie, de la quantité de mouvement et du moment angulaire associé à un rayonnement électromagnétique.
@@ -262,12 +262,13 @@ Intéressons nous maintenant au moment angulaire porté par ces ondes planes. L'
 &=\frac{1}{\mu_0}(\bm{r}\times[\bm{E}\times\bm{B}])\cdot\bm{e_z}
 \end{align}
 Il est clair que pour une onde plane $\bm{J_z}$ s'annule. Ceci contredit ce qui est observé dans l'expérience de Beth \mycite{BethPR1936} déjà mentionnée. En fait, ce cas est singulier : $\Pi_x$ et $\Pi_y $ sont nuls alors que l'extension transverse de l'onde est infinie. On est donc confrontés à une indétermination du type $0\times \infty$. 
-Ce problème peut être résolu en restreignant le problème à un volume $V$ où l'on prend en compte rigoureusement les effets de bords, puis en faisant tendre les dimensions du volume vers l'infini : voir \mycite{StewartEJP2005}. Une autre approche intéressante est celle de \mycite{MansuripurOE2005}, qui considère 4 ondes planes se propageant avec un angle $\theta$ par rapport à $z$ dans chacun des quadrants de $(x,y)$. Chacune de ces ondes ayant un vecteur d'onde formant un angle avec $z$, $\bm{J_z}$ est non nul. Quand on somme le moment angulaire de ces 4 ondes, si $\theta$ est assez petit on obtient une quantité ne dépendant pas de $\theta$. Il reste ensuite à faire tendre $\theta$ vers 0 pour retrouver l'onde plane comme cas limite, avec un moment angulaire non nul.
+Ce problème peut être résolu en restreignant le problème à un volume $V$ où l'on prend en compte rigoureusement les effets de bords, puis en faisant tendre les dimensions du volume vers l'infini : voir \mycite{StewartEJP2005}. Une autre approche intéressante est celle de \mycite{MansuripurOE2005}, qui considère 4 ondes planes polarisées circulairement se propageant avec un angle $\theta$ par rapport à $z$ dans chacun des quadrants de $(x,y)$. Chacune de ces ondes ayant un vecteur d'onde formant un angle avec $z$, $\bm{J_z}$ est non nul. Quand on somme le moment angulaire de ces 4 ondes, si $\theta$ est assez petit on obtient une quantité ne dépendant pas de $\theta$. Il reste ensuite à faire tendre $\theta$ vers 0 pour retrouver l'onde plane comme cas limite, avec un moment angulaire non nul.
 
 Remarquons pour terminer que dans l'expérience de Beth, la lumière transmet du moment angulaire à un objet qui se met à tourner \textit{sur lui-même}, et pas par rapport au centre du faisceau. Ceci est cohérent avec la structure d'une onde plane : dans le plan transverse, son profil ne dépend pas du tout des coordonnées $(x,y)$. C'est bien sa polarisation, c'est-à-dire sa structure vectorielle intrinsèque, qui lui donne du moment angulaire. 
 
 \section{L'approximation paraxiale}
-En optique géométrique, un rayon est appelé \textit{paraxial} son inclinaison par rapport à l'axe optique est faible. En optique ondulatoire paraxiale, le spectre angulaire d'une onde doit être composé d'ondes planes paraxiales par rapport à la direction de propagation de l'onde. Cette condition est vérifiée dans la plupart des expériences de GHOE. Nous allons voir qu'elle permet de simplifier l'équation d'Helmholtz et d'en trouver des solutions.\par
+\label{sec:app_paraxiale}
+En optique géométrique, un rayon est appelé \textit{paraxial} si son inclinaison par rapport à l'axe optique est faible. En optique ondulatoire paraxiale, le spectre angulaire d'une onde doit être composé d'ondes planes paraxiales par rapport à la direction de propagation de l'onde. Cette condition est vérifiée dans la plupart des expériences de GHOE. Nous allons voir qu'elle permet de simplifier l'équation d'Helmholtz et d'en trouver des familles de solutions.\par
 Dans l'approximation paraxiale, on appelle axe optique la direction de propagation de l'onde et on le note $\bm{e}_z$. La coordonnée selon cet axe sera notée $z$. Dans ces conditions, on peut transformer l'équation d'Helmholtz vectorielle en équation scalaire.  Pour ce faire, on considère une onde de polarisation transverse à l'axe optique. Son vecteur de polarisation est alors dans le plan perpendiculaire à l'axe $\bm{e}_z$. On écrit alors:
 \begin{equation}
 \bm{\mathcal{V}}=\bm{t}\xi(\bm{r},z),
@@ -304,7 +305,7 @@ Cette inégalité est vérifiée si le profil varie lentement avec $z$ à l'éch
 \left|\frac{\partial^2}{\partial z^2} u\right|\ll\left|\nabla_t^2 u \right|
 \label{eq:para7}
 \end{equation}
-Comme noté par \mycite{LaxPRA1975}, cette condition est problématique si on choisit $\bm{\mathcal{V}}=\bm{E}$, le champ électrique. Un champ électrique dans le vide a une divergence nulle. S'il est de plus transverse, il n'a pas de composante selon $\bm{e}_z$ et sa divergence dans la direction transverse est nulle : $\nabla_{\bm{t}} E=0$. On a donc $\nabla_{\bm{t}}^2 u=0$, ce qui empêche de vérifier l'inégalité \ref{eq:para7}. \mycite{DavisPRA1979} montre que ce problème peut être contourné en considérant à la place le potentiel vecteur $\bm{A}$ dans la jauge de Lorenz. Il est défini par :
+Comme noté par \mycite{LaxPRA1975}, cette condition est problématique si on choisit $\bm{\mathcal{V}}=\bm{E}$, le champ électrique. Un champ électrique dans le vide a une divergence nulle. S'il est de plus transverse, il n'a pas de composante selon $\bm{e}_z$ et sa divergence dans la direction transverse est nulle : $\nabla_{\bm{t}} E=0$. On a donc $\nabla_{\bm{t}}^2 u=0$, ce qui empêche de vérifier l'inégalité \ref{eq:para7}. \mycite{DavisPRA1979} montre que ce problème peut être contourné en considérant à la place de $\bm{E}$ le potentiel vecteur $\bm{A}$ dans la jauge de Lorenz. Il est défini par :
 \begin{equation}
 \bm{B} = \bm{\nabla}\times\bm{A},
 \label{eq:para8}
@@ -587,7 +588,7 @@ où $\hat{H}$ est l'hamiltonien du système. On a donc :
 \begin{equation}
 \hat{U}(t+dt,t)\ket{\psi(t)} = \ket{\psi(t+\rmd t)} = (\hat{1}-\frac{\rmi}{\hbar} \hat{H}\rmd t)\ket{\psi(t)}.
 \end{equation}
-Ceci montre que si $\hat{U}$ et $\hat{Q}$ commutent, alors $\hat{H}$ et $\hat{Q}$ aussi. Les symétries du système sont toutes les opérations qui commutent avec son hamiltonien :
+Ceci montre que la commutation de $\hat{U}$ et $\hat{Q}$ est équivalente à celle de $\hat{H}$ et $\hat{Q}$. Les symétries du système sont toutes les opérations qui commutent avec son hamiltonien :
 \begin{equation}
 [\hat{H},\hat{Q}]=0.
 \end{equation}
@@ -760,7 +761,7 @@ Nous avons vu à la partie \ref{sec:classicallightam} que le moment angulaire d'
 \bm{J}=\int{\epsilon_0\bm{r}\times(\bm{E}\times\bm{B})\rmd\bm{r}}.
 \label{Eq.JClassEM}
 \end{equation} 
-Nous cherchons à identifier deux contributions à $\bm{J}$, dont l'une serait intrinsèque, c'est-à-dire dépendante de l'origine des coordonnées. On pourrait alors écrire $\bm{J}=\bm{L}+\bm{S}$. Pour y parvenir, nous séparons $\bm{E}$ et $\bm{B}$ en leurs parties longitudinales et transverses. Un champ $\bm{U}$ est longitudinal (resp. transverse) s'il vérifie $\bm{\nabla}\times\bm{U}=0$ (resp. $\nabla\cdot\bm{U}=0$). On note\footnote{Notons que tout champ vectoriel $\bm{U}$ admet une décomposition en partie longitudinale et transverse. En effet, si on note $\bm{U}=\bm{U'}+\bm{\nabla}\times\bm{U}$, alors $\bm{\nabla}\times\bm{U'}=0$ et $\nabla\cdot(\bm{\nabla}\times\bm{U})=0$. On a donc bien $\bm{U}=\bm{U}_{\parallel}+\bm{U}_{\bot.}$} :
+Nous cherchons à identifier deux contributions à $\bm{J}$, dont l'une serait intrinsèque, c'est-à-dire indépendante de l'origine des coordonnées. On pourrait alors écrire $\bm{J}=\bm{L}+\bm{S}$. Pour y parvenir, nous séparons $\bm{E}$ et $\bm{B}$ en leurs parties longitudinales et transverses. Un champ $\bm{U}$ est longitudinal (resp. transverse) s'il vérifie $\bm{\nabla}\times\bm{U}=0$ (resp. $\nabla\cdot\bm{U}=0$). On note\footnote{Notons que tout champ vectoriel $\bm{U}$ admet une décomposition en partie longitudinale et transverse. En effet, si on note $\bm{U}=\bm{U'}+\bm{\nabla}\times\bm{U}$, alors $\bm{\nabla}\times\bm{U'}=0$ et $\nabla\cdot(\bm{\nabla}\times\bm{U})=0$. On a donc bien $\bm{U}=\bm{U}_{\parallel}+\bm{U}_{\bot}$ avec $\bm{U}_{\parallel}=\bm{U'}$ et $\bm{U}_{\bot}=\bm{\nabla}\times\bm{U}$.} :
 \begin{equation}
 \bm{E}=\bm{E}_{\parallel}+\bm{E}_{\bot} \text{ et } \bm{B}=\bm{B}_{\parallel}+\bm{B}_{\bot},
 \end{equation}
@@ -768,7 +769,7 @@ où $\parallel$ et $\bot$ représentent respectivement la composante longitudina
 L'équation de Maxwell-Thomson, $\nabla\cdot\bm{B}=0$, montre que le champ magnétique est purement transverse : $\bm{B}=\bm{B}_{\bot}$. \par
 
 \subsubsection{Composante longitudinale}
-Considérons maintenant le système {lumière+particules}. La contribution de $E_{\parallel}$ au moment angulaire du système s'écrit : 
+Considérons maintenant le système {lumière+particules}. On se place dans les conditions paraxiales du chapitre \ref{sec:app_paraxiale}, avec $\bm{A}$ transverse : $\bm{A}=\bm{A}_{\bot}$. La contribution de $E_{\parallel}$ au moment angulaire du système s'écrit : 
 \begin{align}
 \bm{J}_{\parallel}&=\int{\epsilon_0\bm{r}\times(\bm{E}_{\parallel}\times\bm{B})\rmd\bm{r}}\nonumber\\
 &=\epsilon_0\int{\bm{r}\times(\bm{E}_{\parallel}\times\left[\bm{\nabla}\times\bm{A}_{\bot}\right])\rmd\bm{r}}\text{, où on a utilisé \ref{eq:para15}}%&=\epsilon_0\int{\left(\sum_{a=x,y,z} E^a_{\parallel}(\bm{r}\times\bm{\nabla})A^a_{\bot}-\bm{r}\times(\bm{E}_{\parallel}\cdot\bm{\nabla})\bm{A}_{\bot}\right)\rmd\bm{r}}.
@@ -914,7 +915,7 @@ où $i,j,k=x,y,z$ et $\epsilon_{ijk}$ est le symbole de Levi-Civita, défini par
 \right.
 \end{equation}
 
-Commençons par évaluer l'expression de $\hat{\bm{S}}$ dans la base des ondes planes. On choisit alors les $\bm{F}_{\beta}$ avec $\beta={k_x,k_y,k_z,\alpha}$, ce qui permet d'écrire $\bm{F}_{\bm{k}\alpha}=\bm{\epsilon}_{\bm{k}\alpha}e^{\rmi \bm{k}\cdot\bm{r}}$, où $\bm{\epsilon}_{\bm{k}\alpha}$ est un vecteur unitaire. On réécrit alors l'équation \ref{eqLS_QED} :
+\'Evaluons l'expression de $\hat{\bm{S}}$ dans la base des ondes planes. On choisit alors les $\bm{F}_{\beta}$ avec $\beta={k_x,k_y,k_z,\alpha}$, ce qui permet d'écrire $\bm{F}_{\bm{k}\alpha}=\bm{\epsilon}_{\bm{k}\alpha}e^{\rmi \bm{k}\cdot\bm{r}}$, où $\bm{\epsilon}_{\bm{k}\alpha}$ est un vecteur unitaire. On réécrit alors l'équation \ref{eqLS_QED} :
 \begin{align}
 \hat{\bm{S}} &= -\frac{\rmi\hbar}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(\hat{a}^{\dag}_{\bm{k}\alpha}\hat{a}_{\bm{k'}\alpha'}+\hat{a}_{\bm{k'}\alpha'}\hat{a}^{\dag}_{\bm{k}\alpha})}\int{\rmd\bm{r}\;\bm{\epsilon}^*_{\bm{k}\alpha}e^{-\rmi \bm{k}\cdot\bm{r}}\times\bm{\epsilon}_{\bm{k'}\alpha '}e^{\rmi \bm{k'}\cdot\bm{r}}}\nonumber\\
 &= -\frac{\rmi\hbar}{2}\sum_{\bm{k}\alpha,\bm{k'}\alpha'}{(\hat{a}^{\dag}_{\bm{k}\alpha}\hat{a}_{\bm{k'}\alpha'}+\hat{a}_{\bm{k'}\alpha'}\hat{a}^{\dag}_{\bm{k}\alpha})}\bm{\epsilon}^*_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k'}\alpha '}
@@ -927,7 +928,7 @@ On utilise alors la règle de commutation \ref{eq:commut_a} pour écrire :
 \begin{equation}
 \hat{\bm{S}} = -\rmi\hbar\sum_{\bm{k}\alpha,\alpha'}{\bm{\epsilon}^*_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '}(\hat{a}^{\dag}_{\bm{k}\alpha}\hat{a}_{\bm{k}\alpha'}+\frac{1}{2}\delta_{\alpha,\alpha'})}
 \end{equation}
-Cette expression est valable quelle que soit la base choisis pour les vecteurs de polarisation $\epsilon_{\bm{k}\alpha}$. Il est naturel de la choisir telle que $\bm{\epsilon}^*_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '}$ aient une forme simple. Par exemple, si on prend les deux vecteurs réels orthogonaux, $\bm{\epsilon}_{\bm{k}x}$ et $\bm{\epsilon}_{\bm{k}y}$, qui décrivent les deux polarisations linéaires, on a :
+Cette expression est valable quelle que soit la base choisie pour les vecteurs de polarisation $\epsilon_{\bm{k}\alpha}$. Il est naturel de la choisir telle que $\bm{\epsilon}^*_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '}$ aient une forme simple. Par exemple, si on prend les deux vecteurs réels orthogonaux, $\bm{\epsilon}_{\bm{k}x}$ et $\bm{\epsilon}_{\bm{k}y}$, qui décrivent les deux polarisations linéaires, on a :
 \begin{equation}
 \bm{\epsilon}^*_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '} = \pm\frac{\bm{k}}{|k|}(1-\delta_{\alpha,\alpha'}),
 \end{equation}
@@ -1026,7 +1027,7 @@ On trouve ainsi les valeurs de $s$ pour que le champ ne soit pas nul :
 		m = 1,\;s = 1&m = -1,\;s = -1\\
 		\hline
 		F_{\beta}^x ~= ~\rmi F_{\beta}^y ~= \exp{(\rmi k_zz)} & F_{\beta}^x ~= ~-\rmi F_{\beta}^y ~= \exp{(\rmi k_zz)}\\
-		\text{Onde circulaire gauche} & \text{Onde circulaire droite}\\
+		\text{Onde plane circulaire gauche} & \text{Onde plane circulaire droite}\\
 		\hline
 \end{array}\]
 Nous avons ainsi retrouvé les polarisations circulaires droites et gauches, contenues dans les fonctions $\bm{F}_{\beta}$. On obtient également leur moment angulaire en tant que valeur propre des opérateurs agissant sur l'espace $\ket{n_1}\otimes\ket{n_2}\otimes\ldots$ du champ quantifié :
@@ -1059,11 +1060,22 @@ F_{\beta}^z ~&\approx 0
 \end{equation}
 Les $\bm{F}_{\beta}$ constituent une base, on peut donc y décomposer un champ de LG d'indice $(\ell,p)$. Pour chaque composante du champ $i=x,y,z$, on écrit :
 \begin{align}
-\mathcal{LG}_{\ell,p}^i &= \sum_{\beta} \Braket{\mathcal{LG}_{\ell,p}^i|F_{\beta}^i}\ket{F_{\beta}^i} \nonumber\\
+\mathcal{LG}_{\ell,p}^i &= \sum_{\beta} \Braket{F_{\beta}^i}\ket{\mathcal{LG}_{\ell,p}^i|F_{\beta}^iF_{\beta}^i} \nonumber\\
 &= \sum_{\beta} \left[\int_{\rho,\phi}{(\mathcal{LG}_{\ell,p}^i)^*\cdot F_{\beta}^i\;\rmd V}\right]\ket{F_{\beta}^i}.
 \label{eq:lg_quant1}
 \end{align}
-Remarquons maintenant que $\mathcal{LG}_{\ell,p}^i \propto e^{\rmi \ell \phi}$ et $F_{\beta}^i \propto e^{\rmi (m-1) \phi}$. Ce sont là les seules dépendances azimutales. Ainsi, l'intégrale dans \ref{eq:lg_quant1} seulement si $m = \ell+1$. On obtient donc le moment angulaire d'un mode de Laguerre-Gauss polarisé circulairement gauche : son MAS vaut $s\hbar=\hbar$, son MA total vaut $m\hbar=(\ell+s)\hbar$, et son MA orbital vaut $(m-s)\hbar = \ell\hbar$. 
+Remarquons maintenant que $\mathcal{LG}_{\ell,p}^i \propto e^{\rmi \ell \phi}$ et $F_{\beta}^i \propto e^{\rmi (m-1) \phi}$. Ce sont là les seules dépendances azimutales. Ainsi, l'intégrale dans \ref{eq:lg_quant1} est non nulle si et seulement si $m = \ell+1$. On obtient donc le moment angulaire d'un mode de Laguerre-Gauss polarisé circulairement gauche : son MAS vaut $s\hbar=\hbar$, son MA total vaut $m\hbar=(\ell+s)\hbar$, et son MA orbital vaut $(m-s)\hbar = \ell\hbar$. 
+\[
+\begin{array}{|c|c|}
+		\hline
+		m = \ell+1,\;s = 1&m = \ell-1,\;s = -1\\
+		\hline
+		\text{LG circulaire gauche} & \text{LG circulaire droite}\\	&\\
+\hat{J}_z\ket{\mathcal{LG}_{\ell,p}^L} = (\ell+1)\hbar\ket{\mathcal{LG}_{\ell,p}^L} & \hat{J}_z\ket{\mathcal{LG}_{\ell,p}^L} = (\ell-1)\hbar\ket{\mathcal{LG}_{\ell,p}^L}\\
+\hat{S}_z\ket{\mathcal{LG}_{\ell,p}^L} = \hbar\ket{\mathcal{LG}_{\ell,p}^L} & \hat{S}_z\ket{\mathcal{LG}_{\ell,p}^L} = -\hbar\ket{\mathcal{LG}_{\ell,p}^L} \\
+\hat{L}_z\ket{\mathcal{LG}_{\ell,p}^L} = \ell\hbar\ket{\mathcal{LG}_{\ell,p}^L} & \hat{L}_z\ket{\mathcal{LG}_{\ell,p}^L} = \ell\hbar\ket{\mathcal{LG}_{\ell,p}^L}\\
+	\hline
+\end{array}\]
 
 De même que pour les ondes planes polarisées circulairement, les valeurs propres sont ici discrètes. Dans l'approximation paraxiale, la séparation $J_z=L_z+S_z$ est également légitime. Ainsi, on peut générer un mode ne portant que du moment angulaire orbital : la somme de deux modes de LG de même $\ell$, l'un polarisé gauche et l'autre droit, donne un MAS de 0 et un MAO de $\ell$.  
 
@@ -1102,7 +1114,7 @@ où on a noté
 On vient de réaliser une \textit{expansion multipolaire} du champ électromagnétique. Le premier terme de \ref{eq:hint2} disparaît pour un système neutre. Les suivants décrivent respectivement une interaction dipolaire électrique, une dipolaire magnétique, une quadripolaire électrique, puis tous les $2^j$-polaires électriques et magnétiques. $a/\lambda$ étant faible, le premier terme non nul domine en général tous les suivants et on dit que la transition $i\rightarrow f$ est $2^j$-polaire électrique ou magnétique.
 
 \section{Règles de sélection}
-Un photon absorbé ou émis dans une transition $2^j$-polaire a des propriétés particulières. On montre en effet \mycite{Landau1982a} qu'il a une parité $P=(-1)^j$ pour un multipôle électrique, $P=(-1)^{j+1}$ pour un multipôle magnétique, et un moment angulaire égal à $j$. Bien sûr, la transition $i\rightarrow f$ doit respecter la conservation de la parité et du moment angulaire total (voir section \ref{symqm}). Ceci impose des conditions à $\psi_i$ et $\psi_f$, appelées \textit{règles de sélection}. Si $l_i$, $\pi_i$, $l_f$, $\pi_f$ sont les moment angulaires et parités de $\psi_i$ et $\psi_f$, elles s'écrivent :
+Un photon absorbé ou émis dans une transition $2^j$-polaire a des propriétés particulières. On montre en effet \mycite{Landau1982a} qu'il a une parité $P=(-1)^j$ pour un multipôle électrique, $P=(-1)^{j+1}$ pour un multipôle magnétique, et un moment angulaire égal à $j$. Bien sûr, la transition $i\rightarrow f$ doit respecter la conservation de la parité et du moment angulaire total (voir section \ref{symqm}). Ceci impose des conditions à $\psi_i$ et $\psi_f$, appelées \textit{règles de sélection}. Si $l_i$, $\pi_i$, $l_f$, $\pi_f$ sont les moment angulaires et parités de $\psi_i$ et $\psi_f$, les règles de sélection habituelles s'écrivent \mycite{cohen} :
 \begin{align}
 l_f-l_i=\pm j\;\text{ et }\;\pi_f=P\pi_i.
 \end{align}
@@ -1186,7 +1198,6 @@ Notons toutefois que ces deux travaux utilisent des atomes ou des molécules fro
 Pour comprendre de manière intuitive les conclusions obtenues, considérons un faisceau de Laguerre-Gauss, dont l'expression est donnée par l'équation \ref{eq:lgmodes}. Si un atome de taille $a$ est placé à une distance $r\gg a$ du centre, la phase du faisceau est localement plate à l'échelle de l'atome. On retrouve donc le comportement d'une onde plane, où aucun MAO n'est transféré à l'atome. Si au contraire on veut que l'atome puisse ``voir'' la phase hélicoïdale, il faut le placer très près du centre, où le gradient de phase est le plus important. Malheureusement, c'est aussi là où l'intensité du faisceau tend vers zéro, rendant le transfert expérimental de MAO vers la dynamique interne de l'atome difficile. Une étude théorique à ce sujet a été effectuée par \mycite{PiconOE2010} : les auteurs considèrent un faisceau ultraviolet portant du MAO interagissant avec un atome à un électron. Leur calcul montre une modification des règles de sélection, mais en utilisant une intensité pic gigantesque, inatteignable en pratique ($\SI{6.8e18}{\W\per\centi\metre\squared}$ à 27.2 eV).
 
 Illustrons pour finir les conclusions de cette partie en citant le travail de \mycite{schmiegelowarxiv2015}. Pour observer des échanges de MAO supérieurs à 1, les auteurs ont utilisé un ion refroidi placé au centre du faisceau et une focalisation proche de la limite de diffraction. On vérifie facilement qu'au centre du faisceau le gradient d'un champ de Laguerre-Gauss est maximal, et c'est précisément lui qui intervient dans une transition quadripolaire. Les auteurs démontrent que ce gradient est suffisant pour exciter un ion \textit{in the dark} en mesurant une oscillation de Rabi (voir la figure \ref{Fig:Schmiegelow}), et s'en servent pour mesurer spatialement l'amplitude et le gradient du champ en déplaçant l'ion dans le faisceau.
-\newpage
 
 \begin{figure}[!ht]
 \centering
@@ -1196,4 +1207,4 @@ Illustrons pour finir les conclusions de cette partie en citant le travail de \m
 \end{figure}
 
 \section*{Conclusion de la partie II}
-Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans le chapitre III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans le chapitre IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.
+Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans la partie III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans la partie IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.
