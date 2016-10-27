@@ -151,3 +151,61 @@ On obtient donc simplement
 &=\epsilon_0\int{\bigl[\sum_{i=x,y,z} \bm{E}^i_{\bot}(\bm{r}\times\bm{\nabla})\bm{A}^i_{\bot}+\bm{E_{\bot}}\times\bm{A_{\bot}}\bigr]\rmd\bm{r}}.
 \label{eq:Jtranapp}
 \end{align}
+
+\chapter{Expression du dichroïsme circulaire d'absorption dans l'approximation dipolaire électrique et magnétique}
+\label{ann:dichroisme}
+Fresnel expliqua le phénomène d'activité optique par une différence de vitesse de propagation de la composante circulaire droite (notée D) et gauche (G) d'une onde polarisée linéairement. Le milieu présente donc un indice de réfraction pour chaque composante. Considèrons un champ polarisé linéairement tel que les vecteurs champs électriques RCP et LCP soient parallèles à $z = 0$. Après une propagation sur une distance $L$, les champs auront tourné de $\theta^{G}=2\pi\rmc L/(\lambda v^{G})$ et $\theta^{R}=-2\pi\rmc L/(\lambda v^{D})$. L'angle de rotation de la direction du champ s'écrit alors :
+\begin{align*}
+\chi = \frac{1}{2}(\theta^{G}+\theta^{D}) &= \frac{\pi\rmc L}{\lambda}\left(\frac{1}{v^{G}}-\frac{1}{v^{D}}\right)\\
+&= \frac{\pi}{\lambda}\left(n^{G}-n^{D}\right).
+\end{align*}
+
+Mais si $n^{G}$ et $n^{D}$ sont différents, le milieu doit également absorber différemment chaque composante du champ. Cet effet a été mesuré pour la première fois par \mycite{Haidinger1847} puis étudié par \mycite{Cotton1895}, qui le nomma \textit{dichroïsme circulaire}. Cet effet est toujours couramment utilisé avec des longueurs d'ondes visibles ou infrarouges. Il est généralement préféré à la mesure de l'activité optique car il évolue plus rapidement avec la longueur d'onde, et permet donc de distinguer plus facilement différentes bandes spectrales. Le dichroïsme circulaire est ainsi utilisé pour la détermination de structures de protéines, de changements de structures induits par par exemple le pH ou le solvant, de repliements/dépliements de protéines, ou encore de liaison de ligands.
+
+L'absorption correspond à une transition d'un état initial vers un état excité. Lorsque la lumière traverse un ensemble de molécule, son intensité est gouvernée par la loi de Beer-Lambert, c'est-à-dire une décroissance exponentielle en fonction de la longueur parcourue. On note $\alpha^{D}$ et $\alpha^{G}$ les coefficients d'absorption de chacune des composantes du champ. Le dichroïsme circulaire vaut :
+\[\Delta \alpha = \alpha^{G}-\alpha^{D}.\]
+En pratique, on préfère utiliser le ratio entre le dichroïsme circulaire et l'absorption habituelle, appelé facteur de dissymétrie \mycite{Kuhn1930} : 
+\begin{equation}
+g = \frac{\alpha^{G}-\alpha^{D}}{\frac{1}{2}(\alpha^{G}+\alpha^{D})}.
+\label{eq:kuhn}
+\end{equation}
+
+Relions $\alpha$ aux propriétés de la molécule. Pour une longueur de propagation $\delta z$ dans le milieu infinitésimale, l'intensité absorbée par unité de surface $\delta I$ s'écrit :
+\begin{align*}
+\frac{\delta I}{I} = \alpha c \delta z,
+\end{align*}
+où $c$ est le nombre de molécule par mètre cube. On note $w$ l'énergie moyenne absorbée par molécule, on a donc $\delta I = c \delta z w$. On obtient alors :
+\begin{align}
+\alpha = \frac{\delta I}{Ic \delta z} = \frac{c \delta z w}{Ic \delta z} = \frac{w}{I}.
+\label{eq:cd1}
+\end{align}
+Notons qu'un facteur de proportionnalité s'ajoute à cette expression si on choisit d'utiliser un coefficient d'absorption molaire.
+
+Considérons maintenant la transition électronique $i\rightarrow f$. \`A cette transition est associé un élément de matrice de transition qu'on note $V_{if}$. La bande d'absorption a un profil spectral qui donne la probabilité de transition en fonction de la fréquence, qu'on note $\rho(\omega)$. \mycite{schellman1975} montre que ces quantités sont reliés à $w$ par la relation :
+\begin{equation}
+w(\omega) = \frac{\pi \omega |V_{if}|^2 \rho(\omega)}{2\hbar}.
+\label{eq:cd2}
+\end{equation}
+
+Il faut donc déterminer $V_{if}$ pour obtenir $\alpha$. Commençons dans l'approximation dipolaire électrique. Dans ce cas, le champ électrique se couple avec le moment dipolaire de la molécule : $V_{if} = -\bm{\mu}_{if}\cdot \bm{E}$, où $\mu_{if}$ est le moment dipolaire (voir partie \ref{sec:multipolar}). \mycite{schellman1975} montre que si le champ est polarisé circulairement droite ou gauche, on a $(V_{if}^{D/G})^2 = (\bm{\mu}_{if})^2E^2_0/3$, où la division par 3 provient d'une moyenne sur les orientation possibles des moments dipolaires.
+On utilise alors les équations \ref{eq:cd1} et \ref{eq:cd2} :
+\begin{align*}
+\alpha^{D/G}(\omega) &= \frac{w^{D/G}(\omega)}{I} = \frac{\pi \omega |V_{if}^{D/G}|^2 \rho(\omega)}{2\hbar I} 
+= \frac{\pi \omega |\mu_{if}E_0|^2 \rho(\omega)}{6\hbar I} 
+= \frac{\pi \omega |\mu_{if}|^2 \rho(\omega)E^2_0}{6\hbar I} \\
+&= \frac{4\pi^2 \omega |\mu_{if}|^2 \rho(\omega)}{3\hbar n \rmc} 
+\end{align*}
+On obtient donc directement le dichroïsme circulaire : $\Delta\alpha = \alpha^G-\alpha^D = 0$. Dans l'approximation dipolaire, le dichroïsme circulaire est donc nul. \par Il faut considérer le terme suivant du développement multipolaire, l'interaction dipolaire magnétique : 
+\[V_{if} = -\bm{\mu}_{if}\cdot \bm{E} - \bm{m}_{if}\cdot \bm{B}.\] 
+\mycite{schellman1975} réalise le calcul de $V_{if}$ pour une polarisation circulaire :
+\begin{align*}
+(V_{if}^{D/G})^2 &= \frac{(\bm{\mu}_{if})^2E^2_0}{3}+\frac{(\bm{m}_{if})^2B^2_0}{3} \mp \frac{2}{3}\text{Im}(\bm{\mu}_{if}\cdot\bm{m}_{if})E_0B_0 \\
+&= \frac{8\pi I}{3 \rmc}\left[\frac{(\bm{\mu}_{if})^2}{n} +  n(\bm{m}_{if})^2 \mp 2 \text{Im}(\bm{\mu}_{if}\cdot\bm{m}_{if})\right]. 
+\end{align*}
+Chacun des trois terme a sa propre probabilité de transition, qu'on note $\rho(\omega)$, $\tau(\omega)$ et $\sigma(\omega)$. On obtient donc pour le coefficient d'atténuation :
+\begin{equation*}
+\alpha^{D/G}(\omega) = \frac{4\pi^2 \omega}{3\hbar \rmc}\left[\frac{\rho(\omega)(\bm{\mu}_{if})^2}{n} +  n\tau(\omega)(\bm{m}_{if})^2 \mp 2 \sigma(\omega)\text{Im}(\bm{\mu}_{if}\cdot\bm{m}_{if})\right] 
+\end{equation*}
+
+Les trois termes obtenus correspondent à l'absorption dipolaire électrique, l'absorption dipolaire magnétique, et le dichroïsme circulaire. En effet, on obtient :
+\[ \Delta \alpha = \alpha^G-\alpha^D = \frac{16\pi^2 \omega\sigma(\omega)\text{Im}(\bm{\mu}_{if}\cdot\bm{m}_{if})}{3\hbar \rmc}. \]

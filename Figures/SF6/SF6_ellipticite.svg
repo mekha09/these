@@ -15,7 +15,7 @@
    id="svg24901"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="SF6_ellipticite.pdf"
+   sodipodi:docname="SF6_ellipticite.svg"
    inkscape:export-filename="C:\Users\Romain\Documents\CEA\Présentation Journées LIDYL\PNG\SF6_Ellpticite_en.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200">
@@ -75,8 +75,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="966.94277"
-     inkscape:cy="310.79586"
+     inkscape:cx="738.8387"
+     inkscape:cy="159.3967"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -98,7 +98,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2401,11 +2401,6 @@
        id="path27461"
        style="fill:none;stroke:#74dbff;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -216.70266,301.48565 0,196.42125" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path27463"
-       style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 84.57233,485.4719 0,12.1125" />
     <path
        inkscape:connector-curvature="0"
        id="path27465"

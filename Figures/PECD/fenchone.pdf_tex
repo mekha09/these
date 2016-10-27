@@ -55,5 +55,9 @@
     \put(0.56398767,-0.02424516){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.6872165\unitlength}\centering \end{minipage}}}%
     \put(0.02956154,-0.03830776){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{fenchone.pdf}}%
+    \put(0.19820211,0.33138725){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{*}}}%
+    \put(0.12151064,0.21220448){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{*}}}%
+    \put(0.70248923,0.34837432){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{*}}}%
+    \put(0.65026427,0.25424369){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{*}}}%
   \end{picture}%
 \endgroup%

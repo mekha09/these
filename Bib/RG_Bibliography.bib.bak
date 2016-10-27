@@ -522,7 +522,7 @@
 
 @InProceedings{BengtssonLarsenEtAl2015,
   Title                    = {Free Induction Decay in the Extreme Ultraviolet},
-  Author                   = {Samuel Bengtsson and Esben W. Larsen and David kroon and Cord Arnold and Anne L'Huillier and Lars Rippe and Johan Mauritsson},
+  Author                   = {Samuel Bengtsson and Esben W. Larsen and David Kroon and Cord Arnold and Anne L'Huillier and Lars Rippe and Johan Mauritsson},
   Booktitle                = {Frontiers in Optics 2015},
   Year                     = {2015},
   Pages                    = {FTh3A.2},
@@ -2449,6 +2449,17 @@
   Year                     = {1999}
 }
 
+@Article{JinPRA2012,
+  Title                    = {Intensity dependence of multiple orbital contributions and shape resonance in high-order harmonic generation of aligned N 2 molecules},
+  Author                   = {Jin, Cheng and Bertrand, Julien B and Lucchese, RR and W{\"o}rner, HJ and Corkum, Paul B and Villeneuve, DM and Le, Anh-Thu and Lin, Chii Dong},
+  Journal                  = {Physical Review A},
+  Year                     = {2012},
+  Number                   = {1},
+  Pages                    = {013405},
+  Volume                   = {85},
+  Publisher                = {APS}
+}
+
 @Unpublished{JoffreCours,
   Title                    = {Lasers femtosecondes : principes et applications en physique, chimie et biologie},
   Author                   = {M. Joffre},
@@ -3534,6 +3545,15 @@
   Pages                    = {s17--s21},
   Volume                   = {74},
   Publisher                = {Springer}
+}
+
+@Article{Mulliken1927,
+  Title                    = {Electronic states. IV. Hund's theory; second positive nitrogen and Swan bands; alternate intensities},
+  Author                   = {R. S. Mulliken},
+  Journal                  = {Physical Review},
+  Year                     = {1927},
+  Pages                    = {637–-649},
+  Volume                   = {29}
 }
 
 @TechReport{Murray2014,
