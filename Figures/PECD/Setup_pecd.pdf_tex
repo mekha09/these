@@ -50,15 +50,15 @@
   \makeatother%
   \begin{picture}(1,0.50361472)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{Setup_pecd.pdf}}%
-    \put(-0.18899485,0.47608633){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.38483443\unitlength}\centering Polarisation Elliptique gauche\end{minipage}}}%
-    \put(-0.24957249,0.37345095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.39394243\unitlength}\centering Polarisation Elliptique droite\end{minipage}}}%
+    \put(-0.18899485,0.47608633){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.38483443\unitlength}\centering Polarisation elliptique gauche\end{minipage}}}%
+    \put(-0.24957249,0.37345095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.39394243\unitlength}\centering Polarisation elliptique droite\end{minipage}}}%
     \put(0.12368186,0.47254022){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.56433291\unitlength}\centering Cellule de \sf6\end{minipage}}}%
     \put(0.71211888,0.3821492){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Iris}}}%
     \put(0.88937639,0.39426603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Jet de fenchone}}}%
     \put(0.36921906,0.29280598){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21414059\unitlength}\centering Harmoniques \end{minipage}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{Setup_pecd.pdf}}%
     \put(0.1935362,0.25614633){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.56916319\unitlength}\centering  quasi-circulaires\end{minipage}}}%
-    \put(-0.29205016,0.09168762){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.05446176\unitlength}\centering Distribution de Photoélectron\end{minipage}}}%
-    \put(0.52099794,0.05502798){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.42989133\unitlength}\centering Asymétrique\end{minipage}}}%
+    \put(-0.29205016,0.09168762){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.05446176\unitlength}\centering Distribution de photoélectron\end{minipage}}}%
+    \put(0.52099794,0.05502798){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.42989133\unitlength}\centering asymétrique\end{minipage}}}%
   \end{picture}%
 \endgroup%
