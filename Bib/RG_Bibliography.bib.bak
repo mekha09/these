@@ -1582,6 +1582,17 @@
   URL                      = {http://link.aps.org/doi/10.1103/PhysRevA.65.033823}
 }
 
+@Article{FrassettoRSI2014,
+  Title                    = {High-throughput beamline for attosecond pulses based on toroidal mirrors with microfocusing capabilities},
+  Author                   = {Frassetto, F and Trabattoni, A and Anumula, S and Sansone, G and Calegari, F and Nisoli, M and Poletto, L},
+  Journal                  = {Review of Scientific Instruments},
+  Year                     = {2014},
+  Number                   = {10},
+  Pages                    = {103115},
+  Volume                   = {85},
+  Publisher                = {AIP Publishing}
+}
+
 @Article{FreemanPRL1987,
   Title                    = {Above-threshold ionization with subpicosecond laser pulses},
   Author                   = {Freeman, R. R. and Bucksbaum, P. H. and Milchberg, H. and Darack, S. and Schumacher, D. and Geusic, M. E.},

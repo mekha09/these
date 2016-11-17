@@ -290,6 +290,8 @@ I_q &= \frac{1}{2}\left[\left(\frac{1+\epsilon_0}{\sqrt{1+\epsilon_0^2}}\right)^
 
 Ces deux quantités sont tracées sur la figure \ref{fig:mas_photon}. Ce modèle simple reproduit qualitativement les mesures de \mycite{AntoinePRA1997} et \mycite{budilPRA1993} (figures \ref{fig:antoinepra} et \ref{Fig:budil}) : l'ellipticité harmonique augmente avec l'ellipticité du fondamental, et l'efficacité du processus décroît exponentiellement. On retrouve également la décroissance de l'efficacité plus rapide pour les ordres plus élevés, due à au terme en puissance de $q$ dans l'équation \ref{eq:I_q}. Ce modèle ne décrit par contre pas l'évolution du MAS entre différents ordres harmoniques, et ne donne pas $s_q<\epsilon_0$ comme l'expérience. Ces deux écarts sont dus au traitement perturbatif utilisé, qui est peu adapté à la description de la GHOE. Le même calcul réalisé avec un ordre de non-linéarité plus faible donnera des résultats plus proches de ceux observés expérimentalement.
 
+Il apparaît donc que pour générer efficacement un rayonnement polarisé elliptiquement, il faut s'écarter des hypothèses de ce modèle. Nous avons choisi de jouer sur l'étape de recombinaison, ce qui comme on le verra au chapitre suivant donne le temps au paquet d'onde électronique d'exciter efficacement un dipôle perpendiculaire. 
+
 \begin{figure}[!ht]
 \centering
 \def\svgwidth{1\columnwidth}
@@ -297,8 +299,6 @@ Ces deux quantités sont tracées sur la figure \ref{fig:mas_photon}. Ce modèle
 \caption{\'Evolution de l'intensité et du moment angulaire de spin harmonique en fonction de l'ellipticité du fondamental. Résultat d'un modèle perturbatif simple.}
 \label{fig:mas_photon}
 \end{figure}
-
-Il apparaît donc que pour générer efficacement un rayonnement polarisé elliptiquement, il faut s'écarter des hypothèses de ce modèle. Nous avons choisi de jouer sur l'étape de recombinaison, ce qui comme on le verra au chapitre suivant donne le temps au paquet d'onde électronique d'exciter efficacement un dipôle perpendiculaire. 
 
 \chapter[Harmoniques de polarisation fortement elliptique produites par GHOE résonante]{Harmoniques de polarisation fortement elliptique produites par GHOE résonante à partir d'un faisceau polarisé elliptiquement}
 \label{CH:Circular_HHG}
@@ -375,7 +375,7 @@ Pour confirmer que cette forte ellipticité est due à la présence de résonanc
 \caption{Résultat théorique en utilisant un potentiel de Coulomb de cœur mou. En haut, on représente le profil de ce potentiel, qui peut être ajusté pour obtenir la bonne valeur d'$\text{I}_{\text{p}}$. En bas, mêmes grandeurs que celles mesurées expérimentalement sur la figure \ref{fig:resonant_argon_exp}.}
 \label{fig:resonant_argon_th_bound}
 \end{figure}
-
+\newpage
 En conclusion, nous voyons que la présence de résonances sous le seuil induit une modulation de l'ellipticité, celle-ci pouvant, contrairement au cas non résonant, largement dépasser l'ellipticité du faisceau gaussien. On obtient donc un rayonnement aux propriétés intéressantes sans véritable perte de signal : une mesure par une photodiode calibrée montre que l'harmonique 5 contient $\num{7e6}$ photons par impulsion. Toutefois, cette méthode est restreinte à des énergies de photons relativement basses, correspondant au seuil d'ionisation du gaz utilisé. Les gaz habituellement utilisés pour avoir un flux important sont l'argon, $\text{I}_{\text{p}}=15.76$ eV, le krypton, $\text{I}_{\text{p}}=14$ eV, ou le xénon, $\text{I}_{\text{p}}=12.13$ eV. Il serait donc intéressant de généraliser notre approche à des résonances d'énergies plus élevées. Dans la section suivante, nous étudions le cas de résonances dans le continuum.
 
 \section{Génération autour d'une résonance dans le continuum}
@@ -625,7 +625,7 @@ Ayant montré qu'il portait de nombreuses informations sur le potentiel molécul
 
 \begin{figure}[!ht]
 \centering
-\def\svgwidth{0.6\columnwidth}
+\def\svgwidth{0.5\columnwidth}
 \import{Figures/PECD/}{sphere_projection.pdf_tex}
 \caption{Projection d'une sphère 3D sur un détecteur 2D. Une coupe selon l'axe $y$ de l'image 2D est tracée.}
 \label{fig:sphere_projection}
