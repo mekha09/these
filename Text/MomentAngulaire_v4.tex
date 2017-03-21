@@ -1,4 +1,3 @@
-\partimage[width=1\columnwidth]{Figures/PartImages/FigCh1.png}
 \part{Le moment angulaire de la lumière}
 \label{PA:LightAM}
 \chapter{Le moment angulaire en physique classique}
@@ -8,7 +7,7 @@ Dans ce chapitre, nous nous attacherons d'abord à définir le moment angulaire 
 \section{Mécanique Lagrangienne}
 \subsection{L'\'{e}quation de Lagrange}
 \label{sec:lagrange}
-En mécanique classique, l'évolution d'un objet est décrite par les lois de Newton. Pour un objet ponctuel, on a $\bm{F}=m\bm{\ddot{x}}$, où $\bm{F}$ est la somme des forces appliquées à cet objet, $m$ sa masse et $\bm{\ddot{x}}$ son accélération. Dans le cas d'objets plus complexes tels que ceux qui nous intéresserons dans ce chapitre, une description plus adaptée est celle développée par J.-L. Lagrange en 1764. Initialement utilisé pour l'étude de la libration de lune, ce formalisme a très largement dépassé son origine pour devenir une méthode générale de résolution de problèmes dynamiques. Le système y est décrit par un ensemble de \textit{coordonnées généralisées}, qui définissent l'espace des configuration. 
+En mécanique classique, l'évolution d'un objet est décrite par les lois de Newton. Pour un objet ponctuel, on a $\bm{F}=m\bm{\ddot{x}}$, où $\bm{F}$ est la somme des forces appliquées à cet objet, $m$ sa masse et $\bm{\ddot{x}}$ son accélération. Dans le cas d'objets plus complexes tels que ceux qui nous intéresseront dans ce chapitre, une description plus adaptée est celle développée par J.-L. Lagrange en 1764. Initialement utilisé pour l'étude de la libration de lune, ce formalisme a très largement dépassé son origine pour devenir une méthode générale de résolution de problèmes dynamiques. Le système y est décrit par un ensemble de \textit{coordonnées généralisées}, qui définissent l'espace des configurations. 
 
 Par exemple, considérons un ensemble de particules soumises à un ensemble de forces conservatives, c'est-à-dire de forces associées à un potentiel. De manière générale, on peut décrire l'état du système par un ensemble de coordonnées. On choisit un système de coordonnées cartésiennes décrivant les positions des particules. La position de chaque particule P ayant une composante selon l'axe $k,\;k\in[1,\;3]$, on a $3N$ coordonnées qu'on note $x_i,\; i\in[1,\;3N]$. Notons $F_i$ la projection sur l'axe $k,\;k\in[1,\;3]$ de la force agissant sur la particule P, on a alors :
 \begin{equation}
@@ -85,7 +84,7 @@ est conservée. Si l'invariance n'est vraie que dans une direction, alors seulem
 
 
 \subsubsection{Moment angulaire et rotation}
-Enfin, considérons un système invariant par rotation autour d'un axe $\bm{u}$. Prenons une rotation infinitésimale d'angle $\delta\theta$ et notons $\delta\bm{\theta}=\bm{u}\delta\theta$. Si on choisit l'origine du repère sur l'axe de rotation, le changement pour chaque vecteur de coordonnées est $\delta\bm{r}_i(t) = \delta\bm{\theta}\times\bm{r}_i(t)$. De même, $\delta\bm{\dot{r}}_i(t) = \delta\bm{\theta}\times\bm{\dot{r}}_i(t)$. Le changement du Lagrangien est :
+Enfin, considérons un système invariant par rotation autour d'un axe $\bm{u}$. Prenons une rotation infinitésimale d'angle $\delta\theta$ et notons $\delta\bm{\theta}=\bm{u}\delta\theta$. Si on choisit l'origine du repère sur l'axe de rotation, le changement de coordonnées pour chaque vecteur est $\delta\bm{r}_i(t) = \delta\bm{\theta}\times\bm{r}_i(t)$. De même, $\delta\bm{\dot{r}}_i(t) = \delta\bm{\theta}\times\bm{\dot{r}}_i(t)$. Le changement du Lagrangien est :
 \begin{align}
 \delta L &=\sum_i \left(\delta\bm{\theta}\times\bm{r}_i(t)\right)\cdot\frac{\partial L}{\partial \bm{r}_i}+\sum_i \left(\delta\bm{\theta}\times\bm{\dot{r}}_i(t)\right)\cdot\frac{\partial L}{\partial \bm{\dot{r}}_i}\\
 &=\delta\bm{\theta}\cdot\sum_i\left(\bm{r}_i(t)\times\frac{d}{dt}\frac{\partial L}{\partial {\dot{\bm{r}}}_i}
@@ -97,7 +96,7 @@ où on a permuté circulairement les produits mixtes et utilisé l'équation de 
 \bm{J}\equiv\sum_i \bm{r}_i(t)\times\frac{\partial L}{\partial \bm{\dot{r}}_i}=\sum_i \bm{r}_i\times\bm{p}_i.
 \label{eq:defJ}
 \end{equation}
-$J$ est le \textit{moment angulaire} du système. Il est clair que sa valeur dépend du choix du centre du système de coordonnées. Si on applique $\bm{r}_i\rightarrow \bm{r}_i+\bm{a}$, alors $\bm{J}\rightarrow \bm{J}+\bm{a}\times\bm{P}$. Notons que dans le référentiel du centre de masse (c.d.m.), $\bm{P}=0$. $\bm{J}$ est alors indépendant du choix de l'origine des coordonnées. Pour des raisons qui paraîtront claires plus tard, notons $\bm{S}$ la valeur de $\bm{J}$ dans le référentiel du c.d.m. Dans un référentiel où le c.d.m se déplace à une vitesse uniforme $\bm{V}$, 
+$J$ est le \textit{moment angulaire} du système. Il est clair que sa valeur dépend du choix de l'origine du système de coordonnées. Si on applique $\bm{r}_i\rightarrow \bm{r}_i+\bm{a}$, alors $\bm{J}\rightarrow \bm{J}+\bm{a}\times\bm{P}$. Notons que dans le référentiel du centre de masse (c.d.m.), $\bm{P}=0$. $\bm{J}$ est alors indépendant du choix de l'origine des coordonnées. Pour des raisons qui paraîtront claires plus tard, notons $\bm{S}$ la valeur de $\bm{J}$ dans le référentiel du c.d.m. Dans un référentiel où le c.d.m se déplace à une vitesse uniforme $\bm{V}$, 
 \begin{align}
 \bm{J}&=\sum_i \left(\bm{r}_i+\bm{V}t\right)\times\left(\bm{p}_i+m_i\bm{V}\right)\\
 &= \sum_i\bm{r}_i\times\bm{p}_i+\bm{V}t\times\bm{P}+\sum_i m_i\bm{r}_i\times\bm{V} \\
@@ -165,20 +164,20 @@ Finalement,
 -\frac{1}{\mu_0}\bm{B}\times(\bm{\nabla}\times\bm{B})\right]\rmd V.
 \end{equation} 
 
-Comme démontré dans la section 6.9 de \mycite{Jackson1999}, le terme de droite est le flux du quantité de mouvement vers l'extérieur du volume V à travers la surface S. Il s'écrit à l'aide du tenseur des contraintes de Maxwell $\tensor{\bm{T}}_M$. On trouve alors une équation de conservation pour la quantité de mouvement :
+Comme démontré dans la section 6.9 de \mycite{Jackson1999}, le terme de droite est le flux de quantité de mouvement vers l'extérieur du volume V à travers la surface S. Il s'écrit à l'aide du tenseur des contraintes de Maxwell $\tensor{\bm{T}}_M$. On trouve alors une équation de conservation pour la quantité de mouvement :
 \[\frac{\rmd\left(\bm{P}_{part}+\bm{P}_{champ}\right)}{\rmd t} = \oint_S \bm{n}\cdot\tensor{\bm{T}}_M\;\rmd S,\]
 avec :
 \begin{align}
-\bm{P}_{champ} &= \epsilon_0\frac{\rmd}{\rmd t}\int_V (\bm{E}\times\bm{B})\; \rmd V \nonumber\\
-&= \frac{\bm{\Pi}}{c^2} \mbox{, où $\bm{\Pi}$ est donné par \ref{Def.Poynting}.}
+\bm{P}_{champ} &= \epsilon_0\int_V (\bm{E}\times\bm{B})\; \rmd V \nonumber\\
+&= \frac{1}{c^2}\int_V\bm{\Pi}\; \rmd V \mbox{, où $\bm{\Pi}$ est donné par \ref{Def.Poynting}.}
 \label{eq:defP}
 \end{align}
 
-C'est l'essence de la démarche utilisée par Henri Poincaré en 1900 \mycite{poincare1900}, où il discute de la \textit{``quantité de mouvement de [...] notre fluide fictif''}. Dans ce même article, Poincaré parle de la force exercée par la lumière sur la matière, notion déjà présente chez Maxwell et même chez Kepler appelée \textit{pression électromagnétique}. On l'appelle aujourd'hui plus couramment \textit{pression de radiation}. Poynting développa considérablement ce concept par la suite \mycite{poynting1903}, et nota que malgré sa faible valeur comparée à la force de gravitation, elle pourrait avoir d'importantes conséquences en astronomie. \`{A} raison : par exemple, si la pression de radiation n'avait pas été prise en compte lors du programme Viking, les deux sondes envoyées sur Mars auraient raté l'orbite de la planète d'environ 15000 kilomètres \mycite{Hecht2001}.
+C'est l'essence de la démarche d'Henri Poincaré en 1900 \mycite{poincare1900}, où il discute de la \textit{``quantité de mouvement de [...] notre fluide fictif''}. Dans ce même article, Poincaré parle de la force exercée par la lumière sur la matière, notion déjà présente chez Maxwell et même chez Kepler appelée \textit{pression électromagnétique}. On l'appelle aujourd'hui plus couramment \textit{pression de radiation}. Poynting développa considérablement ce concept par la suite \mycite{poynting1903}, et nota que malgré sa faible valeur comparée à la force de gravitation, elle pourrait avoir d'importantes conséquences en astronomie. \`{A} raison : par exemple, si la pression de radiation n'avait pas été prise en compte lors du programme Viking, les deux sondes envoyées sur Mars auraient raté l'orbite de la planète d'environ 15000 kilomètres \mycite{Hecht2001}.
 
 \subsection{Le moment angulaire de la lumière}
 \label{sec:classicallightam}
-Poynting, en plus de ces contributions majeures, a été le premier à envisager l'existence du moment \textit{angulaire} de la lumière. Il fit l'analogie entre une onde électromagnétique polarisée circulairement et une onde élastique de torsion, suggérant que la lumière possède un moment angulaire et peut fournir un couple à la matière \mycite{PoyntingPRSL1909}. Il propose à la fin de son article un dispositif expérimental constitué d'une série de lames quart d'ondes, permettant de démultiplier cet effet jusqu'à le rendre mesurable. Il conclut toutefois avec pessimisme que \textit{``even with such multiplications, my present experience of light forces does not give me much hope that the effect could be detected, if it has the value suggested by the mechanical model''}.
+Poynting, en plus de ces contributions majeures, a été le premier à envisager l'existence du moment \textit{angulaire} de la lumière. Il fit l'analogie entre une onde électromagnétique polarisée circulairement et une onde élastique de torsion, suggérant que la lumière possède un moment angulaire et peut fournir un couple à la matière \mycite{PoyntingPRSL1909}. Il propose à la fin de son article un dispositif expérimental constitué d'une série de lames quart d'onde, permettant de démultiplier cet effet jusqu'à le rendre mesurable. Il conclut toutefois avec pessimisme que \textit{``even with such multiplications, my present experience of light forces does not give me much hope that the effect could be detected, if it has the value suggested by the mechanical model''}.
 
 Il aurait donc probablement été heureux d'apprendre qu'en 1936, R. A. Beth observa cet effet avec un schéma légèrement modifié \mycite{BethPR1936}, confirmant ainsi l'existence du moment angulaire de la lumière. \mycite{DelannoyAPL2005} réalisèrent une expérience similaire en utilisant de la soie d'araignée.\par
 On obtient l'expression de la densité de moment angulaire du champ de la même façon que celle de la quantité de mouvement. La somme de la variation des moments angulaires des particules dans le volume V vaut :
@@ -189,21 +188,21 @@ On obtient l'expression de la densité de moment angulaire du champ de la même 
 \end{align}
 avec
 \begin{equation}
-\bm{J}_{champ}(\bm{r})=\bm{r}\times{\bm{P}_{champ}}=\frac{\bm{r}\times\bm{\Pi}}{c^2} = \epsilon_0\bm{r}\times(\bm{E}\times\bm{B})
+\bm{J}_{champ}(\bm{r})=\bm{r}\times{\bm{P}_{champ}}=\int_V \frac{\bm{r}\times\bm{\Pi}}{c^2}\;\rmd V = \epsilon_0\int_V \bm{r}\times(\bm{E}\times\bm{B})\;\rmd V
 \label{Eq.DefJEM}
 \end{equation}
 
 C'est l'expression classique du moment angulaire du champ électromagnétique, la quantité qui nous intéressera pendant la majorité de cette thèse. Nous allons maintenant étudier le moment angulaire de différentes solutions de l'équation d'onde.
 
 \subsubsection{Conclusion}
-Dans ce chapitre, nous sommes parti des équations de Lagrange pour définir l'énergie, la quantité de mouvement et le moment angulaire d'un système matériel. Ensuite, nous avons utilisé les équations de Maxwell et écrit les équations de conservation du système {champ + matière} pour définir ces trois grandeurs, cette fois pour le champ électromagnétique. Dans le chapitre suivant nous étudierons, en partant de l'équation d'onde, des modes du champ portant un moment angulaire non nul.
+Dans ce chapitre, nous sommes partis des équations de Lagrange pour définir l'énergie, la quantité de mouvement et le moment angulaire d'un système matériel. Ensuite, nous avons utilisé les équations de Maxwell et écrit les équations de conservation du système {champ + matière} pour définir ces trois grandeurs, cette fois pour le champ électromagnétique. Dans le chapitre suivant nous étudierons, en partant de l'équation d'onde, des modes du champ portant un moment angulaire non nul.
 
 \chapter{L'équation d'onde et les modes du champ}
 \label{ch:modes}
 Les solutions de l'équation d'onde sont appelées "modes" du champ. Dans ce chapitre, nous décrivons certaines de ces solutions, d'abord dans le cas général puis dans l'approximation paraxiale. Nous nous intéresserons en particulier au moment angulaire porté par chacun des modes. Ce développement nous permettra de décrire les modes rencontrés expérimentalement par la suite.
 \section{Ondes planes et polarisation}
 \subsection{L'équation d'Helmholtz}
-Par simplicité, nous ne considérerons pas la présence de densités de charges ou de courant. Dans ce cas, les équations de Maxwell donnent les équations d'onde :
+Par simplicité, nous ne considérerons pas la présence de densités de charge ou de courant. Dans ce cas, les équations de Maxwell donnent les équations d'onde :
 \begin{align}
 &\nabla^2\bm{E}-\frac{1}{c^2}\frac{\partial^2}{\partial t^2}\bm{E}=0,
 &\nabla^2\bm{B}-\frac{1}{c^2}\frac{\partial^2}{\partial t^2}\bm{B}=0.
@@ -244,7 +243,7 @@ E_{0y}\cos{(\omega t-kz-\phi)}\\
 0
 \end{pmatrix}
 \end{equation}
-Le champ électrique décrit donc une ellipse dans le plan transverse. S'il la parcourt dans le sens trigonométrique autour de $\bm{k}$, on dit que la polarisation est elliptique gauche (PEG). Inversement, dans le sens des aiguille d'une montre la polarisation est elliptique droite (PED). On peut se placer dans le repère des axes de l'ellipse de sorte à ce que le champ s'écrive :
+Le champ électrique décrit donc une ellipse dans le plan transverse. S'il la parcourt dans le sens trigonométrique autour de $\bm{k}$, on dit que la polarisation est elliptique gauche (PEG). Inversement, dans le sens des aiguille d'une montre la polarisation est elliptique droite (PED). On peut se placer dans le repère des axes de l'ellipse de sorte que le champ s'écrive :
 \begin{equation}
 \bm{E}=\begin{pmatrix}
 E_{0x}\cos{(\omega t-kz)}\\
@@ -256,12 +255,12 @@ Le signe $+$ représente une PEG et $-$ une PED. Dans le cas particulier où $E_
 
 \subsection{Moment angulaire d'une onde plane circulaire}
 \label{sec:ma_circ}
-Intéressons nous maintenant au moment angulaire porté par ces ondes planes. L'équation \ref{eq:defJ} donne son moment angulaire selon l'axe de propagation: 
+Intéressons nous maintenant au moment angulaire porté par ces ondes planes. L'équation \ref{eq:defJ} donne sa densité volumique de moment angulaire selon l'axe de propagation: 
 \begin{align}
 \bm{J_z}&=(\bm{r}\times\bm{\Pi})\cdot\bm{e_z}\\
 &=\frac{1}{\mu_0}(\bm{r}\times[\bm{E}\times\bm{B}])\cdot\bm{e_z}
 \end{align}
-Il est clair que pour une onde plane $\bm{J_z}$ s'annule. Ceci contredit ce qui est observé dans l'expérience de Beth \mycite{BethPR1936} déjà mentionnée. En fait, ce cas est singulier : $\Pi_x$ et $\Pi_y $ sont nuls alors que l'extension transverse de l'onde est infinie. On est donc confrontés à une indétermination du type $0\times \infty$. 
+Il est clair que pour une onde plane $\bm{J_z}$ s'annule. Ceci contredit ce qui est observé dans l'expérience de Beth \mycite{BethPR1936} déjà mentionnée. En fait, ce cas est singulier : $\Pi_x$ et $\Pi_y $ sont nuls alors que l'extension transverse de l'onde est infinie. On est donc confronté à une indétermination du type $0\times \infty$. 
 Ce problème peut être résolu en restreignant le problème à un volume $V$ où l'on prend en compte rigoureusement les effets de bords, puis en faisant tendre les dimensions du volume vers l'infini : voir \mycite{StewartEJP2005}. Une autre approche intéressante est celle de \mycite{MansuripurOE2005}, qui considère 4 ondes planes polarisées circulairement se propageant avec un angle $\theta$ par rapport à $z$ dans chacun des quadrants de $(x,y)$. Chacune de ces ondes ayant un vecteur d'onde formant un angle avec $z$, $\bm{J_z}$ est non nul. Quand on somme le moment angulaire de ces 4 ondes, si $\theta$ est assez petit on obtient une quantité ne dépendant pas de $\theta$. Il reste ensuite à faire tendre $\theta$ vers 0 pour retrouver l'onde plane comme cas limite, avec un moment angulaire non nul.
 
 Remarquons pour terminer que dans l'expérience de Beth, la lumière transmet du moment angulaire à un objet qui se met à tourner \textit{sur lui-même}, et pas par rapport au centre du faisceau. Ceci est cohérent avec la structure d'une onde plane : dans le plan transverse, son profil ne dépend pas du tout des coordonnées $(x,y)$. C'est bien sa polarisation, c'est-à-dire sa structure vectorielle intrinsèque, qui lui donne du moment angulaire. 
@@ -356,11 +355,11 @@ et
 \section{Les modes de Hermite-Gauss et de Laguerre-Gauss}
 \subsection{Modes de Hermite-Gauss}
 \label{sec:HGmodes}
-Une solution de l'équation d'onde paraxiale \ref{eq:para13} couramment employé est la famille des modes de Hermite-Gauss (HG). On se place en coordonnées cartésiennes et comme expliqué plus haut, on écrit le vecteur potentiel :
+Une solution de l'équation d'onde paraxiale \ref{eq:para13} couramment employée est la famille des modes de Hermite-Gauss (HG). On se place en coordonnées cartésiennes et comme expliqué plus haut, on écrit le vecteur potentiel :
 \begin{equation}
 \bm{A}=\bm{e_x}u(x,y,z)\exp{(\rmi k z)},
 \end{equation}
-où on a choisit la polarisation transverse $\bm{t}$ selon $\bm{e_x}$. Les modes de HG sont obtenus en séparant les variables transverses :
+où on a choisi la polarisation transverse $\bm{t}$ selon $\bm{e_x}$. Les modes de HG sont obtenus en séparant les variables transverses :
 \begin{equation}
 u^{HG}_{nm}(x,y,z)=u^{HG}_{n}(x,z)u^{HG}_{m}(y,z),
 \end{equation}
@@ -385,7 +384,7 @@ Dans cette expression on a noté :
 \item $H_n$ est le polynôme de Hermite d'ordre $n$.
 \end{itemize}
 
-On remarquera que le mode $(0,0)$ n'est autre que le mode Gaussien usuel. Grâce aux propriétés d'orthogonalité des polynômes de Hermite, ces modes forment une base complète du champ. Tout champ électrique peut donc se décomposer comme une somme de modes de Hermite-Gauss. Quelques uns de ces modes sont représentés sur la figure \ref{Fig:hgmodes}.
+On remarquera que le mode $(0,0)$ n'est autre que le mode Gaussien usuel. Grâce aux propriétés d'orthogonalité des polynômes de Hermite, ces modes forment une base complète du champ. Tout champ électrique peut donc se décomposer comme une somme de modes de Hermite-Gauss. Quelques-uns de ces modes sont représentés sur la figure \ref{Fig:hgmodes}.
 
 \begin{figure}[!ht]
 \centering
@@ -443,7 +442,7 @@ On utilise ensuite \ref{eq:para14} et \ref{eq:para15} pour obtenir le champ éle
 =-e^{-\rmi k z}\left(\sin{\theta}\frac{\partial u^{LG}_{\ell,p}}{\partial r}-\frac{\cos \theta}{r} \frac{\partial u^{LG}_{\ell,p}}{\partial \theta}\right)\\ \nonumber
 \end{align}
 
-On note que les champs électrique et magnétique ont une composante non nulle selon l'axe de propagation. Contrairement à $\bm{A}$, ces champs ne sont pas strictement transverses. C'est une condition nécessaire à la présence de moment angulaire : si les champs sont purement transverses et d'extension finie, $\bm{r}\times(\bm{E}\times\bm{B})\cdot\bm{e_z}$ s'annule et le moment angulaire selon $\bm{e}_z$ est nul. Dans nos coordonnées, la composante dominante est celle selon $\bm{e}_x$. En pratique, c'est le terme qui contribuera majoritairement au profil transverse du faisceau. On trouve donc souvent le champ électrique d'un mode de Laguerre-Gauss, $\mathcal{LG}_{(\ell,p)}$, écrit comme $\mathcal{LG}_{(\ell,p)} \approx E_x \bm{e}_x \propto u^{LG}_{\ell,p} \bm{e}_x$ \mycite{LaxPRA1975}. Il est toutefois important de se rappeler que la composante longitudinale est non nulle, sans quoi ces faisceaux ne porteraient pas de moment angulaire. On obtient à partir de $E_x$ le profil d'intensité et de phase de ces modes,  tracés pour différentes valeurs de $\ell$ et $p$ sur la figure \ref{Fig:LGModes}.
+On note que les champs électrique et magnétique ont une composante non nulle selon l'axe de propagation. Contrairement à $\bm{A}$, ces champs ne sont pas strictement transverses. C'est une condition nécessaire à la présence de moment angulaire : si les champs sont purement transverses et d'extension finie, $\bm{r}\times(\bm{E}\times\bm{B})\cdot\bm{e_z}$ s'annule et le moment angulaire selon $\bm{e}_z$ est nul. Dans nos coordonnées, la composante dominante est celle selon $\bm{e}_x$. En pratique, c'est le terme qui contribuera majoritairement au profil transverse du faisceau. On trouve donc souvent le champ électrique d'un mode de Laguerre-Gauss, $\mathcal{LG}_{(\ell,p)}$, écrit comme $\mathcal{LG}_{(\ell,p)} \approx E_x \bm{e}_x \propto u^{LG}_{\ell,p} \bm{e}_x$ \mycite{LaxPRA1975}. Il est toutefois important de se rappeler que la composante longitudinale est non nulle, sans quoi ces faisceaux ne porteraient pas de moment angulaire. On obtient à partir de $E_x$ les profils d'intensité et de phase de ces modes,  tracés pour différentes valeurs de $\ell$ et $p$ sur la figure \ref{Fig:LGModes}.
 
 \begin{figure}[!ht]
 \centering
@@ -529,7 +528,7 @@ Cette expression, contrairement aux deux figures tracées plus haut, prend en co
 \alpha \sim \tan{\alpha} = \frac{\ell}{kr}.
 \end{equation}
 Pour un rayon donné, le vecteur de Poynting forme donc un angle constant avec l'axe de propagation. Cet angle est communément appelé angle d'inclinaison (\textit{pitch angle} en anglais), et a été mesuré expérimentalement \mycite{LeachOE2006}.\par
-Dans \mycite{PadgettOC1995}, les auteurs remarquent qu'étudier le vecteur de Poynting pour un $r$ constant n'a pas vraiment de sens pour un faisceau divergent. Si on a affaire à un faisceau qui diverge, le chemin ``emprunté'' par l'énergie du champ n'est pas donné par l'expression ci-dessus. Il faut plutôt choisir un rayon $r(z)$ tel que $r(z)/w(z)$ soit constant au court de la propagation.\par
+Dans \mycite{PadgettOC1995}, les auteurs remarquent qu'étudier le vecteur de Poynting pour un $r$ constant n'a pas vraiment de sens pour un faisceau divergent. Si on a affaire à un faisceau qui diverge, le chemin ``emprunté'' par l'énergie du champ n'est pas donné par l'expression ci-dessus. Il faut plutôt choisir un rayon $r(z)$ tel que $r(z)/w(z)$ soit constant au cours de la propagation.\par
 Pour un mode $p=0$, il est assez naturel de choisir $r_\mathrm{max}(z)$, défini plus haut (\ref{Eq:rmax_LG}). En substituant cette expression, on peut montrer \mycite{PadgettOC1995} qu'après une propagation jusqu'à l'abscisse $z$, le vecteur de Poynting en $r_\mathrm{max}$ a tourné exactement de $\arctan{(z/z_R)}$ autour de l'axe optique. Cette rotation ne dépend pas de $\ell$ : le vecteur de Poynting en $r_\mathrm{max}$ tourne donc toujours exactement de $\pi$ autour de l'axe optique au passage du foyer. 
 
 Ces représentations du vecteur de Poynting illustrent le lien entre MAO et faisceaux de LG, mais elles peuvent également le démontrer quantitativement. $\bm{\Pi}$ donne en effet directement la densité de moment angulaire $\bm{J} = \bm{r}\times\bm{\Pi}/\rmc^2$ (\ref{Eq.DefJEM}) :
@@ -538,9 +537,9 @@ Ces représentations du vecteur de Poynting illustrent le lien entre MAO et fais
 \end{equation}
 Les termes selon $\bm{e_r}$ et $\bm{e_\theta}$ sont symétriques par rapport à l'axe, ils s'annulent donc lorsqu'on intègre sur le profil transverse du faisceau. Il ne reste donc que la composante selon $\bm{e_z}$. 
 
-On remarque ici une différence avec le cas de l'onde plane polarisée circulairement présenté à la page \pageref{sec:ma_circ}. \`{A} cause de la dépendance spatiale de $\mathcal{LG}_{\ell,p}$, $\bm{J}$ dépend de la coordonnée radiale. Des expériences réalisées montrent un effet similaire : \mycite{heprl1995} ont mis en rotation des particules avec un faisceau de LG, qui tournaient \textit{autour} du centre du faisceau, et non pas sur elle-mêmes. 
+On remarque ici une différence avec le cas de l'onde plane polarisée circulairement présenté à la page \pageref{sec:ma_circ}. \`{A} cause de la dépendance spatiale de $\mathcal{LG}_{\ell,p}$, $\bm{J}$ dépend de la coordonnée radiale. Des expériences réalisées montrent un effet similaire : \mycite{heprl1995} ont mis en rotation des particules avec un faisceau de LG, qui tournaient \textit{autour} du centre du faisceau, et non pas sur elles-mêmes. 
 
-On en conclut qu'il y a deux types de moment angulaires de nature différente. Pour expliquer cette différence, il est nécessaire d'adopter une description quantique. 
+On en conclut qu'il y a deux types de moment angulaire de nature différente. Pour expliquer cette différence, il est nécessaire d'adopter une description quantique. 
 On peut déjà noter que le rapport entre le flux de moment angulaire et le flux d'énergie pour l'ensemble du faisceau est $J_z/(\Pi_z/\rmc) = \ell/\omega$. Si on considère le champ comme constitué de $N$ photons, et qu'on note $J_{avg}$ le moment angulaire moyen par photon, alors le moment angulaire total du champ est $NJ_{avg}$. L'énergie totale vaut $N\hbar\omega$, donc le rapport entre moment angulaire et énergie vaut $J_{avg}/(\hbar\omega)$. Pour être en accord avec le résultat classique, on obtient $J_{avg} = \ell\hbar$. Il reste à savoir si le moment angulaire est une quantité bien définie pour un photon, et si chacun des photons du champ porte effectivement $\ell\hbar$. Autrement dit, il faut comprendre comment se manifeste la grandeur macroscopique $J_z$ au niveau microscopique. 
 
 
@@ -595,7 +594,7 @@ Ceci montre que la commutation de $\hat{U}$ et $\hat{Q}$ est équivalente à cel
 
 
 \subsubsection{Symétries d'un état}
-Un état $\ket{\psi_1}$ est dit symétrique par rapport à l'opérateur $\hat{Q}$ si $\hat{Q}\ket{\psi_1}$ et $\ket{\psi_1}$ sont physiquement les mêmes. Autrement dit, ces états sont égaux à facteur de phase près :
+Un état $\ket{\psi_1}$ est dit symétrique par rapport à l'opérateur $\hat{Q}$ si $\hat{Q}\ket{\psi_1}$ et $\ket{\psi_1}$ sont physiquement les mêmes. Autrement dit, ces états sont égaux à un facteur de phase près :
 \begin{equation}
 \hat{Q}\ket{\psi_1} = e^{\rmi\delta}\ket{\psi_1}.
 \end{equation}
@@ -629,7 +628,7 @@ On en déduit que $(e^{\rmi\delta})^2=1$, c'est à dire $e^{\rmi\delta}=\pm1$. O
 Si $\hat{P}\ket{\psi_1}= \ket{\psi_1}$, on dit que $\ket{\psi_1}$ est de parité \textit{paire}, et si $\hat{P}\ket{\psi_1}= -\ket{\psi_1}$, on dit que $\ket{\psi_1}$ est de parité \textit{impaire}. $\hat{P}$ est également appelé opérateur parité. Notons que la grande majorité des lois physiques sont symétriques par rapport à $\hat{P}$. En fait, seule l'interaction faible ne respecte pas cette propriété\footnote{Cette violation de la parité dans l'interaction faible est importante dans l'étude de molécules chirales, dont il sera question à la partie \ref{PA:Spin_HHG}. En effet, elle induit une différence d'énergie entre deux énantiomères \mycite{yamagata1966}, qui pourrait être à l'origine de l'homochiralité de la vie \mycite{bonner2000}.}. Pour tout ce qui va nous intéresser par la suite, on considérera toujours que l'hamiltonien de notre système est symétrique par rapport à $\hat{P}$. On en conclut que si le système a une parité définie à un instant, alors il gardera la même parité. C'est ce qu'on appelle \textit{la conservation de la parité}, très importante dans les interactions lumière-matière.
 
 \subsection{Le moment angulaire et l'opérateur rotation}
-Nous pouvons appliquer la même démarche cette fois en utilisant l'opérateur rotation $\hat{R}_z(\theta)$, associé à la rotation géométrique du système d'un angle $\theta$ autour de l'axe $z$, notée $\mathcal{R}_z(\theta)$. Dans un problème à symétrie cylindrique autour de l'axe $z$, un tel opérateur laisse un état ayant cette symétrie initialement inchangé, à un terme de phase près :
+Nous pouvons appliquer la même démarche cette fois en utilisant l'opérateur rotation $\hat{R}_z(\theta)$, associé à la rotation géométrique du système d'un angle $\theta$ autour de l'axe $z$, notée $\mathcal{R}_z(\theta)$. Dans un problème à symétrie cylindrique autour de l'axe $z$, un tel opérateur laisse inchangé un état ayant initialement cette symétrie, à un terme de phase près :
 \begin{equation}
 \forall\theta,\;\hat{R}_z(\theta)\ket{\psi_1}=e^{\rmi\delta(\theta)}\ket{\psi_1}.
 \end{equation}
@@ -805,7 +804,7 @@ Ces résultats permettent de définir $\bm{L}$ et $\bm{S}$ pour un faisceau donn
 
 \section{Le moment angulaire du photon}
 \subsection{Exemple de quantification : ensemble d'oscillateurs harmoniques matériels}
-Expliquons le processus de quantification sur l'exemple simple d'un ensemble de $N$ oscillateurs harmoniques indépendants, de mêmes masses $m$ mais de pulsations différentes $\omega_{i},\;i=1\ldots N$. On commence par écrire l'énergie du système :
+Expliquons le processus de quantification sur l'exemple simple d'un ensemble de $N$ oscillateurs harmoniques indépendants, de même masse $m$ mais de pulsations différentes $\omega_{i},\;i=1\ldots N$. On commence par écrire l'énergie du système :
 \begin{equation}
 H = \sum_{i=1\ldots N}\left(\frac{1}{2 m} p_i^2+\frac{1}{2} m \omega_i^2x_i^2\right),
 \label{eq:oscharm1}
@@ -846,7 +845,7 @@ où $\alpha_{i}$ est une amplitude complexe sans dimension et $\mathcal{A}_i=\sq
 
 De manière générale, il est intéressant de choisir une base $\bm{F}_i$ adaptée aux grandeurs physiques que l'on mesure. Dans une approche quantique, on choisit un ensemble d'opérateurs hermitiens qui commutent et on cherche leurs fonctions propres communes. Par exemple, si on choisit les opérateurs d'impulsion $\hat{p}_x$, $\hat{p}_y$, $\hat{p}_z$ et l'opérateur de spin, les fonctions propres communes sont les ondes planes progressives. Les valeurs propres sont alors $k_x$, $k_y$, $k_z$, et l'hélicité $\alpha = \pm 1$. On indexera par la suite $\bm{F}_i$ par l'ensemble $\beta$ de ces valeurs propres : pour les ondes planes, la base est $\bm{F}_{\beta}$, avec $\beta=(k_x,\;k_y,\;k_z,\;\alpha)$.
 
-L'énergie du rayonnement peut alors s'écrire en fonction de $\bm{A}$. \mycite{aspect2005-2} montrent qu'elle prend la même forme que l'énergie de l'ensemble d'oscillateurs harmoniques \ref{eq:oscharm1} avec $\bm{A}$ comme analogue de la position et $\bm{E}_{\bot}$ celui de l'impulsion. On peut alors définir les opérateur de création et d'annihilation de la même façon qu'auparavant pour obtenir l'hamiltonien sous la forme :
+L'énergie du rayonnement peut alors s'écrire en fonction de $\bm{A}$. \mycite{aspect2005-2} montrent qu'elle prend la même forme que l'énergie de l'ensemble d'oscillateurs harmoniques \ref{eq:oscharm1} avec $\bm{A}$ comme analogue de la position et $\bm{E}_{\bot}$ celui de l'impulsion. On peut alors définir les opérateurs de création et d'annihilation de la même façon qu'auparavant pour obtenir l'hamiltonien sous la forme :
 \begin{equation}
 \hat{H}=\sum_{\beta} \hbar\omega_{\beta}\left(\hat{a}^{\dag}_{\beta}\hat{a}_{\beta}+\frac{1}{2}\right),
 \end{equation}
@@ -861,7 +860,7 @@ Précisons la forme de l'espace dans lequel évolue le champ. Nous avons déjà 
 \begin{equation}
 \Delta x \sim \hbar\rmc/E = \hbar/p.
 \end{equation}
-$\Delta x$ est donc de l'ordre de grandeur de la longueur de de Broglie de la particule, soit dans le cas du photon la longueur d'onde de la lumière. On voit donc que la position d'un photon n'a de sens que si le problème est grand comparé à la longueur d'onde, ce qui revient en fait à passer à la limite classique.} et décrivent les excitations élémentaires de chacun des modes du champ quantifié. L'opérateur de création $\hat{a}^{\dag}_{\beta}$ augmente le nombre de photon dans le mode ${\beta}$ d'une unité, tandis que $\hat{a}_{\beta}$ le diminue. Ils vérifient les règles de commutation \mycite{aspect2005-2} :
+$\Delta x$ est donc de l'ordre de grandeur de la longueur de de Broglie de la particule, soit dans le cas du photon la longueur d'onde de la lumière. On voit donc que la position d'un photon n'a de sens que si le problème est grand comparé à la longueur d'onde, ce qui revient en fait à passer à la limite classique.} et décrivent les excitations élémentaires de chacun des modes du champ quantifié. L'opérateur de création $\hat{a}^{\dag}_{\beta}$ augmente le nombre de photons dans le mode ${\beta}$ d'une unité, tandis que $\hat{a}_{\beta}$ le diminue. Ils vérifient les règles de commutation \mycite{aspect2005-2} :
 \begin{equation}
 [\hat{a}_{\beta},\,\hat{a}^{\dag}_{\beta'}] = \delta_{\beta\beta'} \quad [\hat{a}_{\beta},\,\hat{a}_{\beta'}]=[\hat{a}^{\dag}_{\beta},\hat{a}^{\dag}_{\beta'}]=0.
 \label{eq:commut_a}
@@ -928,7 +927,7 @@ On utilise alors la règle de commutation \ref{eq:commut_a} pour écrire :
 \begin{equation}
 \hat{\bm{S}} = -\rmi\hbar\sum_{\bm{k}\alpha,\alpha'}{\bm{\epsilon}^*_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '}(\hat{a}^{\dag}_{\bm{k}\alpha}\hat{a}_{\bm{k}\alpha'}+\frac{1}{2}\delta_{\alpha,\alpha'})}
 \end{equation}
-Cette expression est valable quelle que soit la base choisie pour les vecteurs de polarisation $\epsilon_{\bm{k}\alpha}$. Il est naturel de la choisir telle que $\bm{\epsilon}^*_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '}$ aient une forme simple. Par exemple, si on prend les deux vecteurs réels orthogonaux, $\bm{\epsilon}_{\bm{k}x}$ et $\bm{\epsilon}_{\bm{k}y}$, qui décrivent les deux polarisations linéaires, on a :
+Cette expression est valable quelle que soit la base choisie pour les vecteurs de polarisation $\epsilon_{\bm{k}\alpha}$. Il est naturel de la choisir telle que $\bm{\epsilon}^*_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '}$ ait une forme simple. Par exemple, si on prend les deux vecteurs réels orthogonaux, $\bm{\epsilon}_{\bm{k}x}$ et $\bm{\epsilon}_{\bm{k}y}$, qui décrivent les deux polarisations linéaires, on a :
 \begin{equation}
 \bm{\epsilon}^*_{\bm{k}\alpha}\times\bm{\epsilon}_{\bm{k}\alpha '} = \pm\frac{\bm{k}}{|k|}(1-\delta_{\alpha,\alpha'}),
 \end{equation}
@@ -961,8 +960,8 @@ Toutefois, il est possible de montrer \mycite{VanEnk1994} que les composantes de
 \chapter{Modes du champ portant du moment angulaire}
 Au chapitre \ref{ch:modes}, nous avons remarqué que deux formes de champ particulières portaient du moment angulaire : les ondes polarisées circulairement et les modes de Laguerre-Gauss. Nous disposons maintenant des outils pour chercher des solutions de l'équation d'onde pour lesquelles le photon a un moment angulaire défini.
 
-\section{\'Etats propres de moment angulaire}
-On cherche une base des états du champ dans laquelle le moment angulaire de spin et orbital sont bien définis, de même que la quantité de mouvement et l'énergie. Les solutions de ce problème doivent être fonctions propres des opérateurs correspondant, elles existent donc si ces opérateurs commutent. On choisit les observables $\hat{S}_z$ et $\hat{L}_z$. On rajoute $\hat{P}_z$, la quantité de mouvement selon $z$, et $\bm{\hat{P}}^2$. La résolution de ce problème est détaillée dans \mycite{VanEnk1994}, qui montrent que les fonctions propres communes de ces quatres observables sont les $\bm{F}_{s,m,k_z,k_t}$, dont on donne l'expression en coordonnées cartésiennes :
+\section{\'Etats propres du moment angulaire}
+On cherche une base des états du champ dans laquelle le moment angulaire de spin et orbital sont bien définis, de même que la quantité de mouvement et l'énergie. Les solutions de ce problème doivent être fonctions propres des opérateurs correspondants, elles existent donc si ces opérateurs commutent. On choisit les observables $\hat{S}_z$ et $\hat{L}_z$. On rajoute $\hat{P}_z$, la quantité de mouvement selon $z$, et $\bm{\hat{P}}^2$. La résolution de ce problème est détaillée dans \mycite{VanEnk1994}, qui montrent que les fonctions propres communes de ces quatres observables sont les $\bm{F}_{s,m,k_z,k_t}$, dont on donne l'expression en coordonnées cartésiennes :
 \begin{equation}
 \begin{aligned}
 F_{\beta}^x ~&= ~\frac{k_z - sk}{k}f(k_t,k_z,m+1)+\frac{k_z + sk}{k}f(k_t,k_z,m-1),\\
@@ -1111,7 +1110,7 @@ où on a noté
 &\text{Le moment dipolaire magnétique total} \; &\bm{m} &= \sum_n (q_n/2m_n)\bm{r}_n\times\bm{p}_n\\
 &\text{Le moment quadripolaire électrique total} \; &\tensor{\bm{Q}} &= \sum_n (q_n/2)\bm{r}_n\otimes\bm{r}_n\\
 \end{align}
-On vient de réaliser une \textit{expansion multipolaire} du champ électromagnétique. Le premier terme de \ref{eq:hint2} disparaît pour un système neutre. Les suivants décrivent respectivement une interaction dipolaire électrique, une dipolaire magnétique, une quadripolaire électrique, puis tous les $2^j$-polaires électriques et magnétiques. $a/\lambda$ étant faible, le premier terme non nul domine en général tous les suivants et on dit que la transition $i\rightarrow f$ est $2^j$-polaire électrique ou magnétique.
+On vient de réaliser une \textit{expansion multipolaire} du terme d'interaction de l'hamiltonien. Le premier terme de \ref{eq:hint2} disparaît pour un système neutre. Les suivants décrivent respectivement une interaction dipolaire électrique, une dipolaire magnétique, une quadripolaire électrique, puis tous les $2^j$-polaires électriques et magnétiques. $a/\lambda$ étant faible, le premier terme non nul domine en général tous les suivants et on dit que la transition $i\rightarrow f$ est $2^j$-polaire électrique ou magnétique.
 
 \section{Règles de sélection}
 Un photon absorbé ou émis dans une transition $2^j$-polaire a des propriétés particulières. On montre en effet \mycite{Landau1982a} qu'il a une parité $P=(-1)^j$ pour un multipôle électrique, $P=(-1)^{j+1}$ pour un multipôle magnétique, et un moment angulaire égal à $j$. Bien sûr, la transition $i\rightarrow f$ doit respecter la conservation de la parité et du moment angulaire total (voir section \ref{symqm}). Ceci impose des conditions à $\psi_i$ et $\psi_f$, appelées \textit{règles de sélection}. Si $l_i$, $\pi_i$, $l_f$, $\pi_f$ sont les moment angulaires et parités de $\psi_i$ et $\psi_f$, les règles de sélection habituelles s'écrivent \mycite{cohen} :
@@ -1127,13 +1126,13 @@ Considérons donc un champ portant du moment angulaire orbital. Dans les coordon
 \[\bm{E}(r,\theta,z,t) = \bm{u} f(r)e^{\rmi(kz-\omega t)}e^{\rmi\ell\theta}\]
 où $\bm{u}$ est le vecteur unitaire selon la polarisation du champ complexe, $f(r)$ est le profil transverse du champ qui ne dépend que de $r$, et $e^{\rmi\ell\theta}$ est la phase hélicoïdale donnant un MAO de $\ell$ au champ (voir section \ref{sec:oamLG}).
 
-On considère un système hydrogénoïde à deux particules : un électron et un noyau sans spin, notés 1 et 2. On note leurs vecteurs positions $\bm{q}_i$. Le centre de masse du système est alors en $\bm{Q} = (m_1 \bm{q}_1+m_2 \bm{q}_2)/M$, et la coordonnée interne du système est $\bm{q} = \bm{q}_1-\bm{q}_2$. Nous verrons qu'il est essentiel ici de considérer $\bm{Q}$ comme un variable dynamique et non pas de la laisser fixe.
+On considère un système hydrogénoïde à deux particules : un électron et un noyau sans spin, notés 1 et 2. On note leurs vecteurs positions $\bm{q}_i$. Le centre de masse du système est alors en $\bm{Q} = (m_1 \bm{q}_1+m_2 \bm{q}_2)/M$, et la coordonnée interne du système est $\bm{q} = \bm{q}_1-\bm{q}_2$. Nous verrons qu'il est essentiel ici de considérer $\bm{Q}$ comme une variable dynamique et non pas de la laisser fixe.
 
 Dans ces conditions, le système {atome + champ} est défini par :
 \begin{itemize}
 \renewcommand{\labelitemi}{$\bullet$}
 \setlength\itemsep{1em}
-\item Les opérateurs nombres $\ket{\hat{N}_{\beta}}$ décrivent l'état du champ quantifié, qui a un MAO de $\ell$ (voir section \ref{sec:quant_EM}). 
+\item Les opérateurs nombres $\hat{N}_{\beta}$ décrivent l'état du champ quantifié, qui dans l'approximation paraxiale a un MAO de $\ell$ (voir section \ref{sec:quant_EM}). 
 \item Le centre de masse de coordonnées $\bm{Q}=(Q,\phi_Q,z_Q)$ est libre de se translater ou de tourner. On note $P_Q$ sa quantité de mouvement et $L_Q$ son moment angulaire. Ce sont les coordonnées \textit{externes} de l'atome.
 \item Les nombres quantiques internes sont ceux d'un état hydrogénoïde. On les note $\ket{\psi_i}=\ket{n_i,l_i,m_i}$ pour l'état initial et $\ket{\psi_f}=\ket{n_f,l_f,m_f}$ pour l'état final. On note la coordonnée interne $\bm{q} = (q,\phi_q,z_q)$.
 \end{itemize}
@@ -1141,11 +1140,11 @@ Dans ces conditions, le système {atome + champ} est défini par :
 
 Le couplage lumière-matière est décrit par l'élément de matrice de transition suivant :
 \begin{equation}
-\mathcal{M}_{if}=\Braket{P'_Q,\;L'_Q\; ;\psi_f\; ;\hat{N}'_{\beta}\;|\;H_{int}\;|\;P_Q,\;L_Q\; ;\psi_i\; ;\hat{N}_{\beta}}
+\mathcal{M}_{if}=\Braket{P'_Q,\;L'_Q\; ;\psi_f\; ;N'_{\beta}\;|\;H_{int}\;|\;P_Q,\;L_Q\; ;\psi_i\; ;N_{\beta}}
 \label{eq:matrixelement}
 \end{equation}
 
-Le calcul est réalisé dans \mycite{BabikerPRL2002}, en négligeant les effets du champ magnétique et en effectuant un développement limité au voisinnage de $Q$. La forme de la solution est :
+Le calcul est réalisé dans \mycite{BabikerPRL2002}, en négligeant les effets du champ magnétique et en effectuant un développement limité au voisinage de $Q$. La forme de la solution est :
 \begin{equation}
 H_{int} = \alpha\bm{u}\cdot\bm{q}(1+\beta q_z)\times\left(\chi e^{\rmi\ell\phi_Q}+\delta q_{\parallel}\left[\epsilon e^{\rmi(\ell-1)\phi_Q}e^{\rmi \phi_q}+\gamma e^{\rmi(\ell+1)\phi_Q}e^{-\rmi \phi_q}\right]\right)+\text{c.c.},
 \label{eq:hint3}
@@ -1156,7 +1155,7 @@ On obtient bien un développement en puissance des composantes cartésiennes de 
 
 \textbf{(1) Transition dipolaire électrique :} on considère la partie de \ref{eq:hint3} linéaire en $\bm{q}$ : 
 \[H^{dipole}_{int} = \alpha\bm{u}\cdot\bm{q}\times\chi e^{\rmi\ell\phi_Q}+\text{c.c.}\]
-On effectue alors l'intégrale sur toutes les coordonnées pour calculer l'élément de matrice de transition. Le terme intéressant ici est $e^{\rmi\ell\phi_Q}$. En effet, en calculant $\mathcal{M}_{if}$, on est amené à effectuer l'intégration sur l'angle externe, $\phi_Q$. L'état initial a un moment angulaire $L_Q$, sa fonction d'onde associée présentera donc un terme $e^{\rmi L_Q \phi_Q}$. De même, la fonction d'onde associée à l'état final présentera un terme en $e^{\rmi L'_Q \phi_Q}$. L'intégrale selon $\phi_Q$ prend donc la forme :
+On effectue alors l'intégration sur toutes les coordonnées pour calculer l'élément de matrice de transition. Le terme intéressant ici est $e^{\rmi\ell\phi_Q}$. En effet, en calculant $\mathcal{M}_{if}$, on est amené à effectuer l'intégration sur l'angle externe, $\phi_Q$. L'état initial a un moment angulaire $L_Q$, sa fonction d'onde associée présentera donc un terme $e^{\rmi L_Q \phi_Q}$. De même, la fonction d'onde associée à l'état final présentera un terme en $e^{\rmi L'_Q \phi_Q}$. L'intégrale selon $\phi_Q$ prend donc la forme :
 \begin{equation}
 \int_{0}^{2\pi} \ldots e^{-\rmi L'_Q\phi_Q}\;H_{int}\;e^{\rmi L_Q\phi_Q} \rmd\phi_Q = \int_{0}^{2\pi} \ldots e^{-\rmi L'_Q\phi_Q}\;e^{\rmi\ell\phi_Q}\;e^{\rmi L_Q\phi_Q} \rmd\phi_Q
 \end{equation}
@@ -1179,23 +1178,23 @@ Insistons sur le fait que $L_Q$ est le moment angulaire \textit{externe} du syst
 
 $H^{quad,1}_{int}$ ne présente qu'un terme de phase en $\ell\phi_Q$. Les conclusions sont donc identiques à celles avec $H^{dipole}_{int}$ : le MAO du champ est transféré au centre de masse.\par
 
-Au contraire, $H^{quad,2}_{int}$ et $H^{quad,3}_{int}$ font apparaître la coordonnée interne de l'atome. Pour le premier, la phase de $H_int$ est $e^{\rmi(\ell-1)\phi_Q}e^{\rmi \phi_q}$. L'élément de matrice de transition prendra donc la forme :
+Au contraire, $H^{quad,2}_{int}$ et $H^{quad,3}_{int}$ font apparaître la coordonnée interne de l'atome. Pour le premier, la phase de $H_{int}$ est $e^{\rmi(\ell-1)\phi_Q}e^{\rmi \phi_q}$. L'élément de matrice de transition prendra donc la forme :
 \begin{equation}
 \ldots\int_{0}^{2\pi} e^{-\rmi L'_Q\phi_Q}\;e^{\rmi(\ell-1)\phi_Q}\;e^{\rmi L_Q\phi_Q} \rmd\phi_Q \times 
 \int_{0}^{2\pi} e^{-\rmi l_f \phi_q}\;e^{\rmi\phi_q}\;e^{\rmi l_i\phi_q} \rmd\phi_q.
 \end{equation}
-Les règles de sélection sont donc modifiées à la fois pour le moment angulaire interne et externe :
+Les règles de sélection sont donc modifiées à la fois pour les moments angulaires interne et externe :
 \begin{equation}
 L'_Q-L_Q=\ell-1 \quad\text{et}\quad l_f-l_i = 1
 \end{equation}
 Le champ de MAO $\ell$ transfère donc $(\ell-1)$ unités de moment angulaire à la dynamique externe, et une unité à la dynamique interne. De la même façon, dans le terme $H^{quad,3}_{int}$, il transfère $(\ell+1)$ à la dynamique externe, et prélève une unité à la dynamique interne.
 
 Ces résultats démontrent un comportement très riche entre dynamiques externes et internes d'un atome, si tant est que l'on puisse réaliser des transitions quadripolaires électriques. Le transfert de MAO vers la dynamique externe de l'atome est maintenant couramment utilisé en manipulation de micro-particules, où il permet de faire tourner la particule autour de l'axe de propagation de la lumière \mycite{heprl1995}. Au contraire, si le MAO est transféré à la dynamique interne de l'atome, il sera mis en rotation autour de son propre axe.\par
-Le couplage entre moments internes et externes a été utilisé notamment par \mycite{MuthukrishnanJOB2002}, qui ont même pu intriquer ces deux quantités. On peut également citer le travail théorique de \mycite{MondalPRA2014}, qui propose un schéma d'orientation de molécules froides par un faisceau de Laguerre-Gauss basé sur un transfert de MAO entre dynamique externe et interne.
+Le couplage entre moments internes et externes a été utilisé notamment par \mycite{MuthukrishnanJOB2002}, qui ont même pu intriquer ces deux quantités. On peut également citer le travail théorique de \mycite{MondalPRA2014}, qui propose un schéma d'orientation de molécules froides par un faisceau de Laguerre-Gauss basé sur un transfert de MAO entre dynamiques externe et interne.
 
-Notons toutefois que ces deux travaux utilisent des atomes ou des molécules froides pour circonvenir au problème de la faible probabilité d'effectuer une transition quadripolaire électrique. En effet, si un atome est suffisamment refroidi, sa longueur de de Broglie se rapproche de la longueur d'onde optique, rendant les termes d'ordre supérieurs en $a/\lambda$ plus importants.  Une autre piste serait de diminuer la longueur d'onde du rayonnement. Comme on le verra dans la partie suivante, la génération d'harmonique d'ordre élevé permet de générer des champs portant du MAO à des longueurs d'onde très faibles.%\mycite{schmiegelowEPJ2012} montrent que le poids du terme quadripolaire évolue en $a/w_0$.
+Notons toutefois que ces deux travaux utilisent des atomes ou des molécules froides pour circonvenir au problème de la faible probabilité d'effectuer une transition quadripolaire électrique. En effet, si un atome est suffisamment refroidi, sa longueur de de Broglie se rapproche de la longueur d'onde optique, rendant les termes d'ordre supérieurs en $a/\lambda$ plus importants.  Une autre piste serait de diminuer la longueur d'onde du rayonnement. Comme on le verra dans la partie suivante, la génération d'harmoniques d'ordre élevé permet de générer des champs portant du MAO à des longueurs d'onde très faibles.%\mycite{schmiegelowEPJ2012} montrent que le poids du terme quadripolaire évolue en $a/w_0$.
 
-Pour comprendre de manière intuitive les conclusions obtenues, considérons un faisceau de Laguerre-Gauss, dont l'expression est donnée par l'équation \ref{eq:lgmodes}. Si un atome de taille $a$ est placé à une distance $r\gg a$ du centre, la phase du faisceau est localement plate à l'échelle de l'atome. On retrouve donc le comportement d'une onde plane, où aucun MAO n'est transféré à l'atome. Si au contraire on veut que l'atome puisse ``voir'' la phase hélicoïdale, il faut le placer très près du centre, où le gradient de phase est le plus important. Malheureusement, c'est aussi là où l'intensité du faisceau tend vers zéro, rendant le transfert expérimental de MAO vers la dynamique interne de l'atome difficile. Une étude théorique à ce sujet a été effectuée par \mycite{PiconOE2010} : les auteurs considèrent un faisceau ultraviolet portant du MAO interagissant avec un atome à un électron. Leur calcul montre une modification des règles de sélection, mais en utilisant une intensité pic gigantesque, inatteignable en pratique ($\SI{6.8e18}{\W\per\centi\metre\squared}$ à 27.2 eV).
+Pour comprendre de manière intuitive les conclusions obtenues, considérons un faisceau de Laguerre-Gauss, dont l'expression est donnée par l'équation \ref{eq:lgmodes}. Si un atome de taille $a$ est placé à une distance $r\gg a$ du centre, la phase du faisceau est localement plate à l'échelle de l'atome. On retrouve donc le comportement d'une onde plane, où aucun MAO n'est transféré à l'atome. Si au contraire on veut que l'atome puisse ``voir'' la phase hélicoïdale, il faut le placer très près du centre, où le gradient de phase est le plus important. Malheureusement, c'est aussi là que l'intensité du faisceau tend vers zéro, rendant le transfert expérimental de MAO vers la dynamique interne de l'atome difficile. Une étude théorique à ce sujet a été effectuée par \mycite{PiconOE2010} : les auteurs considèrent un faisceau ultraviolet portant du MAO interagissant avec un atome à un électron. Leur calcul montre une modification des règles de sélection, mais en utilisant une intensité pic gigantesque, inatteignable en pratique ($\SI{6.8e18}{\W\per\centi\metre\squared}$ à 27.2 eV).
 
 Illustrons pour finir les conclusions de cette partie en citant le travail de \mycite{schmiegelowarxiv2015}. Pour observer des échanges de MAO supérieurs à 1, les auteurs ont utilisé un ion refroidi placé au centre du faisceau et une focalisation proche de la limite de diffraction. On vérifie facilement qu'au centre du faisceau le gradient d'un champ de Laguerre-Gauss est maximal, et c'est précisément lui qui intervient dans une transition quadripolaire. Les auteurs démontrent que ce gradient est suffisant pour exciter un ion \textit{in the dark} en mesurant une oscillation de Rabi (voir la figure \ref{Fig:Schmiegelow}), et s'en servent pour mesurer spatialement l'amplitude et le gradient du champ en déplaçant l'ion dans le faisceau.
 
@@ -1207,4 +1206,4 @@ Illustrons pour finir les conclusions de cette partie en citant le travail de \m
 \end{figure}
 
 \section*{Conclusion de la partie II}
-Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratiques dans lesquelles le moment angulaire est contrôlé. Dans la partie III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans la partie IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.
+Nous avons introduit les définitions nécessaires et construit des champs électromagnétiques réalisables en pratique dans lesquels le moment angulaire est contrôlé. Dans la partie III, nous étudierons expérimentalement la génération de modes de Laguerre-Gauss à partir d'un laser infrarouge Gaussien, avant d'utiliser ces modes pour générer des harmoniques d'ordre élevé. Dans la partie IV, nous nous intéresserons au cas du moment angulaire de spin, c'est-à-dire de faisceaux polarisés circulairement. Nous chercherons à générer des harmoniques d'ordre élevé polarisées circulairement et à les utiliser dans l'étude de molécules chirales.

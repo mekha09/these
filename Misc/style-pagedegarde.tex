@@ -1,28 +1,7 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%COCUTELLE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\label{cotutelle}
-%\begin{textblock}{1}(\hCotutpos,\vCotutpos)
-%  \logoCotut %% Logo en cas de cotutelle
-%\end{textblock}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%COCUTELLE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-%% Positionner le cadre dans la page.
-	%% Modifier yshift modifie la position des bords haut et bas du cadre. Modifier xshift modifie la position des bords gauche et droit du cadre. Il faut toujours les modifier deux par deux (ceux qui ont la même valeur ensemble).
-%\begin{tikzpicture}[remember picture,overlay,color=blue!20!red!45!black!75!]
-	%\draw[very thick]
-		%([yshift=-160pt,xshift=45pt]current page.north west)--     
-		%([yshift=-160pt,xshift=-25pt]current page.north east)--    
-		%([yshift=35pt,xshift=-25pt]current page.south east)--      
-		%([yshift=35pt,xshift=45pt]current page.south west)--cycle; 
-%\end{tikzpicture}
-
-
 %% Position du NNT
-%\begin{textblock}{13}(1.15,2.5)
-  %NNT : \NNT
-%\end{textblock}
+\begin{textblock}{13}(1.15,2.5)
+  NNT : \NNT
+\end{textblock}
 
 
 %% Logos en haut de la page
@@ -31,7 +10,7 @@
 \label{Logo Paris Saclay}
 \end{textblock}
 
-\begin{textblock}{1}(12,\vpos)
+\begin{textblock}{2.47}(12.38,\vpos)
 \logoEt %% Logo de votre établissement
 \label{Logo Etablissement}
 \end{textblock}
@@ -40,65 +19,69 @@
 %% Texte
 \color{blue!20!red!45!black} %% Couleur violette du premier paragraphe
   \begin{center}    
-    \LARGE\textsc{Thèse de doctorat\\ de l'Université Paris-Saclay} \\
-    \LARGE{\textsc{préparée à \PhDworkingplace}} \\ \bigskip
+    \LARGE\textsc{Thèse de doctorat\\ de\\ l'Université Paris-Saclay} \\
+    \LARGE{\textsc{préparée à \\ \PhDworkingplace}} \\ \bigskip
   \color{black} %% Couleur noir du reste du texte
-	\bigskip  
-    \Large{Ecole doctorale n$^{\circ}\ecodocnum$ :} %% Numéro ED
+	\bigskip 
+	\Large{\textsc{\laboratory}}\\
+	\bigskip
+    \Large{\textsc{Ecole doctorale n$^{\circ}\ecodocnum$ :}} %% Numéro ED
      \Large{\ecodoctitle}  \\
 
      \Large{Spécialité : \PhDspeciality} \\%% Spécialité
     \vfill
-    \LARGE{\textbf{\textsc{\PhDTitleFR}}} \\ %% Titre de la thèse
+    \Large{Par} \\ %% Titre de la thèse
     \bigskip
 		\bigskip
-		   \Large{par}\\
+		   \LARGE{{\textsc{\PhDname}}}\\
    \bigskip
 	\bigskip
-   \LARGE{\textbf{\textsc{\PhDname}}} %% Nom du docteur
-
+	\bigskip
+    %% Nom du docteur
+	\LARGE{\textbf{\textsc{\PhDTitleFR}}}
     \vfill
     \bigskip
+		\vspace{3in}
 \end{center}
 \color{black}
 %% Jury
-\begin{flushleft}
-%Thèse présentée et soutenue à \defenseplace, le \defensedate \\
-La présentation de cette thèse est prévue à \defenseplace, le \defensedate \\
-\bigskip
-Composition du Jury :
-%Version non finale à destination des rapporteurs
-\bigskip
-\end{flushleft}
+
 %% Members of the jury
 %% If needed, one can add jurymemberG or remove one jury member.
 %
-\begin{center}
-\begin{tabularx}{12cm}{r X l}%{rlll}
-%
-    %\jurygenderA & \textsc{\jurynameA}  & \jurygradeA, \juryadressA & \juryroleA \\ 
-   %
-    %\jurygenderB & \textsc{\jurynameB}  & \jurygradeB, \juryadressB & \juryroleB \\
-    %
-    %\jurygenderC & \textsc{\jurynameC}  & \jurygradeC, \juryadressC & \juryroleC \\
-		%
-		 %\jurygenderD & \textsc{\jurynameD}  & \jurygradeD, \juryadressD & \juryroleD \\
-		%
-		 %\jurygenderE & \textsc{\jurynameE}  & \jurygradeE, \juryadressE & \juryroleE \\
-		%
-		 %\jurygenderF & \textsc{\jurynameF}  & \jurygradeF, \juryadressF & \juryroleF \\
-		
-		\jurygenderA & \textsc{\jurynameA}\dotfill  & \juryroleA \\ 
-   
-    \jurygenderB & \textsc{\jurynameB}\dotfill  & \juryroleB \\
+
+\begin{textblock}{13.70}(1.15,11)
+
+\begin{flushleft}
+\textbf{Thèse présentée et soutenue à \defenseplace, le \defensedate :} \\
+\bigskip
+\textbf{Composition du Jury :} \\
+\bigskip
+\begin{tabularx}{\textwidth}{@{}lll}%{r X l}
+    \textsc{\jurygenderC \jurynameC} & \jurygradeC, \juryadressC & \juryroleC \\
     
-    \jurygenderC & \textsc{\jurynameC}\dotfill  & \juryroleC \\
+		\textsc{\jurygenderA \jurynameA}  & \jurygradeA, \juryadressA & \juryroleA \\ 
+   
+    \textsc{\jurygenderB \jurynameB}   & \jurygradeB, \juryadressB & \juryroleB \\
 		
-		 \jurygenderD & \textsc{\jurynameD}\dotfill  & \juryroleD \\
+		\textsc{\jurygenderD \jurynameD}  & \jurygradeD, \juryadressD & \juryroleD \\
 		
-		 \jurygenderE & \textsc{\jurynameE}\dotfill  & \juryroleE \\
+		\textsc{\jurygenderE \jurynameE}   & \jurygradeE, \juryadressE & \juryroleE \\
 		
-		 \jurygenderF & \textsc{\jurynameF}\dotfill & \juryroleF \\
+		\textsc{\jurygenderG \jurynameG}   & \jurygradeG, \juryadressG & \juryroleG \\
+				
+		\textsc{\jurygenderF \jurynameF}   & \jurygradeF, \juryadressF & \juryroleF \\
+		%\jurygenderA & \textsc{\jurynameA}\dotfill  & \juryroleA \\ 
+   %
+    %\jurygenderB & \textsc{\jurynameB}\dotfill  & \juryroleB \\
+    %
+    %\jurygenderC & \textsc{\jurynameC}\dotfill  & \juryroleC \\
+		%
+		 %\jurygenderD & \textsc{\jurynameD}\dotfill  & \juryroleD \\
+		%
+		 %\jurygenderE & \textsc{\jurynameE}\dotfill  & \juryroleE \\
+		%
+		 %\jurygenderF & \textsc{\jurynameF}\dotfill & \juryroleF \\
     %
     %\jurygenderD & \textsc{\jurynameD}  & \jurygradeD & (\juryroleD) \\
     %%\null & \null & \juryadressD &\\ 
@@ -110,4 +93,5 @@ Composition du Jury :
     %%\null & \null & \juryadressF &\\ 
    %
   \end{tabularx}    
-\end{center}
+\end{flushleft}
+\end{textblock}

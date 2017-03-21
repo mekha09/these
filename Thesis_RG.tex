@@ -1,12 +1,18 @@
-
-                                                                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Compile settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%																												 %%
+%%					Master .tex File - Compile this								 %%
+%%																												 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%			Compile settings
 
 % Make preprint? For languish check.
 \def\makepreprint{n}
 
-% Include the papers?
+% Include the papers at the end ? otherwise will leave blank pages    
 \def\includepapers{y}
 
 % Final papersize B5 (nicer 'book'-format)? If no, it will be A4.
@@ -14,14 +20,11 @@
 
 % Make digital version(i.e. with coloured links)? If not, the links will be black so it looks nice when printed.
 \def\digitalversion{y}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % Document class
 \if \makepreprint y
     \documentclass[a4paper,showtrims,11pt,draft]{memoir}
@@ -32,64 +35,76 @@
 				\documentclass[a4paper,11pt]{memoir} 
 		\fi
 \fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
- %Format settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Settings
+% Format settings and packages to include
 \input{Misc/Format.tex}
-% Macros and definitions
+
+% Various Macros and definitions (content of the front page, 2nd page and fourth page is changed there)
 \input{Misc/Macros.tex}
-\input{Misc/FrontPage.tex}
 
 % Hyphenation rules
 \input{Misc/Hyphen.tex}
-\setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{2}%A Camper. Controle le rang d'affichage de la table des matières
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\pdfoptionpdfminorversion=6
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Content
 \begin{document}
 
-%% Preliminary matter
-%\frontmatter
+%% Preliminary matter : front page, second page (printing info and CEA logos), thanks, list of papers, table of content
 \input{Misc/Prel_Matter.tex}
-%
 
 % Main matter
 \mainmatter
 \setSingleSpace{1.20} \SingleSpace %very slightly increases the line spacing (by 5%). 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CHAPTERS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \input{Text/Intro.tex}
 \input{Text/HHG_Theorie.tex}
 \input{Text/MomentAngulaire_v4.tex}
 \input{Text/OAM_HHG.tex}
 \input{Text/Spin_HHG.tex}
 \input{Text/Conclusion.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%Appendices
+%% Appendices	
 \input{Text/Appendices.tex}
-%% End matter
+
+% End matter
 \backmatter
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgements
+\input{Misc/Acknowledgements.tex}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
 \setSingleSpace{1.0} \SingleSpace
-	\phantomsection
-	\addcontentsline{toc}{part}{\bibname}
+\phantomsection
+\addcontentsline{toc}{part}{\bibname}
 
-%%\settypeblocksize{*}{\mytextwidth+4cm}{*}   
-	\SingleSpacing \footnotesize
-	%\bibliographystyle{numeric-comp}
-		\bibliographystyle{Bib/mybibstyle}
-	\bibliography{Bib/RG_Bibliography}
-%\bibliography{Q:/SPAM/AttoPhysique/Bibliotheque/Reflib}
-  \cleardoublepage
+\SingleSpacing \footnotesize
+\bibliographystyle{Bib/mybibstyle}
+\bibliography{Bib/RG_Bibliography}
+\cleardoublepage
 	
 	
-	
-	%% Papers
+%% Papers
 \input{Misc/Papers.tex}
+
+%% Fourth cover - abstract
+% Using Paris-Saclay template
+%============================
+\clearevenpage
+\thispagestyle{empty}
+\input{Misc/style-abstractboth.tex}
+%\clearpage
 	
 \end{document}
+
+%% End of file

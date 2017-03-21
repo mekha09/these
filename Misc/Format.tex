@@ -1,109 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%																												 %%
+%%					All format settings are in here								 %%
+%%					 It's kind of a mess, sorry :)								 %%
+%%	  	Last modified by R. Géneaux on 2017-01-06					 %%
+%%																												 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Package loading that allows compilation to pdf either with dvips+ps2pdf or pdflatex.
+% Load packages so that either dvips+ps2pdf or pdflatex can be used (if you don't know, use pdflatex)
 % For pdf figures must be in format pdf (or jpg). This can be done with epstopdf (%f in (*.eps) do epstopdf %f)
 % For pdf via dvi and ps figures must be in format eps.
-
-%\newif\ifpdf\ifx\pdfoutput\undefined\pdffalse\else\pdfoutput=1\pdftrue\fi% Latex mode i.e. \pdfoutput is only defined compiling with pdflatex
-%Above row is commented since this declaration is already done in the memoir class
 \ifpdf
   \usepackage[pdftex]{graphicx}
-  %\usepackage{epstopdf} % This does not work on windows.
   \usepackage[pdftex,dvipsnames,usenames]{color} % This package allows for use of colors
   \DeclareGraphicsExtensions{.pdf,.png}
   \pdfadjustspacing=1  % Use LaTeX like spacing and not pdflatex layout algorithm
-  %\usepackage[pdftex]{thumbpdf}
   \usepackage[protrusion={true, compatibility},expansion={true, compatibility}]{microtype} % Margin kerning i.e. prettier margins
 \else
   \usepackage{graphicx}
   \usepackage[dvips,dvipsnames,usenames]{color} % This package allows for use of colors
-  %\usepackage[ps2pdf]{thumbpdf}
   \DeclareGraphicsExtensions{.eps}
 \fi
 
 %R. Géneaux - Fixes the "too many alphabet" errors :
 \newcommand\hmmax{0}
 \newcommand\bmmax{0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%--------------------------------------------------------------------------------%
-%\usepackage[pagebackref]{hyperref}%A Camper for bak paging the reference
-%\usepackage{utopia}					% Utopia font as default roman
-\usepackage{mathpazo}				% Zapf Palatino font as default roman. Math in Palatino where possible
-%\usepackage{nomencl}         % The nomenclature package can be used to generate and format a
-                             % nomenclature using MakeIndex. I use to make a List of Symbols
-\usepackage{braket}          % braket: Macros for Dirac bra-ket <|> notation and sets {|}'
-\usepackage{array}           % Extends the implementation of array- and tabular-enviroments
-%\usepackage[numbers,square,comma,sort&compress]{natbib}
-\usepackage[authoryear,square,comma,sort&compress]{natbib}
-\usepackage{systeme}
-%\usepackage[authoryear,sort,colon,square]{natbib}
-\usepackage{ifthen}
-\usepackage{calc}
-\usepackage{url}
- \usepackage{eurosym,skull}
-\usepackage{amsmath,amssymb,graphicx}%,stmaryrd}% Installé par Antoine pour \sslash 
-\usepackage{MnSymbol}
-\usepackage{picins}
-\usepackage{bm}							%gives \bm{xx} command in math mode - more effective way to use bold variables
-%\usepackage{color}
-%\usepackage{setspace}
-%\usepackage{textcomp}        % Defines for example dregrees celcius symbol
-%\usepackage{siunitx}         % The SIunitx package provides macros to type numbers and
-                             		% units in a consistent way according to SI requirements.
-%\usepackage{ulem}            % Allows line through text, \sout{},  under line, \uline{}
-                             % wavy under line, \uwave{}, double under line, \uuline{}
-                             % text market with slashes, \xout{}
-%\normalem                    % Stops ulem of taking over the \emph{} command
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LOAD MANY MANY PACKAGES (some are probably useless)
+% add whatever you need
+
+%% Format for french - If you create new .tex files, make sure they are saved in utf8 format
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}%A Camper problème d'accents dans l'hyphénation
 \usepackage[french]{babel}
 \addto\captionsfrench{\def\tablename{\textsc{Tableau}}} %change "`table"' to tableau
-\usepackage{icomma} 
-\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
-\DeclareUnicodeCharacter{00A0}{ }
-\DeclareUnicodeCharacter{00A0}{ }
-%
-\ifpdf
-  %\usepackage[pagebackref]{hyperref}
-	\usepackage[backref=page]{hyperref}
-  %\usepackage[pdftex]{hyperref}
-\else
-  \usepackage[ps2pdf]{hyperref}
-  %\usepackage[hypertex]{hyperref}  %% Gives hyperreferenses in the dvi file.
-  % \hypersetup{pdffitwindow=false}
-\fi
-%\usepackage{hypernat} %% Makes the hyperref and natbib packages work together i.e. [1-3] works
-%\usepackage{memoir/hypernat} %% Makes the hyperref and natbib packages work together i.e. [1-3] works
-\usepackage{memhfixc} %% The memhfixc package provides hyperref related temporary
-                      %% fixes and extensions for version v1.3a of the memoir class.
+\usepackage{eurosym,skull}
 
-%R. Géneaux
+% Fonts and symbols
+\usepackage{mathpazo}				% Zapf Palatino font as default roman. Math in Palatino where possible
+\usepackage{amsmath,amssymb,graphicx}% Installé par Antoine pour \sslash 
+\usepackage{MnSymbol}
+\usepackage{bm}		%gives \bm{xx} command in math mode - more effective way to use bold variables
 \usepackage{siunitx} %macros for proper typeset SI units
 \sisetup{
 list-final-separator = { et }
 }
-\usepackage{titlesec}
-\usepackage{import} %The import package allows to use latex+pdf from inkscape when files are in a different folder
 
+% Maths and equations
+\usepackage{braket}          % braket: Macros for Dirac bra-ket <|> notation and sets {|}'
+\usepackage{array}           % Extends the implementation of array- and tabular-enviroments
+\usepackage{systeme}				 % systems of equation
+\usepackage{icomma} 
+
+% Layout and formating
+\usepackage{calc} 					% to use + and - in widths and lengths
+\usepackage{picins}					% wrap paragraphs around pictures
+\usepackage[absolute]{textpos} %position boxes in an absolute manner (used a lot for front, 2nd page and 4th cover
+\usepackage{multicol} 			% write in multicolumn environment (used for abstracts on 4th cover)
+\usepackage[table]{xcolor}  % http://ctan.org/pkg/xcolor
+\usepackage{titlesec}				% cool section and part titles
+\usepackage{import} 				%The import package allows to use latex+pdf from inkscape when files are in a different folder
 \usepackage{transparent} %Handles transparency when importing svg files
 \usepackage[all]{xy} %Used for drawings with arrows
 \usepackage{ragged2e} %Justify command
 
+% Links and bibliography
+\usepackage{ifthen}
+\usepackage[authoryear,square,comma,sort&compress]{natbib}  % Bibliography - stuff in [] are the settings of the citations 
+\usepackage{url}
+\ifpdf
+	\usepackage[backref=page]{hyperref}  % Links inside the pdf. Backref to have the links in bibliography to the place the paper was cited
+\else
+  \usepackage[ps2pdf]{hyperref}
+\fi
+\usepackage{memhfixc} %% The memhfixc package provides hyperref related temporary
+                      %% fixes and extensions for version v1.3a of the memoir class.
+\DeclareUnicodeCharacter{00A0}{ }				% Fixes a character problem when using .bib files
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% General format settings
+
+% Paragraphs
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
-%RGéneaux - reduce space after subsubsection
+% remove indents at beginning of paragraphs (personal preference)
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+
+% Sections and subsections
+% RGéneaux - reduce space after subsubsection
 \titlespacing{\subsubsection}{0pt}{\parskip}{-5pt}
 
-% Appearance
+% Links 
 \hypersetup{
 %bookmarks = true,
 bookmarksnumbered = true,
 breaklinks = true
 }
 
+% Link colors - colored for digitalversion, all black otherwise
 \ifthenelse{\equal{\digitalversion}{y}}
 {
   \hypersetup{
@@ -124,11 +128,12 @@ breaklinks = true
   }
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Page layout
 \newlength{\mytextwidth}
 \newlength{\mymarginwidth}
 \setcounter{secnumdepth}{4}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Will the thesis be in A4 or B5 format?
 \ifthenelse{\equal{\finalsizeB5}{y}}
 {
@@ -299,21 +304,21 @@ breaklinks = true
 
 % define a user command to choose the image
 % this command also creates an internal command to insert the image
-\newcommand{\partimage}[2][]{\gdef\@partimage{\includegraphics[#1]{#2}}}
-\def\@part[#1]#2{%
-  \ifnum \c@secnumdepth >-2\relax \refstepcounter{part}%
-    \addcontentsline{toc}{part}{\thepart.
-        \protect\enspace\protect\noindent#1}%
-  \else
-    \addcontentsline{toc}{part}{#1}\fi
-  \begingroup\centering
-  \ifnum \c@secnumdepth >-2\relax
-       {\fontsize{\@xviipt}{22}\bfseries \normalfont\scshape\MakeLowercase
-         \partname} %\vskip 20\p@ \fi
-				\par\parbox{0.5in}{\hrulefill}\par
-  \fontsize{\@xxpt}{22}\bfseries \normalfont\scshape\MakeLowercase
-      #1\vfil\@partimage\vfil\endgroup \newpage\thispagestyle{empty}}
-\makeatother
+%\newcommand{\partimage}[2][]{\gdef\@partimage{\includegraphics[#1]{#2}}}
+%\def\@part[#1]#2{%
+  %\ifnum \c@secnumdepth >-2\relax \refstepcounter{part}%
+    %\addcontentsline{toc}{part}{\thepart.
+        %\protect\enspace\protect\noindent#1}%
+  %\else
+    %\addcontentsline{toc}{part}{#1}\fi
+  %\begingroup\centering
+  %\ifnum \c@secnumdepth >-2\relax
+       %{\fontsize{\@xviipt}{22}\bfseries \normalfont\scshape\MakeLowercase
+         %\partname} %\vskip 20\p@ \fi
+				%\par\parbox{0.5in}{\hrulefill}\par
+  %\fontsize{\@xxpt}{22}\bfseries \normalfont\scshape\MakeLowercase
+      %#1\vfil\@partimage\vfil\endgroup \newpage\thispagestyle{empty}}
+%\makeatother
 
 %% Pour la table des matières
 %\renewcommand*{\cftpartname}{Partie}
@@ -405,6 +410,12 @@ breaklinks = true
 \chapter*{#1}
 \markboth{\textbf{#1}}{#2}
 }                           % Papers
+
+%%macro for 4th cover - needs to be an even page
+\makeatletter
+\newcommand{\clearevenpage}{\clearpage\if@twoside \ifodd\c@page
+    \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -756,9 +767,12 @@ breaklinks = true
 \def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
 \makeatother
 
-\setcounter{secnumdepth}{5}
-\setcounter{tocdepth}{3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Settings for table of content 
+\setcounter{secnumdepth}{4} 
+\setcounter{tocdepth}{2} %Depth of the table of content (more = include subsections, then subsubsections etc)
 
-%remove indents at beginning of paragraphs
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{\baselineskip}
+\pdfoptionpdfminorversion=6
+
+
+
